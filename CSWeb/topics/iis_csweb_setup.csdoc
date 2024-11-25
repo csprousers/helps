@@ -13,11 +13,11 @@ You will find the below directories in your document root. Their permissions wil
 <list>
     <li> <b>files</b>: Read and Write </li>
     <li> <b>var</b>: Read and Write </li>
-    <li> <b>src\AppBundle</b>: Read and Write </li>
+    <li> <b>src</b>: Read and Write </li>
     <li> <b>app\config</b>: Read and Write </li>
 </list>
 
-Let us use the <b>files</b> directory as an example. Right-click on <b>files</b> and select <b>Properties</b>. Then click the <b>Security</b> tab. Press the <b>Add...</b> button and type <b>IUSR</b> under <b>Enter the names to select</b>. Press the <b>Check Names</b> button and confirm your changes. Select the user name you just added, <b>IUSR</b>, then update the permissions under <b>Permissions for IUSR</b> so that <b>Read</b> and <b>Write</b> are allowed. Make sure to assign the same permissions for <b>IIS_IUSRS</b> group as well. Now repeat this process for <b>var</b>, <b>src\AppBundle</b>, and <b>app\config</b> setting the correct permissions.
+Let us use the <b>files</b> directory as an example. Right-click on <b>files</b> and select <b>Properties</b>. Then click the <b>Security</b> tab. Press the <b>Add...</b> button and type <b>IUSR</b> under <b>Enter the names to select</b>. Press the <b>Check Names</b> button and confirm your changes. Select the user name you just added, <b>IUSR</b>, then update the permissions under <b>Permissions for IUSR</b> so that <b>Read</b> and <b>Write</b> are allowed. Make sure to assign the same permissions for <b>IIS_IUSRS</b> group as well. Now repeat this process for <b>var</b>, <b>src</b>, and <b>app\config</b> setting the correct permissions.
 
 <subheader>Add Database</subheader>
 
@@ -75,4 +75,4 @@ Now verify the final two fields.
     <li><b>CSWeb API URL</b>: for this setup, <b>http://localhost/csweb/api</b></li>
 </list>
 
-If everything is correct you will hit next and receive the "Setup Complete!" message. From here log in using <b>admin</b> as the username and the <b>CSWeb admin password</b> you just created. Once you have run the setup script you will <b>not</b> be able to run it again unless you delete <b>src\AppBundle\config.php</b>.
+If everything is correct you will hit next and receive the "Setup Complete!" message. From here log in using <b>admin</b> as the username and the <b>CSWeb admin password</b> you just created. Once you have run the setup script you will <b>not</b> be able to run it again unless you delete <b>src\config.php</b>.

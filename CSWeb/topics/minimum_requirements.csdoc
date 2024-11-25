@@ -12,8 +12,8 @@ Below are the minimum requirements to run CSWeb on an Apache or IIS server.
 <subheader>Requirements that will be verified by setup script:</subheader>
 
 <list>
-    <li>MySQL 5.5.3 or greater</li>
-    <li>PHP 8.0+</li>
+    <li>MySQL 8 or greater</li>
+    <li>PHP 8.1+</li>
     <li><b>Settings in php.ini</b></li>
     <list>
         <li>enable_post_data_reading on</li>
@@ -26,6 +26,7 @@ Below are the minimum requirements to run CSWeb on an Apache or IIS server.
                 <li>extension=php_openssl.dll</li>
                 <li>extension=php_pdo_mysql.dll</li>
                 <li>extension=php_pdo.dll</li>
+                <li>extension=php_dom.dll</li>
                 <li>extension=php_zip.dll (necessary with some installations of PHP)</li>
             </list>
     </list>
