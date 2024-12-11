@@ -4,7 +4,7 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-s = CS.Sqlite.exec(<arg>db</arg> := ..., <arg>sql</arg> := ...
+s = CS.Sqlite.exec(<arg>dbId</arg> := ..., <arg>sql</arg> := ...
                 『, <arg>bindings</arg> := ...』
                 『, <arg>rowFormat</arg> := ...』
                 『, <arg>bytesFormat</arg> := ...』)
@@ -12,7 +12,7 @@ s = CS.Sqlite.exec(<arg>db</arg> := ..., <arg>sql</arg> := ...
 
 <indent><table 3 header nowrap>
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-    <cell><arg>db</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sqlite.open</action>.</cell><cell>number~!~not required</cell>
+    <cell><arg>dbId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sqlite.open</action>.</cell><cell>number~!~not required</cell>
     <cell><arg>sql</arg></cell><cell>The SQL statement(s) to execute.</cell><cell nowrap>string, array~!~required</cell>
     <cell><arg>bindings</arg></cell><cell>The bindings for the SQL statement.</cell><cell nowrap>array, object~!~not required</cell>
     <cell><arg>rowFormat</arg></cell><cell>The format to return results from a query.~!~The default value is <logiccolor>"object"</logiccolor>.</cell><cell nowrap>string~!~not required</cell>
@@ -22,7 +22,7 @@ s = CS.Sqlite.exec(<arg>db</arg> := ..., <arg>sql</arg> := ...
 
 <subheader>Description</subheader>
 
-The <action>Sqlite.exec</action> <link action_invoker.csdoc>action</link> executes one or more SQL statements on a <link sqlite_in_cspro.csdoc>SQLite database</link> previously opened by <action>Sqlite.open</action>. The <arg>db</arg> resource ID must be specified explicitly when using multiple databases in a single execution environment.
+The <action>Sqlite.exec</action> <link action_invoker.csdoc>action</link> executes one or more SQL statements on a <link sqlite_in_cspro.csdoc>SQLite database</link> previously opened by <action>Sqlite.open</action>. The <arg>dbId</arg> resource ID must be specified explicitly when using multiple databases in a single execution environment.
 
 The <arg>sql</arg> argument specifies the SQL statement. If specified as an array of strings, the action will execute each query in the order present in the array.
 
@@ -45,14 +45,14 @@ The difference in specifying bindings is shown below using JavaScript:
 <color JavaScript>
 // by position using an array; returns 69.12
 CS.Sqlite.exec({
-    db: dbId,
+    dbId: dbId,
     sql: "SELECT ? + ?;",
     bindings: [ 12.34, 56.78 ]
 });
 
 // by name using an object; returns 69.12
 CS.Sqlite.exec({
-    db: dbId,
+    dbId: dbId,
     sql: "SELECT @arg1 + @arg2;",
     bindings: { "@arg1": 12.34, "@arg2": 56.78 }
 });
@@ -63,7 +63,7 @@ The array or object used for binding can contain strings, numbers, booleans, or 
 <color JavaScript>
 // bind binary data; returns "data:;base64,5aSp5rSl"
 CS.Sqlite.exec({
-    db: dbId,
+    dbId: dbId,
     sql: "SELECT ?;",
     bindings: [ { bytes: "天津", bytesFormat: "text" } ]
 });
@@ -177,7 +177,7 @@ try {
 
     // query for the number of residents per apportioned representative
     const residentsPerRepresentativeQuery = CS.Sqlite.exec({
-        db: dbId,
+        dbId: dbId,
         sql: "SELECT `name`, `resident_pop` / `apportioned_reps` AS `residents_per_rep` " +
              "FROM `census2020` " +
              "WHERE `apportioned_reps` IS NOT NULL " +
@@ -198,7 +198,7 @@ finally {
     // close the database, suppressing any errors
     try {
         CS.Sqlite.close({
-            db: dbId
+            dbId: dbId
         });
     }
     catch {

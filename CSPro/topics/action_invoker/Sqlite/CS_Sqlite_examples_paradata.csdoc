@@ -11,7 +11,7 @@ numeric dbParadata = tonumber(CS.Sqlite.open(name := "paradata"));
 
 // query for the Wi-Fi network name that was last recorded as part of the device state event
 string wifiName = CS.Sqlite.exec(
-    db := dbParadata,
+    dbId := dbParadata,
     sql := "SELECT `text`.`text` "
            "FROM `device_state_event` "
            "JOIN `event` ON `event`.`id` = `device_state_event`.`id` "
@@ -20,7 +20,7 @@ string wifiName = CS.Sqlite.exec(
            "LIMIT 1;");
 
 // close the database
-CS.Sqlite.close(db := dbParadata);
+CS.Sqlite.close(dbId := dbParadata);
 
 // display the results of the query
 when wifiName;
@@ -44,7 +44,7 @@ try {
     });
 
     const operatorWorkTimes = CS.Sqlite.exec({
-        db: dbParadata,
+        dbId: dbParadata,
         sql: "SELECT `operatorid`, SUM(`end_time` - `start_time`) AS `secondsWorked` FROM " +
              "( " +
              "    SELECT `operatorid_info`.`operatorid` AS `operatorid`, `event_start`.`time` AS `start_time`, `event_end`.`time` AS `end_time` " +
@@ -76,7 +76,7 @@ finally {
     // close the database, suppressing any errors
     try {
         CS.Sqlite.close({
-            db: dbParadata
+            dbId: dbParadata
         });
     }
     catch {
