@@ -18,6 +18,14 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 </list>
 
 
+<subheader>Mapping</subheader>
+
+<list>
+    <li>Offline maps can now use ArcGIS Tile Packages that use the <link "https://enterprise.arcgis.com/en/server/10.8/publish-services/linux/inside-the-compact-cache-storage-format.htm">CompactV2 storage format</link> (with the file extension .tpkx).</li>
+    <li>On Windows, ArcGIS Tile Packages created using the <link "https://desktop.arcgis.com/en/arcmap/10.3/map/working-with-arcmap/about-tile-packages.htm">Mixed tile format</link> ("JPEG in the center of the package with PNG 32 on the edge of the package") are supported.</li>
+</list>
+
+
 <subheader>Action Invoker</subheader>
 
 <list>
