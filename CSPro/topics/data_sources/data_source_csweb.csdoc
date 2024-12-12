@@ -1,0 +1,28 @@
+﻿<title>CSWeb Data Source</title>
+
+
+<subheader>Overview</subheader>
+
+The <b>CSWeb</b> <link data_sources.csdoc>data source</link> ... TODO
+
+
+<subheader>Functionality</subheader>
+
+The CSWeb data source supports the following features:
+
+TODO
+
+
+<subheader>Binary Data</subheader>
+
+The CSWeb data source stores <link binary_dictionary_items.csdoc>binary data</link> as TODO
+
+
+<subheader>Customizable Behavior</subheader>
+
+The following behavior can be customized by specifying properties in the <link connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
+
+TODO
+
+
+<seealso data_sources.csdoc />

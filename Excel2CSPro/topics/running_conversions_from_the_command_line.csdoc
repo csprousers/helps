@@ -15,7 +15,7 @@ If you want to open the specification file, run the conversion, and close the to
 
 <indent><font monospace>"C:\Program Files (x86)\CSPro <definition CSPro::version />\Excel2CSPro.exe" <b>/run</b> "My Specifications File.xs2cs"</font></indent>
 
-If you want to run the conversion only when the Excel file has a newer file date than the CSPro data file, use the <b>/runifnewer</b> argument:
+If you want to run the conversion only when the Excel file has a newer file date than the CSPro data source, use the <b>/runifnewer</b> argument:
 
 <indent><font monospace>"C:\Program Files (x86)\CSPro <definition CSPro::version />\Excel2CSPro.exe" <b>/runifnewer</b> "My Specifications File.xs2cs"</font></indent>
 
@@ -55,10 +55,10 @@ The <pffcolor>[Run Information]</pffcolor> block is required and must appear exa
 The <pffcolor>[Files]</pffcolor> block is required.  A description of the files, not all of which have to be specified, is as follows:
 
 <list>
-	<li><pffcolor>Application</pffcolor>=the name of the specification file script that will be used during the conversion.</li>
-	<li><pffcolor>Excel</pffcolor>=the input Excel file.</li>
-	<li><pffcolor>InputDict</pffcolor>=the CSPro dictionary.</li>
-	<li><pffcolor>OutputData</pffcolor>=the name of the output data file. The extension of the file indicates the <link CSPro::data_sources.csdoc>output type</link>.</li>
+    <li><pffcolor>Application</pffcolor>=the name of the specification file script that will be used during the conversion.</li>
+    <li><pffcolor>Excel</pffcolor>=the input Excel file.</li>
+    <li><pffcolor>InputDict</pffcolor>=the CSPro dictionary.</li>
+    <li><pffcolor>OutputData</pffcolor>=the name of the output data source. The extension of the file indicates the <link CSPro::data_sources.csdoc>output type</link>.</li>
 </list>
 
 The <pffcolor>Excel</pffcolor>, <pffcolor>InputDict</pffcolor> and <pffcolor>OutputData</pffcolor> commands do not need to be defined. If not defined, the conversion will use the values defined in the specification file.

@@ -993,6 +993,7 @@
     ]
   }, 
   { "path": "tool_list.csdoc", "title": "CSView" }, 
+  { "path": "data_source_csweb.csdoc", "~title": "CSWeb Data Source" }, 
   { "path": "syncconnect_function_csweb.csdoc", "title": "CSWeb Synchronization" }, 
   { "path": "curocc_function.csdoc", "~title": "CurOcc Function" }, 
   { "path": "currentkey_function.csdoc", "~title": "CurrentKey Function", 
@@ -1087,6 +1088,7 @@
       { "path": "data_source_csv.csdoc", "title": "Comma Delimited (CSV)" }, 
       { "path": "data_source_csdb.csdoc", "title": "CSPro DB" }, 
       { "path": "data_source_cspro_export.csdoc", "title": "CSPro Export" }, 
+      { "path": "data_source_csweb.csdoc", "title": "CSWeb" }, 
       { "path": "data_source_csdbe.csdoc", "title": "Encrypted CSPro DB" }, 
       { "path": "data_source_excel.csdoc", "title": "Excel" }, 
       { "path": "data_source_memory.csdoc", "title": "In-Memory" }, 

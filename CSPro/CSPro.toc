@@ -887,6 +887,7 @@
           { "path": "data_source_csdbe.csdoc", "title": "Encrypted CSPro DB" }, 
           { "path": "data_source_text.csdoc", "title": "Text" }, 
           { "path": "data_source_json.csdoc", "title": "JSON" }, 
+          { "path": "data_source_csweb.csdoc", "title": "CSWeb" }, 
           { "path": "data_source_none.csdoc", "title": "None" }, 
           { "path": "data_source_memory.csdoc", "title": "In-Memory" }, 
           { "path": "data_source_csv.csdoc", "title": "Comma Delimited (CSV)" }, 
