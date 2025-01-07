@@ -3,13 +3,22 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-b = image_name.save(<arg>image_filename</arg>『, quality := <arg>quality</arg>』);
+b = image_name.save(<arg>image_file_path</arg>『, quality := <arg>quality</arg>』);
 </logicsyntax>
 
 
 <subheader>Description</subheader>
 
-The <logiccolor>Image.save</logiccolor> function writes the contents of the <link Image.csdoc>Image</link> object to a file specified by the string expression <arg>image_filename</arg>. The image can be saved in three formats, with the format determined by the file extension: JPEG (.jpg/.jpeg), PNG (.png), and BMP (.bmp). Although GIF files can be loaded by <logiccolor>Image.load</logiccolor>, images cannot be saved to the GIF format.
+The <logiccolor>Image.save</logiccolor> function writes the contents of the <link Image.csdoc>Image</link> object to a file specified by the string expression <arg>image_file_path</arg>. The image can be saved in the following formats, with the format determined by the file extension:
+
+<list>
+    <li><b>JPEG</b> (.jpg/.jpeg).</li>
+    <li><b>PNG</b> (.png).</li>
+    <li><b>BMP</b> (.bmp).</li>
+    <li><b>ICO</b> (.ico). ICO files have a maximum dimension of 256, and the image will be <link Image_resample_function.csdoc>resampled</link> prior to saving if either of the image's dimensions exceed this value.</li>
+</list>
+
+Although <b>GIF</b> (.gif) files can be <link Image_load_function.csdoc>loaded</link>, images cannot be saved to this format.
 
 When saving to JPEG format, the quality can be specified using a <link function_named_arguments.csdoc>named argument</link>. The numeric expression <arg>quality</arg> must be a value from 0 to 100, with 100 being the best quality. If not specified, a value of 95 is used. The file size will be bigger the higher the quality number. This value is ignored if not saving to JPEG format.
 

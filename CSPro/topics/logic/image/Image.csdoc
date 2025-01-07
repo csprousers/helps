@@ -1,6 +1,6 @@
 ﻿<title>Image Object</title>
 
-In logic, an <logiccolor>Image</logiccolor> object facilitates the storing and manipulating of images. Image objects can contain photos, signatures, or other kinds of visual media. CSPro supports reading and writing to JPEG, PNG, and BMP image formats.
+In logic, an <logiccolor>Image</logiccolor> object facilitates the storing and manipulating of images. Image objects can contain photos, signatures, or other kinds of visual media. CSPro supports reading and writing to <b>JPEG</b>, <b>PNG</b>, and <b>BMP</b> image formats, and provides limited support for <b>ICO</b> and <b>GIF</b> image formats.
 
 
 <subheader>Functionality</subheader>

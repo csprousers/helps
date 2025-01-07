@@ -26,6 +26,13 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 </list>
 
 
+<subheader>Logic</subheader>
+
+<list>
+    <li>The <link Image.csdoc>Image</link> object can now load <link "https://en.wikipedia.org/wiki/ICO_(file_format)">icon files (.ico)</link> on Windows and can <link Image_save_function.csdoc>save</link> to that format on all platforms.</li>
+</list>
+
+
 <subheader>Action Invoker</subheader>
 
 <list>
