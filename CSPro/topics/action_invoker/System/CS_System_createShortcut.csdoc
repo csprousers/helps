@@ -1,0 +1,63 @@
+﻿<title>System.createShortcut Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+CS.System.createShortcut(<arg>target</arg> := ...
+                      『, <arg>label</arg> := ...』
+                      『, <arg>longLabel</arg> := ...』
+                      『, <arg>icon</arg> := ...』)
+
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>target</arg></cell><cell>The file path of an application or file that is the target of the shortcut.</cell><cell>string~!~required</cell>
+    <cell><arg>label</arg></cell><cell>A label describing the shortcut. If not defined, the target's filename (without an extension) is used.</cell><cell>string~!~not required</cell>
+    <cell><arg>longLabel</arg></cell><cell>A longer, more descriptive, label that may be used when space permits.</cell><cell>string~!~not required</cell>
+    <cell><arg>icon</arg></cell><cell>The file path of an icon to use for the shortcut.</cell><cell>string~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>System.createShortcut</action> <link action_invoker.csdoc>action</link> creates a shortcut to a CSPro application or file. The way that the shortcut is created depends on the execution environment.
+
+On Windows, a shortcut is added as a <link "https://learn.microsoft.com/en-us/windows/win32/shell/links">Shell link</link>. The shortcut is placed on the Desktop and is named based on the <arg>label</arg>. If <arg>longLabel</arg> is provided, it is used as the shortcut's <link "https://learn.microsoft.com/en-us/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setdescription">description</link>.
+
+On Android, a shortcut is added as a <link "https://developer.android.com/develop/ui/views/launch/shortcuts/creating-shortcuts">pinned shortcut</link> that can be added to the Android launcher (the home screen). The <arg>label</arg> is used as the shortcut's <link "https://developer.android.com/reference/android/content/pm/ShortcutInfo.Builder#setShortLabel(java.lang.CharSequence)">short label</link>. If <arg>longLabel</arg> is provided, it is used as the shortcut's <link "https://developer.android.com/reference/android/content/pm/ShortcutInfo.Builder#setLongLabel(java.lang.CharSequence)">long label</link>. Android guidance recommends maximum label lengths of 10 and 25 characters, respectively. A shortcut is not automatically created but instead Android displays a screen that allows the user to drag the shortcut to the home screen, or click a button to add it to the home screen automatically. Given this requirement for user intervention, it is not guaranteed that a shortcut is actually created.
+
+An <arg>icon</arg> can be associated with a shortcut. On Windows, icons can be specified in any format that the <logiccolor>Image.load</logiccolor> function handles. On Android, icons can be specified in any format supported by Android's <link "https://developer.android.com/reference/android/graphics/BitmapFactory#decodeFile(java.lang.String)">BitmapFactory</link>. Generally <b>ICO</b> (.ico) files are used on Windows and <b>PNG</b> (.png) files are used on Android. If designing an icon for cross-platform use, it is best to use the PNG format. On both platforms, the icon file will be copied to CSPro or system storage, so the icon can be a temporary file.
+
+If an icon is not specified, the icon will default to the file type's icon on Windows, and the traffic light icon (representing <link program_information_file_pff.csdoc>PFF files</link>) on Android.
+
+
+<subheader>Return Value</subheader>
+
+The action returns undefined.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The target or icon file do not exist.</li>
+    <li>The icon file cannot be read by the system.</li>
+    <li>The Android version does not support pin shortcuts (a version lower than 8.0).</li>
+</list>
+
+
+
+<subheader>Example (CSPro Logic)</subheader>
+
+<logic>
+CS.System.createShortcut(target := "Congestion-Pricing-Survey.pff",
+                         label := "Congestion",
+                         longLabel := "Congestion Pricing Survey",
+                         icon := "Images/Traffic-Icon.png");
+</logic>
+
+
+<seealso CS_System.csdoc />
