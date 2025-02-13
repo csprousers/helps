@@ -26,4 +26,4 @@ To generate a value set for a numeric data item:
 
 <b>Use 1000 separator</b>: When checked, the values will be formatted with thousand separators, formatted according to the locale. For example, the number <logiccolor>123456789</logiccolor> might be formatted as <logiccolor>"123,456,789"</logiccolor> or <logiccolor>"12,34,56,789"</logiccolor>.
 
-<b>Generate values in ascending order</b>: Uncheck this value if you want the values to be created in descending order.
+<b>Value order</b>: By default, values are created in ascending order, but can be modified to be created in descending order.
