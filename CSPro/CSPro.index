@@ -3617,6 +3617,7 @@
     ]
   },
   { "path": "change_error_sound.csdoc", "title": "Sound" },
+  { "path": "collaborating_on_cspro_development.csdoc", "title": "Source Code" },
   { "path": "modifying_row_and_column_spacing_for_printing.csdoc", "title": "Spacing",
     "subindex": [ 
       { "path": "modifying_row_and_column_spacing_for_printing.csdoc", "title": "Modify Row and Column Spacing for Printing" }

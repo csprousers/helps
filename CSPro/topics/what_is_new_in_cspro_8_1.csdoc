@@ -7,6 +7,7 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 <subheader>General</subheader>
 
 <list>
+    <li>CSPro is now open source! The source code, written in C++, JavaScript, Java/Kotlin, and PHP, with some code written in C#, is available on GitHub: <link https://<definition csprousers_github />><definition csprousers_github /></link>.</li>
     <li>A new dialog, <link manage_application_files.csdoc>Manage Application Files</link>, replaces the Add Files and Drop Files dialogs, providing a central place to manage an application's files and each file's properties. New properties include:~!~~!~
         <list>
             <li><link properties_application.csdoc>Application</link>: the name and label can be modified.</li>

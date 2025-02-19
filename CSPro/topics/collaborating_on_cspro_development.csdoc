@@ -1,6 +1,38 @@
 ﻿<title>Collaborating on CSPro Development</title>
 
-CSPro <definition CSPro::version /> is not yet an open source project but it is in the public domain, meaning that it can be used and distributed at no cost. However, if you are interested in collaborating on the CSPro development, there are currently three projects, changes to which are distributed with CSPro.
+CSPro <definition CSPro::version /> is <link "https://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source software</link> (FOSS) and is released to the public domain, meaning that it can be used and distributed at no cost. The source code is hosted on GitHub:
+
+<indent><link https://<definition csprousers_github />>https://<definition csprousers_github /></link></indent>
+
+If you are interested in collaborating on CSPro development, these are the primary projects to which contributions  are welcome:
+
+<list>
+    <li><link https://<definition csprousers_github />/cspro>cspro</link>: The code for CSPro and CSEntry.
+        <list>
+            <li>The CSPro suite of programs that runs on Windows is coded in C++ using the <link "https://learn.microsoft.com/en-us/cpp/mfc/framework-mfc">Microsoft Foundation Class</link> (MFC) framework. This code is built using <link "https://visualstudio.microsoft.com/">Microsoft Visual Studio</link>.</li>
+            <li>CSEntry, the Android application, is coded in Java and Kotlin and built using <link "https://developer.android.com/studio">Android Studio</link>.</li>
+            <li>The shared runtime is coded in C++, with the <link "https://developer.android.com/ndk">NDK</link> toolset building this for Android.</li>
+        </list>
+    </li>
+    <li><link https://<definition csprousers_github />/csweb>csweb</link>: The <link CSWeb::introduction_to_csweb.csdoc>web application</link> that allows users to securely transfer cases or files between client devices and a web server.
+        <list>
+            <li>CSWeb is coded in PHP.</li>
+        </list>
+    </li>
+    <li><link <definition github_helps_url />>helps</link>: The help documentation distributed with CSPro, which you are currently reading.
+        <list>
+            <li>The helps are authored using <link CSDocument::introduction.csdoc>CSDocument</link>, a tool distributed with CSPro 8.0+.</li>
+            <li>We welcome users to add new help topics, clarify existing ones, or even do things as small as fix typos.</li>
+        </list>
+    </li>
+    <li><link https://<definition csprousers_github />/examples>examples</link>: The examples distributed with CSPro.
+        <list>
+            <li>If you want to modify an existing example, or want to add a new example that you think will be useful to the broader CSPro community, you can collaborate on this project.</li>
+        </list>
+    </li>
+</list>
+
+Ways to collaborate on these products are described in more detail on each repository's page.
 
 
 <subheader>Multiple Language Runtime Messages</subheader>
@@ -20,21 +52,3 @@ The complete list of system-level, English-language messages used by CSPro can b
 </table>
 
 <b>Note:</b> You can override CSPro's default messages by adding to your an application a message file containing <link change_message_properties.csdoc>system message overrides</link>.
-
-
-<subheader>Help Documentation</subheader>
-
-The help documentation that you are currently reading is created using <link CSDocument::introduction.csdoc>CSDocument</link>. This tool is distributed with CSPro but the documentation itself is hosted on GitHub:
-
-<indent><link "<definition github_helps_url />"><definition github_helps_url /></link></indent>
-
-We welcome users to add new help topics, clarify existing ones, or even do things as small as fix typos.
-
-
-<subheader>CSPro Examples</subheader>
-
-The CSPro Examples folder is also hosted on GitHub:
-
-<indent><link "<definition github_examples_url />"><definition github_examples_url /></link></indent>
-
-If you want to modify any existing example, or want to add a new example that you think will be useful to the broader CSPro community, you can collaborate on this project.
