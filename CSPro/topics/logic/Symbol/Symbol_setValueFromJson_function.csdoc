@@ -1,18 +1,18 @@
-﻿<title>Symbol.updateValueFromJson Function</title>
+﻿<title>Symbol.setValueFromJson Function</title>
 
 
 <subheader>Format</subheader>
 
 <logicsyntax>
-b = symbol_name.updateValueFromJson(<arg>json</arg>);
+b = symbol_name.setValueFromJson(<arg>json</arg>);
 </logicsyntax>
 
 
 <subheader>Description</subheader>
 
-The <logiccolor>Symbol.updateValueFromJson</logiccolor> function updates the value of a symbol based on the symbol's <link JSON_primer.csdoc>JSON</link> representation, passed to the function as the string expression <arg>json</arg>.
+The <logiccolor>Symbol.setValueFromJson</logiccolor> function modifies the value of a symbol based on the symbol's <link JSON_primer.csdoc>JSON</link> representation, passed to the function as the string expression <arg>json</arg>.
 
-You can also use the <logiccolor>Logic.updateSymbolValue</logiccolor> action to update a symbol's value.
+You can also use the <logiccolor>Logic.setSymbolValue</logiccolor> action to update a symbol's value.
 
 The following table describes the value-related serialization routines available for CSPro objects and contains links to the description of the <link symbols_json_representation.csdoc>JSON representation</link> for each object.
 
@@ -28,7 +28,7 @@ The function returns a logical value of 1 (<logiccolor>true</logiccolor>) if the
 
 <logic>
 List string usmca_countries
-usmca_countries.updateValueFromJson("[ \"Canada\", \"Mexico\", \"United States\" ]");
+usmca_countries.setValueFromJson("[ \"Canada\", \"Mexico\", \"United States\" ]");
 
 // 3 countries are part of USMCA, including Canada and United States.
 errmsg("%d countries are part of USMCA, including %s and %s.",
@@ -37,4 +37,4 @@ errmsg("%d countries are part of USMCA, including %s and %s.",
 </logic>
 
 
-<seealso Symbol_getJson_function.csdoc Symbol_getValueJson_function.csdoc CS_Logic_updateSymbolValue.csdoc />
+<seealso Symbol_getJson_function.csdoc Symbol_getValueJson_function.csdoc CS_Logic_setSymbolValue.csdoc />

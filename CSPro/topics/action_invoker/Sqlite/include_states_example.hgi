@@ -23,7 +23,7 @@ numeric populationStatesBeginningWithA = tonumber(
 
 // scalar array: result is California, District of Columbia, Georgia, Pennsylvania, Virginia, West Virginia
 List string statesEndingInIa;
-statesEndingInIa.updateValueFromJson(
+statesEndingInIa.setValueFromJson(
     CS.Sqlite.exec(dbId := dbCensus2020,
                    sql := "SELECT `name` FROM `census2020` WHERE `name` LIKE '%ia' ORDER BY `name`;",
                    rowFormat := "scalarArray"));

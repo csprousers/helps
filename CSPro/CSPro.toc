@@ -938,7 +938,7 @@
               { "path": "Symbol_getLabel_function.csdoc", "~title": "Symbol.getLabel Function" },
               { "path": "Symbol_getJson_function.csdoc", "~title": "Symbol.getJson Function" },
               { "path": "Symbol_getValueJson_function.csdoc", "~title": "Symbol.getValueJson Function" },
-              { "path": "Symbol_updateValueFromJson_function.csdoc", "~title": "Symbol.updateValueFromJson Function" }
+              { "path": "Symbol_setValueFromJson_function.csdoc", "~title": "Symbol.setValueFromJson Function" }
             ]
           },
           {
@@ -1582,7 +1582,7 @@
               { "path": "CS_Logic_getSymbolMetadata.csdoc", "~title": "Logic.getSymbolMetadata Action" },
               { "path": "CS_Logic_getSymbolValue.csdoc", "~title": "Logic.getSymbolValue Action" },
               { "path": "CS_Logic_invoke.csdoc", "~title": "Logic.invoke Action" },
-              { "path": "CS_Logic_updateSymbolValue.csdoc", "~title": "Logic.updateSymbolValue Action" }
+              { "path": "CS_Logic_setSymbolValue.csdoc", "~title": "Logic.setSymbolValue Action" }
             ]
           },
           {

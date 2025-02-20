@@ -12,7 +12,7 @@ The <action>Logic</action> namespace, part of the <link action_invoker.csdoc>Act
     <cell><action>Logic.getSymbolMetadata</action></cell><cell>Returns a symbol's metadata.</cell>
     <cell><action>Logic.getSymbolValue</action></cell><cell>Returns a symbol's value.</cell>
     <cell><action>Logic.invoke</action></cell><cell>Executes a <link user_defined_functions.csdoc>user-defined function</link> using runtime binding.</cell>
-    <cell><action>Logic.updateSymbolValue</action></cell><cell>Modifies a symbol based on a JSON representation of the value.</cell>
+    <cell><action>Logic.setSymbolValue</action></cell><cell>Modifies a symbol based on a JSON representation of the value.</cell>
 </table>
 
 

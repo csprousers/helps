@@ -40,6 +40,7 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 <list>
     <li>The <logiccolor>Image</logiccolor> object can now load <link "https://en.wikipedia.org/wiki/ICO_(file_format)">icon files (.ico)</link> on Windows and can <link Image_save_function.csdoc>save</link> to that format on all platforms.</li>
     <li>If an <logiccolor>Array</logiccolor> object is defined with initial values and is also marked as a <link Array_statement.csdoc>saved array</link>, the initial values will only be used if the array does not exist in the <link saved_arrays_file_sva.csdoc>saved array file</link>.</li>
+    <li>The <logiccolor>Symbol.updateValueFromJson</logiccolor> function has been renamed <logiccolor>Symbol.setValueFromJson</logiccolor>, though the old name will remain as an alias for some time.</li>
 </list>
 
 
@@ -53,6 +54,7 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
     <li>Binary data can be <link action_invoker_binary_data.csdoc>cached</link>, an optimization useful when binary data will be used by multiple actions.</li>
     <li><link action_invoker_resource_ids.csdoc>Resource IDs</link>, such as those used by the <action>Sqlite</action> namespace's actions, do not need to be specified when they can be <link action_invoker_resource_ids.csdoc>calculated implicitly</link>.</li>
     <li>The <action>Sqlite</action> namespace's database resource ID argument is now named <arg>dbId</arg>. The old name, <arg>db</arg>, will work in CSPro 8.1 but not in future versions.</li>
+    <li>The <action>Logic.updateSymbolValue</action> action has been renamed <action>Logic.setSymbolValue</action>, though the old name will remain as an alias for some time.</li>
 </list>
 
 

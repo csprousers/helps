@@ -20,7 +20,7 @@ numeric peopleWithPrivateToilets = tonumber(
 
 // get a list of the provinces where data has been collected
 List numeric provinceList;
-provinceList.updateValueFromJson(
+provinceList.setValueFromJson(
     CS.Sqlite.exec(dbId := dbPopstan,
                    sql := "SELECT `level-1`.`province` FROM `cases` "
                           "JOIN `level-1` ON `level-1`.`case-id` = `cases`.`id` "

@@ -32,7 +32,7 @@ string selectDocumentJson = CS.System.selectDocument();
 
 if selectDocumentJson <> "" then
     HashMap string selectDocumentResult;
-    selectDocumentResult.updateValueFromJson(selectDocumentJson);
+    selectDocumentResult.setValueFromJson(selectDocumentJson);
 
     CS.File.copy(source := selectDocumentResult("path"),
                  destination := selectDocumentResult("name"));

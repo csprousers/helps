@@ -51,4 +51,4 @@ function doSomethingWithExternalDictionary(dictionaryName) {
 </color>
 
 
-<seealso CS_Logic.csdoc CS_Logic_getSymbol.csdoc CS_Logic_getSymbolValue.csdoc CS_Logic_updateSymbolValue.csdoc Symbol_getJson_function.csdoc />
+<seealso CS_Logic.csdoc CS_Logic_getSymbol.csdoc CS_Logic_getSymbolValue.csdoc CS_Logic_setSymbolValue.csdoc Symbol_getJson_function.csdoc />
