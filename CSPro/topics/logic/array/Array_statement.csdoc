@@ -1,8 +1,6 @@
 ﻿<title>Array Statement</title>
 
 
-Note the two formats below are identical except in the handling of assigning values to the array dimensions. In Format 1, all dimension values are listed out. In Format 2, the sequence "..." (three dots/periods) can be written at the end of the array declaration when providing start values for the array dimensions. The "..." signifies that all subsequent array dimensions will be assigned the values listed up to that point. See Example 4 below for further clarification.
-
 <subheader>Format 1</subheader>
 
 <logicsyntax>
@@ -14,6 +12,8 @@ Array 『<arg>array_type</arg>』 <arg>array_name</arg>(<arg>dim1</arg>『, ...,
 <logicsyntax>
 Array 『<arg>array_type</arg>』 <arg>array_name</arg>(<arg>dim1</arg>『, ..., <arg>dimN</arg>』) 『save』 『= <arg>dim1_value</arg>『, <arg>dim2_value</arg>『, ...』』;
 </logicsyntax>
+
+Note that the two formats are identical except in the handling of assigning values to the array dimensions. In Format 1, all dimension values are listed out. In Format 2, the sequence "..." can be written at the end of the array declaration when providing start values for the array dimensions. The "..." signifies that all subsequent array dimensions will be assigned the values listed up to that point. See Example 4 below for further clarification.
 
 
 <subheader>Description</subheader>
@@ -39,6 +39,8 @@ The optional keyword <logiccolor>save</logiccolor> indicates that the array valu
 
 All arrays marked with <logiccolor>save</logiccolor> in the application are written to the same file. By default this file has the same name as the application but with a .sva file extension appended to it (for example, MyApplication.bch.sva). You can modify the name of the saved array file by using the PFF <pffcolor>SaveArray</pffcolor> attribute.
 
+If you specify initial values for an array marked as a saved array, the initial values are only used if the array does not exist in the saved array file. This means that you can provide initial values for the array that will be used on the program's first run, but those values will be ignored in subsequent runs in favor of the values from the saved array file.
+
 
 <subheader>Example 1 (Numeric)</subheader>
 
@@ -48,14 +50,14 @@ By including the <logiccolor>save</logiccolor> option, the contents of the MinAg
 PROC GLOBAL
 
 Array numeric MinAgeMarriage(2) save = 15, // male
-									   12; // female
+                                       12; // female
 
 PROC MARRIAGE_AGE
 
-	if MARRIAGE_AGE < MinAgeMarriage(SEX) then
-		errmsg("The minimum age of marriage is %d", MinAgeMarriage(SEX));
-		reenter;
-	endif;
+    if MARRIAGE_AGE < MinAgeMarriage(SEX) then
+        errmsg("The minimum age of marriage is %d", MinAgeMarriage(SEX));
+        reenter;
+    endif;
 </logic>
 
 
@@ -65,10 +67,10 @@ PROC MARRIAGE_AGE
 PROC GLOBAL
 
 Array string Months(12) = "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-						  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec";
+                          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec";
 
 function string FormatDate()
-	FormatDate = maketext("%d %s %d", sysdate("DD"), Months(sysdate("MM")), sysdate("YYYY"));
+    FormatDate = maketext("%d %s %d", sysdate("DD"), Months(sysdate("MM")), sysdate("YYYY"));
 end;
 </logic>
 
@@ -83,14 +85,14 @@ Array numeric SexCountsByProvince(NumberProvinces, 2); // province by sex
 
 PROC SEX
 
-	inc(SexCountsByProvince(PROVINCE, SEX));
+    inc(SexCountsByProvince(PROVINCE, SEX));
 
 PROC DISPLAY_COUNTS
 
-	do numeric counter = 1 while counter <= SexCountsByProvince.length(1)
-		errmsg("Province %d has %d males and %d females", counter,
-			SexCountsByProvince(counter, 1), SexCountsByProvince(counter, 2));
-	enddo;
+    do numeric counter = 1 while counter <= SexCountsByProvince.length(1)
+        errmsg("Province %d has %d males and %d females", counter,
+            SexCountsByProvince(counter, 1), SexCountsByProvince(counter, 2));
+    enddo;
 </logic>
 
 
@@ -109,9 +111,9 @@ PROC GLOBAL
 //   7=other relative
 //   8=unrelated
 
-Array HD_Sex_Rel (8) = 1, 2, 1, 1, 2, 2, 1, 2;	// Format 1, all values are explicitly stated
-Array HD_Sex_Rel (8) = 0, ...;					// Format 2, zero will be assigned to all array positions
-Array HD_Sex_Rel (8) = 1, 2, ...;				// Format 2, values 1 & 2 will be used (respectively) for array positions 3-4, 5-6, and 7-8
+Array HD_Sex_Rel (8) = 1, 2, 1, 1, 2, 2, 1, 2;  // Format 1, all values are explicitly stated
+Array HD_Sex_Rel (8) = 0, ...;                  // Format 2, zero will be assigned to all array positions
+Array HD_Sex_Rel (8) = 1, 2, ...;               // Format 2, values 1 & 2 will be used (respectively) for array positions 3-4, 5-6, and 7-8
 </logic>
 
 

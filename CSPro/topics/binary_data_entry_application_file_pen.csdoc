@@ -8,15 +8,15 @@ Binary data entry applications created in versions of CSPro prior to version 6.0
 
 <indent>
     <table 3 center header>
-        <cell>Creation~!~Version</cell><cell>Supported~!~Until Version</cell><cell>Extension</cell>
+        <cell>Creation~!~Version</cell><cell>Last Supported~!~Version</cell><cell>Extension</cell>
         <cell><b><link what_is_new_in_cspro_8_1.csdoc>8.1</link></b></cell><cell><b>&mdash;</b></cell><cell>.pen</cell>
         <cell><b><link what_is_new_in_cspro_8_0.csdoc>8.0</link></b></cell><cell><b>&mdash;</b></cell><cell>.pen</cell>
         <cell><b><link what_is_new_in_cspro_7_7.csdoc>7.7</link></b></cell><cell><b>&mdash;</b></cell><cell>.pen</cell>
-        <cell><b><link what_is_new_in_cspro_7_6.csdoc>7.6</link></b></cell><cell><b><link what_is_new_in_cspro_8_1.csdoc>8.1</link></b></cell><cell>.pen</cell>
-        <cell><b><link what_is_new_in_cspro_7_5.csdoc>7.5</link></b></cell><cell><b><link what_is_new_in_cspro_8_1.csdoc>8.1</link></b></cell><cell>.pen</cell>
-        <cell><b><link what_is_new_in_cspro_7_4.csdoc>7.4</link></b></cell><cell><b><link what_is_new_in_cspro_8_0.csdoc>8.0</link></b></cell><cell>.pen</cell>
-        <cell><b><link what_is_new_in_cspro_7_3.csdoc>7.3</link></b></cell><cell><b><link what_is_new_in_cspro_7_7.csdoc>7.7</link></b></cell><cell>.pen</cell>
-        <cell><b><link what_is_new_in_cspro_7_2.csdoc>7.2</link></b></cell><cell><b><link what_is_new_in_cspro_7_6.csdoc>7.6</link></b></cell><cell>.pen</cell>
+        <cell><b><link what_is_new_in_cspro_7_6.csdoc>7.6</link></b></cell><cell><b><link what_is_new_in_cspro_8_0.csdoc>8.0</link></b></cell><cell>.pen</cell>
+        <cell><b><link what_is_new_in_cspro_7_5.csdoc>7.5</link></b></cell><cell><b><link what_is_new_in_cspro_8_0.csdoc>8.0</link></b></cell><cell>.pen</cell>
+        <cell><b><link what_is_new_in_cspro_7_4.csdoc>7.4</link></b></cell><cell><b><link what_is_new_in_cspro_7_7.csdoc>7.7</link></b></cell><cell>.pen</cell>
+        <cell><b><link what_is_new_in_cspro_7_3.csdoc>7.3</link></b></cell><cell><b><link what_is_new_in_cspro_7_6.csdoc>7.6</link></b></cell><cell>.pen</cell>
+        <cell><b><link what_is_new_in_cspro_7_2.csdoc>7.2</link></b></cell><cell><b><link what_is_new_in_cspro_7_5.csdoc>7.5</link></b></cell><cell>.pen</cell>
         <cell><b><link what_is_new_in_cspro_7_1.csdoc>7.1</link></b></cell><cell><b><link what_is_new_in_cspro_7_4.csdoc>7.4</link></b></cell><cell>.pen</cell>
         <cell><b><link what_is_new_in_cspro_7_0.csdoc>7.0</link></b></cell><cell><b><link what_is_new_in_cspro_7_4.csdoc>7.4</link></b></cell><cell>.pen</cell>
         <cell><b>6.3</b></cell><cell><b><link what_is_new_in_cspro_7_4.csdoc>7.4</link></b></cell><cell>.pen</cell>

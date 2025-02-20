@@ -31,7 +31,8 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 <subheader>Logic</subheader>
 
 <list>
-    <li>The <link Image.csdoc>Image</link> object can now load <link "https://en.wikipedia.org/wiki/ICO_(file_format)">icon files (.ico)</link> on Windows and can <link Image_save_function.csdoc>save</link> to that format on all platforms.</li>
+    <li>The <logiccolor>Image</logiccolor> object can now load <link "https://en.wikipedia.org/wiki/ICO_(file_format)">icon files (.ico)</link> on Windows and can <link Image_save_function.csdoc>save</link> to that format on all platforms.</li>
+    <li>If an <logiccolor>Array</logiccolor> object is defined with initial values and is also marked as a <link Array_statement.csdoc>saved array</link>, the initial values will only be used if the array does not exist in the <link saved_arrays_file_sva.csdoc>saved array file</link>.</li>
 </list>
 
 
