@@ -20,6 +20,13 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 </list>
 
 
+<subheader>Android</subheader>
+
+<list>
+    <li>CSEntry can be <link android_launching_csentry_from_other_applications.csdoc>launched using a deep link</link> that starts with <colorinline Kotlin>"https://csprousers.org/pff"</colorinline>. CSEntry runs the application specified as part of the deep link's path.</li>
+</list>
+
+
 <subheader>Mapping</subheader>
 
 <list>

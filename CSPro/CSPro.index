@@ -328,6 +328,7 @@
     "subindex": [ 
       { "path": "android_development.csdoc", "title": "Development" },
       { "path": "android_interacting_with_other_applications.csdoc", "title": "Interacting With Other Applications" },
+      { "path": "android_launching_csentry_from_other_applications.csdoc", "~title": "Launching CSEntry from Other Android Applications" },
       { "path": "SystemApp_exec_function.csdoc", "title": "Launching Other Applications" },
       { "path": "android_limitations.csdoc", "title": "Limitations" },
       { "path": "csentry_settings_modification.csdoc", "title": "Menu Customization" },
@@ -1144,7 +1145,12 @@
   },
   { "path": "cspro_program_structure.csdoc", "title": "Declaration Section" },
   { "path": "decompress_function.csdoc", "~title": "Decompress Function" },
-  { "path": "SystemApp_exec_function.csdoc", "title": "Deep Link" },
+  { "path": "android_interacting_with_other_applications.csdoc", "title": "Deep Link",
+    "subindex": [ 
+      { "path": "SystemApp_exec_function.csdoc", "title": "Launching Android Applications" },
+      { "path": "android_launching_csentry_from_other_applications.csdoc", "title": "Launching CSEntry" }
+    ]
+  },
   { "path": "preferences_and_default_formats.csdoc", "title": "Default",
     "subindex": [ 
       { "path": "preferences_and_default_formats.csdoc", "~title": "Preferences and Default Formats" },

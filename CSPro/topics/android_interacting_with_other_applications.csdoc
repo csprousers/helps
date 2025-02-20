@@ -2,6 +2,9 @@
 
 Most users using <link android_development.csdoc>CSEntry on Android</link> will be content working within the confines of the CSPro ecosystem. However, some users may want to share data between Android applications. To facilitate this, CSPro supports several ways to interact with other Android applications.
 
+If you are interested in launching CSEntry from another Android application, this can be done using a <link android_launching_csentry_from_other_applications.csdoc>deep link or Intent</link>.
+
+
 <subheader>Launching Other Applications</subheader>
 
 Using the <logiccolor>SystemApp</logiccolor> object and the <logiccolor>SystemApp.exec</logiccolor> function, you can open other applications from within a CSPro application. Due to <link "https://support.google.com/googleplay/android-developer/answer/10158779">limitations</link> imposed by Google that restrict what applications can be opened, using a <link "https://developer.android.com/training/app-links#deep-links">deep link</link> to open the other application is the best approach. For example:
@@ -22,7 +25,7 @@ CS.File.copy(source := "file-in-application-directory.jpg",
              destination := Path.concat(Downloads, "file-in-downloads-directory.jpg"));
 </logic>
 
-<b>Copy a system document</b>: Some files, especially <link "https://developer.android.com/training/data-storage/shared/media">media files</link> are accessible to CSEntry. These files cannot be opened directly, but can be copied to the <i><definition android_package_name /></i> directory and manipulated from that location. These files must be copied using a <link sharable_uri.csdoc>sharable URI</link>. For example, this code allows the user to select a system document and then copies it to the application's directory:
+<b>Copy a system document</b>: Some files, especially <link "https://developer.android.com/training/data-storage/shared/media">media files</link>, are accessible to CSEntry. These files cannot be opened directly, but can be copied to the <i><definition android_package_name /></i> directory and manipulated from that location. These files must be copied using a <link sharable_uri.csdoc>sharable URI</link>. For example, this code allows the user to select a system document and then copies it to the application's directory:
 
 <logic>
 string selectDocumentJson = CS.System.selectDocument();
@@ -51,4 +54,4 @@ It is possible to <link action_invoker_execution_android.csdoc>call into CSEntry
 </list>
 
 
-<seealso android_development.csdoc SystemApp_exec_function.csdoc CS_System.csdoc />
+<seealso android_development.csdoc android_launching_csentry_from_other_applications.csdoc SystemApp_exec_function.csdoc CS_System.csdoc />

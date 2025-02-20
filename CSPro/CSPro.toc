@@ -578,7 +578,8 @@
               { "path": "android_limitations.csdoc", "~title": "Android Limitations" },
               { "path": "android_navigation.csdoc", "~title": "Android Navigation" },
               { "path": "csentry_settings_modification.csdoc", "~title": "CSEntry Settings Modification" },
-              { "path": "android_interacting_with_other_applications.csdoc", "~title": "Interacting With Other Android Applications" }
+              { "path": "android_interacting_with_other_applications.csdoc", "~title": "Interacting With Other Android Applications" },
+              { "path": "android_launching_csentry_from_other_applications.csdoc", "~title": "Launching CSEntry from Other Android Applications" }
             ]
           }
         ]
