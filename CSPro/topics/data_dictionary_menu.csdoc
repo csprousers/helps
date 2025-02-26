@@ -10,7 +10,7 @@ The following is a summary of the menu options available while editing dictionar
     <cell><link save_an_application.csdoc>Save</link></cell><cell>Save an application.</cell>
     <cell><link save_dictionary_as_new_file.csdoc>Save As</link></cell><cell>Save the current dictionary to a new file name.</cell>
     <cell><link manage_application_files.csdoc>Manage Application Files</link></cell><cell>Add or remove files (such as an external dictionary) from an existing application.</cell>
-    <cell><link cspro_settings.csdoc>CSPro Settings</link></cell><cell>Clears saved credentials.</cell>
+    <cell><link manage_credentials.csdoc>Manage Credentials</link></cell><cell>Clear cached credentials from your computer.</cell>
     <cell><link change_the_print_page_setup.csdoc>Page Setup</link></cell><cell>Change headers, footers, and margins for printed pages.</cell>
     <cell><link change_the_print_page_setup.csdoc>Print Setup</link></cell><cell>Change orientation and paper size for printed pages.</cell>
     <cell><link print_all_or_part_of_a_document.csdoc>Print Preview</link></cell><cell>Preview the printed pages.</cell>

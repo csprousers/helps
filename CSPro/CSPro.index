@@ -1,7 +1,7 @@
 ﻿[
   { "path": "create_fills_in_questions.csdoc", "title": "~~" },
-  { "path": "create_fills_in_questions.csdoc", "title": "~~~" }, 
-  { "path": "operators.csdoc", "title": "-", 
+  { "path": "create_fills_in_questions.csdoc", "title": "~~~" },
+  { "path": "operators.csdoc", "title": "-",
     "subindex": [ 
       { "path": "operators.csdoc", "title": "Operator" },
       { "path": "operator_precedence.csdoc", "~title": "Operator Precedence" }
@@ -333,6 +333,7 @@
       { "path": "android_limitations.csdoc", "title": "Limitations" },
       { "path": "csentry_settings_modification.csdoc", "title": "Menu Customization" },
       { "path": "android_navigation.csdoc", "title": "Navigation" },
+      { "path": "android_settings.csdoc", "title": "Settings" },
       { "path": "sharable_uri.csdoc", "~title": "Sharable URI" },
       { "path": "action_invoker_execution_android.csdoc", "title": "Using the Action Invoker From Other Applications" }
     ]
@@ -410,7 +411,7 @@
   { "path": "assignment_statement.csdoc", "~title": "Assignment Statement" },
   { "path": "statements.csdoc", "title": "Assignment Statements" },
   { "path": "HashMap.csdoc", "title": "Associative Array" },
-  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Asynchronous Execution" }, 
+  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Asynchronous Execution" },
   { "path": "Audio.csdoc", "~title": "Audio Object",
     "subindex": [ 
       { "path": "Audio_clear_function.csdoc", "~title": "Audio.clear Function" },
@@ -721,7 +722,7 @@
   },
   { "path": "choose_topic_sections.csdoc", "~title": "Choose Topic Sections" },
   { "path": "html_in_cspro.csdoc", "title": "Chromium" },
-  { "path": "cspro_settings.csdoc", "title": "Clear Credentials" },
+  { "path": "manage_credentials.csdoc", "title": "Clear Credentials" },
   { "path": "clear_function.csdoc", "~title": "Clear Function",
     "subindex": [ 
       { "path": "Array_clear_function.csdoc", "~title": "Array.clear Function" },
@@ -936,7 +937,7 @@
       { "path": "Image_createQRCode_function.csdoc", "~title": "Image.createQRCode Function" }
     ]
   },
-  { "path": "cspro_settings.csdoc", "title": "Credentials (Clear)" },
+  { "path": "manage_credentials.csdoc", "title": "Credentials (Clear)" },
   { "path": "create_a_table.csdoc", "title": "Cross Tabulation",
     "subindex": [ 
       { "path": "tabulation_applications.csdoc", "title": "Applications" },
@@ -983,7 +984,6 @@
       { "path": "cspro_program_structure.csdoc", "title": "Procedural Section" }
     ]
   },
-  { "path": "cspro_settings.csdoc", "~title": "CSPro Settings" },
   { "path": "action_invoker_execution_javascript_web.csdoc", "title": "CSProActionInvoker" },
   { "path": "encode_function.csdoc", "title": "CSV",
     "subindex": [ 
@@ -2406,6 +2406,7 @@
       { "path": "renaming_tables_and_table_applications.csdoc", "title": "Table Specifications" }
     ]
   },
+  { "path": "manage_credentials.csdoc", "~title": "Manage Credentials" },
   { "path": "manipulate_automatic_reports.csdoc", "~title": "Manipulate Automatic Reports" },
   { "path": "cspro_capabilities.csdoc", "title": "Manipulate Data Files" },
   { "path": "methods_of_correcting_data.csdoc", "title": "Manual",
@@ -3849,7 +3850,7 @@
       { "path": "synctime_function.csdoc", "title": "Statistics" }
     ]
   },
-  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Synchronous Execution" }, 
+  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Synchronous Execution" },
   { "path": "syncmessage_function.csdoc", "~title": "SyncMessage Function" },
   { "path": "syncparadata_function.csdoc", "~title": "SyncParadata Function" },
   { "path": "syncserver_function.csdoc", "~title": "SyncServer Function" },

@@ -16,6 +16,7 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
             <li><link change_report_properties.csdoc>Report</link>: <link templated_reports.csdoc>~~ fills</link> can be escaped for writing to CSV format.</li>
             <li><link resources.csdoc>Resources</link>: in addition to directories, it is now possible to add single files as resources, and options provide control over what files in directories are processed.</li>
         </list></li>
+    <li>The CSPro Settings dialog has been renamed <link manage_credentials.csdoc>Manage Credentials</link> and now allows for the granular clearing of synchronization, data, and location credentials.</li>
     <li>Numeric value sets can be generated in <link generate_numeric_value_set.csdoc>descending order</link>.</li>
 </list>
 

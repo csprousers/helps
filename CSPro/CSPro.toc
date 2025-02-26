@@ -93,7 +93,7 @@
               { "path": "specify_application_file_names.csdoc", "~title": "Specify Application File Names" },
               { "path": "manage_application_files.csdoc", "~title": "Manage Application Files" },
               { "path": "pack_an_application.csdoc", "~title": "Pack an Application" },
-              { "path": "../Shared/topics/cspro_settings.csdoc", "~title": "CSPro Settings" },
+              { "path": "../Shared/topics/manage_credentials.csdoc", "~title": "Manage Credentials" },
               { "path": "../Shared/topics/get_help.csdoc", "~title": "Get Help" },
               { "path": "collaborating_on_cspro_development.csdoc", "~title": "Collaborating on CSPro Development" }
             ]
@@ -577,6 +577,7 @@
               { "path": "android_development.csdoc", "~title": "Android Development" },
               { "path": "android_limitations.csdoc", "~title": "Android Limitations" },
               { "path": "android_navigation.csdoc", "~title": "Android Navigation" },
+              { "path": "android_settings.csdoc", "~title": "Android Settings" },
               { "path": "csentry_settings_modification.csdoc", "~title": "CSEntry Settings Modification" },
               { "path": "android_interacting_with_other_applications.csdoc", "~title": "Interacting With Other Android Applications" },
               { "path": "android_launching_csentry_from_other_applications.csdoc", "~title": "Launching CSEntry from Other Android Applications" }
@@ -902,9 +903,9 @@
           { "path": "data_source_cspro_export.csdoc", "title": "CSPro Export" },
           { "path": "case_read_optimization.csdoc", "~title": "Case Read Optimization" }
         ]
-      }, 
+      },
       {
-        "title": "CSPro Statements and Functions", 
+        "title": "CSPro Statements and Functions",
         "documents": [
           { "path": "statement_format_symbols.csdoc", "~title": "Statement Format Symbols" },
           { "path": "logic_alphabetical_list.csdoc", "~title": "Alphabetical List of Functions and Statements" },

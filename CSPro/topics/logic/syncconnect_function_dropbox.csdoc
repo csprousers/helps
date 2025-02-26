@@ -10,7 +10,7 @@ b = syncconnect(<arg>Dropbox</arg>);
 
 <subheader>Description</subheader>
 
-The <logiccolor>syncconnect</logiccolor> function opens a connection to Dropbox to synchronize data and files over the Internet. The first and only argument must be the keyword <arg>Dropbox</arg>. This requires an account with the online file sharing service <link https://www.dropbox.com/>Dropbox</link>. It does <b>NOT</b> require that the Dropbox client software be installed on the device. The first time the connection is made, the user will see a prompt to enter the Dropbox username and password and these settings will be saved in secure storage for future synchronizations. You can use the <link cspro_settings.csdoc>CSPro Settings</link> dialog to clear any cached settings.
+The <logiccolor>syncconnect</logiccolor> function opens a connection to Dropbox to synchronize data and files over the Internet. The first and only argument must be the keyword <arg>Dropbox</arg>. This requires an account with the online file sharing service <link https://www.dropbox.com/>Dropbox</link>. It does <b>NOT</b> require that the Dropbox client software be installed on the device. The first time the connection is made, the user will see a prompt to enter the Dropbox username and password and these settings will be saved in secure storage for future synchronizations. You can use the <link manage_credentials.csdoc>Manage Credentials</link> dialog to clear any cached settings.
 
 <b>Note: </b>If the attempt to establish an internet connection was unsuccessful, CSPro will alert you with an error message. If you wish to preempt this error message in order to handle this situation on your own, use the <topic connection_function.csdoc />.
 
@@ -20,10 +20,10 @@ The <logiccolor>syncconnect</logiccolor> function opens a connection to Dropbox 
 // connect to Dropbox
 if syncconnect(Dropbox) then
 
-	// send the latest cases to Dropbox
-	syncdata(PUT,SURVEY_DICT);
+    // send the latest cases to Dropbox
+    syncdata(PUT, SURVEY_DICT);
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

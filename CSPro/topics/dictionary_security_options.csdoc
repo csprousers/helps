@@ -17,7 +17,7 @@ The drop-down allows you to choose a time period to cache the password. Availabl
 
 Encryption options control whether or not passwords can be stored for <link data_sources.csdoc>data sources</link> using that dictionary. These options only apply when using the dictionary to access <link encrypted_data.csdoc>encrypted data</link> using the <link data_source_csdbe.csdoc>Encrypted CSPro DB</link> data source. By default, passwords used to open such files are not cached on the machine, meaning that the password must be specified every time the file is opened (unless the password is specified in a <link connection_string.csdoc>connection string</link>). If you want to allow the storage of passwords, specify the number of minutes that the stored password can be used to open the data file.
 
-The password itself will not be stored on the device; instead, a key that can be used to open the data file will be stored. A clever hacker who accesses this key may be able to open the data but will have a hard time reverse engineering the key to get the original password itself. The key is stored in secure storage on the device. You can use the <link cspro_settings.csdoc>CSPro Settings</link> dialog to clear any cached passwords.
+The password itself will not be stored on the device; instead, a key that can be used to open the data file will be stored. A clever hacker who accesses this key may be able to open the data but will have a hard time reverse engineering the key to get the original password itself. The key is stored in secure storage on the device. You can use the <link manage_credentials.csdoc>Manage Credentials</link> dialog to clear any cached passwords.
 
 
 <seealso encrypted_data.csdoc />
