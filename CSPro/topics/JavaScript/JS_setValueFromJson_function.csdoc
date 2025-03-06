@@ -1,0 +1,38 @@
+﻿<title>JS.setValueFromJson Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+b = JS.setValueFromJson(<arg>name</arg>, <arg>json</arg>);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>JS.setValueFromJson</logiccolor> function sets the value of a JavaScript variable or property from <link JSON_primer.csdoc>JSON</link> representation passed to the function as the string expression <arg>json</arg>. The JSON is converted to a value or object using <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">JSON.parse</link>. This is a useful way to transfer data from CSPro logic to JavaScript if the data cannot be represented by a CSPro object that can be handled by the <logiccolor>JS.setValue</logiccolor> function. This function can be used to create new variables or properties, or to modify existing ones.
+
+<include include_JS_name_specification.hgi />
+
+
+<subheader>Return Value</subheader>
+
+The function returns a logical value of 1 (<logiccolor>true</logiccolor>) if the JSON is valid and the variable or property is successfully set. If JSON parsing or JavaScript evaluation ends in an uncaught exception, the function returns 0 (<logiccolor>false</logiccolor>) and displays an error message.
+
+
+<subheader>Example</subheader>
+
+<logic>
+<include include_JS_setValueFromJson_example.hgi />
+
+JS.setValueFromJson("france.area", "643801");
+
+JS.setValueFromJson("csproVersion", "<definition CSPro::version />");
+
+// displays: Using CSPro <definition CSPro::version />, I learned that France has an area of 643801 km²!
+errmsg("%s", JS.eval("`Using CSPro ${csproVersion.toFixed(1)}, "
+                     "I learned that ${france.name} has an area of ${france.area} km²!`"));
+</logic>
+
+
+<seealso javascript_overview.csdoc JS.csdoc JS_getValue_function.csdoc JS_hasValue_function.csdoc JS_setValueFromJson_function.csdoc />

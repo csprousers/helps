@@ -678,6 +678,7 @@
       { "path": "change_form_properties.csdoc", "title": "Form Properties" },
       { "path": "change_formatting.csdoc", "title": "Formatting in CAPI" },
       { "path": "change_forms_file_properties.csdoc", "title": "Forms File Properties" },
+      { "path": "properties_javascript.csdoc", "~title": "JavaScript Properties" },
       { "path": "properties_json_serialization.csdoc", "~title": "JSON Serialization Properties" },
       { "path": "change_level_properties.csdoc", "title": "Level Properties" },
       { "path": "properties_mapping.csdoc", "~title": "Mapping Properties" },
@@ -727,6 +728,7 @@
     "subindex": [ 
       { "path": "Array_clear_function.csdoc", "~title": "Array.clear Function" },
       { "path": "Audio_clear_function.csdoc", "~title": "Audio.clear Function" },
+      { "path": "clear_function.csdoc", "~title": "Clear Function" },
       { "path": "Document_clear_function.csdoc", "~title": "Document.clear Function" },
       { "path": "Freq_clear_function.csdoc", "~title": "Freq.clear Function" },
       { "path": "Geometry_clear_function.csdoc", "~title": "Geometry.clear Function" },
@@ -761,6 +763,7 @@
   { "path": "close_an_application.csdoc", "~title": "Close an Application" },
   { "path": "close_function.csdoc", "~title": "Close Function",
     "subindex": [ 
+      { "path": "close_function.csdoc", "~title": "Close Function" },
       { "path": "File_close_function.csdoc", "~title": "File.close Function" }
     ]
   },
@@ -833,6 +836,7 @@
   { "path": "concat_function.csdoc", "~title": "Concat Function",
     "subindex": [ 
       { "path": "Audio_concat_function.csdoc", "~title": "Audio.concat Function" },
+      { "path": "concat_function.csdoc", "~title": "Concat Function" },
       { "path": "Path_concat_function.csdoc", "~title": "Path.concat Function" }
     ]
   },
@@ -1419,6 +1423,11 @@
       { "path": "string_literals.csdoc", "~title": "String Literals" }
     ]
   },
+  { "path": "JS_eval_function.csdoc", "title": "eval Function",
+    "subindex": [ 
+      { "path": "JS_eval_function.csdoc", "~title": "JS.eval Function" }
+    ]
+  },
   { "path": "cspro_program_structure.csdoc", "title": "Events",
     "subindex": [ 
       { "path": "killfocus_statement.csdoc", "~title": "KillFocus Statement" },
@@ -1716,6 +1725,7 @@
       { "path": "logic_alphabetical_list.csdoc", "title": "Alphabetical Listing" },
       { "path": "CS_Logic_invoke.csdoc", "title": "Executing Using the Action Invoker" },
       { "path": "additional_function_examples.csdoc", "title": "Function Pointers" },
+      { "path": "javascript_user_defined_functions.csdoc", "title": "JavaScript Function Wrappers" },
       { "path": "function_named_arguments.csdoc", "title": "Named Arguments" },
       { "path": "function_parameters_optional.csdoc", "~title": "Optional Function Parameters" },
       { "path": "function_arguments_ref.csdoc", "~title": "Passing Function Arguments by Reference" },
@@ -1859,10 +1869,16 @@
   },
   { "path": "getsymbol_function.csdoc", "~title": "GetSymbol Function" },
   { "path": "getusername_function.csdoc", "~title": "GetUserName Function" },
-  { "path": "getvalue_function.csdoc", "~title": "GetValue Function" },
+  { "path": "getvalue_function.csdoc", "title": "GetValue Function",
+    "subindex": [ 
+      { "path": "getvalue_function.csdoc", "~title": "GetValue Function" },
+      { "path": "JS_getValue_function.csdoc", "~title": "JS.getValue Function" }
+    ]
+  },
   { "path": "getvalue_function.csdoc", "title": "GetValueAlpha Function" },
   { "path": "Symbol_getValueJson_function.csdoc", "title": "getValueJson Function",
     "subindex": [ 
+      { "path": "JS_getValueJson_function.csdoc", "~title": "JS.getValueJson Function" },
       { "path": "Symbol_getValueJson_function.csdoc", "~title": "Symbol.getValueJson Function" }
     ]
   },
@@ -1912,6 +1928,12 @@
       { "path": "HashMap_length_function.csdoc", "~title": "HashMap.length Function" },
       { "path": "HashMap_remove_function.csdoc", "~title": "HashMap.remove Function" },
       { "path": "HashMap_statement.csdoc", "~title": "HashMap Statement" }
+    ]
+  },
+  { "path": "Item_hasValue_function.csdoc", "title": "hasValue Function",
+    "subindex": [ 
+      { "path": "Item_hasValue_function.csdoc", "~title": "Item.hasValue Function" },
+      { "path": "JS_hasValue_function.csdoc", "~title": "JS.hasValue Function" }
     ]
   },
   { "path": "change_the_print_page_setup.csdoc", "title": "Header" },
@@ -2068,6 +2090,7 @@
   },
   { "path": "insert_function.csdoc", "~title": "Insert Function",
     "subindex": [ 
+      { "path": "insert_function.csdoc", "~title": "Insert Function" },
       { "path": "List_insert_function.csdoc", "~title": "List.insert Function" }
     ]
   },
@@ -2101,7 +2124,12 @@
   { "path": "introduction_to_production_tabulations.csdoc", "~title": "Introduction to Production Tabulations" },
   { "path": "introduction_to_run_in_parts.csdoc", "~title": "Introduction to Run in Parts" },
   { "path": "invalueset_function.csdoc", "~title": "InValueSet Function" },
-  { "path": "invoke_function.csdoc", "~title": "Invoke Function" },
+  { "path": "invoke_function.csdoc", "title": "Invoke Function",
+    "subindex": [ 
+      { "path": "invoke_function.csdoc", "~title": "Invoke Function" },
+      { "path": "JS_invoke_function.csdoc", "~title": "JS.invoke Function" }
+    ]
+  },
   { "path": "ischecked_function.csdoc", "~title": "IsChecked Function" },
   { "path": "timestamp_function.csdoc", "title": "ISO 8601" },
   { "path": "ispartial_function.csdoc", "~title": "IsPartial Function" },
@@ -2152,10 +2180,24 @@
       { "path": "tabulate_items_with_multiple_occurrences.csdoc", "title": "Tabulate" }
     ]
   },
-  { "path": "action_invoker_execution_javascript_embedded.csdoc", "title": "JavaScript",
+  { "path": "javascript_overview.csdoc", "title": "JavaScript",
     "subindex": [ 
       { "path": "action_invoker_execution_javascript_embedded.csdoc", "title": "Action Invoker Execution (Embedded)" },
-      { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Action Invoker Execution (from Web Views)" }
+      { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Action Invoker Execution (from Web Views)" },
+      { "path": "javascript_user_defined_functions.csdoc", "~title": "JavaScript User-Defined Functions" },
+      { "path": "javascript_value_conversions.csdoc", "~title": "JavaScript ⇄ CSPro Value Conversions" },
+      { "path": "JS_eval_function.csdoc", "~title": "JS.eval Function" },
+      { "path": "JS_getValue_function.csdoc", "~title": "JS.getValue Function" },
+      { "path": "JS_getValueJson_function.csdoc", "~title": "JS.getValueJson Function" },
+      { "path": "JS_hasValue_function.csdoc", "~title": "JS.hasValue Function" },
+      { "path": "JS_invoke_function.csdoc", "~title": "JS.invoke Function" },
+      { "path": "JS_setValue_function.csdoc", "~title": "JS.setValue Function" },
+      { "path": "JS_setValueFromJson_function.csdoc", "~title": "JS.setValueFromJson Function" },
+      { "path": "JS.csdoc", "~title": "JS Namespace" },
+      { "path": "javascript_overview.csdoc", "title": "Overview" },
+      { "path": "properties_javascript.csdoc", "title": "Properties" },
+      { "path": "javascript_overview.csdoc", "title": "QuickJS" },
+      { "path": "javascript_overview.csdoc", "title": "Use in CSPro" }
     ]
   },
   { "path": "javascript_interface.csdoc", "~title": "JavaScript Interface (deprecated)" },
@@ -2175,6 +2217,17 @@
   { "path": "join_and_split_roster_columns.csdoc", "~title": "Join and Split Roster Columns" },
   { "path": "external_libraries.csdoc", "title": "jQuery" },
   { "path": "external_libraries.csdoc", "title": "jQuery UI" },
+  { "path": "JS.csdoc", "~title": "JS Namespace",
+    "subindex": [ 
+      { "path": "JS_eval_function.csdoc", "~title": "JS.eval Function" },
+      { "path": "JS_getValue_function.csdoc", "~title": "JS.getValue Function" },
+      { "path": "JS_getValueJson_function.csdoc", "~title": "JS.getValueJson Function" },
+      { "path": "JS_hasValue_function.csdoc", "~title": "JS.hasValue Function" },
+      { "path": "JS_invoke_function.csdoc", "~title": "JS.invoke Function" },
+      { "path": "JS_setValue_function.csdoc", "~title": "JS.setValue Function" },
+      { "path": "JS_setValueFromJson_function.csdoc", "~title": "JS.setValueFromJson Function" }
+    ]
+  },
   { "path": "external_libraries.csdoc", "title": "JsBarcode" },
   { "path": "JSON_primer.csdoc", "title": "JSON",
     "subindex": [ 
@@ -2748,7 +2801,8 @@
   { "path": "open_an_existing_dictionary_application.csdoc", "~title": "Open an Existing Dictionary Application" },
   { "path": "open_function.csdoc", "~title": "Open Function",
     "subindex": [ 
-      { "path": "File_open_function.csdoc", "~title": "File.open Function" }
+      { "path": "File_open_function.csdoc", "~title": "File.open Function" },
+      { "path": "open_function.csdoc", "~title": "Open Function" }
     ]
   },
   { "path": "collaborating_on_cspro_development.csdoc", "title": "Open Source" },
@@ -3060,6 +3114,7 @@
       { "path": "change_form_properties.csdoc", "title": "Form" },
       { "path": "change_forms_file_properties.csdoc", "title": "Form File" },
       { "path": "item_properties.csdoc", "title": "Item" },
+      { "path": "properties_javascript.csdoc", "title": "JavaScript" },
       { "path": "properties_json_serialization.csdoc", "title": "JSON Serialization" },
       { "path": "level_properties.csdoc", "title": "Level (Dictionary)" },
       { "path": "change_level_properties.csdoc", "title": "Level (Form)" },
@@ -3107,6 +3162,7 @@
   },
   { "path": "questionnaire_and_dictionary_organization.csdoc", "~title": "Questionnaire and Dictionary Organization" },
   { "path": "questions.csdoc", "~title": "Questions" },
+  { "path": "javascript_overview.csdoc", "title": "QuickJS" },
   { "path": "data_source_r.csdoc", "~title": "R Data Source" },
   { "path": "radio_button.csdoc", "~title": "Radio Button" },
   { "path": "random_function.csdoc", "title": "Random" },
@@ -3131,6 +3187,7 @@
   { "path": "re_test_with_live_data.csdoc", "~title": "Re-Test with Live Data" },
   { "path": "File_read_function.csdoc", "title": "Read Function",
     "subindex": [ 
+      { "path": "Barcode_read_function.csdoc", "~title": "Barcode.read Function" },
       { "path": "File_read_function.csdoc", "~title": "File.read Function" }
     ]
   },
@@ -3533,7 +3590,8 @@
   { "path": "setproperty_function.csdoc", "~title": "SetProperty Function",
     "subindex": [ 
       { "path": "Geometry_setProperty_function.csdoc", "~title": "Geometry.setProperty Function" },
-      { "path": "Pff_setProperty_function.csdoc", "~title": "Pff.setProperty Function" }
+      { "path": "Pff_setProperty_function.csdoc", "~title": "Pff.setProperty Function" },
+      { "path": "setproperty_function.csdoc", "~title": "SetProperty Function" }
     ]
   },
   { "path": "CS_Settings.csdoc", "~title": "Settings Action Invoker Namespace",
@@ -3549,9 +3607,15 @@
   },
   { "path": "setub_function.csdoc", "~title": "SetUB Function" },
   { "path": "installing_data_entry_applications.csdoc", "title": "Setup" },
-  { "path": "setvalue_function.csdoc", "~title": "SetValue Function" },
+  { "path": "setvalue_function.csdoc", "title": "SetValue Function",
+    "subindex": [ 
+      { "path": "JS_setValue_function.csdoc", "~title": "JS.setValue Function" },
+      { "path": "setvalue_function.csdoc", "~title": "SetValue Function" }
+    ]
+  },
   { "path": "Symbol_setValueFromJson_function.csdoc", "title": "setValueFromJson Function",
     "subindex": [ 
+      { "path": "JS_setValueFromJson_function.csdoc", "~title": "JS.setValueFromJson Function" },
       { "path": "Symbol_setValueFromJson_function.csdoc", "~title": "Symbol.setValueFromJson Function" }
     ]
   },
@@ -3625,6 +3689,7 @@
   { "path": "sort_function.csdoc", "~title": "Sort Function",
     "subindex": [ 
       { "path": "List_sort_function.csdoc", "~title": "List.sort Function" },
+      { "path": "sort_function.csdoc", "~title": "Sort Function" },
       { "path": "ValueSet_sort_function.csdoc", "~title": "ValueSet.sort Function" }
     ]
   },
@@ -3719,7 +3784,8 @@
   { "path": "status_file_sts.csdoc", "~title": "Status File (.sts)" },
   { "path": "stop_function.csdoc", "~title": "Stop Function",
     "subindex": [ 
-      { "path": "Audio_stop_function.csdoc", "~title": "Audio.stop Function" }
+      { "path": "Audio_stop_function.csdoc", "~title": "Audio.stop Function" },
+      { "path": "stop_function.csdoc", "~title": "Stop Function" }
     ]
   },
   { "path": "expressions.csdoc", "title": "String",
@@ -4323,7 +4389,8 @@
       { "path": "Freq_view_function.csdoc", "~title": "Freq.view Function" },
       { "path": "Image_view_function.csdoc", "~title": "Image.view Function" },
       { "path": "Report_view_function.csdoc", "~title": "Report.view Function" },
-      { "path": "CS_UI_view.csdoc", "~title": "UI.view Action" }
+      { "path": "CS_UI_view.csdoc", "~title": "UI.view Action" },
+      { "path": "view_function.csdoc", "~title": "View Function" }
     ]
   },
   { "path": "viewing_multiple_and_facing_pages.csdoc", "~title": "Viewing Multiple and Facing Pages" },
@@ -4419,7 +4486,8 @@
   { "path": "write_function.csdoc", "~title": "Write Function",
     "subindex": [ 
       { "path": "File_write_function.csdoc", "~title": "File.write Function" },
-      { "path": "Report_write_function.csdoc", "~title": "Report.write Function" }
+      { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
+      { "path": "write_function.csdoc", "~title": "Write Function" }
     ]
   },
   { "path": "writecase_function.csdoc", "~title": "WriteCase Function" },

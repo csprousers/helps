@@ -20,7 +20,7 @@ The <logiccolor>invoke</logiccolor> function evaluates the string expression <ar
 
 The function's second version, using <link function_named_arguments.csdoc>named arguments</link>, allows arguments to be passed using the string expression <arg>arguments_json</arg>. This text is a <link JSON_primer.csdoc>JSON</link> string containing the arguments to the function. This string is evaluated as an object, with each of the object's names matched with the name of a function parameter, and the value is bound to that parameter using the rules for <link symbols_json_representation.csdoc>representing symbols in JSON</link>.
 
-Functions can also be executed at runtime using the <action>Logic.invoke</action> or <action>Logic.eval</action> actions.
+Functions can also be executed at runtime using the <action>Logic.invoke</action> or <action>Logic.eval</action> actions. JavaScript functions can be executed using the <logiccolor>JS.invoke</logiccolor> function.
 
 
 <subheader>Return Value</subheader>

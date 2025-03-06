@@ -1,0 +1,32 @@
+﻿<title>JavaScript Properties</title>
+<context IDD_PROPERTIES_JAVASCRIPT />
+
+To view options related to <link javascript_overview.csdoc>JavaScript</link> execution, select <link properties_application.csdoc>Application Properties</link> from the <b>Options</b> menu of a data entry, batch edit, or tabulation application, and then select the <b>JavaScript</b> section.
+
+These properties apply to JavaScript executed in <link javascript_overview.csdoc>embedded JavaScript</link>, not JavaScript executed in a <link html_in_cspro.csdoc>web view</link>.
+
+
+<subheader>Modules</subheader>
+
+<b>Abort on application startup when a module cannot be loaded.</b> If there are errors loading <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">modules</link>, the application will terminate if this setting is checked. A module loading error could occur when using the <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import">import statement</link> to import a file that does not exist.
+
+
+<subheader>Action Invoker</subheader>
+
+<b>Add the Action Invoker into the global object.</b> When checked, an object that can be used to access the <link action_invoker_execution_javascript_embedded.csdoc>Action Invoker</link> is created and inserted into the <link "https://developer.mozilla.org/en-US/docs/Glossary/Global_object">global object</link>.
+
+<b>Action Invoker name</b>: By default the name of the Invoker Action object is <logiccolor>CS</logiccolor> to match the name used in <link action_invoker_execution_cspro_logic.csdoc>CSPro logic</link>, but if preferred, a different name can be used.
+
+
+<subheader>Compiled Application Serialization</subheader>
+
+When creating a <link binary_data_entry_application_file_pen.csdoc>compiled application (.pen)</link>, CSPro logic is saved to the file as compiled bytecode and the actual logic is not contained in the .pen file. This setting controls how JavaScript files <link manage_application_files.csdoc>associated with the application</link> are processed when creating a compiled application:
+
+<list>
+    <li><b>Scripts and bytecode</b>: Both scripts and compiled bytecode are saved. This is the fastest and most flexible option, but results in the largest file.</li>
+    <li><b>Scripts only</b>: Only the scripts are saved. This is a flexible option, but application startup will be slightly slower as the scripts will have to be evaluated.</li>
+    <li><b>Bytecode only</b>: Only the compiled bytecode is saved. This results in the smallest file, but it is the least flexible option because it means that the compiled application can only be run on devices that share the same architecture as the CSPro Designer. Because the CSPro Designer uses a 32-bit instruction set, this means that the bytecode will not run on 64-bit devices, which include most Android devices. This setting is not recommended.</li>
+</list>
+
+
+<seealso javascript_overview.csdoc />

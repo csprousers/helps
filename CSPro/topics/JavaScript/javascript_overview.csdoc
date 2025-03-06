@@ -1,0 +1,54 @@
+﻿<title>JavaScript Use in CSPro</title>
+
+
+<subheader>Overview</subheader>
+
+Most CSPro application developers will exclusively use the <link introduction_to_cspro_language.csdoc>CSPro programming language</link> when adding logic to applications, but it is also possible to use <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</link>, a popular programming language that is frequently used in web development. Unlike CSPro logic, JavaScript is dynamically typed, meaning that the type of variables is not known at compile-time. An abundance of material exists on the Internet describing JavaScript and explaining the language's syntax, so these helps are a high-level overview intended for users who know JavaScript and want to incorporate it in a CSPro application.
+
+Using the <link JS.csdoc>JS</link> namespace, it is possible to <link JS_eval_function.csdoc>evaluate JavaScript</link>, <link JS_invoke_function.csdoc>invoke functions</link>, and <link javascript_value_conversions.csdoc>convert</link> CSPro symbols to JavaScript numbers, strings, arrays, and objects. It is also possible to create <link javascript_user_defined_functions.csdoc>function wrappers</link> in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked.
+
+In addition to including JavaScript as part of a CSPro application, it is also possible to execute JavaScript from within <link CSCode::language_javascript.csdoc>CSCode</link>.
+
+
+<subheader>JavaScript Engine</subheader>
+
+CSPro uses the <link "https://bellard.org/quickjs">QuickJS JavaScript Engine</link>, a "small and embeddable JavaScript engine....that supports the <link "https://tc39.es/ecma262/2023">ES2023</link> specification including modules, asynchronous generators, proxies and BigInt."
+
+CSPro executes JavaScript in the same thread as CSPro logic, so a call from CSPro logic into JavaScript will pause termination of the CSPro logic until the script, and any <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">promises</link>, are fully evaluated.
+
+
+<subheader>JavaScript Context</subheader>
+
+JavaScript is evaluated using a single shared <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global execution context</link>. This means that any objects introduced into the <link "https://developer.mozilla.org/en-US/docs/Glossary/Global_object">global object</link> are available to all scripts.
+
+When CSPro displays HTML in a <link html_in_cspro.csdoc>web view</link>, the web browser that displays the HTML also supports JavaScript evaluation. The browser's JavaScript is separate from that run by QuickJS and does not share the global execution contet. You can use the <link action_invoker.csdoc>Action Invoker</link> to transfer data between QuickJS's <link action_invoker_execution_javascript_embedded.csdoc>context</link> and the web browser's JavaScript <link action_invoker_execution_javascript_web.csdoc>context</link>.
+
+
+<subheader>JavaScript Execution Using Files</subheader>
+
+You can associate JavaScript files with an application by selecting <link manage_application_files.csdoc>File -> Manage Application Files</link>. By modifying the <link change_code_properties.csdoc>properties </link>for the code file, you can indicate how the JavaScript should be evaluated:
+
+<list>
+    <li><b>JavaScript (Autodetect)</b>: QuickJS will analyze the file to determine if it should be evaluated as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global script</link> or as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">module</link>.</li>
+    <li><b>JavaScript (Global)</b>: The file will be evaluated as a global script.</li>
+    <li><b>JavaScript (ECMAScript Module)</b>: The file will be evaluated as a module.</li>
+</list>
+
+When a CSPro application starts, any JavaScript associated with the application is evaluated. If the evaluation results in an exception, the application will terminate. If there are any module loading errors, the application will also terminate, though this behavior <link properties_javascript.csdoc>can be modified</link>.
+
+After a successful application start, the <link action_invoker_execution_javascript_embedded.csdoc>Action Invoker</link> is available for use in the JavaScript environment using the name <logiccolor>CS</logiccolor>. Use of the Action Invoker can be <link properties_javascript.csdoc>disabled</link>, or you can <link properties_javascript.csdoc>change the name</link> of the object. The Action Invoker is not available during the application startup, so any use of the Action Invoker cannot occur in the global context but must instead occur in functions.
+
+
+<subheader>JavaScript Execution Using Logic</subheader>
+
+While JavaScript files are evaluated at application startup, you will need to use <link introduction_to_cspro_language.csdoc>logic</link> to call into JavaScript from within your application. The <link JS.csdoc>JS namespace</link> contains functions that facilitate such interactions with the following functions:
+
+<include include_JS_functionality.hgi />
+
+
+<subheader>JavaScript Logging</subheader>
+
+Both the <colorinline JavaScript>print</colorinline> and <colorinline JavaScript>console.log</colorinline> functions write to the application's <link listing_file.csdoc>listing file</link>.
+
+
+<seealso JS.csdoc properties_javascript.csdoc introduction_to_cspro_language.csdoc />

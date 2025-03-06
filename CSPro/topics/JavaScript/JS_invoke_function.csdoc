@@ -1,0 +1,84 @@
+﻿<title>JS.invoke Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = JS.invoke(<arg>function_name</arg>『, <arg>argument1</arg>, ..., <arg>argumentN</arg>』);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>JS.invoke</logiccolor> function executes a JavaScript function that exists in <link javascript_overview.csdoc>CSPro's JavaScript</link> <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global execution context</link>. The function is specified using the string expression <arg>function_name</arg>, and any CSPro arguments, <arg>argument1</arg> to <arg>argumentN</arg>, are <link javascript_value_conversions.csdoc>converted</link> to their JavaScript equivalents. The following types have conversion routines that support conversion to JavaScript, with the conversion described in detail at the provided links:
+
+<include include_JS_conversions_to_JS.hgi />
+
+If you are frequently invoking a JavaScript function, consider creating a <link javascript_user_defined_functions.csdoc>function wrapper</link> that appears as a CSPro logic <link user_defined_functions.csdoc>user-defined function</link> but calls into JavaScript when invoked.
+
+
+<subheader>Return Value</subheader>
+
+The function returns the JavaScript function's return value as a string, converted using the value's <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString">toString method</link>. If the JavaScript evaluation ends in an uncaught exception, the exception's message is displayed as an error message and the function returns a blank string.
+
+
+<subheader>Example 1</subheader>
+
+<logiccolor>JS.invoke</logiccolor> can execute functions that are part of JavaScript built-in objects, such as static methods in <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">Math</link>.
+
+<logic>
+JS.invoke("Math.max", 2025, 8.1, 25);                  // 2025
+JS.invoke("Math.max", 2025, 8.1, 25, "5000");          // 5000
+JS.invoke("Math.max", 2025, 8.1, 25, "five thousand"); // NaN
+</logic>
+
+
+<subheader>Example 2</subheader>
+
+With the following JavaScript script <link manage_application_files.csdoc>added to the application</link>...
+
+<color JavaScript>
+function sumArray(values) {
+    let sum = 0;
+    // use forEach to sum the values of an array
+    values.forEach(value => {
+        sum += value;
+    });
+    return sum;
+}
+</color>
+
+...it is possible to pass <logiccolor>Array</logiccolor> or <logiccolor>List</logiccolor> objects due to CSPro to JavaScript <link javascript_value_conversions.csdoc>conversions</link>:
+
+<logic>
+Array someNumbersArray(4) = 10, 20, 30, 40;
+List someNumbersList = 4, 6, 7, 79, 81, 82;
+
+JS.invoke("sumArray", someNumbersArray); // 100
+JS.invoke("sumArray", someNumbersList);  // 259
+</logic>
+
+
+<subheader>Example 3</subheader>
+
+CSPro logic <link user_defined_functions.csdoc>user-defined functions</link> can be used as arguments. With the following JavaScript script <link manage_application_files.csdoc>added to the application</link>...
+
+<color JavaScript>
+function getCSProVersion(diagnosticsCallback) {
+    return diagnosticsCallback("version");
+}
+</color>
+
+...it is possible to call into JavaScript and then have JavaScript call back into CSPro.
+
+<logic>
+function string ExecDiagnostics(string property)
+    exit diagnostics(property);
+end;
+
+JS.invoke("getCSProVersion", ExecDiagnostics)); // <definition CSPro::version />
+diagnostics("version");                         // <definition CSPro::version />
+</logic>
+
+
+<seealso javascript_overview.csdoc JS.csdoc JS_eval_function.csdoc />

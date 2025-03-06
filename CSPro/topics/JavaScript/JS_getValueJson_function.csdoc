@@ -1,0 +1,36 @@
+﻿<title>JS.getValueJson Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = JS.getValueJson(<arg>name</arg>);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>JS.getValueJson</logiccolor> function returns the <link JSON_primer.csdoc>JSON</link> representation of a JavaScript variable or property by calling the <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">JSON.stringify</link> method. This is a useful way to transfer data from JavaScript to CSPro logic if the data cannot be represented by a CSPro object that can be handled by the <logiccolor>JS.getValue</logiccolor> function.
+
+<include include_JS_name_specification.hgi />
+
+
+<subheader>Return Value</subheader>
+
+The function returns a string containing the JSON if the variable or property is defined. If undefined, or if the JavaScript evaluation ends in an uncaught exception, the function returns a blank string and displays an error message. If you do not want to see the error message, check the existence of the variable or property by using the <logiccolor>JS.hasValue</logiccolor> function.
+
+
+<subheader>Example</subheader>
+
+<logic>
+<include include_JS_setValueFromJson_example.hgi />
+
+JS.getValueJson("france.name");           // "France"
+JS.getValueJson("france.republicNumber"); // 5
+JS.getValueJson("france.languages[0]");   // "French"
+JS.getValueJson("france.languages[1]");   // error: 'france.languages[1]' is not a defined property.
+JS.getValueJson("france.languages");      // ["French"]
+</logic>
+
+
+<seealso javascript_overview.csdoc JS.csdoc JS_getValue_function.csdoc JS_hasValue_function.csdoc JS_setValueFromJson_function.csdoc />

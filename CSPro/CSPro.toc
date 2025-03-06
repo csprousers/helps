@@ -67,6 +67,7 @@
             "title": "CSPro General Functionality",
             "documents": [
               { "path": "data_sources.csdoc", "~title": "Data Sources" },
+              { "path": "data_requirements.csdoc", "~title": "Data Requirements" },
               { "path": "connection_string.csdoc", "~title": "Connection String" },
               { "path": "encrypted_data.csdoc", "~title": "Encrypted Data" },
               { "path": "unicode_primer.csdoc", "~title": "Unicode Primer" },
@@ -239,7 +240,6 @@
         "title": "The CSPro Language",
         "documents": [
           { "path": "introduction_to_cspro_language.csdoc", "~title": "Introduction to CSPro Language" },
-          { "path": "data_requirements.csdoc", "~title": "Data Requirements" },
           { "path": "cspro_program_structure.csdoc", "~title": "CSPro Program Structure" },
           { "path": "programming_standards.csdoc", "~title": "Programming Standards" },
           { "path": "change_code_properties.csdoc", "~title": "Change Code Properties" },
@@ -353,6 +353,22 @@
                   { "path": "display_dimensions.csdoc", "~title": "Display Dimensions" }
                 ]
               }
+            ]
+          },
+          {
+            "title": "JavaScript Use in CSPro",
+            "documents": [
+              { "path": "javascript_overview.csdoc", "title": "Overview" },
+              { "path": "JS.csdoc", "~title": "JS Namespace" },
+              { "path": "JS_eval_function.csdoc", "~title": "JS.eval Function" },
+              { "path": "JS_invoke_function.csdoc", "~title": "JS.invoke Function" },
+              { "path": "JS_getValue_function.csdoc", "~title": "JS.getValue Function" },
+              { "path": "JS_getValueJson_function.csdoc", "~title": "JS.getValueJson Function" },
+              { "path": "JS_hasValue_function.csdoc", "~title": "JS.hasValue Function" },
+              { "path": "JS_setValue_function.csdoc", "~title": "JS.setValue Function" },
+              { "path": "JS_setValueFromJson_function.csdoc", "~title": "JS.setValueFromJson Function" },
+              { "path": "javascript_user_defined_functions.csdoc", "~title": "JavaScript User-Defined Functions" },
+              { "path": "javascript_value_conversions.csdoc", "~title": "JavaScript ⇄ CSPro Value Conversions" }
             ]
           }
         ]
@@ -1704,6 +1720,7 @@
               { "path": "properties_paradata.csdoc", "~title": "Paradata Properties" },
               { "path": "properties_mapping.csdoc", "~title": "Mapping Properties" },
               { "path": "logic_settings.csdoc", "~title": "Logic Settings" },
+              { "path": "properties_javascript.csdoc", "~title": "JavaScript Properties" },
               { "path": "properties_json_serialization.csdoc", "~title": "JSON Serialization Properties" },
               { "path": "properties_advanced_features.csdoc", "~title": "Advanced Features Properties" },
               { "path": "change_message_properties.csdoc", "~title": "Change Message Properties" }

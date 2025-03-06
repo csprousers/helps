@@ -1,0 +1,8 @@
+The string expression <arg>name</arg> is evaluated and can refer to a variable in <link javascript_overview.csdoc>CSPro's JavaScript</link> <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global execution context</link> or an object's property if the object exists globally. For example, the following values can be specified as a name:
+
+<list>
+    <li><colorinline JavaScript>myFunction</colorinline></li>
+    <li><colorinline JavaScript>globalThis.myFunction</colorinline></li>
+    <li><colorinline JavaScript>myObject.myProperty</colorinline></li>
+    <li><colorinline JavaScript>myObject['my' + 'Property']</colorinline></li>
+</list>

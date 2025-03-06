@@ -1,0 +1,61 @@
+﻿<title>JS.eval Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = JS.eval(<arg>script</arg>);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>JS.eval</logiccolor> function evaluates the string expression <arg>script</arg> in <link javascript_overview.csdoc>CSPro's JavaScript</link> <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global execution context</link>. The script can <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#parameters">contain</link> an "expression, statement, or sequence of statements. The expression can include variables and properties of existing objects."
+
+Because the script is evaluated in the global execution context, any declared variables or functions will be added to the <link "https://developer.mozilla.org/en-US/docs/Glossary/Global_object">global object</link> and will be available in subsequent calls from CSPro to JavaScript. This is similar to what happens with scripts attached to the application with the <link javascript_overview.csdoc>JavaScript (Global)</link> setting.
+
+
+<subheader>Return Value</subheader>
+
+The function <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#return_value">returns</link> the "completion value of evaluating the given code. If the completion value is empty, <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</link> is returned." The completion value is returned as a string using the value's <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString">toString method</link>. If the JavaScript evaluation ends in an uncaught exception, the exception's message is displayed as an error message and the function returns a blank string.
+
+
+<subheader>Example 1</subheader>
+
+<logic>
+JS.eval("const artist = 'Roberta Flack';"); // undefined
+JS.eval("artist.toUpperCase();");           // ROBERTA FLACK
+JS.eval("[...artist];");                    // R,o,b,e,r,t,a, ,F,l,a,c,k
+</logic>
+
+
+<subheader>Example 2</subheader>
+
+<logic>
+// add a function that removes whitespace from a string (using a regular expression)
+JS.eval(@"function removeWhitespace(text) {"
+        @"    return text.replace(/\s+/g, '');"
+        @"}");
+
+// evaluate the function using JS.eval with the result: CSProisaveryusefultool!
+JS.eval(@"removeWhitespace('CSPro is a very useful tool!')");
+
+// evaluate the function using JS.invoke
+JS.invoke("removeWhitespace", "CSPro is a very useful tool!");
+</logic>
+
+
+<subheader>Example 3</subheader>
+
+<logic>
+// the Action Invoker is available in the JavaScript environment and may return values similar to:
+
+JS.eval("CS.UI.getMaxDisplayDimensions()");                 // [object Object]
+JS.eval("JSON.stringify(CS.UI.getMaxDisplayDimensions())"); // {"width":1728,"height":928}
+JS.eval("CS.UI.getMaxDisplayDimensions().width");           // 1728
+
+</logic>
+
+
+<seealso javascript_overview.csdoc JS.csdoc JS_invoke_function.csdoc />
+
