@@ -1148,6 +1148,7 @@
     ]
   },
   { "path": "cspro_program_structure.csdoc", "title": "Declaration Section" },
+  { "path": "declare_modifier.csdoc", "~title": "declare Variable Modifier" },
   { "path": "decompress_function.csdoc", "~title": "Decompress Function" },
   { "path": "android_interacting_with_other_applications.csdoc", "title": "Deep Link",
     "subindex": [ 
@@ -4338,6 +4339,7 @@
   { "path": "config_modifier.csdoc", "title": "Variable Modifiers",
     "subindex": [ 
       { "path": "config_modifier.csdoc", "title": "config" },
+      { "path": "declare_modifier.csdoc", "title": "declare" },
       { "path": "ensure_modifier.csdoc", "title": "ensure" },
       { "path": "persistent_modifier.csdoc", "title": "persistent" }
     ]
