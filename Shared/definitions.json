@@ -12,5 +12,6 @@
   "google_play": "https://play.google.com/store/apps/details?id=gov.census.cspro.csentry",
   "github_helps_url": "https://github.com/csprousers/helps",
   "github_ActionInvokerDemo_url": "https://github.com/CSProDevelopment/ActionInvokerDemo",
-  "github_CSEntryAndroidLauncher_url": "https://github.com/CSProDevelopment/CSEntryAndroidLauncher"
+  "github_CSEntryAndroidLauncher_url": "https://github.com/CSProDevelopment/CSEntryAndroidLauncher",
+  "github_feature_showcase_url_base": "https://github.com/csprousers/feature-showcase/tree/"
 }
