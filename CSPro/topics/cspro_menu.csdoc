@@ -8,7 +8,7 @@ The following is a summary of the menu options available throughout CSPro:
     <cell><link open_an_application.csdoc>Open</link></cell><cell>Open an existing application.</cell>
     <cell 2>&nbsp;</cell>
     <cell 2><subheader>Tools</subheader></cell>
-    <cell><link DataViewer::introduction_to_data_viewer.csdoc>Data Viewer</link></cell><cell>View data files.</cell>
+    <cell><link DataManager::introduction.csdoc>Data Manager</link></cell><cell>View data files.</cell>
     <cell><link TextView::introduction_to_text_viewer.csdoc>Text Viewer</link></cell><cell>View text or data files.</cell>
     <cell><link TblView::introduction_to_table_viewer.csdoc>Table Viewer</link></cell><cell>View CSPro tables.</cell>
     <cell><link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link></cell><cell>Tabulate frequency distributions for file contents.</cell>

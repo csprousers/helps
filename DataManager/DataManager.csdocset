@@ -1,8 +1,8 @@
 ﻿{
-  "title": "CSPro Data Viewer Help", 
+  "title": "CSPro Data Manager Help", 
   "import": {
-    "tableOfContents": "DataViewer.toc", 
-    "index": "DataViewer.index", 
+    "tableOfContents": "DataManager.toc", 
+    "index": "DataManager.index", 
     "settings": [
       "../Shared/settings.json"
     ], 

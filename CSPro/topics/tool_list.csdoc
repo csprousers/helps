@@ -1,10 +1,10 @@
 ﻿<title>Tool List</title>
-<context ID_TOOLS_COMPARE ID_TOOLS_CONCAT ID_TOOLS_CSCODE ID_TOOLS_CSDOCUMENT ID_TOOLS_CSVIEW ID_TOOLS_DATAVIEWER ID_TOOLS_DEPLOY ID_TOOLS_EXCEL2CSPRO ID_TOOLS_EXPORT ID_TOOLS_FREQ ID_TOOLS_INDEX ID_TOOLS_OPERATORSTATSVIEWER ID_TOOLS_PACK ID_TOOLS_PARADATACONCAT ID_TOOLS_PARADATAVIEWER ID_TOOLS_PFFEDITOR ID_TOOLS_PRODUCTIONRUNNER ID_TOOLS_REFORMAT ID_TOOLS_SAVEARRAYVIEWER ID_TOOLS_SORT ID_TOOLS_TABLEVIEW ID_TOOLS_TEXTCONVERTER ID_TOOLS_TEXTVIEW />
+<context ID_TOOLS_COMPARE ID_TOOLS_CONCAT ID_TOOLS_CSCODE ID_TOOLS_CSDOCUMENT ID_TOOLS_CSVIEW ID_TOOLS_DATAMANAGER ID_TOOLS_DEPLOY ID_TOOLS_EXCEL2CSPRO ID_TOOLS_EXPORT ID_TOOLS_FREQ ID_TOOLS_INDEX ID_TOOLS_OPERATORSTATSVIEWER ID_TOOLS_PACK ID_TOOLS_PARADATACONCAT ID_TOOLS_PARADATAVIEWER ID_TOOLS_PFFEDITOR ID_TOOLS_PRODUCTIONRUNNER ID_TOOLS_REFORMAT ID_TOOLS_SAVEARRAYVIEWER ID_TOOLS_SORT ID_TOOLS_TABLEVIEW ID_TOOLS_TEXTCONVERTER ID_TOOLS_TEXTVIEW />
 
 To run a tool, open the <b>Tools</b> menu and select one of the tools listed below. There is a user's guide for most of the tools.
 
 
-<subheader><link DataViewer::introduction_to_data_viewer.csdoc>Data Viewer</link></subheader>
+<subheader><link DataManager::introduction.csdoc>Data Manager</link></subheader>
 
 View the contents of a CSPro data file, displayed in tables based on the dictionary contents. The tool allows you to view, but not modify, all of the cases in the file. You can filter the cases based on a search key. In addition to showing the data described by the dictionary, the tool also displays notes and other metadata saved for each case.
 

@@ -3,7 +3,7 @@
 
 <subheader>Conversion Overview</subheader>
 
-Data Viewer can be used to convert from one CSPro data file format to another. For example, you can:
+Data Manager can be used to convert from one CSPro data file format to another. For example, you can:
 
 <list>
     <li>Convert from a <link CSPro::data_source_csdb.csdoc>CSPro DB</link> file to a <link CSPro::data_source_text.csdoc>text</link> file.</li>

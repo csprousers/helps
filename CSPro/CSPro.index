@@ -1085,6 +1085,7 @@
     ]
   },
   { "path": "data_items.csdoc", "~title": "Data Items" },
+  { "path": "tool_list.csdoc", "title": "Data Manager" },
   { "path": "introduction_to_data_dictionary.csdoc", "title": "Data Organization" },
   { "path": "record_description.csdoc", "title": "Data Records" },
   { "path": "data_source_options.csdoc", "~title": "Data Source Options" },
@@ -2077,7 +2078,7 @@
   },
   { "path": "tool_list.csdoc", "title": "Index",
     "subindex": [ 
-      { "path": "tool_list.csdoc", "title": "Files" }
+      { "path": "tool_list.csdoc", "title": "Data" }
     ]
   },
   { "path": "index_file_csidx.csdoc", "~title": "Index File (.csidx)" },
@@ -2816,7 +2817,12 @@
   },
   { "path": "operator_precedence.csdoc", "~title": "Operator Precedence" },
   { "path": "operator_precedence.csdoc", "~title": "Operator Precedence" },
-  { "path": "operator_statistics_file_log.csdoc", "~title": "Operator Statistics File (.log)" },
+  { "path": "operator_statistics_file_log.csdoc", "title": "Operator Statistics",
+    "subindex": [ 
+      { "path": "operator_statistics_file_log.csdoc", "~title": "Operator Statistics File (.log)" },
+      { "path": "tool_list.csdoc", "title": "Operator Statistics Viewer" }
+    ]
+  },
   { "path": "operators.csdoc", "~title": "Operators",
     "subindex": [ 
       { "path": "and_or_truth_table.csdoc", "~title": "And/Or Truth Table" },
@@ -2975,6 +2981,8 @@
   { "path": "program_information_file_pff.csdoc", "title": "PFF",
     "subindex": [ 
       { "path": "Pff.csdoc", "title": "Object" },
+      { "path": "tool_list.csdoc", "title": "PFF Editor" },
+      { "path": "tool_list.csdoc", "title": "Production Runner" },
       { "path": "run_production_batch_edits.csdoc", "~title": "Run Production Batch Edits" },
       { "path": "run_production_data_entry.csdoc", "~title": "Run Production Data Entry" },
       { "path": "introduction_to_production_tabulations.csdoc", "title": "Run Production Tabulation" },
@@ -3097,6 +3105,7 @@
       { "path": "introduction_to_production_tabulations.csdoc", "title": "Run Production Tabulation" }
     ]
   },
+  { "path": "tool_list.csdoc", "title": "Production Runner" },
   { "path": "endgroup_statement.csdoc", "title": "Program Flow" },
   { "path": "program_information_file_pff.csdoc", "~title": "Program Information File (.pff)" },
   { "path": "programming_standards.csdoc", "~title": "Programming Standards" },
@@ -3442,8 +3451,13 @@
       { "path": "Report_save_function.csdoc", "~title": "Report.save Function" }
     ]
   },
-  { "path": "Array_statement.csdoc", "title": "Saved Arrays" },
-  { "path": "saved_arrays_file_sva.csdoc", "~title": "Saved Arrays File (.sva)" },
+  { "path": "Array_statement.csdoc", "title": "Saved Arrays",
+    "subindex": [ 
+      { "path": "Array_statement.csdoc", "title": "Declare" },
+      { "path": "tool_list.csdoc", "title": "Save Array Viewer" },
+      { "path": "saved_arrays_file_sva.csdoc", "~title": "Saved Arrays File (.sva)" }
+    ]
+  },
   { "path": "savepartial_function.csdoc", "~title": "SavePartial Function" },
   { "path": "savesetting_function.csdoc", "~title": "savesetting Function" },
   { "path": "Map_saveSnapshot_function.csdoc", "title": "SaveSnapshot Function",
@@ -4061,6 +4075,8 @@
   },
   { "path": "text_box.csdoc", "~title": "Text Box" },
   { "path": "data_source_text.csdoc", "~title": "Text Data Source" },
+  { "path": "tool_list.csdoc", "title": "Text Encoding Converter" },
+  { "path": "tool_list.csdoc", "title": "Text Viewer" },
   { "path": "if_statement.csdoc", "title": "Then",
     "subindex": [ 
       { "path": "if_statement.csdoc", "~title": "If Statement" }
@@ -4100,7 +4116,7 @@
       { "path": "tool_list.csdoc", "title": "CSCode" },
       { "path": "tool_list.csdoc", "title": "CSDocument" },
       { "path": "tool_list.csdoc", "title": "CSView" },
-      { "path": "tool_list.csdoc", "title": "Data Viewer" },
+      { "path": "tool_list.csdoc", "title": "Data Manager" },
       { "path": "tool_list.csdoc", "title": "Deploy Application" },
       { "path": "tool_list.csdoc", "title": "Excel to CSPro" },
       { "path": "tool_list.csdoc", "title": "Export Data" },

@@ -1,19 +1,20 @@
 ﻿<title>Export Data</title>
 
-In addition to exporting data via the <b>Tools > Export Data</b> utility, Data Viewer has another way to export data to other file formats. It can be found under the menu dropdown: <b>File > Export</b>.
+In addition to exporting data via the <b>Tools > Export Data</b> utility, Data Manager has another way to export data to other file formats. It can be found under the menu dropdown: <b>File > Export</b>.
 
 This export feature allows data to be written natively to the formats supported by the <link CSExport::introduction_to_export_data.csdoc>Export Data</link> tool, with a couple exceptions:
 
 <list>
-    <li><link CSPro::data_source_excel.csdoc>Excel</link>: supported in Data Viewer but not in Export Data.</li>
-    <li><link CSPro::data_source_json.csdoc>JSON</link>: supported in Data Viewer but not in Export Data.</li>
+    <li><link CSPro::data_source_excel.csdoc>Excel</link>: supported in Data Manager but not in Export Data.</li>
+    <li><link CSPro::data_source_json.csdoc>JSON</link>: supported in Data Manager but not in Export Data.</li>
     <li><b>CSPro Data Files:</b> not supported (use <b>File > Save As</b> instead).</li>
 </list>
 
-The table below shows how the output file formats from the <b>Export Data</b> tool compare to Data Viewer's <b>Export Data</b> feature, when the "Output one file..." checkbox is unchecked:
+
+The table below shows how the output file formats from the <b>Export Data</b> tool compare to Data Manager's <b>Export Data</b> feature, when the "Output one file..." checkbox is unchecked:
 
 <table 4 header>
-    <cell nowrap>Output File Type</cell><cell nowrap>Export Data Tool~!~Filenames</cell><cell nowrap>Data Viewer Export~!~Filenames</cell><cell>Notes</cell>
+    <cell nowrap>Output File Type</cell><cell nowrap>Export Data Tool~!~Filenames</cell><cell nowrap>Data Manager Export~!~Filenames</cell><cell>Notes</cell>
     <cell><b>CSV</b></cell><cell>filename.csv</cell><cell>filename.csv</cell><cell>Written natively, one file per dictionary record. Handles quote marks properly.</cell>
     <cell 4>&nbsp;</cell>
     <cell><b>Excel</b></cell><cell>(n/a)</cell><cell>filename.xlsx</cell><cell>Written natively to a single workbook, one worksheet per dictionary record.</cell>

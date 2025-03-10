@@ -1811,7 +1811,7 @@
     "project": "CSTab"
   },
   {
-    "project": "DataViewer"
+    "project": "DataManager"
   },
   {
     "project": "TextView"

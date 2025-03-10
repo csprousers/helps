@@ -5,23 +5,23 @@ Program Information Files (.pff) are used to run CSPro applications or tools in 
 Application-specific PFF information can be viewed in the following help topics:
 
 <table 2 header>
-	<cell>Program</cell><cell>Task</cell>
-	<cell>CSBatch</cell><cell><link run_production_batch_edits.csdoc>Batch Edits</link></cell>
-	<cell>CSConcat</cell><cell><link CSConcat::run_production_concatenates.csdoc>Concatenate Data</link></cell>
-	<cell>CSDeploy</cell><cell><link CSDeploy::run_production_deployments.csdoc>Deploy Application(s)</link></cell>
-	<cell>CSDiff</cell><cell><link CSDiff::run_production_compares.csdoc>Compare Data</link></cell>
-	<cell>CSEntry</cell><cell><link run_production_data_entry.csdoc>Data Entry</link></cell>
-	<cell>CSExport</cell><cell><link CSExport::run_production_exports.csdoc>Export Data</link></cell>
-	<cell>CSFreq</cell><cell><link CSFreq::run_production_frequencies.csdoc>Tabulate Frequencies</link></cell>
-	<cell>CSIndex</cell><cell><link CSIndex::run_csindex_in_production_mode.csdoc>Index Data</link></cell>
-	<cell>CSPack</cell><cell><link CSPack::run_production_pack.csdoc>Pack Application(s)</link></cell>
-	<cell>CSReFmt</cell><cell><link CSReFmt::run_production_reformats.csdoc>Reformat Data</link></cell>
-	<cell>CSSort</cell><cell><link CSSort::run_production_sorts.csdoc>Sort Data</link></cell>
-	<cell>CSTab</cell><cell><link run_tabulate_in_batch.csdoc>Tabulate Data</link></cell>
-	<cell>CSView</cell><cell><link CSView::run_production_views.csdoc>View File in a Web Browser</link></cell>
-	<cell>DataViewer</cell><cell><link DataViewer::run_production_synchronizations.csdoc>Synchronize Data</link></cell>
-	<cell>Excel2CSPro</cell><cell><link Excel2CSPro::running_conversions_from_the_command_line.csdoc>Convert Excel to CSPro Data </link></cell>
-	<cell>ParadataConcat</cell><cell><link ParadataConcat::run_production_paradata_concatenates.csdoc>Concatenate Paradata</link></cell>
+    <cell>Program</cell><cell>Task</cell>
+    <cell>CSBatch</cell><cell><link run_production_batch_edits.csdoc>Batch Edits</link></cell>
+    <cell>CSConcat</cell><cell><link CSConcat::run_production_concatenates.csdoc>Concatenate Data</link></cell>
+    <cell>CSDeploy</cell><cell><link CSDeploy::run_production_deployments.csdoc>Deploy Application(s)</link></cell>
+    <cell>CSDiff</cell><cell><link CSDiff::run_production_compares.csdoc>Compare Data</link></cell>
+    <cell>CSEntry</cell><cell><link run_production_data_entry.csdoc>Data Entry</link></cell>
+    <cell>CSExport</cell><cell><link CSExport::run_production_exports.csdoc>Export Data</link></cell>
+    <cell>CSFreq</cell><cell><link CSFreq::run_production_frequencies.csdoc>Tabulate Frequencies</link></cell>
+    <cell>CSIndex</cell><cell><link CSIndex::run_csindex_in_production_mode.csdoc>Index Data</link></cell>
+    <cell>CSPack</cell><cell><link CSPack::run_production_pack.csdoc>Pack Application(s)</link></cell>
+    <cell>CSReFmt</cell><cell><link CSReFmt::run_production_reformats.csdoc>Reformat Data</link></cell>
+    <cell>CSSort</cell><cell><link CSSort::run_production_sorts.csdoc>Sort Data</link></cell>
+    <cell>CSTab</cell><cell><link run_tabulate_in_batch.csdoc>Tabulate Data</link></cell>
+    <cell>CSView</cell><cell><link CSView::run_production_views.csdoc>View File in a Web Browser</link></cell>
+    <cell>DataManager</cell><cell><link DataManager::run_production_synchronizations.csdoc>Synchronize Data</link></cell>
+    <cell>Excel2CSPro</cell><cell><link Excel2CSPro::running_conversions_from_the_command_line.csdoc>Convert Excel to CSPro Data </link></cell>
+    <cell>ParadataConcat</cell><cell><link ParadataConcat::run_production_paradata_concatenates.csdoc>Concatenate Paradata</link></cell>
 </table>
 
 <seealso Pff.csdoc />

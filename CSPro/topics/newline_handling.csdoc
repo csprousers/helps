@@ -39,7 +39,7 @@ Newlines are <b>converted to newline symbols</b> (<logiccolor>'␤'</logiccolor>
     <li>Item data is written using the <logiccolor>export</logiccolor> statement.</li>
     <li>Used as a <link program_information_file_pff.csdoc>PFF</link> property value.</li>
     <li>Writing case keys to a <link listing_file.csdoc>text listing file</link>.</li>
-    <li>Displaying case keys and labels in <link DataViewer::introduction_to_data_viewer.csdoc>Data Viewer</link>.</li>
+    <li>Displaying case keys and labels in <link DataManager::introduction.csdoc>Data Manager</link>.</li>
     <li>Displaying case keys and labels in <link CSEntry::trees.csdoc>CSEntry's case listing</link> (on Windows only).</li>
 </list>
 

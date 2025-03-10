@@ -32,7 +32,7 @@ This property only applies to <link data_file_type_structure.csdoc>repeating dic
 This property block only applies to dictionary <link item_description.csdoc>items</link> and <link sub_items.csdoc>subitems</link>.
 
 <list>
-    <li><b>Default Capture Type</b>: This will set the default <link capture_types.csdoc>capture type</link> associated with an item. When the item is dropped onto a form, it will use this capture type when set. It will also be used by Data Viewer to more intelligently display data, such as when <link check_box.csdoc>checkboxes</link> are chosen. During data entry, if a capture type is <link change_field_properties.csdoc>specified for a field</link>, that setting will override the dictionary setting.</li>
+    <li><b>Default Capture Type</b>: This will set the default <link capture_types.csdoc>capture type</link> associated with an item. When the item is dropped onto a form, it will use this capture type when set. It will also be used by Data Manager to more intelligently display data, such as when <link check_box.csdoc>checkboxes</link> are chosen. During data entry, if a capture type is <link change_field_properties.csdoc>specified for a field</link>, that setting will override the dictionary setting.</li>
 </list>
 
 
