@@ -42,6 +42,7 @@ The following is a summary of the menu options available throughout CSPro:
     <cell><link get_help.csdoc>Help Topics</link></cell><cell>Get help for the current application.</cell>
     <cell><link what_is_new_in_cspro.csdoc>What's New in CSPro?</link></cell><cell>View a list of changes in the current and previous releases of CSPro.</cell>
     <cell><link get_help.csdoc>Examples Folder</link></cell><cell>Open the folder containing some CSPro examples.</cell>
+    <cell><link <definition github_feature_showcase_url />>Feature Showcases</link></cell><cell>View CSPro applications that demonstrate new features.</cell>
     <cell><link https://<definition csprousers_forum />>CSPro Users Forum</link></cell><cell>Open the CSPro Users Forum.</cell>
     <cell><link https://<definition csprousers_github />>CSPro Users GitHub</link></cell><cell>View the CSPro source code on GitHub.</cell>
     <cell><link get_help.csdoc>Mailing List Signup</link></cell><cell>Sign up to the mailing list to receive CSPro news updates.</cell>
