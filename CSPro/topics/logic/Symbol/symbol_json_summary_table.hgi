@@ -18,7 +18,7 @@
     <cell><logiccolor>HashMap</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>Image</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><link item_description.csdoc>Item</link></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
-    <cell><logiccolor>List</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>List</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic List_JSON_representation.csdoc /></cell>
     <cell><logiccolor>Map</logiccolor></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>Pff</logiccolor></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><link record_description.csdoc>Record</link></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>

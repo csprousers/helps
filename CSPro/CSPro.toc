@@ -1108,7 +1108,9 @@
               { "path": "List_clear_function.csdoc", "~title": "List.clear Function" },
               { "path": "List_length_function.csdoc", "~title": "List.length Function" },
               { "path": "List_show_function.csdoc", "~title": "List.show Function" },
-              { "path": "List_sort_function.csdoc", "~title": "List.sort Function" }
+              { "path": "List_sort_function.csdoc", "~title": "List.sort Function" },
+              { "path": "List_JSON_representation.csdoc", "title": "JSON Representation" },
+              { "path": "List_JavaScript_representation.csdoc", "title": "JavaScript Representation" }
             ]
           },
           {

@@ -2218,6 +2218,7 @@
   },
   { "path": "javascript_value_conversions.csdoc", "title": "JavaScript Representations",
     "subindex": [
+      { "path": "List_JavaScript_representation.csdoc", "title": "List" },
       { "path": "numeric_JavaScript_representation.csdoc", "title": "Numeric Values" },
       { "path": "string_JavaScript_representation.csdoc", "title": "String Values" }
     ]
@@ -2251,6 +2252,7 @@
   { "path": "symbols_json_representation.csdoc", "title": "JSON Representations",
     "subindex": [
       { "path": "Case_json_representation.csdoc", "title": "Case" },
+      { "path": "List_JSON_representation.csdoc", "title": "List" },
       { "path": "numeric_JSON_representation.csdoc", "title": "Numeric Values" },
       { "path": "JSON_serialization_options.csdoc", "title": "Serialization Options" },
       { "path": "properties_json_serialization.csdoc", "title": "Serialization Properties" },
@@ -2362,6 +2364,8 @@
   { "path": "linked_value_sets.csdoc", "~title": "Linked Value Sets" },
   { "path": "List.csdoc", "~title": "List Object",
     "subindex": [
+      { "path": "List_JavaScript_representation.csdoc", "title": "JavaScript Representation" },
+      { "path": "List_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "List_add_function.csdoc", "~title": "List.add Function" },
       { "path": "List_clear_function.csdoc", "~title": "List.clear Function" },
       { "path": "List_insert_function.csdoc", "~title": "List.insert Function" },
