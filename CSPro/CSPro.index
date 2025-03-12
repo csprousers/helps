@@ -1931,7 +1931,9 @@
       { "path": "HashMap_getKeys_function.csdoc", "~title": "HashMap.getKeys Function" },
       { "path": "HashMap_length_function.csdoc", "~title": "HashMap.length Function" },
       { "path": "HashMap_remove_function.csdoc", "~title": "HashMap.remove Function" },
-      { "path": "HashMap_statement.csdoc", "~title": "HashMap Statement" }
+      { "path": "HashMap_statement.csdoc", "~title": "HashMap Statement" },
+      { "path": "HashMap_JavaScript_representation.csdoc", "title": "JavaScript Representation" },
+      { "path": "HashMap_JSON_representation.csdoc", "title": "JSON Representation" }
     ]
   },
   { "path": "Item_hasValue_function.csdoc", "title": "hasValue Function",
@@ -2221,6 +2223,7 @@
   { "path": "javascript_value_conversions.csdoc", "title": "JavaScript Representations",
     "subindex": [
       { "path": "Array_JavaScript_representation.csdoc", "title": "Array" },
+      { "path": "HashMap_JavaScript_representation.csdoc", "title": "HashMap" },
       { "path": "List_JavaScript_representation.csdoc", "title": "List" },
       { "path": "numeric_JavaScript_representation.csdoc", "title": "Numeric Values" },
       { "path": "string_JavaScript_representation.csdoc", "title": "String Values" }
@@ -2256,6 +2259,7 @@
     "subindex": [
       { "path": "Array_JSON_representation.csdoc", "title": "Array" },
       { "path": "Case_json_representation.csdoc", "title": "Case" },
+      { "path": "HashMap_JSON_representation.csdoc", "title": "HashMap" },
       { "path": "List_JSON_representation.csdoc", "title": "List" },
       { "path": "numeric_JSON_representation.csdoc", "title": "Numeric Values" },
       { "path": "JSON_serialization_options.csdoc", "title": "Serialization Options" },

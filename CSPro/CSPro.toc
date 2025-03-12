@@ -1078,7 +1078,9 @@
               { "path": "HashMap_contains_function.csdoc", "~title": "HashMap.contains Function" },
               { "path": "HashMap_length_function.csdoc", "~title": "HashMap.length Function" },
               { "path": "HashMap_remove_function.csdoc", "~title": "HashMap.remove Function" },
-              { "path": "HashMap_clear_function.csdoc", "~title": "HashMap.clear Function" }
+              { "path": "HashMap_clear_function.csdoc", "~title": "HashMap.clear Function" },
+              { "path": "HashMap_JSON_representation.csdoc", "title": "JSON Representation" },
+              { "path": "HashMap_JavaScript_representation.csdoc", "title": "JavaScript Representation" }
             ]
           },
           {

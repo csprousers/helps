@@ -14,7 +14,7 @@ Array values(2, 3) = 111, 0, 222, 0, 0, 999;
 The two types of serialization result in the following JSON:
 
 <table 2 header nowrap>
-    <cell>Full Array</cell><cell>Sparse Array</cell>
+    <cell>Full Array (default)</cell><cell>Sparse Array</cell>
     <cell>
 <color JSON>
 [
@@ -88,6 +88,7 @@ spicyPeppers.getJson() // returns:
 
 <logic>
 Array values(2, 2) = 1.23, refused, 0, 9;
+
 values.getValueJson(serializationOptions := "{ \"ArrayFormat\": \"full\" }") // returns:
 </logic>
 
@@ -108,7 +109,6 @@ values.getValueJson(serializationOptions := "{ \"ArrayFormat\": \"full\" }") // 
 <subheader>Example 3 (Sparse Array)</subheader>
 
 <logic>
-Array values(2, 2) = 1.23, refused, 0, 9;
 values.getValueJson(serializationOptions := "{ \"ArrayFormat\": \"sparse\" }")) // returns:
 </logic>
 

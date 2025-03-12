@@ -15,7 +15,7 @@
     <cell><logiccolor>Freq</logiccolor></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>function</logiccolor></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>Geometry</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
-    <cell><logiccolor>HashMap</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>HashMap</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic HashMap_JSON_representation.csdoc /></cell>
     <cell><logiccolor>Image</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><link item_description.csdoc>Item</link></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>List</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic List_JSON_representation.csdoc /></cell>

@@ -16,7 +16,7 @@ The following options control how some symbols are serialized. The default behav
     <cell 3>&nbsp;</cell>
     <cell><colorinline JSON>"binaryDataFormat"</colorinline></cell><cell nowrap><colorinline JSON>"dataUrl"</colorinline>~!~~!~<colorinline JSON>"localhostUrl"</colorinline> ⁺⁺⁺</cell><cell>Determines how the data of symbols that contain binary data (e.g., <logiccolor>Image</logiccolor>) is written.<note type="todo" text="HELP_TODO link to binary data serialization description, if exists" /></cell>
     <cell 3>&nbsp;</cell>
-    <cell><colorinline JSON>"HashMapFormat"</colorinline></cell><cell nowrap><colorinline JSON>"array"</colorinline>~!~~!~<colorinline JSON>"object"</colorinline> ⁺⁺⁺</cell><cell>Determines how HashMap objects are written.<note type="todo" text="HELP_TODO link to HashMap serialization description" /></cell>
+    <cell><colorinline JSON>"HashMapFormat"</colorinline></cell><cell nowrap><colorinline JSON>"array"</colorinline>~!~~!~<colorinline JSON>"object"</colorinline> ⁺⁺⁺</cell><cell>Determines how <link HashMap_JSON_representation.csdoc>HashMap objects are written</link>.</cell>
     <cell 3>&nbsp;</cell>
     <cell><colorinline JSON>"jsonFormat"</colorinline></cell><cell nowrap><colorinline JSON>"compact"</colorinline> ⁺⁺⁺~!~~!~<colorinline JSON>"pretty"</colorinline></cell><cell>Determines if the JSON is written with no extra spacing (compact), or in a more readable format with spaces and newlines (pretty).</cell>
 </table>
