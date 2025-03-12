@@ -403,6 +403,8 @@
       { "path": "Array_length_function.csdoc", "~title": "Array.length Function" },
       { "path": "Array_statement.csdoc", "~title": "Array Statement" },
       { "path": "HashMap.csdoc", "title": "Associative Array" },
+      { "path": "Array_JavaScript_representation.csdoc", "title": "JavaScript Representation" },
+      { "path": "Array_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "saved_arrays_file_sva.csdoc", "~title": "Saved Arrays File (.sva)" }
     ]
   },
@@ -2218,6 +2220,7 @@
   },
   { "path": "javascript_value_conversions.csdoc", "title": "JavaScript Representations",
     "subindex": [
+      { "path": "Array_JavaScript_representation.csdoc", "title": "Array" },
       { "path": "List_JavaScript_representation.csdoc", "title": "List" },
       { "path": "numeric_JavaScript_representation.csdoc", "title": "Numeric Values" },
       { "path": "string_JavaScript_representation.csdoc", "title": "String Values" }
@@ -2251,6 +2254,7 @@
   { "path": "data_source_json.csdoc", "~title": "JSON Data Source" },
   { "path": "symbols_json_representation.csdoc", "title": "JSON Representations",
     "subindex": [
+      { "path": "Array_JSON_representation.csdoc", "title": "Array" },
       { "path": "Case_json_representation.csdoc", "title": "Case" },
       { "path": "List_JSON_representation.csdoc", "title": "List" },
       { "path": "numeric_JSON_representation.csdoc", "title": "Numeric Values" },

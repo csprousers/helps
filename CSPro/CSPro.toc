@@ -986,7 +986,9 @@
             "documents": [
               { "path": "Array_statement.csdoc", "~title": "Array Statement" },
               { "path": "Array_length_function.csdoc", "~title": "Array.length Function" },
-              { "path": "Array_clear_function.csdoc", "~title": "Array.clear Function" }
+              { "path": "Array_clear_function.csdoc", "~title": "Array.clear Function" },
+              { "path": "Array_JSON_representation.csdoc", "title": "JSON Representation" },
+              { "path": "Array_JavaScript_representation.csdoc", "title": "JavaScript Representation" }
             ]
           },
           {

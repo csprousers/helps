@@ -4,11 +4,34 @@
 To view options related to <link JSON_primer.csdoc>JSON</link> serialization, including the <link symbols_json_representation.csdoc>serialization of symbols</link>, select <link properties_application.csdoc>Application Properties</link> from the <b>Options</b> menu of a data entry, batch edit, or tabulation application, and then select the <b>JSON Serialization</b> section.
 
 
-<font #ff88888><i>Documentation about this feature will come in a future release. In the meantime you can see if the documentation is updated at:</i></font>
+<subheader>JSON Format</subheader>
 
-<link "https://www.csprousers.org/help/CSPro/properties_json_serialization.html">https://www.csprousers.org/help/CSPro/properties_json_serialization.html</link>
+<list>
+    <li><b>Compact</b>: JSON is written with no extra spacing.</li>
+    <li><b>Pretty</b>: JSON is written in a readable format with spaces and newlines.</li>
+</list>
 
-<note type="todo" text="HELP_TODO fill out and potentially add to What's New" />
+For example:
+
+<color JSON>
+{"jsonFormat":"compact","start":2000,"end":2025}
+</color>
+
+<color JSON>
+{
+  "jsonFormat": "pretty",
+  "start": 2000,
+  "end": 2025
+}
+</color>
+
+
+<subheader>Array Symbols</subheader>
+
+<list>
+    <li><b>Full Array</b>: An <logiccolor>Array</logiccolor> object is fully <link Array_JSON_representation.csdoc>written</link> as a JSON array.</li>
+    <li><b>Sparse Array</b>: An <logiccolor>Array</logiccolor> object is <link Array_JSON_representation.csdoc>written</link> as a JSON object with property names representing array indices and property values representing non-default values. Default values are considered 0, or <logiccolor>default</logiccolor> for <link initialize_hot_decks_using_saved_arrays.csdoc>saved arrays</link>.</li>
+</list>
 
 
 <seealso JSON_serialization_options.csdoc />

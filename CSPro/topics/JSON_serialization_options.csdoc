@@ -12,7 +12,7 @@ The following options control how some symbols are serialized. The default behav
 
 <table 3 header nowrap>
     <cell>Property Name</cell><cell nowrap>Possible Values</cell><cell>Description</cell>
-    <cell><colorinline JSON>"ArrayFormat"</colorinline></cell><cell nowrap><colorinline JSON>"full"</colorinline> ⁺⁺⁺~!~~!~<colorinline JSON>"sparse"</colorinline></cell><cell>Determines how Array objects are written.<note type="todo" text="HELP_TODO link to Array serialization description" /></cell>
+    <cell><colorinline JSON>"ArrayFormat"</colorinline></cell><cell nowrap><colorinline JSON>"full"</colorinline> ⁺⁺⁺~!~~!~<colorinline JSON>"sparse"</colorinline></cell><cell>Determines how <link Array_JSON_representation.csdoc>Array objects are written</link>.</cell>
     <cell 3>&nbsp;</cell>
     <cell><colorinline JSON>"binaryDataFormat"</colorinline></cell><cell nowrap><colorinline JSON>"dataUrl"</colorinline>~!~~!~<colorinline JSON>"localhostUrl"</colorinline> ⁺⁺⁺</cell><cell>Determines how the data of symbols that contain binary data (e.g., <logiccolor>Image</logiccolor>) is written.<note type="todo" text="HELP_TODO link to binary data serialization description, if exists" /></cell>
     <cell 3>&nbsp;</cell>

@@ -2,7 +2,7 @@
     <li><link numeric_JavaScript_representation.csdoc>numeric</link>: Converted to a <link "https://developer.mozilla.org/en-US/docs/Glossary/Number">number</link> (or <link "https://developer.mozilla.org/en-US/docs/Glossary/Null">null</link> or <link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link> if a <link special_values.csdoc>special value</link>).</li>
     <li><link string_JavaScript_representation.csdoc>string / alpha</link>: Converted to a <link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link>.</li>
     <li>function</li>
-    <li>Array</li>
+    <li><link Array_JavaScript_representation.csdoc>Array</link>: Converted to an <link "https://developer.mozilla.org/en-US/docs/Glossary/Array">array</link>.</li>
     <li>HashMap</li>
     <li><link List_JavaScript_representation.csdoc>List</link>: Converted to an <link "https://developer.mozilla.org/en-US/docs/Glossary/Array">array</link>.</li>
 </list>

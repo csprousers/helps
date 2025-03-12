@@ -6,7 +6,7 @@
     <cell>Object</cell><cell>Value -> JSON</cell><cell>JSON -> Value</cell><cell>Serialization</cell>
     <cell><logiccolor>numeric</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic numeric_JSON_representation.csdoc /></cell>
     <cell><logiccolor>string</logiccolor>, <logiccolor>alpha</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic string_JSON_representation.csdoc /></cell>
-    <cell><logiccolor>Array</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>Array</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Array_JSON_representation.csdoc /></cell>
     <cell><logiccolor>Audio</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><link blocks.csdoc>Block</link></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><link introduction_to_data_dictionary.csdoc>Dictionary</link></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>

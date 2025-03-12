@@ -1,0 +1,128 @@
+﻿<title>CSPro ⇄ JSON Conversions: Array Object</title>
+
+
+A CSPro <link Array.csdoc>Array</link> is generally represented as a <link JSON_primer.csdoc>JSON</link> array. The underlying values of the Array are serialized according to the JSON serialization rules for <link numeric_JSON_representation.csdoc>numeric values</link> or <link string_JSON_representation.csdoc>string values</link>.
+
+Based on JSON serialization options&mdash;defined as an <link properties_json_serialization.csdoc>application property</link> or <link JSON_serialization_options.csdoc>dynamically</link>&mdash;an Array can be serialized as a sparse array represented as a JSON object. In this mode, the JSON object's property names represent array indices and the object's property values represent non-default values. Default values are considered 0, or <logiccolor>default</logiccolor> for <link initialize_hot_decks_using_saved_arrays.csdoc>saved arrays</link>. Array indices are serialized starting at 0, even though in CSPro access starts at 1.
+
+For example, with this Array:
+
+<logic>
+Array values(2, 3) = 111, 0, 222, 0, 0, 999;
+</logic>
+
+The two types of serialization result in the following JSON:
+
+<table 2 header nowrap>
+    <cell>Full Array</cell><cell>Sparse Array</cell>
+    <cell>
+<color JSON>
+[
+  [
+    111.0,
+    0.0,
+    222.0
+  ],
+  [
+    0.0,
+    0.0,
+    999.0
+  ]
+]
+</color>
+    </cell><cell>
+<color JSON>
+{
+  "0": {
+    "0": 111.0,
+    "2": 222.0
+  },
+  "1": {
+    "2": 999.0
+  }
+}
+</color>
+    </cell>
+</table>
+
+
+When converting a JSON value to an Array, an exception occurs if the value is not an array or an object. A JSON array is parsed as a full array; a JSON object is parsed as a sparse array. If parsing a JSON array, an exception occurs if there are more dimensions to the array than those defined by the CSPro Array. If the JSON array has more values for a given dimension compared with the CSPro Array, those excess values are ignored. If parsing a JSON object, an exception occurs if the array indices&mdash;which begin at 0&mdash;are invalid, though indices greater than a given dimension's length are ignored. An exception occurs if any of values cannot be converted to a CSPro number or string.
+
+
+<subheader>Example 1</subheader>
+
+<logic>
+Array string spicyPeppers(2, 3) = "Carolina Reaper", "Ghost",   "Habanero",
+                                  "Jalapeño",        "Serrano", "Trinidad Moruga Scorpion";
+
+spicyPeppers.getJson() // returns:
+</logic>
+
+<color JSON>
+{
+  "name": "spicyPeppers",
+  "type": "Array",
+  "contentType": "string",
+  "saveArray": false,
+  "dimensions": [
+    2,
+    3
+  ],
+  "value": [
+    [
+      "Carolina Reaper",
+      "Ghost",
+      "Habanero"
+    ],
+    [
+      "Jalapeño",
+      "Serrano",
+      "Trinidad Moruga Scorpion"
+    ]
+  ]
+}
+</color>
+
+
+<subheader>Example 2 (Full Array)</subheader>
+
+<logic>
+Array values(2, 2) = 1.23, refused, 0, 9;
+values.getValueJson(serializationOptions := "{ \"ArrayFormat\": \"full\" }") // returns:
+</logic>
+
+<color JSON>
+[
+  [
+    1.23,
+    "REFUSED"
+  ],
+  [
+    0.0,
+    9.0
+  ]
+]
+</color>
+
+
+<subheader>Example 3 (Sparse Array)</subheader>
+
+<logic>
+Array values(2, 2) = 1.23, refused, 0, 9;
+values.getValueJson(serializationOptions := "{ \"ArrayFormat\": \"sparse\" }")) // returns:
+</logic>
+
+<color JSON>
+{
+  "0": {
+    "0": 1.23,
+    "1": "REFUSED"
+  },
+  "1": {
+    "1": 9.0
+  }
+}
+</color>
+
+
+<seealso symbols_json_representation.csdoc Array_JavaScript_representation.csdoc />
