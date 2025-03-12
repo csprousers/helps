@@ -957,6 +957,13 @@
             ]
           },
           {
+            "title": "String Values",
+            "documents": [
+              { "path": "string_JSON_representation.csdoc", "title": "JSON Representation" },
+              { "path": "string_JavaScript_representation.csdoc", "title": "JavaScript Representation" }
+            ]
+          },
+          {
             "title": "Symbol Functions",
             "documents": [
               { "path": "Symbol_getName_function.csdoc", "~title": "Symbol.getName Function" },

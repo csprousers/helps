@@ -2218,8 +2218,8 @@
   },
   { "path": "javascript_value_conversions.csdoc", "title": "JavaScript Representations",
     "subindex": [
-      { "path": "List_JavaScript_representation.csdoc", "title": "List" },
-      { "path": "numeric_JavaScript_representation.csdoc", "title": "Numeric Values" }
+      { "path": "numeric_JavaScript_representation.csdoc", "title": "Numeric Values" },
+      { "path": "string_JavaScript_representation.csdoc", "title": "String Values" }
     ]
   },
   { "path": "join_and_split_roster_columns.csdoc", "~title": "Join and Split Roster Columns" },
@@ -2254,6 +2254,7 @@
       { "path": "numeric_JSON_representation.csdoc", "title": "Numeric Values" },
       { "path": "JSON_serialization_options.csdoc", "title": "Serialization Options" },
       { "path": "properties_json_serialization.csdoc", "title": "Serialization Properties" },
+      { "path": "string_JSON_representation.csdoc", "title": "String Values" },
       { "path": "symbols_json_representation.csdoc", "title": "Symbol Overview" }
     ]
   },
@@ -3820,6 +3821,8 @@
       { "path": "string_concatenation.csdoc", "title": "Concatenation Using +" },
       { "path": "tonumber_function.csdoc", "title": "Convert to Number" },
       { "path": "expressions.csdoc", "~title": "Expressions" },
+      { "path": "string_JavaScript_representation.csdoc", "title": "JavaScript Representation" },
+      { "path": "string_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "string_literals.csdoc", "title": "Literals" },
       { "path": "newline_handling.csdoc", "~title": "Newline Handling" },
       { "path": "string_statement.csdoc", "title": "Statement" },

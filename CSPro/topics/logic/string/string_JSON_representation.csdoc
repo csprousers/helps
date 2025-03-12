@@ -1,0 +1,21 @@
+﻿<title>CSPro ⇄ JSON Conversions: String Values</title>
+
+
+A CSPro string value, created as a <logiccolor>string</logiccolor>, <logiccolor>alpha</logiccolor>, or as part of an object such as a <logiccolor>List</logiccolor>, is represented as a <link JSON_primer.csdoc>JSON</link> string.
+
+
+When converting a JSON value to a CSPro string, the following conversions are supported:
+
+<table 2 header nowrap>
+    <cell>JSON Value</cell><cell>CSPro Value</cell>
+    <cell>string</cell><cell>string</cell>
+    <cell>number</cell><cell>number as a string (e.g., <logiccolor>"40"</logiccolor>)</cell>
+    <cell><colorinline JSON>true</colorinline></cell><cell><logiccolor>"1"</logiccolor></cell>
+    <cell><colorinline JSON>false</colorinline></cell><cell><logiccolor>"0"</logiccolor></cell>
+    <cell><colorinline JSON>null</colorinline></cell><cell><logiccolor>""</logiccolor></cell>
+</table>
+
+Converting an array or object results in an exception.
+
+
+<seealso symbols_json_representation.csdoc string_JavaScript_representation.csdoc />
