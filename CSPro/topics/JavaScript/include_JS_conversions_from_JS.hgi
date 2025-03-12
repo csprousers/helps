@@ -1,7 +1,7 @@
-<list>
-	<li>numeric</li>
-	<li>string / alpha</li>
-	<li>Array</li>
-	<li>HashMap</li>
-	<li>List</li>
+﻿<list>
+    <li><link numeric_JavaScript_representation.csdoc>numeric</link>: Converted from a <link "https://developer.mozilla.org/en-US/docs/Glossary/Number">number</link> (along with other types).</li>
+    <li>string / alpha</li>
+    <li>Array</li>
+    <li>HashMap</li>
+    <li>List</li>
 </list>

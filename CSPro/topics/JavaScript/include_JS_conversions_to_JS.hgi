@@ -1,8 +1,8 @@
-<list>
-	<li>numeric</li>
-	<li>string / alpha</li>
-	<li>function</li>
-	<li>Array</li>
-	<li>HashMap</li>
-	<li>List</li>
-</list>
+﻿<list>
+    <li><link numeric_JavaScript_representation.csdoc>numeric</link>: Converted to a <link "https://developer.mozilla.org/en-US/docs/Glossary/Number">number</link> (or <link "https://developer.mozilla.org/en-US/docs/Glossary/Null">null</link> or <link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link> if a <link special_values.csdoc>special value</link>).</li>
+    <li>string / alpha</li>
+    <li>function</li>
+    <li>Array</li>
+    <li>HashMap</li>
+    <li>List</li>
+/list>

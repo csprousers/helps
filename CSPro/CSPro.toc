@@ -368,7 +368,7 @@
               { "path": "JS_setValue_function.csdoc", "~title": "JS.setValue Function" },
               { "path": "JS_setValueFromJson_function.csdoc", "~title": "JS.setValueFromJson Function" },
               { "path": "javascript_user_defined_functions.csdoc", "~title": "JavaScript User-Defined Functions" },
-              { "path": "javascript_value_conversions.csdoc", "~title": "JavaScript ⇄ CSPro Value Conversions" }
+              { "path": "javascript_value_conversions.csdoc", "~title": "CSPro ⇄ JavaScript Value Conversions" }
             ]
           }
         ]
@@ -947,6 +947,13 @@
               { "path": "function_arguments_ref.csdoc", "~title": "Passing Function Arguments by Reference" },
               { "path": "additional_function_examples.csdoc", "~title": "Additional Examples of User-Defined Functions" },
               { "path": "object_dot_notation.csdoc", "~title": "Dot Notation, Logic Objects, and Namespaces" }
+            ]
+          },
+          {
+            "title": "Numeric Values",
+            "documents": [
+              { "path": "numeric_JSON_representation.csdoc", "title": "JSON Representation" },
+              { "path": "numeric_JavaScript_representation.csdoc", "title": "JavaScript Representation" }
             ]
           },
           {
