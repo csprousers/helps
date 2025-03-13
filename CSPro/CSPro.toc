@@ -1510,6 +1510,7 @@
         "documents": [
           { "path": "html_in_cspro.csdoc", "~title": "HTML in CSPro" },
           { "path": "localhost_url.csdoc", "~title": "Localhost URL" },
+          { "path": "data_url.csdoc", "~title": "Data URL" },
           { "path": "external_libraries.csdoc", "~title": "External Libraries" },
           { "path": "JSON_primer.csdoc", "~title": "JSON Primer" },
           { "path": "html_dialog_ui.csdoc", "~title": "HTML Dialog Boxes" },

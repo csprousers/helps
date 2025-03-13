@@ -26,4 +26,4 @@ On Android, a true local web server is not available, so instead CSPro uses <lin
 <indent>https://appassets.androidplatform.net/lfs/1/storage/emulated/csentry/sync.log</indent>
 
 
-<seealso html_in_cspro.csdoc CS_Localhost.csdoc />
+<seealso html_in_cspro.csdoc CS_Localhost.csdoc data_url.csdoc />

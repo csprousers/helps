@@ -1112,6 +1112,7 @@
     ]
   },
   { "path": "data_type.csdoc", "~title": "Data Type" },
+  { "path": "data_url.csdoc", "~title": "Data URL" },
   { "path": "batch_edit_applications.csdoc", "title": "Data Validation" },
   { "path": "run_production_data_entry.csdoc", "title": "DataEntryIDs" },
   { "path": "date_capture_type.csdoc", "~title": "Date Capture Type" },
@@ -1987,6 +1988,7 @@
   { "path": "html_in_cspro.csdoc", "title": "HTML",
     "subindex": [
       { "path": "htmldialog_function.csdoc", "title": "Custom HTML Dialogs" },
+      { "path": "data_url.csdoc", "~title": "Data URL" },
       { "path": "properties_advanced_features.csdoc", "title": "Disabling HTML UI" },
       { "path": "encode_function.csdoc", "title": "Encoding Strings For Output" },
       { "path": "frequencies_file.csdoc", "title": "Frequency File" },
@@ -4290,7 +4292,13 @@
       { "path": "encode_function.csdoc", "title": "URI Encoding" }
     ]
   },
-  { "path": "encode_function.csdoc", "title": "URL Encoding" },
+  { "path": "localhost_url.csdoc", "title": "URL",
+    "subindex": [
+      { "path": "data_url.csdoc", "~title": "Data URL" },
+      { "path": "encode_function.csdoc", "title": "Encoding" },
+      { "path": "localhost_url.csdoc", "~title": "Localhost URL" }
+    ]
+  },
   { "path": "use_hot_decks.csdoc", "title": "Use",
     "subindex": [
       { "path": "use_hot_decks.csdoc", "title": "Hot Decks" },

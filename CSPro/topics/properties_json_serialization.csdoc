@@ -42,4 +42,12 @@ For example:
 </list>
 
 
+<subheader>Binary Content</subheader>
+
+<list>
+    <li><b>Write as Data URL</b>: Data of <link binary_dictionary_items.csdoc>binary dictionary items</link> is written as a <link data_url.csdoc>data URL</link>.</li>
+    <li><b>Write as Localhost URL</b> (default): Data of <link binary_dictionary_items.csdoc>binary dictionary items</link> is written as a <link localhost_url.csdoc>localhost URL</link>. Localhost URLs are only valid while the CSPro application is running.</li>
+</list>
+
+
 <seealso JSON_serialization_options.csdoc />

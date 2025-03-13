@@ -37,4 +37,7 @@ errmsg("%d countries are part of USMCA, including %s and %s.",
 </logic>
 
 
+<note type="todo" text="when adding information about serializing binary data, note that deserialization will only work with base-64 encoding (not localhost URLs)" />
+
+
 <seealso Symbol_getJson_function.csdoc Symbol_getValueJson_function.csdoc CS_Logic_setSymbolValue.csdoc />
