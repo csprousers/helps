@@ -121,7 +121,7 @@ Modify the <link unicode_primer.csdoc>encoding</link> of text files, generally t
 
 <font header>Deprecated Tools</font>
 
-These tools are no longer distributed with CSPro but are instead available on <link https://<definition csprousers_website />/downloads><definition csprousers_website />/downloads</link>.
+These tools are no longer distributed with CSPro but are instead available at <link <definition csprousers_deprecated_tools />><definition csprousers_deprecated_tools /></link>.
 
 <subheader>Convert Dictionary</subheader>
 
