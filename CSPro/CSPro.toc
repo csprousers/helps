@@ -1091,6 +1091,8 @@
               { "path": "Image_save_function.csdoc", "~title": "Image.save Function" },
               { "path": "Image_width_function.csdoc", "~title": "Image.width Function" },
               { "path": "Image_height_function.csdoc", "~title": "Image.height Function" },
+              { "path": "Image_getExif_function.csdoc", "~title": "Image.getExif Function" },
+              { "path": "exif_tags.csdoc", "~title": "EXIF Tags" },
               { "path": "Image_resample_function.csdoc", "~title": "Image.resample Function" },
               { "path": "Image_createQRCode_function.csdoc", "~title": "Image.createQRCode Function" },
               { "path": "Image_takePhoto_function.csdoc", "~title": "Image.takePhoto Function" },

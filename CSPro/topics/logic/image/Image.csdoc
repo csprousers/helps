@@ -11,6 +11,7 @@ An Image object is a CSPro logic object that can be defined as a <link binary_di
     <cell>Function</cell><cell>Description</cell>
     <cell><logiccolor Image>load</logiccolor></cell><cell>Reads an image from a file and stores its contents in the Image object.</cell>
     <cell><logiccolor Image>save</logiccolor></cell><cell>Writes the contents of the Image object to a file.</cell>
+    <cell><logiccolor Image>getExif</logiccolor></cell><cell>Returns the image's <link "https://en.wikipedia.org/wiki/Exif">EXIF data</link>.</cell>
     <cell><logiccolor Image>width</logiccolor></cell><cell>Returns the width of the image in pixels.</cell>
     <cell><logiccolor Image>height</logiccolor></cell><cell>Returns the height of the image in pixels.</cell>
     <cell><logiccolor Image>resample</logiccolor></cell><cell>Resamples the image to change the image's dimensions.</cell>

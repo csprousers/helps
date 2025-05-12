@@ -24,4 +24,4 @@ The function returns the height in pixels, or <logiccolor>default</logiccolor> i
 </logic>
 
 
-<seealso Image.csdoc Image_width_function.csdoc Image_resample_function.csdoc />
+<seealso Image.csdoc Image_width_function.csdoc Image_getExif_function.csdoc Image_resample_function.csdoc />
