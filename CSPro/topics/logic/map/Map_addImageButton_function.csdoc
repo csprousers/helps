@@ -4,13 +4,13 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-buttonId = map_name.addImageButton(<arg>pathToImage</arg>, <arg>callbackFunction</arg>);
+buttonId = map_name.addImageButton(<arg>imagePathOrUrl</arg>, <arg>callbackFunction</arg>);
 </logicsyntax>
 
 
 <subheader>Description</subheader>
 
-The <logiccolor>Map.addImageButton</logiccolor> function adds a new button to the Map, using the image in the <arg>pathToImage</arg> file as the button's icon. The <arg>pathToImage</arg> argument is the path to a file containing the image to display on the button. Standard image files (PNG, JPEG, BMP) are supported. Map buttons are displayed on the right hand-side of the map. The new button will be added below any existing buttons. When the user taps on the button, the user-defined function <arg>callbackFunction</arg> will be called.
+The <logiccolor>Map.addImageButton</logiccolor> function adds a new button to the Map, using the image specified as <arg>imagePathOrUrl</arg> as the button's icon. The <arg>imagePathOrUrl</arg> argument is the path to a file, or a URL, containing the image the image to display on the button. Standard image files (PNG, JPEG, BMP) are supported. If using a URL, you can use a <link localhost_url.csdoc>localhost URL</link> or a URL to a remote server. Map buttons are displayed on the right hand-side of the map. The new button will be added below any existing buttons. When the user taps on the button, the user-defined function <arg>callbackFunction</arg> will be called.
 
 The <arg>callbackFunction</arg> is the name of a user function defined in the global procedure. The function name may optionally be followed by function arguments which will be passed to the function when it is run. These arguments are evaluated at the time that <logiccolor>Map.addTextButton</logiccolor> is called rather than at the time the callback is run. This allows you to reuse the same callback function for multiple buttons and to customize the behavior of the callback by passing different arguments to the callback function for each button.
 
@@ -28,7 +28,7 @@ PROC GLOBAL
 // User function that will be called on button click
 // to close the map
 function closeMap(Map m)
-	m.hide();
+    m.hide();
 end;
 
 PROC SOMEITEM
