@@ -33,7 +33,7 @@ Either <arg>path</arg> or <arg>name</arg> must be specified. Based on the argume
     <li><arg>name</arg> with <logiccolor>":memory:"</logiccolor>: A SQLite <link "https://sqlite.org/inmemorydb.html">in-memory database</link> is opened.</li>
 </list>
 
-When using <arg>name</arg>, no SQLite database is opened but instead a reference to an already-open SQLite database is returned, so <arg>openFlags</arg> is ignored. The read/write permissions of the database are maintained from how the database was initially opened by CSPro.
+When using <arg>name</arg> for a dictionary or paradata, no SQLite database is opened but instead a reference to an already-open SQLite database is returned, so <arg>openFlags</arg> is ignored. The read/write permissions of the database are maintained from how the database was initially opened by CSPro.
 
 When specifying a file to open, the <arg>openFlags</arg> argument can be one of the following:
 

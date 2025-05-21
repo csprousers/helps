@@ -1,0 +1,10 @@
+﻿<indent><table 2>
+    <cell>&ltb&gt</cell><cell><b>bold</b></cell>
+    <cell>&lti&gt</cell><cell><i>italic</i>  </cell>
+    <cell>&ltu&gt</cell><cell><html><u>underline</u></html></cell>
+    <cell>&lts&gt</cell><cell><html><s>strikethrough</s></html></cell>
+    <cell>&ltsup&gt</cell><cell><html><sup>superscript</sup></html></cell>
+    <cell>&ltsub&gt</cell><cell><html><sub>subscript</sub></html></cell>
+    <cell>&ltfont&gt</cell><cell><font red>font</font> (<font green>including</font> <font blue>color</font>)</cell>
+    <cell>&ltbr&gt</cell><cell> line break</cell>
+</table></indent>

@@ -14,6 +14,10 @@ The <logiccolor>Map.addTextButton</logiccolor> function adds a new button to the
 
 The <arg>callbackFunction</arg> is the name of a user function defined in the global procedure. The function name may optionally be followed by function arguments which will be passed to the function when it is run. These arguments are evaluated at the time that <logiccolor>Map.addTextButton</logiccolor> is called rather than at the time the callback is run. This allows you to reuse the same callback function for multiple buttons and to customize the behavior of the callback by passing different arguments to the callback function for each button.
 
+The <arg>text</arg> may contain HTML tags, including:
+
+<include htmlish_text.hgi />
+
 
 <subheader>Return Value</subheader>
 
@@ -28,7 +32,7 @@ PROC GLOBAL
 // User function that will be called on button click
 // to close the map
 function closeMap(Map m)
-	m.hide();
+    m.hide();
 end;
 
 PROC SOMEITEM
