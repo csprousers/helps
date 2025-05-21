@@ -26,6 +26,8 @@ The <action>Sqlite.exec</action> <link action_invoker.csdoc>action</link> execut
 
 The <arg>sql</arg> argument specifies the SQL statement. If specified as an array of strings, the action will execute each query in the order present in the array.
 
+The version of SQLite included with CSPro supports <link "https://www.sqlite.org/lang_mathfunc.html">mathematical functions</link> such as atan2 and sin.
+
 You can use <link sqlite_callback_functions.csdoc>SQLite callback functions</link> in your query, which allows you to call some core CSPro functionality as well as <link function_statement.csdoc>user-defined functions</link> marked with the <logiccolor>sql</logiccolor> directive. <include include_sqlite_callback_timestring.hgi />
 
 Further information about executing queries on databases is available on the SQLite website: <link "https://www.sqlite.org/c3ref/prepare.html">sqlite3_prepare_v2</link>, <link "https://www.sqlite.org/c3ref/bind_blob.html">sqlite3_bind_*</link>, <link "https://www.sqlite.org/c3ref/step.html">sqlite3_step</link>, and <link "https://www.sqlite.org/c3ref/column_blob.html">sqlite3_column_*</link>.

@@ -4,14 +4,15 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-d = CS.Sqlite.open(<arg>path</arg> := ... ‖ <arg>name</arg> := ...『, <arg>openFlags</arg> := ...』
+d = CS.Sqlite.open(<arg>path</arg> := ... ‖ <arg>name</arg> := ...
+                『, <arg>openFlags</arg> := ...』
                 『, <arg>encryptionKey</arg> := ...』『, <arg>encryptionKeyFormat</arg> := ...』)
 </logicsyntax>
 
 <indent><table 3 header nowrap>
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
     <cell><arg>path</arg></cell><cell>The path of a file to open.</cell><cell>string~!~not required</cell>
-    <cell><arg>name</arg></cell><cell>The name of a <link data_dictionary.csdoc>dictionary</link> or "<link paradata.csdoc>paradata</link>".</cell><cell>string~!~not required</cell>
+    <cell><arg>name</arg></cell><cell>The name of a <link data_dictionary.csdoc>dictionary</link> or "<link paradata.csdoc>paradata</link>" or "<link "https://sqlite.org/inmemorydb.html">:memory:</link>".</cell><cell>string~!~not required</cell>
     <cell><arg>openFlags</arg></cell><cell>Flags to control how the database is opened.~!~The default value is <logiccolor>"read"</logiccolor>.</cell><cell>string~!~not required</cell>
     <cell><arg>encryptionKey</arg></cell><cell>An encryption key to use when opening or creating a database.</cell><cell>string~!~not required</cell>
     <cell><arg>encryptionKeyFormat</arg></cell><cell>The <link action_invoker_binary_data.csdoc>format</link> of <arg>encryptionKey</arg>.~!~The default value is <logiccolor>"autodetect"</logiccolor>.</cell><cell>string~!~not required</cell>
@@ -28,7 +29,8 @@ Either <arg>path</arg> or <arg>name</arg> must be specified. Based on the argume
     <li><arg>path</arg> with a non-blank string: A file on the disk is opened.</li>
     <li><arg>path</arg> with a blank string: A <link "https://www.sqlite.org/c3ref/open.html#:~:text=temporary%20on%2Ddisk%20database">temporary on-disk database</link> is opened. It will be deleted automatically when <link CS_Sqlite_close.csdoc>closed</link>.</li>
     <li><arg>name</arg> with a <link data_dictionary.csdoc>dictionary</link> name: A reference to the SQLite database <link sqlite_in_cspro.csdoc>associated with the data source</link> is returned. Typically this is used to <link csdb_relational_format.csdoc>query a CSPro DB</link> data source. Not all data sources have associated SQLite databases.</li>
-    <li><arg>name</arg> with <logiccolor>"paradata"</logiccolor>: The reference to the currently-open <link paradata.csdoc>paradata log</link> is returned. </li>
+    <li><arg>name</arg> with <logiccolor>"paradata"</logiccolor>: The reference to the currently-open <link paradata.csdoc>paradata log</link> is returned.</li>
+    <li><arg>name</arg> with <logiccolor>":memory:"</logiccolor>: A SQLite <link "https://sqlite.org/inmemorydb.html">in-memory database</link> is opened.</li>
 </list>
 
 When using <arg>name</arg>, no SQLite database is opened but instead a reference to an already-open SQLite database is returned, so <arg>openFlags</arg> is ignored. The read/write permissions of the database are maintained from how the database was initially opened by CSPro.
