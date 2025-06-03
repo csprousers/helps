@@ -1,6 +1,6 @@
 ﻿<title>Offline Maps</title>
 
-The default base map shown is the Google Maps road map which requires an Internet connection. You can instead use an offline map from a file stored on your device. Offline map files store map tiles which are images of pieces of a map at various levels of detail. Rather than downloading map images from Google Maps, CSPro will read the images directly from an offline map file.
+The default <link map_base_map_specification.csdoc>base map</link> shown is the Google Maps road map, or Esri's Streets tile layer, depending on which <link mapping_engine.csdoc>mapping engine</link> is used. Both of these maps require an Internet connection. You can instead use an offline map from a file stored on your device. Offline map files store map tiles which are images of pieces of a map at various levels of detail. Rather than downloading map images from an online map provider, CSPro will read the images directly from an offline map file.
 
 
 <subheader>Supported Files</subheader>
@@ -8,8 +8,8 @@ The default base map shown is the Google Maps road map which requires an Interne
 CSPro supports the following formats for offline map files:
 
 <table 2 nowrap>
-<cell><b>MBTiles</b></cell><cell>An open format orginally developed by Mapbox but now widely used by many other systems. MBTiles can be exported from QGIS. You can also download MBTiles files created from Open Street Map data from the Humanitarian Open Street Maps project at <link https://www.hotosm.org>https://www.hotosm.org</link>. Only MBTiles containing image tiles (PNG or JPEG) are supported. Vector tiles are not supported.</cell>
-<cell><b>ArcGIS Tile Package</b></cell><cell>Tile packages exported from ArcGIS. See the <link http://desktop.arcgis.com/en/arcmap/10.3/map/working-with-arcmap/about-tile-packages.htm>ArcGIS Help</link> for details. Tile packages (.tpk and .tpkx files) must be created using the <i>ArcGIS Online/Bing Maps/Google Maps</i> tiling scheme to be compatible with CSPro. PNG and JPEG tile formats are supported on both Android and Windows, and Mixed packages are supported on Windows.</cell>
+    <cell><b>MBTiles</b></cell><cell>An open format originally developed by <link "https://www.mapbox.com">Mapbox</link> but now widely used by many other systems. MBTiles can be exported from QGIS. You can also download MBTiles files created from Open Street Map data from the <link "https://www.hotosm.org">Humanitarian OpenStreetMap</link> project. Only MBTiles containing image tiles (PNG or JPEG) are supported. Vector tiles are not supported.</cell>
+    <cell><b>ArcGIS Tile Package</b></cell><cell>Tile packages exported from ArcGIS. See the <link http://desktop.arcgis.com/en/arcmap/10.3/map/working-with-arcmap/about-tile-packages.htm>ArcGIS Help</link> for details. Tile packages (.tpk and .tpkx files) must be created using the <i>ArcGIS Online/Bing Maps/Google Maps</i> tiling scheme to be compatible with CSPro. PNG and JPEG tile formats are supported on all mapping engines, and Mixed packages are supported when using Leaflet.</cell>
 </table>
 
 
@@ -32,9 +32,10 @@ When using the <logiccolor>Map</logiccolor> object in logic, use the <logiccolor
 
 The level of detail of an offline map is a big component of the file size. Levels of detail in offline maps start at zero, where the entire world is covered by a single image tile. Each successive level contains four times the number of images as the previous level. This means:
 
-<indent>Level 1 contains 4 tiles
-Level 2 contains 16 tiles
-Level 3 contains 64 tiles, etc.
+<indent>
+    Level 1 contains 4 tiles
+    Level 2 contains 16 tiles
+    Level 3 contains 64 tiles, etc.
 </indent>
 
 Level 20 is detailed enough to see individual buildings. At level 20 the entire world requires over a trillion tiles. By removing the last level of detail from your map, you reduce the size of the file by close to two-thirds.

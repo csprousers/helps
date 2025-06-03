@@ -14,7 +14,7 @@ By default, the map contains a button to zoom to the users current location. You
 
 You add vector geometry, such as polygons and polylines, to the map using the <logiccolor>Map.addGeometry</logiccolor> function.
 
-By default, the map will display a base map from Google Maps, which requires an Internet connection. With no Internet connection the base map will be empty. To display a map without an Internet connection you can copy an <link offline_maps.csdoc>offline map file</link> to your device and pass the file to the <logiccolor>Map.setBaseMap</logiccolor> function.
+The default <link map_base_map_specification.csdoc>base map</link> shown is the Google Maps road map, or Esri's Streets tile layer, depending on which <link mapping_engine.csdoc>mapping engine</link> is used. Both of these maps require an Internet connection. With no Internet connection the base map will be empty. To display a map without an Internet connection you can copy an <link offline_maps.csdoc>offline map file</link> to your device and pass the file to the <logiccolor>Map.setBaseMap</logiccolor> function.
 
 
 <subheader>Functionality</subheader>

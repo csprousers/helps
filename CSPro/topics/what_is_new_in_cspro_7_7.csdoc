@@ -39,6 +39,7 @@ This is a detailed list of changes in CSPro 7.7. For a more general overview, se
 
 <list>
     <li>A new object, <link Geometry.csdoc>Geometry</link>, provides the ability to display and manipulate vector geometry (points, lines, and polygons). You can interactively <link Geometry_tracePolygon_function.csdoc>trace</link> or <link Geometry_walkPolygon_function.csdoc>walk</link> polygons and can compute a polygon's <link Geometry_area_function.csdoc>area</link> and <link Geometry_perimeter_function.csdoc>perimeter</link>. Geometry data can be <link Geometry_load_function.csdoc>loaded</link> from and <link Geometry_save_function.csdoc>saved</link> to <link https://geojson.org>GeoJSON</link> files.</li>
+    <li>The <logiccolor>Map</logiccolor> object can now be used on Windows, with <link "https://leafletjs.com">Leaflet</link> used as the <link mapping_engine.csdoc>mapping engine</link> that implements most of the features previously available only on Android.</li>
     <li>The <link map_base_map_specification.csdoc>default base map</link> can be defined in additional ways. If a <pffcolor>BaseMap</pffcolor> attribute is defined in a PFF, that base map will be used when showing <link Map.csdoc>Map</link> objects that have not had a base map specified.</li>
 </list>
 

@@ -1153,6 +1153,7 @@
               { "path": "Map_addImageButton_function.csdoc", "~title": "Map.addImageButton Function" },
               { "path": "Map_removeButton_function.csdoc", "~title": "Map.removeButton Function" },
               { "path": "Map_clearButtons_function.csdoc", "~title": "Map.clearButtons Function" },
+              { "path": "mapping_engine.csdoc", "~title": "Mapping Engine" },
               { "path": "map_base_map_specification.csdoc", "~title": "Base Map Specification" },
               { "path": "offline_maps.csdoc", "~title": "Offline Maps" }
             ]

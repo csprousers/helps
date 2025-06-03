@@ -1428,6 +1428,7 @@
       { "path": "string_literals.csdoc", "~title": "String Literals" }
     ]
   },
+  { "path": "properties_mapping.csdoc", "title": "Esri Tile Provider" },
   { "path": "JS_eval_function.csdoc", "title": "eval Function",
     "subindex": [
       { "path": "JS_eval_function.csdoc", "~title": "JS.eval Function" }
@@ -1911,6 +1912,7 @@
       { "path": "variables.csdoc", "~title": "Variables" }
     ]
   },
+  { "path": "mapping_engine.csdoc", "title": "Google Maps" },
   { "path": "print_preview_options.csdoc", "title": "Goto",
     "subindex": [
       { "path": "print_preview_options.csdoc", "~title": "Print Preview Options" }
@@ -2346,7 +2348,12 @@
       { "path": "add_stub_leadering.csdoc", "title": "Stub" }
     ]
   },
-  { "path": "external_libraries.csdoc", "title": "Leaflet" },
+  { "path": "mapping_engine.csdoc", "title": "Leaflet",
+    "subindex": [
+      { "path": "external_libraries.csdoc", "title": "JavaScript Library" },
+      { "path": "mapping_engine.csdoc", "title": "Mapping" }
+    ]
+  },
   { "path": "deckarray_leftover_rows.csdoc", "title": "Leftover Hot Deck Rows" },
   { "path": "item_length.csdoc", "~title": "Length",
     "subindex": [
@@ -2540,10 +2547,12 @@
       { "path": "Map_statement.csdoc", "~title": "Map Statement" }
     ]
   },
+  { "path": "properties_mapping.csdoc", "title": "Mapbox Tile Provider" },
   { "path": "mapping.csdoc", "~title": "Mapping",
     "subindex": [
-      { "path": "map_case_list.csdoc", "title": "Map Case Listing" },
-      { "path": "Map.csdoc", "~title": "Map Object" },
+      { "path": "map_case_list.csdoc", "title": "Case Listing" },
+      { "path": "mapping_engine.csdoc", "title": "Engine" },
+      { "path": "Map.csdoc", "title": "Object" },
       { "path": "properties_mapping.csdoc", "title": "Properties" }
     ]
   },

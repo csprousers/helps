@@ -32,9 +32,10 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 <subheader>Mapping</subheader>
 
 <list>
+    <li>A new <link properties_mapping.csdoc>mapping property</link> allows <link "https://leafletjs.com">Leaflet</link> to be selected as the <link mapping_engine.csdoc>mapping engine</link> for Android. On Windows, Leaflet is the only available mapping engine.</li>
     <li>Offline maps can now use ArcGIS Tile Packages that use the <link "https://enterprise.arcgis.com/en/server/10.8/publish-services/linux/inside-the-compact-cache-storage-format.htm">CompactV2 storage format</link> (with the file extension .tpkx).</li>
-    <li>On Windows, ArcGIS Tile Packages created using the <link "https://desktop.arcgis.com/en/arcmap/10.3/map/working-with-arcmap/about-tile-packages.htm">Mixed tile format</link> ("JPEG in the center of the package with PNG 32 on the edge of the package") are supported.</li>
-    <li>Windows mapping supports using HTML tags in text entries for functions such as <logiccolor>Map.setTitle</logiccolor> and <logiccolor>Map.setMarkerText</logiccolor>. (This was already possible on Android.)</li>
+    <li>When using Leaflet, ArcGIS Tile Packages created using the <link "https://desktop.arcgis.com/en/arcmap/10.3/map/working-with-arcmap/about-tile-packages.htm">Mixed tile format</link> ("JPEG in the center of the package with PNG 32 on the edge of the package") are supported.</li>
+    <li>Leaflet mapping supports using HTML tags in text entries for functions such as <logiccolor>Map.setTitle</logiccolor> and <logiccolor>Map.setMarkerText</logiccolor>. (This was already possible when using the Google Maps mapping engine.)</li>
 </list>
 
 
