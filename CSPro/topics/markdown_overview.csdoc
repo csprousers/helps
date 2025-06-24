@@ -5,7 +5,7 @@
 
 <link "https://en.wikipedia.org/wiki/Markdown">Markdown</link> is a <link "https://en.wikipedia.org/wiki/Lightweight_markup_language">lightweight markup language</link> designed for creating formatted text using a plain-text syntax. Markdown is often converted to HTML for display, but unlike HTML, which uses verbose tags, Markdown's syntax is simpler, using common punctuation characters, such as <b>**bold**</b> or <i>*italic*</i>. Because of its simplicity and portability, Markdown has become a standard in technical writing, on collaborative platforms such as GitHub, and in CSPro as an alternative to using <link html_in_cspro.csdoc>HTML</link>.
 
-The Markdown syntax is well-documented online, and <link "https://www.markdownguide.org/cheat-sheet/">cheat</link> <link "https://commonmark.org/help/">sheets</link> exist that describe the language. CSPro uses <link "https://github.com/mity/md4c/">MD4C</link>, an implementation of <link "https://commonmark.org/">CommonMark</link> with elements of <link "https://github.github.com/gfm/">GitHub Flavored Markdown</link>. When rendering Markdown documents, CSPro formats the content using CSS based on <link "https://github.com/sindresorhus/github-markdown-css">GitHub's style conventions</link>.
+The Markdown syntax is well-documented online, though elements that may be useful are highlighted on the <topic markdown_syntax.csdoc /> page. CSPro uses <link "https://github.com/mity/md4c/">MD4C</link>, an implementation of <link "https://commonmark.org/">CommonMark</link> with elements of <link "https://github.github.com/gfm/">GitHub Flavored Markdown</link>. When rendering Markdown documents, CSPro formats the content using CSS based on <link "https://github.com/sindresorhus/github-markdown-css">GitHub's style conventions</link>.
 
 
 <subheader>Markdown in CSPro</subheader>
@@ -18,4 +18,4 @@ Markdown can be used in CSPro in the following ways, with the Markdown automatic
 </list>
 
 
-<seealso html_in_cspro.csdoc />
+<seealso markdown_syntax.csdoc html_in_cspro.csdoc />

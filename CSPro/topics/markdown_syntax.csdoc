@@ -1,0 +1,34 @@
+﻿<title>Markdown Syntax</title>
+
+
+<link "https://en.wikipedia.org/wiki/Markdown">Markdown</link> syntax is well-documented online, and useful guides exist that describe the <link "https://www.markdownguide.org/cheat-sheet/"> language</link> and the <link "https://commonmark.org/help/">CommonMark variant</link> that CSPro uses. The following table illustrates some of the most common elements that may be useful while using Markdown in CSPro:
+
+
+<table 3 header nowrap>
+    <cell nowrap>Element</cell><cell nowrap>Markdown Syntax</cell><cell nowrap>Rendered</cell>
+    <cell nowrap><b>Heading</b></cell><cell nowrap><colorinline Markdown># H1</colorinline></cell><cell nowrap><html><span style="font-size: 2em; font-weight: 600;">H1</span></html></cell>
+    <cell></cell><cell nowrap><colorinline Markdown>## H2</colorinline></cell><cell nowrap><html><span style="font-size: 1.5em; font-weight: 600;">H2</span></html></cell>
+    <cell></cell><cell nowrap><colorinline Markdown>### H3</colorinline></cell><cell nowrap><html><span style="font-size: 1.25em; font-weight: 600;">H3</span></html></cell>
+    <cell></cell><cell nowrap><colorinline Markdown>#### H4</colorinline></cell><cell nowrap><html><span style="font-size: 1em; font-weight: 600;">H4</span></html></cell>
+    <cell></cell><cell nowrap><colorinline Markdown>##### H5</colorinline></cell><cell nowrap><html><span style="font-size: .875em; font-weight: 600;">H5</span></html></cell>
+    <cell></cell><cell nowrap><colorinline Markdown>###### H6</colorinline></cell><cell nowrap><html><span style="font-size: .85em; font-weight: 600;">H6</span></html></cell>
+    <cell 3>&nbsp;</cell>
+    <cell nowrap><b>Bold</b></cell><cell nowrap><colorinline Markdown>**bold**</colorinline></cell><cell nowrap><b>bold</b></cell>
+    <cell 3>&nbsp;</cell>
+    <cell nowrap><b>Italic</b></cell><cell nowrap><colorinline Markdown>*italic*</colorinline></cell><cell nowrap><i>italic</i></cell>
+    <cell 3>&nbsp;</cell>
+    <cell nowrap><b>Ordered List</b></cell><cell nowrap><colorinline Markdown>1. Delaware~!~2. Pennsylvania~!~3. New Jersey</colorinline></cell><cell nowrap><html><ol style="margin:0; padding-left:10px;"><li>Delaware</li><li>Pennsylvania</li><li>New Jersey</li></ol></html></cell>
+    <cell 3>&nbsp;</cell>
+    <cell nowrap><b>Unordered List</b></cell><cell nowrap><colorinline Markdown>- Delaware~!~- Pennsylvania~!~- New Jersey</colorinline></cell><cell nowrap><html><ul style="margin:0; padding-left:10px;"><li>Delaware</li><li>Pennsylvania</li><li>New Jersey</li></ul></html></cell>
+    <cell 3>&nbsp;</cell>
+    <cell nowrap><b>Horizontal Rule</b></cell><cell nowrap><colorinline Markdown>---</colorinline></cell><cell nowrap><html><hr></html></cell>
+    <cell 3>&nbsp;</cell>
+    <cell nowrap><b>Link</b></cell><cell nowrap><colorinline Markdown>[CSPro Users](<definition csprousers_url />)</colorinline></cell><cell nowrap><html><a href="<definition csprousers_url />">CSPro Users</a></html></cell>
+    <cell 3>&nbsp;</cell>
+    <cell nowrap><b>Image</b></cell><cell nowrap><colorinline Markdown>![Markdown Icon](markdown-icon.png)</colorinline></cell><cell nowrap><image markdown-icon.png /></cell>
+    <cell 3>&nbsp;</cell>
+    <cell nowrap><b>Task List</b></cell><cell nowrap><colorinline Markdown>- [X] Create dictionary~!~- [X] Design forms~!~- [ ] Add question text~!~- [ ] Add logic~!~- [ ] Test, test, test!</colorinline></cell><cell nowrap><html><ul style="margin:0; padding-left:0;"><li style="list-style-type: none;"><input type="checkbox" disabled checked>Create dictionary</li><li style="list-style-type: none;"><input type="checkbox" disabled checked>Design forms</li><li style="list-style-type: none;"><input type="checkbox" disabled>Add question text</li><li style="list-style-type: none;"><input type="checkbox" disabled>Add logic</li><li style="list-style-type: none;"><input type="checkbox" disabled>Test, test, test!</li></ul></html></cell>
+</table>
+
+
+<seealso markdown_overview.csdoc />
