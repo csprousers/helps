@@ -1,13 +1,16 @@
 ﻿<title>Supported Files</title>
 
-CSView is primarily intended for displaying HTML files, which generally have the extensions:
+CSView is primarily intended for displaying <link CSPro::html_in_cspro.csdoc>HTML</link> or <link CSPro::markdown_overview.csdoc>Markdown</link> files, which generally have the extensions:
 
 <list>
-	<li><b>.html</b></li>
-	<li><b>.htm</b></li>
-	<li><b>.cshtml</b></li>
+    <li><b>.html</b></li>
+    <li><b>.htm</b></li>
+    <li><b>.cshtml</b></li>
+    <li><b>.md</b></li>
 </list>
 
 When installing CSPro, the <b>.cshtml</b> format is associated with CSView, providing a convenient way to open HTML-style files directly in the tool.
 
-If a non-HTML file is presented to CSView, it displays it using the default behavior of the web browser. For many file types, such as image, video, or text files, this will properly display the file. When preparing CSView for production use, make sure to test all file types to ensure that the web browser can properly handle the types of files that you intend to display.
+If a Markdown file is opened by CSView, it is converted to HTML before displaying.
+
+For a file that is not HTML or derivable, CSView displays it using the default behavior of the web browser. For many file types, such as image, video, or text files, this will properly display the file. When preparing CSView for production use, make sure to test all file types to ensure that the web browser can properly handle the types of files that you intend to display.

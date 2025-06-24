@@ -2557,6 +2557,11 @@
     ]
   },
   { "path": "change_the_print_page_setup.csdoc", "title": "Margins" },
+  { "path": "markdown_overview.csdoc", "title": "Markdown",
+    "subindex": [
+      { "path": "markdown_overview.csdoc", "~title": "Markdown Use in CSPro" }
+    ]
+  },
   { "path": "Map_addMarker_function.csdoc", "title": "Markers",
     "subindex": [
       { "path": "Map_addMarker_function.csdoc", "~title": "Map.addMarker Function" },

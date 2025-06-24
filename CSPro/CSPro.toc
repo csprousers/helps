@@ -1509,9 +1509,10 @@
         ]
       },
       {
-        "title": "HTML and JavaScript Integration",
+        "title": "HTML, Markdown, and JavaScript Integration",
         "documents": [
           { "path": "html_in_cspro.csdoc", "~title": "HTML in CSPro" },
+          { "path": "markdown_overview.csdoc", "~title": "Markdown Use in CSPro" },
           { "path": "localhost_url.csdoc", "~title": "Localhost URL" },
           { "path": "data_url.csdoc", "~title": "Data URL" },
           { "path": "external_libraries.csdoc", "~title": "External Libraries" },

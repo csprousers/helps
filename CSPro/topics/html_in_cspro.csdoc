@@ -26,6 +26,8 @@ In this web browser, it is possible to:
     <li>Use <link external_libraries.csdoc>JavaScript libraries</link> included with CSPro, such as Bootstrap and jQuery.</li>
 </list>
 
+In most instances where CSPro processes HTML, it is possible to instead use <link markdown_overview.csdoc>Markdown</link> if you prefer a simpler, more lightweight syntax. Markdown will be automatically converted to HTML for displaying.
+
 
 <subheader>Local Web Server and HTML Directory References</subheader>
 
@@ -68,4 +70,4 @@ Fortunately, because the local web server treats the <i>html</i> directory as th
 </report>
 
 
-<seealso action_invoker_execution_javascript_web.csdoc />
+<seealso action_invoker_execution_javascript_web.csdoc markdown_overview.csdoc />
