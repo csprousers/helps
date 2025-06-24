@@ -14,6 +14,7 @@ Markdown can be used in CSPro in the following ways, with the Markdown automatic
 
 <list>
     <li>Viewing files using the <logiccolor>view</logiccolor> logic function or <link CSView::supported_files.csdoc>CSView</link>.</li>
+    <li>As part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link> using the <colortag csdoc>&lt;md></colortag> tag.</li>
 </list>
 
 

@@ -1,0 +1,25 @@
+﻿<title>Markdown Transformations</title>
+
+When using the <colortag csdoc>&lt;md></colortag> tag to specify <link CSPro::markdown_overview.csdoc>Markdown</link>, the element content will be converted to HTML, with special processing for the following Markdown elements:
+
+<table 2 header nowrap>
+    <cell>Markdown Element</cell><cell>CSPro Document Equivalent</cell>
+    <cell><colorinline Markdown># H1</colorinline></cell><cell><colortag csdoc><title>H1</title></colortag></cell>
+    <cell><colorinline Markdown>## H2</colorinline></cell><cell><colortag csdoc><subheader>H2</subheader></colortag></cell>
+    <cell 2>&nbsp;</cell>
+    <cell><colorinline Markdown>**bold**</colorinline></cell><cell><colortag csdoc><b>bold</b></colortag></cell>
+    <cell><colorinline Markdown>*italic*</colorinline></cell><cell><colortag csdoc><i>italic</i></colortag></cell>
+    <cell 2>&nbsp;</cell>
+    <cell><colorinline Markdown>[CSPro Users](<definition csprousers_url />)</colorinline></cell><cell><colortag csdoc><link "<definition csprousers_url />">CSPro Users</link></colortag></cell>
+    <cell 2>&nbsp;</cell>
+    <cell><colorinline Markdown>![Traffic Light](run_button.png)</colorinline></cell><cell><colortag csdoc><image run_button.png /></colortag></cell>
+    <cell 2>&nbsp;</cell>
+    <cell><colorinline Markdown>```~!~errmsg~!~```</colorinline></cell><cell><colortag csdoc><logic>~!~~!~errmsg~!~~!~</logic></colortag></cell>
+    <cell 2>&nbsp;</cell>
+    <cell><colorinline Markdown>```JavaScript~!~// language name specified~!~```</colorinline></cell><cell><colortag csdoc><color JavaScript>~!~~!~// language name specified~!~~!~</color></colortag></cell>
+</table>
+
+All other Markdown elements are converted directly to their HTML elements. For example, <colorinline Markdown>### H3</colorinline> will result in <colortag HTML><h3>H3</h3></colortag>.
+
+
+<note type="todo" text="link to the rest of the tags" />
