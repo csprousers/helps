@@ -1,9 +1,10 @@
 ﻿<title>Introduction to CSCode</title>
 <context IDR_MAINFRAME />
 
-CSPro is a text editor with support for tabbed editing of documents. The tool facilitates editing, validating, and running files in multiple supported languages listed below.
+<b>CSCode</b>, a <link CSPro::tool_list.csdoc>CSPro tool</link>, is a text editor with support for tabbed editing of documents. The tool facilitates editing, validating, and running files in multiple supported languages listed below.
 
 This guide contains the following information:
+
 
 <subheader>How to ...</subheader>
 
@@ -12,6 +13,7 @@ This guide contains the following information:
     <li><topic supported_files.csdoc /></li>
     <li><topic CSPro::get_help.csdoc /></li>
 </list>
+
 
 <subheader><link supported_files.csdoc>Languages Supported</link></subheader>
 
@@ -27,10 +29,12 @@ This guide contains the following information:
     <li><topic language_html.csdoc /></li>
     <li><topic language_javascript.csdoc /></li>
     <li><topic language_json.csdoc /></li>
+    <li><topic language_markdown.csdoc /></li>
     <li><topic language_sql.csdoc /></li>
     <li><topic language_yaml.csdoc /></li>
     <li><topic language_text.csdoc /></li>
 </list>
+
 
 <subheader>Settings</subheader>
 
@@ -38,8 +42,9 @@ This guide contains the following information:
     <li><topic localhost_settings.csdoc /></li>
 </list>
 
+
 <subheader>Keyboard Shortcuts</subheader>
 
 <list>
-    <li><topic CSCode_keys.csdoc /></li>
+    <li><topic keys.csdoc /></li>
 </list>

@@ -2,15 +2,13 @@
 
 <subheader>Default Extensions</subheader>
 
-None. Can read .html/.htm files as HTML Reports.
+None. Can process files as <link CSPro::templated_reports.csdoc>CSPro templated reports</link>, including <link CSPro::html_in_cspro.csdoc>HTML</link> and <link CSPro::markdown_overview.csdoc>Markdown</link> reports.
 
 
 <subheader>Run Menu</subheader>
 
 <list>
-    <li>Toggle between <link CSPro::logic_version.csdoc>logic versions</link>.</li>
-    <li>HTML Report can Preview in HTML Viewer window</li>
+    <li>Preview Text Template (<b>Ctrl + F5</b>, <i>HTML and Markdown only</i>): View the document, rendered as a text template, in the HTML Viewer.</li>
+    <li>Save as HTML (<i>Markdown only</i>): Save the Markdown as a HTML file, formatted using <link "https://github.com/sindresorhus/github-markdown-css">GitHub's style conventions</link>.</li>
+    <li>CSPro Logic Version: Toggle between <link CSPro::logic_version.csdoc>logic versions</link>.</li>
 </list>
-
-
-<link CSPro::templated_reports.csdoc> Templated Reports</link>

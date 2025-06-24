@@ -1,12 +1,13 @@
-﻿<title>CSCode Keys</title>
+﻿<title>Keyboard Shortcuts</title>
+
 
 <subheader>Shortcuts Specific to CSCode</subheader>
 
 <table 2 header nowrap>
     <cell>Shortcut Key </cell><cell>Description</cell>
     <cell><b>Ctrl + W</b></cell><cell>Close the current file.</cell>
-    <cell><b>Ctrl + Shift +  W </b></cell><cell>Close all files.</cell>
-    <cell><b>Ctrl + Shift + S </b></cell><cell>Save all files.</cell>
+    <cell><b>Ctrl + Shift + W </b></cell><cell>Close all files.</cell>
+    <cell><b>Ctrl + Shift + S</b></cell><cell>Save all files.</cell>
     <cell><b>Ctrl + F5 </b></cell><cell>Run Report Preview.</cell>
     <cell><b>Ctrl + R </b></cell><cell>Run current file.</cell>
 </table>
@@ -44,6 +45,7 @@
     <cell><b>Ctrl + Alt + F</b></cell><cell>Toggles the current code fold level.</cell>
 </table>
 
+
 <subheader>Shortcuts Common Throughout Windows</subheader>
 
 <table 2 header nowrap>
@@ -63,3 +65,6 @@
     <cell><b>Alt + F6</b></cell><cell>Change focus to the next window.</cell>
     <cell><b>Shift + Alt + F6</b></cell><cell>Change focus to the previous window.</cell>
 </table>
+
+
+<seealso navigation_menus_windows.csdoc />
