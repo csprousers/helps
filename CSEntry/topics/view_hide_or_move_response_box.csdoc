@@ -1,7 +1,7 @@
 ﻿<title>View or Hide Response Box</title>
 <context ID_CAPITOGGLE ID_CAPITOGGLEALLVARS />
 
-In a CAPI data entry application, you can show or hide responses for the current field or all fields.
+In a data entry application, you can show or hide responses for the current field or all fields.
 
 To show or hide responses for <b>this field</b>, press <b>Ctrl+C</b> or from the <b>Options</b> menu, select <b>Show Responses (This Field)</b>.
 

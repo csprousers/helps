@@ -1,6 +1,8 @@
 ﻿<title>Question File (.qsf)</title>
 
+
 The question file contains information related to <b>CAPI</b> (<b>C</b>omputer-<b>A</b>ssisted <b>P</b>ersonal <b>I</b>nterviewing) data entry applications. Such information includes question text to appear on the screen with each field and help screens to appear when the operator presses the help (<b>F2</b>) key on desktop or the <b>?</b> icon on mobile.
+
 
 <subheader>File Format</subheader>
 
@@ -8,16 +10,16 @@ Most users do not need to understand the internal format of the .qsf file, but f
 
 You should avoid editing the question text file by hand, since small changes to the content or indentation can easily render the file unreadable by CSPro.
 
-The .qsf file is in <link https://yaml.org>YAML</link> format with UTF-8 encoding.
+The .qsf file is in <link "https://yaml.org/">YAML</link> format with UTF-8 encoding.
 
 At the top-level the .qsf contains a mapping (associative array) with the following keys:
 
 <list>
-<li><b>fileType</b>: always set to "Question Text"</li>
-<li><b>version</b>: version of CSPro that created the question text file; for example "CSPro <definition CSPro::version />"</li>
-<li><b>languages</b>: list of <link define_languages.csdoc>languages</link> used in the question text file</li>
-<li><b>styles</b>: list of <link question_text_edit_styles.csdoc>styles</link> used in the question text file</li>
-<li><b>questions</b>: list of questions, with one entry for each field or block in the data entry application that contains non-blank question or help text</li>
+    <li><b>fileType</b>: always set to "Question Text"</li>
+    <li><b>version</b>: version of CSPro that created the question text file; for example "CSPro <definition CSPro::version />"</li>
+    <li><b>languages</b>: list of <link define_languages.csdoc>languages</link> used in the question text file</li>
+    <li><b>styles</b>: list of <link question_text_edit_styles.csdoc>styles</link> used in the question text file</li>
+    <li><b>questions</b>: list of questions, with one entry for each field or block in the data entry application that contains non-blank question or help text</li>
 </list>
 
 
@@ -25,13 +27,13 @@ At the top-level the .qsf contains a mapping (associative array) with the follow
 
 Each language is a mapping with two keys, <b>name</b> and <b>label</b>, which contain the name and label defined in the <link define_languages.csdoc>languages dialog</link> available from the <b>CAPI</b> menu.
 
-<html><pre>
+<color YAML>
 languages:
  - name: EN
   label: English
  - name: FR
   label: French
-</pre></html>
+</color>
 
 
 <subheader>Styles</subheader>
@@ -43,12 +45,12 @@ Styles are implemented using CSS (Cascading Style Sheets) classes. Since the que
 Each style in the question text file is a mapping with three keys:
 
 <list>
-<li><b>name</b>: name displayed in the style dropdown and in the <link question_text_edit_styles.csdoc>Edit Styles</link> dialog</li>
-<li><b>className</b>: CSS class name used for the style in the HTML question text</li>
-<li><b>css</b>: CSS style definition</li>
+    <li><b>name</b>: name displayed in the style dropdown and in the <link question_text_edit_styles.csdoc>Edit Styles</link> dialog</li>
+    <li><b>className</b>: CSS class name used for the style in the HTML question text</li>
+    <li><b>css</b>: CSS style definition</li>
 </list>
 
-<html><pre>
+<color YAML>
 styles:
  - name: Normal
   className: normal
@@ -58,20 +60,20 @@ styles:
   className: instruction
   css: |
    font-family: Arial;font-size: 14px;color: #0000FF;
-</pre></html>
+</color>
 
 If you were defining the above classes in a CSS file rather in CSPro you would have:
 
-<html><pre>
+<color YAML>
 .normal { font-family: Arial;font-size: 16px; }
 .instruction { font-family: Arial;font-size: 14px;color: #0000FF; }
-</pre></html>
+</color>
 
 If in the question text editor in CSPro you set the style for a block of text, the editor will modify the HTML to apply the selected style; e.g.:
 
-<html><pre>
-&lt;p&gt;A question with &lt;span class=&quot;instruction&quot;&gt;a style applied to this part&lt;/span&gt;.&lt;/p&gt;
-</pre></html>
+<color YAML>
+<p>A question with <span class="instruction">a style applied to this part</span>.</p>
+</color>
 
 Any HTML that does not have a class specified will have the normal style applied. This is done by applying the normal class to the body element of the HTML document.
 
@@ -86,16 +88,16 @@ The name is the fully qualified name of the dictionary item that the question te
 
 The conditions correspond to the entries in the <link create_conditional_questions.csdoc>conditions grid</link> that appears underneath the question text editor. Even questions that have no conditions defined in the conditions grid still contain a condition in the .qsf file, although in such cases the condition logic is empty. Each condition has three keys: <b>logic</b>, <b>questionText</b>, and <b>helpText</b>. The logic is the CSPro expression from the conditions grid. The questionText and helpText are mappings from language code (the codes from the languages section described above) to the HTML for the question or help text.
 
-<html><pre>
+<color YAML>
 questions:
   - name: SIMPLECAPI_DICT.RELATIONSHIP
     conditions:
       - logic: headKnown = 0
         questionText:
           EN: |
-            &lt;p&gt;&lt;span class=&quot;name&quot;&gt;~~PersonName()~~:&lt;/span&gt; Are you the head of household? If not, what is your relationship to the head?&lt;/p&gt;
+            <p><span class="name">~~PersonName()~~:</span> Are you the head of household? If not, what is your relationship to the head?</p>
           FR: |
-            &lt;p&gt;&lt;span class=&quot;name&quot;&gt;~~PersonName()~~:&lt;/span&gt; &Ecirc;tes-vous le chef de m&eacute;nage? Sinon, quel est votre lien de parent&eacute; avec le chef?&lt;/p&gt;
+            <p><span class="name">~~PersonName()~~:</span> Êtes-vous le chef de ménage? Sinon, quel est votre lien de parenté avec le chef?</p>
 
         helpText:
           EN: |
@@ -104,13 +106,14 @@ questions:
       - logic: headKnown = 1
         questionText:
           EN: |
-            &lt;p&gt;&lt;span class=&quot;name&quot;&gt;~~PersonName()~~:&lt;/span&gt; What is your relationship to ~~headText~~?&lt;/p&gt;
+            <p><span class="name">~~PersonName()~~:</span> What is your relationship to ~~headText~~?</p>
           FR: |
-            &lt;p&gt;&lt;span class=&quot;name&quot;&gt;~~PersonName()~~:&lt;/span&gt; Quel est votre lien de parent&eacute; avec ~~headText~~?&lt;/p&gt;
+            <p><span class="name">~~PersonName()~~:</span> Quel est votre lien de parenté avec ~~headText~~?</p>
 
         helpText:
           EN: |
           FR: |
-</pre></html>
+</color>
+
 
 <seealso html_question_text.csdoc />

@@ -22,6 +22,8 @@ If specifying <arg>name</arg>, you can also specify the name of a <link forms_fi
 
 If neither <arg>name</arg> nor <arg>path</arg> are specified, the application's question text is returned.
 
+On <link android_development.csdoc>Android</link>, if loading a question text file from the disk, only files created with <link what_is_new_in_cspro_7_6.csdoc>CSPro 7.6</link> or later (in the <link question_text_file_qsf.csdoc>YAML format</link>) are supported.
+
 
 <subheader>Return Value</subheader>
 

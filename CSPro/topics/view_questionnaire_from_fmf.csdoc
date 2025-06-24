@@ -3,14 +3,14 @@
 Within a data entry application, you can view a <link view_questionnaire.csdoc>questionnaire/pseudo paper version</link> of the form fields by either:
 
 <list>
-    <li>Clicking on the questionnaire view icon <image questionnaire_view.png /> from the form toolbar, or</li>
+    <li>Clicking on the questionnaire view icon <image questionnaire_view_button.png /> from the form toolbar, or</li>
     <li>Selecting <b>Questionnaire</b> from the <b>View</b> menu.</li>
 </list>
 
 To return to the data entry application, you can either:
 
 <list>
-    <li>Click on the form icon <image formview.jpg />, logic icon <image logic.jpg />, or question text icon <image question.jpg /> from the toolbar, or</li>
+    <li>Click on the form icon <image form_edit_button.png />, logic icon <image logic_button.png />, or question text icon <image question_text_button.png /> from the toolbar, or</li>
     <li>Press <b>Ctrl+M, Ctrl+L,</b> or <b>Ctrl+Q</b> respectively, or </li>
     <li>Choose any of the above options from the <b>View</b> menu.</li>
 </list>

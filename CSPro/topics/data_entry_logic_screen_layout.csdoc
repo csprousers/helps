@@ -1,7 +1,7 @@
 ﻿<title>Data Entry Logic Screen Layout</title>
 <context ID_VIEW_LOGIC />
 
-Logic for data entry screens is written when developing the application. Forms Designer permits viewing either the forms or the logic associated with the application on the right-hand side of the split screen. To initiate the process of creating logic for an application, click on <image logic.jpg />; or from the View menu select "Logic"; or press <b>Ctrl+L</b>. To go back to the forms, click on <image forms.jpg />; or from the View menu select "Form"; or press <b>Ctrl+M</b>.
+Logic for data entry screens is written when developing the application. Forms Designer permits viewing either the forms or the logic associated with the application on the right-hand side of the split screen. To initiate the process of creating logic for an application, click on <image logic_button.png />; or from the View menu select "Logic"; or press <b>Ctrl+L</b>. To go back to the forms, click on <image form_edit_button.png />; or from the View menu select "Form"; or press <b>Ctrl+M</b>.
 
 <center><image screendelog_init.jpg /></center>
 

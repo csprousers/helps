@@ -42,7 +42,7 @@
             { "path": "move_around_a_case_in_add_mode.csdoc", "~title": "Move Around a Case in Add Mode" },
             { "path": "finish_a_case.csdoc", "~title": "Finish a Case" },
             { "path": "view_hide_or_move_response_box.csdoc", "~title": "View or Hide Response Box" },
-            { "path": "change_capi_language.csdoc", "~title": "Change CAPI Language" }
+            { "path": "change_language.csdoc", "~title": "Change Language" }
           ]
         },
         {

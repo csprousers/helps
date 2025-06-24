@@ -7,7 +7,7 @@
   { "path": "active_keys_in_verify_mode.csdoc", "title": "/" },
   { "path": "active_keys_in_verify_mode.csdoc", "~title": "Active Keys in Verify Mode" },
   { "path": "begin_adding_cases.csdoc", "title": "Add",
-    "subindex": [ 
+    "subindex": [
       { "path": "begin_adding_cases.csdoc", "title": "A Case" },
       { "path": "add_a_level_occurrence.csdoc", "title": "A Level Occurrence" },
       { "path": "insert_a_group_occurrence.csdoc", "title": "An Instance" }
@@ -15,9 +15,9 @@
   },
   { "path": "begin_adding_cases.csdoc", "title": "Add Mode" },
   { "path": "active_keys_in_verify_mode.csdoc", "title": "Advance to End" },
-  { "path": "change_capi_language.csdoc", "title": "CAPI",
-    "subindex": [ 
-      { "path": "change_capi_language.csdoc", "title": "Change Language" },
+  { "path": "change_language.csdoc", "title": "CAPI",
+    "subindex": [
+      { "path": "change_language.csdoc", "title": "Change Language" },
       { "path": "view_hide_or_move_response_box.csdoc", "title": "Hide Responses" },
       { "path": "view_hide_or_move_response_box.csdoc", "title": "Show Responses" }
     ]
@@ -27,15 +27,15 @@
   { "path": "trees.csdoc", "title": "Case Tree" },
   { "path": "case_tree_menu_windows.csdoc", "title": "Case Tree Menu" },
   { "path": "cases_and_levels.csdoc", "title": "Cases",
-    "subindex": [ 
+    "subindex": [
       { "path": "change_view.csdoc", "title": "View in Physical Order" },
       { "path": "change_view.csdoc", "title": "View in Sort Order" }
     ]
   },
-  { "path": "change_capi_language.csdoc", "title": "Change",
-    "subindex": [ 
-      { "path": "change_capi_language.csdoc", "title": "CAPI Language" },
+  { "path": "change_language.csdoc", "title": "Change",
+    "subindex": [
       { "path": "change_case_ids.csdoc", "title": "Case Ids" },
+      { "path": "change_language.csdoc", "title": "Language" },
       { "path": "change_view.csdoc", "title": "View" }
     ]
   },
@@ -63,20 +63,20 @@
   { "path": "move_around_a_case_in_add_mode.csdoc", "title": "F6" },
   { "path": "active_keys_in_verify_mode.csdoc", "title": "F7" },
   { "path": "field_colors.csdoc", "title": "Field",
-    "subindex": [ 
+    "subindex": [
       { "path": "field_colors.csdoc", "title": "Colors" },
       { "path": "add_a_note.csdoc", "title": "Notes" }
     ]
   },
   { "path": "fields.csdoc", "~title": "Fields" },
   { "path": "define_file_associations.csdoc", "title": "File",
-    "subindex": [ 
+    "subindex": [
       { "path": "define_file_associations.csdoc", "title": "Associations" },
       { "path": "types_of_files.csdoc", "title": "Extentions" }
     ]
   },
   { "path": "types_of_files.csdoc", "title": "Files",
-    "subindex": [ 
+    "subindex": [
       { "path": "index_file_csidx.csdoc", "~title": "Index File (.csidx)" },
       { "path": "listing_file.csdoc", "~title": "Listing File" },
       { "path": "notes_file_csnot.csdoc", "~title": "Notes File (.csnot)" },
@@ -109,9 +109,9 @@
   { "path": "introduction_to_data_entry.csdoc", "title": "Introduction" },
   { "path": "keys_summary.csdoc", "title": "Keyboard Summary" },
   { "path": "move_around_a_case_in_add_mode.csdoc", "title": "Keys" },
-  { "path": "change_capi_language.csdoc", "title": "Language",
-    "subindex": [ 
-      { "path": "change_capi_language.csdoc", "title": "Change for CAPI" }
+  { "path": "change_language.csdoc", "title": "Language",
+    "subindex": [
+      { "path": "change_language.csdoc", "title": "Change" }
     ]
   },
   { "path": "cases_and_levels.csdoc", "title": "Level Occurrences" },
@@ -121,7 +121,7 @@
   { "path": "fields.csdoc", "title": "Mirror Fields" },
   { "path": "verify_data.csdoc", "title": "Mismatch" },
   { "path": "begin_modifying_cases.csdoc", "title": "Mode",
-    "subindex": [ 
+    "subindex": [
       { "path": "begin_adding_cases.csdoc", "title": "Add" },
       { "path": "begin_modifying_cases.csdoc", "title": "Modify" },
       { "path": "begin_verifying_cases.csdoc", "title": "Verify" }
@@ -147,7 +147,7 @@
   { "path": "move_around_a_case_in_add_mode.csdoc", "title": "Page Down" },
   { "path": "move_around_a_case_in_add_mode.csdoc", "title": "Page Up" },
   { "path": "save_partially_added_case.csdoc", "title": "Partial Case",
-    "subindex": [ 
+    "subindex": [
       { "path": "save_partially_added_case.csdoc", "~title": "Save Partially Added Case" },
       { "path": "save_partially_modified_case.csdoc", "~title": "Save Partially Modified Case" },
       { "path": "save_partially_verified_case.csdoc", "~title": "Save Partially Verified Case" }
@@ -157,7 +157,7 @@
   { "path": "pause_data_entry.csdoc", "~title": "Pause Data Entry" },
   { "path": "persistent_fields.csdoc", "~title": "Persistent Fields" },
   { "path": "change_view.csdoc", "title": "Physical Order",
-    "subindex": [ 
+    "subindex": [
       { "path": "change_view.csdoc", "title": "View Cases" }
     ]
   },
@@ -168,7 +168,7 @@
   { "path": "move_around_a_case_in_add_mode.csdoc", "title": "Previous Screen" },
   { "path": "fields.csdoc", "title": "Protected Fields" },
   { "path": "cases_and_levels.csdoc", "title": "Questionnaires",
-    "subindex": [ 
+    "subindex": [
       { "path": "cases_and_levels.csdoc", "title": "Cases and Levels" },
       { "path": "view_questionnaire_from_csentry.csdoc", "title": "View Case Questionnaire" }
     ]
@@ -199,7 +199,7 @@
   { "path": "modes_of_operation.csdoc", "title": "Stop" },
   { "path": "stop_data_entry.csdoc", "~title": "Stop Data Entry" },
   { "path": "keys_summary.csdoc", "title": "Summary",
-    "subindex": [ 
+    "subindex": [
       { "path": "keys_summary.csdoc", "title": "Keyboard" },
       { "path": "menu_summary.csdoc", "title": "Menu" },
       { "path": "toolbar_summary.csdoc", "title": "Toolbar" }
@@ -210,7 +210,7 @@
   { "path": "understand_operator_statistics.csdoc", "title": "Timer for Session" },
   { "path": "toolbar_summary.csdoc", "~title": "Toolbar Summary" },
   { "path": "trees.csdoc", "~title": "Trees",
-    "subindex": [ 
+    "subindex": [
       { "path": "trees.csdoc", "title": "Case Tree" },
       { "path": "trees.csdoc", "title": "File Tree" }
     ]
@@ -220,7 +220,7 @@
   { "path": "understand_operator_statistics.csdoc", "~title": "Understand Operator Statistics" },
   { "path": "get_help.csdoc", "title": "User Support" },
   { "path": "begin_verifying_cases.csdoc", "title": "Verify",
-    "subindex": [ 
+    "subindex": [
       { "path": "begin_verifying_cases.csdoc", "title": "Cases" },
       { "path": "verify_data.csdoc", "title": "Data" },
       { "path": "begin_verifying_cases.csdoc", "title": "Mode" },
@@ -229,14 +229,14 @@
     ]
   },
   { "path": "change_view.csdoc", "title": "View",
-    "subindex": [ 
+    "subindex": [
       { "path": "change_view.csdoc", "title": "Full Screen" },
       { "path": "view_operator_statistics.csdoc", "title": "Operator Statistics" },
       { "path": "view_hide_or_move_response_box.csdoc", "title": "Responses" }
     ]
   },
   { "path": "change_view.csdoc", "title": "View Cases",
-    "subindex": [ 
+    "subindex": [
       { "path": "change_view.csdoc", "title": "Physical Order" },
       { "path": "change_view.csdoc", "title": "Sort Order" }
     ]
