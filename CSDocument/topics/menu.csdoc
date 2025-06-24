@@ -38,7 +38,7 @@ The following is a summary of the menu options available while working within th
     <cell 3><subheader>Format</subheader></cell>
     <cell>View Syntax</cell><cell></cell><cell>View the formatting styles allowed within CSPro Documents.</cell>
     <cell>Bold</cell><cell><b>Ctrl+B</b></cell><cell>Inserts bold tags around the selected text.</cell>
-    <cell>Italics</cell><cell><b>Ctrl+I</b></cell><cell>Inserts italic tags around the selected text.</cell>
+    <cell>Italic</cell><cell><b>Ctrl+I</b></cell><cell>Inserts italic tags around the selected text.</cell>
     <cell>Font</cell><cell></cell><cell>Inserts font tags around the selected text.</cell>
     <cell>Subheader</cell><cell></cell><cell>Inserts subheader tags around the selected text.</cell>
     <cell>Center</cell><cell></cell><cell>Inserts center tags around the selected text.</cell>
