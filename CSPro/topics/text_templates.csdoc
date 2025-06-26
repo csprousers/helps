@@ -1,0 +1,135 @@
+﻿<title>Text Templates</title>
+<context ID_VIEW_PREVIEW_TEXT_TEMPLATE />
+
+
+<subheader>Overview</subheader>
+
+CSPro supports text templates, a system that allows users to define static text with special markers, known as delimiters. The content in between the delimiters is evaluated dynamically when the text template is rendered. Text templates are commonly used for generating documents where portions of the output are computed at runtime. CSPro uses text templates for <link questions.csdoc>question text</link> and for <link templated_reports.csdoc>templated reports</link>.
+
+Each text template has a format that indicates how CSPro should encode the results of dynamic evaluation when replacing the template expressions. The most common formats are <link html_in_cspro.csdoc>HTML</link> and <link markdown_overview.csdoc>Markdown</link>. CSPro supports three delimiters that enclose CSPro expressions or logic:
+
+<table 2 header nowrap>
+    <cell>Delimiter</cell><cell>Description</cell>
+    <cell>~~</cell><cell>The template expression is evaluated and the result, <link encode_function.csdoc>encoded</link> for the format of the text template, replaces the expression.</cell>
+    <cell>~~~</cell><cell>The template expression is evaluated and the result replaces the expression directly without any encoding.</cell>
+    <cell>&lt;? ?&gt;</cell><cell>CSPro executes the template expression as logic and does not directly write to the text template. While evaluating the template expression, CSPro wraps the text template as a <logiccolor>StringWriter</logiccolor> and you can write directly to the text template using functions such as <logiccolor>StringWriter.write</logiccolor>.</cell>
+</table>
+
+The delimiter characters surrounding a template expression are not included in the final output.
+
+
+<subheader>Tilde Delimiters</subheader>
+
+When using the delimiters ~~ and ~~~, the template expression can be of the following:
+
+<b>Numeric expression</b>: The expression is evaluated to a number. The numeric result is inserted into the text template as an integer, as a decimal number with right-trimmed zeroes, or as text if a <link special_values.csdoc>special value</link>.
+
+<b>String expression</b>: The expression is evaluated to a string with the result inserted into the text template.
+
+<b>Binary data</b>: A <link localhost_url.csdoc>localhost URL</link> is created that accesses the binary symbol and this URL is inserted into the text template. This localhost URL is identical to what is returned by <action>Localhost.mapSymbol</action> with <arg>evaluateImmediately</arg> set to <logiccolor>false</logiccolor>.
+
+For example, given the following HTML text template, the evaluated result will look similar to:
+
+<table 2 header >
+    <cell nowrap>Text Template (HTML)</cell><cell nowrap>Evaluated Result</cell>
+    <cell nowrap><report inline HTML>
+<p>Square root of 9: ~~sqrt(9)~~</p>
+<p>Square root of 43: ~~sqrt(43)~~</p>
+<p>String with two tildes: ~~toupper("abc\nxyz")~~</p>
+<p>String with three tildes: ~~~toupper("abc\nxyz")~~~</p>
+<p>Binary data: ~~roof_image~~</p>
+    </report></cell>
+    <cell nowrap><color inline HTML>
+<p>Square root of 9: 3</p>
+<p>Square root of 43: 6.557439</p>
+<p>String with two tildes: ABC<br>XYZ</p>
+<p>String with three tildes: ABC
+XYZ</p>
+<p>Binary data: <img src="http://localhost:52319/vf/1/06-43-roof.jpg"></p>
+    </color></cell>
+</table>
+
+Note that the newline character <logiccolor>'\n'</logiccolor> is encoded as <colortag HTML><br></colortag> when using two tildes but not when using three tildes.
+
+
+<subheader>Logic Delimiters</subheader>
+
+CSPro logic can be embedded in the text template by wrapping the logic in the delimiters <nowrap>&lt;?</nowrap> and <nowrap>?&gt;</nowrap>. The logic is not evaluated to an expression but is simply executed. It is possible to split blocks of statements across multiple logic template expressions. For example:
+
+<table 2 header >
+    <cell nowrap>Text Template (HTML)</cell><cell nowrap>Evaluated Result</cell>
+    <cell nowrap><report inline HTML>
+<? do numeric ctr = 1 while ctr <= 3 ?>
+    <p>𝑒^~~ctr~~ = ~~exp(ctr)~~</p>
+<? enddo; ?>
+    </report></cell>
+    <cell nowrap><color inline HTML>
+~!~
+<p>𝑒^1 = 2.718282</p>
+~!~
+<p>𝑒^2 = 7.389056</p>
+~!~
+<p>𝑒^3 = 20.085537</p>
+~!~</color></cell>
+</table>
+
+Note that the evaluated result is seven, not three, lines. This is because as CSPro executes the body of the <logiccolor>do</logiccolor> loop three times, it also writes the newline character between the first line's end delimiter ?&gt; and the <colortag HTML><p></colortag> on the second line, and then the newline character between the <colortag HTML></p></colortag> and the third line's delimiter &lt;?. For formats where whitespace impacts the rendering of the content, such as Markdown, this could lead to unintended results. To prevent this excess whitespace, the text template could be specified as follows:
+
+<report HTML>
+<? do numeric ctr = 1 while ctr <= 3 ?><p>𝑒^~~ctr~~ = ~~exp(ctr)~~</p>
+<? enddo; ?>
+</report>
+
+
+<subheader>Writing Directly to a Text Template</subheader>
+
+The results of tilde delimiters are written directly to the text template, but it is also possible to write to the text template from logic specified within the logic delimiters <nowrap>&lt;?</nowrap> <nowrap>?&gt;</nowrap>. While evaluating the template expression, CSPro wraps the text template as a <logiccolor>StringWriter</logiccolor> object and you can write directly to the text template using functions such as <logiccolor>StringWriter.write</logiccolor> and <logiccolor>StringWriter.writeLine</logiccolor>. The text written will not encoded for the text template so these functions are similar to specifying ~~~ expressions. Text written using <logiccolor>StringWriter.writeEncoded</logiccolor> and <logiccolor>StringWriter.writeEncodedLine</logiccolor> will be encoded, similar to specifying a ~~ expression.
+
+When processing <link questions.csdoc>question text</link>, you must use the special name <logiccolor>QSF</logiccolor> to refer to the <logiccolor>StringWriter</logiccolor> wrapping the question text. A <link templated_reports.csdoc>templated report</link> is a <logiccolor>Report</logiccolor> object, which is a type of <logiccolor>StringWriter</logiccolor>, so you can use the name of the <logiccolor>Report</logiccolor> when writing to the text template, or you can use <link this_item.csdoc>$</link> to refer to the templated report being processed.
+
+In a templated report, the example in the logic delimiters section could be rewritten as:
+
+<report HTML>
+<?
+do numeric ctr = 1 while ctr <= 3
+    $.writeLine("<p>𝑒^%d = %f</p>", ctr, exp(ctr));
+enddo;
+?>
+</report>
+
+Because the numbers written do not need to be encoded for HTML, using <logiccolor>StringWriter.writeLine</logiccolor> is safe in this instance, but if you are not sure if the text is safe for the text template format, you would instead use a function that handles encoding. For example, if writing names to a HTML table as part of question text, you could write:
+
+<report HTML>
+<?
+for PERSON_REC do
+    QSF.writeLine("<tr><td>%s</td><td>%s</td></tr>", encode(FIRST_NAME), encode(LAST_NAME));
+endfor;
+?>
+</report>
+
+Alternatively:
+
+<report HTML>
+<?
+for PERSON_REC do
+    QSF.write("<tr><td>");
+    QSF.writeEncoded("%s", FIRST_NAME);
+    QSF.write("</td><td>");
+    QSF.writeEncoded("%s", LAST_NAME);
+    QSF.writeLine("</td></tr>");
+endfor;
+?>
+</report>
+
+
+<subheader>Previewing Text Templates</subheader>
+
+When editing a text template in the CSPro Designer, or from <link CSCode::language_cspro_text_template.csdoc>CSCode</link>, a preview can be viewed by pressing <b>Ctrl + F5</b> or selecting <b>Preview Text Template</b> from the <b>View</b> (Designer) or <b>Run</b> (CSCode) menu. This will not run the CSPro logic, so the preview will not necessarily look complete, but it can be useful to view an approximation of how the rendered text template will appear.
+
+
+<subheader>Tilde Delimiters in Markdown</subheader>
+
+The <link markdown_overview.csdoc>Markdown</link> variant that CSPro uses supports using two tildes to represent strikethrough. For example, <colorinline Markdown>~~striken~~</colorinline> is rendered as <html><del>striken</del></html>. Additionally, three tildes can be used for fenced code blocks. When using a text template, these tilde delimiters are instead processed as CSPro expressions, so if you want to use these Markdown features in your document, you can use the HTML tag <colortag HTML><del></colortag> for strikethrough and <colorinline Markdown>```</colorinline> for fenced code blocks.
+
+
+<seealso questions.csdoc templated_reports.csdoc  />

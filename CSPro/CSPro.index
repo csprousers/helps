@@ -1,6 +1,6 @@
 ﻿[
-  { "path": "create_fills_in_questions.csdoc", "title": "~~" },
-  { "path": "create_fills_in_questions.csdoc", "title": "~~~" },
+  { "path": "text_templates.csdoc", "title": "~~" },
+  { "path": "text_templates.csdoc", "title": "~~~" },
   { "path": "operators.csdoc", "title": "-",
     "subindex": [
       { "path": "operators.csdoc", "title": "Operator" },
@@ -3222,7 +3222,12 @@
     ]
   },
   { "path": "questionnaire_and_dictionary_organization.csdoc", "~title": "Questionnaire and Dictionary Organization" },
-  { "path": "questions.csdoc", "~title": "Questions" },
+  { "path": "questions.csdoc", "~title": "Questions",
+    "subindex": [
+      { "path": "text_templates.csdoc", "title": "Question Text" },
+      { "path": "text_templates.csdoc", "~title": "Text Templates" }
+    ]
+  },
   { "path": "javascript_overview.csdoc", "title": "QuickJS" },
   { "path": "data_source_r.csdoc", "~title": "R Data Source" },
   { "path": "radio_button.csdoc", "~title": "Radio Button" },
@@ -4103,7 +4108,8 @@
       { "path": "Report_save_function.csdoc", "~title": "Report.save Function" },
       { "path": "Report_view_function.csdoc", "~title": "Report.view Function" },
       { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
-      { "path": "change_report_properties.csdoc", "title": "Report Properties" }
+      { "path": "change_report_properties.csdoc", "title": "Report Properties" },
+      { "path": "text_templates.csdoc", "~title": "Text Templates" }
     ]
   },
   { "path": "temporary_data_file.csdoc", "~title": "Temporary Data File" },
@@ -4129,6 +4135,7 @@
   { "path": "text_box.csdoc", "~title": "Text Box" },
   { "path": "data_source_text.csdoc", "~title": "Text Data Source" },
   { "path": "tool_list.csdoc", "title": "Text Encoding Converter" },
+  { "path": "text_templates.csdoc", "~title": "Text Templates" },
   { "path": "tool_list.csdoc", "title": "Text Viewer" },
   { "path": "if_statement.csdoc", "title": "Then",
     "subindex": [
@@ -4136,6 +4143,7 @@
     ]
   },
   { "path": "this_item.csdoc", "~title": "This Item ($)" },
+  { "path": "text_templates.csdoc", "title": "tilde" },
   { "path": "change_windows.csdoc", "title": "Tile",
     "subindex": [
       { "path": "change_windows.csdoc", "title": "Side by Side" },

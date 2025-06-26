@@ -1500,6 +1500,12 @@
         ]
       },
       {
+        "title": "Text Templates",
+        "documents": [
+          { "path": "text_templates.csdoc", "title": "Overview" }
+        ]
+      },
+      {
         "title": "Templated Reporting System",
         "documents": [
           { "path": "templated_reports.csdoc", "~title": "Templated Reports" },

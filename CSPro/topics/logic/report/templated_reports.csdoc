@@ -1,5 +1,4 @@
 ﻿<title>Templated Reports</title>
-<context ID_VIEW_REPORT_PREVIEW />
 
 <i>(Prior to <link what_is_new_in_cspro_7_7.csdoc>CSPro 7.7</link>, a different version of templated reports existed. That version can no longer be used as it was removed in <link what_is_new_in_cspro_8_0.csdoc>CSPro 8.0</link>.)</i>
 
