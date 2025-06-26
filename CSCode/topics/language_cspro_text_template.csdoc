@@ -1,0 +1,14 @@
+﻿<title>CSPro Text Template</title>
+
+<subheader>Default Extensions</subheader>
+
+None. Can process files as <link CSPro::text_templates.csdoc>CSPro text templates</link>, including formatted as <link CSPro::html_in_cspro.csdoc>HTML</link> and <link CSPro::markdown_overview.csdoc>Markdown</link>.
+
+
+<subheader>Run Menu</subheader>
+
+<list>
+    <li>Preview Text Template (<b>Ctrl + F5</b>, <i>HTML and Markdown only</i>): View the document, rendered as a text template without evaluating logic, in the HTML Viewer.</li>
+    <li>Save as HTML (<i>Markdown only</i>): Save the Markdown as a HTML file, formatted using <link "https://github.com/sindresorhus/github-markdown-css">GitHub's style conventions</link>.</li>
+    <li>CSPro Logic Version: Toggle between <link CSPro::logic_version.csdoc>logic versions</link>.</li>
+</list>

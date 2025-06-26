@@ -16,7 +16,7 @@
       "title": "File Formats",
       "documents": [
         { "path": "language_cspro_logic.csdoc", "~title": "CSPro Logic" },
-        { "path": "language_cspro_report.csdoc", "~title": "CSPro Report" },
+        { "path": "language_cspro_text_template.csdoc", "~title": "CSPro Text Template" },
         { "path": "language_cspro_messages.csdoc", "~title": "CSPro Messages" },
         { "path": "language_cspro_action_invoker_json.csdoc", "~title": "CSPro Action Invoker (JSON Format)" },
         { "path": "language_cspro_html_dialog.csdoc", "~title": "CSPro HTML Dialog" },

@@ -1,8 +1,8 @@
 <cell><subheader>Language</subheader></cell><cell><subheader>Default File Extension</subheader></cell>
 <cell><topic language_cspro_logic.csdoc /></cell><cell>.apc</cell>
-<cell><link language_cspro_report.csdoc>CSPro Report (HTML)</link></cell><cell>&mdash;</cell>
-<cell><link language_cspro_report.csdoc>CSPro Report (Markdown)</link></cell><cell>&mdash;</cell>
-<cell><topic language_cspro_report.csdoc /></cell><cell>&mdash;</cell>
+<cell><link language_cspro_text_template.csdoc>CSPro Text Template (HTML)</link></cell><cell>&mdash;</cell>
+<cell><link language_cspro_text_template.csdoc>CSPro Text Template (Markdown)</link></cell><cell>&mdash;</cell>
+<cell><topic language_cspro_text_template.csdoc /></cell><cell>&mdash;</cell>
 <cell><topic language_cspro_messages.csdoc /></cell><cell>.mgf</cell>
 <cell><link language_cspro_action_invoker_json.csdoc> CSPro Action Invoker </link></cell><cell>&mdash;</cell>
 <cell><topic language_cspro_html_dialog.csdoc /></cell><cell>.html (in CSPro's <i>html/dialogs</i> folder)</cell>

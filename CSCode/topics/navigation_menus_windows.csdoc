@@ -27,17 +27,17 @@
     <include supported_files.hgi />
     <cell 2>&nbsp;</cell>
     <cell 2><subheader>Code</subheader></cell>
-    <cell>Paste as String Literal</cell><cell>Paste text on clipboard to selected location as a <link CSPro::string_literals.csdoc>string literal</link> (JSON, JavaScript, CSPro Logic/Report/Messages).</cell>
+    <cell>Paste as String Literal</cell><cell>Paste text on clipboard to selected location as a <link CSPro::string_literals.csdoc>string literal</link> (JSON, JavaScript, CSPro Logic/Text Template/Messages).</cell>
     <cell><link CSPro::string_encoder_dialog.csdoc>String Encoder</link></cell><cell>Shows a dialog that encodes and decodes text into a variety of <link CSPro::string_literals.csdoc>string literal</link> formats.</cell>
     <cell><link CSPro::path_adjuster_dialog.csdoc>Path Adjuster</link></cell><cell>Displays a dialog that facilitates working with absolute and relative paths in CSPro logic.</cell>
-    <cell>Deprecation Warnings</cell><cell>Modify the setting for the kind of deprecation warnings to display during compilation (CSPro Logic, Reports).</cell>
+    <cell>Deprecation Warnings</cell><cell>Modify the setting for the kind of deprecation warnings to display during compilation (CSPro Logic, Text Templates).</cell>
     <cell>Code Folding</cell><cell>Options to fold the application's logic (CSPro Logic).</cell>
     <cell 2>&nbsp;</cell>
     <cell 2><subheader>Run</subheader></cell>
     <cell><subheader>Dynamic Commands</subheader></cell><cell><subheader>Files with command available </subheader></cell>
     <cell>Open in Associated Program</cell><cell>All files</cell>
-    <cell>CSPro Logic Version</cell><cell>CSPro Logic, Reports, and Messages</cell>
-    <cell>Preview Text Template</cell><cell>CSPro Report (HTML), CSPro Report (Markdown)</cell>
+    <cell>CSPro Logic Version</cell><cell>CSPro Logic, Text Templates, and Messages</cell>
+    <cell>Preview Text Template</cell><cell>CSPro Text Template (HTML), CSPro Text Template (Markdown)</cell>
     <cell>Validate</cell><cell>CSPro Action Invoker, JSON</cell>
     <cell>Compile</cell><cell>JavaScript</cell>
     <cell>Run</cell><cell>CSPro Action Invoker, HTML Dialog, HTML, JavaScript, Markdown</cell>
@@ -55,7 +55,7 @@
     <cell 2><subheader>Window</subheader></cell>
     <cell>Build</cell><cell>Shows compilation/validation errors. (JavaScript, JSON, CSPro Messages/Action Invoker)</cell>
     <cell>Output</cell><cell>Shows results. (JavaScript, CSPro Action Invoker/HTML Dialog)</cell>
-    <cell>HTML Viewer</cell><cell>Shows HTML in browser. (Document context menu, HTML CSPro Report, HTML)</cell>
+    <cell>HTML Viewer</cell><cell>Shows HTML in browser. (Document context menu, HTML CSPro Text Template, HTML)</cell>
     <cell>Windows</cell><cell>Shows all documents, and lets you save/close/activate specific ones.</cell>
     <cell 2>&nbsp;</cell>
     <cell 2><subheader>Document Context Menu (right-click on document)</subheader></cell>

@@ -19,7 +19,7 @@ This guide contains the following information:
 
 <list>
     <li><topic language_cspro_logic.csdoc /></li>
-    <li><topic language_cspro_report.csdoc /></li>
+    <li><topic language_cspro_text_template.csdoc /></li>
     <li><topic language_cspro_messages.csdoc /></li>
     <li><topic language_cspro_action_invoker_json.csdoc /></li>
     <li><topic language_cspro_html_dialog.csdoc /></li>

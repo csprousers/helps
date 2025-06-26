@@ -8,7 +8,7 @@
     <cell><b>Ctrl + W</b></cell><cell>Close the current file.</cell>
     <cell><b>Ctrl + Shift + W </b></cell><cell>Close all files.</cell>
     <cell><b>Ctrl + Shift + S</b></cell><cell>Save all files.</cell>
-    <cell><b>Ctrl + F5 </b></cell><cell>Run Report Preview.</cell>
+    <cell><b>Ctrl + F5 </b></cell><cell>Run Text Template Preview.</cell>
     <cell><b>Ctrl + R </b></cell><cell>Run current file.</cell>
 </table>
 

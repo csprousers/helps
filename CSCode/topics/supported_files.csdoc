@@ -1,5 +1,5 @@
 ﻿<title>Supported Files</title>
 
-<table 2>
+<table 2 nowrap>
     <include supported_files.hgi />
 </table>
