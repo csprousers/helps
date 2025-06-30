@@ -1,0 +1,26 @@
+﻿<title>StringWriter.toString Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = object_name.toString()
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>StringWriter.toString</logiccolor> function returns the current contents of a <link StringWriter.csdoc>StringWriter</link> object's string buffer.
+
+When called on a StringWriter object <link StringWriter_statement.csdoc>based</link> on a <link templated_reports.csdoc>templated report</link>, an error occurs if the templated report is not in the process of creation.
+
+
+<subheader>Return Value</subheader>
+
+The function returns a string containing the current contents of the string buffer, or a blank string on error.
+
+
+<include include_StringWriter_clear_toString_example.hgi />
+
+
+<seealso StringWriter.csdoc templated_reports.csdoc />

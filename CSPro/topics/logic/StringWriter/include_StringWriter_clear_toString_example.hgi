@@ -1,0 +1,10 @@
+<subheader>Example</subheader>
+
+<logic>
+StringWriter sw;
+
+sw.write("A");  errmsg("%s", sw.toString()); // A
+sw.write("B");  errmsg("%s", sw.toString()); // AB
+sw.clear();     errmsg("%s", sw.toString()); //
+sw.write("C");  errmsg("%s", sw.toString()); // C
+</logic>

@@ -266,6 +266,7 @@
               { "path": "List.csdoc", "~title": "List Object" },
               { "path": "Map.csdoc", "~title": "Map Object" },
               { "path": "Pff.csdoc", "~title": "Pff Object" },
+              { "path": "StringWriter.csdoc", "~title": "StringWriter Object" },
               { "path": "SystemApp.csdoc", "~title": "SystemApp Object" },
               { "path": "ValueSet.csdoc", "~title": "ValueSet Object" }
             ]
@@ -1183,6 +1184,19 @@
             ]
           },
           {
+            "title": "StringWriter Object",
+            "documents": [
+              { "path": "StringWriter_statement.csdoc", "~title": "StringWriter Statement" },
+              { "path": "StringWriter_clear_function.csdoc", "~title": "StringWriter.clear Function" },
+              { "path": "StringWriter_toString_function.csdoc", "~title": "StringWriter.toString Function" },
+              { "path": "StringWriter_write_function.csdoc", "~title": "StringWriter.write Function" },
+              { "path": "StringWriter_writeEncoded_function.csdoc", "~title": "StringWriter.writeEncoded Function" },
+              { "path": "StringWriter_writeEncodedLine_function.csdoc", "~title": "StringWriter.writeEncodedLine Function" },
+              { "path": "StringWriter_writeLine_function.csdoc", "~title": "StringWriter.writeLine Function" },
+              { "path": "StringWriter_JSON_representation.csdoc", "title": "JSON Representation" }
+            ]
+          },
+          {
             "title": "SystemApp Object",
             "documents": [
               { "path": "SystemApp_statement.csdoc", "~title": "SystemApp Statement" },
@@ -1511,7 +1525,6 @@
           { "path": "templated_reports.csdoc", "~title": "Templated Reports" },
           { "path": "Report_save_function.csdoc", "~title": "Report.save Function" },
           { "path": "Report_view_function.csdoc", "~title": "Report.view Function" },
-          { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
           { "path": "Report_JSON_representation.csdoc", "title": "JSON Representation" }
         ]
       },

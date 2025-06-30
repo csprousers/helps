@@ -226,7 +226,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><action>Path.showFileDialog</action> <sup>(CS)</sup></cell><cell>Displays a dialog with a visual listing of the file system, allowing the user to select a file to open or to create a file to save.</cell>
     <cell><logiccolor>pathconcat</logiccolor></cell><cell>Combines multiple strings into one string representing a file path.</cell>
     <cell><logiccolor>pathname</logiccolor></cell><cell>Returns the path of various special directories.</cell>
-    <cell><logiccolor>Pff</logiccolor></cell><cell>Declare a <link Pff.csdoc>Pff</link> object that can be used to dynamically modify the way other CSPro applications are executed.</cell>
+    <cell><logiccolor>Pff</logiccolor></cell><cell>Declares a <link Pff.csdoc>Pff</link> object that can be used to dynamically modify the way other CSPro applications are executed.</cell>
     <cell><logiccolor>pos</logiccolor></cell><cell>Returns the position of a string within another string.</cell>
     <cell><logiccolor>poschar</logiccolor></cell><cell>Returns the position of any of a series of characters within another string.</cell>
     <cell><logiccolor>preproc</logiccolor></cell><cell>Declares that the following statements are executed at the beginning of a block.</cell>
@@ -246,7 +246,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>regexmatch</logiccolor></cell><cell>Returns whether a string matches the regular expression.</cell>
     <cell><action>registerAccessToken</action> <sup>(CS)</sup></cell><cell>Registers an <link action_invoker_access_token.csdoc>access token</link> to provide access to the Action Invoker from external callers.</cell>
     <cell><logiccolor>replace</logiccolor></cell><cell>Returns a string with one of more instances of a substring replaced with new text.</cell>
-    <cell><logiccolor>Report</logiccolor></cell><cell>Generates a <link templated_reports.csdoc>templated report</link>.</cell>
+    <cell><logiccolor>Report</logiccolor></cell><cell>Declares a <link templated_reports.csdoc>Report</link> object as a user-defined function parameter that can refer to <link templated_reports.csdoc>templated reports</link>.</cell>
     <cell><logiccolor>retrieve</logiccolor></cell><cell>Loads a case from the current position of an external file.</cell>
     <cell><logiccolor>round</logiccolor></cell><cell>Returns a value rounded to the nearest integer.</cell>
     <cell 2>&nbsp;</cell>
@@ -300,6 +300,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>startswith</logiccolor></cell><cell>Returns whether a string begins with a specified prefix.</cell>
     <cell><logiccolor>stop</logiccolor></cell><cell>Ends a data entry session or batch edit run.</cell>
     <cell><logiccolor>string</logiccolor></cell><cell>Declares variable-length alphanumeric variables used in the application.</cell>
+    <cell><logiccolor>StringWriter</logiccolor></cell><cell>Declares a <link StringWriter.csdoc>StringWriter</link> object that supports building strings incrementally.</cell>
     <cell><logiccolor>strip</logiccolor></cell><cell>Removes trailing blanks from a string.</cell>
     <cell><logiccolor>sum</logiccolor></cell><cell>Returns the sum of an item that occurs multiple times.</cell>
     <cell><logiccolor>swap</logiccolor></cell><cell>Switches the order of two occurrences within a group.</cell>

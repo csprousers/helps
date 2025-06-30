@@ -14,7 +14,7 @@
     ]
   },
   { "path": "this_item.csdoc", "title": "$" },
-  { "path": "Report_write_function.csdoc", "title": "$.Write Function" },
+  { "path": "StringWriter_write_function.csdoc", "title": "$.Write Function" },
   { "path": "operators.csdoc", "title": "%",
     "subindex": [
       { "path": "operators.csdoc", "title": "Operator" },
@@ -738,6 +738,7 @@
       { "path": "Image_clear_function.csdoc", "~title": "Image.clear Function" },
       { "path": "List_clear_function.csdoc", "~title": "List.clear Function" },
       { "path": "Map_clear_function.csdoc", "~title": "Map.clear Function" },
+      { "path": "StringWriter_clear_function.csdoc", "~title": "StringWriter.clear Function" },
       { "path": "ValueSet_clear_function.csdoc", "~title": "ValueSet.clear Function" }
     ]
   },
@@ -2282,6 +2283,7 @@
       { "path": "JSON_serialization_options.csdoc", "title": "Serialization Options" },
       { "path": "properties_json_serialization.csdoc", "title": "Serialization Properties" },
       { "path": "string_JSON_representation.csdoc", "title": "String Values" },
+      { "path": "StringWriter_JSON_representation.csdoc", "title": "StringWriter" },
       { "path": "symbols_json_representation.csdoc", "title": "Symbol Overview" }
     ]
   },
@@ -2818,6 +2820,7 @@
     "subindex": [
       { "path": "Array.csdoc", "~title": "Array Object" },
       { "path": "Audio.csdoc", "~title": "Audio Object" },
+      { "path": "Case.csdoc", "~title": "Case Object" },
       { "path": "Document.csdoc", "~title": "Document Object" },
       { "path": "File.csdoc", "~title": "File Object" },
       { "path": "Freq.csdoc", "~title": "Freq Object" },
@@ -2827,6 +2830,8 @@
       { "path": "List.csdoc", "~title": "List Object" },
       { "path": "Map.csdoc", "~title": "Map Object" },
       { "path": "Pff.csdoc", "~title": "Pff Object" },
+      { "path": "templated_reports.csdoc", "title": "Report Object" },
+      { "path": "StringWriter.csdoc", "~title": "StringWriter Object" },
       { "path": "SystemApp.csdoc", "~title": "SystemApp Object" },
       { "path": "ValueSet.csdoc", "~title": "ValueSet Object" }
     ]
@@ -3386,7 +3391,10 @@
       { "path": "Report_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "Report_save_function.csdoc", "~title": "Report.save Function" },
       { "path": "Report_view_function.csdoc", "~title": "Report.view Function" },
-      { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
+      { "path": "StringWriter_write_function.csdoc", "title": "Report.write Function" },
+      { "path": "StringWriter_writeEncoded_function.csdoc", "title": "Report.writeEncoded Function" },
+      { "path": "StringWriter_writeEncodedLine_function.csdoc", "title": "Report.writeEncodedLine Function" },
+      { "path": "StringWriter_writeLine_function.csdoc", "title": "Report.writeLine Function" },
       { "path": "change_report_properties.csdoc", "title": "Report Properties" }
     ]
   },
@@ -3863,6 +3871,7 @@
   },
   { "path": "expressions.csdoc", "title": "String",
     "subindex": [
+      { "path": "StringWriter.csdoc", "title": "Builder" },
       { "path": "compare_function.csdoc", "~title": "compare Function" },
       { "path": "compareNoCase_function.csdoc", "~title": "compareNoCase Function" },
       { "path": "string_comparisons.csdoc", "title": "Comparisons" },
@@ -3876,7 +3885,20 @@
       { "path": "string_statement.csdoc", "title": "Statement" },
       { "path": "string_encoder_dialog.csdoc", "~title": "String Encoder Dialog" },
       { "path": "substring_expressions.csdoc", "~title": "Substring Expressions" },
-      { "path": "variables.csdoc", "~title": "Variables" }
+      { "path": "variables.csdoc", "~title": "Variables" },
+      { "path": "StringWriter.csdoc", "title": "Writer" }
+    ]
+  },
+  { "path": "StringWriter.csdoc", "~title": "StringWriter Object",
+    "subindex": [
+      { "path": "StringWriter_JSON_representation.csdoc", "title": "JSON Representation" },
+      { "path": "StringWriter_clear_function.csdoc", "~title": "StringWriter.clear Function" },
+      { "path": "StringWriter_toString_function.csdoc", "~title": "StringWriter.toString Function" },
+      { "path": "StringWriter_write_function.csdoc", "~title": "StringWriter.write Function" },
+      { "path": "StringWriter_writeEncoded_function.csdoc", "~title": "StringWriter.writeEncoded Function" },
+      { "path": "StringWriter_writeEncodedLine_function.csdoc", "~title": "StringWriter.writeEncodedLine Function" },
+      { "path": "StringWriter_writeLine_function.csdoc", "~title": "StringWriter.writeLine Function" },
+      { "path": "StringWriter_statement.csdoc", "~title": "StringWriter Statement" }
     ]
   },
   { "path": "strip_function.csdoc", "title": "Strip function" },
@@ -4111,7 +4133,10 @@
       { "path": "Report_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "Report_save_function.csdoc", "~title": "Report.save Function" },
       { "path": "Report_view_function.csdoc", "~title": "Report.view Function" },
-      { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
+      { "path": "StringWriter_write_function.csdoc", "title": "Report.write Function" },
+      { "path": "StringWriter_writeEncoded_function.csdoc", "title": "Report.writeEncoded Function" },
+      { "path": "StringWriter_writeEncodedLine_function.csdoc", "title": "Report.writeEncodedLine Function" },
+      { "path": "StringWriter_writeLine_function.csdoc", "title": "Report.writeLine Function" },
       { "path": "templated_reports.csdoc", "title": "Report Object" },
       { "path": "change_report_properties.csdoc", "title": "Report Properties" }
     ]
@@ -4217,6 +4242,11 @@
       { "path": "data_dictionary_toolbar.csdoc", "title": "Data Dictionary" },
       { "path": "data_entry_toolbar.csdoc", "title": "Data Entry" },
       { "path": "tabulation_toolbar.csdoc", "title": "Tabulation" }
+    ]
+  },
+  { "path": "StringWriter_toString_function.csdoc", "title": "toString Function",
+    "subindex": [
+      { "path": "StringWriter_toString_function.csdoc", "~title": "StringWriter.toString Function" }
     ]
   },
   { "path": "debug_table_totals.csdoc", "title": "Total",
@@ -4580,11 +4610,30 @@
   { "path": "write_function.csdoc", "~title": "Write Function",
     "subindex": [
       { "path": "File_write_function.csdoc", "~title": "File.write Function" },
-      { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
+      { "path": "StringWriter_write_function.csdoc", "title": "Report.write Function" },
+      { "path": "StringWriter_write_function.csdoc", "~title": "StringWriter.write Function" },
       { "path": "write_function.csdoc", "~title": "Write Function" }
     ]
   },
   { "path": "writecase_function.csdoc", "~title": "WriteCase Function" },
+  { "path": "StringWriter_writeEncoded_function.csdoc", "title": "writeEncoded Function",
+    "subindex": [
+      { "path": "StringWriter_writeEncoded_function.csdoc", "title": "Report.writeEncoded Function" },
+      { "path": "StringWriter_writeEncoded_function.csdoc", "~title": "StringWriter.writeEncoded Function" }
+    ]
+  },
+  { "path": "StringWriter_writeLine_function.csdoc", "title": "writeLine Function",
+    "subindex": [
+      { "path": "StringWriter_writeLine_function.csdoc", "title": "Report.writeLine Function" },
+      { "path": "StringWriter_writeLine_function.csdoc", "~title": "StringWriter.writeLine Function" }
+    ]
+  },
+  { "path": "StringWriter_writeEncodedLine_function.csdoc", "title": "writeLineEncoded Function",
+    "subindex": [
+      { "path": "StringWriter_writeEncodedLine_function.csdoc", "title": "Report.writeEncodedLine Function" },
+      { "path": "StringWriter_writeEncodedLine_function.csdoc", "~title": "StringWriter.writeEncodedLine Function" }
+    ]
+  },
   { "path": "zero_fill.csdoc", "~title": "Zero Fill" },
   { "path": "formats_for_an_application.csdoc", "title": "Zero Mask" },
   { "path": "Map_zoomTo_function.csdoc", "title": "ZoomTo Function",

@@ -28,6 +28,8 @@ The encoding types are:
     <cell>Slashes</cell><cell>Adds backslashes to escape <link https://www.php.net/manual/en/function.addslashes.php>quote and backslash</link> characters.</cell>
 </table>
 
+If you are encoding many strings, you might consider using <logiccolor>StringWriter</logiccolor>, an object that supports the automatic encoding of text.
+
 
 <subheader>Return Value</subheader>
 
