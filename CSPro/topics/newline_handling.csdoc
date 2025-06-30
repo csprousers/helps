@@ -4,7 +4,7 @@ When using <link logic_version.csdoc>logic version</link> CSPro 8.0+, newline ch
 
 <list>
     <li>When displaying error messages that contain text with newline characters, the message will be <link errmsg_function.csdoc>displayed</link>, or written to a <link listing_file.csdoc>listing file</link>, on multiple lines.</li>
-    <li>When processing fills in <link create_fills_in_questions.csdoc>question text</link> or <link templated_reports.csdoc>HTML templated reports</link>, newline characters are converted to &lt;br&gt; line break elements.</li>
+    <li>When processing fills in <link html_in_cspro.csdoc>HTML</link> or <link markdown_overview.csdoc>Markdown</link> <link create_fills_in_questions.csdoc>question text</link> or <link templated_reports.csdoc>templated reports</link>, newline characters are converted to <colortag HTML><br></colortag> line break elements.</li>
     <li>When a user enters text on multiple lines using a <link text_box.csdoc>text box field</link> or in a <link CSEntry::add_a_note.csdoc>note</link>, the newline will be stored in the item or note as a <logiccolor>'\n'</logiccolor> character.</li>
 </list>
 

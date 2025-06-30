@@ -14,7 +14,7 @@ The <logiccolor>Freq.save</logiccolor> function generates frequencies based on t
 
 <list>
     <li>If a string expression <arg>frequencies_filename</arg> is specified, the frequencies are saved to a file.</li>
-    <li>If the name of a <link templated_reports.csdoc>templated report</link> is specified, the frequencies are saved to the report's contents. This version of the function can only be called from the report's logic, or from a user-defined function. The frequency table will only be written to <link html_in_cspro.csdoc>HTML-</link> or <link markdown_overview.csdoc>Markdown</link>-based reports. For the frequency table to display properly, you must include a link to the stylesheet: <logiccolor>"/css/common.css"</logiccolor></li>
+    <li>If the name of a <link templated_reports.csdoc>templated report</link> is specified, the frequencies are saved to the report's contents. This version of the function can only be called from the report's <link text_templates.csdoc>logic</link>, or from a user-defined function. The frequency table will only be written to <link html_in_cspro.csdoc>HTML-</link> or <link markdown_overview.csdoc>Markdown</link>-based reports. For the frequency table to display properly, you must include a link to the stylesheet: <logiccolor>"/css/common.css"</logiccolor></li>
     <li>If no argument is provided, the frequency table will be saved to the file specified by the <pffcolor>Freqs</pffcolor> PFF attribute. If this PFF attribute is not specified, the frequency table will be saved to the listing file (<link frequencies_file.csdoc>if possible</link>).</li>
 </list>
 

@@ -1511,7 +1511,8 @@
           { "path": "templated_reports.csdoc", "~title": "Templated Reports" },
           { "path": "Report_save_function.csdoc", "~title": "Report.save Function" },
           { "path": "Report_view_function.csdoc", "~title": "Report.view Function" },
-          { "path": "Report_write_function.csdoc", "~title": "Report.write Function" }
+          { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
+          { "path": "Report_JSON_representation.csdoc", "title": "JSON Representation" }
         ]
       },
       {

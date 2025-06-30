@@ -2278,6 +2278,7 @@
       { "path": "HashMap_JSON_representation.csdoc", "title": "HashMap" },
       { "path": "List_JSON_representation.csdoc", "title": "List" },
       { "path": "numeric_JSON_representation.csdoc", "title": "Numeric Values" },
+      { "path": "Report_JSON_representation.csdoc", "title": "Report" },
       { "path": "JSON_serialization_options.csdoc", "title": "Serialization Options" },
       { "path": "properties_json_serialization.csdoc", "title": "Serialization Properties" },
       { "path": "string_JSON_representation.csdoc", "title": "String Values" },
@@ -3379,9 +3380,10 @@
   { "path": "renaming_tables_and_table_applications.csdoc", "~title": "Renaming Tables and Table Applications" },
   { "path": "batch_edit_order.csdoc", "title": "Reorder Editing" },
   { "path": "replace_function.csdoc", "~title": "Replace Function" },
-  { "path": "templated_reports.csdoc", "title": "Reports",
+  { "path": "templated_reports.csdoc", "title": "Report Object",
     "subindex": [
       { "path": "Freq_save_function.csdoc", "title": "Embed Frequencies" },
+      { "path": "Report_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "Report_save_function.csdoc", "~title": "Report.save Function" },
       { "path": "Report_view_function.csdoc", "~title": "Report.view Function" },
       { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
@@ -4105,11 +4107,13 @@
   { "path": "tally_items_from_related_records.csdoc", "~title": "Tally Items from Related Records" },
   { "path": "templated_reports.csdoc", "~title": "Templated Reports",
     "subindex": [
+      { "path": "Freq_save_function.csdoc", "title": "Embed Frequencies" },
+      { "path": "Report_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "Report_save_function.csdoc", "~title": "Report.save Function" },
       { "path": "Report_view_function.csdoc", "~title": "Report.view Function" },
       { "path": "Report_write_function.csdoc", "~title": "Report.write Function" },
-      { "path": "change_report_properties.csdoc", "title": "Report Properties" },
-      { "path": "text_templates.csdoc", "~title": "Text Templates" }
+      { "path": "templated_reports.csdoc", "title": "Report Object" },
+      { "path": "change_report_properties.csdoc", "title": "Report Properties" }
     ]
   },
   { "path": "temporary_data_file.csdoc", "~title": "Temporary Data File" },
@@ -4135,7 +4139,12 @@
   { "path": "text_box.csdoc", "~title": "Text Box" },
   { "path": "data_source_text.csdoc", "~title": "Text Data Source" },
   { "path": "tool_list.csdoc", "title": "Text Encoding Converter" },
-  { "path": "text_templates.csdoc", "~title": "Text Templates" },
+  { "path": "text_templates.csdoc", "~title": "Text Templates",
+    "subindex": [
+      { "path": "questions.csdoc", "~title": "Questions" },
+      { "path": "templated_reports.csdoc", "~title": "Templated Reports" }
+    ]
+  },
   { "path": "tool_list.csdoc", "title": "Text Viewer" },
   { "path": "if_statement.csdoc", "title": "Then",
     "subindex": [

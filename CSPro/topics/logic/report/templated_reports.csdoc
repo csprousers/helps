@@ -1,10 +1,13 @@
 ﻿<title>Templated Reports</title>
 
-<i>(Prior to <link what_is_new_in_cspro_7_7.csdoc>CSPro 7.7</link>, a different version of templated reports existed. That version can no longer be used as it was removed in <link what_is_new_in_cspro_8_0.csdoc>CSPro 8.0</link>.)</i>
 
 <subheader>Overview</subheader>
 
-CSPro can create <link html_in_cspro.csdoc>HTML</link> reports using case data as well as results from queries into <link paradata.csdoc>paradata</link> and other data sets. By specifying tags in the templated reports, CSPro logic can be run and CSPro dictionary variables can be accessed to render a dynamic report.
+CSPro supports creating dynamic reports based on CSPro's <link text_templates.csdoc>text templates</link> system, where static text is combined with delimiters, ~~, ~~~, and &lt;? ?&gt;, that allow the dynamic creation of sections of the report. Templated reports are defined as files that are wrapped as a CSPro logic object of the type <logiccolor>Report</logiccolor>.
+
+Generally templated reports are written in <link html_in_cspro.csdoc>HTML</link> or <link markdown_overview.csdoc>Markdown</link>, but they can be any kind of text-based file. The report's format can be modified by changing the <link change_report_properties.csdoc>report properties</link>.
+
+Read the <link text_templates.csdoc>text templates</link> documentation to learn how to use logic to create dynamic reports, as well as how to preview reports from the CSPro Designer or from <link CSCode::language_cspro_text_template.csdoc>CSCode</link>.
 
 
 <subheader>Functionality</subheader>
@@ -16,7 +19,7 @@ Each templated report is a CSPro logic object and the following functions can be
     <cell><logiccolor Report>save</logiccolor></cell><cell>Saves the report to a file.</cell>
     <cell><logiccolor Report>view</logiccolor></cell><cell>Displays the report in an embedded web browser.</cell>
     <cell><logiccolor Report>write</logiccolor></cell><cell>Writes text to the report.</cell>
-    <include "../Symbol/all_symbols_with_json_out.hgi" />
+    <include "../Symbol/all_symbols_with_json_in_out.hgi" />
 </table>
 
 In addition to these object functions, templated reports can be used as arguments to the <logiccolor>filename</logiccolor> and <logiccolor>view</logiccolor> functions.
@@ -33,40 +36,22 @@ When a templated report is used as an argument to a <link user_defined_functions
 
 A templated report can be added to an application by selecting <link manage_application_files.csdoc>Manage Application Files</link> under the <b>Files</b> menu. If creating a new HTML file, an additional dialog will be displayed with template options. The templates have an HTML scaffolding which includes popular CSS and <link external_libraries.csdoc>JavaScript</link> libraries. A templated report can be removed from the application by using the same Manage Application Files interface.
 
-The name of the report will be automatically created based on the filename, but can be modified by changing the <link change_report_properties.csdoc>report properties</link>.
+The name of the report is automatically created based on the filename, but can be modified by changing the <link change_report_properties.csdoc>report properties</link>.
 
 
-<subheader>CSPro Logic</subheader>
+<subheader>Conversions</subheader>
 
-CSPro logic can be embedded in the templated report by starting the logic with <b>&lt;?</b> and ending the logic with <b>?&gt;</b>. The tag can be used to embed inline logic or multiple lines of logic.
-
-
-<subheader>Output</subheader>
-
-There are three ways of writing numeric and string expressions to templated reports:
-
-<list ordered>
-<li><b>~~</b>...<b>~~</b> writes the results of the numeric or string expression specified between the tildes. This result is automatically escaped to HTML or CSV format based on the report's <link change_report_properties.csdoc>tilde escaping property</link>.</li>
-<li><b>~~~</b>...<b>~~~</b> is similar to the above version except that the text will not be automatically escaped.</li>
-<li><logiccolor Report>$.write</logiccolor> writes directly to the report.</li>
-</list>
-
-Be aware that outputting <link newline_handling.csdoc>newlines</link> to a report without escaping can lead to formatting issues for some types of files unless properly escaped with the <logiccolor>encode</logiccolor> function.
+Report objects can be converted to and from <link Report_JSON_representation.csdoc>JSON strings</link>.
 
 
-<subheader>Preview</subheader>
+<subheader>Example 1 (Markdown)</subheader>
 
-A templated report can be previewed in both data entry and batch by pressing <b>Ctrl + F5</b>. This will not run the CSPro logic, so the preview will not necessarily look complete. Use it to preview the HTML and CSS.
-
-
-<subheader>Example 1</subheader>
-
-<report HTML>
-<p>Report generated at ~~timestring()~~</p>
+<report Markdown>
+### Report generated at ~~timestring()~~
 </report>
 
 
-<subheader>Example 2</subheader>
+<subheader>Example 2 (HTML)</subheader>
 
 <report HTML>
 <?
@@ -81,7 +66,8 @@ A templated report can be previewed in both data entry and batch by pressing <b>
         endif;
     endfor;
 ?>
-    <p><b>~~getsymbol(HOUSEHOLD_DICT)~~</b> has ~~partial_count~~ partial case(s) and ~~complete_count~~ complete case(s).</p>
+
+<p><b>~~getsymbol(HOUSEHOLD_DICT)~~</b> has ~~partial_count~~ partial case(s) and ~~complete_count~~ complete case(s).</p>
 </report>
 
 

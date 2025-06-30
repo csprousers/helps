@@ -23,16 +23,16 @@ Each <arg>argument</arg> is sequentially inserted into the <arg>string_exp</arg>
 
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if successful and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
 
 <subheader>Examples</subheader>
 
 <report HTML>
 <?
-	HOUSEHOLD_REPORT.write("The report was generated at: ", timestamp());
+    HOUSEHOLD_REPORT.write("The report was generated at: ", timestamp());
 
-	// Alternatively, use $ to refer to HOUSEHOLD_REPORT
-	$.write("The report was generated at: ", timestamp());
+    // alternatively, use $ to refer to HOUSEHOLD_REPORT
+    $.write("The report was generated at: ", timestamp());
 ?>
 </report>
 

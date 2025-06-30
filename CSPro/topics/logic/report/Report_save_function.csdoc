@@ -10,12 +10,14 @@ b = report_name.save(<arg>report_filename</arg>);
 
 <subheader>Description</subheader>
 
-The <logiccolor>Report.save</logiccolor> function runs the logic in the templated report and saves the output as a file specified by the string expression <arg>report_filename</arg>. The function is meant to be called from outside the templated report's logic.
+The <logiccolor>Report.save</logiccolor> function runs the the <link text_templates.csdoc>text template</link> logic in the templated report and saves the output as a file specified by the string expression <arg>report_filename</arg>. The function is meant to be called from outside the templated report's logic.
+
+If the templated report's <link change_report_properties.csdoc>format</link> is <link markdown_overview.csdoc>Markdown</link>, the report will automatically be converted to HTML before saving if the extension of <arg>report_filename</arg> is HTML-related (.html, .htm, or .cshtml). Otherwise, the output is saved as Markdown.
 
 
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if successful and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
 
 
 <subheader>Example</subheader>

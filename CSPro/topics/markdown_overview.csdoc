@@ -10,13 +10,16 @@ The Markdown syntax is well-documented online, though elements that may be usefu
 
 <subheader>Markdown in CSPro</subheader>
 
-Markdown can be used in CSPro in the following ways, with the Markdown automatically converted to HTML for displaying:
+Markdown can be used in CSPro in the following ways:
 
 <list>
-    <li>Viewing Markdown files using the <logiccolor>view</logiccolor> logic function or <link CSView::supported_files.csdoc>CSView</link>.</li>
-    <li>Editing and viewing Markdown files using <link CSCode::language_markdown.csdoc>CSCode</link>.
+    <li>As a format for <link templated_reports.csdoc>templated reports</link>.</li>
+    <li>Viewing Markdown files (with the extension <b>.md</b>) using the <logiccolor>view</logiccolor> logic function or <link CSView::supported_files.csdoc>CSView</link>.</li>
+    <li>Editing and viewing Markdown files using <link CSCode::language_markdown.csdoc>CSCode</link>.</li>
     <li>As part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link> using the <colortag csdoc>&lt;md></colortag> tag.</li>
 </list>
+
+When viewing Markdown, CSPro will automatically convert Markdown to HTML.
 
 
 <seealso markdown_syntax.csdoc html_in_cspro.csdoc />

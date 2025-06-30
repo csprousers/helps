@@ -1,7 +1,7 @@
 ﻿<title>Change Report Properties</title>
 <context ID_ADD_REPORT IDD_PAGE_PROPERTIES_REPORT />
 
-To modify the properties for a <link templated_reports.csdoc>templated report</link>, open the <b>File</b> menu and select <b>Manage Application Files</b>, or expand <b>Reports</b> in the <link trees.csdoc>tree</link> and then right-click on a templated report and select <b>Properties</b>. Properties include:
+To modify the properties for a <link templated_reports.csdoc>templated report</link>, open the <b>File</b> menu and select <b>Manage Application Files</b>, or expand <b>Reports</b> in the <link trees.csdoc>tree</link>, and then right-click on a templated report and select <b>Properties</b>. Properties include:
 
 
 <subheader>Name</subheader>
@@ -9,15 +9,18 @@ To modify the properties for a <link templated_reports.csdoc>templated report</l
 This is the name of the templated report. The name must be unique and must contain only letters, numbers, or the underscore character. The name must begin with a letter.
 
 
-<subheader>Escape ~~ Fills</subheader>
+<subheader>Report Format</subheader>
 
-This property determines how text is escaped when written to the report when using ~~ fills ~~:
+This property determines how text is <link encode_function.csdoc>encoded</link> when written to the report when using <link text_templates.csdoc>text template ~~ fills</link>:
 
 <list>
-    <li><b>HTML</b>: Fills are escaped for writing to HTML.</li>
-    <li><b>Comma Delimited (CSV)</b>: Fills are escaped for writing as <link "https://en.wikipedia.org/wiki/Comma-separated_values">comma-separated values</link>.</li>
-    <li><b>None</b>: Fills are not escaped.</li>
+    <li><b>HTML</b>: Fills are encoded for writing to <link html_in_cspro.csdoc>HTML</link>.</li>
+    <li><b>Markdown</b>: Fills are encoded for writing to <link markdown_overview.csdoc>Markdown</link>.</li>
+    <li><b>Comma Delimited (CSV)</b>: Fills are encoded for writing as <link "https://en.wikipedia.org/wiki/Comma-separated_values">comma-separated values</link>.</li>
+    <li><b>None</b>: Fills are not encoded.</li>
 </list>
+
+Additionally, this format determines how a report is displayed when using the <logiccolor>Report.view</logiccolor> function. For example, a Markdown report will be converted to HTML for display.
 
 
 <seealso templated_reports.csdoc manage_application_files.csdoc />

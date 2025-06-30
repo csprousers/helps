@@ -7,7 +7,7 @@ Although CSPro is not a web-based application, HTML is used in CSPro in a variet
 
 <list>
     <li>When displaying <link html_question_text.csdoc>question text</link>.</li>
-    <li>When displaying <link templated_reports.csdoc>logic-based reports</link> written in HTML.</li>
+    <li>When displaying <link templated_reports.csdoc>templated reports</link> written in HTML.</li>
     <li>When displaying content using functions like <logiccolor>view</logiccolor> or actions like <action>UI.showDialog</action>.</li>
     <li>When displaying <link html_dialog_ui.csdoc>some dialogs</link> for logic functions, as well as other aspects of the CSPro user interface.</li>
 </list>

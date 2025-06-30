@@ -10,9 +10,11 @@ b = report_name.view(『<arg>viewer_arguments</arg>』);
 
 <subheader>Description</subheader>
 
-The <logiccolor>Report.view</logiccolor> function runs the logic in the templated report and displays the output in an embedded web browser. The function is meant to be called from outside the templated report's logic.
+The <logiccolor>Report.view</logiccolor> function runs the <link text_templates.csdoc>text template</link> logic in the templated report and displays the output in an embedded web browser. The function is meant to be called from outside the templated report's logic.
 
 <include "../include_embedded_browser.hgi" />
+
+If the templated report's <link change_report_properties.csdoc>format</link> is <link markdown_overview.csdoc>Markdown</link>, the report will automatically be converted to HTML before viewing.
 
 
 <include "../include_viewer_arguments.hgi" />
