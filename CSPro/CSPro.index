@@ -569,7 +569,12 @@
       { "path": "OnViewQuestionnaire_global_function.csdoc", "~title": "OnViewQuestionnaire Global Function" }
     ]
   },
-  { "path": "Image_takePhoto_function.csdoc", "title": "Camera" },
+  { "path": "Image_takePhoto_function.csdoc", "title": "Camera",
+    "subindex": [
+      { "path": "Image_takePhoto_function.csdoc", "~title": "Image.takePhoto Function" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Web View Access" }
+    ]
+  },
   { "path": "introduction_to_capi.csdoc", "title": "CAPI",
     "subindex": [
       { "path": "insert_link.csdoc", "title": "Add Links in Question Text" },
@@ -1770,6 +1775,13 @@
       { "path": "Geometry_save_function.csdoc", "title": "Save GeoJSON to File" }
     ]
   },
+  { "path": "gps_interactive_modes.csdoc", "title": "Geolocation",
+    "subindex": [
+      { "path": "gps_function.csdoc", "~title": "GPS Function" },
+      { "path": "gps_interactive_modes.csdoc", "~title": "Interactive GPS Modes" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Web View Access" }
+    ]
+  },
   { "path": "Geometry.csdoc", "title": "Geometry",
     "subindex": [
       { "path": "Map_addGeometry_function.csdoc", "title": "Add Geometry to a Map" },
@@ -2649,6 +2661,13 @@
     ]
   },
   { "path": "methods_of_correcting_data.csdoc", "~title": "Methods of Correcting Data" },
+  { "path": "Audio_record_function.csdoc", "title": "Microphone",
+    "subindex": [
+      { "path": "Audio_record_function.csdoc", "~title": "Audio.record Function" },
+      { "path": "Audio_recordInteractive_function.csdoc", "~title": "Audio.recordInteractive Function" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Web View Access" }
+    ]
+  },
   { "path": "min_function.csdoc", "~title": "Min Function" },
   { "path": "add_summary_statistics_to_a_table.csdoc", "title": "Minimum",
     "subindex": [
@@ -4317,6 +4336,7 @@
       { "path": "CS_UI_getMaxDisplayDimensions.csdoc", "~title": "UI.getMaxDisplayDimensions Action" },
       { "path": "CS_UI_postWebMessage.csdoc", "~title": "UI.postWebMessage Action" },
       { "path": "CS_UI_setDisplayOptions.csdoc", "~title": "UI.setDisplayOptions Action" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "~title": "UI.setWebViewOptions Action" },
       { "path": "CS_UI_showDialog.csdoc", "~title": "UI.showDialog Action" },
       { "path": "CS_UI_view.csdoc", "~title": "UI.view Action" }
     ]
@@ -4546,8 +4566,11 @@
   { "path": "html_in_cspro.csdoc", "title": "Web View",
     "subindex": [
       { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Action Invoker Execution (from Web Views)" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Camera Access" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Geolocation Access" },
       { "path": "external_libraries.csdoc", "title": "JavaScript Libraries" },
-      { "path": "localhost_url.csdoc", "~title": "Localhost URL" }
+      { "path": "localhost_url.csdoc", "~title": "Localhost URL" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Microphone Access" }
     ]
   },
   { "path": "add_weights_to_a_table.csdoc", "title": "Weights",

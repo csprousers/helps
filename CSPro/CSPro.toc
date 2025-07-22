@@ -1712,6 +1712,7 @@
               { "path": "CS_UI_getMaxDisplayDimensions.csdoc", "~title": "UI.getMaxDisplayDimensions Action" },
               { "path": "CS_UI_postWebMessage.csdoc", "~title": "UI.postWebMessage Action" },
               { "path": "CS_UI_setDisplayOptions.csdoc", "~title": "UI.setDisplayOptions Action" },
+              { "path": "CS_UI_setWebViewOptions.csdoc", "~title": "UI.setWebViewOptions Action" },
               { "path": "CS_UI_showDialog.csdoc", "~title": "UI.showDialog Action" },
               { "path": "CS_UI_view.csdoc", "~title": "UI.view Action" }
             ]

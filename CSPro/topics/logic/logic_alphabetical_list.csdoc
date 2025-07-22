@@ -339,6 +339,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><action>UI.getMaxDisplayDimensions</action> <sup>(CS)</sup></cell><cell>Returns the maximum dimensions, in <link display_dimensions.csdoc>display units</link>, of <link html_in_cspro.csdoc>HTML dialogs</link> that CSPro can show.</cell>
     <cell><action>UI.postWebMessage</action> <sup>(CS)</sup></cell><cell>Posts a message to a <link html_in_cspro.csdoc>web view</link>.</cell>
     <cell><action>UI.setDisplayOptions</action> <sup>(CS)</sup></cell><cell>Sets the display options for the current <link html_in_cspro.csdoc>web view</link>.</cell>
+    <cell><action>UI.setWebViewOptions</action> <sup>(CS)</sup></cell><cell>Sets options, including granting permissions to use resources, for the current <link html_in_cspro.csdoc>web view</link>.</cell>
     <cell><action>UI.showDialog</action> <sup>(CS)</sup></cell><cell>Shows a <link html_dialog_ui.csdoc>HTML dialog</link>.</cell>
     <cell><action>UI.view</action> <sup>(CS)</sup></cell><cell>Views a file or web page in a new <link html_in_cspro.csdoc>web view</link>.</cell>
     <cell><logiccolor>universe</logiccolor></cell><cell>Specifies a condition that must be true for execution of a procedure or function to continue.</cell>

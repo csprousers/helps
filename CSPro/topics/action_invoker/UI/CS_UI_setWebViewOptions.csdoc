@@ -1,0 +1,54 @@
+﻿<title>UI.setWebViewOptions Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+CS.UI.setWebViewOptions(『<arg>permissions</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>permissions</arg></cell><cell>Privileged resources allowed without requiring the user's consent.</cell><cell>string, array ~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>UI.setWebViewOptions</action> <link action_invoker.csdoc>action</link> sets options for the current <link html_in_cspro.csdoc>web view</link>, including granting permissions to use resources. The <action>UI.setDisplayOptions</action> action also can be used to customize display-related options of web views.
+
+The <arg>permissions</arg> argument grants a web view access to a device resource without requiring user confirmation. It can be specified as a string specifying a single permission, or an array specifying multiple permissions. Once use of a resource is permitted, it cannot be revoked for that web view, and any subsequent setting of permissions will add to, not replace, the list of permitted resources. Permissions include:
+
+<list>
+    <li><logiccolor>"camera"</logiccolor>: Permission to capture photos or video using a camera.</li>
+    <li><logiccolor>"geolocation"</logiccolor>: Permission to access a device's geolocation using a GPS receiver or other location provider.</li>
+    <li><logiccolor>"microphone"</logiccolor>: Permission to capture audio using a microphone.</li>
+</list>
+
+
+<subheader>Return Value</subheader>
+
+The action returns undefined.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form.
+
+
+<subheader>Example (HTML + JavaScript)</subheader>
+
+<color HTML>
+<script>
+    const CS = new CSProActionInvoker();
+
+    CS.UI.setWebViewOptions({
+        permissions: "geolocation"
+    });
+
+    navigator.geolocation.getCurrentPosition(onLocationSuccess, onLocationError);
+</script>
+</color>
+
+
+<seealso CS_UI.csdoc CS_UI_setDisplayOptions.csdoc />
