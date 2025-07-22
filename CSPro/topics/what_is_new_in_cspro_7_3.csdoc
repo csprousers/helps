@@ -72,7 +72,7 @@ This is a detailed list of changes in CSPro 7.3. For a more general overview, se
     <li>The Export Data tool now writes labels at the end of processing, so if an item's value set is changed during the run, labels from that value set will be exported.</li>
     <li>The Reformat Data and Sort Data tools allow you to output data to a different <link data_sources.csdoc>data source</link> type than the input data. The Concatenate Data tool no longer requires the specification of the data source type of the output file.</li>
     <li>The Excel to CSPro <link Excel2CSPro::running_conversions_from_the_command_line.csdoc>PFF parameters</link> have changed from <pffcolor>InputData</pffcolor> to <pffcolor>Excel</pffcolor>.</li>
-    <li>The Paradata Concatenator <link ParadataConcat::run_production_paradata_concatenates.csdoc>PFF parameters</link> have changed from <pffcolor>InputData</pffcolor> to <pffcolor>InputParadata</pffcolor> and <pffcolor>OutputData</pffcolor> to <pffcolor>OutputParadata</pffcolor>.</li>
+    <li>The Paradata Concatenator <link ParadataConcat::run_production_paradata_concatenations.csdoc>PFF parameters</link> have changed from <pffcolor>InputData</pffcolor> to <pffcolor>InputParadata</pffcolor> and <pffcolor>OutputData</pffcolor> to <pffcolor>OutputParadata</pffcolor>.</li>
     <li>The ExportXMLMetadata tool's HTML export properly outputs <link unicode_primer.csdoc>Unicode</link> question text.</li>
 </list>
 

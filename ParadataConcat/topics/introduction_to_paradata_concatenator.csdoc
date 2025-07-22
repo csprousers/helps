@@ -8,11 +8,11 @@ This guide contains the following information:
 <subheader>How to ...</subheader>
 
 <list>
-	<li><topic specify_logs.csdoc /></li>
-	<li><topic add_logs.csdoc /></li>
-	<li><topic remove_logs.csdoc /></li>
-	<li><topic run_concatenate.csdoc /></li>
-	<li><topic use_specification_files.csdoc /></li>
-	<li><topic run_production_paradata_concatenates.csdoc /></li>
-	<li><topic get_help.csdoc /></li>
+    <li><topic specify_logs.csdoc /></li>
+    <li><topic add_logs.csdoc /></li>
+    <li><topic remove_logs.csdoc /></li>
+    <li><topic run_concatenate.csdoc /></li>
+    <li><topic use_specification_files.csdoc /></li>
+    <li><topic run_production_paradata_concatenations.csdoc /></li>
+    <li><topic get_help.csdoc /></li>
 </list>

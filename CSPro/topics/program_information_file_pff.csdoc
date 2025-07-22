@@ -7,7 +7,7 @@ Application-specific PFF information can be viewed in the following help topics:
 <table 2 header>
     <cell>Program</cell><cell>Task</cell>
     <cell>CSBatch</cell><cell><link run_production_batch_edits.csdoc>Batch Edits</link></cell>
-    <cell>CSConcat</cell><cell><link CSConcat::run_production_concatenates.csdoc>Concatenate Data</link></cell>
+    <cell>CSConcat</cell><cell><link CSConcat::run_production_concatenations.csdoc>Concatenate Data</link></cell>
     <cell>CSDeploy</cell><cell><link CSDeploy::run_production_deployments.csdoc>Deploy Application(s)</link></cell>
     <cell>CSDiff</cell><cell><link CSDiff::run_production_compares.csdoc>Compare Data</link></cell>
     <cell>CSEntry</cell><cell><link run_production_data_entry.csdoc>Data Entry</link></cell>
@@ -21,7 +21,7 @@ Application-specific PFF information can be viewed in the following help topics:
     <cell>CSView</cell><cell><link CSView::run_production_views.csdoc>View File in a Web Browser</link></cell>
     <cell>DataManager</cell><cell><link DataManager::run_production_synchronizations.csdoc>Synchronize Data</link></cell>
     <cell>Excel2CSPro</cell><cell><link Excel2CSPro::running_conversions_from_the_command_line.csdoc>Convert Excel to CSPro Data </link></cell>
-    <cell>ParadataConcat</cell><cell><link ParadataConcat::run_production_paradata_concatenates.csdoc>Concatenate Paradata</link></cell>
+    <cell>ParadataConcat</cell><cell><link ParadataConcat::run_production_paradata_concatenations.csdoc>Concatenate Paradata</link></cell>
 </table>
 
 <seealso Pff.csdoc />

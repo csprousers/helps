@@ -1,6 +1,6 @@
-﻿<title>Run Production Concatenates</title>
+﻿<title>Run Production Concatenations</title>
 
-To run production concatenates, you'll need to customize its behavior by creating a PFF file. You can then use the PFF file as a command line parameter in DOS or in a Windows icon for CSConcat.exe (the associated filename of this utility). For example, if you name your PFF MyConcat.pff, then you can run the concatenation program by invoking:
+To run production concatenations, you'll need to customize its behavior by creating a PFF file. You can then use the PFF file as a command line parameter in DOS or in a Windows icon for CSConcat.exe (the associated filename of this utility). For example, if you name your PFF MyConcat.pff, then you can run the concatenation program by invoking:
 
 <indent><font monospace>"C:\Program Files (x86)\CSPro <definition CSPro::version />\CSConcat.exe" MyConcat.pff</font></indent>
 
@@ -36,8 +36,8 @@ ConcatMethod=Case
 The <pffcolor>[Run Information]</pffcolor> block is required. While <pffcolor>Version</pffcolor> and <pffcolor>AppType</pffcolor> must appear exactly as shown in the example above, there are two optional properties:
 
 <list>
-	<li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only).</li>
-	<li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
+    <li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only).</li>
+    <li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
 </list>
 
 <subheader>[Files]</subheader>
@@ -49,9 +49,9 @@ The <pffcolor>[Files]</pffcolor> block is required and names the file(s) to be c
 The <pffcolor>[Parameters]</pffcolor> block is optional. <pffcolor>ViewListing</pffcolor> determines whether the listing file is viewed. There are three options:
 
 <list>
-	<li><pffcolor>ViewListing</pffcolor>=Always means you will always see the generated listing file.</li>
-	<li><pffcolor>ViewListing</pffcolor>=Never means you will never see the generated listing file.</li>
-	<li><pffcolor>ViewListing</pffcolor>=OnError means you will see the generated listing file only if an error(s) occurred during the run.</li>
+    <li><pffcolor>ViewListing</pffcolor>=Always means you will always see the generated listing file.</li>
+    <li><pffcolor>ViewListing</pffcolor>=Never means you will never see the generated listing file.</li>
+    <li><pffcolor>ViewListing</pffcolor>=OnError means you will see the generated listing file only if an error(s) occurred during the run.</li>
 </list>
 
 If the <pffcolor>ViewListing</pffcolor> entry is missing, the default action will be Always.
@@ -61,8 +61,8 @@ If the <pffcolor>ViewListing</pffcolor> entry is missing, the default action wil
 <pffcolor>ConcatMethod</pffcolor> sets the concatenation method to use. There are two options:
 
 <list>
-	<li><pffcolor>ConcatMethod</pffcolor>=Case means use case concatenation mode, skipping invalid and duplicate cases.</li>
-	<li><pffcolor>ConcatMethod</pffcolor>=Text means use content concatenation mode, appending files regardless of contents.</li>
+    <li><pffcolor>ConcatMethod</pffcolor>=Case means use case concatenation mode, skipping invalid and duplicate cases.</li>
+    <li><pffcolor>ConcatMethod</pffcolor>=Text means use content concatenation mode, appending files regardless of contents.</li>
 </list>
 
 When using <pffcolor>ConcatMethod</pffcolor>=Case, a data dictionary must be specified via an <pffcolor>InputDict</pffcolor> entry in the <pffcolor>[Files]</pffcolor> section. If <pffcolor>ConcatMethod</pffcolor> is not specified in the PFF file, the default action will be Text.

@@ -1,6 +1,6 @@
-﻿<title>Run Production Paradata Concatenates</title>
+﻿<title>Run Production Paradata Concatenations</title>
 
-You can run production paradata concatenates by using the PFF as a command line parameter for ParadataConcat.exe (the associated filename of this utility). For example, if you name your PFF MyParadataConcat.pff, then you can run the concatenation program by invoking:
+You can run production paradata concatenations by using the PFF as a command line parameter for ParadataConcat.exe (the associated filename of this utility). For example, if you name your PFF MyParadataConcat.pff, then you can run the concatenation program by invoking:
 
 <indent><font monospace>"C:\Program Files (x86)\CSPro <definition CSPro::version />\ParadataConcat.exe" MyParadataConcat.pff</font></indent>
 
@@ -32,8 +32,8 @@ ViewListing=Always
 The <pffcolor>[Run Information]</pffcolor> block is required. While <pffcolor>Version</pffcolor> and <pffcolor>AppType</pffcolor> must appear exactly as shown in the example above, there are two optional properties:
 
 <list>
-	<li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only).</li>
-	<li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
+    <li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only).</li>
+    <li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
 </list>
 
 <subheader>[Files]</subheader>
@@ -45,9 +45,9 @@ The <pffcolor>[Files]</pffcolor> block is required and names the log(s) to be co
 The <pffcolor>[Parameters]</pffcolor> block is optional. <pffcolor>ViewListing</pffcolor> determines whether the listing file is viewed. There are three options:
 
 <list>
-	<li><pffcolor>ViewListing</pffcolor>=Always means you will always see the generated listing file.</li>
-	<li><pffcolor>ViewListing</pffcolor>=Never means you will never see the generated listing file.</li>
-	<li><pffcolor>ViewListing</pffcolor>=OnError means you will see the generated listing file only if an error(s) occurred during the run.</li>
+    <li><pffcolor>ViewListing</pffcolor>=Always means you will always see the generated listing file.</li>
+    <li><pffcolor>ViewListing</pffcolor>=Never means you will never see the generated listing file.</li>
+    <li><pffcolor>ViewListing</pffcolor>=OnError means you will see the generated listing file only if an error(s) occurred during the run.</li>
 </list>
 
 If the <pffcolor>ViewListing</pffcolor> entry is missing, the default action will be Always.

@@ -4,4 +4,4 @@ If you think that you will frequently run a paradata concatenation on the same s
 
 From the same <b>File</b> menu, you can select <b>Open</b> to load the parameters from a PFF file.
 
-Having a PFF that describes your program parameters also allows you to run a <link run_production_paradata_concatenates.csdoc>production concatenation</link>.
+Having a PFF that describes your program parameters also allows you to run a <link run_production_paradata_concatenations.csdoc>production concatenation</link>.
