@@ -4567,10 +4567,12 @@
     "subindex": [
       { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Action Invoker Execution (from Web Views)" },
       { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Camera Access" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "DOM Storage" },
       { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Geolocation Access" },
       { "path": "external_libraries.csdoc", "title": "JavaScript Libraries" },
       { "path": "localhost_url.csdoc", "~title": "Localhost URL" },
-      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Microphone Access" }
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Microphone Access" },
+      { "path": "CS_UI_setWebViewOptions.csdoc", "title": "Web Storage" }
     ]
   },
   { "path": "add_weights_to_a_table.csdoc", "title": "Weights",

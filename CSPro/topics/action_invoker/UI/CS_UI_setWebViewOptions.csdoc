@@ -23,6 +23,7 @@ The <arg>permissions</arg> argument grants a web view access to a device resourc
     <li><logiccolor>"camera"</logiccolor>: Permission to capture photos or video using a camera.</li>
     <li><logiccolor>"geolocation"</logiccolor>: Permission to access a device's geolocation using a GPS receiver or other location provider.</li>
     <li><logiccolor>"microphone"</logiccolor>: Permission to capture audio using a microphone.</li>
+    <li><logiccolor>"web_storage"</logiccolor>: Permission to use the <link "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">Web Storage API</link> (<link "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">localStorage</link> and <link "https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage">sessionStorage</link>). This permission is only required on Android.</li>
 </list>
 
 
