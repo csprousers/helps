@@ -268,7 +268,8 @@
               { "path": "Pff.csdoc", "~title": "Pff Object" },
               { "path": "StringWriter.csdoc", "~title": "StringWriter Object" },
               { "path": "SystemApp.csdoc", "~title": "SystemApp Object" },
-              { "path": "ValueSet.csdoc", "~title": "ValueSet Object" }
+              { "path": "ValueSet.csdoc", "~title": "ValueSet Object" },
+              { "path": "Video.csdoc", "~title": "Video Object" }
             ]
           },
           {

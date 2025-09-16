@@ -9,6 +9,7 @@ This <link item_properties.csdoc>item property</link> specifies the data types a
     <li><link Document.csdoc>Document</link> items allow for the attachment of a wide range of "documents" (PDF, Word or Excel file, JPEG, etc.) to a case. For example, if an interview is taking place at a hospital and the interviewer needs to attach electronic copies of the hospital's accrediting papers, the Document data type could be used. A Document dictionary item cannot have a value set.</li>
     <li><link Geometry.csdoc>Geometry</link> items allow for the attachment of Geometry objects to a case. This can be useful, for example, if you wish to fine-tune an existing base map to add additional features that are identified once you are at the survey site. A Geometry dictionary item cannot have a value set.</li>
     <li><link Image.csdoc>Image</link> items allow for the attachment of images to the case. At times it may be desirable to take a photo and attach it to a case when something cannot be easily described or categorized. An Image dictionary item cannot have a value set.</li>
+    <li><link Video.csdoc>Video</link> items allow for the attachment of video recordings to a case. For example, this could include a recording of a portion of an interview. A Video dictionary item cannot have a value set.</li>
 </list>
 
 <seealso item_description.csdoc item_properties.csdoc binary_dictionary_items.csdoc variables.csdoc />

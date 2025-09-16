@@ -25,7 +25,7 @@ An Audio object is a CSPro logic object that can be defined as a <link binary_di
     <include "../Symbol/all_symbols_with_json_in_out.hgi" />
 </table>
 
-In addition to these object functions, Audio objects can be used as arguments to the <logiccolor>filename</logiccolor> function.
+In addition to these object functions, Audio objects can be used as arguments to the <logiccolor>filename</logiccolor> and <logiccolor>view</logiccolor> functions.
 
 
 <subheader>Assignments</subheader>
@@ -67,4 +67,4 @@ Audio objects can be converted to and from:
 </logic>
 
 
-<seealso Document.csdoc multimedia_features.csdoc />
+<seealso Document.csdoc Video.csdoc multimedia_features.csdoc />

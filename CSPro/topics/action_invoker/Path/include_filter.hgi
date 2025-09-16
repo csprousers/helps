@@ -4,4 +4,5 @@ For example, <logiccolor>"*.csdb"</logiccolor> would include only the paths of <
     <li><logiccolor>"|FileType.Audio"</logiccolor>: Files that the <link Audio.csdoc>Audio</link> object can read and write.</li>
     <li><logiccolor>"|FileType.Geometry"</logiccolor>: Files that the <link Geometry.csdoc>Geometry</link> object can read and write.</li>
     <li><logiccolor>"|FileType.Image"</logiccolor>: Files that the <link Image.csdoc>Image</link> object can read and write.</li>
+    <li><logiccolor>"|FileType.Video"</logiccolor>: Files that the <link Video.csdoc>Video</link> object can read and write.</li>
 </list>

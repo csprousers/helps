@@ -7,6 +7,7 @@ In addition to the standard numeric and alpha <link data_type.csdoc>data types</
     <li><link Document.csdoc>Document</link></li>
     <li><link Geometry.csdoc>Geometry</link></li>
     <li><link Image.csdoc>Image</link></li>
+    <li><link Video.csdoc>Video</link></li>
 </list>
 
 These binary data types are only available if the dictionary option <link data_dictionary_menu.csdoc>Enable Binary Items (experimental)</link> has been checked. Once enabled, you cannot disable the option unless all binary dictionary items have been removed from your dictionary.
@@ -65,6 +66,7 @@ While binary dictionary items are experimental, they cannot be used within the <
     <cell>Binary Dictionary Item</cell><cell nowrap>Document</cell><cell>Succeeds</cell>
     <cell>Binary Dictionary Item</cell><cell nowrap>Geometry</cell><cell>Succeeds if the MIME type is GeoJSON</cell>
     <cell>Binary Dictionary Item</cell><cell nowrap>Image</cell><cell>Succeeds if the MIME type is a valid image type</cell>
+    <cell>Binary Dictionary Item</cell><cell nowrap>Video</cell><cell>Succeeds if the MIME type is a valid video type</cell>
     <cell>Binary Dictionary Item</cell><cell nowrap>Numeric</cell><cell>Fails</cell>
     <cell>Numeric</cell><cell nowrap>Binary Dictionary Item</cell><cell>Fails</cell>
 </table></indent>
