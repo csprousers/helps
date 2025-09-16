@@ -2,7 +2,7 @@
 
 <subheader>Default Extensions</subheader>
 
-.html (when the file is in the directory: C:\Program Files (x86)\CSPro 8.0\html\dialogs)
+.html (when the file is in the directory: C:\Program Files (x86)\CSPro <definition CSPro::version />\html\dialogs)
 
 <subheader>Run Menu</subheader>
 

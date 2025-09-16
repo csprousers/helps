@@ -1,4 +1,4 @@
-SET CSDocument="C:\Program Files (x86)\CSPro 8.0\CSDocument.exe"
+SET CSDocument="C:\Program Files (x86)\CSPro 8.1\CSDocument.exe"
 
 cd /d %~dp0
 del /q /f /s "Outputs\PDF" 

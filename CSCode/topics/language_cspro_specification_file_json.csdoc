@@ -1,7 +1,7 @@
 ﻿<title>CSPro Specification File (JSON)</title>
 
 
-<subheader>Default Extensions (post-8.0 CSPro Specification Files)</subheader>
+<subheader>Default Extensions (CSPro 8.0+ Specification Files)</subheader>
 
 .ent, .bch, .xtb, .csprops, .dcf, .cmp, .csds, .cspack, .exf, .fqf, .ssf, .xl2cs
 
