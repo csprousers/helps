@@ -44,7 +44,7 @@ It is also possible to assign Geometry objects to a <link Document.csdoc>Documen
 <arg>document_name</arg> = <arg>geometry_name</arg>;
 </logicsyntax>
 
-You can also make the reverse assignment, assigning a Document to a Geometry object. A runtime error will occur if the Document's data was not valid geometry data.
+You can also make the reverse assignment, assigning a Document to a Geometry object. A runtime error will occur if the Document's data is not valid GeoJSON.
 
 <logicsyntax>
 <arg>geometry_name</arg> = <arg>document_name</arg>;
