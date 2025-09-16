@@ -27,20 +27,22 @@ Document objects can be assigned to other Document objects, which will replace t
 <arg>document_name</arg> = <arg>another_document_name</arg>;
 </logicsyntax>
 
-It is also possible to assign <link Audio.csdoc>Audio</link>, <link Geometry.csdoc>Geometry</link>, and <link Image.csdoc>Image</link> objects to a Document. These assignments will always succeed.
+It is also possible to assign <link Audio.csdoc>Audio</link>, <link Geometry.csdoc>Geometry</link>, <link Image.csdoc>Image</link>, and <link Video.csdoc>Video</link> objects to a Document. These assignments will always succeed.
 
 <logicsyntax>
 <arg>document_name</arg> = <arg>audio_name</arg>;
 <arg>document_name</arg> = <arg>geometry_name</arg>;
 <arg>document_name</arg> = <arg>image_name</arg>;
+<arg>document_name</arg> = <arg>video_name</arg>;
 </logicsyntax>
 
-You can also make the reverse assignment, assigning a Document to an Audio, Geometry, or Image object. A runtime error will occur if the Document's data cannot be converted to those objects.
+You can also make the reverse assignment, assigning a Document to an Audio, Geometry, Image, or Video object. A runtime error will occur if the Document's data cannot be converted to those objects.
 
 <logicsyntax>
 <arg>audio_name</arg> = <arg>document_name</arg>;
 <arg>geometry_name</arg> = <arg>document_name</arg>;
 <arg>image_name</arg> = <arg>document_name</arg>;
+<arg>video_name</arg> = <arg>document_name</arg>;
 </logicsyntax>
 
 You can assign a string expression to a Document object, which will replace the Document's contents with the text, as if the contents had been read from a text file.

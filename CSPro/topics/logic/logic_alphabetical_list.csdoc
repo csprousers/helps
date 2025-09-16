@@ -347,6 +347,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>uuid</logiccolor></cell><cell>Returns a human-readable string containing a universally unique identifier.</cell>
     <cell 2>&nbsp;</cell>
     <cell><logiccolor>ValueSet</logiccolor></cell><cell>Declares a <link ValueSet.csdoc>ValueSet</link> object for storing the contents of a dynamic value set.</cell>
+    <cell><logiccolor>Video</logiccolor></cell><cell>Declares a <link Video.csdoc>Video</link> object for recording or playing video.</cell>
     <cell><logiccolor>view</logiccolor></cell><cell>Launches the system's default viewer to display a file or website.</cell>
     <cell><logiccolor>visualvalue</logiccolor></cell><cell>Returns the <link visual_values.csdoc>visual value</link> of a numeric data item prior to its input.</cell>
     <cell 2>&nbsp;</cell>

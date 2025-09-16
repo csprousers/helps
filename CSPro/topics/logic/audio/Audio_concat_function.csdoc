@@ -12,7 +12,7 @@ b = audio_name.concat(<arg>audio_filename</arg> ‖ <arg>audio_object</arg>);
 
 The <logiccolor>Audio.concat</logiccolor> function appends an audio recording stored in a file specified by the argument <arg>audio_filename</arg> or an <link Audio.csdoc>Audio</link> object specified by the argument <arg>audio_object</arg> to the current recording in an <link Audio.csdoc>Audio</link> object. The result is a new recording that combines both recordings and is stored in the initial Audio object.
 
-The <logiccolor>Audio.concat</logiccolor> function only works with audio files stored in m4a format (AAC encoded audio stored in an MPEG-4 container). This is the format of files recorded in CSPro using the <logiccolor>Audio.record</logiccolor> and <logiccolor>Audio.recordInteractive</logiccolor> functions. Audio files that come from sources other than CSPro will most likely not work with <logiccolor>Audio.concat</logiccolor>.
+The <logiccolor>Audio.concat</logiccolor> function only works with audio files stored in M4A format (AAC encoded audio stored in an MPEG-4 container). This is the format of files recorded in CSPro using the <logiccolor>Audio.record</logiccolor> and <logiccolor>Audio.recordInteractive</logiccolor> functions. Audio files that come from sources other than CSPro will most likely not work with <logiccolor>Audio.concat</logiccolor>.
 
 
 <subheader>Return Value</subheader>
@@ -40,26 +40,26 @@ Audio recordingQ2;
 
 PROC SURVEY_LEVEL
 
-	// at end of questionnaire combine audio recordings from Q1 and Q2 and save
-	Audio combined;
-	combined = recordingQ1;
-	combined.concat(recordingQ2);
-	string audioFilename = maketext("recording%v.m4a", HOUSEHOLD_ID);
-	combined.save(audioFilename);
+    // at end of questionnaire combine audio recordings from Q1 and Q2 and save
+    Audio combined;
+    combined = recordingQ1;
+    combined.concat(recordingQ2);
+    string audioFilename = maketext("recording%v.m4a", HOUSEHOLD_ID);
+    combined.save(audioFilename);
 
 PROC Q1
 preproc
-	recordingQ1.record();
+    recordingQ1.record();
 
 postproc
-	recordingQ1.stop();
+    recordingQ1.stop();
 
 PROC Q2
 preproc
-	recordingQ2.record();
+    recordingQ2.record();
 
 postproc
-	recordingQ2.stop();
+    recordingQ2.stop();
 </logic>
 
 

@@ -40,7 +40,7 @@ It is also possible to assign Image objects to a <link Document.csdoc>Document</
 <arg>document_name</arg> = <arg>image_name</arg>;
 </logicsyntax>
 
-You can also make the reverse assignment, assigning a document to an Image object. A runtime error will occur if the Document's data was not a valid image.
+You can also make the reverse assignment, assigning a document to an Image object. A runtime error will occur if the Document's data is not a valid image that CSPro can process.
 
 <logicsyntax>
 <arg>image_name</arg> = <arg>document_name</arg>;

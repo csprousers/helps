@@ -94,6 +94,7 @@
   { "path": "table_matrices_index_file_tabidx.csdoc", "title": ".tai" },
   { "path": "tables_file_tbw.csdoc", "title": ".tbw" },
   { "path": "data_source_tab.csdoc", "title": ".tsv" },
+  { "path": "Video.csdoc", "title": ".webm" },
   { "path": "file_types.csdoc", "title": ".xl2cs" },
   { "path": "data_source_excel.csdoc", "title": ".xlsx" },
   { "path": "data_source_sas.csdoc", "title": ".xpt" },
@@ -494,7 +495,8 @@
       { "path": "Document.csdoc", "title": "Document" },
       { "path": "Geometry.csdoc", "title": "Geometry" },
       { "path": "Image.csdoc", "title": "Image" },
-      { "path": "binary_dictionary_items.csdoc", "title": "Overview" }
+      { "path": "binary_dictionary_items.csdoc", "title": "Overview" },
+      { "path": "Video.csdoc", "title": "Video" }
     ]
   },
   { "path": "strip_function.csdoc", "title": "Blanks",
@@ -2733,7 +2735,8 @@
       { "path": "Image_takePhoto_function.csdoc", "title": "Camera" },
       { "path": "Image.csdoc", "~title": "Image Object" },
       { "path": "media_store.csdoc", "~title": "Media Store" },
-      { "path": "Image_captureSignature_function.csdoc", "title": "Signature" }
+      { "path": "Image_captureSignature_function.csdoc", "title": "Signature" },
+      { "path": "Video.csdoc", "title": "Video" }
     ]
   },
   { "path": "tabulate_items_with_multiple_occurrences.csdoc", "title": "Multiple",
@@ -2852,7 +2855,8 @@
       { "path": "templated_reports.csdoc", "title": "Report Object" },
       { "path": "StringWriter.csdoc", "~title": "StringWriter Object" },
       { "path": "SystemApp.csdoc", "~title": "SystemApp Object" },
-      { "path": "ValueSet.csdoc", "~title": "ValueSet Object" }
+      { "path": "ValueSet.csdoc", "~title": "ValueSet Object" },
+      { "path": "Video.csdoc", "~title": "Video Object" }
     ]
   },
   { "path": "issues_to_consider_when_designing_a_form.csdoc", "title": "Occurrences",
@@ -4510,9 +4514,10 @@
       { "path": "change_data_entry_options.csdoc", "title": "Every nth case" }
     ]
   },
-  { "path": "media_store.csdoc", "title": "Video",
+  { "path": "Video.csdoc", "title": "Video",
     "subindex": [
-      { "path": "media_store.csdoc", "~title": "Media Store" }
+      { "path": "media_store.csdoc", "~title": "Media Store" },
+      { "path": "Video.csdoc", "~title": "Video Object" }
     ]
   },
   { "path": "change_the_view.csdoc", "title": "View",
