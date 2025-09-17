@@ -1,0 +1,30 @@
+﻿<title>Video.recordInteractive Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+d = video_name.recordInteractive(『<arg>message</arg>』);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>Video.recordInteractive</logiccolor> function launches an interactive video recorder that stores a recording to a <link Video.csdoc>Video</link> object. When the function is called, the video recorder screen is displayed. It contains record, save, and clear buttons that control the video recording. If the optional string expression <arg>message</arg> is specified, the message will be displayed at the top of the recorder screen. The <logiccolor>Video.recordInteractive</logiccolor> function does not return until the user has finished recording and taps the save button.
+
+The recorded video is stored in the <link Video.csdoc>Video</link> object and can be played back using <logiccolor>Video.play</logiccolor> or saved to a file using <logiccolor>Video.save</logiccolor>. If the object already contains a video recording, it will be replaced. (Note that this differs from <logiccolor>Audio.recordInteractive</logiccolor>, which appends newly recording audio to existing recordings.)
+
+Recorded video is stored in <link "https://en.wikipedia.org/wiki/WebM">WebM</link> format. Files should be saved with the extension .webm so that they will be recognized by media players.
+
+
+<subheader>Return Value</subheader>
+
+The function returns the length of the recorded video in seconds (and fractional seconds), <logiccolor>0</logiccolor> if the user did not create a recording, or <logiccolor>default</logiccolor> if there was an error during recording.
+
+
+<subheader>Example</subheader>
+
+<include include_Video_example_recordInteractive_save.hgi />
+
+
+<seealso Video.csdoc Video_play_function.csdoc />

@@ -1,0 +1,12 @@
+<logic>
+Video damage_video;
+
+if damage_video.recordInteractive("Record the damage to the household.") then
+
+    // save the video using the household key as the filename
+    string file_path = maketext("Damage Videos/%s.webm", key(HH_DICT));
+
+    damage_video.save(file_path);
+
+endif;
+</logic>

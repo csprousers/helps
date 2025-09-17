@@ -1,4 +1,57 @@
 ﻿<title>Video Object</title>
 
 
+In logic, a <logiccolor>Video</logiccolor> object represents a video recording. Video recordings may be loaded from video files, saved to video files, played, or recorded. Video objects are typically used to record portions of an interview, with a video recorder displayed to a user who controls when the recording starts and stops.
+
+Video recording is typically implemented by declaring a variable of type <logiccolor>Video</logiccolor>, calling the <logiccolor>Video.recordInteractive</logiccolor> function, and then calling the <logiccolor>Video.save</logiccolor> function to save the video to a file. Video recorded by CSPro is stored in <link "https://en.wikipedia.org/wiki/WebM">WebM</link> format.
+
+
+<subheader>Functionality</subheader>
+
+A Video object is a CSPro logic object that can be defined as a <link binary_dictionary_items.csdoc>binary dictionary item</link> or created as a <link variables.csdoc>logic variable</link>. The following functions can be called via <link object_dot_notation.csdoc>dot notation</link>:
+
+<table 2 header nowrap>
+    <cell>Function</cell><cell>Description</cell>
+    <cell><logiccolor Video>clear</logiccolor></cell><cell>Clears the object's recording.</cell>
+    <cell><logiccolor Video>height</logiccolor></cell><cell>Returns the height of the video in pixels.</cell>
+    <cell><logiccolor Video>length</logiccolor></cell><cell>Returns the length of the video in seconds.</cell>
+    <cell><logiccolor Video>load</logiccolor></cell><cell>Reads a video from a file and stores its contents in the object.</cell>
+    <cell><logiccolor Video>play</logiccolor></cell><cell>Launches a video player to play an existing recording.</cell>
+    <cell><logiccolor Video>recordInteractive</logiccolor></cell><cell>Launches an interactive video recorder to create a new recording.</cell>
+    <cell><logiccolor Video>save</logiccolor></cell><cell>Writes the video to a file.</cell>
+    <cell><logiccolor Video>width</logiccolor></cell><cell>Returns the width of the video in pixels.</cell>
+    <include "../Symbol/all_symbols_with_json_in_out.hgi" />
+</table>
+
+In addition to these object functions, Video objects can be used as arguments to the <logiccolor>filename</logiccolor> and <logiccolor>view</logiccolor> functions.
+
+
+<subheader>Assignments</subheader>
+
+Video objects can be assigned to other Video objects, which will replace the recorded Video  with the recording from the assigned Video object.
+
+<logicsyntax>
+<arg>video_name</arg> = <arg>another_video_name</arg>;
+</logicsyntax>
+
+It is also possible to assign Video objects to a <link Document.csdoc>Document</link>:
+
+<logicsyntax>
+<arg>document_name</arg> = <arg>video_name</arg>;
+</logicsyntax>
+
+You can also make the reverse assignment, assigning a Document to a Video object. A runtime error will occur if the Document's data is not a valid WebM video that CSPro can process.
+
+<logicsyntax>
+<arg>video_name</arg> = <arg>document_name</arg>;
+</logicsyntax>
+
+When a Video object is used as an argument to a <link user_defined_functions.csdoc>user-defined function</link>, it is <link function_arguments_ref.csdoc>passed by reference</link>.
+
+
+<subheader>Example</subheader>
+
+<include include_Video_example_recordInteractive_save.hgi />
+
+
 <seealso Audio.csdoc Document.csdoc multimedia_features.csdoc />

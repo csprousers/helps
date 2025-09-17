@@ -1,0 +1,9 @@
+<logicdeclare Video NAME_PRONOUNCATION_VIDEO />
+
+<logic>
+NAME_PRONOUNCATION_VIDEO.play("Play back the respondent's pronunciation of their name.");
+
+if accept("Was the respondent satisfied with the pronunciation?", "Yes", "No") = 2 then
+    NAME_PRONOUNCATION_VIDEO.clear();
+endif;
+</logic>

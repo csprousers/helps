@@ -1,0 +1,26 @@
+﻿<title>Video.clear Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+b = video_name.clear();
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>Video.clear</logiccolor> function clears the contents of the <link Video.csdoc>Video</link> object, resulting in the object not containing any video recording.
+
+
+<subheader>Return Value</subheader>
+
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) on success, or <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) if called on an occurrence of a <link binary_dictionary_items.csdoc>binary dictionary item</link> that does not exist.
+
+
+<subheader>Example</subheader>
+
+<include include_Video_example_clear_play.hgi />
+
+
+<seealso Video.csdoc />

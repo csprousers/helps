@@ -1233,6 +1233,20 @@
             ]
           },
           {
+            "title": "Video Object",
+            "documents": [
+              { "path": "Video_statement.csdoc", "~title": "Video Statement" },
+              { "path": "Video_load_function.csdoc", "~title": "Video.load Function" },
+              { "path": "Video_save_function.csdoc", "~title": "Video.save Function" },
+              { "path": "Video_play_function.csdoc", "~title": "Video.play Function" },
+              { "path": "Video_recordInteractive_function.csdoc", "~title": "Video.recordInteractive Function" },
+              { "path": "Video_length_function.csdoc", "~title": "Video.length Function" },
+              { "path": "Video_width_function.csdoc", "~title": "Video.width Function" },
+              { "path": "Video_height_function.csdoc", "~title": "Video.height Function" },
+              { "path": "Video_clear_function.csdoc", "~title": "Video.clear Function" }
+            ]
+          },
+          {
             "title": "Program Control Statements",
             "documents": [
               { "path": "break_statement.csdoc", "~title": "Break Statement" },

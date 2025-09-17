@@ -1,0 +1,15 @@
+<logic>
+Video intro_video;
+
+if not intro_video.load("opossum-survey.webm") then
+    errmsg("Could not find the 'Virginia Opossum Atlas' survey training video file.")
+
+elseif intro_video.width() = default then
+    errmsg("Successfully loaded the 'Virginia Opossum Atlas' survey training video file but the file is not a WebM file.");
+
+else
+    errmsg("Video details:\n\nFile path: %s\nLength: %0.2f seconds\nDimensions: %d x %d pixels",
+           filename(intro_video), intro_video.length(), intro_video.width(), intro_video.height());
+
+endif;
+</logic>
