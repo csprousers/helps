@@ -1,0 +1,30 @@
+﻿<title>Video Statement</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+Video <arg>video_name</arg>;
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>Video</logiccolor> statement creates a <link Video.csdoc>Video</link> object with the name <arg>video_name</arg>. The Video name must be unique and must contain only letters, numbers, or the underscore character. The name must begin with a letter. You can declare Video objects globally in <logiccolor>PROC GLOBAL</logiccolor> or locally in functions or procedures.
+
+
+<subheader>Variable Modifiers</subheader>
+
+The following variable modifiers apply to Video objects:
+
+<list>
+    <li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
+</list>
+
+
+<subheader>Example</subheader>
+
+<include include_Video_example_recordInteractive_save.hgi />
+
+
+<seealso Video.csdoc />

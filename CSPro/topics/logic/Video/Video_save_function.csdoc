@@ -1,0 +1,28 @@
+﻿<title>Video.save Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+b = video_name.save(<arg>video_file_path</arg>);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>Video.save</logiccolor> function writes the contents of the <link Video.csdoc>Video</link> object to a file specified by the string expression <arg>video_file_path</arg>.
+
+Video recorded using the function <logiccolor>Video.recordInteractive</logiccolor> is stored in <link "https://en.wikipedia.org/wiki/WebM">WebM</link> format and should be saved with the extension .webm so that it will be recognized by media players.
+
+
+<subheader>Return Value</subheader>
+
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if the video was saved, <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) if there was an error writing the file, and <logiccolor>default</logiccolor> if the Video object does not contain a video recording.
+
+
+<subheader>Example</subheader>
+
+<include include_Video_example_recordInteractive_save.hgi />
+
+
+<seealso Video.csdoc Video_load_function.csdoc />

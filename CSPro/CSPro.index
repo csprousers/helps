@@ -746,7 +746,8 @@
       { "path": "List_clear_function.csdoc", "~title": "List.clear Function" },
       { "path": "Map_clear_function.csdoc", "~title": "Map.clear Function" },
       { "path": "StringWriter_clear_function.csdoc", "~title": "StringWriter.clear Function" },
-      { "path": "ValueSet_clear_function.csdoc", "~title": "ValueSet.clear Function" }
+      { "path": "ValueSet_clear_function.csdoc", "~title": "ValueSet.clear Function" },
+      { "path": "Video_clear_function.csdoc", "~title": "Video.clear Function" }
     ]
   },
   { "path": "Map_clearButtons_function.csdoc", "title": "ClearButtons Function",
@@ -1976,7 +1977,8 @@
   { "path": "data_entry_philosophies.csdoc", "title": "Heads-Up Keying" },
   { "path": "Image_height_function.csdoc", "title": "Height Function",
     "subindex": [
-      { "path": "Image_height_function.csdoc", "~title": "Image.height Function" }
+      { "path": "Image_height_function.csdoc", "~title": "Image.height Function" },
+      { "path": "Video_height_function.csdoc", "~title": "Video.height Function" }
     ]
   },
   { "path": "get_help.csdoc", "title": "Help",
@@ -2380,7 +2382,8 @@
       { "path": "HashMap_length_function.csdoc", "~title": "HashMap.length Function" },
       { "path": "item_length.csdoc", "title": "Item" },
       { "path": "List_length_function.csdoc", "~title": "List.length Function" },
-      { "path": "ValueSet_length_function.csdoc", "~title": "ValueSet.length Function" }
+      { "path": "ValueSet_length_function.csdoc", "~title": "ValueSet.length Function" },
+      { "path": "Video_length_function.csdoc", "~title": "Video.length Function" }
     ]
   },
   { "path": "add_dictionary_elements.csdoc", "title": "Level",
@@ -2435,7 +2438,8 @@
       { "path": "Document_load_function.csdoc", "~title": "Document.load Function" },
       { "path": "Geometry_load_function.csdoc", "~title": "Geometry.load Function" },
       { "path": "Image_load_function.csdoc", "~title": "Image.load Function" },
-      { "path": "Pff_load_function.csdoc", "~title": "Pff.load Function" }
+      { "path": "Pff_load_function.csdoc", "~title": "Pff.load Function" },
+      { "path": "Video_load_function.csdoc", "~title": "Video.load Function" }
     ]
   },
   { "path": "loadcase_function.csdoc", "~title": "LoadCase Function" },
@@ -3095,7 +3099,8 @@
   },
   { "path": "Audio_play_function.csdoc", "title": "Play Function",
     "subindex": [
-      { "path": "Audio_play_function.csdoc", "~title": "Audio.play Function" }
+      { "path": "Audio_play_function.csdoc", "~title": "Audio.play Function" },
+      { "path": "Video_play_function.csdoc", "~title": "Video.play Function" }
     ]
   },
   { "path": "Geometry_tracePolygon_function.csdoc", "title": "Polygon",
@@ -3325,7 +3330,8 @@
   },
   { "path": "Audio_recordInteractive_function.csdoc", "title": "RecordInteractive Function",
     "subindex": [
-      { "path": "Audio_recordInteractive_function.csdoc", "~title": "Audio.recordInteractive Function" }
+      { "path": "Audio_recordInteractive_function.csdoc", "~title": "Audio.recordInteractive Function" },
+      { "path": "Video_recordInteractive_function.csdoc", "~title": "Video.recordInteractive Function" }
     ]
   },
   { "path": "additional_function_examples.csdoc", "title": "Recursive Functions" },
@@ -3537,7 +3543,8 @@
       { "path": "Geometry_save_function.csdoc", "~title": "Geometry.save Function" },
       { "path": "Image_save_function.csdoc", "~title": "Image.save Function" },
       { "path": "Pff_save_function.csdoc", "~title": "Pff.save Function" },
-      { "path": "Report_save_function.csdoc", "~title": "Report.save Function" }
+      { "path": "Report_save_function.csdoc", "~title": "Report.save Function" },
+      { "path": "Video_save_function.csdoc", "~title": "Video.save Function" }
     ]
   },
   { "path": "Array_statement.csdoc", "title": "Saved Arrays",
@@ -4517,7 +4524,16 @@
   { "path": "Video.csdoc", "title": "Video",
     "subindex": [
       { "path": "media_store.csdoc", "~title": "Media Store" },
-      { "path": "Video.csdoc", "~title": "Video Object" }
+      { "path": "Video_clear_function.csdoc", "~title": "Video.clear Function" },
+      { "path": "Video_height_function.csdoc", "~title": "Video.height Function" },
+      { "path": "Video_length_function.csdoc", "~title": "Video.length Function" },
+      { "path": "Video_load_function.csdoc", "~title": "Video.load Function" },
+      { "path": "Video_play_function.csdoc", "~title": "Video.play Function" },
+      { "path": "Video_recordInteractive_function.csdoc", "~title": "Video.recordInteractive Function" },
+      { "path": "Video_save_function.csdoc", "~title": "Video.save Function" },
+      { "path": "Video_width_function.csdoc", "~title": "Video.width Function" },
+      { "path": "Video.csdoc", "~title": "Video Object" },
+      { "path": "Video_statement.csdoc", "~title": "Video Statement" }
     ]
   },
   { "path": "change_the_view.csdoc", "title": "View",
@@ -4616,7 +4632,8 @@
   { "path": "while_statement.csdoc", "~title": "While Statement" },
   { "path": "Image_width_function.csdoc", "title": "Width Function",
     "subindex": [
-      { "path": "Image_width_function.csdoc", "~title": "Image.width Function" }
+      { "path": "Image_width_function.csdoc", "~title": "Image.width Function" },
+      { "path": "Video_width_function.csdoc", "~title": "Video.width Function" }
     ]
   },
   { "path": "run_production_batch_edits.csdoc", "title": "Width of Listing File" },

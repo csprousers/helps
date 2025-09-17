@@ -1,0 +1,28 @@
+﻿<title>Video.width Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+i = video_name.width();
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>Video.width</logiccolor> function returns the display width, in pixels, of the video held by the <link Video.csdoc>Video</link> object.
+
+The <logiccolor>Video.width</logiccolor> function only supports video recorded in the format that CSPro uses to create recordings: <link "https://en.wikipedia.org/wiki/WebM">WebM</link>. The function will return <logiccolor>default</logiccolor> for non-WebM video files.
+
+
+<subheader>Return Value</subheader>
+
+The function returns the width in pixels, or <logiccolor>default</logiccolor> if the Video object does not contain a video or if the width cannot be computed.
+
+
+<subheader>Example</subheader>
+
+<include include_Video_example_length_load_width_height.hgi />
+
+
+<seealso Video.csdoc Video_height_function.csdoc Video_length_function.csdoc />

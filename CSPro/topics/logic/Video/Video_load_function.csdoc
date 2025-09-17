@@ -1,0 +1,28 @@
+﻿<title>Video.load Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+b = video_name.load(<arg>video_file_path</arg>);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>Video.load</logiccolor> function reads a video from a file, specified using the string expression <arg>video_file_path</arg>, and stores its contents in the <link Video.csdoc>Video</link> object. The loaded video can then be played back using <logiccolor>Video.play</logiccolor>.
+
+CSPro can load and play most video files, but only <link "https://en.wikipedia.org/wiki/WebM">WebM</link> files are fully supported by CSPro (in functions such as <logiccolor>Video.length</logiccolor>).
+
+
+<subheader>Return Value</subheader>
+
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if the video was loaded and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) if the video could not be loaded.
+
+
+<subheader>Example</subheader>
+
+<include include_Video_example_length_load_width_height.hgi />
+
+
+<seealso Video.csdoc Video_save_function.csdoc Video_play_function.csdoc />
