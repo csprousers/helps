@@ -25,8 +25,9 @@ The following types of images are supported:
 <list>
     <li><b>JPEG</b> (.jpg/.jpeg).</li>
     <li><b>PNG</b> (.png).</li>
+    <li><b>WebP</b> (.webp).</li>
     <li><b>BMP</b> (.bmp).</li>
-    <li><b>ICO</b> (.ico). ICO files can only be loaded on Windows, but can be <link Image_save_function.csdoc>saved</link> on all platforms.</li>
+    <li><b>ICO</b> (.ico). ICO files can only be loaded on Windows but can be <link Image_save_function.csdoc>saved</link> on all platforms.</li>
     <li><b>GIF</b> (.gif). GIF files can only be loaded and cannot be <link Image_save_function.csdoc>saved</link>.</li>
 </list>
 

@@ -10,7 +10,7 @@ b = map_name.setMarkerImage(<arg>markerId</arg>, <arg>imagePathOrUrl</arg>);
 
 <subheader>Description</subheader>
 
-The <logiccolor>Map.setMarkerImage</logiccolor> sets the icon for the marker with id <arg>markerId</arg> on <link Map.csdoc>Map</link> <logiccolor>map_name</logiccolor>. <arg>markerId</arg> is the id that was returned by <logiccolor>Map.addMarker</logiccolor> when the marker was added to the map. <arg>imagePathOrUrl</arg> is the path to a file, or a URL, containing the image to display as the marker icon. Standard image files (PNG, JPEG, BMP) are supported. If using a URL, you can use a <link localhost_url.csdoc>localhost URL</link> or a URL to a remote server.
+The <logiccolor>Map.setMarkerImage</logiccolor> sets the icon for the marker with id <arg>markerId</arg> on <link Map.csdoc>Map</link> <logiccolor>map_name</logiccolor>. <arg>markerId</arg> is the id that was returned by <logiccolor>Map.addMarker</logiccolor> when the marker was added to the map. <arg>imagePathOrUrl</arg> is the path to a file, or a URL, containing the image to display as the marker icon. Standard image files (PNG, JPEG, WebP, BMP) are supported. If using a URL, you can use a <link localhost_url.csdoc>localhost URL</link> or a URL to a remote server.
 
 If the marker icon was previously set with <logiccolor>Map.setMarkerText</logiccolor>, calling <logiccolor>Map.setMarkerImage</logiccolor> will replace the marker text with the image.
 
