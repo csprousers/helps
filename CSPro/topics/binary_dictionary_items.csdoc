@@ -25,6 +25,8 @@ Binary dictionary items are <link synchronization.csdoc>synchronized</link> as p
 
 As of CSPro <definition CSPro::version />, binary dictionary items cannot be added to forms. Instead, you will need to write logic within your application that references these items in order to manipulate them. The functions available with the <link Audio.csdoc>Audio</link>, <link Document.csdoc>Document</link>, <link Geometry.csdoc>Geometry</link>, and <link Image.csdoc>Image</link> objects can be used on the binary dictionary items when valid (an occurrence of the parent record exists). For example:
 
+<logicdeclare Image ROOF_IMAGE />
+
 <logic>
 PROC ROOF_TYPE
 

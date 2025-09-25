@@ -26,6 +26,8 @@ The <logiccolor>StringWriter.writeLine</logiccolor> function writes text to a <l
 
 <subheader>Example 2 (Report)</subheader>
 
+<logicdeclare Report HOUSEHOLD_REPORT />
+
 <report HTML>
 <?
     HOUSEHOLD_REPORT.writeLine("The report was generated at: ", timestamp());

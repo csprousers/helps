@@ -18,6 +18,8 @@ The function returns a logical value of 1 (true) if the PFF was successfully sav
 
 <subheader>Example</subheader>
 
+<logicdeclare ValueSet PROVINCE_VS />
+
 <logic>
 // create PFFs for running the listing application for each province
 Pff listing_pff;
@@ -25,11 +27,11 @@ listing_pff.load("Listing.pff");
 
 do numeric counter = 1 while counter <= PROVINCE_VS.length()
 
-	listing_pff.setProperty("Description", maketext("List in %s", PROVINCE_VS.labels(counter)));
-	listing_pff.setProperty("Key", maketext("%02d", PROVINCE_VS.codes(counter)));
+    listing_pff.setProperty("Description", maketext("List in %s", PROVINCE_VS.labels(counter)));
+    listing_pff.setProperty("Key", maketext("%02d", PROVINCE_VS.codes(counter)));
 
-	string new_pff_filename = maketext("Listing%02d.pff", PROVINCE_VS.codes(counter));
-	listing_pff.save(new_pff_filename);
+    string new_pff_filename = maketext("Listing%02d.pff", PROVINCE_VS.codes(counter));
+    listing_pff.save(new_pff_filename);
 
 enddo;
 </logic>

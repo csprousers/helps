@@ -27,6 +27,8 @@ The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>
 
 <subheader>Examples</subheader>
 
+<logicdeclare Report HOUSEHOLD_REPORT />
+
 <logic>
 HOUSEHOLD_REPORT.view();
 
