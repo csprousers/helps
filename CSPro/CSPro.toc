@@ -1243,7 +1243,8 @@
               { "path": "Video_length_function.csdoc", "~title": "Video.length Function" },
               { "path": "Video_width_function.csdoc", "~title": "Video.width Function" },
               { "path": "Video_height_function.csdoc", "~title": "Video.height Function" },
-              { "path": "Video_clear_function.csdoc", "~title": "Video.clear Function" }
+              { "path": "Video_clear_function.csdoc", "~title": "Video.clear Function" },
+              { "path": "Video_JSON_representation.csdoc", "title": "JSON Representation" }
             ]
           },
           {

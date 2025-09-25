@@ -24,5 +24,5 @@
     <cell><logiccolor>StringWriter</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic StringWriter_JSON_representation.csdoc /></cell>
     <cell><logiccolor>SystemApp</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>ValueSet</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
-    <cell><logiccolor>Video</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>Video</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Video_JSON_representation.csdoc /></cell>
 </table>

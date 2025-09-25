@@ -64,10 +64,10 @@ errmsg("width = %d, height = %d", tiny_image.width(), tiny_image.height());
 <b>File on Disk</b>: The binary data can be specified as a file using the <colorinline JSON>"path"</colorinline> property. The path is evaluated relative to the location of the application. For example:
 
 <logic>
-string file_path = "european-robin-chirps.m4a";
+string file_path = "european-robin.webm";
 
-Audio bird_sounds;
-bird_sounds.setValueFromJson(maketext("{ \"content\": { \"path\": \"%s\" } }", file_path));
+Video bird_video;
+bird_video.setValueFromJson(maketext("{ \"content\": { \"path\": \"%s\" } }", file_path));
 </logic>
 
 
@@ -80,6 +80,7 @@ Some binary objects have additional ways that data can be supplied for deseriali
     <li><topic Document_JSON_representation.csdoc /></li>
     <li><topic Geometry_JSON_representation.csdoc /></li>
     <li><topic Image_JSON_representation.csdoc /></li>
+    <li><topic Video_JSON_representation.csdoc /></li>
 </list>
 
 

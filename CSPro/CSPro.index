@@ -502,7 +502,8 @@
       { "path": "Document.csdoc", "title": "Document" },
       { "path": "Geometry.csdoc", "title": "Geometry" },
       { "path": "Image.csdoc", "title": "Image" },
-      { "path": "binary_data_JSON_representation.csdoc", "title": "JSON Representation" }
+      { "path": "binary_data_JSON_representation.csdoc", "title": "JSON Representation" },
+      { "path": "Video.csdoc", "title": "Video" }
     ]
   },
   { "path": "binary_data_entry_application_file_pen.csdoc", "~title": "Binary Data Entry Application File (.pen)" },
@@ -2325,7 +2326,8 @@
       { "path": "properties_json_serialization.csdoc", "title": "Serialization Properties" },
       { "path": "string_JSON_representation.csdoc", "title": "String Values" },
       { "path": "StringWriter_JSON_representation.csdoc", "title": "StringWriter" },
-      { "path": "symbols_json_representation.csdoc", "title": "Symbol Overview" }
+      { "path": "symbols_json_representation.csdoc", "title": "Symbol Overview" },
+      { "path": "Video_JSON_representation.csdoc", "title": "Video" }
     ]
   },
   { "path": "symbols_json_representation.csdoc", "title": "JSON Symbol Serialization",
@@ -4559,6 +4561,7 @@
   },
   { "path": "Video.csdoc", "title": "Video",
     "subindex": [
+      { "path": "Video_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "media_store.csdoc", "~title": "Media Store" },
       { "path": "Video_clear_function.csdoc", "~title": "Video.clear Function" },
       { "path": "Video_height_function.csdoc", "~title": "Video.height Function" },
@@ -4568,6 +4571,7 @@
       { "path": "Video_recordInteractive_function.csdoc", "~title": "Video.recordInteractive Function" },
       { "path": "Video_save_function.csdoc", "~title": "Video.save Function" },
       { "path": "Video_width_function.csdoc", "~title": "Video.width Function" },
+      { "path": "binary_dictionary_items.csdoc", "title": "Video Dictionary Item" },
       { "path": "Video.csdoc", "~title": "Video Object" },
       { "path": "Video_statement.csdoc", "~title": "Video Statement" }
     ]
