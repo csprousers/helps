@@ -48,7 +48,7 @@ Copying and pasting that URL into a web browser's address bar will show the Engl
 There are several ways to set binary data using JSON. If you want to clear a value, specifying the value as <colorinline JSON>null</colorinline> will reset binary data to its default state. To set binary data to a specific value, you must supply an object with a <colorinline JSON>"content"</colorinline> property and, optionally, a <colorinline JSON>"metadata"</colorinline> property. Metadata is specified as an object with key/value pairs. The content itself can be specified in a couple ways:
 
 
-<b>Data URL</b>: The binary data can be specified as a <link data_url.csdoc>data URL</link> using the <colorinline JSON>"url"</colorinline> property. For example:
+<b>Data URL</b>: The binary data can be specified as a <link data_url.csdoc>data URL</link> using the <colorinline JSON>"url"</colorinline> property. CSPro can parse data URLs encoded using <link "https://en.wikipedia.org/wiki/Base64">Base64</link> or <link "https://en.wikipedia.org/wiki/Percent-encoding">percent-encoding</link>. For example:
 
 <logic>
 string data_url = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAAEElEQVR4nGP4z/CfgSH+BAANggMmwP+nGgAAAABJRU5ErkJggg==";
