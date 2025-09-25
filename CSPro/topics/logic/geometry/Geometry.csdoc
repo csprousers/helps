@@ -53,6 +53,15 @@ You can also make the reverse assignment, assigning a Document to a Geometry obj
 When a Geometry object is used as an argument to a <link user_defined_functions.csdoc>user-defined function</link>, it is <link function_arguments_ref.csdoc>passed by reference</link>.
 
 
+<subheader>Conversions</subheader>
+
+Geometry objects can be converted to and from:
+
+<list>
+    <li><link Geometry_JSON_representation.csdoc>JSON objects</link></li>
+</list>
+
+
 <subheader>Example</subheader>
 
 <logic>

@@ -1,0 +1,64 @@
+﻿<title>CSPro ⇄ JSON Conversions: Audio Object</title>
+
+
+A CSPro <link Audio.csdoc>Audio</link> object is represented as a <link JSON_primer.csdoc>JSON</link> object with <colorinline JSON>"metadata"</colorinline> and <colorinline JSON>"content"</colorinline> properties. Based on JSON serialization options&mdash;defined as an <link properties_json_serialization.csdoc>application property</link> or <link JSON_serialization_options.csdoc>dynamically</link>&mdash;the value of the <link object_dot_notation.csdoc>logic object</link> or <link binary_dictionary_items.csdoc>dictionary item</link> can be serialized either as a <link data_url.csdoc>data URL</link> or as a <link localhost_url.csdoc>localhost URL</link>.
+
+When using <logiccolor>Audio.getJson</logiccolor> on an Audio specified as a <link binary_dictionary_items.csdoc>dictionary item</link>, additional properties, <colorinline JSON>"item"</colorinline> and <colorinline JSON>"occurrences"</colorinline>, give information about the dictionary item's properties as well as details about the item's occurrences.
+
+For example, serializing an Audio dictionary item, <logiccolor>NAME_PRONOUNCATION</logiccolor>, to JSON using the default way of representing the binary data as a <link localhost_url.csdoc>localhost URL</link>, may look like:
+
+<logicdeclare Audio NAME_PRONOUNCATION />
+
+<table 2 nowrap>
+    <cell><logiccolor>NAME_PRONOUNCATION.getJson()</logiccolor></cell><cell><logiccolor>NAME_PRONOUNCATION.getValueJson()</logiccolor></cell>
+    <cell>
+<color JSON>
+{
+  "name": "NAME_PRONOUNCATION",
+  "type": "Audio",
+  "item": {
+    "name": "NAME_PRONOUNCATION",
+    "labels": [
+      {
+        "text": "Respondent Name Pronouncation"
+      }
+    ],
+    "contentType": "Audio",
+    "start": 4,
+    "length": 1
+  },
+  "occurrences": {
+    "record": 1,
+    "item": 1
+  },
+  "value": {
+    "metadata": {
+      "filename": "85-43-44-hans-stueben.m4a",
+      "mime": "audio/mp4"
+    },
+    "content": {
+      "url": "http://localhost:61549/vf/1/85-43-44-hans-stueben.m4a"
+    }
+  }
+}
+</color>
+    </cell><cell>
+<color JSON>
+{
+  "metadata": {
+    "filename": "85-43-44-hans-stueben.m4a",
+    "mime": "audio/mp4"
+  },
+  "content": {
+    "url": "http://localhost:61549/vf/1/85-43-44-hans-stueben.m4a"
+  }
+}
+</color>
+    </cell>
+</table>
+
+
+To modify an Audio's value from JSON using <logiccolor>Audio.setValueFromJson</logiccolor>, CSPro can parse binary data as a <link data_url.csdoc>data URL</link> or can read a file from the disk. An exception occurs if the value is not defined properly or if the data is not valid audio that CSPro can process. For more information, see details on how to <link binary_data_JSON_representation.csdoc>specify binary data for JSON deserialization</link>.
+
+
+<seealso symbols_json_representation.csdoc binary_data_JSON_representation.csdoc />

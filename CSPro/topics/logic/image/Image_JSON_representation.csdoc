@@ -1,0 +1,64 @@
+﻿<title>CSPro ⇄ JSON Conversions: Image Object</title>
+
+
+A CSPro <link Image.csdoc>Image</link> object is represented as a <link JSON_primer.csdoc>JSON</link> object with <colorinline JSON>"metadata"</colorinline> and <colorinline JSON>"content"</colorinline> properties. Based on JSON serialization options&mdash;defined as an <link properties_json_serialization.csdoc>application property</link> or <link JSON_serialization_options.csdoc>dynamically</link>&mdash;the value of the <link object_dot_notation.csdoc>logic object</link> or <link binary_dictionary_items.csdoc>dictionary item</link> can be serialized either as a <link data_url.csdoc>data URL</link> or as a <link localhost_url.csdoc>localhost URL</link>.
+
+When using <logiccolor>Image.getJson</logiccolor> on an Image specified as a <link binary_dictionary_items.csdoc>dictionary item</link>, additional properties, <colorinline JSON>"item"</colorinline> and <colorinline JSON>"occurrences"</colorinline>, give information about the dictionary item's properties as well as details about the item's occurrences.
+
+For example, serializing an Image dictionary item, <logiccolor>ROOF_IMAGE</logiccolor>, to JSON using the default way of representing the binary data as a <link localhost_url.csdoc>localhost URL</link>, may look like:
+
+<logicdeclare Image ROOF_IMAGE />
+
+<table 2 nowrap>
+    <cell><logiccolor>ROOF_IMAGE.getJson()</logiccolor></cell><cell><logiccolor>ROOF_IMAGE.getValueJson()</logiccolor></cell>
+    <cell>
+<color JSON>
+{
+  "name": "ROOF_IMAGE",
+  "type": "Image",
+  "item": {
+    "name": "ROOF_IMAGE",
+    "labels": [
+      {
+        "text": "Roof Image"
+      }
+    ],
+    "contentType": "Image",
+    "start": 4,
+    "length": 1
+  },
+  "occurrences": {
+    "record": 1,
+    "item": 1
+  },
+  "value": {
+    "metadata": {
+      "filename": "CTB_1758807115.jpg",
+      "mime": "image/jpeg"
+    },
+    "content": {
+      "url": "http://localhost:50505/vf/3/CTB_1758807115.jpg"
+    }
+  }
+}
+</color>
+    </cell><cell>
+<color JSON>
+{
+  "metadata": {
+    "filename": "CTB_1758807115.jpg",
+    "mime": "image/jpeg"
+  },
+  "content": {
+    "url": "http://localhost:50505/vf/3/CTB_1758807115.jpg"
+  }
+}
+</color>
+    </cell>
+</table>
+
+
+To modify an Image's value from JSON using <logiccolor>Image.setValueFromJson</logiccolor>, CSPro can parse binary data as a <link data_url.csdoc>data URL</link> or can read a file from the disk. An exception occurs if the value is not defined properly or if the data is not a valid image that CSPro can process. For more information, see details on how to <link binary_data_JSON_representation.csdoc>specify binary data for JSON deserialization</link>.
+
+
+<seealso symbols_json_representation.csdoc binary_data_JSON_representation.csdoc />

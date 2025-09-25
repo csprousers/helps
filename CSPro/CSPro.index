@@ -433,6 +433,7 @@
       { "path": "Audio_stop_function.csdoc", "~title": "Audio.stop Function" },
       { "path": "binary_dictionary_items.csdoc", "title": "Audio Dictionary Item" },
       { "path": "Audio_statement.csdoc", "~title": "Audio Statement" },
+      { "path": "Audio_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "media_store.csdoc", "~title": "Media Store" }
     ]
   },
@@ -492,7 +493,17 @@
   },
   { "path": "batch_edit_application_file_bch.csdoc", "~title": "Batch Edit Application File (.bch)" },
   { "path": "generate_binary_data_entry_application.csdoc", "title": "Binary Application" },
-  { "path": "action_invoker_binary_data.csdoc", "title": "Binary Data" },
+  { "path": "binary_dictionary_items.csdoc", "title": "Binary Data",
+    "subindex": [
+      { "path": "action_invoker_binary_data.csdoc", "title": "Action Invoker Representation" },
+      { "path": "Audio.csdoc", "title": "Audio" },
+      { "path": "binary_dictionary_items.csdoc", "~title": "Binary Dictionary Items" },
+      { "path": "Document.csdoc", "title": "Document" },
+      { "path": "Geometry.csdoc", "title": "Geometry" },
+      { "path": "Image.csdoc", "title": "Image" },
+      { "path": "binary_data_JSON_representation.csdoc", "title": "JSON Representation" }
+    ]
+  },
   { "path": "binary_data_entry_application_file_pen.csdoc", "~title": "Binary Data Entry Application File (.pen)" },
   { "path": "binary_dictionary_items.csdoc", "~title": "Binary Dictionary Items",
     "subindex": [
@@ -1312,7 +1323,8 @@
       { "path": "Document_save_function.csdoc", "~title": "Document.save Function" },
       { "path": "Document_view_function.csdoc", "~title": "Document.view Function" },
       { "path": "binary_dictionary_items.csdoc", "title": "Document Dictionary Item" },
-      { "path": "Document_statement.csdoc", "~title": "Document Statement" }
+      { "path": "Document_statement.csdoc", "~title": "Document Statement" },
+      { "path": "Document_JSON_representation.csdoc", "title": "JSON Representation" }
     ]
   },
   { "path": "object_dot_notation.csdoc", "title": "Dot Notation" },
@@ -1808,6 +1820,7 @@
       { "path": "binary_dictionary_items.csdoc", "title": "Geometry Dictionary Item" },
       { "path": "Geometry.csdoc", "~title": "Geometry Object" },
       { "path": "Geometry_statement.csdoc", "~title": "Geometry Statement" },
+      { "path": "Geometry_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "Map_removeGeometry_function.csdoc", "title": "Remove Geometry From a Map" }
     ]
   },
@@ -2065,6 +2078,7 @@
       { "path": "Image_width_function.csdoc", "~title": "Image.width Function" },
       { "path": "binary_dictionary_items.csdoc", "title": "Image Dictionary Item" },
       { "path": "Image_statement.csdoc", "~title": "Image Statement" },
+      { "path": "Image_JSON_representation.csdoc", "title": "JSON Representation" },
       { "path": "media_store.csdoc", "~title": "Media Store" }
     ]
   },
@@ -2293,8 +2307,13 @@
   { "path": "symbols_json_representation.csdoc", "title": "JSON Representations",
     "subindex": [
       { "path": "Array_JSON_representation.csdoc", "title": "Array" },
+      { "path": "Audio_JSON_representation.csdoc", "title": "Audio" },
+      { "path": "binary_data_JSON_representation.csdoc", "title": "Binary Data" },
       { "path": "Case_json_representation.csdoc", "title": "Case" },
+      { "path": "Document_JSON_representation.csdoc", "title": "Document" },
+      { "path": "Geometry_JSON_representation.csdoc", "title": "Geometry" },
       { "path": "HashMap_JSON_representation.csdoc", "title": "HashMap" },
+      { "path": "Image_JSON_representation.csdoc", "title": "Image" },
       { "path": "List_JSON_representation.csdoc", "title": "List" },
       { "path": "numeric_JSON_representation.csdoc", "title": "Numeric Values" },
       { "path": "Report_JSON_representation.csdoc", "title": "Report" },

@@ -45,8 +45,8 @@ For example:
 <subheader>Binary Content</subheader>
 
 <list>
-    <li><b>Write as Data URL</b>: Data of <link binary_dictionary_items.csdoc>binary dictionary items</link> is written as a <link data_url.csdoc>data URL</link>.</li>
-    <li><b>Write as Localhost URL</b> (default): Data of <link binary_dictionary_items.csdoc>binary dictionary items</link> is written as a <link localhost_url.csdoc>localhost URL</link>. Localhost URLs are only valid while the CSPro application is running.</li>
+    <li><b>Write as Data URL</b>: Data of binary <link object_dot_notation.csdoc>logic objects</link> and <link binary_dictionary_items.csdoc>dictionary items</link> is <link binary_data_JSON_representation.csdoc>written</link> as a <link data_url.csdoc>data URL</link>.</li>
+    <li><b>Write as Localhost URL</b> (default): Data of binary <link object_dot_notation.csdoc>logic objects</link> and <link binary_dictionary_items.csdoc>dictionary items</link> is <link binary_data_JSON_representation.csdoc>written</link> as a <link localhost_url.csdoc>localhost URL</link>. Localhost URLs are only valid while the CSPro application is running.</li>
 </list>
 
 
