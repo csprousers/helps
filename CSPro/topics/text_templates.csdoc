@@ -99,6 +99,8 @@ enddo;
 
 Because the numbers written do not need to be encoded for HTML, using <logiccolor>StringWriter.writeLine</logiccolor> is safe in this instance, but if you are not sure if the text is safe for the text template format, you would instead use a function that handles encoding. For example, if writing names to a HTML table as part of question text, you could write:
 
+<logicdeclare StringWriter QSF />
+
 <report HTML>
 <?
 for PERSON_REC do

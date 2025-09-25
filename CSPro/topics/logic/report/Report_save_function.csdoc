@@ -22,6 +22,8 @@ The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>
 
 <subheader>Example</subheader>
 
+<logicdeclare Report HOUSEHOLD_REPORT />
+
 <logic>
 HOUSEHOLD_REPORT.save(maketext("household_report_%d.html", timestamp()));
 </logic>
