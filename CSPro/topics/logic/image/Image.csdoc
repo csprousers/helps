@@ -50,6 +50,15 @@ You can also make the reverse assignment, assigning a document to an Image objec
 When an Image is used as an argument to a <link user_defined_functions.csdoc>user-defined function</link>, it is <link function_arguments_ref.csdoc>passed by reference</link>.
 
 
+<subheader>Conversions</subheader>
+
+Image objects can be converted to and from:
+
+<list>
+    <li><link Image_JSON_representation.csdoc>JSON objects</link></li>
+</list>
+
+
 <subheader>Example</subheader>
 
 <logic>

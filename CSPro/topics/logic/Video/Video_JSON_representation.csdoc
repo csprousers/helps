@@ -1,0 +1,64 @@
+﻿<title>CSPro ⇄ JSON Conversions: Video Object</title>
+
+
+A CSPro <link Video.csdoc>Video</link> object is represented as a <link JSON_primer.csdoc>JSON</link> object with <colorinline JSON>"metadata"</colorinline> and <colorinline JSON>"content"</colorinline> properties. Based on JSON serialization options&mdash;defined as an <link properties_json_serialization.csdoc>application property</link> or <link JSON_serialization_options.csdoc>dynamically</link>&mdash;the value of the <link object_dot_notation.csdoc>logic object</link> or <link binary_dictionary_items.csdoc>dictionary item</link> can be serialized either as a <link data_url.csdoc>data URL</link> or as a <link localhost_url.csdoc>localhost URL</link>.
+
+When using <logiccolor>Video.getJson</logiccolor> on a Video specified as a <link binary_dictionary_items.csdoc>dictionary item</link>, additional properties, <colorinline JSON>"item"</colorinline> and <colorinline JSON>"occurrences"</colorinline>, give information about the dictionary item's properties as well as details about the item's occurrences.
+
+For example, serializing a Video dictionary item, <logiccolor>CONSENT_VIDEO</logiccolor>, to JSON using the default way of representing the binary data as a <link localhost_url.csdoc>localhost URL</link>, may look like:
+
+<logicdeclare Video CONSENT_VIDEO />
+
+<table 2 nowrap>
+    <cell><logiccolor>CONSENT_VIDEO.getJson()</logiccolor></cell><cell><logiccolor>CONSENT_VIDEO.getValueJson()</logiccolor></cell>
+    <cell>
+<color JSON>
+{
+  "name": "CONSENT_VIDEO",
+  "type": "Video",
+  "item": {
+    "name": "CONSENT_VIDEO",
+    "labels": [
+      {
+        "text": "Consent Video"
+      }
+    ],
+    "contentType": "Video",
+    "start": 3,
+    "length": 1
+  },
+  "occurrences": {
+    "record": 1,
+    "item": 1
+  },
+  "value": {
+    "metadata": {
+      "filename": "85-43-44-consent.webm",
+      "mime": "video/webm"
+    },
+    "content": {
+      "url": "http://localhost:58028/vf/1/85-43-44-consent.webm"
+    }
+  }
+}
+</color>
+    </cell><cell>
+<color JSON>
+{
+  "metadata": {
+    "filename": "85-43-44-consent.webm",
+    "mime": "video/webm"
+  },
+  "content": {
+    "url": "http://localhost:58028/vf/1/85-43-44-consent.webm"
+  }
+}
+</color>
+    </cell>
+</table>
+
+
+To modify a Video's value from JSON using <logiccolor>Video.setValueFromJson</logiccolor>, CSPro can parse binary data as a <link data_url.csdoc>data URL</link> or can read a file from the disk. An exception occurs if the value is not defined properly or if the data is not a valid video that CSPro can process. For more information, see details on how to <link binary_data_JSON_representation.csdoc>specify binary data for JSON deserialization</link>.
+
+
+<seealso symbols_json_representation.csdoc binary_data_JSON_representation.csdoc />

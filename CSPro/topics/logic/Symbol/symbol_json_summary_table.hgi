@@ -1,22 +1,20 @@
-﻿<font #ff88888><i>Documentation about all JSON representations feature will come in a future release. In the meantime you can see if the documentation is updated at:</i></font>
-
-<link "https://csprousers.org/help/CSPro/symbols_json_representation.html">https://csprousers.org/help/CSPro/symbols_json_representation.html</link>
+﻿<font #ff88888><i>Documentation about all JSON representations feature will come in a future release.</i></font>
 
 <table 4 header>
     <cell>Object</cell><cell>Value -> JSON</cell><cell>JSON -> Value</cell><cell>Serialization</cell>
     <cell><logiccolor>numeric</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic numeric_JSON_representation.csdoc /></cell>
     <cell><logiccolor>string</logiccolor>, <logiccolor>alpha</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic string_JSON_representation.csdoc /></cell>
     <cell><logiccolor>Array</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Array_JSON_representation.csdoc /></cell>
-    <cell><logiccolor>Audio</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>Audio</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Audio_JSON_representation.csdoc /></cell>
     <cell><link blocks.csdoc>Block</link></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><link introduction_to_data_dictionary.csdoc>Dictionary</link></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
-    <cell><logiccolor>Document</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>Document</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Document_JSON_representation.csdoc /></cell>
     <cell><logiccolor>File</logiccolor></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>Freq</logiccolor></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>function</logiccolor></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
-    <cell><logiccolor>Geometry</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>Geometry</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Geometry_JSON_representation.csdoc /></cell>
     <cell><logiccolor>HashMap</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic HashMap_JSON_representation.csdoc /></cell>
-    <cell><logiccolor>Image</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>Image</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Image_JSON_representation.csdoc /></cell>
     <cell><link item_description.csdoc>Item</link></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>List</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic List_JSON_representation.csdoc /></cell>
     <cell><logiccolor>Map</logiccolor></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
@@ -26,5 +24,5 @@
     <cell><logiccolor>StringWriter</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic StringWriter_JSON_representation.csdoc /></cell>
     <cell><logiccolor>SystemApp</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>ValueSet</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
-    <cell><logiccolor>Video</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><logiccolor>Video</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Video_JSON_representation.csdoc /></cell>
 </table>

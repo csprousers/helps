@@ -1005,7 +1005,8 @@
               { "path": "Audio_stop_function.csdoc", "~title": "Audio.stop Function" },
               { "path": "Audio_concat_function.csdoc", "~title": "Audio.concat Function" },
               { "path": "Audio_length_function.csdoc", "~title": "Audio.length Function" },
-              { "path": "Audio_clear_function.csdoc", "~title": "Audio.clear Function" }
+              { "path": "Audio_clear_function.csdoc", "~title": "Audio.clear Function" },
+              { "path": "Audio_JSON_representation.csdoc", "title": "JSON Representation" }
             ]
           },
           {
@@ -1029,7 +1030,8 @@
               { "path": "Document_load_function.csdoc", "~title": "Document.load Function" },
               { "path": "Document_save_function.csdoc", "~title": "Document.save Function" },
               { "path": "Document_view_function.csdoc", "~title": "Document.view Function" },
-              { "path": "Document_clear_function.csdoc", "~title": "Document.clear Function" }
+              { "path": "Document_clear_function.csdoc", "~title": "Document.clear Function" },
+              { "path": "Document_JSON_representation.csdoc", "title": "JSON Representation" }
             ]
           },
           {
@@ -1069,7 +1071,8 @@
               { "path": "Geometry_tracePolygon_function.csdoc", "~title": "Geometry.tracePolygon Function" },
               { "path": "Geometry_walkPolygon_function.csdoc", "~title": "Geometry.walkPolygon Function" },
               { "path": "Geometry_getProperty_function.csdoc", "~title": "Geometry.getProperty Function" },
-              { "path": "Geometry_setProperty_function.csdoc", "~title": "Geometry.setProperty Function" }
+              { "path": "Geometry_setProperty_function.csdoc", "~title": "Geometry.setProperty Function" },
+              { "path": "Geometry_JSON_representation.csdoc", "title": "JSON Representation" }
             ]
           },
           {
@@ -1100,7 +1103,8 @@
               { "path": "Image_takePhoto_function.csdoc", "~title": "Image.takePhoto Function" },
               { "path": "Image_captureSignature_function.csdoc", "~title": "Image.captureSignature Function" },
               { "path": "Image_view_function.csdoc", "~title": "Image.view Function" },
-              { "path": "Image_clear_function.csdoc", "~title": "Image.clear Function" }
+              { "path": "Image_clear_function.csdoc", "~title": "Image.clear Function" },
+              { "path": "Image_JSON_representation.csdoc", "title": "JSON Representation" }
             ]
           },
           {
@@ -1231,7 +1235,8 @@
               { "path": "Video_length_function.csdoc", "~title": "Video.length Function" },
               { "path": "Video_width_function.csdoc", "~title": "Video.width Function" },
               { "path": "Video_height_function.csdoc", "~title": "Video.height Function" },
-              { "path": "Video_clear_function.csdoc", "~title": "Video.clear Function" }
+              { "path": "Video_clear_function.csdoc", "~title": "Video.clear Function" },
+              { "path": "Video_JSON_representation.csdoc", "title": "JSON Representation" }
             ]
           },
           {
@@ -1856,7 +1861,8 @@
             "documents": [
               { "path": "symbols_json_representation.csdoc", "title": "Symbols" },
               { "path": "Case_json_representation.csdoc", "title": "Case" },
-              { "path": "JSON_serialization_options.csdoc", "~title": "JSON Serialization Options" }
+              { "path": "JSON_serialization_options.csdoc", "~title": "JSON Serialization Options" },
+              { "path": "binary_data_JSON_representation.csdoc", "~title": "CSPro ⇄ JSON Conversions: Binary Data" }
             ]
           }
         ]

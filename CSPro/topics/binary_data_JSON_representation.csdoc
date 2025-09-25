@@ -1,0 +1,87 @@
+﻿<title>CSPro ⇄ JSON Conversions: Binary Data</title>
+
+
+The value of defined binary <link object_dot_notation.csdoc>logic object</link> or <link binary_dictionary_items.csdoc>dictionary item</link> data is represented as a <link JSON_primer.csdoc>JSON</link> object with <colorinline JSON>"metadata"</colorinline> and <colorinline JSON>"content"</colorinline> properties. If the object does not contain any data, its value is represented as <colorinline JSON>null</colorinline>.
+
+
+<subheader>Serialization</subheader>
+
+Based on JSON serialization options&mdash;defined as an <link properties_json_serialization.csdoc>application property</link> or <link JSON_serialization_options.csdoc>dynamically</link>&mdash;the value is serialized in one of two ways:
+
+
+<b>Localhost URL</b>: The binary data is serialized as a <link localhost_url.csdoc>localhost URL</link>. Localhost URLs are only valid while the CSPro application is running. This is the default option, as it is an efficient way to write the data for use in <link html_in_cspro.csdoc>web views</link>. This value, serialized in the object <colorinline JSON>"content"</colorinline> with the property <colorinline JSON>"url"</colorinline>, may look like:
+
+<color JSON>
+{
+  "metadata": {
+    "path": "C:/texts/pangram.txt",
+    "filename": "pangram.txt",
+    "mime": "text/plain"
+  },
+  "content": {
+    "url": "http://localhost:59421/vf/4/pangram.txt"
+  }
+}
+</color>
+
+
+<b>Data URL</b>: The binary data is serialized as a <link data_url.csdoc>data URL</link> encoded in <link "https://en.wikipedia.org/wiki/Base64">Base64</link>. Unlike a localhost URL, a data URL is not temporary so it is a good choice if you need a URL that can permanently refer to the data. Data URLs are approximately 33% larger than the content itself, so using data URLs for large files is not advised. This value, serialized in the object <colorinline JSON>"content"</colorinline> with the property <colorinline JSON>"url"</colorinline>, may look like:
+
+<color JSON>
+{
+  "metadata": {
+    "path": "C:/texts/pangram.txt",
+    "filename": "pangram.txt",
+    "mime": "text/plain"
+  },
+  "content": {
+    "url": "data:text/plain;base64,VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZyAxMjM0NTY3ODkw"
+  }
+}
+</color>
+
+Copying and pasting that URL into a web browser's address bar will show the English pangram: "The quick brown fox jumps over the lazy dog 1234567890".
+
+
+<subheader>Deserialization</subheader>
+
+There are several ways to set binary data using JSON. If you want to clear a value, specifying the value as <colorinline JSON>null</colorinline> will reset binary data to its default state. To set binary data to a specific value, you must supply an object with a <colorinline JSON>"content"</colorinline> property and, optionally, a <colorinline JSON>"metadata"</colorinline> property. Metadata is specified as an object with key/value pairs. The content itself can be specified in a couple ways:
+
+
+<b>Data URL</b>: The binary data can be specified as a <link data_url.csdoc>data URL</link> using the <colorinline JSON>"url"</colorinline> property. For example:
+
+<logic>
+string data_url = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAAEElEQVR4nGP4z/CfgSH+BAANggMmwP+nGgAAAABJRU5ErkJggg==";
+
+Image tiny_image;
+tiny_image.setValueFromJson(maketext("{ \"content\": { \"url\": \"%s\" } }", data_url));
+
+// width = 1, height = 2
+errmsg("width = %d, height = %d", tiny_image.width(), tiny_image.height());
+</logic>
+
+
+<b>File on Disk</b>: The binary data can be specified as a file using the <colorinline JSON>"path"</colorinline> property. The path is evaluated relative to the location of the application. For example:
+
+<logic>
+string file_path = "european-robin.webm";
+
+Video bird_video;
+bird_video.setValueFromJson(maketext("{ \"content\": { \"path\": \"%s\" } }", file_path));
+</logic>
+
+
+<subheader>Binary Objects</subheader>
+
+Some binary objects have additional ways that data can be supplied for deserialization. For more information about the serialization of binary data, see the documentation for each object:
+
+<list>
+    <li><topic Audio_JSON_representation.csdoc /></li>
+    <li><topic Document_JSON_representation.csdoc /></li>
+    <li><topic Geometry_JSON_representation.csdoc /></li>
+    <li><topic Image_JSON_representation.csdoc /></li>
+    <li><topic Video_JSON_representation.csdoc /></li>
+</list>
+
+
+<seealso symbols_json_representation.csdoc />
