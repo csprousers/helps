@@ -601,7 +601,7 @@
       { "path": "coming_back_later.csdoc", "~title": "Coming Back Later" },
       { "path": "create_a_new_capi_application.csdoc", "title": "Create a New Application" },
       { "path": "create_conditional_questions.csdoc", "~title": "Create Conditional Questions" },
-      { "path": "create_fills_in_questions.csdoc", "~title": "Create Fills In Questions" },
+      { "path": "create_fills_in_questions.csdoc", "~title": "Create Fills in Questions" },
       { "path": "data_entry_application_types.csdoc", "~title": "Data Entry Application Types" },
       { "path": "question_text_edit_styles.csdoc", "title": "Edit Styles" },
       { "path": "change_data_entry_options.csdoc", "title": "Enable Question Text" },
@@ -956,7 +956,7 @@
     ]
   },
   { "path": "create_dictionary_with_no_record_types.csdoc", "~title": "Create Dictionary with No Record Types" },
-  { "path": "create_fills_in_questions.csdoc", "~title": "Create Fills In Questions" },
+  { "path": "create_fills_in_questions.csdoc", "~title": "Create Fills in Questions" },
   { "path": "create_general_helps.csdoc", "~title": "Create General Helps" },
   { "path": "create_helps_for_fields.csdoc", "~title": "Create Helps for Fields" },
   { "path": "create_multiple_subtables.csdoc", "~title": "Create Multiple Subtables" },
@@ -2600,6 +2600,7 @@
   { "path": "markdown_overview.csdoc", "title": "Markdown",
     "subindex": [
       { "path": "markdown_overview.csdoc", "title": "Overview" },
+      { "path": "question_text.csdoc", "~title": "Question Text" },
       { "path": "markdown_syntax.csdoc", "title": "Syntax" }
     ]
   },
@@ -3253,9 +3254,25 @@
       { "path": "Image_createQRCode_function.csdoc", "~title": "Image.createQRCode Function" }
     ]
   },
+  { "path": "QSF_object.csdoc", "~title": "QSF Question Text Template Object" },
   { "path": "names.csdoc", "title": "Qualified Dictionary Names" },
-  { "path": "question_text_file_qsf.csdoc", "~title": "Question File (.qsf)" },
-  { "path": "question_text_macros.csdoc", "~title": "Question Text Macros" },
+  { "path": "question_text.csdoc", "~title": "Question Text",
+    "subindex": [
+      { "path": "change_formatting.csdoc", "title": "Formatting" },
+      { "path": "html_question_text.csdoc", "~title": "HTML Question Text" },
+      { "path": "add_pictures.csdoc", "title": "Images" },
+      { "path": "insert_link.csdoc", "title": "Links" },
+      { "path": "question_text_macros.csdoc", "title": "Macros" },
+      { "path": "define_languages.csdoc", "title": "Multiple Languages" },
+      { "path": "question_text_properties.csdoc", "title": "Properties" },
+      { "path": "QSF_object.csdoc", "title": "QSF Object" },
+      { "path": "question_text_file_qsf.csdoc", "~title": "Question File (.qsf)" },
+      { "path": "question_text.csdoc", "~title": "Question Text" },
+      { "path": "questions.csdoc", "~title": "Questions" },
+      { "path": "question_text_edit_styles.csdoc", "title": "Styles" },
+      { "path": "text_templates.csdoc", "~title": "Text Templates" }
+    ]
+  },
   { "path": "questionnaire_and_dictionary_organization.csdoc", "title": "Questionnaire",
     "subindex": [
       { "path": "questionnaire_and_dictionary_organization.csdoc", "title": "Form" },
@@ -3272,12 +3289,6 @@
     ]
   },
   { "path": "questionnaire_and_dictionary_organization.csdoc", "~title": "Questionnaire and Dictionary Organization" },
-  { "path": "questions.csdoc", "~title": "Questions",
-    "subindex": [
-      { "path": "question_text.csdoc", "~title": "Question Text" },
-      { "path": "text_templates.csdoc", "~title": "Text Templates" }
-    ]
-  },
   { "path": "javascript_overview.csdoc", "title": "QuickJS" },
   { "path": "data_source_r.csdoc", "~title": "R Data Source" },
   { "path": "radio_button.csdoc", "~title": "Radio Button" },

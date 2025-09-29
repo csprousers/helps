@@ -1,0 +1,29 @@
+﻿<title>Question Text Properties</title>
+<context IDD_QSF_PROPERTIES ID_QSF_PROPERTIES />
+
+To modify settings used by the CSPro Designer when <link enter_question_text.csdoc>editing</link> <link question_text.csdoc>question text</link>, select <b>Properties</b> from the <b>Question Text</b> menu.
+
+
+<subheader>Application Properties</subheader>
+
+<b>Format to use for new question text</b>: This property determines the format used when adding new questions. When set, this property is saved in the application's <link question_text_file_qsf.csdoc>question file</link>. When set to <i>&lt;use CSPro property&gt;</i>, new question text is added using the property defined under the CSPro Properties section. Default setting: &lt;use CSPro property&gt;.
+
+
+<subheader>CSPro Properties</subheader>
+
+<b>Format to use for new question text</b>: This property determines the format used when adding new questions if the property has not been overridden by the application property. Default setting: <link html_question_text.csdoc>HTML (visual)</link>.
+
+<b>Automatic compilation interval (in seconds)</b>: CSPro will compile any <link text_templates.csdoc>template expressions</link> that are part of the question text in the background while you use the editor. This property determines how frequently this occurs. Default setting: 1 second.
+
+<b>Show compilation errors for text templates</b>: Compilation errors can be shown as <i>Annotations</i> or <i>End of Line Annotations</i>, with the difference shown below. Default setting: Annotations.
+
+Annotations:
+
+<indent><image question_text_error_annotation.png /></indent>
+
+End of Line Annotations:
+
+<indent><image question_text_error_eol_annotation.png /></indent>
+
+
+<seealso question_text.csdoc question_text_edit_styles.csdoc />

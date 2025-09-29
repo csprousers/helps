@@ -13,6 +13,7 @@ The Markdown syntax is well-documented online, though elements that may be usefu
 Markdown can be used in CSPro in the following ways:
 
 <list>
+    <li>As a way to specify <link question_text.csdoc>question text</link>.</li>
     <li>As a format for <link templated_reports.csdoc>templated reports</link>.</li>
     <li>Viewing Markdown files (with the extension <b>.md</b>) using the <logiccolor>view</logiccolor> logic function or <link CSView::supported_files.csdoc>CSView</link>.</li>
     <li>Editing and viewing Markdown files using <link CSCode::language_markdown.csdoc>CSCode</link>.</li>

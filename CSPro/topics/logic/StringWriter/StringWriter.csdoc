@@ -5,7 +5,7 @@
 
 A <logiccolor>StringWriter</logiccolor> is a CSPro <link object_dot_notation.csdoc>logic object</link> that supports building strings incrementally. Several write functions exist that add to the object's string buffer, either by writing text directly or by writing <link encode_function.csdoc>encoded</link> text. Using a StringWriter is simpler, and more efficient, than <link string_concatenation.csdoc>concatenating </link> many strings together.
 
-The <logiccolor>Report</logiccolor> object, referring to a <link templated_reports.csdoc>templated report</link> is a kind of StringWriter, and <logiccolor>QSF</logiccolor>, the special name used to write to question text, is also a kind of StringWriter.
+The <logiccolor>Report</logiccolor> object, referring to a <link templated_reports.csdoc>templated report</link>, is a kind of StringWriter, and <logiccolor>QSF</logiccolor>, the special name used to write to <link question_text.csdoc>question text</link>, is also a kind of StringWriter.
 
 
 <subheader>Functionality</subheader>

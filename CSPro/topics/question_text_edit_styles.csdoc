@@ -1,5 +1,5 @@
-﻿<title>Edit Question Text Styles</title>
-
+﻿<title>Question Text Styles</title>
+<context IDD_QSFSTYLEDLG ID_EDIT_CAPI_STYLES />
 
 Frequently, CAPI applications format <link question_text.csdoc>question text</link> using a few specific combinations fonts and colors. For example, 16 point Arial black for literal question text and bold 14 point blue for interviewer instructions. CSPro supports <b>styles</b> that can be defined and used for this purpose. Styles allow you to define standard formats that are shared between all questions in your data entry application.
 
@@ -28,3 +28,6 @@ You can modify the default styles or add your own styles:
 </list>
 
 All question text that uses any of the modified styles are automatically updated to reflect the changes. Any new styles created are added to the styles dropdown list in the question text editor.
+
+
+<seealso question_text_properties.csdoc />

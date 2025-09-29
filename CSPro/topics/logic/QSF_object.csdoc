@@ -1,0 +1,19 @@
+﻿<title>QSF Question Text Template Object</title>
+
+When processing <link question_text.csdoc>question text</link> as a <link text_templates.csdoc>text template</link>, <logiccolor>QSF</logiccolor> is a special name used to write to the question text. This <link StringWriter.csdoc>StringWriter</link> object is made accessible by CSPro when processing question text and facilitates the use of functions such as <logiccolor>StringWriter.write</logiccolor>.
+
+
+For example, to write the numbers 1 to 100 to HTML question text, you could write:
+
+<report HTML>
+<p>These are the numbers 1 to 100:</p>
+
+<?
+do numeric ctr = 1 while ctr <= 100
+    QSF.writeEncoded("%d\n", ctr);
+enddo;
+?>
+</report>
+
+
+<seealso question_text.csdoc text_templates.csdoc />
