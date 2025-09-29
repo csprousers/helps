@@ -3,11 +3,7 @@
 
 <subheader>Overview</subheader>
 
-Running <link action_invoker.csdoc>Action Invoker</link> actions from other Android applications is possible by specifying the <link action_invoker_execution_json.csdoc>actions using JSON</link>, passing that JSON in an <link "https://developer.android.com/reference/android/content/Intent">Intent</link>, and <link "https://developer.android.com/training/basics/intents/result">processing the result</link> returned by ActionInvokerActivity. An example of calling into CSEntry, and processing results, is available on GitHub:
-
-<list>
-    <li>ActionInvokerDemo Application: <link "<definition github_ActionInvokerDemo_url />"><definition github_ActionInvokerDemo_url /></link></li>
-</list>
+Running <link action_invoker.csdoc>Action Invoker</link> actions from other Android applications is possible by specifying the <link action_invoker_execution_json.csdoc>actions using JSON</link>, passing that JSON in an <link "https://developer.android.com/reference/android/content/Intent">Intent</link>, and <link "https://developer.android.com/training/basics/intents/result">processing the result</link> returned by ActionInvokerActivity. An example of calling into CSEntry and processing the results is available on GitHub: <link "<definition github_action_invoker_demo_url />">Action Invoker (Android) Demo Application</link>.
 
 
 <subheader>Calling ActionInvokerActivity</subheader>

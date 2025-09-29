@@ -1,6 +1,6 @@
 ﻿<title>Launching CSEntry from Other Android Applications</title>
 
-If you are an Android application developer and would like to launch CSEntry from your application, there are two approaches, both of which are demonstrated in the <link "<definition github_CSEntryAndroidLauncher_url />">CSEntryAndroidLauncher</link> application on GitHub.
+If you are an Android application developer and would like to launch CSEntry from your application, there are two approaches, both of which are demonstrated in the <link "<definition github_csesntry_launcher_url />">CSEntry Launcher</link> application on GitHub.
 
 The two approaches, using an <link "https://developer.android.com/reference/android/content/Intent">Intent</link> or a <link "https://developer.android.com/training/app-links/deep-linking">deep link</link>, have the following differences:
 

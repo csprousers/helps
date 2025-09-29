@@ -50,7 +50,7 @@ It is possible to <link action_invoker_execution_android.csdoc>call into CSEntry
 
 <list>
     <li><topic action_invoker_execution_android.csdoc /></li>
-    <li><link "<definition github_ActionInvokerDemo_url />">ActionInvokerDemo Application on GitHub</link></li>
+    <li><link "<definition github_action_invoker_demo_url />">Action Invoker (Android) Demo Application on GitHub</link></li>
 </list>
 
 
