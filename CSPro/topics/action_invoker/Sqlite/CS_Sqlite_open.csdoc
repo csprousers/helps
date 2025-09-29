@@ -43,7 +43,7 @@ When specifying a file to open, the <arg>openFlags</arg> argument can be one of 
     <li><logiccolor>"readWriteCreate"</logiccolor>: The database is opened in read and write mode, with a new database created if it does not already exist.</li>
 </list>
 
-When opening or creating an encrypted SQLite database, you must specify an encryption key. The <arg>encryptionKey</arg> argument specifies the key, with the the optional <arg>encryptionKeyFormat</arg> argument indicating <link action_invoker_binary_data.csdoc>how to process</link> the <arg>encryptionKey</arg> argument. If opening an <link data_source_csdbe.csdoc>Encrypted CSPro DB data source</link>, you can use <action>Hash.createHash</action> action to convert a password into the encryption key necessary to open the database.
+When opening or creating an encrypted SQLite database, you must specify an encryption key. The <arg>encryptionKey</arg> argument specifies the key, with the optional <arg>encryptionKeyFormat</arg> argument indicating <link action_invoker_binary_data.csdoc>how to process</link> the <arg>encryptionKey</arg> argument. If opening an <link data_source_csdbe.csdoc>Encrypted CSPro DB data source</link>, you can use <action>Hash.createHash</action> action to convert a password into the encryption key necessary to open the database.
 
 Further information about opening databases is available on the SQLite website: <link "https://www.sqlite.org/c3ref/open.html">sqlite3_open_v2</link>, <link "https://sqlite.org/com/see.html">sqlite3_key</link>.
 
