@@ -1,6 +1,6 @@
 ﻿<title>Create Fills In Questions</title>
 
-Fills are used to customize <link questions.csdoc>question text</link> based on respondents' specific characteristics. This is done by embedding CSPro logic expressions into the text and surrounding them with pairs of tilde characters (~~).
+Fills are used to customize <link question_text.csdoc>question text</link> based on respondents' specific characteristics. This is done by embedding CSPro logic expressions into the text and surrounding them with pairs of tilde characters (~~).
 
 Fills may contain any valid CSPro logic expression that evaluates to a string or numeric value. Logic expressions may include dictionary items, variables, occurrence labels, user-defined functions, as well as any built-in CSPro functions and operators.
 
@@ -39,10 +39,10 @@ In logic, a user-defined function must be declared, as in:
 <logic>
 function string SexPronoun()
 
-	recode SEX -> SexPronoun;
-		   1   -> "his";
-			   -> "her";
-	endrecode;
+    recode SEX -> SexPronoun;
+           1   -> "his";
+               -> "her";
+    endrecode;
 
 end;
 </logic>
@@ -79,11 +79,11 @@ Or more realistically:
 householdMembers = "<ul>";
 
 do numeric ctr = 1 while ctr <= totocc(PERSON_REC)
-	householdMembers = householdMembers + maketext("<li>%s</li>", encode(strip(NAME(ctr))));
+    householdMembers = householdMembers + maketext("<li>%s</li>", encode(strip(NAME(ctr))));
 enddo;
 
 householdMembers = householdMembers + "</ul>"
 </logic>
 
 
-<seealso html_question_text.csdoc />
+<seealso question_text.csdoc html_question_text.csdoc />

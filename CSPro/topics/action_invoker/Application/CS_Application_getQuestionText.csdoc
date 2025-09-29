@@ -16,7 +16,7 @@ s = CS.Application.getQuestionText(『<arg>name</arg> := ... ‖ <arg>path</arg>
 
 <subheader>Description</subheader>
 
-The <action>Application.getQuestionText</action> <link action_invoker.csdoc>action</link> returns the question text associated with an application or loaded from the disk. One, and only one, of the arguments <arg>name</arg> or <arg>path</arg> must be provided.
+The <action>Application.getQuestionText</action> <link action_invoker.csdoc>action</link> returns the <link question_text.csdoc>question text</link> associated with an application or loaded from the disk. One, and only one, of the arguments <arg>name</arg> or <arg>path</arg> must be provided.
 
 If specifying <arg>name</arg>, you can also specify the name of a <link forms_file_fmf.csdoc>form file</link> or a <link introduction_to_data_dictionary.csdoc>dictionary</link>. When using a form file or dictionary, the question text associated with that entity's application is returned.
 

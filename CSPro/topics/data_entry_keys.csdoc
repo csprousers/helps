@@ -8,7 +8,7 @@
     <cell>Shortcut Key</cell><cell>Description</cell>
     <cell><b>Ctrl + L</b></cell><cell>View the logic for the currently selected item. Switches to logic view if no item selected.</cell>
     <cell><b>Ctrl + M</b></cell><cell>View the form for the currently selected item. Switches to form view if no item selected.</cell>
-    <cell><b>Ctrl + Q</b></cell><cell>View the question text for the currently selected item. Switches to question text view if no item selected.</cell>
+    <cell><b>Ctrl + Q</b></cell><cell>View the <link question_text.csdoc>question text</link> for the currently selected item. Switches to question text view if no item selected.</cell>
     <cell><b>Ctrl + G</b></cell><cell>Generate a set of forms based on the dictionary.</cell>
     <cell><b>Ctrl + A</b></cell><cell>Add a form to the current level.</cell>
     <cell><b>Alt + Enter</b></cell><cell>Modify the field properties for the currently selected item(s).</cell>

@@ -1,6 +1,6 @@
 ﻿<title>Create Helps for Fields</title>
 
-In addition to question text, a CAPI application can have help information for each question. During entry, the <b>F2</b> key is used to display a question's help text.
+In addition to <link question_text.csdoc>question text</link>, a CAPI application can have help information for each question. During entry, the <b>F2</b> key is used to display a question's help text.
 
 <list ordered>
     <li>From the <b>View</b> menu, press <b>Question Text</b> (or press <b>Ctrl+Q</b>). The question editor will be displayed.</li>

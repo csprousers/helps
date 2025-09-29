@@ -12,7 +12,7 @@ s = CS.UI.getDisplayOptions()
 
 The <action>UI.getDisplayOptions</action> <link action_invoker.csdoc>action</link> returns the display options associated with the current <link html_in_cspro.csdoc>web view</link>. These display options may be useful to examine before using <action>UI.setDisplayOptions</action> to size an <link html_dialog_ui.csdoc>HTML dialog</link> shown using <action>UI.showDialog</action>.
 
-Display options are returned by web views that show <link html_dialog_ui.csdoc>HTML dialogs</link> or display <link html_question_text.csdoc>HTML question text</link>.
+Display options are returned by web views that show <link html_dialog_ui.csdoc>HTML dialogs</link> or display <link question_text.csdoc>question text</link>.
 
 
 <subheader>Return Value</subheader>

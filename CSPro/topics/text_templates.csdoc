@@ -4,7 +4,7 @@
 
 <subheader>Overview</subheader>
 
-CSPro supports text templates, a system that allows users to define static text with special markers, known as delimiters. The content in between the delimiters is evaluated dynamically when the text template is rendered. Text templates are commonly used for generating documents where portions of the output are computed at runtime. CSPro uses text templates for <link questions.csdoc>question text</link> and for <link templated_reports.csdoc>templated reports</link>.
+CSPro supports text templates, a system that allows users to define static text with special markers, known as delimiters. The content in between the delimiters is evaluated dynamically when the text template is rendered. Text templates are commonly used for generating documents where portions of the output are computed at runtime. CSPro uses text templates for <link question_text.csdoc>question text</link> and for <link templated_reports.csdoc>templated reports</link>.
 
 Each text template has a format that indicates how CSPro should encode the results of dynamic evaluation when replacing the template expressions. The most common formats are <link html_in_cspro.csdoc>HTML</link> and <link markdown_overview.csdoc>Markdown</link>. CSPro supports three delimiters that enclose CSPro expressions or logic:
 

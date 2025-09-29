@@ -27,7 +27,7 @@ s = CS.UI.setDisplayOptions(『<arg>width</arg> := ...』
 
 <subheader>Description</subheader>
 
-The <action>UI.setDisplayOptions</action> <link action_invoker.csdoc>action</link> sets the display options for the current <link html_in_cspro.csdoc>web view</link>. Display options can be set for web views showing <link html_dialog_ui.csdoc>HTML dialogs</link> or displaying <link html_question_text.csdoc>HTML question text</link>.
+The <action>UI.setDisplayOptions</action> <link action_invoker.csdoc>action</link> sets the display options for the current <link html_in_cspro.csdoc>web view</link>. Display options can be set for web views showing <link html_dialog_ui.csdoc>HTML dialogs</link> or displaying <link question_text.csdoc>question text</link>.
 
 A web view's default and initial display options can be retrieved using <action>UI.getDisplayOptions</action>. The <action>UI.setWebViewOptions</action> action also can be used to customize the behavior of web views.
 

@@ -1,14 +1,15 @@
 ﻿<title>Blocks</title>
 
+
 <subheader>Overview</subheader>
 
 Blocks are a way to group several fields into a related unit. In summary:
 
 <list>
-	<li>Blocks contain some number of fields that come from the same group.</li>
-	<li>On mobile devices, a block's fields can be displayed on the same screen and the operator can enter values into these fields in any order.</li>
-	<li>Blocks can have question text. When running a data entry application, this question text will appear above the question text for each field in the block.</li>
-	<li>Logic can be defined for the block.</li>
+    <li>Blocks contain some number of fields that come from the same group.</li>
+    <li>On mobile devices, a block's fields can be displayed on the same screen and the operator can enter values into these fields in any order.</li>
+    <li>Blocks can have <link question_text.csdoc>question text</link>. When running a data entry application, this question text will appear above the question text for each field in the block.</li>
+    <li>Logic can be defined for the block.</li>
 </list>
 
 Blocks are primarily useful for two reasons. Firstly, they provide the mechanism for CSEntry to display multiple fields on a screen. Secondly, they allow you to write logic checks in one place that apply to a number of fields.
@@ -29,7 +30,7 @@ Only fields can be added to blocks. Blocks can be created from fields on a form 
 
 <subheader>Using Blocks</subheader>
 
-You can define question text for a block. When running a data entry application on a mobile device, the block's question text appears at the top of the screen, and then each field's individual question text appears underneath. This allows you to have some general text ("What is your date of birth?") and then specific text ("What is your year of birth?"). On Windows desktop, the block and field question text appears in the same window.
+You can define <link question_text.csdoc>question text</link> for a block. When running a data entry application on a mobile device, the block's question text appears at the top of the screen, and then each field's individual question text appears underneath. This allows you to have some general text ("What is your date of birth?") and then specific text ("What is your year of birth?"). On Windows desktop, the block and field question text appears in the same window.
 
 You can write logic that will run when the block is entered or exited. For example, if you have a block with two fields, FIELD1 and FIELD2, then logic will be executed in the following order if moving forward in your program:
 
@@ -63,35 +64,36 @@ PROC DOB_BLOCK
 
 preproc
 
-	// only ask date of birth in conventional households
-	ask if HH_TYPE = 1;
+    // only ask date of birth in conventional households
+    ask if HH_TYPE = 1;
 
 postproc
 
-	// if the month or day is missing, then assume 1 for these checks
-	numeric dob_mm = DOB_MONTH;
+    // if the month or day is missing, then assume 1 for these checks
+    numeric dob_mm = DOB_MONTH;
 
-	if dob_mm = missing then
-		dob_mm = 1;
-	endif;
+    if dob_mm = missing then
+        dob_mm = 1;
+    endif;
 
-	numeric dob_dd = DOB_DAY;
+    numeric dob_dd = DOB_DAY;
 
-	if dob_dd = missing then
-		dob_dd = 1;
-	endif;
+    if dob_dd = missing then
+        dob_dd = 1;
+    endif;
 
-	numeric dob_yyyymmdd = DOB_YEAR * 10000 + dob_mm * 100 + dob_dd;
+    numeric dob_yyyymmdd = DOB_YEAR * 10000 + dob_mm * 100 + dob_dd;
 
-	if not datevalid(dob_yyyymmdd) then
-		errmsg("The date of birth is not valid");
-		reenter;
+    if not datevalid(dob_yyyymmdd) then
+        errmsg("The date of birth is not valid");
+        reenter;
 
-	elseif dob_yyyymmdd > sysdate("YYYYMMDD") then
-		errmsg("The date of birth cannot be in the future");
-		reenter;
+    elseif dob_yyyymmdd > sysdate("YYYYMMDD") then
+        errmsg("The date of birth cannot be in the future");
+        reenter;
 
-	endif;
+    endif;
 </logic>
+
 
 <seealso change_block_properties.csdoc />

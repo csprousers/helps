@@ -12,7 +12,7 @@ b = object_name.clear()
 
 The <logiccolor>StringWriter.clear</logiccolor> function clears the contents of a <link StringWriter.csdoc>StringWriter</link> object's string buffer, resetting the buffer to a blank string.
 
-Although this function can be called on a <link templated_reports.csdoc>templated report</link> or on <logiccolor>QSF</logiccolor> while generating <link questions.csdoc>question text</link>, be aware that any text already written to the templated report or question text will be cleared. This is rarely an intended or desirable outcome.
+Although this function can be called on a <link templated_reports.csdoc>templated report</link> or on <logiccolor>QSF</logiccolor> while generating <link question_text.csdoc>question text</link>, be aware that any text already written to the templated report or question text will be cleared. This is rarely an intended or desirable outcome.
 
 When called on a StringWriter object <link StringWriter_statement.csdoc>based</link> on a <link templated_reports.csdoc>templated report</link>, an error occurs if the templated report is not in the process of creation.
 
