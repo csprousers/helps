@@ -13,7 +13,7 @@
   "android_package_name": "gov.census.cspro.csentry",
   "google_play": "https://play.google.com/store/apps/details?id=gov.census.cspro.csentry",
   "github_helps_url": "https://github.com/csprousers/helps",
-  "github_ActionInvokerDemo_url": "https://github.com/CSProDevelopment/ActionInvokerDemo",
-  "github_CSEntryAndroidLauncher_url": "https://github.com/CSProDevelopment/CSEntryAndroidLauncher",
+  "github_action_invoker_demo_url": "https://github.com/csprousers/android-action-invoker-demo",
+  "github_csesntry_launcher_url": "https://github.com/csprousers/android-csentry-launcher",
   "github_feature_showcase_url": "https://github.com/csprousers/feature-showcase"
 }
