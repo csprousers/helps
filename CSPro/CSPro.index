@@ -3285,7 +3285,7 @@
   { "path": "questionnaire_and_dictionary_organization.csdoc", "~title": "Questionnaire and Dictionary Organization" },
   { "path": "questions.csdoc", "~title": "Questions",
     "subindex": [
-      { "path": "text_templates.csdoc", "title": "Question Text" },
+      { "path": "question_text.csdoc", "~title": "Question Text" },
       { "path": "text_templates.csdoc", "~title": "Text Templates" }
     ]
   },
@@ -4223,7 +4223,7 @@
   { "path": "tool_list.csdoc", "title": "Text Encoding Converter" },
   { "path": "text_templates.csdoc", "~title": "Text Templates",
     "subindex": [
-      { "path": "questions.csdoc", "~title": "Questions" },
+      { "path": "question_text.csdoc", "~title": "Question Text" },
       { "path": "templated_reports.csdoc", "~title": "Templated Reports" }
     ]
   },

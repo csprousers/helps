@@ -29,7 +29,7 @@ A feature showcase demonstrating some of CSPro 7.0's new features is available o
         ~!~
         <list>
             <li>Automatically advance on selection.</li>
-            <li>Show field labels above question text.</li>
+            <li>Show field labels above <link question_text.csdoc>question text</link>.</li>
             <li>Display error message numbers.</li>
         </list>
     </li>

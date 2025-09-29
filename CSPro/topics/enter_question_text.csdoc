@@ -1,7 +1,7 @@
 ﻿<title>Enter Question Text</title>
 <context ID_QSF_EDITOR />
 
-CAPI applications include a question text window (at the top of the form). You can customize the text that appears in this window for each question in the application.
+CAPI applications include a <link question_text.csdoc>question text</link> window (at the top of the form). You can customize the text that appears in this window for each question in the application.
 
 <list ordered>
     <li>From the <b>View</b> menu, press <b>Question View</b> (or press <b>Ctrl+Q</b>). The question editor will be displayed.</li>
@@ -12,4 +12,4 @@ CAPI applications include a question text window (at the top of the form). You c
 
 The question text editor supports copy and paste operations, including pasting formatted text from other documents.
 
-<seealso change_formatting.csdoc create_conditional_questions.csdoc create_fills_in_questions.csdoc html_question_text.csdoc />
+<seealso question_text.csdoc change_formatting.csdoc create_conditional_questions.csdoc create_fills_in_questions.csdoc />

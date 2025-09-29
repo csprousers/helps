@@ -534,6 +534,24 @@
                 ]
               },
               {
+                "title": "Questions",
+                "documents": [
+                  { "path": "question_text.csdoc", "~title": "Question Text" },
+                  { "path": "html_question_text.csdoc", "~title": "HTML Question Text" },
+                  { "path": "enter_question_text.csdoc", "~title": "Enter Question Text" },
+                  { "path": "create_fills_in_questions.csdoc", "~title": "Create Fills In Questions" },
+                  { "path": "question_text_edit_styles.csdoc", "title": "Edit Styles" },
+                  { "path": "change_formatting.csdoc", "~title": "Change Formatting" },
+                  { "path": "add_pictures.csdoc", "~title": "Add Images" },
+                  { "path": "insert_link.csdoc", "~title": "Insert Link In Question Text" },
+                  { "path": "create_conditional_questions.csdoc", "~title": "Create Conditional Questions" },
+                  { "path": "create_helps_for_fields.csdoc", "~title": "Create Helps for Fields" },
+                  { "path": "define_languages.csdoc", "~title": "Define Languages" },
+                  { "path": "use_multiple_languages.csdoc", "~title": "Use Multiple Languages" },
+                  { "path": "question_text_macros.csdoc", "~title": "Question Text Macros" }
+                ]
+              },
+              {
                 "title": "Multimedia",
                 "documents": [
                   { "path": "multimedia_features.csdoc", "~title": "Multimedia Features" },
@@ -559,21 +577,9 @@
                 "title": "How to ...",
                 "documents": [
                   { "path": "create_a_new_capi_application.csdoc", "~title": "Create a New CAPI Application" },
-                  { "path": "define_languages.csdoc", "~title": "Define Languages" },
                   { "path": "organize_forms.csdoc", "~title": "Organize Forms" },
-                  { "path": "enter_question_text.csdoc", "~title": "Enter Question Text" },
-                  { "path": "create_fills_in_questions.csdoc", "~title": "Create Fills In Questions" },
-                  { "path": "question_text_edit_styles.csdoc", "title": "Edit Styles" },
-                  { "path": "change_formatting.csdoc", "~title": "Change Formatting" },
-                  { "path": "add_pictures.csdoc", "~title": "Add Images" },
-                  { "path": "insert_link.csdoc", "~title": "Insert Link In Question Text" },
                   { "path": "resources.csdoc", "title": "Add Resources" },
-                  { "path": "html_question_text.csdoc", "~title": "HTML Question Text" },
-                  { "path": "question_text_macros.csdoc", "~title": "Question Text Macros" },
-                  { "path": "use_multiple_languages.csdoc", "~title": "Use Multiple Languages" },
-                  { "path": "create_conditional_questions.csdoc", "~title": "Create Conditional Questions" },
                   { "path": "structure_movement.csdoc", "~title": "Structure Movement" },
-                  { "path": "create_helps_for_fields.csdoc", "~title": "Create Helps for Fields" },
                   { "path": "show_values_for_selection.csdoc", "~title": "Show Values for Selection" },
                   { "path": "handle_multiple_answers.csdoc", "~title": "Handle Multiple Answers" },
                   { "path": "choose_topic_sections.csdoc", "~title": "Choose Topic Sections" },

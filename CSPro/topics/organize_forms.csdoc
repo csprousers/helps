@@ -2,6 +2,6 @@
 
 Divide your CAPI questionnaire into sections, one for each topic area. Add any special sections, such a begin and end section or global help sections, like an FAQ. These sections organizing units for defining forms and movement within the application.
 
-Break up the questions within a section into forms containing one or several responses. Remember, you only have about half of the screen at the bottom to use for a form, because the question text may take up the top half of the screen.
+Break up the questions within a section into forms containing one or several responses. Remember, you only have about half of the screen at the bottom to use for a form, because the <link question_text.csdoc>question text</link> may take up the top half of the screen.
 
 If the form contains a roster, you should make sure that only the roster scrolls, not the form. Scrolling forms can be confusing to interviewers.

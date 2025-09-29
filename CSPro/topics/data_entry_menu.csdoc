@@ -40,9 +40,9 @@ The following is a summary of the menu options available while editing data entr
     <cell><link change_the_view.csdoc>Full Screen</link></cell><cell>Hide the trees and show full screen view.</cell>
     <cell><link data_entry_elements.csdoc>Form</link></cell><cell>Show forms in the right-hand window.</cell>
     <cell><link view_logic.csdoc>Logic</link></cell><cell>Show logic procedures in the right-hand window.</cell>
-    <cell><link questions.csdoc>Question Text</link></cell><cell>Show the screen to enter question text.</cell>
+    <cell><link question_text.csdoc>Question Text</link></cell><cell>Show the screen to enter question text.</cell>
     <cell><link view_questionnaire_from_fmf.csdoc>Questionnaire</link></cell><cell>Show the questionnaire in the right-hand window using the form items.</cell>
-    <cell><link text_templates.csdoc>Preview Text Template</link></cell><cell>Display a preview of <link questions.csdoc>question text</link> or <link templated_reports.csdoc>templated reports</link>.</cell>
+    <cell><link text_templates.csdoc>Preview Text Template</link></cell><cell>Display a preview of <link question_text.csdoc>question text</link> or <link templated_reports.csdoc>templated reports</link>.</cell>
     <cell><link onkey_character_map.csdoc>OnKey Character Map</link></cell><cell>Calculate <logiccolor>OnKey</logiccolor> and <logiccolor>OnChar</logiccolor> codes.</cell>
     <cell><link user_configuration_settings.csdoc>User and Configuration Settings</link></cell><cell>Open a dialog that allows you to edit the user and configuration settings.</cell>
     <cell 2>&nbsp;</cell>

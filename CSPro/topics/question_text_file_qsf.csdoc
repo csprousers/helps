@@ -1,7 +1,7 @@
 ﻿<title>Question File (.qsf)</title>
 
 
-The question file contains information related to <b>CAPI</b> (<b>C</b>omputer-<b>A</b>ssisted <b>P</b>ersonal <b>I</b>nterviewing) data entry applications. Such information includes question text to appear on the screen with each field and help screens to appear when the operator presses the help (<b>F2</b>) key on desktop or the <b>?</b> icon on mobile.
+The question file contains information about <link question_text.csdoc>question text</link> that appears on the screen with each field and help screens to appear when the operator presses the help (<b>F2</b>) key on desktop or the <b>?</b> icon on mobile.
 
 
 <subheader>File Format</subheader>
@@ -116,4 +116,4 @@ questions:
 </color>
 
 
-<seealso html_question_text.csdoc />
+<seealso question_text.csdoc html_question_text.csdoc />
