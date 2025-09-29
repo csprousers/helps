@@ -238,6 +238,8 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>putdeck</logiccolor></cell><cell>Puts a value in a DeckArray used for editing data.</cell>
     <cell><logiccolor>putnote</logiccolor></cell><cell>Puts the contents of string to a field or case note.</cell>
     <cell 2>&nbsp;</cell>
+    <cell><logiccolor>QSF</logiccolor></cell><cell>Gives access to the <link StringWriter.csdoc>StringWriter</link> in use when processing <link question_text.csdoc>question text</link> as a <link text_templates.csdoc>text template</link>.</cell>
+    <cell 2>&nbsp;</cell>
     <cell><logiccolor>random</logiccolor></cell><cell>Returns a pseudo-random integer in a given range.</cell>
     <cell><logiccolor>randomin</logiccolor></cell><cell>Returns a pseudo-random integer in a non-continuous range, or using a value set.</cell>
     <cell><logiccolor>randomizevs</logiccolor></cell><cell>Randomizes the order of a value set.</cell>

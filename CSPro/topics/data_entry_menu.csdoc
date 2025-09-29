@@ -71,6 +71,7 @@ The following is a summary of the menu options available while editing data entr
     <cell 2>&nbsp;</cell>
     <cell 2><subheader>Question Text</subheader></cell>
     <cell><link define_languages.csdoc>Languages</link></cell><cell>Define the set of languages used in the application.</cell>
+    <cell><link question_text_properties.csdoc>Properties</link></cell><cell>Modify settings used when editing question text.</cell>
     <cell><link question_text_edit_styles.csdoc>Edit Styles</link></cell><cell>Define custom styles to use in the question window.</cell>
     <cell>Bold</cell><cell>Switch between <b>bold</b> and non-bold text.</cell>
     <cell>Italic</cell><cell>Switch between <i>italicized</i> and non-italicized text.</cell>
