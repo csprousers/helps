@@ -11,9 +11,8 @@ This property determines how the code will be processed by the CSPro compiler an
 <list>
     <li><b>CSPro Logic (Main)</b>: The application's main <link introduction_to_cspro_language.csdoc>CSPro logic file</link> containing <link cspro_program_structure.csdoc>procedures</link> as well as optional <link user_defined_functions.csdoc>user-defined functions</link>.</li>
     <li><b>CSPro Logic (External)</b>: A CSPro logic file that contains user-defined functions that can be called from statements in the main logic file.</li>
-    <li><b>JavaScript (Autodetect)</b>: <link javascript_overview.csdoc>QuickJS</link> will analyze the file to determine if it should be evaluated as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global script</link> or as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">module</link>.</li>
-    <li><b>JavaScript (Global)</b>: The file will be evaluated as a JavaScript global script.</li>
-    <li><b>JavaScript (ECMAScript Module)</b>: The file will be evaluated as a JavaScript module.</li>
+    <li><b>JavaScript (Global)</b>: The file will be evaluated as a JavaScript <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global script</link>.</li>
+    <li><b>JavaScript (ECMAScript Module)</b>: The file will be evaluated as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript module</link>.</li>
 </list>
 
 
