@@ -2251,7 +2251,7 @@
       { "path": "JS.csdoc", "~title": "JS Namespace" },
       { "path": "javascript_overview.csdoc", "title": "Overview" },
       { "path": "properties_javascript.csdoc", "title": "Properties" },
-      { "path": "javascript_overview.csdoc", "title": "QuickJS" },
+      { "path": "javascript_overview.csdoc", "title": "QuickJS-NG" },
       { "path": "javascript_overview.csdoc", "title": "Use in CSPro" }
     ]
   },
@@ -3289,7 +3289,7 @@
     ]
   },
   { "path": "questionnaire_and_dictionary_organization.csdoc", "~title": "Questionnaire and Dictionary Organization" },
-  { "path": "javascript_overview.csdoc", "title": "QuickJS" },
+  { "path": "javascript_overview.csdoc", "title": "QuickJS-NG" },
   { "path": "data_source_r.csdoc", "~title": "R Data Source" },
   { "path": "radio_button.csdoc", "~title": "Radio Button" },
   { "path": "random_function.csdoc", "title": "Random" },

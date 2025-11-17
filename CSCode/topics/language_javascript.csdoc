@@ -11,11 +11,11 @@
     <li>Compile</li>
     <li>Run (Displays in Output Window)</li>
     <li>Stop</li>
-    <li>JavaScript Module (Modifies how code is compiled</li>
+    <li>JavaScript Module (modifies how code is compiled)</li>
 </list>
 
 <link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules>JavaScript external documentation</link>
 
-<link https://bellard.org/quickjs>JavaScript is executed using QuickJS</link>
+<link "https://quickjs-ng.github.io/quickjs">JavaScript is executed using QuickJS-NG</link>
 
 <link CSPro::action_invoker_execution_javascript_embedded.csdoc>Actin Invoker can be used with JavaScript</link>
