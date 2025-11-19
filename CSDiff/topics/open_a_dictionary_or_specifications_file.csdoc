@@ -1,11 +1,11 @@
 ﻿<title>Open a Dictionary or Specifications File</title>
 <context ID_FILE_OPEN />
 
-Select Compare Data from the CSPro Tools menu or from the Start, Programs, CSPro menu. In Explorer, Compare Data can usually be initiated by double clicking on a file with a CMP extension.
+Select Compare Data from the CSPro Tools menu or from the Start, Programs, CSPro menu. In Explorer, Compare Data can usually be initiated by double clicking on a file with a <b>.cmp</b> extension.
 
-If the Compare Data (CSDiff) window is open but no dictionary available, or to open another dictionary or CMP file:
+If the Compare Data (CSDiff) window is open but no dictionary available, or to open another dictionary or <b>.cmp</b> file:
 
 <list ordered>
-	<li>Click <image open_button.png /> on the toolbar; or press <b>Ctrl+O</b>; or from the <b>File</b> menu, select <b>Open</b>.</li>
-	<li>Select the data dictionary file (*.dcf) or the compare specification file (*.cmp) you want to open. If you do not have a previous compare specification file, open the dictionary file that describes the data you wish to compare. If you want to use previously saved compare specifications, open the compare specification file.</li>
+    <li>Click <image open_button.png /> on the toolbar; or press <b>Ctrl+O</b>; or from the <b>File</b> menu, select <b>Open</b>.</li>
+    <li>Select the data dictionary file (*.dcf) or the compare specification file (*.cmp) you want to open. If you do not have a previous compare specification file, open the dictionary file that describes the data you wish to compare. If you want to use previously saved compare specifications, open the compare specification file.</li>
 </list>
