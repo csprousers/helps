@@ -1,0 +1,11 @@
+﻿Only some CSPro types have conversion routines. The following table summarizes conversion routines, with the conversion described in detail at the provided links:
+
+<table 2 header nowrap>
+    <cell>CSPro Object</cell><cell>JavaScript Conversion</cell>
+    <cell><link numeric_JavaScript_representation.csdoc>numeric</link></cell><cell>Converted to a JavaScript <link "https://developer.mozilla.org/en-US/docs/Glossary/Number">number</link> (or <link "https://developer.mozilla.org/en-US/docs/Glossary/Null">null</link> or <link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link> if a <link special_values.csdoc>special value</link>).~!~Converted from these types, as well as from <link "https://developer.mozilla.org/en-US/docs/Glossary/Boolean">booleans</link> and single-value <link "https://developer.mozilla.org/en-US/docs/Glossary/Array">arrays</link>.~!~&nbsp;</cell>
+    <cell><link string_JavaScript_representation.csdoc>string / alpha</link></cell><cell>Converted to a JavaScript <link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link>.~!~Converted from a string, number, boolean, or null.~!~&nbsp;</cell>
+    <cell><link javascript_user_defined_functions.csdoc>function</link></cell><cell>Converted to a JavaScript <link "https://developer.mozilla.org/en-US/docs/Glossary/Function">function</link>.~!~It is not possible to convert a JavaScript function to a CSPro function.~!~&nbsp;</cell>
+    <cell><link Array_JavaScript_representation.csdoc>Array</link></cell><cell>Converted to and from a JavaScript <link "https://developer.mozilla.org/en-US/docs/Glossary/Array">array</link>.~!~&nbsp;</cell>
+    <cell><link HashMap_JavaScript_representation.csdoc>HashMap</link></cell><cell>Converted to and from a JavaScript <link "https://developer.mozilla.org/en-US/docs/Glossary/Object">object</link>.~!~&nbsp;</cell>
+    <cell><link List_JavaScript_representation.csdoc>List</link></cell><cell>Converted to and from a JavaScript <link "https://developer.mozilla.org/en-US/docs/Glossary/Array">array</link>.</cell>
+</table>

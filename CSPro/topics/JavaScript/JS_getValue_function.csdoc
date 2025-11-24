@@ -14,11 +14,9 @@ The <logiccolor>JS.getValue</logiccolor> function converts a JavaScript variable
 
 <include include_JS_name_specification.hgi />
 
-Only some CSPro types have conversion routines. The following types have conversion routines that support conversion from JavaScript, with the conversion described in detail at the provided links:
+<include include_JS_conversions.hgi />
 
-<include include_JS_conversions_from_JS.hgi />
-
-All of the types can also be converted to JavaScript by using the <logiccolor>JS.setValue</logiccolor> function.
+Note that <logiccolor>function</logiccolor> objects cannot be converted from JavaScript. All of the types can be converted to JavaScript by using the <logiccolor>JS.setValue</logiccolor> function.
 
 
 <subheader>Return Value</subheader>
@@ -46,9 +44,10 @@ List randomNumbersCS;
 JS.getValue("randomNumbersJS", randomNumbersCS);
 
 // displays text similar to: 5 random values created in JavaScript: 0.107350 ... 0.373519
-errmsg("%d random values created in JavaScript: %f ... %f", randomNumbersCS.length(),
-                                                            randomNumbersCS(1),
-                                                            randomNumbersCS(randomNumbersCS.length()));
+errmsg("%d random values created in JavaScript: %f ... %f",
+       randomNumbersCS.length(),
+       randomNumbersCS(1),
+       randomNumbersCS(randomNumbersCS.length()));
 </logic>
 
 

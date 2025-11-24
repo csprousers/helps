@@ -14,11 +14,9 @@ The <logiccolor>JS.setValue</logiccolor> function sets the value of a JavaScript
 
 <include include_JS_name_specification.hgi />
 
-Only some CSPro types have conversion routines. The following types have conversion routines that support conversion to JavaScript, with the conversion described in detail at the provided links:
+<include include_JS_conversions.hgi />
 
-<include include_JS_conversions_to_JS.hgi />
-
-All of the types, with the exception of <logiccolor>function</logiccolor>, can also be retrieved from JavaScript by using the <logiccolor>JS.getValue</logiccolor> function.
+All of the types, with the exception of <logiccolor>function</logiccolor>, can be converted from JavaScript by using the <logiccolor>JS.getValue</logiccolor> function.
 
 
 <subheader>Return Value</subheader>

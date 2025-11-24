@@ -1,7 +1,0 @@
-﻿<list>
-    <li><link numeric_JavaScript_representation.csdoc>numeric</link>: Converted from a <link "https://developer.mozilla.org/en-US/docs/Glossary/Number">number</link> (along with other types).</li>
-    <li><link string_JavaScript_representation.csdoc>string / alpha</link>: Converted from a <link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link> (along with other types).</li>
-    <li><link Array_JavaScript_representation.csdoc>Array</link>: Converted from an <link "https://developer.mozilla.org/en-US/docs/Glossary/Array">array</link>.</li>
-    <li><link HashMap_JavaScript_representation.csdoc>HashMap</link>: Converted from an <link "https://developer.mozilla.org/en-US/docs/Glossary/Object">object</link>.</li>
-    <li><link List_JavaScript_representation.csdoc>List</link>: Converted from an <link "https://developer.mozilla.org/en-US/docs/Glossary/Array">array</link>.</li>
-</list>
