@@ -1,5 +1,85 @@
 ﻿<title>JavaScript User-Defined Functions</title>
 
-JS_TODO
 
-<seealso javascript_overview.csdoc />
+<subheader>Executing JavaScript Functions From CSPro Logic</subheader>
+
+When incorporating <link javascript_overview.csdoc>JavaScript</link> into a CSPro application, it is possible to create function wrappers in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked. To do this, use the <logiccolor>declare</logiccolor> keyword to declare the function, specifying its return type and parameters. Using the <logiccolor>JS</logiccolor> modifier after <logiccolor>function</logiccolor> indicates that the function will be found in JavaScript's <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global execution context</link>, not in CSPro logic. For example:
+
+<logic>
+declare function JS numeric dateDifferenceInDays(string dateFirst, string dateLast);
+</logic>
+
+In CSPro logic, you can now write function calls as if this were a CSPro logic function, with any CSPro arguments <link javascript_value_conversions.csdoc>converted</link> to their JavaScript equivalents when the call is executed. If the JavaScript function returns a value, it is converted to the CSPro type specified in the function declaration. If the JavaScript function does not return a value, the CSPro function returns the default return value for <link user_defined_functions.csdoc>user-defined functions</link> (<logiccolor>default</logiccolor> or a blank string).
+
+The JavaScript function's existence is not known until runtime. If the function does not exist when called, a runtime error is displayed and the function returns the default return value.
+
+It is also possible to execute JavaScript functions using the <logiccolor>JS.invoke</logiccolor> function.
+
+
+<subheader>Executing CSPro Functions From JavaScript</subheader>
+
+CSPro logic <link user_defined_functions.csdoc>user-defined functions</link> can also be passed to JavaScript using the <logiccolor>JS.invoke</logiccolor> or <logiccolor>JS.setValue</logiccolor> functions.
+
+When called from JavaScript, if the number of arguments is fewer than what the CSPro function requires, an exception is thrown. If too many arguments are provided, the additional arguments are ignored by CSPro. When the function is executed within the JavaScript environment, any arguments to the function are <link javascript_value_conversions.csdoc>converted</link> to their CSPro equivalents, with exceptions thrown when no conversion routine exists, or if the conversion failed.
+
+The CSPro function's return value is converted to its JavaScript equivalent when the function terminates.
+
+
+<subheader>Example 1 (JavaScript Function Wrapper)</subheader>
+
+With the following JavaScript script <link manage_application_files.csdoc>added to the application</link>...
+
+<color JavaScript>
+function dateDifferenceInDays(dateFirst, dateLast) {
+    const millisecondsPerDay = 24 * 60 * 60 * 1000;
+    const dateDifference = new Date(dateLast) - new Date(dateFirst);
+    return Math.floor(dateDifference / millisecondsPerDay);
+}
+</color>
+
+...it is possible to wrap it using <logiccolor>declare</logiccolor> and <logiccolor>JS</logiccolor> and execute it from CSPro logic:
+
+<logic>
+PROC GLOBAL
+
+declare function JS numeric dateDifferenceInDays(string dateFirst, string dateLast);
+
+PROC DEMO
+
+    // execute the wrapped function as if it were a CSPro function
+    errmsg("%d", dateDifferenceInDays("2000-11-07", "2024-11-05"));
+
+    // execute the JavaScript function using JS.invoke
+    errmsg("%s", JS.invoke("dateDifferenceInDays", "2000-11-07", "2024-11-05"));
+
+    // execute the equivalent CSPro built-in function
+    errmsg("%d", datediff(20001107, 20241105, "d"));
+</logic>
+
+
+<subheader>Example 2 (CSPro Function Execution Using JS.setValue)</subheader>
+
+This example uses <logiccolor>JS.setValue</logiccolor> to add a function to JavaScript that, when executed, calls into CSPro logic to call the <logiccolor>accept</logiccolor> function. The example uses <logiccolor>JS.eval</logiccolor> to show how this could be executed from within JavaScript:
+
+<logic>
+PROC GLOBAL
+
+function numeric ChooseOption(string heading, List string options)
+    exit accept(heading, options);
+end;
+
+PROC DEMO
+
+    JS.setValue("chooseOption", ChooseOption);
+
+    JS.eval("const options = [ 'Frequently', 'Sometimes', 'Never' ];"
+            "chooseOption('How often do you use this feature?', options);");
+</logic>
+
+
+<subheader>Example 3 (CSPro Function Execution Using JS.invoke)</subheader>
+
+<include include_JS_invoke_example.hgi />
+
+
+<seealso javascript_overview.csdoc javascript_value_conversions.csdoc  />

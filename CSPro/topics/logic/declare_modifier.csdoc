@@ -16,9 +16,9 @@ As of CSPro <definition CSPro::version />, the <logiccolor>declare</logiccolor> 
 
 When declaring a function, it is not necessary to name each parameter, and if a parameter name is provided, it does not need to match the name used at definition.
 
-For CSPro logic declarations, a compiler error occurs if the variable is never defined.
+For <link user_defined_functions.csdoc>CSPro logic declarations</link>, a compiler error occurs if the variable is never defined.
 
-For JavaScript function declarations, the function's existence is not known until runtime. If the function does not exist when called, a runtime error is displayed and the function returns <logiccolor>default</logiccolor> or a blank string, depending on the return type.
+For <link javascript_user_defined_functions.csdoc>JavaScript function declarations</link>, the function's existence is not known until runtime. If the function does not exist when called, a runtime error is displayed and the function returns <logiccolor>default</logiccolor> or a blank string, depending on the return type.
 
 
 <subheader>Example (Forward Declaring)</subheader>
@@ -63,7 +63,7 @@ end;
 PROC GLOBAL
 
 // declare that this CSPro function will call a JavaScript function called "sign"
-declare function JS sign(numeric);
+declare function numeric JS sign(numeric);
 
 PROC EXAMPLE
 

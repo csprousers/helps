@@ -10,9 +10,9 @@ s = JS.invoke(<arg>function_name</arg>『, <arg>argument1</arg>, ..., <arg>argum
 
 <subheader>Description</subheader>
 
-The <logiccolor>JS.invoke</logiccolor> function executes a JavaScript function that exists in <link javascript_overview.csdoc>CSPro's JavaScript</link> <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global execution context</link>. The function is specified using the string expression <arg>function_name</arg>, and any CSPro arguments, <arg>argument1</arg> to <arg>argumentN</arg>, are <link javascript_value_conversions.csdoc>converted</link> to their JavaScript equivalents. The following types have conversion routines that support conversion to JavaScript, with the conversion described in detail at the provided links:
+The <logiccolor>JS.invoke</logiccolor> function executes a JavaScript function that exists in <link javascript_overview.csdoc>CSPro's JavaScript</link> <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global execution context</link>. The function is specified using the string expression <arg>function_name</arg>, and any CSPro arguments, <arg>argument1</arg> to <arg>argumentN</arg>, are <link javascript_value_conversions.csdoc>converted</link> to their JavaScript equivalents.
 
-<include include_JS_conversions_to_JS.hgi />
+<include include_JS_conversions.hgi />
 
 If you are frequently invoking a JavaScript function, consider creating a <link javascript_user_defined_functions.csdoc>function wrapper</link> that appears as a CSPro logic <link user_defined_functions.csdoc>user-defined function</link> but calls into JavaScript when invoked.
 
@@ -61,24 +61,7 @@ JS.invoke("sumArray", someNumbersList);  // 259
 
 <subheader>Example 3</subheader>
 
-CSPro logic <link user_defined_functions.csdoc>user-defined functions</link> can be used as arguments. With the following JavaScript script <link manage_application_files.csdoc>added to the application</link>...
-
-<color JavaScript>
-function getCSProVersion(diagnosticsCallback) {
-    return diagnosticsCallback("version");
-}
-</color>
-
-...it is possible to call into JavaScript and then have JavaScript call back into CSPro.
-
-<logic>
-function string ExecDiagnostics(string property)
-    exit diagnostics(property);
-end;
-
-JS.invoke("getCSProVersion", ExecDiagnostics)); // <definition CSPro::version />
-diagnostics("version");                         // <definition CSPro::version />
-</logic>
+<include include_JS_invoke_example.hgi />
 
 
 <seealso javascript_overview.csdoc JS.csdoc JS_eval_function.csdoc />
