@@ -1,6 +1,6 @@
 ﻿<title>JS Namespace</title>
 
-The <logiccolor>JS</logiccolor> namespace is a set of functions that facilitate interactions between <link introduction_to_cspro_language.csdoc>CSPro logic</link> and <link javascript_overview.csdoc>JavaScript</link>.
+The <logiccolor>JS</logiccolor> namespace is a set of functions that facilitate interactions between <link introduction_to_cspro_language.csdoc>CSPro logic</link> and <link javascript_overview.csdoc>JavaScript</link>. For detailed information about using JavaScript in CSPro, see: <topic javascript_overview.csdoc />.
 
 
 <subheader>Functionality</subheader>
@@ -8,11 +8,14 @@ The <logiccolor>JS</logiccolor> namespace is a set of functions that facilitate 
 <include include_JS_functionality.hgi />
 
 
-<subheader>Example</subheader>
+<subheader>Example 1</subheader>
 
-<logic>
-    // JS_TODO
-</logic>
+<include include_JS_eval_example.hgi />
+
+
+<subheader>Example 2</subheader>
+
+<include include_JS_invoke_example_sum_array.hgi />
 
 
 <seealso javascript_overview.csdoc />

@@ -3,6 +3,8 @@
 
 This is a detailed list of changes in CSPro 8.1. For a more general overview, see the <i>readme.txt</i> file located in the CSPro installation folder.
 
+A feature showcase demonstrating some of CSPro 8.1's new features is available on <link <definition github_feature_showcase_url />/tree/8.1/8.1>GitHub</link>.
+
 
 <subheader>General</subheader>
 
@@ -65,6 +67,7 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 <subheader>Logic</subheader>
 
 <list>
+    <li>A new namespace, <logiccolor>JS</logiccolor>, contains functions that facilitate executing <link javascript_overview.csdoc>JavaScript</link> from within CSPro logic. Functions in the namespace include: <logiccolor>JS.eval</logiccolor>, <logiccolor>JS.getValue</logiccolor>, <logiccolor>JS.getValueJson</logiccolor>, <logiccolor>JS.hasValue</logiccolor>, <logiccolor>JS.invoke</logiccolor>, <logiccolor>JS.setValue</logiccolor>, and <logiccolor>JS.setValueFromJson</logiccolor>.</li>
     <li>A new object, <link Video.csdoc>Video</link>, allows for recording or playing video. It has the functions: <logiccolor Video>clear</logiccolor>, <logiccolor Video>height</logiccolor>, <logiccolor Video>length</logiccolor>, <logiccolor Video>load</logiccolor>, <logiccolor Video>play</logiccolor>, <logiccolor Video>recordInteractive</logiccolor>, <logiccolor Video>save</logiccolor>, and <logiccolor Video>width</logiccolor>.</li>
     <li>The new keyword <logiccolor>declare</logiccolor> can be used to declare a <link user_defined_functions.csdoc>user-defined function</link>. The declared function can be referenced in logic prior to its definition. Using a function prior to its definition was previously possible only using workarounds such as <logiccolor>invoke</logiccolor> or <link additional_function_examples.csdoc>function pointers</link>.</li>
     <li>A new object, <link StringWriter.csdoc>StringWriter</link>, supports building strings incrementally. The <logiccolor>Report</logiccolor> object is a kind of StringWriter, and the <logiccolor>QSF</logiccolor> special name, used when processing question text, is also a kind of StringWriter. A StringWriter has the functions: <logiccolor StringWriter>clear</logiccolor>, <logiccolor StringWriter>toString</logiccolor>, <logiccolor StringWriter>write</logiccolor>, <logiccolor StringWriter>writeEncoded</logiccolor>, <logiccolor StringWriter>writeEncodedLine</logiccolor>, and <logiccolor StringWriter>writeLine</logiccolor>.</li>
