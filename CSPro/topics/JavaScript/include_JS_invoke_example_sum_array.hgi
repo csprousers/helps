@@ -1,0 +1,22 @@
+With the following JavaScript script <link manage_application_files.csdoc>added to the application</link>...
+
+<color JavaScript>
+function sumArray(values) {
+    let sum = 0;
+    // use forEach to sum the values of an array
+    values.forEach(value => {
+        sum += value;
+    });
+    return sum;
+}
+</color>
+
+...it is possible to pass <logiccolor>Array</logiccolor> or <logiccolor>List</logiccolor> objects due to CSPro to JavaScript <link javascript_value_conversions.csdoc>conversions</link>:
+
+<logic>
+Array someNumbersArray(4) = 10, 20, 30, 40;
+List someNumbersList = 4, 6, 7, 79, 81, 82;
+
+JS.invoke("sumArray", someNumbersArray); // 100
+JS.invoke("sumArray", someNumbersList);  // 259
+</logic>

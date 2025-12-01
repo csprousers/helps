@@ -22,11 +22,7 @@ The function <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 <subheader>Example 1</subheader>
 
-<logic>
-JS.eval("const artist = 'Roberta Flack';"); // undefined
-JS.eval("artist.toUpperCase();");           // ROBERTA FLACK
-JS.eval("[...artist];");                    // R,o,b,e,r,t,a, ,F,l,a,c,k
-</logic>
+<include include_JS_eval_example.hgi />
 
 
 <subheader>Example 2</subheader>
@@ -58,4 +54,3 @@ JS.eval("CS.UI.getMaxDisplayDimensions().width");           // 1728
 
 
 <seealso javascript_overview.csdoc JS.csdoc JS_invoke_function.csdoc />
-

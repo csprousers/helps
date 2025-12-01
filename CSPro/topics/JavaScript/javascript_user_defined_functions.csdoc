@@ -79,7 +79,7 @@ PROC DEMO
 
 <subheader>Example 3 (CSPro Function Execution Using JS.invoke)</subheader>
 
-<include include_JS_invoke_example.hgi />
+<include include_JS_invoke_example_diagnostics.hgi />
 
 
 <seealso javascript_overview.csdoc javascript_value_conversions.csdoc  />
