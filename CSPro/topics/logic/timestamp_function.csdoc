@@ -18,7 +18,7 @@ The first version of the function returns a timestamp for the current time accor
 
 The second version of the function takes a string expression, <arg>rfc3339_string</arg>, that represents a date in <link https://www.rfc-editor.org/rfc/rfc3339>RFC 3339</link> format. Dates specified in <link https://en.wikipedia.org/wiki/ISO_8601>ISO 8601</link> format can also be used by this version. The string is parsed with the timestamp representing the string returned.
 
-The third version returns the timestamp for a date specified using numeric expressions for the <arg>year</arg>, <arg>month</arg>, and <arg>day</arg>. The <arg>hour</arg>, <arg>minute</arg>, and <arg>second</arg> can also be specified. Using <link function_named_arguments.csdoc>named arguments</link>, you can specify a time zone offset. If not specified, the time zone of the device is used, so to calculate a timestamp in UTC, you must specify: <logiccolor>utcOffset := 0</logiccolor>.
+The third version returns the timestamp for a date specified using numeric expressions for the <arg>year</arg>, <arg>month</arg>, and <arg>day</arg>. The <arg>hour</arg>, <arg>minute</arg>, and <arg>second</arg> can also be specified. Using <link function_named_arguments.csdoc>named arguments</link>, you can specify a time zone offset. This value is the difference, in hours, from UTC. If not specified, the time zone of the device (at the specified time) is used, so to calculate a timestamp in UTC, you must specify: <logiccolor>utcOffset := 0</logiccolor>.
 
 
 <subheader>Return Value</subheader>
@@ -39,16 +39,16 @@ PROC CROPS_QUEST
 
 preproc
 
-	surveyStartTime = timestamp();
+    surveyStartTime = timestamp();
 
-	// if the survey began at 10:58pm on 12/28/2021 EST,
-	// the UTC time (in seconds) would be 1640750243
+    // if the survey began at 10:58pm on 12/28/2021 EST,
+    // the UTC time (in seconds) would be 1640750243
 
-	errmsg("Survey Start Time = %d", surveyStartTime);
+    errmsg("Survey Start Time = %d", surveyStartTime);
 
 postproc
 
-	SURVEY_DURATION = timestamp() - surveyStartTime;
+    SURVEY_DURATION = timestamp() - surveyStartTime;
 </logic>
 
 
