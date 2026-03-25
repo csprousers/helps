@@ -31,7 +31,7 @@ To use these libraries in an <link html_in_cspro.csdoc>embedded web browser</lin
 <script src="/external/chartjs/chart.umd.js"></script>
 
 <!-- Handlebars.js -->
-<script src="/external/handlebars/handlebars.js"></script>
+<script src="/external/handlebars/handlebars.min.js"></script>
 
 <!-- jQuery -->
 <script src="/external/jquery/jquery.min.js"></script>
@@ -42,7 +42,7 @@ To use these libraries in an <link html_in_cspro.csdoc>embedded web browser</lin
 <!-- JsBarcode -->
 <script src="/external/js-barcode/JsBarcode.all.min.js"></script>
 
-<!-- Leaflet (Windows only) -->
+<!-- Leaflet -->
 <link rel="stylesheet" href="/external/leaflet/leaflet.css" />
 <script src="/external/leaflet/leaflet.js"></script>
 
