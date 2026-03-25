@@ -26,6 +26,13 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 </list>
 
 
+<subheader>Data Entry</subheader>
+
+<list>
+    <li>The <link change_field_properties.csdoc>upper case</link> field property is applied to all text entered into a field, regardless of entry method. Previously, text pasted from the clipboard was not transformed to upper case.</li>
+</list>
+
+
 <subheader>Android</subheader>
 
 <list>
