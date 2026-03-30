@@ -83,6 +83,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
     <li>Images used by the <logiccolor>Map.addImageButton</logiccolor> and <logiccolor>Map.setMarkerImage</logiccolor> functions can be specified as URLs pointing to local resources (using <link localhost_url.csdoc>localhost URLs</link>) or to remote servers.</li>
     <li>If an <logiccolor>Array</logiccolor> object is defined with initial values and is also marked as a <link Array_statement.csdoc>saved array</link>, the initial values will only be used if the array does not exist in the <link saved_arrays_file_sva.csdoc>saved array file</link>.</li>
     <li>The <logiccolor>Symbol.updateValueFromJson</logiccolor> function has been renamed <logiccolor>Symbol.setValueFromJson</logiccolor>, though the old name will remain as an alias for some time.</li>
+    <li>A <logiccolor>Geometry</logiccolor> object can be used as an argument to <logiccolor>Map.zoomTo</logiccolor>, which uses the Geometry object's bounds to set the rectangular region of the map when shown.</li>
 </list>
 
 

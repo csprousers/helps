@@ -27,7 +27,15 @@ A Geometry is a CSPro logic object that can be defined as a <link binary_diction
     <include "../Symbol/all_symbols_with_json_in_out.hgi" />
 </table>
 
-In addition to these object functions, Geometry objects can be used as arguments to the <logiccolor>filename</logiccolor>, <logiccolor>Map.addGeometry</logiccolor>, <logiccolor>Map.clearGeometry</logiccolor>, and <logiccolor>Map.removeGeometry</logiccolor> functions.
+In addition to these object functions, Geometry objects can be used as arguments to the following functions:
+
+<list>
+    <li><logiccolor>filename</logiccolor></li>
+    <li><logiccolor>Map.addGeometry</logiccolor></li>
+    <li><logiccolor>Map.clearGeometry</logiccolor></li>
+    <li><logiccolor>Map.removeGeometry</logiccolor></li>
+    <li><logiccolor>Map.zoomTo</logiccolor></li>
+</list>
 
 
 <subheader>Assignments</subheader>
