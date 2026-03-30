@@ -14,6 +14,7 @@ A ValueSet is a CSPro logic object and the following functions can be called via
     <cell><logiccolor ValueSet>length</logiccolor></cell><cell>Returns the size of the value set.</cell>
     <cell><logiccolor ValueSet>randomize</logiccolor></cell><cell>Randomizes the order of entries in the value set.</cell>
     <cell><logiccolor ValueSet>remove</logiccolor></cell><cell>Removes the value with the specified code from the value set.</cell>
+    <cell><logiccolor List>removeDuplicates</logiccolor></cell><cell>Removes duplicate entries from the value set.</cell>
     <cell><logiccolor ValueSet>show</logiccolor></cell><cell>Displays the value set's labels (similarly to <logiccolor>accept</logiccolor>) and returns the code of the operator's selection.</cell>
     <cell><logiccolor ValueSet>sort</logiccolor></cell><cell>Sorts the order of entries in the value set by either label or code.</cell>
     <include "../Symbol/all_symbols_with_json_in_out.hgi" />
@@ -21,7 +22,20 @@ A ValueSet is a CSPro logic object and the following functions can be called via
 
 In addition to these object functions, ValueSet objects contain two built-in <link List.csdoc>List</link> objects: <logiccolor>valueset_name.codes</logiccolor> and <logiccolor>valueset_name.labels</logiccolor>, which contain the codes and labels for the value set. These are read-only List objects and can be used in most ways that List objects can be used.
 
-Several functions accept ValueSet objects as arguments, including: <logiccolor>getimage</logiccolor>, <logiccolor>getlabel</logiccolor>, <logiccolor>invalueset</logiccolor>, <logiccolor>maxvalue</logiccolor>, <logiccolor>minvalue</logiccolor>, <logiccolor>randomin</logiccolor>, <logiccolor>randomizevs</logiccolor>, and <logiccolor>setvalueset</logiccolor>. ValueSet objects can also be used with the <logiccolor>in</logiccolor> operator.
+Several functions accept ValueSet objects as arguments, including:
+
+<list>
+    <li><logiccolor>getimage</logiccolor></li>
+    <li><logiccolor>getlabel</logiccolor></li>
+    <li><logiccolor>invalueset</logiccolor></li>
+    <li><logiccolor>maxvalue</logiccolor></li>
+    <li><logiccolor>minvalue</logiccolor></li>
+    <li><logiccolor>randomin</logiccolor></li>
+    <li><logiccolor>randomizevs</logiccolor></li>
+    <li><logiccolor>setvalueset</logiccolor></li>
+</list>
+
+ValueSet objects can also be used with the <logiccolor>in</logiccolor> operator.
 
 
 <subheader>Assignments</subheader>

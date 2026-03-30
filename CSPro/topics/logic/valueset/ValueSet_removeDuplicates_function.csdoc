@@ -1,0 +1,53 @@
+﻿<title>ValueSet.removeDuplicates Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+i = valueset_name.removeDuplicates(『 by code ‖ label 』);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>ValueSet.removeDuplicates</logiccolor> function removes duplicate values from a <link ValueSet.csdoc>ValueSet</link> object, leaving the first entry of a duplicate in the dynamic value set. Because a value set entry has both a code and a label, a duplicate is considered as follows, based on the argument to the function:
+
+<table 2 header>
+    <cell>Argument</cell><cell>Duplicate</cell>
+    <cell>&mdash;</cell><cell>A duplicate is when both the code and label match.</cell>
+    <cell><logiccolor>by code</logiccolor></cell><cell>A duplicate is when the code matches, even if the label differs.</cell>
+    <cell><logiccolor>by label</logiccolor></cell><cell>A duplicate is when the label matches, even if the code differs.</cell>
+</table>
+
+When using a numeric value set with ranges (i.e., both <b>from</b> and <b>to</b> codes are defined), a duplicate code is considered one where both the <b>from</b> and <b>to</b> values are identical. For example, the following codes are considered unique: 0, 0 - 4, 0 - 9.
+
+
+<subheader>Return Value</subheader>
+
+The function returns the number of duplicates removed from the value set. If the value set is read-only, the function returns <logiccolor>default</logiccolor>.
+
+
+<subheader>Example</subheader>
+
+<logic>
+PROC REPORT_DISTRICT
+
+preproc
+
+    // for this dynamic value set, show only districts in the
+    // selected province where data has been collected
+    ValueSet districts_vs;
+
+    forcase PHC_DICT where PROVINCE = REPORT_PROVINCE do
+        districts_vs.add(DISTRICT_VS1, DISTRICT);
+    endfor;
+
+    // remove duplicates
+    districts_vs.removeDuplicates();
+
+    setvalueset(REPORT_DISTRICT, districts_vs);
+
+</logic>
+
+
+<seealso ValueSet.csdoc ValueSet_remove_function.csdoc />

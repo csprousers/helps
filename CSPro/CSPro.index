@@ -1,4 +1,4 @@
-﻿[
+[
   { "path": "text_templates.csdoc", "title": "~~" },
   { "path": "text_templates.csdoc", "title": "~~~" },
   { "path": "operators.csdoc", "title": "-",
@@ -1343,6 +1343,12 @@
   { "path": "include_exclude_special_values_in_a_variable.csdoc", "title": "Dump",
     "subindex": [
       { "path": "include_exclude_special_values_in_a_variable.csdoc", "title": "Undefined Values" }
+    ]
+  },
+  { "path": "List_removeDuplicates_function.csdoc", "title": "Duplicates",
+    "subindex": [
+      { "path": "List_removeDuplicates_function.csdoc", "~title": "List.removeDuplicates Function" },
+      { "path": "ValueSet_removeDuplicates_function.csdoc", "~title": "ValueSet.removeDuplicates Function" }
     ]
   },
   { "path": "dynamic_imputation_hot_deck.csdoc", "~title": "Dynamic Imputation (Hot Deck)" },
@@ -3419,7 +3425,8 @@
   },
   { "path": "List_removeDuplicates_function.csdoc", "title": "RemoveDuplicates Function",
     "subindex": [
-      { "path": "List_removeDuplicates_function.csdoc", "~title": "List.removeDuplicates Function" }
+      { "path": "List_removeDuplicates_function.csdoc", "~title": "List.removeDuplicates Function" },
+      { "path": "ValueSet_removeDuplicates_function.csdoc", "~title": "ValueSet.removeDuplicates Function" }
     ]
   },
   { "path": "Map_removeGeometry_function.csdoc", "title": "RemoveGeometry Function",
@@ -4509,6 +4516,7 @@
       { "path": "ValueSet_length_function.csdoc", "~title": "ValueSet.length Function" },
       { "path": "ValueSet_randomize_function.csdoc", "~title": "ValueSet.randomize Function" },
       { "path": "ValueSet_remove_function.csdoc", "~title": "ValueSet.remove Function" },
+      { "path": "ValueSet_removeDuplicates_function.csdoc", "~title": "ValueSet.removeDuplicates Function" },
       { "path": "ValueSet_show_function.csdoc", "~title": "ValueSet.show Function" },
       { "path": "ValueSet_sort_function.csdoc", "~title": "ValueSet.sort Function" },
       { "path": "ValueSet_statement.csdoc", "~title": "ValueSet Statement" }

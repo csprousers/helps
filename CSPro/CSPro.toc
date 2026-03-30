@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "project": "GetStart"
   },
@@ -1224,6 +1224,7 @@
               { "path": "ValueSet_statement.csdoc", "~title": "ValueSet Statement" },
               { "path": "ValueSet_add_function.csdoc", "~title": "ValueSet.add Function" },
               { "path": "ValueSet_remove_function.csdoc", "~title": "ValueSet.remove Function" },
+              { "path": "ValueSet_removeDuplicates_function.csdoc", "~title": "ValueSet.removeDuplicates Function" },
               { "path": "ValueSet_clear_function.csdoc", "~title": "ValueSet.clear Function" },
               { "path": "ValueSet_length_function.csdoc", "~title": "ValueSet.length Function" },
               { "path": "ValueSet_randomize_function.csdoc", "~title": "ValueSet.randomize Function" },
