@@ -39,6 +39,7 @@ This guide contains the following information:
     <li><topic upload_files.csdoc /></li>
     <li><topic map_report.csdoc /></li>
     <li><topic sync_report.csdoc /></li>
+    <li><topic best_practices.csdoc /></li>
     <li><topic troubleshooting.csdoc /></li>
     <li><topic get_help.csdoc /></li>
 </list>

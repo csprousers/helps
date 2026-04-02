@@ -1,0 +1,75 @@
+<title>CSWeb Best Practices</title>
+
+<md>
+
+---
+
+## Security
+
+Securing your CSWeb installation is critical, especially for sensitive survey or census data. Consult your systems administrator to review the following:
+
+- MySQL should not be exposed directly to the internet
+- HTTPS should be enabled for all CSWeb traffic
+- User accounts should follow the principle of least privilege
+
+**For large-scale censuses:** Some organizations establish additional layers of security, such as placing MySQL in a DMZ and restricting device sync to a closed mobile network (APN) so that data never travels over the public internet. This approach has been used successfully in national census deployments to ensure complete network isolation between field devices and backend infrastructure. In these cases administrators ensured that:
+
+- The CSWeb dashboard is not be publicly accessible on the internet
+- The REST API is restricted to known devices only
+
+---
+
+## Performance Tuning
+
+The default CSWeb installation is suitable for most deployments. However, for large-scale surveys or censuses, server tuning may significantly improve reliability and response times under heavy load.
+
+**Consider performance tuning if you are experiencing any of the following:**
+
+- Enumerators are reporting slow or failed syncs
+- The server becomes unresponsive or sluggish during peak data collection periods
+- Sync times are noticeably longer than expected given your network conditions
+
+Before making any changes, consult a qualified systems administrator. The following areas are most relevant:
+
+---
+
+### PHP
+
+Default PHP settings are conservative and not optimized for production workloads. Key areas for your administrator to review:
+
+- **OPcache** — By default, PHP compiles your application code from scratch on every single request. OPcache stores the compiled result in memory so subsequent requests are served much faster. This should always be enabled in a production environment.
+
+- **APCu** — Allows frequently used application data such as lookup tables and reference dictionaries to be stored in memory rather than read from disk on every request. Particularly beneficial under high concurrent load.
+
+- **Production error reporting** — Default PHP error settings are intended for development environments and can expose sensitive system information. Production settings should be confirmed before go-live.
+
+---
+
+### MySQL / MariaDB
+
+Default MySQL and MariaDB settings are designed for minimal hardware and may not perform well under heavy concurrent load. Key areas for your administrator to review:
+
+- **InnoDB buffer pool** — This is the most impactful MySQL setting. It controls how much data MySQL keeps in memory rather than reading from disk. The default value is very small and should be increased proportionally to the available server RAM.
+
+- **InnoDB log file and buffer sizes** — Controls how MySQL handles write operations in memory before committing them to disk. Proper sizing reduces disk I/O significantly under high concurrent write load, which is the typical pattern for field data sync workloads.
+
+- **Connection limits** — MySQL has a maximum number of simultaneous connections. This should be set to comfortably exceed the expected number of concurrent sync requests to prevent connection errors during peak collection periods.
+
+**Storage:** Using SSD storage for the MySQL data directory can significantly improve performance under concurrent load and is worth considering for large-scale deployments. Spinning disk (HDD) performance degrades under high numbers of simultaneous read and write operations, which is the typical pattern when many enumerators sync at the same time.
+
+---
+
+### Apache / IIS
+
+Default web server settings may limit the number of concurrent requests that can be processed, causing queuing under heavy load. Key areas for your administrator to review:
+
+- **PHP process pool size** (FastCGI pool on IIS / PHP-FPM pool on Apache) — When a sync request arrives, the web server hands it to a PHP process to handle. There is a limit to how many PHP processes can run simultaneously. By default this limit is set conservatively. Tuning helps handle peak traffic.
+
+- **Worker process timeouts** — If a PHP process takes too long to respond, the web server terminates it and returns an error to the device. Default timeout values can cause legitimate sync requests to be cancelled prematurely under heavy server load. Adjusting timeouts helps server with processing the requests better.
+
+- **Response compression** — The web server can compress data before sending it to field devices, reducing the amount of data transmitted over the network. This is particularly beneficial for enumerators working in areas with poor or limited connectivity — less data means faster syncs and fewer failed requests. Both Apache and IIS support compression natively with no additional software required.
+
+---
+</md>
+
+Your administrator can refer to the <link server_optimizations.csdoc>CSWeb Web Server Optimization Settings</link> for specific recommended settings.

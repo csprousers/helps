@@ -49,6 +49,8 @@
         { "path": "upload_files.csdoc", "~title": "Upload Files" },
         { "path": "map_report.csdoc", "~title": "Map Report" },
         { "path": "sync_report.csdoc", "~title": "Sync Report" },
+        { "path": "best_practices.csdoc", "~title": "CSWeb Best Practices" },
+        { "path": "server_optimizations.csdoc", "~title": "CSWeb Server Optimization Quick Reference" },
         { "path": "troubleshooting.csdoc", "~title": "Troubleshooting" },
         { "path": "../Shared/topics/get_help.csdoc", "~title": "Get Help" }
       ]
