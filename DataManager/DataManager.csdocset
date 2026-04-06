@@ -1,27 +1,27 @@
-﻿{
-  "title": "CSPro Data Manager Help", 
+{
+  "title": "CSPro Data Manager Help",
   "import": {
-    "tableOfContents": "DataManager.toc", 
-    "index": "DataManager.index", 
+    "tableOfContents": "DataManager.toc",
+    "index": "DataManager.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
     ]
-  }, 
+  },
   "settings": {
     "imageDirectories": [
       "images"
-    ], 
+    ],
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

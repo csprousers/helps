@@ -1,28 +1,28 @@
-﻿{
-  "title": "CSPro Paradata Concatenator Help", 
+{
+  "title": "CSPro Paradata Concatenator Help",
   "import": {
-    "tableOfContents": "ParadataConcat.toc", 
-    "index": "ParadataConcat.index", 
+    "tableOfContents": "ParadataConcat.toc",
+    "index": "ParadataConcat.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
-    ], 
+    ],
     "contextIds": [
-      "../Shared/afxres.h", 
+      "../Shared/afxres.h",
       "ParadataConcat/resource.h"
     ]
-  }, 
+  },
   "settings": {
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

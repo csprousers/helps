@@ -1,24 +1,24 @@
-﻿{
-  "title": "CSPro Excel to CSPro Help", 
+{
+  "title": "CSPro Excel to CSPro Help",
   "import": {
-    "tableOfContents": "Excel2CSPro.toc", 
-    "index": "Excel2CSPro.index", 
+    "tableOfContents": "Excel2CSPro.toc",
+    "index": "Excel2CSPro.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
     ]
-  }, 
+  },
   "settings": {
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

@@ -1,33 +1,33 @@
-﻿{
-  "title": "CSPro Table Viewer Help", 
+{
+  "title": "CSPro Table Viewer Help",
   "import": {
-    "tableOfContents": "TblView.toc", 
-    "index": "TblView.index", 
+    "tableOfContents": "TblView.toc",
+    "index": "TblView.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
-    ], 
+    ],
     "contextIds": [
-      "../Shared/afxres.h", 
-      "TblView/resource.h", 
-      "zTableF/resource.h", 
+      "../Shared/afxres.h",
+      "TblView/resource.h",
+      "zTableF/resource.h",
       "zTableF/resource_shared.h"
     ]
-  }, 
+  },
   "settings": {
     "imageDirectories": [
       "images"
-    ], 
+    ],
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

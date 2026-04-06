@@ -1,15 +1,15 @@
-﻿{
-  "title": "CSPro Deploy Application Help", 
+{
+  "title": "CSPro Deploy Application Help",
   "import": {
-    "tableOfContents": "CSDeploy.toc", 
-    "index": "CSDeploy.index", 
+    "tableOfContents": "CSDeploy.toc",
+    "index": "CSDeploy.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

@@ -1,5 +1,5 @@
-﻿[
-  { "path": "define_file_associations.csdoc", "~title": "Define File Associations" }, 
-  { "path": "introduction.csdoc", "~title": "Introduction to Batch Applications" }, 
+[
+  { "path": "define_file_associations.csdoc", "~title": "Define File Associations" },
+  { "path": "introduction.csdoc", "~title": "Introduction to Batch Applications" },
   { "path": "selecting_a_batch_application_to_run.csdoc", "~title": "Selecting a Batch Application to Run" }
 ]

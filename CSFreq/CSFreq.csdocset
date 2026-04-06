@@ -1,33 +1,33 @@
-﻿{
-  "title": "CSPro Frequency Help", 
+{
+  "title": "CSPro Frequency Help",
   "import": {
-    "tableOfContents": "CSFreq.toc", 
-    "index": "CSFreq.index", 
+    "tableOfContents": "CSFreq.toc",
+    "index": "CSFreq.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
-    ], 
+    ],
     "contextIds": [
-      "../Shared/afxres.h", 
-      "CSFreq/resource.h", 
-      "zInterfaceF/resource.h", 
+      "../Shared/afxres.h",
+      "CSFreq/resource.h",
+      "zInterfaceF/resource.h",
       "zInterfaceF/resource_shared.h"
     ]
-  }, 
+  },
   "settings": {
     "imageDirectories": [
       "images"
-    ], 
+    ],
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

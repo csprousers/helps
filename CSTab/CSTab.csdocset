@@ -1,33 +1,33 @@
-﻿{
-  "title": "CSPro Tabulation Help", 
+{
+  "title": "CSPro Tabulation Help",
   "import": {
-    "tableOfContents": "CSTab.toc", 
-    "index": "CSTab.index", 
+    "tableOfContents": "CSTab.toc",
+    "index": "CSTab.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
-    ], 
+    ],
     "contextIds": [
-      "../Shared/afxres.h", 
-      "CSTab/resource.h", 
-      "zBridgeO/resource.h", 
+      "../Shared/afxres.h",
+      "CSTab/resource.h",
+      "zBridgeO/resource.h",
       "zExTab/resource.h"
     ]
-  }, 
+  },
   "settings": {
     "imageDirectories": [
       "images"
-    ], 
+    ],
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "Paradata Concatenator User's Guide",
   "documents": [
     { "path": "introduction_to_paradata_concatenator.csdoc", "~title": "Introduction to Paradata Concatenator" }
