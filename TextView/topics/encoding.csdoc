@@ -1,4 +1,5 @@
 <title>Text Encoding</title>
+<context ID_ENCODING_ANSI ID_ENCODING_UTF8 ID_ENCODING_UTF8_BOM ID_ENCODING_UTF16_LE_BOM />
 
 An encoding defines how a text file's bytes are interpreted as characters. Most modern programs use <link "https://en.wikipedia.org/wiki/UTF-8">UTF-8</link>, a variable-length encoding scheme that uses between one and four bytes to represent a character.
 
