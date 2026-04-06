@@ -1,6 +1,6 @@
 ﻿<title>Unicode Primer</title>
 
-Beginning with version 5.0, CSPro is Unicode compliant.
+Beginning with <link release_history.csdoc>version 5.0</link>, CSPro is Unicode compliant.
 
 
 <subheader>What is Unicode?</subheader>
@@ -47,7 +47,7 @@ The important binary files created by CSPro are compiled data entry applications
 
 <subheader>Can I Still Write and Save to ANSI Format?</subheader>
 
-Outside of the Export Data tool, CSPro no longer supports writing to ANSI format, though it can still read files encoded in ANSI. CSPro automatically converts files from ANSI to UTF-8 formats as needed. CSPro will convert only files that may be modified by a program. For example, if you use an external file in your application but only call <logiccolor>fileread</logiccolor> and never <logiccolor>filewrite</logiccolor>, CSPro will keep the input file in its original format. However, if there is a <logiccolor>filewrite</logiccolor> statement and the file is encoded in ANSI, CSPro will convert the file to UTF-8 before opening it. The old ANSI file will be sent to the Recycle Bin in case you want to recover it.
+Outside of the Export Data tool, CSPro no longer provides an interface to specify that files should be written in ANSI format, but there are ways to <link text_attributes.csdoc>override</link> how CSPro interprets input data or writes output data. As of CSPro <definition CSPro::version />, when reading an ANSI file, CSPro automatically converts it from UTF-8 formats as needed. CSPro will convert only files that may be modified by a program. For example, if you use an external file in your application but only call <logiccolor>fileread</logiccolor> and never <logiccolor>filewrite</logiccolor>, CSPro will keep the input file in its original format. However, if there is a <logiccolor>filewrite</logiccolor> statement and the file is encoded in ANSI, CSPro will convert the file to UTF-8 before opening it. The old ANSI file will be sent to the Recycle Bin in case you want to recover it.
 
 
 <subheader>Distributing CSPro Data Files</subheader>

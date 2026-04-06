@@ -344,6 +344,7 @@
       { "path": "action_invoker_execution_android.csdoc", "title": "Using the Action Invoker From Other Applications" }
     ]
   },
+  { "path": "text_attributes.csdoc", "title": "ANSI" },
   { "path": "manage_application_files.csdoc", "title": "Application",
     "subindex": [
       { "path": "manage_application_files.csdoc", "title": "Add a File" },
@@ -572,6 +573,7 @@
       { "path": "do_statement.csdoc", "~title": "Do Statement" }
     ]
   },
+  { "path": "text_attributes.csdoc", "title": "Byte Order Mark" },
   { "path": "action_invoker_binary_data.csdoc", "title": "Bytes Format" },
   { "path": "OnStop_global_function.csdoc", "title": "Callback Functions",
     "subindex": [
@@ -4464,7 +4466,8 @@
   },
   { "path": "using_print_preview.csdoc", "~title": "Using Print Preview" },
   { "path": "using_subtables.csdoc", "~title": "Using Subtables" },
-  { "path": "unicode_primer.csdoc", "title": "UTF-8" },
+  { "path": "text_attributes.csdoc", "title": "UTF-16 LE" },
+  { "path": "text_attributes.csdoc", "title": "UTF-8" },
   { "path": "uuid_function.csdoc", "title": "UUID" },
   { "path": "uuid_function.csdoc", "~title": "UUID Function" },
   { "path": "change_field_properties.csdoc", "title": "Validating Alpha Fields" },

@@ -1,5 +1,55 @@
 ﻿<title>Text Attributes</title>
 
+When CSPro reads or writes text files, there are two primary attributes to consider when determining how the contents of the text file are read, and how the contents are written such that they can be successfully processed by other applications:
+
+<list>
+    <li><b>Text encoding</b>: Whether the file is encoded as UTF-8 or ANSI.</li>
+    <li><b>Newline characters</b>: Whether line endings are written in Windows or UNIX formats.</li>
+</list>
+
+
+<subheader>Text Encoding</subheader>
+
+An encoding defines how a text file's bytes are represented as characters. Most modern programs use <link "https://en.wikipedia.org/wiki/UTF-8">UTF-8</link>, a <link "https://home.unicode.org">Unicode</link>-based variable-length encoding scheme that uses between one and four bytes to represent a character. CSPro fully supports the encodings <link "https://en.wikipedia.org/wiki/Windows-1252">ANSI</link> and <link "https://en.wikipedia.org/wiki/UTF-8">UTF-8</link>, and partially supports <link "https://en.wikipedia.org/wiki/UTF-16">UTF-16 LE</link>.
+
+Prior to <link release_history.csdoc>version 5.0</link>, CSPro interpreted files as <link "https://en.wikipedia.org/wiki/Windows-1252">ANSI</link>, but when CSPro <link unicode_primer.csdoc>became Unicode compliant</link>, it started writing out files using UTF-8 with a <link "https://en.wikipedia.org/wiki/Byte_order_mark">byte order mark</link> (BOM). This three-byte BOM helped CSPro differentiate between ANSI files, created prior to version 5.0, and UTF-8 files created with newer versions.
+
+In this release, CSPro <definition CSPro::version />, a file without a BOM is considered to be ANSI. However, modern programs generally use UTF-8 without a BOM, and CSPro will adopt this approach in a future release.
+
+The following table outlines how CSPro currently interprets and writes text encodings:
+
+<table 4 header>
+    <cell>Text File Type</cell><cell>Input Encoding~!~If No BOM</cell><cell>Output Encoding</cell><cell>Override</cell>
+    <cell 4>&nbsp;</cell>
+    <cell 4><b>Specification files:</b></cell>
+    <cell><link JSON_primer.csdoc>JSON-based files</link></cell><cell>UTF-8</cell><cell>UTF-8</cell><cell>&mdash;</cell>
+    <cell>Non-JSON specification files</cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell>&mdash;</cell>
+    <cell 4>&nbsp;</cell>
+    <cell 4><b>Text files created in logic:</b></cell>
+    <cell>Files written using the <link CS_File_writeText.csdoc>Action Invoker</link></cell><cell>&mdash;</cell><cell>UTF-8</cell><cell><arg>encoding</arg> argument</cell>
+    <cell>Files accessed using the <link File.csdoc>File</link> object</cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell>🔜</cell>
+    <cell 4>&nbsp;</cell>
+    <cell 4><b>Data sources:</b></cell>
+    <cell><link data_source_text.csdoc>Text data files</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell>🔜</cell>
+    <cell><link notes_file_csnot.csdoc>Text notes files</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> <link connection_string.csdoc>connection string property</link></cell>
+    <cell><link status_file_sts.csdoc>Text status files</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
+    <cell><link data_source_csv.csdoc>Comma Delimited</link></cell><cell>&mdash;</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
+    <cell><link data_source_semicolon.csdoc>Semicolon Delimited</link></cell><cell>&mdash;</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
+    <cell><link data_source_sas.csdoc>SAS</link> syntax file</cell><cell>&mdash;</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
+    <cell><link data_source_tab.csdoc>Tab Delimited</link></cell><cell>&mdash;</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
+    <cell 4>&nbsp;</cell>
+    <cell 4><b>Other files:</b></cell>
+    <cell><link logic_file_apc.csdoc>Logic code</link></cell><cell>UTF-8</cell><cell>UTF-8 (BOM)</cell><cell>&mdash;</cell>
+    <cell><link question_text_file_qsf.csdoc>Question text</link></cell><cell>UTF-8</cell><cell>UTF-8 (BOM)</cell><cell>&mdash;</cell>
+    <cell><link message_file_mgf.csdoc>User-defined messages</link></cell><cell>UTF-8</cell><cell>UTF-8 (BOM)</cell><cell>&mdash;</cell>
+    <cell><link listing_file.csdoc>Listing files</link></cell><cell>&mdash;</cell><cell>UTF-8 (BOM)</cell><cell>🔜</cell>
+    <cell><link operator_statistics_file_log.csdoc>Operator statistics</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell>🔜</cell>
+    <cell 4>&nbsp;</cell>
+    <cell 4><b>Other functionality:</b></cell>
+    <cell><link fileconcat_function.csdoc>Concatenated text files</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
+</table>
+
+
 <subheader>Newline Characters</subheader>
 
 Due to a variety of historical reasons, operating systems use different control characters when writing <link newline_handling.csdoc>newlines</link>. As a program with its roots as a Windows application, CSPro traditionally used two characters to signify a newline: a carriage return and a line feed character (<logiccolor>"\r\n"</logiccolor>). Unix-based systems use only the line feed character (<logiccolor>"\n"</logiccolor>).
