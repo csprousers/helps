@@ -1,0 +1,17 @@
+﻿<title>Text Encoding</title>
+
+An encoding defines how a text file's bytes are interpreted as characters. Most modern programs use <link "https://en.wikipedia.org/wiki/UTF-8">UTF-8</link>, a variable-length encoding scheme that uses between one and four bytes to represent a character.
+
+Historically, to differentiate a UTF-8 file from a file encoded in a format such as <link "https://en.wikipedia.org/wiki/Windows-1252">ANSI</link>, a <link "https://en.wikipedia.org/wiki/Byte_order_mark">byte order mark</link> (BOM) would be added to the beginning of the file, specifying its encoding. Since UTF-8 has been widely adopted, most programs now use the UTF-8 encoding without a BOM.
+
+When Text Viewer opens a file, if no BOM is present, the file is assumed to be encoded in UTF-8. If you are opening an old file that was encoded as ANSI, you can change the way that Text Viewer displays the file by selecting <b>Encoding</b> -> <b>ANSI</b>. If the file has a BOM, Text Viewer determines how to display the file based on the characters of the BOM.
+
+Text Viewer supports the following encodings:
+
+<list>
+    <li><link "https://en.wikipedia.org/wiki/Windows-1252">ANSI</link></li>
+    <li><link "https://en.wikipedia.org/wiki/UTF-8">UTF-8</link></li>
+    <li><link "https://en.wikipedia.org/wiki/UTF-16">UTF-16 LE</link></li>
+</list>
+
+<seealso menu_summary.csdoc />

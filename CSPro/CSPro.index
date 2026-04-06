@@ -344,6 +344,7 @@
       { "path": "action_invoker_execution_android.csdoc", "title": "Using the Action Invoker From Other Applications" }
     ]
   },
+  { "path": "text_attributes.csdoc", "title": "ANSI" },
   { "path": "manage_application_files.csdoc", "title": "Application",
     "subindex": [
       { "path": "manage_application_files.csdoc", "title": "Add a File" },
@@ -572,6 +573,7 @@
       { "path": "do_statement.csdoc", "~title": "Do Statement" }
     ]
   },
+  { "path": "text_attributes.csdoc", "title": "Byte Order Mark" },
   { "path": "action_invoker_binary_data.csdoc", "title": "Bytes Format" },
   { "path": "OnStop_global_function.csdoc", "title": "Callback Functions",
     "subindex": [
@@ -642,6 +644,7 @@
       { "path": "Image_captureSignature_function.csdoc", "~title": "Image.captureSignature Function" }
     ]
   },
+  { "path": "text_attributes.csdoc", "title": "Carriage Return" },
   { "path": "errmsg_function.csdoc", "title": "Case",
     "subindex": [
       { "path": "errmsg_function.csdoc", "~title": "ErrMsg Function" },
@@ -2429,7 +2432,7 @@
     ]
   },
   { "path": "issues_to_consider_when_designing_a_form.csdoc", "title": "Levels and Cases" },
-  { "path": "string_literals.csdoc", "title": "Line Feed" },
+  { "path": "text_attributes.csdoc", "title": "Line Feed" },
   { "path": "add_lines_or_boxes_to_a_form.csdoc", "title": "Lines",
     "subindex": [
       { "path": "add_lines_or_boxes_to_a_form.csdoc", "title": "Adding to a Form" },
@@ -2815,7 +2818,11 @@
   { "path": "navigating_between_pages_tables_and_areas.csdoc", "title": "Navigating Between Pages  Tables  and Areas" },
   { "path": "network_data_entry.csdoc", "~title": "Network Data Entry" },
   { "path": "what_is_new_in_cspro.csdoc", "title": "New Features" },
-  { "path": "newline_handling.csdoc", "~title": "Newline Handling" },
+  { "path": "newline_handling.csdoc", "~title": "Newline Handling",
+    "subindex": [
+      { "path": "text_attributes.csdoc", "~title": "Text Attributes" }
+    ]
+  },
   { "path": "skip_statement.csdoc", "title": "Next",
     "subindex": [
       { "path": "skip_statement.csdoc", "~title": "Skip Statement" },
@@ -4223,6 +4230,7 @@
       { "path": "tool_list.csdoc", "title": "Viewer" }
     ]
   },
+  { "path": "text_attributes.csdoc", "~title": "Text Attributes" },
   { "path": "text_box.csdoc", "~title": "Text Box" },
   { "path": "data_source_text.csdoc", "~title": "Text Data Source" },
   { "path": "tool_list.csdoc", "title": "Text Encoding Converter" },
@@ -4392,7 +4400,7 @@
   },
   { "path": "undo_and_redo_changes.csdoc", "~title": "Undo and Redo Changes" },
   { "path": "undo_or_reset_changes_in_print_preview.csdoc", "~title": "Undo or Reset Changes in Print Preview" },
-  { "path": "unicode_primer.csdoc", "~title": "Unicode Primer" },
+  { "path": "unicode_primer.csdoc", "title": "Unicode" },
   { "path": "uninstalling_cspro.csdoc", "~title": "Uninstalling CSPro" },
   { "path": "change_unit_of_tabulation.csdoc", "title": "Unit of Tabulation",
     "subindex": [
@@ -4458,7 +4466,8 @@
   },
   { "path": "using_print_preview.csdoc", "~title": "Using Print Preview" },
   { "path": "using_subtables.csdoc", "~title": "Using Subtables" },
-  { "path": "unicode_primer.csdoc", "title": "UTF-8" },
+  { "path": "text_attributes.csdoc", "title": "UTF-16 LE" },
+  { "path": "text_attributes.csdoc", "title": "UTF-8" },
   { "path": "uuid_function.csdoc", "title": "UUID" },
   { "path": "uuid_function.csdoc", "~title": "UUID Function" },
   { "path": "change_field_properties.csdoc", "title": "Validating Alpha Fields" },

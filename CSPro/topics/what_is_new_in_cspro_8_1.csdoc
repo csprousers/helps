@@ -12,6 +12,14 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
     <li>CSPro is now open source! The source code, written primarily in C++, JavaScript, Java/Kotlin, and PHP, with some code written in C#, is available on GitHub: <link https://<definition csprousers_github />><definition csprousers_github /></link>.</li>
     <li><link markdown_overview.csdoc>Markdown</link> can be used while specifying <link question_text.csdoc>question text</link>, in <link templated_reports.csdoc>templated reports</link>, and can be viewed (as generated HTML) using the <logiccolor>view</logiccolor> function or in <link CSView::supported_files.csdoc>CSView</link>. Markdown can also be edited in <link CSCode::language_markdown.csdoc>CSCode</link> and included as part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link>.</li>
     <li>Applications can now <link javascript_overview.csdoc>incorporate JavaScript</link> in addition to <link introduction_to_cspro_language.csdoc>CSPro logic</link>. Many open-source JavaScript libraries exist that can be brought into your application, and as a dynamically typed language, some programming tasks may be easier using JavaScript. By using the <link JS.csdoc>JS</link> namespace, it is possible to <link JS_eval_function.csdoc>evaluate JavaScript</link>, <link JS_invoke_function.csdoc>invoke functions</link>, and <link JS_setValue_function.csdoc>convert</link> CSPro symbols to JavaScript numbers, strings, arrays, and objects. It is also possible to create <link javascript_user_defined_functions.csdoc>function wrappers</link> in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked.</li>
+    <li>CSPro's handling of <link text_attributes.csdoc>text encoding and newline characters</link> is changing, with the aim to standardize the settings across file types.
+        <list>
+            <li>In a future release, files without a BOM (<link "https://en.wikipedia.org/wiki/Byte_order_mark">byte order mark</link>) will be treated as text encoded in UTF-8, not ANSI.</li>
+            <li>It will be possible to override this default behavior by specifying an <link text_attributes.csdoc>override</link>.</li>
+            <li>In this release, <link TextView::encoding.csdoc>Text Viewer</link> treats files without a BOM as UTF-8, with an <link TextView::encoding.csdoc>Encoding menu</link> that lets you change the encoding to ANSI.</li>
+            <li>To prepare for the future release, if you use external tools to process CSPro files, you will want to ensure that they process files without a BOM as UTF-8, and that they can handle newlines written only with a line feed character (<logiccolor>"\n"</logiccolor>, not <logiccolor>"\r\n"</logiccolor>).</li>
+        </list>
+    </li>
     <li>Images in the <link "https://en.wikipedia.org/wiki/WebP">WebP</link> format can be loaded and saved using the <link Image.csdoc>Image</link> object and can be used as <link value_set_images.csdoc>value set images</link>.</li>
     <li>A new dialog, <link manage_application_files.csdoc>Manage Application Files</link>, replaces the Add Files and Drop Files dialogs, providing a central place to manage an application's files and each file's properties. New properties include:~!~~!~
         <list>
@@ -20,7 +28,8 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
             <li><link change_message_properties.csdoc>Messages</link>: the message type&mdash;user-defined or system overrides&mdash;is now specified as a property, no longer based on the filename starting with "CSProRuntime".</li>
             <li><link change_report_properties.csdoc>Report</link>: <link templated_reports.csdoc>~~ fills</link> can be encoded for writing to Markdown or CSV formats.</li>
             <li><link resources.csdoc>Resources</link>: in addition to directories, it is now possible to add single files as resources, and options provide control over what files in directories are processed.</li>
-        </list></li>
+        </list>
+    </li>
     <li>The CSPro Settings dialog has been renamed <link manage_credentials.csdoc>Manage Credentials</link> and now allows for the granular clearing of synchronization, data, and location credentials.</li>
 </list>
 

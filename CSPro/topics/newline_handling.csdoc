@@ -56,4 +56,4 @@ When using the Original <link logic_version.csdoc>logic version</link>, escape s
 </list>
 
 
-<seealso logic_version.csdoc string_literals.csdoc />
+<seealso logic_version.csdoc string_literals.csdoc text_attributes.csdoc />

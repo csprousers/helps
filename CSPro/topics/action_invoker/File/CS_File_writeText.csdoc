@@ -4,7 +4,9 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-CS.File.writeText(<arg>path</arg> := ..., <arg>text</arg> := ...『, <arg>encoding</arg> := ...』)
+CS.File.writeText(<arg>path</arg> := ..., <arg>text</arg> := ...
+               『, <arg>encoding</arg> := ...』
+               『, <arg>newline</arg> := ...』)
 </logicsyntax>
 
 <indent><table 3 header nowrap>
@@ -12,6 +14,7 @@ CS.File.writeText(<arg>path</arg> := ..., <arg>text</arg> := ...『, <arg>encodi
     <cell><arg>path</arg></cell><cell>The path of the file to write.</cell><cell>string~!~required</cell>
     <cell><arg>text</arg></cell><cell>The text to write.</cell><cell>string~!~required</cell>
     <cell><arg>encoding</arg></cell><cell>The <link unicode_primer.csdoc>encoding</link> to use while writing the text.~!~The default value is <logiccolor>"UTF-8"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>newline</arg></cell><cell>The <link text_attributes.csdoc>control characters</link> used to write line endings.~!~The default value is <logiccolor>"LF"</logiccolor>.</cell><cell>string~!~not required</cell>
 </table></indent>
 
 
@@ -20,6 +23,8 @@ CS.File.writeText(<arg>path</arg> := ..., <arg>text</arg> := ...『, <arg>encodi
 The <action>File.writeText</action> <link action_invoker.csdoc>action</link> writes a string, <arg>text</arg>, to a text file specified as <arg>path</arg>. If a file already exists at <arg>path</arg>, it is overwritten with the new contents.
 
 <include include_encoding_output.hgi />
+
+<include include_newline_output.hgi />
 
 
 <subheader>Return Value</subheader>

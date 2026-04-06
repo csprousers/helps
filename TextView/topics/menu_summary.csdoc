@@ -22,6 +22,12 @@ The following is a summary of the <b>Text Viewer</b> menus:
     <cell><link find_text.csdoc>Find Previous</link></cell><cell>Find previous occurrence of search text.</cell>
     <cell><link move_around_a_file.csdoc>Goto Line</link></cell><cell>Go to a particular line number.</cell>
     <cell 2>&nbsp;</cell>
+    <cell 2><subheader>Encoding</subheader></cell>
+    <cell><link encoding.csdoc>ANSI</link></cell><cell>Interpret the file as ANSI.</cell>
+    <cell><link encoding.csdoc>UTF-8</link></cell><cell>Interpret the file as UTF-8.</cell>
+    <cell><link encoding.csdoc>UTF-8 (BOM)</link></cell><cell>Interpret the file as UTF-8 with a byte order mark.</cell>
+    <cell><link encoding.csdoc>ANSI</link></cell><cell>Interpret the file as UTF-16 LE.</cell>
+    <cell 2>&nbsp;</cell>
     <cell 2><subheader>View</subheader></cell>
     <cell><link show_or_hide_the_ruler.csdoc>Ruler</link></cell><cell>Show or hide the line and column numbers.</cell>
     <cell 2>&nbsp;</cell>

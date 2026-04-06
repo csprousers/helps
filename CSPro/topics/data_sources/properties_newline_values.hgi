@@ -1,0 +1,2 @@
+<cell><indent><colorinline JSON>"LR"</colorinline></indent></cell><cell><indent>Newlines are written using only the line feed character: <logiccolor>"\n"</logiccolor>.</indent></cell>
+<cell><indent><colorinline JSON>"CRLF"</colorinline> ⁺⁺⁺</indent></cell><cell><indent>Newlines are written using a combination of a carriage return and a line feed character: <logiccolor>"\r\n"</logiccolor>.</indent></cell>

@@ -3,6 +3,13 @@
 In general, newer versions of CSPro can execute applications and process data created in earlier versions of CSPro, but occasionally there are significant changes that result in behavior that is different from the previous versions. This list, as well as the list of <link deprecated_features.csdoc>deprecated features</link>, is intended to help users keep abreast of changes that may impact their applications or any external tools that were written to interact with CSPro specification and data files. For information on how to handle the changes, review the <link what_is_new_in_cspro.csdoc>What's New</link> page for the version when the change occurred.
 
 
+<subheader><i>Future Release</i></subheader>
+
+<list>
+    <li>In a future release, likely CSPro 8.2, files without a BOM (<link "https://en.wikipedia.org/wiki/Byte_order_mark">byte order mark</link>) will be treated as text encoded in UTF-8, not ANSI. The <topic text_attributes.csdoc /> page describes a list of impacted files.</li>
+</list>
+
+
 <subheader>CSPro 8.0</subheader>
 
 <list>

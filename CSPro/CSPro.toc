@@ -70,6 +70,7 @@
               { "path": "data_requirements.csdoc", "~title": "Data Requirements" },
               { "path": "connection_string.csdoc", "~title": "Connection String" },
               { "path": "encrypted_data.csdoc", "~title": "Encrypted Data" },
+              { "path": "text_attributes.csdoc", "~title": "Text Attributes" },
               { "path": "unicode_primer.csdoc", "~title": "Unicode Primer" },
               { "path": "synchronization.csdoc", "~title": "Synchronization Overview" },
               { "path": "paradata.csdoc", "~title": "Paradata" },
