@@ -41,6 +41,9 @@ The following behavior can be customized by specifying properties in the <link c
     <cell><b><colorinline JSON>"encoding"</colorinline></b></cell><cell>Determines the <link unicode_primer.csdoc>text encoding</link> of the SAS program (.sas) syntax file.</cell>
     <include properties_encoding_values.hgi />
     <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"newline"</colorinline></b></cell><cell>Determines what <link text_attributes.csdoc>control characters</link> are used when writing line endings to the SAS program (.sas) syntax file.</cell>
+    <include properties_newline_values.hgi />
+    <cell 2>&nbsp;</cell>
     <include properties_mappedSpecialValues_without_suppress.hgi />
     <cell><indent><colorinline JSON>"native"</colorinline></indent></cell><cell><indent>The value is mapped to SAS's <link "https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/lepg/p0ueqauvtyb2hqn1mj79t26azlxv.htm">special missing values</link>: <logiccolor>missing</logiccolor> is mapped to <b>.A</b> and <logiccolor>refused</logiccolor> is mapped to <b>.B</b>.</indent></cell>
     <include properties_mappedSpecialValues_suppress.hgi />
