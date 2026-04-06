@@ -1,4 +1,4 @@
-﻿<title>Questions</title>
+<title>Questions</title>
 
 CSPro shows customized <link question_text.csdoc>question text</link> in the top part of the entry window. To help the interviewer distinguish between text for the interviewer and the respondent, consider using different color fonts. For example, things the interviewer should say to the respondent (for example, "How many children do you have?") might be shown in black. Instructions to the interviewer (for example, "Ask of each household member") might be shown in blue. CSPro includes <link question_text_edit_styles.csdoc>customizeable styles</link> which can facilitate this.
 

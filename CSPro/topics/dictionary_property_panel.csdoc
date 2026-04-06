@@ -1,4 +1,4 @@
-﻿<title>Dictionary Property Panel</title>
+<title>Dictionary Property Panel</title>
 <context ID_VIEW_ALIASES />
 
 The dictionary's property panel is launched from the <b>View</b> menu option <b>Property Panel</b>, or by pressing <b>Alt+Enter</b>. To access the property panel for specific dictionary elements, many can be viewed by simply selecting an element on the <link data_dictionary_tree.csdoc>dictionary tree</link>. However, for some elements you will need to select the "parent" level or record from the tree, and then select the "child" record or item on the <link workspace.csdoc>workspace</link> in order to see the associated properties.

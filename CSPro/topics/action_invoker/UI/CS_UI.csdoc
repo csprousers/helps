@@ -1,4 +1,4 @@
-﻿<title>UI Action Invoker Namespace</title>
+<title>UI Action Invoker Namespace</title>
 
 The <action>UI</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to display <link html_dialog_ui.csdoc>HTML dialogs</link>, interact with <link html_in_cspro.csdoc>web views</link>, and otherwise work with the system's user interface.
 

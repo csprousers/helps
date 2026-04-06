@@ -1,4 +1,4 @@
-﻿<title>Markdown Transformations</title>
+<title>Markdown Transformations</title>
 
 When using the <colortag csdoc>&lt;md></colortag> tag to specify <link CSPro::markdown_overview.csdoc>Markdown</link>, the element content will be converted to HTML, with special processing for the following Markdown elements:
 

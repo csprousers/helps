@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JSON Conversions: Binary Data</title>
+<title>CSPro ⇄ JSON Conversions: Binary Data</title>
 
 
 The value of defined binary <link object_dot_notation.csdoc>logic object</link> or <link binary_dictionary_items.csdoc>dictionary item</link> data is represented as a <link JSON_primer.csdoc>JSON</link> object with <colorinline JSON>"metadata"</colorinline> and <colorinline JSON>"content"</colorinline> properties. If the object does not contain any data, its value is represented as <colorinline JSON>null</colorinline>.

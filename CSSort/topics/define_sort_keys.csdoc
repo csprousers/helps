@@ -1,4 +1,4 @@
-﻿<title>Define Sort Keys</title>
+<title>Define Sort Keys</title>
 
 The <b>CSSort</b> window has two columns: the <b>Items</b> list on the left that contains all items currently available for use as a sort key, and the <b>Keys</b> list on the right that contains all items that have been selected as keys for the sort. If CSSort was launched using a dictionary, then no items have yet been selected and hence, all items will appear in the left column. However if you begin CSSort with a <link save_a_sort_specification_file.csdoc>sort specifications file (.ssf)</link>, then you will most likely have one or more items in the right column.
 

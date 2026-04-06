@@ -1,4 +1,4 @@
-﻿<title>Change Edit Order</title>
+<title>Change Edit Order</title>
 <context ID_CUSTOMORDER />
 
 By default, a new batch edit application fixes the order of editing to the order of items in the dictionary. If new items are added to or rearranged in the dictionary, the editing order is determined by the new dictionary arrangement.

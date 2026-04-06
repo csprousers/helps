@@ -1,4 +1,4 @@
-﻿<title>Change Block Properties</title>
+<title>Change Block Properties</title>
 <context IDD_BLOCKPROP />
 
 To bring up the <b>Block Properties</b> dialog, right-click on a <link blocks.csdoc>block</link> in the tree and select <b>Properties</b>.

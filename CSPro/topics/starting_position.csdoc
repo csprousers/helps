@@ -1,4 +1,4 @@
-﻿<title>Starting Position</title>
+<title>Starting Position</title>
 
 This item property indicates the starting location of a data item. In conjunction with the <link item_length.csdoc>Length</link> property, it specifies the location of the item in a record. In <link relative_and_absolute_mode.csdoc>absolute</link> positioning mode, you cannot give a starting position that will cause the item to overlap with another item.
 

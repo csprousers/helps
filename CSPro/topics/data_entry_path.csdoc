@@ -1,4 +1,4 @@
-﻿<title>Data Entry Path</title>
+<title>Data Entry Path</title>
 
 CSPro supports a powerful feature called data entry path. The path can either be "turned on" or "turned off," depending on the data entry <link operator_vs_system_controlled.csdoc>application type</link> selected on the <link change_data_entry_options.csdoc>Data Entry Options</link> dialog box. Operator controlled applications always have path turned off, while system controlled applications always have path turned on.
 

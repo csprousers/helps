@@ -1,4 +1,4 @@
-﻿<title>Format an Application</title>
+<title>Format an Application</title>
 <context IDD_FORMAT_APP ID_EDIT_APP_FMT />
 
 To bring up the Format (Application) Dialog Box, right click on a table and select Format (Application).

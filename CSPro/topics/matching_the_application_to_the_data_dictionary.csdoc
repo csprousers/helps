@@ -1,4 +1,4 @@
-﻿<title>Matching the Application to the Data Dictionary</title>
+<title>Matching the Application to the Data Dictionary</title>
 
 Whenever an existing application is specified, the system automatically checks to make sure the application matches the data dictionary. This is to alert you in case a change was made to the data dictionary after the application was last saved, or in case you typed in the wrong data dictionary name.
 

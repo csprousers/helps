@@ -1,4 +1,4 @@
-﻿<title>Locking Application Files</title>
+<title>Locking Application Files</title>
 
 If distributing a CSPro application to users, one simple, though not rigorous, way of preventing the users from modifying the applications from within the CSPro Designer is to manually edit a specification file to add a property signaling that the file should not be edited. The files that support this functionality include:
 

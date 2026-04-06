@@ -1,4 +1,4 @@
-﻿<title>Base Map Specification</title>
+<title>Base Map Specification</title>
 
 When using CSPro's mapping features, you can use as a base map an online map, which requires an Internet connection, or an <link offline_maps.csdoc>offline map</link>. Online maps are defined using predefined names:
 

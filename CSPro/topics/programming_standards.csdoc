@@ -1,4 +1,4 @@
-﻿<title>Programming Standards</title>
+<title>Programming Standards</title>
 
 When developing software programs, it is a good idea to follow a set of programming standards. Doing so allows your program to be more understandable by others as they encounter a program that is predictably organized and uses the same nomenclature. It is especially important to institute programming standards when jointly drafting programs with a team of developers, as personal programming styles can interfere with the overall comprehension of the programs.
 

@@ -1,4 +1,4 @@
-﻿<title>Saved Arrays File (.sva)</title>
+<title>Saved Arrays File (.sva)</title>
 
 The saved arrays file stores values from <link Array.csdoc>arrays</link> in an application marked with the <logiccolor>save</logiccolor> keyword. At the end of program execution, the current values of any saved arrays are written to the file. When the program is run, the saved array file is read and the array is initialized with the values from the saved array file.
 

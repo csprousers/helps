@@ -1,4 +1,4 @@
-﻿<title>Binary Data Entry Application File (.pen)</title>
+<title>Binary Data Entry Application File (.pen)</title>
 
 A binary data entry application file, with the extension <b>.pen</b>, is an alternative to distributing the entire suite of the data entry application files. It is a single binary file that contains all the information from your data entry application's dictionaries, forms, logic, message file, and <link question_text.csdoc>question text</link>. While this file is <link generate_binary_data_entry_application.csdoc>generated</link> within the CSPro Designer, it cannot be read by the CSPro Designer. It is read by CSEntry, on either desktop or mobile devices.
 

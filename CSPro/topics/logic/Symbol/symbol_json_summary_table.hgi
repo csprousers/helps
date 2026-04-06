@@ -1,4 +1,4 @@
-﻿<font #ff88888><i>Documentation about all JSON representations feature will come in a future release.</i></font>
+<font #ff88888><i>Documentation about all JSON representations feature will come in a future release.</i></font>
 
 <table 4 header>
     <cell>Object</cell><cell>Value -> JSON</cell><cell>JSON -> Value</cell><cell>Serialization</cell>

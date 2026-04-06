@@ -1,4 +1,4 @@
-﻿<title>Audio Object</title>
+<title>Audio Object</title>
 
 In logic, an <logiccolor>Audio</logiccolor> object represents an audio recording. Audio recordings may be loaded from audio files, saved to audio files, played, or recorded. Audio objects are typically used to record portions of an interview either interactively or in the background. With interactive recording, an audio recorder is displayed to the user who then controls when the recording is started and stopped. The user must complete the audio recording before moving to the next survey question. With background recording, the audio recorder is started and stopped using CSPro logic and the user can continue with the survey while the audio is recorded.
 

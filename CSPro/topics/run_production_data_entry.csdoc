@@ -1,4 +1,4 @@
-﻿<title>Run Production Data Entry</title>
+<title>Run Production Data Entry</title>
 
 You can customize CSEntry's behavior by creating a <link program_information_file_pff.csdoc>PFF file</link>. You can then use the PFF file as a command line parameter for CSEntry.exe. For example, if you name your PFF file MySurvey.pff, then you run the data entry application by invoking:
 

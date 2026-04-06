@@ -1,4 +1,4 @@
-﻿<title>Introduction to Pack Application</title>
+<title>Introduction to Pack Application</title>
 <context IDD_PACK />
 
 <b>Pack Application (CSPack)</b> is a CSPro tool that, at its core, allows you to archive a CSPro data entry, batch edit, or tabulation application. Since CSPack knows which files belong to an application, it ensures that all required files are included in the generated ZIP file. There are additional options available that allow you to add input data files, resources, etc., saving you the effort required to search for these files. This makes it easy to share your application with others, or to install it on different computers, such as when setting up a production data entry system.

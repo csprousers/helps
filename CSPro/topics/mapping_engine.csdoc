@@ -1,4 +1,4 @@
-﻿<title>Mapping Engine</title>
+<title>Mapping Engine</title>
 
 
 <link Map.csdoc>Mapping</link> in CSPro is handled by one of two mapping engines: <link "https://developers.google.com/maps/documentation/android-sdk/overview">Google Maps</link> or <link "https://leafletjs.com">Leaflet</link>. Google Maps is the default mapping engine on Android, though Leaflet can be <link properties_mapping.csdoc>used as an alternative</link>, while on Windows, Leaflet is the only option.

@@ -1,4 +1,4 @@
-﻿string data_directory = "C:\CSPro Data Files";
+string data_directory = "C:\CSPro Data Files";
 
 string survey_data_path = Path.concat(data_directory, "Region 1", "COVID-19 Survey.csdb");
 // result: C:\CSPro Data Files\Region 1\COVID-19 Survey.csdb

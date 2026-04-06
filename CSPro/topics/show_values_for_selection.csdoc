@@ -1,4 +1,4 @@
-﻿<title>Show Values for Selection</title>
+<title>Show Values for Selection</title>
 
 You can display a list of response values for a field, so that the interviewer can select a response. The list of response values comes from the first value set of the field in the data dictionary.
 

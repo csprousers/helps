@@ -1,4 +1,4 @@
-﻿<title>Create Fills in Questions</title>
+<title>Create Fills in Questions</title>
 
 Fills are used to customize <link question_text.csdoc>question text</link> based on respondents' specific characteristics. This is done by embedding CSPro logic into the text as a <link text_templates.csdoc>template expression</link> and surrounding it with one of the supported delimiters: ~~, ~~~, and <nowrap>&lt;? ?&gt;</nowrap>.
 

@@ -1,4 +1,4 @@
-﻿<title>Path Namespace</title>
+<title>Path Namespace</title>
 
 The <logiccolor>Path</logiccolor> namespace is a set of functions used to perform operations on a path or to get information from a path specification.
 

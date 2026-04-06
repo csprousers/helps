@@ -1,4 +1,4 @@
-﻿<title>Comments</title>
+<title>Comments</title>
 
 Comments make applications easier to understand. It is highly recommended that CSPro applications be documented through the liberal use of comments. While editing logic and message files, comments are displayed as <font monospace green>green text</font>.
 

@@ -1,4 +1,4 @@
-﻿<title>Change Roster Properties</title>
+<title>Change Roster Properties</title>
 <context IDD_GRIDPROP />
 
 Right click on the gray space in any roster cell and choose <b>Properties</b>.

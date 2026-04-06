@@ -1,4 +1,4 @@
-﻿<title>Get a QR Code to Scan to Install an Application on a Mobile Device</title>
+<title>Get a QR Code to Scan to Install an Application on a Mobile Device</title>
 
 To simplify installation of deployed applications on mobile devices, CSDeploy can generate a QR code that contains the information needed to download a deployed application and install it on an Android tablet or phone. You can simply scan the QR code with the camera on your Android device and CSEntry will automatically download and install the application. This way you do not have to manually type the server information on the mobile device.
 

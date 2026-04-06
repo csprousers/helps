@@ -1,4 +1,4 @@
-﻿<title>Initialize Hot Decks in Program Logic</title>
+<title>Initialize Hot Decks in Program Logic</title>
 
 In this technique, the <link dynamic_imputation_hot_deck.csdoc>hot deck</link> is initialized in program logic. Hot deck values are updated during the program's execution but the values are not saved externally.
 

@@ -1,4 +1,4 @@
-﻿<title>Document Object</title>
+<title>Document Object</title>
 
 In logic, a <logiccolor>Document</logiccolor> object facilitates the storage of text or binary files. Unlike CSPro data files, or text files (accessed via <logiccolor>File</logiccolor>), the contents of a Document cannot be directly edited.
 

@@ -1,4 +1,4 @@
-﻿<title>Run Reformat</title>
+<title>Run Reformat</title>
 
 Once you specify two dictionaries, the tool displays the differences between the two dictionaries. You can toggle between viewing dictionary names and labels by selecting <b>Dictionary Names</b> from the <b>View</b> menu. If you would like to only see changes that will potentially result in destructive changes (e.g., decreased occurrences, reduced item length, etc.), you can select <b>Show Only Destructive Changes</b> from the <b>View</b> menu. These destructive changes are shown in red.
 

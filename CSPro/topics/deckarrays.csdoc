@@ -1,4 +1,4 @@
-﻿<title>DeckArrays</title>
+<title>DeckArrays</title>
 
 "DeckArrays" in CSPro is a simplified way of working with hot decks. It is important to understand the hot deck process well before using DeckArrays, because the functions <logiccolor>getdeck</logiccolor> and <logiccolor>putdeck</logiccolor> automatically handle recodes and thus hide much of the hot deck behavior from the programmer. DeckArrays eliminate the need for the programmer to recode variables to fit within the boundaries of an array, as the recodes are processed automatically based on values defined within a <link value_sets_description.csdoc>value set </link>.
 

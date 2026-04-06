@@ -1,4 +1,4 @@
-﻿<title>Create a Specialized Report</title>
+<title>Create a Specialized Report</title>
 
 <topic manipulate_automatic_reports.csdoc /> showed how to add messages to the default report which is automatically generated after a run. This type of report may be useful for debugging, but in general, the subject-matter staff responsible for edit review will usually prefer a more "user-friendly" report - that is, one that presents the information in a format dictated by the users.
 

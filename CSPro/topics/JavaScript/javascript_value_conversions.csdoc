@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JavaScript Value Conversions</title>
+<title>CSPro ⇄ JavaScript Value Conversions</title>
 
 
 Some CSPro symbols have routines that support the conversion of values from CSPro to and from <link javascript_overview.csdoc>JavaScript</link> objects. These operations occur explicitly when using functions such as <logiccolor>JS.getValue</logiccolor> and <logiccolor>JS.setValue</logiccolor>, and occur implicitly when using <logiccolor>JS.invoke</logiccolor> or calling a <link javascript_user_defined_functions.csdoc>JavaScript user-defined function</link>.

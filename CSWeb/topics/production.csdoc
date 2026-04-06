@@ -1,4 +1,4 @@
-﻿<title>Running CSWeb in Production</title>
+<title>Running CSWeb in Production</title>
 
 Using CSWeb for a production data collection operation requires additional steps in order to make the server accessible to devices in the field and to ensure proper data security.
 

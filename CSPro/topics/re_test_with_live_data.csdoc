@@ -1,4 +1,4 @@
-﻿<title>Re-Test with Live Data</title>
+<title>Re-Test with Live Data</title>
 
 The CSPro program should be tested using real data with perhaps 2,000 to 3,000 records. The edit statistics should be examined closely. The number of imputations should be a very small percentage of records. If a large number of imputations are being done for any particular edit test, the code should be examined, and the imputations accounted for before proceeding. The edit statistics should be examined by subject-matter specialists also, so they can determine whether or not the rate of imputation is too high. If appropriate coding techniques are used with the <logiccolor>impute</logiccolor> statements, the imputations can easily be related back to the edit specification document.
 

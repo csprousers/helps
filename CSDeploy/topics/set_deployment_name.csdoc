@@ -1,4 +1,4 @@
-﻿<title>Set the Name and Description of a Deployment Package</title>
+<title>Set the Name and Description of a Deployment Package</title>
 
 Every deployment package must have a name. This should be a short title of the application contained in the package. The name will be displayed in the list of available applications for download on the mobile device. Enter the name of the package in the text box next to <b>Package name</b>.
 

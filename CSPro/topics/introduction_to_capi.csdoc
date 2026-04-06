@@ -1,4 +1,4 @@
-﻿<title>Introduction to CAPI</title>
+<title>Introduction to CAPI</title>
 
 CSPro supports <b>C</b>omputer-<b>A</b>ssisted <b>P</b>ersonal <b>I</b>nterviewing (CAPI) data entry. In CAPI the interviewer uses a laptop, tablet, or mobile device to enter responses as they occur. The interview is conducted face-to-face, and the entry application (sometimes called the "instrument") determines the question order, and also performs editing of responses.
 

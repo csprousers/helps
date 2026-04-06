@@ -1,4 +1,4 @@
-﻿<title>Item Description</title>
+<title>Item Description</title>
 
 A dictionary item describes the response to a question, or can help <link questionnaire_and_dictionary_organization.csdoc>identify</link> areas of the questionnaire. The dictionary item is the most basic element of a questionnaire: age, income, and crop code are all examples of items. There is no limit on the number of items that can be created within a record or dictionary.
 

@@ -1,4 +1,4 @@
-﻿<title>Importing Data to CSPro Format</title>
+<title>Importing Data to CSPro Format</title>
 
 There are occasions, such as when using <link lookup_files.csdoc>lookup files</link>, when you will want to convert data created in another application to a format that CSPro can read. This is a two-step process:
 

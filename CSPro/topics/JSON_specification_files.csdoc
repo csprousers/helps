@@ -1,4 +1,4 @@
-﻿<title>JSON Specification Files</title>
+<title>JSON Specification Files</title>
 
 Prior to CSPro 8.0, <link file_types.csdoc>CSPro specification files</link> were saved as <link https://en.wikipedia.org/wiki/INI_file>INI files</link>. Starting with CSPro 8.0, many files are now saved in <link JSON_primer.csdoc>JSON format</link>. Although the general recommendation is that you should only modify files within the CSPro environment, having these files in JSON format allows advanced users to work with the values defined in a specification file when using other programming languages or when using other tools.
 

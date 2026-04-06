@@ -1,4 +1,4 @@
-﻿<title>Methods of Correcting Data</title>
+<title>Methods of Correcting Data</title>
 
 Before you can correct your errors, you need to know what kind of errors you have. You have two methods of finding these errors: manually or automatically. Manually checking large quantities of data is an extremely time-consuming and error-prone task and not recommended. By contrast, automated searches for your errors is quick and, if done properly, a reliable method to use. If you wish to use CSPro to automate the search for errors, you must create a Batch Edit application.
 

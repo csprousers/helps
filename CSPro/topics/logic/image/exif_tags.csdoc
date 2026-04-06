@@ -1,4 +1,4 @@
-﻿<title>EXIF Tags</title>
+<title>EXIF Tags</title>
 
 The following table lists the names of <link "https://en.wikipedia.org/wiki/Exif">EXIF</link> tags that are supported by the <logiccolor>Image.getExif</logiccolor> function. The description comes from <link "https://github.com/libexif/libexif">libexif</link>, the library that CSPro uses to parse EXIF data. Following the description is a list of the Image File Directory (IFD) sets that may contain a value corresponding to the tag name.
 

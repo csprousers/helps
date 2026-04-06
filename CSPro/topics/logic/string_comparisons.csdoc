@@ -1,4 +1,4 @@
-﻿<title>String Comparisons</title>
+<title>String Comparisons</title>
 
 There are a variety of ways to compare two strings in CSPro logic. However, the way that strings are compared depends on the <link logic_version.csdoc>logic version</link>.
 

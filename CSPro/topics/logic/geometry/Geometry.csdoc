@@ -1,4 +1,4 @@
-﻿<title>Geometry Object</title>
+<title>Geometry Object</title>
 
 In logic, a <logiccolor>Geometry</logiccolor> is an object that can be used to display and manipulate vector geometry: points, lines, and polygons. The <logiccolor>Geometry</logiccolor> object can load and save data in GeoJSON format. You can display the geometry on a map, interactively trace polygons on a map, and compute the area and perimeter of polygons.
 

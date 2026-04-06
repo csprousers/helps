@@ -1,4 +1,4 @@
-﻿<title>String Literals</title>
+<title>String Literals</title>
 
 A string literal is zero or more characters enclosed between a pair of double quotation marks (<logiccolor>"..."</logiccolor>) or single quotation marks  (<logiccolor>'...'</logiccolor>). In CSPro, string literals will appear in the text editor colored in <font magenta><b>magenta</b></font>. Any spaces enclosed within the quotation marks are considered part of the string literal. Uppercase and lowercase letters may be used, and the string literal <logiccolor>"a"</logiccolor> <link string_comparisons.csdoc>is different</link> than <logiccolor>"A"</logiccolor>.
 

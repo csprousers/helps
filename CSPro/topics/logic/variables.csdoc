@@ -1,4 +1,4 @@
-﻿<title>Variables</title>
+<title>Variables</title>
 
 Within CSPro <link introduction_to_cspro_language.csdoc>logic</link>, you can declare <logiccolor>numeric</logiccolor> and <logiccolor>string</logiccolor> variables, or the following <link object_dot_notation.csdoc>objects</link>:
 

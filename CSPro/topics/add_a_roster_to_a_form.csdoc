@@ -1,4 +1,4 @@
-﻿<title>Add a Roster to a Form</title>
+<title>Add a Roster to a Form</title>
 
 CSPro automatically creates a roster, under appropriate conditions, when you drag a dictionary item onto a form. In most cases where a roster is possible, CSPro obeys the Roster Options on the <link drag_option_menu.csdoc>drag options dialog</link> box. Make sure this option is Horizontal or Vertical before you begin. In some drag and drop operations a roster is not possible and will not be created. In other drag and drop operations a roster is the only alternative.
 

@@ -1,4 +1,4 @@
-﻿<title>Fields</title>
+<title>Fields</title>
 
 In CAPI data entry, consideration needs to be given to the properties of fields used in the application. The following table lists certain <link change_field_properties.csdoc>field properties</link> and how they might be used:
 

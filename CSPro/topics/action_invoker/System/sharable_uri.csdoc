@@ -1,4 +1,4 @@
-﻿<title>Sharable URI</title>
+<title>Sharable URI</title>
 
 In CSPro, a sharable URI is a way to reference files in a way that works across applications that are not part of the CSPro ecosystem. The primary use for sharable URIs is to share them with <link android_interacting_with_other_applications.csdoc>other Android applications</link> so that those applications can access data or files in the <i><definition android_package_name /></i> directory. The way that sharable URIs look depends on the operating system:
 

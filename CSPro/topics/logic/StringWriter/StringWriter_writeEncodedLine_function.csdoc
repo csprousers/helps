@@ -1,4 +1,4 @@
-﻿<title>StringWriter.writeEncodedLine Function</title>
+<title>StringWriter.writeEncodedLine Function</title>
 
 <i>This documentation also applies to the <logiccolor>Report.writeEncodedLine</logiccolor> function as a <logiccolor>Report</logiccolor> is a type of <logiccolor>StringWriter</logiccolor>.</i>
 

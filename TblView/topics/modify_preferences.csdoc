@@ -1,4 +1,4 @@
-﻿<title>Modify Preferences</title>
+<title>Modify Preferences</title>
 <context ID_EDIT_TBL_OPTIONS IDD_OBJECT_FORMATS_PAGE />
 
 To modify default preferences for formatting, from the <b>Edit</b> menu select <b>Preferences</b>. This brings up the Preferences Window:

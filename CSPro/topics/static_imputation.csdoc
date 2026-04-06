@@ -1,4 +1,4 @@
-﻿<title>Static Imputation</title>
+<title>Static Imputation</title>
 
 Static <link imputation.csdoc>imputation</link> means providing a value from a predetermined set of values. Suppose a person's sex is missing or invalid (out of range). If we decide to change the response using static imputation, there are two basic methods to use: hard coded or from a "cold deck."
 

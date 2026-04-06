@@ -1,4 +1,4 @@
-﻿<title>Newline Handling</title>
+<title>Newline Handling</title>
 
 When using <link logic_version.csdoc>logic version</link> CSPro 8.0+, newline characters are introduced into <link string_literals.csdoc>string literals</link> when using the escape sequence <logiccolor>'\n'</logiccolor>. This character is handled throughout CSPro as one would generally expect; for example:
 

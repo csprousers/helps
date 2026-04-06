@@ -1,4 +1,4 @@
-﻿<title>Logic File (.apc)</title>
+<title>Logic File (.apc)</title>
 
 The logic file contains all the <link introduction_to_cspro_language.csdoc>CSPro language</link> statements which control the application. There is a logic file associated with each application. CSPro does not allow you to explicitly open the logic file. It is opened only when you open its associated application.
 

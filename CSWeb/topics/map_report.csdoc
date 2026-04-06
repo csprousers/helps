@@ -1,4 +1,4 @@
-﻿<title>Map Report</title>
+<title>Map Report</title>
 
 The Map Report helps visualize data. If each case has latitude and longitude data associated with it, then it can be displayed on the map as a marker. This allows coverage of a geographical area to be reviewed in a glance. Each marker displays additional information if clicked on and allows the opening of the case for viewing.
 

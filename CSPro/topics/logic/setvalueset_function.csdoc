@@ -1,4 +1,4 @@
-﻿<title>SetValueSet Function</title>
+<title>SetValueSet Function</title>
 
 <i><b>Feature Upgrade</b>: Starting with CSPro 8.0, it is no longer possible to use <logiccolor>Array</logiccolor> objects to create dynamic value sets. The <logiccolor>ValueSet</logiccolor> object must be used instead.</i>
 

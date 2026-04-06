@@ -1,4 +1,4 @@
-﻿<title>Record Description</title>
+<title>Record Description</title>
 
 A record is a group of related data items. In the process of creating a record to define (a portion of) the questionnaire, you will also be defining the physical layout of the data file. For example, suppose your (very simple) population record looks like the following (only item name, starting position, and length properties are shown; starting positions show that ID items occupy the first 9 positions in the record):
 

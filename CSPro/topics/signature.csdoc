@@ -1,4 +1,4 @@
-﻿<title>Signature</title>
+<title>Signature</title>
 
 <i><b>Feature Upgrade</b>: Starting with CSPro 7.7, you should no longer use the <logiccolor>execsystem</logiccolor> method of capturing signatures, as it may soon be removed from CSPro. To replicate the behavior of the execsystem function call, use the <logiccolor>image.captureSignature</logiccolor> function.</i>
 

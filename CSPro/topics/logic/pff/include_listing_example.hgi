@@ -1,4 +1,4 @@
-﻿PROC INTERVIEWER_MENU
+PROC INTERVIEWER_MENU
 
 	// run the listing program in the interviewer's assigned cluster
 	if INTERVIEWER_MENU = 1 then

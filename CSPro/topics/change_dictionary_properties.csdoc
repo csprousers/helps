@@ -1,4 +1,4 @@
-﻿<title>Change Dictionary Properties</title>
+<title>Change Dictionary Properties</title>
 <context ID_ADD_DICTIONARY_EXTERNAL ID_ADD_DICTIONARY_WORKING IDD_PAGE_PROPERTIES_DICTIONARY />
 
 To modify the properties for a <link data_dictionary_file_dcf.csdoc>dictionary</link>, open the <b>File</b> menu and select <b>Manage Application Files</b>. Properties include:

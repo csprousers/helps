@@ -1,4 +1,4 @@
-﻿<title>Binary Dictionary Items</title>
+<title>Binary Dictionary Items</title>
 
 In addition to the standard numeric and alpha <link data_type.csdoc>data types</link>, dictionary items can wrap the following <link object_dot_notation.csdoc>CSPro objects</link> that contain binary data:
 

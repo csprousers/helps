@@ -1,4 +1,4 @@
-﻿<title>Temporary Data File</title>
+<title>Temporary Data File</title>
 
 Most CSPro applications sensibly require data files to operate but there may be times when the contents of a data file are unimportant. Examples of this include a menu program that launches another program based on a user's selection. Such a program generally has no output and thus the contents of the file are meaningless. For batch programs it may be the case that you want to use CSPro functions to perform some task, such as creating content using the <logiccolor>write</logiccolor> statement.
 

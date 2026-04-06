@@ -1,4 +1,4 @@
-﻿<title>Create an Area Names File</title>
+<title>Create an Area Names File</title>
 
 The Area Names file (.anm) is a text file that you can create using any text editor. Be sure you save this file with the extension .anm. This file defines the levels of geography and assigns text names to the numeric codes for each geographic unit.
 

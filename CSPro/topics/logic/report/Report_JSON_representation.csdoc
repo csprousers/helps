@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JSON Conversions: Report Object</title>
+<title>CSPro ⇄ JSON Conversions: Report Object</title>
 
 
 The text of a CSPro <link templated_reports.csdoc>templated report</link> (<logiccolor>Report</logiccolor>) is represented as a <link JSON_primer.csdoc>JSON</link> string that is serialized according to the JSON serialization rules for <link string_JSON_representation.csdoc>string values</link>. The value is a string while the report is being created, and null otherwise.

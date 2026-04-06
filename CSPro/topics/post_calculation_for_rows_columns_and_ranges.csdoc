@@ -1,4 +1,4 @@
-﻿<title>Post Calculation For Rows, Columns and Ranges</title>
+<title>Post Calculation For Rows, Columns and Ranges</title>
 
 In addition to performing operations on individual cells, you can perform operations on cell ranges, rows and columns. As an example, take the following table, in which an additional column is added to calculate the male to female ratio for each group.
 

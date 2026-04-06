@@ -1,4 +1,4 @@
-﻿<indent><table 2 header>
+<indent><table 2 header>
 	<cell>Code</cell><cell>Capture Type</cell>
 	<cell>0</cell><cell><link text_box.csdoc>Text Box</link></cell>
 	<cell>1</cell><cell><link radio_button.csdoc>Radio Button</link></cell>

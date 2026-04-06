@@ -1,4 +1,4 @@
-﻿<title>Clipboard Action Invoker Namespace</title>
+<title>Clipboard Action Invoker Namespace</title>
 
 The <action>Clipboard</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides access to the device's clipboard.
 

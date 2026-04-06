@@ -1,4 +1,4 @@
-﻿<title>Message File (.mgf)</title>
+<title>Message File (.mgf)</title>
 
 
 The message file for a <link data_entry_application_file_ent.csdoc>data entry application</link> stores the error message text that is displayed during data entry. The message file for a <link batch_edit_application_file_bch.csdoc>batch application</link> stores the error message text that will be included in the execution report. The message file has the extension <b>.mgf</b>. While creating your application, you can view the message text in a window at the bottom of the logic screen.

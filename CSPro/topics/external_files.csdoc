@@ -1,4 +1,4 @@
-﻿<title>External Files</title>
+<title>External Files</title>
 
 
 An external file is a text file other than the primary data file that you can use in a data entry or batch application. You can read and/or write to external files, using CSPro logic. You must create a data dictionary that describes the format of any external file you want to use. An external file dictionary can contain only one level.

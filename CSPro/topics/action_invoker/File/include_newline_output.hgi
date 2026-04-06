@@ -1,4 +1,4 @@
-﻿The <arg>newline</arg> argument allows you to specify the control characters used when writing <link text_attributes.csdoc>newlines</link>. Options include:
+The <arg>newline</arg> argument allows you to specify the control characters used when writing <link text_attributes.csdoc>newlines</link>. Options include:
 
 <list>
     <li><logiccolor>"LF"</logiccolor>: Newlines are written using only the line feed character: <logiccolor>"\n"</logiccolor>.</li>

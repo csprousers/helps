@@ -1,4 +1,4 @@
-﻿<title>Dynamic Imputation (Hot Deck)</title>
+<title>Dynamic Imputation (Hot Deck)</title>
 
 Dynamic <link imputation.csdoc>imputation</link> refers to the concept of using constantly changing values for your allocation routines. It is similar to <link static_imputation.csdoc>static (cold deck) imputation</link>, except that instead of creating a table and assigning allocation values that remain fixed, the tables are continually updated with valid and consistent values taken from the population being edited.
 

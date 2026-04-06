@@ -1,4 +1,4 @@
-﻿<title>Status File (.sts)</title>
+<title>Status File (.sts)</title>
 
 The status file stores information about which cases are partially entered and the last field entered. It also keeps track of the cases that have been verified. CSEntry uses this information to:
 

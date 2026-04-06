@@ -1,4 +1,4 @@
-﻿<title>Selecting Items</title>
+<title>Selecting Items</title>
 
 When the forms designer first opens, the mouse is in selection mode. That is, if you click on a field, roster, or text item, the item becomes selected. Similarly, if you press the left mouse button and hold it down while dragging over a group of fields, rosters, and/or text items, all of those items will be selected. You can then choose to do operations on the selected item(s), such as moving or deleting them. If one item is selected, you can also review its individual (<link change_field_properties.csdoc>field</link>/<link change_roster_properties.csdoc>roster</link>/<link change_text_properties.csdoc>text</link>) properties. You can also hold down the <b>Ctrl</b> key while individually clicking on each item to be selected with your left mouse button.
 

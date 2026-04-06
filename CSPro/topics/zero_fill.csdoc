@@ -1,4 +1,4 @@
-﻿<title>Zero Fill</title>
+<title>Zero Fill</title>
 <context ID_OPTIONS_ZEROFILL />
 
 This item property controls whether numeric data item should be stored with leading zeros or blanks.

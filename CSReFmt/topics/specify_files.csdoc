@@ -1,4 +1,4 @@
-﻿<title>Specify Files</title>
+<title>Specify Files</title>
 
 
 Once you open the tool, you will be presented with a dialog box asking for four file names: the input and output data dictionaries, and the input and output data files. If you specify an input data file with an embedded dictionary, such as a <link CSPro::data_source_csdb.csdoc>CSPro DB</link> file, you do not need to define the input dictionary.

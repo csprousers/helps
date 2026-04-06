@@ -1,4 +1,4 @@
-﻿<title>Sqlite Action Invoker Namespace</title>
+<title>Sqlite Action Invoker Namespace</title>
 
 The <action>Sqlite</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to work with <link sqlite_in_cspro.csdoc>SQLite databases</link>.
 

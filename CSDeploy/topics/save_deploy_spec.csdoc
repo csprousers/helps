@@ -1,4 +1,4 @@
-﻿<title>Save a Deployment Specification File</title>
+<title>Save a Deployment Specification File</title>
 
 Once you have configured your deployment pacakge, you can store your choices for future use. The file in which these selections are stored is a Deployment Specification file (.csds). You can use this file at a later date to build and deploy your application. For example, if you make changes to your data entry application logic or forms, you can use the Deployment Specification file to place the updated application package on the server so that interviewers in the field can update the version on their tablets.
 

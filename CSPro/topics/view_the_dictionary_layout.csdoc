@@ -1,4 +1,4 @@
-﻿<title>View the Dictionary Layout</title>
+<title>View the Dictionary Layout</title>
 <context ID_VIEW_LAYOUT />
 
 From the toolbar, press <image layout.jpg />, or press <b>Ctrl+L</b>, or select Layout from the View menu. Any of these options will toggle the display of the current layout of the data dictionary. The display will appear in the lower half of the right-hand screen.

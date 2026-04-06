@@ -1,4 +1,4 @@
-﻿<title>Adding Users</title>
+<title>Adding Users</title>
 
 Each user is composed of a username, first name, last name, role, email (optional), phone number (optional), and password. The role can be one of two built-in roles or a custom role. The Administrator can synchronize all dictionaries from CSEntry, Batch, and Data Manager and log into CSWeb. The Standard User cannot log into CSWeb, but can synchronize all dictionaries from CSEntry, Batch, and Data Manager.
 

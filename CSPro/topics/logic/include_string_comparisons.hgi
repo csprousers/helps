@@ -1,4 +1,4 @@
-﻿The original routine to <link string_comparisons.csdoc>compare strings</link> right-pads strings with space (blank) characters as necessary so that the length of the string does not factor into the comparison. This applies to comparisons using:
+The original routine to <link string_comparisons.csdoc>compare strings</link> right-pads strings with space (blank) characters as necessary so that the length of the string does not factor into the comparison. This applies to comparisons using:
 
 <list>
     <li>String comparison functions: <logiccolor>compare</logiccolor> and <logiccolor>compareNoCase</logiccolor></li>

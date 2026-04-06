@@ -1,4 +1,4 @@
-﻿<title>Localhost Action Invoker Namespace</title>
+<title>Localhost Action Invoker Namespace</title>
 
 The <action>Localhost</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to create <link localhost_url.csdoc>localhost URLs</link> that can be used to serve content from the local file system or from memory.
 

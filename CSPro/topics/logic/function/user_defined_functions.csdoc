@@ -1,4 +1,4 @@
-﻿<title>User-Defined Functions</title>
+<title>User-Defined Functions</title>
 
 User-defined functions are coded in the <link cspro_program_structure.csdoc>declaration</link> portion (<logiccolor>PROC GLOBAL</logiccolor>) of an application. Once defined, they can be used anywhere in an application. Functions are used to perform operations that are used in several different places in an application.
 

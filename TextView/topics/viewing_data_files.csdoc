@@ -1,4 +1,4 @@
-﻿<title>Viewing CSPro Data Files</title>
+<title>Viewing CSPro Data Files</title>
 <context IDD_DATA_MANAGER_QUERY ID_FILE_OPEN_IN_DATA_MANAGER />
 
 If you are storing your data in a non-text file format (such as <link CSPro::data_source_csdb.csdoc>CSPro DB</link>), it is not convenient to view the data in Text Viewer. You may instead want to view the file in CSPro's <link DataManager::introduction.csdoc>Data Manager</link> tool. This will show the data in an appropriate manner along with information from the dictionary.

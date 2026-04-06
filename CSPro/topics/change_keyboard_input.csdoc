@@ -1,4 +1,4 @@
-﻿<title>Change Keyboard Input</title>
+<title>Change Keyboard Input</title>
 <context IDD_KEYBOARD_LAYOUTS />
 
 To manually change the keyboard input for a field, view the <link change_field_properties.csdoc>field's properties</link> and select <b>Keyboard Input</b> -> <b>Change</b>.

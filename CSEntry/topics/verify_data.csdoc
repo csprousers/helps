@@ -1,4 +1,4 @@
-﻿<title>Verify Data</title>
+<title>Verify Data</title>
 
 When you verify a case, you key the case a second time as if you were in Add mode. Even though there is already data in the data file, CSEntry does not show this to you. All fields on the current form start out blank. Each time you key a field, the system compares the value you keyed with the value in the data file. If these two values match, you move to the next field. If the values do not match, you get a message telling you so. When this happens, simply rekey the field. One of the following situations will occur:
 

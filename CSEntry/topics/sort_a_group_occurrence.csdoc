@@ -1,4 +1,4 @@
-﻿<title>Sort a Group Occurrence</title>
+<title>Sort a Group Occurrence</title>
 <context ID_SORTGRPOCC />
 
 CSEntry allows the operator to sort group occurrences while in <b>Add</b> or <b>Modify</b> mode from any of the fields that belong to the group. For example, if you have a roster or repeating form, and you are currently on one of the fields located within that roster or repeating form, you may sort the data by pressing <b>F5</b>.

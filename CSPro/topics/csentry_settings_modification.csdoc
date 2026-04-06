@@ -1,4 +1,4 @@
-﻿<title>CSEntry Settings Modification</title>
+<title>CSEntry Settings Modification</title>
 
 It is possible to customize the menus presented to the user, and other settings, when running CSEntry on an Android device. By using the <logiccolor>savesetting</logiccolor> function to save a setting, you can override the default behavior of a menu option. You must execute this function call in logic before the menu setting takes effect, so if you are interested in immediately applying your customized settings, you can distribute your application with the PFF's <pffcolor>CommonStore</pffcolor> attribute set to a settings file with your predefined settings.
 

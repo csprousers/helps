@@ -1,4 +1,4 @@
-﻿<title>Trees in CSPro</title>
+<title>Trees in CSPro</title>
 
 CSPro uses trees to present what files are currently loaded (such as dictionaries), and more importantly, what files are associated with the active application (dictionaries, forms, batch edits, or tables).
 

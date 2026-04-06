@@ -1,4 +1,4 @@
-﻿<title>Tabulation Application Tree</title>
+<title>Tabulation Application Tree</title>
 
 When you create a tabulation application, the tables tree tab will be nearly empty&mdash;only a single table will exist, with the Row Item and Column Item icons there as placeholders. However, as you drag <link item_description.csdoc>dictionary items</link> over to the table <link workspace.csdoc>workspace</link> to <link create_a_table.csdoc>build your tree</link>, you will begin to see it populate. The tree below shows such progress after three tables have been developed.
 

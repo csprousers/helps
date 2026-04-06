@@ -1,4 +1,4 @@
-﻿<title>Compiler Mode</title>
+<title>Compiler Mode</title>
 
 The CSPro compiler operates with the requirement that variables are declared explicitly. You must declare all <link variables.csdoc>variables</link> not defined in your dictionary; otherwise, the variables will be flagged as errors by the compiler. The advantage of this is that you do not have to worry about misspelled names.
 

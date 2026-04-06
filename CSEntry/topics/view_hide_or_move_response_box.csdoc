@@ -1,4 +1,4 @@
-﻿<title>View or Hide Response Box</title>
+<title>View or Hide Response Box</title>
 <context ID_CAPITOGGLE ID_CAPITOGGLEALLVARS />
 
 In a data entry application, you can show or hide responses for the current field or all fields.

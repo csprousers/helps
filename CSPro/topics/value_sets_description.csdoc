@@ -1,4 +1,4 @@
-﻿<title>Value Sets Description</title>
+<title>Value Sets Description</title>
 
 Creating value sets in the dictionary controls the valid range (for numeric) or valid set of values (for numeric and/or alpha) that a dictionary item (or subitem) can have. Value sets play a key role in CSPro, in particular for numeric items, and should always be created unless there is a strong reason not to do so.
 

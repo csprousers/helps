@@ -1,4 +1,4 @@
-﻿<title>Converting within ISSA</title>
+<title>Converting within ISSA</title>
 
 In an ISSA data entry application, a dictionary file contains both descriptive information about each data item (item type, item length, etc), as well as information about the form layout. However, in CSPro, we break this information into two separate files. Therefore, if you:
 

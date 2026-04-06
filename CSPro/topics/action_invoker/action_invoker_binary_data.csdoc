@@ -1,4 +1,4 @@
-﻿<title>Binary Data in the Action Invoker</title>
+<title>Binary Data in the Action Invoker</title>
 
 The <link action_invoker.csdoc>Action Invoker</link> does not directly allow binary data as an input or return it as an output, so it uses routines to convert binary data to and from string representations.
 

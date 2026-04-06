@@ -1,4 +1,4 @@
-﻿<title>Run Concatenate</title>
+<title>Run Concatenate</title>
 
 To concatenate the specified logs, press the <b>Run</b> button (or press <b>Alt+R</b> or <b>Ctrl+R</b>). A progress bar shows the names of the logs as they are concatenated.
 

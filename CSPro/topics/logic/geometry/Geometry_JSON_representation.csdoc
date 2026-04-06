@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JSON Conversions: Geometry Object</title>
+<title>CSPro ⇄ JSON Conversions: Geometry Object</title>
 
 
 A CSPro <link Geometry.csdoc>Geometry</link> object is represented as a <link JSON_primer.csdoc>JSON</link> object with <colorinline JSON>"metadata"</colorinline> and <colorinline JSON>"content"</colorinline> properties. Based on JSON serialization options&mdash;defined as an <link properties_json_serialization.csdoc>application property</link> or <link JSON_serialization_options.csdoc>dynamically</link>&mdash;the value of the <link object_dot_notation.csdoc>logic object</link> or <link binary_dictionary_items.csdoc>dictionary item</link> can be serialized either as a <link data_url.csdoc>data URL</link> or as a <link localhost_url.csdoc>localhost URL</link>.

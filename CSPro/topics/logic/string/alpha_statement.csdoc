@@ -1,4 +1,4 @@
-﻿<title>Alpha Statement</title>
+<title>Alpha Statement</title>
 
 <i><b>Feature Upgrade:</b> Since CSPro 6.0, you can now use <link string_statement.csdoc>variable-length strings</link>. You are encouraged to use the <logiccolor>string</logiccolor> declaration instead of fixed-width alpha variables whenever possible.</i>
 

@@ -1,4 +1,4 @@
-﻿<title>Operator Precedence</title>
+<title>Operator Precedence</title>
 
 The table below shows the order of precedence for <link operators.csdoc>operators</link>. When operators of the same precedence are in an expression, they are evaluated from left to right. The order of precedence can be changed using parentheses. Operators in parentheses are evaluated first.
 

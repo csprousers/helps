@@ -1,4 +1,4 @@
-﻿<title>Operators</title>
+<title>Operators</title>
 
 CSPro logic has a variety of arithmetic, relational, and logical operators. When more than one operator exists in an expression, the order in which the operators are evaluated is determined by their <link operator_precedence.csdoc>precedence</link>.
 

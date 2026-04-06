@@ -1,4 +1,4 @@
-﻿<title>HashMap Object</title>
+<title>HashMap Object</title>
 
 In logic, a <logiccolor>HashMap</logiccolor> is similar to an <link Array.csdoc>Array</link> but has dimensions that can be either non-consecutive numbers or strings. A HashMap is an <link https://en.wikipedia.org/wiki/Associative_array>associative array</link> that can be used to store numbers or strings and can dynamically grow or shrink in size.
 

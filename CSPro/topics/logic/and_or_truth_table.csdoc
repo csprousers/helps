@@ -1,4 +1,4 @@
-﻿<title>And/Or Truth Table</title>
+<title>And/Or Truth Table</title>
 
 The truth table summarizes all possible evaluations when two expressions (X and Y) joined by an operator (<logiccolor>and</logiccolor> or <logiccolor>or</logiccolor>) are true, false.
 

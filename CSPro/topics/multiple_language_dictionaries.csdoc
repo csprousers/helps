@@ -1,4 +1,4 @@
-﻿<title>Multiple Language Dictionaries</title>
+<title>Multiple Language Dictionaries</title>
 
 You can create dictionary labels in more than one language. To do this, while editing your dictionary, go to the <b>Edit</b> menu and select <b>Languages</b>. You will be presented with the following dialog box, from which you can add (or remove or modify) languages. (This is similar to the way that you <link define_languages.csdoc>define languages for question text</link>.)
 

@@ -1,4 +1,4 @@
-﻿<title>Define Languages</title>
+<title>Define Languages</title>
 <context IDD_CAPI_LANGDLG ID_EDIT_LANGUAGES ID_ADDCAPI_LANG />
 
 An application can contain <link question_text.csdoc>question text</link> in multiple languages. The interviewer can switch among available languages as needed.

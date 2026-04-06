@@ -1,4 +1,4 @@
-﻿<title>Action Invoker Access Tokens</title>
+<title>Action Invoker Access Tokens</title>
 
 
 An <link action_invoker.csdoc>Action Invoker</link> access token is a string that contains a value that allows a caller to execute an action. For security purposes you may have to use an access token when using the Action Invoker from an external caller, an environment that may not necessarily be trusted. When an external caller tries to execute an action, the caller's access token, if provided, is checked against the application's <link logic_settings.csdoc>logic settings</link>. If the application does not require an access token, or the provided access token is in the list of valid access tokens, the action is executed.

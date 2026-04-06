@@ -1,4 +1,4 @@
-﻿<title>Logic Settings</title>
+<title>Logic Settings</title>
 <context IDD_LOGIC_SETTINGS />
 
 To view and modify logic settings, select <link properties_application.csdoc>Application Properties</link> from the <b>Options</b> menu of a data entry, batch edit, or tabulation application, and then select the <b>Logic Settings</b> section. These settings are also available from <link tool_list.csdoc>tools</link> that use logic.

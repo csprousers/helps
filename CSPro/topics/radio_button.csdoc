@@ -1,4 +1,4 @@
-﻿<title>Radio Button</title>
+<title>Radio Button</title>
 
 The Radio Button capture type can be selected if an item is either numeric or alphanumeric and if the value set has only discrete values, meaning that there are no "to values" defined.
 

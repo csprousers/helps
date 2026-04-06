@@ -1,4 +1,4 @@
-﻿<title>Occurrence Labels</title>
+<title>Occurrence Labels</title>
 <context IDD_OCCURRENCE ID_EDIT_OCCURRENCELABELS />
 
 Occurrence labels can be attached to a repeating item or a repeating roster by right-clicking on the dictionary element and selecting <b>Occurrence Labels</b>. Alternatively, that option can be found on the <b>Edit</b> menu. To edit an occurrence label, simply click on the appropriate row and add the label.

@@ -1,4 +1,4 @@
-﻿<title>Question File (.qsf)</title>
+<title>Question File (.qsf)</title>
 
 
 The question file contains information about <link question_text.csdoc>question text</link> that appears on the screen with each field and help screens to appear when the operator presses the help (<b>F2</b>) key on desktop or the <b>?</b> icon on mobile.

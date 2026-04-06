@@ -1,3 +1,3 @@
-﻿<title>Develop Comprehensive Test File</title>
+<title>Develop Comprehensive Test File</title>
 
 A comprehensive test file should be created; it can be made at any time after the edit specifications are finalized, and it can be done by anyone familiar with the data file. Each member of the team should create records to test all paths of his/her subroutines. These records can be combined into one test file in a logical sequence.

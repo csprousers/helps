@@ -1,4 +1,4 @@
-﻿<title>List of Reserved Words</title>
+<title>List of Reserved Words</title>
 
 CSPro does not allow certain names to be used as dictionary unique names, or as variables in the programming logic, as they are part of CSPro's procedural language. During compilation, the system will notify you if you have used a reserved word.
 

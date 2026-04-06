@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JSON Conversions: HashMap Object</title>
+<title>CSPro ⇄ JSON Conversions: HashMap Object</title>
 
 
 A CSPro <link HashMap.csdoc>HashMap</link> is generally represented as a <link JSON_primer.csdoc>JSON</link> object. The underlying keys and values of the HashMap are serialized according to the JSON serialization rules for <link numeric_JSON_representation.csdoc>numeric values</link> or <link string_JSON_representation.csdoc>string values</link>. Each element of the HashMap is written as an object with <colorinline JSON>"key"</colorinline> and <colorinline JSON>"value"</colorinline> property names.

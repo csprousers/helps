@@ -1,4 +1,4 @@
-﻿<title>Lookup Files</title>
+<title>Lookup Files</title>
 
 
 A lookup file (external file) is a text file that can be used in a data entry or batch application from which you retrieve data to display on a form or to use in a calculation. It requires a CSPro data dictionary. Possibilities include:

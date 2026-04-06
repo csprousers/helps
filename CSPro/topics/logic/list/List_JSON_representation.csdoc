@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JSON Conversions: List Object</title>
+<title>CSPro ⇄ JSON Conversions: List Object</title>
 
 
 A CSPro <link List.csdoc>List</link> is represented as a one-dimensional <link JSON_primer.csdoc>JSON</link> array. The underlying values of the List are serialized according to the JSON serialization rules for <link numeric_JSON_representation.csdoc>numeric values</link> or <link string_JSON_representation.csdoc>string values</link>.

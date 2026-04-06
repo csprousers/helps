@@ -1,4 +1,4 @@
-﻿<title>Introduction to CSView</title>
+<title>Introduction to CSView</title>
 <context IDR_MAINFRAME />
 
 <b>CSView</b> is a tool that displays files in a web browser that has access to the <link CSPro::action_invoker.csdoc>Action Invoker</link>. Files are displayed using a Chromium-based web browser (<link https://developer.microsoft.com/en-us/microsoft-edge/webview2>Edge WebView2</link> on Windows; <link https://developer.android.com/reference/android/webkit/WebView>WebView</link> on Android).

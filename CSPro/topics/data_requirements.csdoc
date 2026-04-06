@@ -1,4 +1,4 @@
-﻿<title>Data Requirements</title>
+<title>Data Requirements</title>
 
 Data files appear in many different formats and structures. CSPro can work with several types of <link data_sources.csdoc>data sources</link>, but most people work with <link data_source_csdb.csdoc>CSPro DB</link> or <link data_source_text.csdoc>Text</link> files. If you are using data files created by another software package, you must save the data in a separate text file before you can use it with CSPro. Data files are limited to 2 gigabytes in overall size; the maximum length of any record in the file is 32,000 characters. CSPro encodes data files using UTF-8. Read more about Unicode text files at the <link unicode_primer.csdoc>Unicode Primer</link>.
 

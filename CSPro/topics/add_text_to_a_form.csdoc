@@ -1,4 +1,4 @@
-﻿<title>Add Text to a Form</title>
+<title>Add Text to a Form</title>
 
 When you <link add_fields_to_a_form.csdoc>add a field</link> to a form by dragging it from the dictionary tree, the dictionary item's label is automatically placed on the form. You may also add other text to the form (a heading across the top, for example) by doing the following:
 

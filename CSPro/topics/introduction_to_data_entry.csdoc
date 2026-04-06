@@ -1,4 +1,4 @@
-﻿<title>Introduction to Data Entry</title>
+<title>Introduction to Data Entry</title>
 <context IDR_FORM_FRAME />
 
 The Data Entry module allows you to create, using a single dictionary, one or more <link introduction_to_forms_design.csdoc>forms</link> (screens) for data entry. You may also specify the data entry behavior and incorporate <link create_and_edit_logic.csdoc>logic</link> in a program to check for consistency between variables and to set up skip patterns. After you have developed the forms and the program to your satisfaction, use <link CSEntry::introduction_to_data_entry.csdoc>CSEntry</link> to input the data.

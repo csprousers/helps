@@ -1,4 +1,4 @@
-﻿<title>Change the Print Page Setup</title>
+<title>Change the Print Page Setup</title>
 <context IDD_PAGE_SETUP ID_FILE_PAGE_SETUP ID_FILE_PRINT_SETUP />
 
 <subheader>To change the page headers, footers, or margins ...</subheader>

@@ -1,4 +1,4 @@
-﻿<title>Issues to Consider When Designing a Form</title>
+<title>Issues to Consider When Designing a Form</title>
 
 If you plan to key data from paper questionnaires you generally try to make the forms (screens) match the paper questionnaire layout&mdash;however if you will be capturing data using CAPI, the layout is less important. Whichever mode of entry is used, the following rules regarding what can be dropped on a form will apply.
 

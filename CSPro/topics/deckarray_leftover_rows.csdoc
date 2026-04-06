@@ -1,4 +1,4 @@
-﻿<title>DeckArray Leftover Rows</title>
+<title>DeckArray Leftover Rows</title>
 
 When using unedited variables as parameters of your <topic deckarrays.csdoc />, it may be useful to include a "leftover" (spillover) row for cases in which the variable is not valid. This functionality allows the user to simulate the use of many hot decks using a single array. An example will best explain this functionality.
 

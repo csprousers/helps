@@ -1,4 +1,4 @@
-﻿<title>Subitems</title>
+<title>Subitems</title>
 
 Subitems allow <link item_description.csdoc>items</link> to be broken up into smaller pieces, or across broad categories. In this respect, they let you redefine data items and refer to the same data field in several different ways. The start position of a subitem must be within its parent item.
 

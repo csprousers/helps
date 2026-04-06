@@ -1,4 +1,4 @@
-﻿<title>Run Index Data in Production Mode</title>
+<title>Run Index Data in Production Mode</title>
 
 To create one or more indices in production mode, you can customize the behavior of Index Data by creating a PFF file.
 

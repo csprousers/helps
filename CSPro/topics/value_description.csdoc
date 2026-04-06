@@ -1,4 +1,4 @@
-﻿<title>Value Description</title>
+<title>Value Description</title>
 
 A <link value_sets_description.csdoc>value set</link> contains one or more <b>values</b>. A value can represent a single response, or a range of responses, as shown below (note that the final two value columns, 'Special' and 'Image', are not depicted):
 

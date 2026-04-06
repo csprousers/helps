@@ -1,4 +1,4 @@
-﻿<title>Order of Executing Data Entry Events</title>
+<title>Order of Executing Data Entry Events</title>
 
 An "event" is a unit of logic associated with an element of the edit tree, such as a form, a field, etc. The order in which events are executed during data entry is dependent on two factors:
 

@@ -1,4 +1,4 @@
-﻿<title>Identification Items</title>
+<title>Identification Items</title>
 
 Identification items (also referred to as <b>ID items</b>) are those data items that uniquely identify the questionnaire/case. ID items usually include administrative geography that defines where the data collection took place, such as Province, District, or Enumeration Area. It also often includes other unique identifiers such as Survey ID, Facility ID, or Household Number.  ID items define the hierarchichy for the  <link level_description.csdoc>dictionary level</link> in which it was defined and any lower dictionary levels defined below it.
 

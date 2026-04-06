@@ -1,4 +1,4 @@
-﻿<title>Application Action Invoker Namespace</title>
+<title>Application Action Invoker Namespace</title>
 
 The <action>Application</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to interact with <link data_entry_application_file_ent.csdoc>applications</link> and their components.
 

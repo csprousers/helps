@@ -1,4 +1,4 @@
-﻿<title>Refused Value</title>
+<title>Refused Value</title>
 
 The value <logiccolor>refused</logiccolor> is a <link refused_value.csdoc>special value</link> that has been <link add_or_modify_value_sets.csdoc>defined in the value set</link> and is treated in several special ways by CSPro and CSEntry.
 

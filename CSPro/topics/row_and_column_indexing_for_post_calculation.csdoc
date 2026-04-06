@@ -1,4 +1,4 @@
-﻿<title>Row and Column Indexing for Post Calculation</title>
+<title>Row and Column Indexing for Post Calculation</title>
 
 When determining the indices to use for particular rows and columns, always remember that the first row or column is at index zero and that caption rows (rows with no data) should be skipped. Also note that hidden data rows and columns should be counted even if they are not visible in the table. Always make sure that view hidden parts is turned on when determining row and column indices.
 

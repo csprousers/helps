@@ -1,4 +1,4 @@
-﻿<title>Compile Logic / An Application</title>
+<title>Compile Logic / An Application</title>
 
 Before CSPro can execute your program, it needs to check for errors in the logic. Errors include such problems as misspelling a command, not using proper command syntax, and putting logic in the wrong place. Warnings can also appear during compilation, and often occur from the use of <link deprecated_features.csdoc>deprecated features</link>.
 

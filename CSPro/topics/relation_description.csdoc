@@ -1,4 +1,4 @@
-﻿<title>Relation Description</title>
+<title>Relation Description</title>
 
 Relations provide a way of linking one multiple record or item to one or more multiple records or items. For example, suppose a questionnaire contains two record types, child records and mother records. Each child record contains a data item that gives the sequence number of the mother record of the child's mother. A relation can be defined which links child records to mother records so that when data items from a child record are processes, the corresponding mother record data items are available for processing. Relations work much like database joins.
 

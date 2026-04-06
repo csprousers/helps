@@ -1,4 +1,4 @@
-﻿<title>Special Values</title>
+<title>Special Values</title>
 
 There are four special values in the CSPro language: <logiccolor>missing</logiccolor>, <logiccolor>refused</logiccolor>, <logiccolor>notappl</logiccolor>, and <logiccolor>default</logiccolor>. A particular value of a data item can be mapped to one of these special values in the <link value_properties.csdoc>data dictionary</link>. They have the following meaning and uses:
 

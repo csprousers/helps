@@ -1,4 +1,4 @@
-﻿<title>Organization of the Instrument</title>
+<title>Organization of the Instrument</title>
 
 CAPI entry applications are almost always created in system controlled mode. because they take advantage of CSPro's ability to use logic to determine the question order.
 

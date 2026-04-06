@@ -1,4 +1,4 @@
-﻿<title>Data Dictionary</title>
+<title>Data Dictionary</title>
 
 A data dictionary describes the overall organization of a data file; in other words, it gives a description of how data are stored in a file. CSPro requires that a data dictionary be created for each file that is structurally different (i.e., files that would require separate dictionaries to describe their layout). A data dictionary file uses the <b>.dcf</b> extension.
 

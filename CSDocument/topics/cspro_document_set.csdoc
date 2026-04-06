@@ -1,4 +1,4 @@
-﻿<title>CSPro Document Set</title>
+<title>CSPro Document Set</title>
 <context ID_FILE_NEW_DOCUMENT_SET />
 
 A <b>CSPro Document Set</b> is a wrapper file that contains one or more <link cspro_document.csdoc>CSPro Documents</link>. The file has the extension <b>.csdocset</b>.

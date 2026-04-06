@@ -1,4 +1,4 @@
-﻿<title>Add Logs</title>
+<title>Add Logs</title>
 
 To add files to the list of paradata logs to concatenate, press the <b>Add</b> button or <b>Alt+A</b> and select logs you want to add to the list. You can do this several times to add files from different folders or disk or network drives. The added logs will be placed at the end of the file log.
 

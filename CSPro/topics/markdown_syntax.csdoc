@@ -1,4 +1,4 @@
-﻿<title>Markdown Syntax</title>
+<title>Markdown Syntax</title>
 
 
 <link "https://en.wikipedia.org/wiki/Markdown">Markdown</link> syntax is well-documented online, and useful guides exist that describe the <link "https://www.markdownguide.org/cheat-sheet/"> language</link> and the <link "https://commonmark.org/help/">CommonMark variant</link> that CSPro uses. The following table illustrates some of the most common elements that may be useful while using Markdown in CSPro:

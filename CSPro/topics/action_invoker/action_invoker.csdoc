@@ -1,4 +1,4 @@
-﻿<title>Action Invoker Overview</title>
+<title>Action Invoker Overview</title>
 
 
 The Action Invoker is a system that executes routines, called "actions," in a standard way across a variety of environments. Similar to <link logic_alphabetical_list.csdoc>CSPro logic functions</link>, each action takes some number of arguments, required and optional, and generally returns a result.

@@ -1,4 +1,4 @@
-﻿<title>Update a Deployed Application on a Mobile Device</title>
+<title>Update a Deployed Application on a Mobile Device</title>
 
 Once an application has been installed on a mobile device, you may need to make changes to the application and deploy the updated version of the application package to devices in the field. For example, if during fieldwork you discover a bug in your program or you need to add additional questions, you must update the applications already installed on mobile devices. To do this, first upload the modified application to the server and then on the mobile device, select <b>Update Installed Applications</b> to download the updated package.
 

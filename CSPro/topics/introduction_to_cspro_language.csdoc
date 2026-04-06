@@ -1,4 +1,4 @@
-﻿<title>Introduction to CSPro Language</title>
+<title>Introduction to CSPro Language</title>
 <context ID_LOGIC_FORMAT />
 
 The CSPro language lets you write programming logic for your CSPro applications. For example, in data entry applications you can write logic to control and check the keying or CAPI operation as it progresses; in batch edit applications you can write logic to identify and correct errors after data collection is complete.

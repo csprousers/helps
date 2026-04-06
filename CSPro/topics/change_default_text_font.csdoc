@@ -1,4 +1,4 @@
-﻿<title>Change Default Text Font</title>
+<title>Change Default Text Font</title>
 <context IDD_GLOBALFONTDLG ID_GLOBALFONT />
 
 The default text font is what CSPro will use whenever you add new text to any form. From the <b>Options</b> menu, select <b>Default Text Font</b>.

@@ -1,4 +1,4 @@
-﻿<title>Batch Edit Applications</title>
+<title>Batch Edit Applications</title>
 
 A batch edit application contains logic that you can apply against one set of files to produce another set of files and reports. Batch editing applications can be used to gather information about a data file. You can incorporate the following run time features in your batch editing application:
 

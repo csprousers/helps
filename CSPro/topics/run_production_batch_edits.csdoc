@@ -1,4 +1,4 @@
-﻿<title>Run Production Batch Edits</title>
+<title>Run Production Batch Edits</title>
 
 You can customize CSBatch's behavior by creating a <link program_information_file_pff.csdoc>PFF file</link>. You can then use the PFF file as a command line parameter for CSBatch.exe. For example, if you name your PFF file MyEdits.pff, then you run the batch edit application by invoking:
 

@@ -1,4 +1,4 @@
-﻿<subheader>Viewer Arguments</subheader>
+<subheader>Viewer Arguments</subheader>
 
 Optional <link function_named_arguments.csdoc>named arguments</link> can be used to control how the embedded web browser displays on Windows:
 

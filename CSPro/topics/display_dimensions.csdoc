@@ -1,4 +1,4 @@
-﻿<title>Display Dimensions</title>
+<title>Display Dimensions</title>
 
 When working with "maximum display" width and height figures in CSPro, values are returned that may not correspond exactly to the pixels of the display:
 

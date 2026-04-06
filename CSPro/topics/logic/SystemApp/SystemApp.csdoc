@@ -1,4 +1,4 @@
-﻿<title>SystemApp Object</title>
+<title>SystemApp Object</title>
 
 In logic, a <logiccolor>SystemApp</logiccolor> is an object that contains information about the parameters to be used when calling a system application. A system application is an application that is loaded on a device and is generally not part of the CSPro suite of applications and tools. On Android, the SystemApp object also stores any information that resulted from the running of the system application.
 
