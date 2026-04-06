@@ -1,9 +1,8 @@
-
 ## CSPro Help Documentation
 
-This repository contains the help documentation distributed with CSPro, which can be [viewed online](https://www.csprousers.org/help/CSPro).
+This repository contains the help documentation distributed with CSPro, which can be [viewed online](https://csprousers.org/help/).
 
-The materials are authored in [CSDocument](https://www.csprousers.org/help/CSDocument/introduction.html), a tool distributed with CSPro 8.0+.
+The materials are authored in [CSDocument](https://csprousers.org/help/CSDocument/), a tool distributed with CSPro 8.0+.
 
 
 ## Contributing
