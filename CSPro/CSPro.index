@@ -642,6 +642,7 @@
       { "path": "Image_captureSignature_function.csdoc", "~title": "Image.captureSignature Function" }
     ]
   },
+  { "path": "text_attributes.csdoc", "title": "Carriage Return" },
   { "path": "errmsg_function.csdoc", "title": "Case",
     "subindex": [
       { "path": "errmsg_function.csdoc", "~title": "ErrMsg Function" },
@@ -2429,7 +2430,7 @@
     ]
   },
   { "path": "issues_to_consider_when_designing_a_form.csdoc", "title": "Levels and Cases" },
-  { "path": "string_literals.csdoc", "title": "Line Feed" },
+  { "path": "text_attributes.csdoc", "title": "Line Feed" },
   { "path": "add_lines_or_boxes_to_a_form.csdoc", "title": "Lines",
     "subindex": [
       { "path": "add_lines_or_boxes_to_a_form.csdoc", "title": "Adding to a Form" },
@@ -2815,7 +2816,11 @@
   { "path": "navigating_between_pages_tables_and_areas.csdoc", "title": "Navigating Between Pages  Tables  and Areas" },
   { "path": "network_data_entry.csdoc", "~title": "Network Data Entry" },
   { "path": "what_is_new_in_cspro.csdoc", "title": "New Features" },
-  { "path": "newline_handling.csdoc", "~title": "Newline Handling" },
+  { "path": "newline_handling.csdoc", "~title": "Newline Handling",
+    "subindex": [
+      { "path": "text_attributes.csdoc", "~title": "Text Attributes" }
+    ]
+  },
   { "path": "skip_statement.csdoc", "title": "Next",
     "subindex": [
       { "path": "skip_statement.csdoc", "~title": "Skip Statement" },
@@ -4223,6 +4228,7 @@
       { "path": "tool_list.csdoc", "title": "Viewer" }
     ]
   },
+  { "path": "text_attributes.csdoc", "~title": "Text Attributes" },
   { "path": "text_box.csdoc", "~title": "Text Box" },
   { "path": "data_source_text.csdoc", "~title": "Text Data Source" },
   { "path": "tool_list.csdoc", "title": "Text Encoding Converter" },
