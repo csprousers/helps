@@ -33,4 +33,3 @@ If you have any multiple records, items, or subitems in the data dictionary, you
 A <link dictionary_hierarchy.csdoc>case</link> is the primary unit of data in the data file. A case usually corresponds to a questionnaire, although some complex applications may have a hierarchical set of questionnaires that comprise a single case. For example, the main questionnaire may consist of a household roster and other household information, and there may also be a separate questionnaire for each woman in the household.
 
 The data entry application may then contain two <link dictionary_hierarchy.csdoc>levels</link>&mdash;one for the household and one for each woman in the household. The set of forms corresponding to the household make up level one. The set of forms corresponding to each woman make up level two. Each case would consist of a level one and a variable number of level occurrences for level two. Most applications consist of a single level.
-

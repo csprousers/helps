@@ -16,9 +16,9 @@ For example:
 
 <color JSON>
 {
-  "software": "CSPro", 
-  "version": <definition CSPro::version />, 
-  "fileType": "dictionary", 
+  "software": "CSPro",
+  "version": <definition CSPro::version />,
+  "fileType": "dictionary",
   "editable": false
 }
 </color>

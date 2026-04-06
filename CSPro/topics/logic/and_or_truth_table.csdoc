@@ -10,7 +10,7 @@ The truth table summarizes all possible evaluations when two expressions (X and 
 	<cell><b>true</b></cell><cell>true</cell><cell>false</cell>
 	<cell><b>false</b></cell><cell>false</cell><cell>false</cell>
 </table>
- 
+
 <subheader>or (X or Y)</subheader>
 
 <table 3 center>

@@ -60,4 +60,3 @@ string manualText = CS.File.readText(path := "manual.txt");
 
 
 <seealso variables.csdoc />
-

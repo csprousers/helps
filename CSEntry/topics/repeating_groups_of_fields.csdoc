@@ -4,7 +4,7 @@ A multiple group is a set of fields that repeats more than once. There are two k
 
 <subheader>Rosters</subheader>
 
-<center><image roster_example.png /></center> 
+<center><image roster_example.png /></center>
 
 The default roster orientation is horizontal, which will show individual fields across the column headings. Each row of the roster therefore corresponds to an occurrence of this group. The group repeats as many times as there are lines. In the example above, the group contains four fields and three occurrences.
 

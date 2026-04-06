@@ -52,4 +52,3 @@ The server URL is not correct. The host portion of the URL is probably correct b
 <subheader>Issues with CURL library when using IIS</subheader>
 
 If you run into issues with the CURL library while using IIS a workaround is to disable the curl extension in php.ini and enable allow_url_fopen.
-
