@@ -26,7 +26,7 @@ To send a message to the trace log, simply pass a string to the <logiccolor>trac
 
 <logic>
 if distance > 100 then
-	trace("distance (%d) > 100!",distance);
+    trace("distance (%d) > 100!",distance);
 endif;
 </logic>
 
@@ -70,11 +70,11 @@ set trace;
 numeric value = 10;
 
 if value > 10 then
-	errmsg("A");
+    errmsg("A");
 elseif value < 10 then
-	errmsg("B");
+    errmsg("B");
 else
-	errmsg("C");
+    errmsg("C");
 endif;
 
 errmsg("This statement will appear on the trace window");

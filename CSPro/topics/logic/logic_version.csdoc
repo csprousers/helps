@@ -42,7 +42,7 @@ In addition to escape sequences, with logic version CSPro 8.0+, you can use <lin
 <subheader>Additional Differences</subheader>
 
 <list>
-	<li>The <logiccolor>hash</logiccolor> function returns the hash value in uppercase when using the original logic version, but in lowercase with logic version CSPro 8.0+.</li>
+    <li>The <logiccolor>hash</logiccolor> function returns the hash value in uppercase when using the original logic version, but in lowercase with logic version CSPro 8.0+.</li>
 </list>
 
 

@@ -30,7 +30,7 @@ Pff this_application_pff;
 this_application_pff.load(CENSUS_FF);
 
 if this_application_pff.getProperty("ViewListing") <> "Never" then
-	view("Disability Statistics.csv");
+    view("Disability Statistics.csv");
 endif;
 </logic>
 

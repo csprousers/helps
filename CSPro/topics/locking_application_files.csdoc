@@ -3,11 +3,11 @@
 If distributing a CSPro application to users, one simple, though not rigorous, way of preventing the users from modifying the applications from within the CSPro Designer is to manually edit a specification file to add a property signaling that the file should not be edited. The files that support this functionality include:
 
 <list>
-	<li><link data_entry_application_file_ent.csdoc>.ent</link></li>
-	<li><link batch_edit_application_file_bch.csdoc>.bch</link></li>
-	<li><link tabulation_application_file_xtb.csdoc>.xtb</link></li>
-	<li><link data_dictionary_file_dcf.csdoc>.dcf</link></li>
-	<li><link forms_file_fmf.csdoc>.fmf</link></li>
+    <li><link data_entry_application_file_ent.csdoc>.ent</link></li>
+    <li><link batch_edit_application_file_bch.csdoc>.bch</link></li>
+    <li><link tabulation_application_file_xtb.csdoc>.xtb</link></li>
+    <li><link data_dictionary_file_dcf.csdoc>.dcf</link></li>
+    <li><link forms_file_fmf.csdoc>.fmf</link></li>
 </list>
 
 For <link JSON_specification_files.csdoc>JSON specification files</link>, set the "editable" property to false. For non-JSON specification files, add the command "[NoEdit]" at the top of the file.

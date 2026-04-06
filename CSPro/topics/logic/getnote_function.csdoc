@@ -20,8 +20,8 @@ The function returns a string containing the note text. If there is no note, the
 string caseInformation = getcaselabel(CENSUS_DICT);
 
 if length(getnote(CENSUS_DICT)) > 0 then
-	// add the case note to the case label for a full description of the case
-	caseInformation = caseInformation + " - " + getnote(CENSUS_DICT);
+    // add the case note to the case label for a full description of the case
+    caseInformation = caseInformation + " - " + getnote(CENSUS_DICT);
 endif;
 </logic>
 

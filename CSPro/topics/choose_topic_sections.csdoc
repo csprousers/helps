@@ -9,37 +9,37 @@ Below is code for the onkey function to support using F9 to move to another sect
 <logic>
 function numeric OnKey(numeric keystroke)
 
-	if keystroke = 120 then // F9 to navigate among sections
+    if keystroke = 120 then // F9 to navigate among sections
 
-		numeric selection = accept( "What Section?",
-									"Section A",
-									"Section B",
-									"Section C",
-									"Section D",
-									"Section E");
+        numeric selection = accept( "What Section?",
+                                    "Section A",
+                                    "Section B",
+                                    "Section C",
+                                    "Section D",
+                                    "Section E");
 
-		if selection = 1 then // Section A
-			JumpField = "Q_A1";
-		elseif selection = 2 then // Section B
-			JumpField = "Q_B1";
-		elseif selection = 3 then // Section C
-			JumpField = "Q_C1";
-		elseif selection = 4 then // Section D
-			JumpField = "Q_D1";
-		elseif selection = 5 then // Section E
-			JumpField = "Q_E1";
-		else // Escape
-			OnKey = 0;
-			exit;
-		endif;
+        if selection = 1 then // Section A
+            JumpField = "Q_A1";
+        elseif selection = 2 then // Section B
+            JumpField = "Q_B1";
+        elseif selection = 3 then // Section C
+            JumpField = "Q_C1";
+        elseif selection = 4 then // Section D
+            JumpField = "Q_D1";
+        elseif selection = 5 then // Section E
+            JumpField = "Q_E1";
+        else // Escape
+            OnKey = 0;
+            exit;
+        endif;
 
-		JumpFlag = 1;
-		move to NAVIGATE;
+        JumpFlag = 1;
+        move to NAVIGATE;
 
-	else
-		OnKey = keystroke;
+    else
+        OnKey = keystroke;
 
-	endif;
+    endif;
 
 end;
 
@@ -48,12 +48,12 @@ PROC NAVIGATE
 
 onfocus
 
-	$ = "Z"; // need to have a value in the field
+    $ = "Z"; // need to have a value in the field
 
 postproc
 
-	if JumpFlag = 1 then
-		JumpFlag = 0;
-		move to JumpField;
-	endif;
+    if JumpFlag = 1 then
+        JumpFlag = 0;
+        move to JumpField;
+    endif;
 </logic>

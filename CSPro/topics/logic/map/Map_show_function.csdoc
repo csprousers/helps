@@ -28,7 +28,7 @@ PROC GLOBAL
 // User function that will be called on button click
 // to close the map
 function closeMap(Map m)
-	m.hide();
+    m.hide();
 end;
 
 PROC SOMEITEM

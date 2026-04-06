@@ -4,7 +4,7 @@
 
 <logicsyntax>
 while <arg>condition</arg> do
-	// statements
+    // statements
 enddo;
 </logicsyntax>
 
@@ -22,7 +22,7 @@ setfile(inputFile, "Countries.txt");
 string countriesLine;
 
 while fileread(inputFile, countriesLine) do
-	// ...
+    // ...
 enddo;
 </logic>
 

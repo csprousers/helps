@@ -25,15 +25,15 @@ PROC GLOBAL
 
 function editOutline(Map m, Geometry outline)
     // Remove existing outline
-	m.clearGeometry();
+    m.clearGeometry();
 
-	// Edit the outline
-	if outline.tracePolygon(m) then
-		outline.save("outline.geojson");
-	endif;
+    // Edit the outline
+    if outline.tracePolygon(m) then
+        outline.save("outline.geojson");
+    endif;
 
-	// Add modified outline to the map
-	m.addGeometry(outline);
+    // Add modified outline to the map
+    m.addGeometry(outline);
 end;
 
 PROC MAP_OUTLINE

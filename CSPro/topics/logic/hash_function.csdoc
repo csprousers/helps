@@ -32,8 +32,8 @@ The function returns a hash value represented as a hexadecimal string. When usin
 string userPassword = prompt("Enter your password", password);
 
 if hash(userPassword) <> strip(USER_PASSWORD_HASH) then
-	errmsg("Invalid password. You cannot access this system.");
-	stop(1);
+    errmsg("Invalid password. You cannot access this system.");
+    stop(1);
 endif;
 </logic>
 

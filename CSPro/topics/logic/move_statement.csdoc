@@ -17,18 +17,18 @@ Movement to a field before the current field acts exactly like a <logiccolor>ree
 <logic>
 function numeric OnKey(numeric keystroke)
 
-	if keystroke = 2070 then // Ctrl+F
-		// move to the first person
-		move to NAME(1) advance;
+    if keystroke = 2070 then // Ctrl+F
+        // move to the first person
+        move to NAME(1) advance;
 
-	elseif keystroke = 2076 then // Ctrl+L
-		// move to the last person
-		move to NAME(totocc(PERSON_REC000)) advance;
+    elseif keystroke = 2076 then // Ctrl+L
+        // move to the last person
+        move to NAME(totocc(PERSON_REC000)) advance;
 
-	else
-		OnKey = keystroke;
+    else
+        OnKey = keystroke;
 
-	endif;
+    endif;
 
 end;
 </logic>

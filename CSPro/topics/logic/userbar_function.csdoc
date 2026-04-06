@@ -20,7 +20,7 @@
  Userbar Commands</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace; margin-left: 0px;">b
  = <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">show</span> | <span style="font-weight: bold;">hide</span>
+     style="font-weight: bold;">show</span> | <span style="font-weight: bold;">hide</span>
  | <span style="font-weight: bold;">clear</span>);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;"><span style="font-weight: bold;">Show</span>
  adds a userbar to the application, or if one has been added and is hidden,
@@ -36,7 +36,7 @@
  Items to the Userbar</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">i =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">add text</span> | <span style="font-weight: bold;">button</span>
+     style="font-weight: bold;">add text</span> | <span style="font-weight: bold;">button</span>
  | <span style="font-weight: bold;">field</span> | <span style="font-weight: bold;">spacing</span>,[...]);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">All of the
  add commands, detailed below, return a resource identifier, an integer
@@ -49,7 +49,7 @@
  Text to the Userbar</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">i =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">add text</span>,<span style="font-style: italic;">alpha-expression)</span>;</p>
+     style="font-weight: bold;">add text</span>,<span style="font-style: italic;">alpha-expression)</span>;</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">The <span style="font-style: italic;">alpha-expression</span>
  is a string of text that will be displayed on the userbar. The color of
  the text can be modified using the set color command.</p>
@@ -57,8 +57,8 @@
  Buttons to the Userbar</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">i =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">add button</span>,<span style="font-style: italic;">alpha-expression</span>[,<span
-	 style="font-style: italic;">function-name</span>]);</p>
+     style="font-weight: bold;">add button</span>,<span style="font-style: italic;">alpha-expression</span>[,<span
+     style="font-style: italic;">function-name</span>]);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">The button
  text comes from the <span style="font-style: italic;">alpha-expression</span>.
  An optional argument specifies a function that is to be called when the
@@ -69,8 +69,8 @@
  options available on the CSEntry menu) can be specified using the do command:</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">i =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">add button</span>,<span style="font-style: italic;">alpha-expression</span>,<span
-	 style="font-weight: bold;">do</span>(<span style="font-style: italic;">alpha-expression</span>));</p>
+     style="font-weight: bold;">add button</span>,<span style="font-style: italic;">alpha-expression</span>,<span
+     style="font-weight: bold;">do</span>(<span style="font-style: italic;">alpha-expression</span>));</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">The <span style="font-style: italic;">alpha-expression</span>
  within the <span style="font-weight: bold;">do</span> command can be one
  of the following values:</p>
@@ -87,8 +87,8 @@
  Fields to the Userbar</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">i =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">add field</span>,<span style="font-style: italic;">alpha-expression</span>[,<span
-	 style="font-style: italic;">function-name</span>]);</p>
+     style="font-weight: bold;">add field</span>,<span style="font-style: italic;">alpha-expression</span>[,<span
+     style="font-style: italic;">function-name</span>]);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">The field's
  initial text comes from the <span style="font-style: italic;">alpha-expression</span>.
  As with adding buttons, an optional argument specifies a function that
@@ -100,7 +100,7 @@
  Spacing to the Userbar</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">i =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">add spacing</span><span style="font-style: italic;">,numeric-expression</span>);</p>
+     style="font-weight: bold;">add spacing</span><span style="font-style: italic;">,numeric-expression</span>);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">If you want
  to space out the items on the userbar, specify in <span style="font-style: italic;">numeric-expression</span>
  the number of pixels to leave blank between the last-to-be and next-to-be
@@ -109,45 +109,45 @@
  Items on the Userbar</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">b =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">modify</span>,r<span style="font-style: italic;">esource-identifier</span>,<span
-	 style="font-style: italic;">alpha-expression</span>); <span style="color: #008000;">//
+     style="font-weight: bold;">modify</span>,r<span style="font-style: italic;">esource-identifier</span>,<span
+     style="font-style: italic;">alpha-expression</span>); <span style="color: #008000;">//
  for text, buttons, and fields<br />
 </span><span style="font-size: 10pt; font-family: 'Courier New', monospace;">b
  =</span> <span style="font-size: 10pt; font-family: 'Courier New', monospace;
-				 font-weight: bold; color: #0000ff;">userbar</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">(</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-weight: bold;">modify</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">resource-identifier</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">function-name</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">);</span>
+                 font-weight: bold; color: #0000ff;">userbar</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">(</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-weight: bold;">modify</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">resource-identifier</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">function-name</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">);</span>
  <span style="font-size: 10pt; font-family: 'Courier New', monospace; color: #008000;">//
  for buttons and fields<br />
 </span><span style="font-size: 10pt; font-family: 'Courier New', monospace;">b
  =</span> <span style="font-size: 10pt; font-family: 'Courier New', monospace;
-				 font-weight: bold; color: #0000ff;">userbar</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">(</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-weight: bold;">modify</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">resource-identifier</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">alpha-expression</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">function-name</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">);</span>
+                 font-weight: bold; color: #0000ff;">userbar</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">(</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-weight: bold;">modify</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">resource-identifier</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">alpha-expression</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">function-name</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">);</span>
  <span style="font-size: 10pt; font-family: 'Courier New', monospace; color: #008000;">//
  for buttons and fields<br />
 </span><span style="font-size: 10pt; font-family: 'Courier New', monospace;">b
  =</span> <span style="font-size: 10pt; font-family: 'Courier New', monospace;
-				 font-weight: bold; color: #0000ff;">userbar</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">(</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-weight: bold;">modify</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">resource-identifier</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">numeric-expression</span><span
-	 style="font-size: 10pt; font-family: 'Courier New', monospace;">);</span>
+                 font-weight: bold; color: #0000ff;">userbar</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">(</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-weight: bold;">modify</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">resource-identifier</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">,</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace; font-style: italic;">numeric-expression</span><span
+     style="font-size: 10pt; font-family: 'Courier New', monospace;">);</span>
  <span style="font-size: 10pt; font-family: 'Courier New', monospace; color: #008000;">//
  for spacing</span></p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">To modify an
@@ -159,7 +159,7 @@
  Items from the Userbar</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">b =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">remove</span>,<span style="font-style: italic;">resource-identifier</span>);</p>
+     style="font-weight: bold;">remove</span>,<span style="font-style: italic;">resource-identifier</span>);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">The remove
  command takes the item pointed to by the resource identifier off the userbar.
  The function returns 1 if successful, 0 otherwise.</p>
@@ -167,9 +167,9 @@
  the Color of Items</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">b =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">set color</span>[<span style="font-style: italic;">,resource-identifier</span>],<span
-	 style="font-style: italic;">red-value</span>,<span style="font-style: italic;">green-value</span>,<span
-	 style="font-style: italic;">blue-value</span>);</p>
+     style="font-weight: bold;">set color</span>[<span style="font-style: italic;">,resource-identifier</span>],<span
+     style="font-style: italic;">red-value</span>,<span style="font-style: italic;">green-value</span>,<span
+     style="font-style: italic;">blue-value</span>);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">The background
  color of the userbar is changed by specifying the RGB (0 to 255) values
  of the desired color. Alternatively, if a resource identifier of a text
@@ -179,7 +179,7 @@
  the Source of an Action</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">i =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">get</span>);</p>
+     style="font-weight: bold;">get</span>);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">The get command
  returns the resource identifier of the last clicked button or the last
  userbar field in which data was entered. If no event has occurred, the
@@ -188,20 +188,20 @@
  the Contents of a Field</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;">b =
  <span style="font-weight: bold; color: #0000ff;">userbar</span>(<span
-	 style="font-weight: bold;">get</span>,r<span style="font-style: italic;">esource-identifier</span>,<span
-	 style="font-style: italic;">alpha-variable</span>);</p>
+     style="font-weight: bold;">get</span>,r<span style="font-style: italic;">esource-identifier</span>,<span
+     style="font-style: italic;">alpha-variable</span>);</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">In this format,
  the get command returns the contents of a userbar field identified by
  the resource identifier. <span style="font-style: italic;">Alpha-variable</span>
  must be an alphanumeric variable declared in the PROC GLOBAL section of
  the code. The function returns 1 if successful, 0 otherwise.</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;"><span
-	 style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;">Userbar
+     style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;">Userbar
  on Windows</span></p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">Newline characters
  added as part of text, button text, or field text, are <a href="newline_handling.html">converted</a> to space characters.</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;"><span
-	 style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;">Userbar
+     style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;">Userbar
  on Mobile Devices</span></p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif;">The userbar
  shows up as an icon to the left of the field note icon. Only buttons are
@@ -210,7 +210,7 @@
  the do(...) command, will also be ignored.</p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;">Example</p>
 <p style="font-size: 10pt; font-family: 'Courier New', monospace;"><font
-	 color="#000000"><font color="#0000FF">PROC</font> <font color="#0000FF">GLOBAL</font><br />
+     color="#000000"><font color="#0000FF">PROC</font> <font color="#0000FF">GLOBAL</font><br />
 <br />
 <font color="#0000FF">numeric</font> ADD_OP = <font color="#FF0000">1</font>,
  SUBTRACT_OP = <font color="#FF0000">2</font>, MULT_OP = <font color="#FF0000">3</font>,
@@ -237,21 +237,21 @@
  leftOperator = <font color="#FF00FF">&quot;&quot;</font> <font color="#0000FF">or</font>
  rightOperator = <font color="#FF00FF">&quot;&quot;</font> <font color="#0000FF">then</font><br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">modify</font>,resultsRID,<font color="#FF00FF">&quot;The
+     color="#0000FF">modify</font>,resultsRID,<font color="#FF00FF">&quot;The
  supplied values are invalid!&quot;</font>);<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">set</font> color,<font color="#FF0000">255</font>,<font
-	 color="#FF0000">0</font>,<font color="#FF0000">0</font>);<br />
+     color="#0000FF">set</font> color,<font color="#FF0000">255</font>,<font
+     color="#FF0000">0</font>,<font color="#FF0000">0</font>);<br />
 &#160;&#160;&#160;&#160;<br />
 &#160;&#160;&#160;&#160;<font color="#0000FF">elseif</font> rightNumber
  = <font color="#FF0000">0</font> <font color="#0000FF">and</font> operationType
  <font color="#0000FF">in</font> DIVIDE_OP,MOD_OP <font color="#0000FF">then</font><br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">modify</font>,resultsRID,<font color="#FF00FF">&quot;0
+     color="#0000FF">modify</font>,resultsRID,<font color="#FF00FF">&quot;0
  cannot be a denominator in a divide or modulo expression!&quot;</font>);<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">set</font> color,<font color="#FF0000">255</font>,<font
-	 color="#FF0000">0</font>,<font color="#FF0000">0</font>);&#160;<br />
+     color="#0000FF">set</font> color,<font color="#FF0000">255</font>,<font
+     color="#FF0000">0</font>,<font color="#FF0000">0</font>);&#160;<br />
 &#160;&#160;&#160;&#160;<br />
 &#160;&#160;&#160;&#160;<font color="#0000FF">else</font><br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000FF">numeric</font>
@@ -278,11 +278,11 @@
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000FF">endif</font>;<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">modify</font>,resultsRID,<font color="#0000FF">maketext</font>(<font
-	 color="#FF00FF">&quot;%0.2f %s %0.2f = %0.2f&quot;</font>,leftNumber,operatorTypeString,rightNumber,result));<br />
+     color="#0000FF">modify</font>,resultsRID,<font color="#0000FF">maketext</font>(<font
+     color="#FF00FF">&quot;%0.2f %s %0.2f = %0.2f&quot;</font>,leftNumber,operatorTypeString,rightNumber,result));<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">set</font> color,<font color="#FF0000">0</font>,<font
-	 color="#FF0000">255</font>,<font color="#FF0000">0</font>);&#160;&#160;&#160;&#160;&#160;<br />
+     color="#0000FF">set</font> color,<font color="#FF0000">0</font>,<font
+     color="#FF0000">255</font>,<font color="#FF0000">0</font>);&#160;&#160;&#160;&#160;&#160;<br />
 &#160;&#160;&#160;&#160;<br />
 &#160;&#160;&#160;&#160;<font color="#0000FF">endif</font>;<br />
 <br />
@@ -297,9 +297,9 @@
 &#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font color="#0000FF">add</font>
  text,<font color="#FF00FF">&quot;Enter two values and select an operation:&quot;</font>);<br />
 &#160;&#160;&#160;&#160;leftOperatorRID = <font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">add</font> field,<font color="#FF00FF">&quot;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;</font>);<br />
+     color="#0000FF">add</font> field,<font color="#FF00FF">&quot;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;</font>);<br />
 &#160;&#160;&#160;&#160;rightOperatorRID = <font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">add</font> field,<font color="#FF00FF">&quot;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;</font>);<br />
+     color="#0000FF">add</font> field,<font color="#FF00FF">&quot;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;</font>);<br />
 &#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font color="#0000FF">add</font>
  button,<font color="#FF00FF">&quot;Addition&quot;</font>,performMathOperation(ADD_OP));<br />
 &#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font color="#0000FF">add</font>
@@ -315,14 +315,14 @@
 &#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font color="#0000FF">add</font>
  spacing,<font color="#FF0000">50</font>);<br />
 &#160;&#160;&#160;&#160;resultsRID = <font color="#0000FF">userbar</font>(<font
-	 color="#0000FF">add</font> text,<font color="#FF00FF">&quot;&#160;&quot;</font>);<br />
+     color="#0000FF">add</font> text,<font color="#FF00FF">&quot;&#160;&quot;</font>);<br />
 &#160;&#160;&#160;&#160;<font color="#0000FF">userbar</font>(<font color="#0000FF">show</font>);</font></p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;"><img
-	 src="userbar1.png" alt="" style="border: none;" border="0" /></p>
+     src="userbar1.png" alt="" style="border: none;" border="0" /></p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;"><img
-	 src="userbar2.png" alt="" style="border: none;" border="0" /></p>
+     src="userbar2.png" alt="" style="border: none;" border="0" /></p>
 <p style="font-size: 10pt; font-family: Arial, sans-serif; font-weight: bold;"><img
-	 src="userbar3.png" alt="" style="border: none;" border="0" /></p>
+     src="userbar3.png" alt="" style="border: none;" border="0" /></p>
 </body>
 </html>
 

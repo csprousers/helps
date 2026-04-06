@@ -25,10 +25,10 @@ PROC SEX
 
 onfocus
 
-	// change SEX from a radio button to a drop down box
-	if getcapturetype(SEX) = 1 then
-		setcapturetype(SEX,3);
-	endif;
+    // change SEX from a radio button to a drop down box
+    if getcapturetype(SEX) = 1 then
+        setcapturetype(SEX,3);
+    endif;
 </logic>
 
 <seealso setcapturetype_function.csdoc />

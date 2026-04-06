@@ -18,6 +18,6 @@ To restrict your table to heads of households who are economically active, your 
 <subheader>Tips</subheader>
 
 <list>
-	<li>You may enter several conditions using <logiccolor>and</logiccolor> / <logiccolor>or</logiccolor>.</li>
-	<li>You can add parentheses to modify the order of evaluation of the conditions.</li>
+    <li>You may enter several conditions using <logiccolor>and</logiccolor> / <logiccolor>or</logiccolor>.</li>
+    <li>You can add parentheses to modify the order of evaluation of the conditions.</li>
 </list>

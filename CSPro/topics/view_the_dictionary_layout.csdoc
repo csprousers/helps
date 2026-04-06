@@ -16,8 +16,8 @@ The layout shows you where, physically, each item in each record is located, how
 <image laysub.jpg /> denotes <topic sub_items.csdoc />
 
 <list>
-	<li>Click on the item on the layout window to move the cursor to the specific item in the dictionary window.</li>
-	<li>Single click on an item to move to the item's definition.</li>
-	<li>Double click on an item to show its value set(s).</li>
-	<li>Press Ctrl+L a second time to close the view.</li>
+    <li>Click on the item on the layout window to move the cursor to the specific item in the dictionary window.</li>
+    <li>Single click on an item to move to the item's definition.</li>
+    <li>Double click on an item to show its value set(s).</li>
+    <li>Press Ctrl+L a second time to close the view.</li>
 </list>

@@ -23,10 +23,10 @@ PROC MARITAL_STATUS
 
 preproc
 
-	if AGE < 12 then
-		MARITAL_STATUS = 1;
-		noinput;
-	endif;
+    if AGE < 12 then
+        MARITAL_STATUS = 1;
+        noinput;
+    endif;
 </logic>
 
 <seealso advance_statement.csdoc />

@@ -19,13 +19,13 @@ PROC CHRONIC_ILLNESS
 
 onfocus
 
-	if curocc() = 1 then
-		setvalueset(CHRONIC_ILLNESS,CHRONIC_ILLNESS_FIRST_VS);
+    if curocc() = 1 then
+        setvalueset(CHRONIC_ILLNESS,CHRONIC_ILLNESS_FIRST_VS);
 
-	else
-		setvalueset(CHRONIC_ILLNESS,CHRONIC_ILLNESS_SECOND_VS);
+    else
+        setvalueset(CHRONIC_ILLNESS,CHRONIC_ILLNESS_SECOND_VS);
 
-	endif;
+    endif;
 </logic>
 
 <seealso proc_statement.csdoc preproc_statement.csdoc onoccchange_statement.csdoc killfocus_statement.csdoc postproc_statement.csdoc order_of_executing_data_entry_events.csdoc order_of_executing_batch_edit_events.csdoc />

@@ -29,8 +29,8 @@ Geometry mygeometry;
 // Capture polygon
 if mygeometry.tracePolygon() then
 
-	// Compute the area of the captured polygon
-	AREA = mygeometry.area();
+    // Compute the area of the captured polygon
+    AREA = mygeometry.area();
 
 endif;
 </logic>

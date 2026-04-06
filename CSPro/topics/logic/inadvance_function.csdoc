@@ -18,7 +18,7 @@ A common requirement is to execute some logic only when <b>not</b> advancing. Fo
 warning("...");
 
 if not inadvance() then
-	errmsg("...");
+    errmsg("...");
 endif;
 </logic>
 
@@ -33,11 +33,11 @@ The function returns a logical value of 1 (<logiccolor>true</logiccolor>) if an 
 <logic>
 PROC SURVEY_CONFIRMATION
 
-	// always require the enumerator to confirm that the survey is complete
-	if inadvance() then
-		SURVEY_CONFIRMATION = notappl;
-		reenter;
-	endif;
+    // always require the enumerator to confirm that the survey is complete
+    if inadvance() then
+        SURVEY_CONFIRMATION = notappl;
+        reenter;
+    endif;
 </logic>
 
 

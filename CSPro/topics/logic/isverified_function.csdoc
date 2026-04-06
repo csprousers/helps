@@ -25,18 +25,18 @@ The function returns a logical value of 1 (true) if the case was verified and 0 
 <logic>
 PROC CASE_MENU
 
-	if CASE_MENU = 1 then // verify case
+    if CASE_MENU = 1 then // verify case
 
-		if isverified(SURVEY_DICT) then
-			errmsg("The case has already been verified.");
-			reenter;
+        if isverified(SURVEY_DICT) then
+            errmsg("The case has already been verified.");
+            reenter;
 
-		else
-			// ...
+        else
+            // ...
 
-		endif;
+        endif;
 
-	endif;
+    endif;
 </logic>
 
 

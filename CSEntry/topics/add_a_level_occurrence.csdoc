@@ -4,7 +4,7 @@
 This applies only to complex applications that have more than one level.
 
 <list ordered>
-	<li>Make sure you are not in <b>Add</b>, <b>Modify</b>, or <b>Verify</b> mode. You may need to stop (<b>Ctrl+S</b>) data entry first.</li>
-	<li>Select the case ID on the File Tree for the case into which you want to add level occurrence.</li>
-	<li>Press <b>Alt+A</b>; from the <b>Edit</b> menu, select <b>Add Level Occ</b>; or right click and select <b>Add Level Occ</b>.</li>
+    <li>Make sure you are not in <b>Add</b>, <b>Modify</b>, or <b>Verify</b> mode. You may need to stop (<b>Ctrl+S</b>) data entry first.</li>
+    <li>Select the case ID on the File Tree for the case into which you want to add level occurrence.</li>
+    <li>Press <b>Alt+A</b>; from the <b>Edit</b> menu, select <b>Add Level Occ</b>; or right click and select <b>Add Level Occ</b>.</li>
 </list>

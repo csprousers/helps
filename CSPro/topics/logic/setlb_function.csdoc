@@ -32,8 +32,8 @@ The function returns the lower bound of the CMC of an event.
 
 <logic>
 if CM12Y < 9997 then
-	ldoblc = setlb(CM12M, CM12Y, 0);
-	udoblc = setub(CM12M, CM12Y, 9999);
+    ldoblc = setlb(CM12M, CM12Y, 0);
+    udoblc = setub(CM12M, CM12Y, 9999);
 endif;
 </logic>
 

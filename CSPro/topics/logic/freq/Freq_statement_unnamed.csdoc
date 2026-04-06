@@ -42,12 +42,12 @@ Optional <link freq_formatting_options.csdoc>formatting options</link> allow you
 <logic>
 PROC QUEST
 
-	// create frequency tables for all numeric items in the
-	// HOUSING_REC record with the exception of H13_PERSONS
+    // create frequency tables for all numeric items in the
+    // HOUSING_REC record with the exception of H13_PERSONS
 
-	Freq
-	include(numeric, HOUSING_REC)
-	exclude(H13_PERSONS);
+    Freq
+    include(numeric, HOUSING_REC)
+    exclude(H13_PERSONS);
 </logic>
 
 
@@ -56,21 +56,21 @@ PROC QUEST
 <logic>
 PROC QUEST
 
-	// create frequency tables for the default selection of items in
-	// the PERSON_REC record, tallying only the first record occurrence
+    // create frequency tables for the default selection of items in
+    // the PERSON_REC record, tallying only the first record occurrence
 
-	// universe is used to make sure that we do not tally empty households
+    // universe is used to make sure that we do not tally empty households
 
-	// weight is 20 because we are creating frequencies on a 5% sample file
+    // weight is 20 because we are creating frequencies on a 5% sample file
 
-	// distinct means that the frequency tables will show all values,
-	// not combining values if the value sets have ranges (such as age 0-4)
+    // distinct means that the frequency tables will show all values,
+    // not combining values if the value sets have ranges (such as age 0-4)
 
-	Freq
-	include(PERSON_REC(1))
-	universe(totocc(PERSON_REC) > 0)
-	weight(20)
-	distinct;
+    Freq
+    include(PERSON_REC(1))
+    universe(totocc(PERSON_REC) > 0)
+    weight(20)
+    distinct;
 </logic>
 
 
@@ -79,11 +79,11 @@ PROC QUEST
 <logic>
 PROC QUEST
 
-	// create a frequency table for the item H15_ASSETS, which
-	// was collected using a checkbox with each value of length 2
+    // create a frequency table for the item H15_ASSETS, which
+    // was collected using a checkbox with each value of length 2
 
-	Freq(H15_ASSETS)
-	breakdown(2);
+    Freq(H15_ASSETS)
+    breakdown(2);
 </logic>
 
 

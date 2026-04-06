@@ -9,7 +9,7 @@ After you have developed forms to your satisfaction, use <link CSEntry::introduc
 This section contains the following information:
 
 <list>
-	<li><link add_a_form.csdoc>Add Things to a Form</link></li>
-	<li><link selecting_items.csdoc>Modify Things in a Form</link></li>
-	<li><link change_forms_file_properties.csdoc>Change Form Properties</link></li>
+    <li><link add_a_form.csdoc>Add Things to a Form</link></li>
+    <li><link selecting_items.csdoc>Modify Things in a Form</link></li>
+    <li><link change_forms_file_properties.csdoc>Change Form Properties</link></li>
 </list>

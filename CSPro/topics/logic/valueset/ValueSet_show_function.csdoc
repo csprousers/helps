@@ -24,7 +24,7 @@ The function returns the code (or index) of the item selected. If the selected v
 ValueSet respondent_query;
 
 do numeric counter = 1 while counter <= count(NAME)
-	respondent_query.add(NAME(counter), LINE_NUMBER(counter));
+    respondent_query.add(NAME(counter), LINE_NUMBER(counter));
 enddo;
 
 numeric respondent_line_number = respondent_query.show("Who in the household is responding to questions?");

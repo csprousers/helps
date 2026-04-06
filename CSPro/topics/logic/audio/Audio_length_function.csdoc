@@ -26,10 +26,10 @@ The function returns the duration in seconds (and fractional seconds) of the aud
 Audio recording;
 numeric seconds = recording.recordInteractive();
 if seconds > 0 then
-	recording.save("recording.m4a");
+    recording.save("recording.m4a");
 else
-	errmsg("No audio recorded. Please try again");
-	reenter;
+    errmsg("No audio recorded. Please try again");
+    reenter;
 endif;
 </logic>
 

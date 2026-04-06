@@ -27,8 +27,8 @@ Geometry outline;
 // Have the user walk the outline of a polygon
 if outline.walkPolygon() then
 
-	// Save the outline to a GeoJSON file
-	outline.save("outline.geojson");
+    // Save the outline to a GeoJSON file
+    outline.save("outline.geojson");
 
 endif;
 </logic>

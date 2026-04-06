@@ -20,9 +20,9 @@ The <logiccolor>compareNoCase</logiccolor> function <link string_comparisons.csd
 The function returns an integer value of:
 
 <table 2 nowrap>
-	<cell>-1</cell><cell>if <arg>string1</arg> would be listed alphabetically before <arg>string2.</arg></cell>
-	<cell>0</cell><cell>if the strings are identical.</cell>
-	<cell>1</cell><cell>if <arg>string1</arg> would be listed alphabetically after <arg>string2</arg>.</cell>
+    <cell>-1</cell><cell>if <arg>string1</arg> would be listed alphabetically before <arg>string2.</arg></cell>
+    <cell>0</cell><cell>if the strings are identical.</cell>
+    <cell>1</cell><cell>if <arg>string1</arg> would be listed alphabetically after <arg>string2</arg>.</cell>
 </table>
 
 
@@ -30,7 +30,7 @@ The function returns an integer value of:
 
 <logic>
 if compareNoCase(FAMILY_NAME, PREVIOUS_ROUND_FAMILY_NAME) = 0 then
-	// ...
+    // ...
 endif;
 </logic>
 

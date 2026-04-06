@@ -18,10 +18,10 @@ numeric ptrSpouse;
 
 for numeric ctr in PERSON do
 
-	if P02_REL = 2 then
-		ptrSpouse = ctr;
-		break;
-	endif;
+    if P02_REL = 2 then
+        ptrSpouse = ctr;
+        break;
+    endif;
 
 enddo;
 </logic>

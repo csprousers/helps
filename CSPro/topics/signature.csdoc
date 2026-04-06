@@ -6,8 +6,8 @@
 Passing the <logiccolor>signature</logiccolor> command to <logiccolor>execsystem</logiccolor> opens the signature widget on mobile devices (i.e., Android; it will have no effect on applications run under Windows). The signature UI includes two options:
 
 <list>
-	<li><b>Save</b>: Tap to save an image of the displayed signature.</li>
-	<li><b>Clear</b>: Tap to to clear the displayed signature.</li>
+    <li><b>Save</b>: Tap to save an image of the displayed signature.</li>
+    <li><b>Clear</b>: Tap to to clear the displayed signature.</li>
 </list>
 
 <center><image signature.png /></center>

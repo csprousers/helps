@@ -1,5 +1,5 @@
 JS.setValueFromJson("france", ' { "name": "France",        '
-							  '   "capital": "Paris",      '
-							  '   "currency": "Euro",      '
-							  '   "republicNumber": 5,     '
-							  '   "languages": ["French"] }');
+                              '   "capital": "Paris",      '
+                              '   "currency": "Euro",      '
+                              '   "republicNumber": 5,     '
+                              '   "languages": ["French"] }');

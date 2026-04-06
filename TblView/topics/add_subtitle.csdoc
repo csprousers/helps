@@ -7,9 +7,9 @@ This option is controlled through Additional Elements in the Format (Table) menu
 Each option has an associated text box added to the table at an appropriate place.
 
 <list>
-	<li>Subtitle adds a text box below the Title.</li>
-	<li>Pagenote adds a text box at the bottom of the table.</li>
-	<li>Endnote adds a text box at the bottom of the table (after the pagenote if present).</li>
+    <li>Subtitle adds a text box below the Title.</li>
+    <li>Pagenote adds a text box at the bottom of the table.</li>
+    <li>Endnote adds a text box at the bottom of the table (after the pagenote if present).</li>
 </list>
 
 Text is entered by double clicking in the associated text box. Uncheck the corresponding box in Format (Table) to remove the additional text lines.

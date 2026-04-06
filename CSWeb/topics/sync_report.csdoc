@@ -5,8 +5,8 @@ The Sync Report will summarize the total number of cases uploaded to CSWeb for a
 <subheader>Viewing a Sync Report</subheader>
 
 <list ordered>
-	<li>Click on a <b>dictionary</b> from the sidebar under Sync Report</li>
-	<li>Select the <b>dictionary id</b> from the dropdown above the report</li>
+    <li>Click on a <b>dictionary</b> from the sidebar under Sync Report</li>
+    <li>Select the <b>dictionary id</b> from the dropdown above the report</li>
 </list>
 
 The <b>column filters</b> allow further filtering on values that are currently displayed. While <b>search ids</b> allows for a global search across all dictionary id rows (the final column, totals will not be searched).
@@ -16,9 +16,9 @@ The <b>column filters</b> allow further filtering on values that are currently d
 By default only codes will be shown in the report. However, a CSV file can be imported that defines code and label pairs, so a label can be displayed in its place. The rules for defining these pairs are as follows:
 
 <list ordered>
-	<li>The <b>first</b> pair in the CSV file must define the <b>first dictionary id</b></li>
-	<li>Each following pair must correspond to a dictionary id in <b>consecutive order</b></li>
-	<li>Dictionary ids do not require a corresponding pair. However, once a dictionary id has been <b>ignored no more can be defined</b>. The code will be displayed.</li>
+    <li>The <b>first</b> pair in the CSV file must define the <b>first dictionary id</b></li>
+    <li>Each following pair must correspond to a dictionary id in <b>consecutive order</b></li>
+    <li>Dictionary ids do not require a corresponding pair. However, once a dictionary id has been <b>ignored no more can be defined</b>. The code will be displayed.</li>
 </list>
 
 The first row of the CSV file is either an optional header or pairs. If the header is included then tic "CSV file has a header row" when importing the CSV file.
@@ -72,6 +72,6 @@ Alternatively, if the enumerator id is the first dictionary id then the emphasis
 <subheader>Problematic Dictionary Ids</subheader>
 
 <list>
-	<li><b>Urban/rural</b> do not make the key unique, so they do not need to be id items. However, if used they will double the number of rows in the report. Further, at what position will they be added?</li>
-	<li><b>Longitude/latitude</b> will likely be unique on their own. Making the report nothing more than a list.</li>
+    <li><b>Urban/rural</b> do not make the key unique, so they do not need to be id items. However, if used they will double the number of rows in the report. Further, at what position will they be added?</li>
+    <li><b>Longitude/latitude</b> will likely be unique on their own. Making the report nothing more than a list.</li>
 </list>

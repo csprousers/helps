@@ -17,7 +17,7 @@ In batch editing mode, if the optional <logiccolor>case</logiccolor> keyword is 
 <logic>
 PROC FERTILITY
 
-	universe SEX = 2 and AGE in 12:49;
+    universe SEX = 2 and AGE in 12:49;
 </logic>
 
 <subheader>Example 2</subheader>
@@ -25,12 +25,12 @@ PROC FERTILITY
 <logic>
 PROC ROOF_TYPE
 
-	universe HHTYPE = 1 case;
+    universe HHTYPE = 1 case;
 
-	// the universe is equivalent to:
-	if not HHTYPE = 1 then
-		endcase;
-	endif;
+    // the universe is equivalent to:
+    if not HHTYPE = 1 then
+        endcase;
+    endif;
 </logic>
 
 <seealso exit_statement.csdoc endcase_statement.csdoc if_statement.csdoc />

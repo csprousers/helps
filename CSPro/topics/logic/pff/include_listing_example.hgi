@@ -1,9 +1,9 @@
 PROC INTERVIEWER_MENU
 
-	// run the listing program in the interviewer's assigned cluster
-	if INTERVIEWER_MENU = 1 then
-		Pff listing_pff;
-		listing_pff.load("Listing.pff");
-		listing_pff.setProperty("Key", maketext("%v", CLUSTER));
-		listing_pff.exec();
-	endif;
+    // run the listing program in the interviewer's assigned cluster
+    if INTERVIEWER_MENU = 1 then
+        Pff listing_pff;
+        listing_pff.load("Listing.pff");
+        listing_pff.setProperty("Key", maketext("%v", CLUSTER));
+        listing_pff.exec();
+    endif;

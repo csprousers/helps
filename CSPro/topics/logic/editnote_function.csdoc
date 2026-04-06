@@ -21,9 +21,9 @@ The function returns a string containing the note text. If there is no note, the
 <logic>
 PROC COOKING
 
-	if COOKING = 9 then
-		COOKING_OTHER = editnote();
-	endif;
+    if COOKING = 9 then
+        COOKING_OTHER = editnote();
+    endif;
 </logic>
 
 <seealso getnote_function.csdoc putnote_function.csdoc />

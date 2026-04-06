@@ -29,7 +29,7 @@ PROC LINE_NUMBER
 
 preproc
 
-	savepartial();
+    savepartial();
 </logic>
 
 

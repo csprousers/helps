@@ -3,7 +3,7 @@
 This applies only to complex applications that have more than one level.
 
 <list ordered>
-	<li>Make sure you are not in Add, Modify, or Verify mode. You may need to stop (<b>Ctrl+S</b>) data entry first.</li>
-	<li>Expand the File Tree for the case which contains the level occurrence of interest.</li>
-	<li>Move the highlight bar or click on level occurrence of interest.</li>
+    <li>Make sure you are not in Add, Modify, or Verify mode. You may need to stop (<b>Ctrl+S</b>) data entry first.</li>
+    <li>Expand the File Tree for the case which contains the level occurrence of interest.</li>
+    <li>Move the highlight bar or click on level occurrence of interest.</li>
 </list>

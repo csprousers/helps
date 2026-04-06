@@ -27,17 +27,17 @@ PROC CENSUS_QUEST
 
 preproc
 
-	if STAFF_ROLE = 1 then // interviewer
-		setproperty("DisplayCodesAlongsideLabels", false);
-		setproperty(CENSUS_DICT,"CanEnterNotAppl", "No");
-		setproperty(CENSUS_DICT,"CanEnterOutOfRange", "No");
+    if STAFF_ROLE = 1 then // interviewer
+        setproperty("DisplayCodesAlongsideLabels", false);
+        setproperty(CENSUS_DICT,"CanEnterNotAppl", "No");
+        setproperty(CENSUS_DICT,"CanEnterOutOfRange", "No");
 
-	else // supervisor
-		setproperty("DisplayCodesAlongsideLabels", true);
-		setproperty(CENSUS_DICT,"CanEnterNotAppl", "NoConfirm");
-		setproperty(CENSUS_DICT,"CanEnterOutOfRange", "NoConfirm");
+    else // supervisor
+        setproperty("DisplayCodesAlongsideLabels", true);
+        setproperty(CENSUS_DICT,"CanEnterNotAppl", "NoConfirm");
+        setproperty(CENSUS_DICT,"CanEnterOutOfRange", "NoConfirm");
 
-	endif;
+    endif;
 </logic>
 
 

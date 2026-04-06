@@ -17,14 +17,14 @@ The function returns the position of the first occurrence of the pattern string,
 <subheader>Examples</subheader>
 
 <logic>
-VALUE = poschar("L", "CHILDREN");	// VALUE will be 4; this is where the
-									// pattern string (the letter "L")
-									// occurs in the source string ("CHILDREN")
+VALUE = poschar("L", "CHILDREN");   // VALUE will be 4; this is where the
+                                    // pattern string (the letter "L")
+                                    // occurs in the source string ("CHILDREN")
 
-VALUE = poschar("LCN", "CHILDREN");	// VALUE will be 1; of the characters in the
-									// pattern string, "C" is the first character
-									// encountered in the source string, and it is
-									// found at position 1
+VALUE = poschar("LCN", "CHILDREN"); // VALUE will be 1; of the characters in the
+                                    // pattern string, "C" is the first character
+                                    // encountered in the source string, and it is
+                                    // found at position 1
 </logic>
 
 <seealso pos_function.csdoc startswith_function.csdoc replace_function.csdoc ischecked_function.csdoc />

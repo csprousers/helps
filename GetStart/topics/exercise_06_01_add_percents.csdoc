@@ -7,12 +7,12 @@ In this exercise we will modify the table you created in the previous exercise. 
 <center><image exercise_06_01_tally_attributes_item.png /></center>
 
 <list ordered>
-	<li>Right-click on the word <b>Sex</b> on the table, just above the word <b>Male</b>.</li>
-	<li>Select <b>Tally Attributes (Sex)</b> from the right-click menu.</li>
-	<li>In the list on the left of the dialog box marked <b>Available</b>, click on <b>Percents</b> and then click the <b>Add --></b> button. You should now see <b>Percents</b> listed in the list on right of the dialog box marked <b>Selected</b>.</li>
-	<li>Click <b>OK</b>. You should see three new columns on the table for the percents.</li>
-	<li>Run the tabulation by clicking <image run_button.png /> on the toolbar, or pressing <b>Ctrl+R</b>. When CSPro prompts you to save the changes, click on <b>Yes</b>.</li>
-	<li>Select <b>MyData.dat</b> as the data file to tabulate, as in the previous exercise.</li>
+    <li>Right-click on the word <b>Sex</b> on the table, just above the word <b>Male</b>.</li>
+    <li>Select <b>Tally Attributes (Sex)</b> from the right-click menu.</li>
+    <li>In the list on the left of the dialog box marked <b>Available</b>, click on <b>Percents</b> and then click the <b>Add --></b> button. You should now see <b>Percents</b> listed in the list on right of the dialog box marked <b>Selected</b>.</li>
+    <li>Click <b>OK</b>. You should see three new columns on the table for the percents.</li>
+    <li>Run the tabulation by clicking <image run_button.png /> on the toolbar, or pressing <b>Ctrl+R</b>. When CSPro prompts you to save the changes, click on <b>Yes</b>.</li>
+    <li>Select <b>MyData.dat</b> as the data file to tabulate, as in the previous exercise.</li>
 </list>
 
 When you have completed this step you should see a table that looks something like:

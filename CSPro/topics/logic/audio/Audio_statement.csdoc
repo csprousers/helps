@@ -20,7 +20,7 @@ Audio recording and playback are currently only supported on Android.
 The following variable modifiers apply to Audio objects:
 
 <list>
-	<li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
+    <li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
 </list>
 
 

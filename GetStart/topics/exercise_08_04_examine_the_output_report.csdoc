@@ -38,10 +38,10 @@ The first several lines show file names and the date and time of the run.
 <subheader>CSPro Process Summary</subheader>
 
 <list>
-	<li>The first line tells us that the data file had seven records.</li>
-	<li>The second line tells us that there were no problems with the structure of the data file.</li>
-	<li>The third line tells us that one <b>user</b> message was triggered by our logic. The system did not issue any <b>warning</b> or <b>error</b> messages.</li>
-	<li>The last line tells us that our data file has two cases in it.</li>
+    <li>The first line tells us that the data file had seven records.</li>
+    <li>The second line tells us that there were no problems with the structure of the data file.</li>
+    <li>The third line tells us that one <b>user</b> message was triggered by our logic. The system did not issue any <b>warning</b> or <b>error</b> messages.</li>
+    <li>The last line tells us that our data file has two cases in it.</li>
 </list>
 
 

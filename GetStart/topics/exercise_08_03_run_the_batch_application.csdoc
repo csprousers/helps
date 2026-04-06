@@ -5,9 +5,9 @@
 Your batch application is now ready to run. CSBatch is the name of the program that runs this application. We will use the data file you created in the previous exercise.
 
 <list ordered>
-	<li>Run CSBatch by clicking <image run_button.png /> on the toolbar, or pressing <b>Ctrl+R</b>.</li>
-	<li>CSPro will ask you to save the changes. Click <b>Yes</b>.</li>
-	<li>CSBatch will ask for some data file names. Click in the empty box next to <b>Input Data File</b> and type in <b>MyData.dat</b> and click <b>OK</b>.</li>
+    <li>Run CSBatch by clicking <image run_button.png /> on the toolbar, or pressing <b>Ctrl+R</b>.</li>
+    <li>CSPro will ask you to save the changes. Click <b>Yes</b>.</li>
+    <li>CSBatch will ask for some data file names. Click in the empty box next to <b>Input Data File</b> and type in <b>MyData.dat</b> and click <b>OK</b>.</li>
 </list>
 
 <center><image exercise_08_03_define_file_associations.png /></center>

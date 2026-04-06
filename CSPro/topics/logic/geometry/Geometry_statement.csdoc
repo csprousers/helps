@@ -18,7 +18,7 @@ The <logiccolor>Geometry</logiccolor> statement creates a <link Geometry.csdoc>G
 The following variable modifiers apply to Geometry objects:
 
 <list>
-	<li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
+    <li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
 </list>
 
 

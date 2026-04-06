@@ -18,7 +18,7 @@ The function returns a logical value of 1 (true) if the case was opened from a p
 
 <logic>
 if ispartial() then
-	errmsg("Entering a partially saved case");
+    errmsg("Entering a partially saved case");
 endif;
 </logic>
 

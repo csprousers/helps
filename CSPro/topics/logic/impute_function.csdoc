@@ -5,10 +5,10 @@
 
 <logicsyntax>
 d = impute(<arg>item_name</arg>, <arg>new_value</arg>)
-	『title(<arg>frequency_table_title</arg>)』
-	『valueset(<arg>valueset_name</arg>)』
-	『specific』
-	『stat(『<arg>item_name1</arg>, ..., <arg>item_nameN</arg>』)』;
+    『title(<arg>frequency_table_title</arg>)』
+    『valueset(<arg>valueset_name</arg>)』
+    『specific』
+    『stat(『<arg>item_name1</arg>, ..., <arg>item_nameN</arg>』)』;
 </logicsyntax>
 
 
@@ -56,9 +56,9 @@ set impute(stat, on ‖ off ‖ default);
 If an override is coded, any <logiccolor>impute</logiccolor> statement that follows will either:
 
 <list>
-	<li><logiccolor>on</logiccolor>: automatically be included in the stat data file as if <logiccolor>stat()</logiccolor> were coded.</li>
-	<li><logiccolor>off</logiccolor>: any <logiccolor>stat</logiccolor> commands will be ignored.</li>
-	<li><logiccolor>default</logiccolor>: behave using the default behavior, where the stat data file only includes entries for imputations with <logiccolor>stat</logiccolor> commands.</li>
+    <li><logiccolor>on</logiccolor>: automatically be included in the stat data file as if <logiccolor>stat()</logiccolor> were coded.</li>
+    <li><logiccolor>off</logiccolor>: any <logiccolor>stat</logiccolor> commands will be ignored.</li>
+    <li><logiccolor>default</logiccolor>: behave using the default behavior, where the stat data file only includes entries for imputations with <logiccolor>stat</logiccolor> commands.</li>
 </list>
 
 
@@ -67,9 +67,9 @@ If an override is coded, any <logiccolor>impute</logiccolor> statement that foll
 Applications using the <logiccolor>impute</logiccolor> function can generate up to three files:
 
 <list>
-	<li>Imputation <link frequencies_file.csdoc>frequencies</link> (with the default extension .impute_freq.lst)</li>
-	<li>Imputation stat dictionary (if using <logiccolor>stat</logiccolor>, with the default extension .impute_stat.dcf)</li>
-	<li>Imputation stat data (if using <logiccolor>stat</logiccolor>, with the default extension .impute_stat.csdb)</li>
+    <li>Imputation <link frequencies_file.csdoc>frequencies</link> (with the default extension .impute_freq.lst)</li>
+    <li>Imputation stat dictionary (if using <logiccolor>stat</logiccolor>, with the default extension .impute_stat.dcf)</li>
+    <li>Imputation stat data (if using <logiccolor>stat</logiccolor>, with the default extension .impute_stat.csdb)</li>
 </list>
 
 You can specify the names of these data files in the <link run_a_batch_edit_application.csdoc>File Associations</link> dialog or in your application's <link run_production_batch_edits.csdoc>PFF file</link>.
@@ -88,11 +88,11 @@ _______________________________ _____________________________ _____________
 </pre></html>
 
 <list>
-	<li><b>Categories</b>: Lists the values that were assigned during the imputations and a value set label for the value (if applicable). For example: "2 Female."</li>
-	<li><b>Frequency</b>: Shows the frequency (that is, the total number of times) each value was assigned. For example: 241 (code 2 assigned 241 times).</li>
-	<li><b>CumFreq</b>: Displays the cumulative totals of the Frequency column.</li>
-	<li><b>%</b>: Indicates what percentage each imputation represents from the total number of imputations made. For example: 47.1 (code 2 assigned 47.1% of the total number of imputations of <logiccolor>SEX</logiccolor> made).</li>
-	<li><b>Cum %</b>: Displays the cumulative totals of the % column.</li>
+    <li><b>Categories</b>: Lists the values that were assigned during the imputations and a value set label for the value (if applicable). For example: "2 Female."</li>
+    <li><b>Frequency</b>: Shows the frequency (that is, the total number of times) each value was assigned. For example: 241 (code 2 assigned 241 times).</li>
+    <li><b>CumFreq</b>: Displays the cumulative totals of the Frequency column.</li>
+    <li><b>%</b>: Indicates what percentage each imputation represents from the total number of imputations made. For example: 47.1 (code 2 assigned 47.1% of the total number of imputations of <logiccolor>SEX</logiccolor> made).</li>
+    <li><b>Cum %</b>: Displays the cumulative totals of the % column.</li>
 </list>
 
 
@@ -108,17 +108,17 @@ PROC SEX
 
 if not invalueset(SEX) then
 
-	// set all heads to men and everyone else to the opposite of the head's sex
-	// (note that this is not a good imputation but is just a simple example)
-	if curocc() = 1 then
-		impute(SEX, 1)
-		title("Head's Sex")
-		specific;
+    // set all heads to men and everyone else to the opposite of the head's sex
+    // (note that this is not a good imputation but is just a simple example)
+    if curocc() = 1 then
+        impute(SEX, 1)
+        title("Head's Sex")
+        specific;
 
-	else
-		impute(SEX, 3 - SEX(1));
+    else
+        impute(SEX, 3 - SEX(1));
 
-	endif;
+    endif;
 </logic>
 
 

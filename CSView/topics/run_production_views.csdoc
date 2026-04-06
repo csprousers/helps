@@ -30,15 +30,15 @@ OnExit=.\Menu.pff
 The <pffcolor>[Run Information]</pffcolor> block is required. While <pffcolor>Version</pffcolor> and <pffcolor>AppType</pffcolor> must appear exactly as shown in the example above, there are two optional properties:
 
 <list>
-	<li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only), as well as in CSView's title bar (Windows only).</li>
-	<li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
+    <li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only), as well as in CSView's title bar (Windows only).</li>
+    <li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
 </list>
 
 
 The <pffcolor>[Files]</pffcolor> block is required.
 
 <list>
-	<li><pffcolor>Application</pffcolor>=the name of the file to view.</li>
+    <li><pffcolor>Application</pffcolor>=the name of the file to view.</li>
 </list>
 
 
@@ -47,5 +47,5 @@ The <pffcolor>[Files]</pffcolor> block is required.
 The <pffcolor>[Parameters]</pffcolor> block is optional.
 
 <list>
- 	<li><pffcolor>OnExit</pffcolor>=specifies a PFF file to run after viewing the file. This can be useful, for example, if you want to relaunch a menu program after viewing the file.</li>
+    <li><pffcolor>OnExit</pffcolor>=specifies a PFF file to run after viewing the file. This can be useful, for example, if you want to relaunch a menu program after viewing the file.</li>
 </list>

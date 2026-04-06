@@ -8,10 +8,10 @@ The dictionary tree on the left shows you the levels, identification items, reco
 <subheader>Tips</subheader>
 
 <list>
-	<li>From the <b>View</b> menu, select <b>Names in Tree</b>; or press <b>Ctrl+T</b>, to switch between item labels and item names in the selection tree.</li>
-	<li>Selecting a record automatically selects all items for that record.</li>
-	<li>Deselecting a record automatically deselects all items for that record.</li>
-	<li>If subitems exist, they are considered separate entities by Export Data, as indicated by the image below (items appear in blue, subitems in green). You can select either the item, any of its subitems, or both.</li>
+    <li>From the <b>View</b> menu, select <b>Names in Tree</b>; or press <b>Ctrl+T</b>, to switch between item labels and item names in the selection tree.</li>
+    <li>Selecting a record automatically selects all items for that record.</li>
+    <li>Deselecting a record automatically deselects all items for that record.</li>
+    <li>If subitems exist, they are considered separate entities by Export Data, as indicated by the image below (items appear in blue, subitems in green). You can select either the item, any of its subitems, or both.</li>
 </list>
 
 <center><image item_tree_with_subitems_selected.png /></center>

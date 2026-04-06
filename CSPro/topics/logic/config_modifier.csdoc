@@ -15,8 +15,8 @@ The <logiccolor>config</logiccolor> variable modifier is used when declaring a v
 The <logiccolor>config</logiccolor> modifier can be used when declaring variables of types:
 
 <list>
-	<li><logiccolor>numeric</logiccolor></li>
-	<li><logiccolor>string</logiccolor></li>
+    <li><logiccolor>numeric</logiccolor></li>
+    <li><logiccolor>string</logiccolor></li>
 </list>
 
 If no value exists in the configuration settings, numeric values will default to the value <logiccolor>notappl</logiccolor> and strings will default to <logiccolor>""</logiccolor>.

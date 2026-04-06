@@ -21,10 +21,10 @@ The function returns the number of cases in the file, or if a condition is given
 <logic>
 PROC NEW_INTERVIEWER_NAME
 
-	if countcases(STAFF_DICT where STAFF_NAME = NEW_INTERVIEWER_NAME) >= 1 then
-		errmsg("You must give the interviewer a unique name.");
-		reenter;
-	endif;
+    if countcases(STAFF_DICT where STAFF_NAME = NEW_INTERVIEWER_NAME) >= 1 then
+        errmsg("You must give the interviewer a unique name.");
+        reenter;
+    endif;
 </logic>
 
 <seealso forcase_statement.csdoc find_function.csdoc />

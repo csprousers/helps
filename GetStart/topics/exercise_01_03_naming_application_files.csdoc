@@ -5,9 +5,9 @@
 We will create a <link CSPro::data_entry_applications.csdoc>data entry application</link>. This contains:
 
 <list>
-	<li><link CSPro::introduction_to_data_dictionary.csdoc>Data dictionary</link>: The data dictionary describes the organization of the data file. It holds information about all the questions and responses on the questionnaire.</li>
-	<li><link CSPro::forms.csdoc>Forms</link>: The forms will appear on the screen when you run the data entry application. They contain data entry fields, text, and rosters.</li>
-	<li><link CSPro::introduction_to_cspro_language.csdoc>Logic</link> (optional): You can use the CSPro language to control the flow of your program, to write logic to check for errors during data entry, to access lookup files, and many other things. We will not use logic until Exercise 6.</li>
+    <li><link CSPro::introduction_to_data_dictionary.csdoc>Data dictionary</link>: The data dictionary describes the organization of the data file. It holds information about all the questions and responses on the questionnaire.</li>
+    <li><link CSPro::forms.csdoc>Forms</link>: The forms will appear on the screen when you run the data entry application. They contain data entry fields, text, and rosters.</li>
+    <li><link CSPro::introduction_to_cspro_language.csdoc>Logic</link> (optional): You can use the CSPro language to control the flow of your program, to write logic to check for errors during data entry, to access lookup files, and many other things. We will not use logic until Exercise 6.</li>
 </list>
 
 We will use the Wizard to create the files that the data entry application requires. Click on the radio button that says <b>Create a new application</b>. You should see the following dialog box:
@@ -15,14 +15,14 @@ We will use the Wizard to create the files that the data entry application requi
 <center><image new_application_data_entry.png /></center>
 
 <list ordered>
-	<li>Select the <b>Entry</b> category and the <b>PAPI Data Entry Application</b> type and press <b>OK</b>.</li>
-	<li>In the file open dialog box, enter <b>MyEntry</b> as the file name for the application.</li>
-	<li>Make sure you are located in the folder you created for these exercises (<b>C:\CSProTutorial</b>).</li>
-	<li>Press <b>Save</b>.</li>
-	<li>The next screen will ask you to select the Input Dictionary.</li>
-	<li>Change the name to <b>C:\CSProTutorial\MyDict.dcf</b>.</li>
-	<li>Press <b>OK</b>.</li>
-	<li>CSPro will ask if you want to create a new dictionary. Press <b>Yes</b>.</li>
+    <li>Select the <b>Entry</b> category and the <b>PAPI Data Entry Application</b> type and press <b>OK</b>.</li>
+    <li>In the file open dialog box, enter <b>MyEntry</b> as the file name for the application.</li>
+    <li>Make sure you are located in the folder you created for these exercises (<b>C:\CSProTutorial</b>).</li>
+    <li>Press <b>Save</b>.</li>
+    <li>The next screen will ask you to select the Input Dictionary.</li>
+    <li>Change the name to <b>C:\CSProTutorial\MyDict.dcf</b>.</li>
+    <li>Press <b>OK</b>.</li>
+    <li>CSPro will ask if you want to create a new dictionary. Press <b>Yes</b>.</li>
 </list>
 
 You have created a new data entry application

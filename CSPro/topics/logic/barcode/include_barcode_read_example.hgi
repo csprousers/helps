@@ -2,6 +2,6 @@ PROC BLOOD_SAMPLE
 
 preproc
 
-	if BLOOD_SAMPLE = "" then
-		BLOOD_SAMPLE = Barcode.read("Scan the blood sample barcode");
-	endif;
+    if BLOOD_SAMPLE = "" then
+        BLOOD_SAMPLE = Barcode.read("Scan the blood sample barcode");
+    endif;

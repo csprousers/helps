@@ -10,8 +10,8 @@ In the image below, the user requested sex and age for comparison:
 <subheader>Tips</subheader>
 
 <list>
-	<li>Choosing a record automatically selects all items for that record.</li>
-	<li>Deselecting a record automatically deselects all items for that record.</li>
-	<li>If an item is contained within another item, that is subitems, those subitems are considered separate items by Compare.</li>
-	<li>The selection tree shows either dictionary names or labels. To toggle between names and labels, press <b>Ctrl+T</b>. The output listing will show either names or labels depending on the setting of the selection tree.</li>
+    <li>Choosing a record automatically selects all items for that record.</li>
+    <li>Deselecting a record automatically deselects all items for that record.</li>
+    <li>If an item is contained within another item, that is subitems, those subitems are considered separate items by Compare.</li>
+    <li>The selection tree shows either dictionary names or labels. To toggle between names and labels, press <b>Ctrl+T</b>. The output listing will show either names or labels depending on the setting of the selection tree.</li>
 </list>

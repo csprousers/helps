@@ -39,17 +39,17 @@ end;
 <logic>
 function OnSystemMessage(numeric message_number, string message_text)
 
-	// modify the displayed message for invalid subscript errors
+    // modify the displayed message for invalid subscript errors
     if message_number = 1008 then
         errmsg("Subscript Error (%d). Most likely cause is no children in household. %s", message_number, message_text);
 
         // suppress the system message
-		exit false;
+        exit false;
 
-	endif;
+    endif;
 
-	// issue the message in all other cases
-	exit true;
+    // issue the message in all other cases
+    exit true;
 
 end;
 </logic>

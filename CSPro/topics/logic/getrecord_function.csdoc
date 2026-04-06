@@ -17,8 +17,8 @@ The function returns a string with the name of the record. If the item does not 
 <subheader>Example</subheader>
 
 <logic>
-errmsg("SEX belongs to %s",getrecord("SEX"));					// SEX belongs to POPULATION
-errmsg("WATERSOURCE belongs to %s",getrecord("WATERSOURCE"));	// WATERSOURCE belongs to HOUSING
+errmsg("SEX belongs to %s",getrecord("SEX"));                   // SEX belongs to POPULATION
+errmsg("WATERSOURCE belongs to %s",getrecord("WATERSOURCE"));   // WATERSOURCE belongs to HOUSING
 </logic>
 
 <seealso getsymbol_function.csdoc />

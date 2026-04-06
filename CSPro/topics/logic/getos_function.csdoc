@@ -13,18 +13,18 @@ i = getos(『<arg>detailed_information</arg>』);
 The <logiccolor>getos</logiccolor> function returns a code that indicates what operating system is running the program. The codes are:
 
 <table 2 header nowrap>
-	<cell>Code</cell><cell>Operating System</cell>
-	<cell>10</cell><cell>Windows</cell>
-	<cell>20</cell><cell>Android</cell>
+    <cell>Code</cell><cell>Operating System</cell>
+    <cell>10</cell><cell>Windows</cell>
+    <cell>20</cell><cell>Android</cell>
 </table>
 
 It is also possible to get more detailed information about the operating system. If the optional argument <arg>detailed_information</arg> is a <link string_statement.csdoc>string</link> variable, the string will be filled with the operating system name and the version number. Alternatively, if passed a one-dimensional string <link HashMap.csdoc>HashMap</link>, the HashMap will be filled with several values:
 
 <table 2 header nowrap>
-	<cell>Key</cell><cell>Value</cell>
-	<cell><logiccolor>"name"</logiccolor></cell><cell>Name (e.g., <logiccolor>"Windows"</logiccolor>)</cell>
-	<cell><logiccolor>"version"</logiccolor></cell><cell>Version number (e.g., <logiccolor>"10.0"</logiccolor>)</cell>
-	<cell><logiccolor>"build"</logiccolor></cell><cell>Build number (Windows only; e.g., <logiccolor>"22000"</logiccolor>)</cell>
+    <cell>Key</cell><cell>Value</cell>
+    <cell><logiccolor>"name"</logiccolor></cell><cell>Name (e.g., <logiccolor>"Windows"</logiccolor>)</cell>
+    <cell><logiccolor>"version"</logiccolor></cell><cell>Version number (e.g., <logiccolor>"10.0"</logiccolor>)</cell>
+    <cell><logiccolor>"build"</logiccolor></cell><cell>Build number (Windows only; e.g., <logiccolor>"22000"</logiccolor>)</cell>
 </table>
 
 Windows version numbers do not necessarily match the official release numbers. For example, Windows 8.1 has a version number of 6.3.

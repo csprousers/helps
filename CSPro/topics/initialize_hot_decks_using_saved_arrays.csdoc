@@ -12,17 +12,17 @@ Array AgeSRDeck(2,6) save;
 
 PROC AGE
 
-	if AGE = notappl then
-		// if the value for age is not valid...
-		// assign the value from the hot deck based on sex and relationship
-		impute(AGE,AgeSRDeck(SEX,RELATIONSHIP));
+    if AGE = notappl then
+        // if the value for age is not valid...
+        // assign the value from the hot deck based on sex and relationship
+        impute(AGE,AgeSRDeck(SEX,RELATIONSHIP));
 
-	else
-		// otherwise...
-		// update the value of the hot deck
-		AgeSRDeck(SEX,RELATIONSHIP) = AGE;
+    else
+        // otherwise...
+        // update the value of the hot deck
+        AgeSRDeck(SEX,RELATIONSHIP) = AGE;
 
-	endif;
+    endif;
 </logic>
 
 

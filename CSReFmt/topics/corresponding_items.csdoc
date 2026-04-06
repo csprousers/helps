@@ -5,5 +5,5 @@ In general, corresponding items are items that have the same name in both dictio
 <b>There are some exceptions:</b>
 
 <list>
-	<li>Items with the same name in different levels are not moved.</li>
+    <li>Items with the same name in different levels are not moved.</li>
 </list>

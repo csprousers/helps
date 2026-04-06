@@ -18,7 +18,7 @@ The function returns a logical value of 1 (true) if a case is retrieved and 0 (f
 
 <logic>
 if locate(SURVEY_DICT,>=,"55") and retrieve(SURVEY_DICT) then
-	// process the case
+    // process the case
 endif;
 </logic>
 

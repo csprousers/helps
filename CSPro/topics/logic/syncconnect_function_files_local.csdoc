@@ -18,10 +18,10 @@ The <logiccolor>syncconnect</logiccolor> function opens a connection to synchron
 // connect to local folder
 if syncconnect(LocalFiles, "C:/FTPDirectory/") then
 
-	// download the latest cases
-	syncdata(GET, SURVEY_DICT);
+    // download the latest cases
+    syncdata(GET, SURVEY_DICT);
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

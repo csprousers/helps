@@ -19,9 +19,9 @@ The function returns a logical value of 1 (true) if successful and 0 (false) oth
 <logic>
 if syncconnect(Dropbox) then
 
-	// perform synchronization actions
+    // perform synchronization actions
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

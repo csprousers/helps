@@ -17,16 +17,16 @@ When utilized in a user-defined function, an optional argument, <arg>return_valu
 <logic>
 function numeric FirstWoman()
 
-	do numeric ctr = 1 while ctr <= HH_MEMBERS
+    do numeric ctr = 1 while ctr <= HH_MEMBERS
 
-		if SEX(ctr) = 2 then
-			FirstWoman = ctr;
-			exit; // exit the function, we've found our first woman!
-		endif;
+        if SEX(ctr) = 2 then
+            FirstWoman = ctr;
+            exit; // exit the function, we've found our first woman!
+        endif;
 
-	enddo;
+    enddo;
 
-	FirstWoman = 0; // no woman was found
+    FirstWoman = 0; // no woman was found
 
 end;
 </logic>
@@ -36,19 +36,19 @@ end;
 <logic>
 function string QueryForString(string message)
 
-	while 1 do
+    while 1 do
 
-		string response = prompt(message);
+        string response = prompt(message);
 
-		if response = "" then
-			errmsg("You cannot enter a blank value");
+        if response = "" then
+            errmsg("You cannot enter a blank value");
 
-		else
-			exit response;
+        else
+            exit response;
 
-		endif;
+        endif;
 
-	enddo;
+    enddo;
 
 end;
 

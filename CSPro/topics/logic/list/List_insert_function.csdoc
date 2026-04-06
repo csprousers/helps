@@ -25,18 +25,18 @@ List string eligible_head_names;
 
 do numeric counter = 1 while counter <= count(PERSON_REC)
 
-	if AGE(counter) >= 15 and USUAL_MEMBER(counter) = 1 then
+    if AGE(counter) >= 15 and USUAL_MEMBER(counter) = 1 then
 
-		// insert the names in sorted order
-		numeric insert_index;
+        // insert the names in sorted order
+        numeric insert_index;
 
-		do insert_index = 1 while insert_index <= eligible_head_names.length()
-			and eligible_head_names(insert_index) <= NAME(counter)
-		enddo;
+        do insert_index = 1 while insert_index <= eligible_head_names.length()
+            and eligible_head_names(insert_index) <= NAME(counter)
+        enddo;
 
-		eligible_head_names.insert(insert_index, NAME(counter));
+        eligible_head_names.insert(insert_index, NAME(counter));
 
-	endif;
+    endif;
 
 enddo;
 </logic>

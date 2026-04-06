@@ -21,14 +21,14 @@ PROC RELATIONSHIP
 
 onfocus
 
-	// automatically set the first person to be the head of the household
-	// and protect the field so that it is not shown to the enumerator
-	if curocc() = 1 then
-		RELATIONSHIP = 1;
-		protect(RELATIONSHIP, true);
-	else
-		protect(RELATIONSHIP, false);
-	endif;
+    // automatically set the first person to be the head of the household
+    // and protect the field so that it is not shown to the enumerator
+    if curocc() = 1 then
+        RELATIONSHIP = 1;
+        protect(RELATIONSHIP, true);
+    else
+        protect(RELATIONSHIP, false);
+    endif;
 </logic>
 
 <seealso setproperty_function.csdoc />

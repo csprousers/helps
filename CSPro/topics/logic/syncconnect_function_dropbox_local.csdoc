@@ -18,10 +18,10 @@ The <logiccolor>syncconnect</logiccolor> function opens a connection to Dropbox 
 // connect to local Dropbox folder
 if syncconnect(LocalDropbox) then
 
-	// Download the latest cases from Dropbox
-	syncdata(GET, SURVEY_DICT);
+    // Download the latest cases from Dropbox
+    syncdata(GET, SURVEY_DICT);
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

@@ -15,13 +15,13 @@ PROC QUEST
 
 preproc
 
-	write ("***************");
-	write ("Province: %3d", PROVINCE);
-	write ("District: %3d", DISTRICT);
-	write ("Village : %3d", VILLAGE);
-	write (" EA : %3d", EA);
-	write ("***************");
-	write (" "); // blank line
+    write ("***************");
+    write ("Province: %3d", PROVINCE);
+    write ("District: %3d", DISTRICT);
+    write ("Village : %3d", VILLAGE);
+    write (" EA : %3d", EA);
+    write ("***************");
+    write (" "); // blank line
 </logic>
 
 After the execution of the program, the .wrt [report] file would show the following (of course, actual values will vary depending on the questionnaire IDs):

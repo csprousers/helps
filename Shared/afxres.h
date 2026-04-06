@@ -27,11 +27,11 @@
 #endif
 
 #ifdef RC_INVOKED
-	#if defined(_VC80_UPGRADE) && (_VC80_UPGRADE >= 0x0700) && (_VC80_UPGRADE < 0x0800) && defined(IDR_MANIFEST)
-		// Handle project upgrade from VC7/VC7.1 for projects with manifest
-		#define IDR_MANIFEST	1024
-	#endif
-#endif	// RC_INVOKED
+    #if defined(_VC80_UPGRADE) && (_VC80_UPGRADE >= 0x0700) && (_VC80_UPGRADE < 0x0800) && defined(IDR_MANIFEST)
+        // Handle project upgrade from VC7/VC7.1 for projects with manifest
+        #define IDR_MANIFEST    1024
+    #endif
+#endif  // RC_INVOKED
 
 #ifdef APSTUDIO_INVOKED
 #define APSTUDIO_HIDDEN_SYMBOLS
@@ -45,8 +45,8 @@
 #define RT_TOOLBAR  MAKEINTRESOURCE(241)
 #endif
 
-#define RT_RIBBON_XML		28
-#define RT_DIALOG_LAYOUT	_T("AFX_DIALOG_LAYOUT")
+#define RT_RIBBON_XML       28
+#define RT_DIALOG_LAYOUT    _T("AFX_DIALOG_LAYOUT")
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -594,19 +594,19 @@
 
 /////////////////////////////////////////////////////////////////////////////
 // Strings for Accessibility support for CCheckListBox
-#define AFX_IDS_CHECKLISTBOX_UNCHECK	0xF2E1
-#define AFX_IDS_CHECKLISTBOX_CHECK		0xF2E2
-#define AFX_IDS_CHECKLISTBOX_MIXED		0xF2E3
+#define AFX_IDS_CHECKLISTBOX_UNCHECK    0xF2E1
+#define AFX_IDS_CHECKLISTBOX_CHECK      0xF2E2
+#define AFX_IDS_CHECKLISTBOX_MIXED      0xF2E3
 
 /////////////////////////////////////////////////////////////////////////////
 // Strings for auto-save recovery prompts
-#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_1	0xF2E4
-#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_2	0xF2E5
-#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_3	0xF2E6
-#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_4	0xF2E7
-#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_5	0xF2E8
-#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_6	0xF2E9
-#define AFX_IDS_AUTOSAVE_RECOVERED		0xF2EA
+#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_1 0xF2E4
+#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_2 0xF2E5
+#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_3 0xF2E6
+#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_4 0xF2E7
+#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_5 0xF2E8
+#define AFX_IDS_AUTOSAVE_RECOVERY_ASK_6 0xF2E9
+#define AFX_IDS_AUTOSAVE_RECOVERED      0xF2EA
 
 /////////////////////////////////////////////////////////////////////////////
 // AFX implementation - control IDs (AFX_IDC)
@@ -663,7 +663,7 @@
 #define AFX_IDD_CHANGESOURCE            30733
 
 //WinForms
-#define AFX_IDD_EMPTYDIALOG				30734
+#define AFX_IDD_EMPTYDIALOG             30734
 
 // Standard cursors (0x7901->)
    // AFX_IDC = Cursor resources

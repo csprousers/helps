@@ -14,9 +14,9 @@ The <logiccolor>syncparadata</logiccolor> function transfers <link paradata.csdo
 The function can upload paradata from the local device (client) to the server as well as download paradata from the server. The <arg>direction</arg> argument determines which of these operations is performed. It must be one of the following values:
 
 <list>
-	<li><b>GET</b>: Download any paradata that was sent to the server since the last sync and add it to the currently open paradata log.</li>
-	<li><b>PUT</b>: Upload to the server any paradata that was collected since the last sync.</li>
-	<li><b>BOTH</b>: Sync paradata in the currently open paradata log with the server in both directions (i.e., perform both a GET and a PUT).</li>
+    <li><b>GET</b>: Download any paradata that was sent to the server since the last sync and add it to the currently open paradata log.</li>
+    <li><b>PUT</b>: Upload to the server any paradata that was collected since the last sync.</li>
+    <li><b>BOTH</b>: Sync paradata in the currently open paradata log with the server in both directions (i.e., perform both a GET and a PUT).</li>
 </list>
 
 The <logiccolor>syncparadata</logiccolor> function keeps track of what paradata has been transferred each time the client and server are synchronized and uses this information to only transfer paradata that has been collected since the last synchronization. This significantly reduces the amount of data transferred and therefore reduces bandwidth and the cost of air time.
@@ -34,11 +34,11 @@ The function returns a logical value of 1 (true) if the transfer was successful 
 <logic>
 if syncconnect(Bluetooth) then
 
-	// other sync actions...
+    // other sync actions...
 
-	syncparadata(BOTH);
+    syncparadata(BOTH);
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

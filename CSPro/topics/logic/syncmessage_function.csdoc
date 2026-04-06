@@ -8,7 +8,7 @@ s = syncmessage(<arg>message_name</arg>『, <arg>message_value</arg>』);
 
 // Bluetooth server
 function string OnSyncMessage(string message_name, string message_value)
-	exit <arg>message_response</arg>;
+    exit <arg>message_response</arg>;
 end;
 </logicsyntax>
 
@@ -32,8 +32,8 @@ The function returns the message returned by the <logiccolor>OnSyncMessage</logi
 syncmessage("STAFF_CODE", STAFF_CODE);
 
 if syncmessage("TRAINING_MODE") <> maketext("%d", TRAINING_MODE) then
-	errmsg("You cannot sync with a device that is not in the same training mode as your device");
-	syncdisconnect();
+    errmsg("You cannot sync with a device that is not in the same training mode as your device");
+    syncdisconnect();
 endif;
 
 
@@ -42,15 +42,15 @@ PROC GLOBAL
 
 function string OnSyncMessage(string message_name, string message_value)
 
-	// store information about the sync in the paradata log
-	if message_name = "STAFF_CODE" then
-		logtext("Syncing with %s at %s", message_value, timestring());
+    // store information about the sync in the paradata log
+    if message_name = "STAFF_CODE" then
+        logtext("Syncing with %s at %s", message_value, timestring());
 
-	// return the training mode
-	elseif message_name = "TRAINING_MODE" then
-		exit maketext("%d", TRAINING_MODE);
+    // return the training mode
+    elseif message_name = "TRAINING_MODE" then
+        exit maketext("%d", TRAINING_MODE);
 
-	endif;
+    endif;
 
 end;
 </logic>

@@ -6,7 +6,7 @@
 Passing the <logiccolor>camera</logiccolor> command to <logiccolor>execsystem</logiccolor> opens the camera widget on mobile devices. The camera UI includes two options:
 
 <list>
-	<li><b>Flip camera icon</b>: Tap to toggle between the front and rear-facing camera.</li>
+    <li><b>Flip camera icon</b>: Tap to toggle between the front and rear-facing camera.</li>
     <li><b>Camera icon</b>: Tap to take the photo.</li>
 </list>
 

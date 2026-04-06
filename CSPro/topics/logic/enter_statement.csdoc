@@ -18,6 +18,6 @@ The <logiccolor>enter</logiccolor> statement cannot be used inside a user-define
 
 <logic>
 if V108 = 6 then
-	enter OTHERS_FF;
+    enter OTHERS_FF;
 endif;
 </logic>

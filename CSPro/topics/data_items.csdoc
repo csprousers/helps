@@ -6,7 +6,7 @@ Data items are defined in a data dictionary. You can assign a value to a data it
 PROC SEX
 
 if AGE > 15 and NumberOfKids <> notappl then
-	$ = 2;
+    $ = 2;
 endif;
 </logic>
 

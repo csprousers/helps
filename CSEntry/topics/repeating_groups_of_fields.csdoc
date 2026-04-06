@@ -11,8 +11,8 @@ The default roster orientation is horizontal, which will show individual fields 
 Navigation through the group is as follows (for <b>operator-controlled</b> applications):
 
 <list>
-	<li>Use the / (slash) key on the numeric keypad to jump to the next occurrence.</li>
-	<li>Use the Ctrl+/ key to jump out of the roster entirely.</li>
+    <li>Use the / (slash) key on the numeric keypad to jump to the next occurrence.</li>
+    <li>Use the Ctrl+/ key to jump out of the roster entirely.</li>
 </list>
 
 <subheader>Repeating Forms</subheader>

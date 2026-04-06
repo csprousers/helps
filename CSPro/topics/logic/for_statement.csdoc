@@ -5,7 +5,7 @@
 
 <logicsyntax>
 for 『<arg>counter</arg> in』 <arg>multiple_occurring_group</arg> 『where <arg>condition</arg>』 do
-	// statements
+    // statements
 endfor;
 </logicsyntax>
 
@@ -26,22 +26,22 @@ The <logiccolor>for</logiccolor> statement should be coded outside of the group 
 <logic>
 PROC QUEST
 
-	numeric pointer_spouse;
-	numeric pointer_oldest_child;
+    numeric pointer_spouse;
+    numeric pointer_oldest_child;
 
-	for numeric occurrence_number in PERSON_REC_EDT do
+    for numeric occurrence_number in PERSON_REC_EDT do
 
-		if RELATIONSHIP = 2 then
-			pointer_spouse = occurrence_number;
+        if RELATIONSHIP = 2 then
+            pointer_spouse = occurrence_number;
 
-		elseif RELATIONSHIP = 3 then
-			if pointer_oldest_child = 0 or AGE > AGE(pointer_oldest_child) then
-				pointer_oldest_child = occurrence_number;
-			endif;
+        elseif RELATIONSHIP = 3 then
+            if pointer_oldest_child = 0 or AGE > AGE(pointer_oldest_child) then
+                pointer_oldest_child = occurrence_number;
+            endif;
 
-		endif;
+        endif;
 
-	endfor;
+    endfor;
 </logic>
 
 

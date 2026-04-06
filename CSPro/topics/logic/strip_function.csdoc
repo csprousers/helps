@@ -30,14 +30,14 @@ alpha (30) firstName, lastName, fullName;
 
 PROC EXAMPLE
 
-	firstName = "John";
-	lastName = "Henry";
+    firstName = "John";
+    lastName = "Henry";
 
-	fullName = concat(strip(firstName), " ", strip(lastName));
-	numeric nameLength = length(strip(fullName));
+    fullName = concat(strip(firstName), " ", strip(lastName));
+    numeric nameLength = length(strip(fullName));
 
-	// fullName is "John Henry "
-	// nameLength is 10
+    // fullName is "John Henry "
+    // nameLength is 10
 </logic>
 
 

@@ -26,7 +26,7 @@ List string drink_options = "Water", "Milk", "Soda", "Coffee", "Tea";
 numeric favorite_drink_index = drink_options.show("What is your favorite drink?");
 
 if favorite_drink_index <> 0 then
-	errmsg("You like %s the most!", drink_options(favorite_drink_index));
+    errmsg("You like %s the most!", drink_options(favorite_drink_index));
 endif;
 </logic>
 

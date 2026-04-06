@@ -31,7 +31,7 @@ numeric buttonId;
 
 // Function to remove a button from a map
 function removeButton()
-	mymap.removeButton(buttonId);
+    mymap.removeButton(buttonId);
 end;
 
 PROC SHOW_MAP

@@ -20,7 +20,7 @@ ValueSet objects can be <logiccolor>numeric</logiccolor> or <logiccolor>string</
 The following variable modifiers apply to ValueSet objects:
 
 <list>
-	<li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
+    <li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
 </list>
 
 
@@ -31,22 +31,22 @@ PROC MENU
 
 onfocus
 
-	ValueSet menu_valueset;
+    ValueSet menu_valueset;
 
-	// interviewer options
-	if USER_ROLE = 1 then
-		menu_valueset.add("Add New Household", 1);
-		menu_valueset.add("View Existing Households", 2);
+    // interviewer options
+    if USER_ROLE = 1 then
+        menu_valueset.add("Add New Household", 1);
+        menu_valueset.add("View Existing Households", 2);
 
-	// supervisor options
-	else
-		menu_valueset.add("View Household Report", 3);
+    // supervisor options
+    else
+        menu_valueset.add("View Household Report", 3);
 
-	endif;
+    endif;
 
-	menu_valueset.add("Quit", 99);
+    menu_valueset.add("Quit", 99);
 
-	setvalueset(MENU, menu_valueset);
+    setvalueset(MENU, menu_valueset);
 </logic>
 
 

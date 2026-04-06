@@ -11,7 +11,7 @@ User settings are accessed from logic using the <logiccolor>loadsetting</logicco
 <logic>
 PROC INTERVIEWER_NAME
 
-	savesetting("InterviewerName", INTERVIEWER_NAME);
+    savesetting("InterviewerName", INTERVIEWER_NAME);
 </logic>
 
 And then another program might automatically fill in the interviewer name based on the saved setting:
@@ -21,8 +21,8 @@ PROC INTERVIEWER
 
 preproc
 
-	INTERVIEWER = loadsetting("InterviewerName");
-	noinput;
+    INTERVIEWER = loadsetting("InterviewerName");
+    noinput;
 </logic>
 
 

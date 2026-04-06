@@ -25,8 +25,8 @@ The function returns a logical value of 0 (false) if the program cannot be stopp
 
 <logic>
 if VALUE = 99 then
-	savepartial();
-	stop(1);
+    savepartial();
+    stop(1);
 endif;
 </logic>
 
@@ -35,7 +35,7 @@ endif;
 
 <logic>
 if number_total_errors > 100 then
-	stop();
+    stop();
 endif;
 </logic>
 

@@ -26,10 +26,10 @@ string server_name = "supervisor21";
 // connect to the supervisor's device using Bluetooth
 if syncconnect(Bluetooth, server_name) then
 
-	// send the latest cases to the supervisor's device
-	syncdata(PUT, SURVEY_DICT);
+    // send the latest cases to the supervisor's device
+    syncdata(PUT, SURVEY_DICT);
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

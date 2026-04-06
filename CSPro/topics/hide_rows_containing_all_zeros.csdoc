@@ -7,7 +7,7 @@
 <meta name="generator" content="Adobe RoboHelp 11" />
 <style type="text/css">/*<![CDATA[*/
 body {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 /*]]>*/</style>
 </head>
@@ -15,19 +15,19 @@ body {
 <body style="font-family: Arial; font-size: 10pt; background-color: #ffffff;">
 
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">It
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">It
  is possible to have CSPro automatically hide rows when all the cells in
  the row contain the value zero. This is useful when many rows in a table
  will have only zeros and you wish to view only the rows that have non-zero
  data.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: center; margin-top: 0.00pt; margin-bottom: 0.00pt;"><img
-	 src="xtabhiderowswzeros.jpg" alt="Hide when All Cells in Row are Zero in Format (Stub) Dialog Box)"
-	 title="Hide when All Cells in Row are Zero in Format (Stub) Dialog Box)"
-	 width="276" height="94" border="0" /></p>
+     src="xtabhiderowswzeros.jpg" alt="Hide when All Cells in Row are Zero in Format (Stub) Dialog Box)"
+     title="Hide when All Cells in Row are Zero in Format (Stub) Dialog Box)"
+     width="276" height="94" border="0" /></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">To
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">To
  have CSPro automatically hide a row if all values in the row are zero,
  right-click on the stub for the row and choose &quot;Format (stub)&quot;.
  In the &quot;Format (stub)&quot; dialog, check the box &quot;Hide when
@@ -37,7 +37,7 @@ body {
  use Ctrl-D or select &quot;Hidden Parts&quot; from the View menu.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">You
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">You
  can hide multiple rows if they contain all zeros at the same time by first
  selecting the rows and then right-clicking and choosing &quot;Format (Stub)&quot;
  as above. Multiple selection is done in the usual Windows manner by left-clicking

@@ -11,10 +11,10 @@ s = edit(<arg>edit_pattern</arg>, <arg>numeric_expression</arg>);
 The edit function converts a number to a character string defined by the given "edit pattern". The "edit pattern" is a string containing "Z"s and/or "9"s (i.e., "9999" or "ZZ9.99"). Both "9" and "Z" represent a digit as follows:
 
 <table 2 nowrap>
-	<cell><b>9</b></cell><cell>display a digit</cell>
-	<cell><b>Z</b></cell><cell>display a digit, but if it would be a leading zero for the given width, display a blank</cell>
-	<cell><b>.</b></cell><cell>display the decimal character</cell>
-	<cell><b>,</b></cell><cell>display the thousands separator character</cell>
+    <cell><b>9</b></cell><cell>display a digit</cell>
+    <cell><b>Z</b></cell><cell>display a digit, but if it would be a leading zero for the given width, display a blank</cell>
+    <cell><b>.</b></cell><cell>display the decimal character</cell>
+    <cell><b>,</b></cell><cell>display the thousands separator character</cell>
 </table>
 
 Any other character will be displayed as itself.

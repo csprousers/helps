@@ -8,8 +8,8 @@ You may enter the data in the office after the information is collected or you m
 This section contains the following information:
 
 <list>
-	<li><link data_entry_philosophies.csdoc>General Data Entry Concepts</link></li>
-	<li><link operator_vs_system_controlled.csdoc>CSPro Data Entry Concepts</link></li>
-	<li><link create_a_new_data_entry_application.csdoc>Create a Data Entry Application</link></li>
-	<li><link change_the_order_of_entry.csdoc>Change Data Entry Characteristics</link></li>
+    <li><link data_entry_philosophies.csdoc>General Data Entry Concepts</link></li>
+    <li><link operator_vs_system_controlled.csdoc>CSPro Data Entry Concepts</link></li>
+    <li><link create_a_new_data_entry_application.csdoc>Create a Data Entry Application</link></li>
+    <li><link change_the_order_of_entry.csdoc>Change Data Entry Characteristics</link></li>
 </list>

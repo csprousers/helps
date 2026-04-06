@@ -24,16 +24,16 @@ The function returns a logical value of 1 (true) if the map snapshot image was s
 PROC GLOBAL
 
 function SaveMap(Map m, string image_filename)
-	m.saveSnapshot(image_filename);
+    m.saveSnapshot(image_filename);
 end;
 
 PROC EXAMPLE
 
-	Map capitals_map;
+    Map capitals_map;
 
-	// ...
+    // ...
 
-	capitals_map.addTextButton("Save Image", SaveMap(capitals_map, "Capitals.png"));
+    capitals_map.addTextButton("Save Image", SaveMap(capitals_map, "Capitals.png"));
 </logic>
 
 

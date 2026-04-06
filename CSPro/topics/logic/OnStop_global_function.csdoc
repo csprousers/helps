@@ -26,7 +26,7 @@ The <logiccolor>OnStop</logiccolor> function is not executed when the <logiccolo
 PROC GLOBAL
 
 function OnStop()
-	reenter;
+    reenter;
 end;
 </logic>
 
@@ -36,12 +36,12 @@ end;
 PROC GLOBAL
 
 function OnStop()
-	if getsymbol() in "FIRST_NAME", "LAST_NAME" then
-		reenter;
-	else
-		savepartial();
-		stop(1);
-	endif;
+    if getsymbol() in "FIRST_NAME", "LAST_NAME" then
+        reenter;
+    else
+        savepartial();
+        stop(1);
+    endif;
 end;
 </logic>
 
@@ -55,12 +55,12 @@ numeric choice;
 
 if last_field_entered <> "" then
 
-	choice = errmsg("Do you want to resume where you left off?")
-					select("Yes", continue,
-						   "No", continue);
-	if choice = 1 then
-		advance to last_field_entered;
-	endif;
+    choice = errmsg("Do you want to resume where you left off?")
+                    select("Yes", continue,
+                           "No", continue);
+    if choice = 1 then
+        advance to last_field_entered;
+    endif;
 endif;
 </logic>
 

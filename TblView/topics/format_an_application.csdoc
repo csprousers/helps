@@ -16,9 +16,9 @@ The following settings are available:
 <b>Digit Grouping</b>: Controls how digits are grouped together to be separated by the digit grouping symbol. There are three options:
 
 <list>
-	<li>123,456,789 (default): place the digit grouping symbol between each group of three digits.</li>
-	<li>123456789: do not use the digit grouping symbol.</li>
-	<li>12,34,56,789: place the digit grouping symbol between each group of two digits with one group of three digits at the right.</li>
+    <li>123,456,789 (default): place the digit grouping symbol between each group of three digits.</li>
+    <li>123456789: do not use the digit grouping symbol.</li>
+    <li>12,34,56,789: place the digit grouping symbol between each group of two digits with one group of three digits at the right.</li>
 </list>
 
 

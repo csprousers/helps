@@ -28,7 +28,7 @@ PROC UNIQUE_ID
 preproc
 
 if UNIQUE_ID = "" then
-	UNIQUE_ID = uuid();
+    UNIQUE_ID = uuid();
 endif;
 </logic>
 

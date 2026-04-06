@@ -29,8 +29,8 @@ Three styles of comments are allowed in <link message_file_mgf.csdoc>message fil
 if ( HHMONTH = 6 /* June */ and HHDAY > 30 ) or
    ( HHMONTH = 7 /* July */ and HHDAY > 31 ) then
 
-	errmsg(1, "June", 30, HHDAY); // if error, then display message
-	reenter;
+    errmsg(1, "June", 30, HHDAY); // if error, then display message
+    reenter;
 
 endif;
 </logic>

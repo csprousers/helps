@@ -24,19 +24,19 @@ The function returns the number of the item selected: 1 for the first item, 2 fo
 PROC GLOBAL
 
 Array string unitedNationsCountryCodes(5,3) =
-	"004",	"Afghanistan",		"AFG",
-	"248",	"Åland Islands",	"ALA",
-	"008",	"Albania",			"ALB",
-	"012",	"Algeria",			"DZA",
-	"016",	"American Samoa",	"ASM",
-	// ...
-	;
+    "004",  "Afghanistan",      "AFG",
+    "248",  "Åland Islands",    "ALA",
+    "008",  "Albania",          "ALB",
+    "012",  "Algeria",          "DZA",
+    "016",  "American Samoa",   "ASM",
+    // ...
+    ;
 
 
 PROC EXAMPLE
 
 numeric countrySelection = showarray("Select a Country", unitedNationsCountryCodes,
-	title("Numerical Code", "Country or Area Name", "ISO ALPHA-3 Code"));
+    title("Numerical Code", "Country or Area Name", "ISO ALPHA-3 Code"));
 </logic>
 
 <center><image showarray1.png /></center>

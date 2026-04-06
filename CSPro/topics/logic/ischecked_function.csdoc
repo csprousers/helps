@@ -25,7 +25,7 @@ PROC LANGUAGES_SPOKEN_OTHER
 
 preproc
 
-	ask if ischecked("Z", LANGUAGES_SPOKEN);
+    ask if ischecked("Z", LANGUAGES_SPOKEN);
 </logic>
 
 

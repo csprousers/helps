@@ -14,9 +14,9 @@ The <logiccolor>getlanguage</logiccolor> function returns a string with the name
 
 <logic>
 if getlanguage() = "EN" then
-	errmsg("Hello");
+    errmsg("Hello");
 elseif getlanguage() = "FR" then
-	errmsg("Bonjour");
+    errmsg("Bonjour");
 endif;
 </logic>
 

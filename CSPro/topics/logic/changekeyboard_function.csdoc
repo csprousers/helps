@@ -25,8 +25,8 @@ PROC NAME
 
 onfocus
 
-	// use the Dvorak keyboard to key in the name
-	changekeyboard(NAME,66569);
+    // use the Dvorak keyboard to key in the name
+    changekeyboard(NAME,66569);
 </logic>
 
 <seealso change_keyboard_input.csdoc />

@@ -24,9 +24,9 @@ The function returns the number of the values added to the List. If the List is 
 List string eligible_head_names;
 
 do numeric counter = 1 while counter <= count(PERSON_REC)
-	if AGE(counter) >= 15 and USUAL_MEMBER(counter) = 1 then
-		eligible_head_names.add(NAME(counter));
-	endif;
+    if AGE(counter) >= 15 and USUAL_MEMBER(counter) = 1 then
+        eligible_head_names.add(NAME(counter));
+    endif;
 enddo;
 </logic>
 

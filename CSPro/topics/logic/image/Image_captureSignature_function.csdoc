@@ -12,8 +12,8 @@ b = image_name.captureSignature(『<arg>message</arg>』);
 The <logiccolor>Image.captureSignature</logiccolor> function allows the drawing of a signature and stores the captured signature in the <link Image.csdoc>Image</link> object. This function only works on Android devices. The signature UI includes two options:
 
 <list>
-	<li><b>Save</b>: Tap to save an image of the displayed signature.</li>
-	<li><b>Clear</b>: Tap to to clear the displayed signature.</li>
+    <li><b>Save</b>: Tap to save an image of the displayed signature.</li>
+    <li><b>Clear</b>: Tap to to clear the displayed signature.</li>
 </list>
 
 <center><image signature.png /></center>
@@ -31,24 +31,24 @@ The function returns a logical value of 1 (<logiccolor>true</logiccolor>) if a s
 <logic>
 PROC CONSENT
 
-	// have the respondent sign to confirm that they agreed to this interview
-	string consent_filename = Path.concat("Consent Signatures", key(SURVEY_DICT) + ".png");
+    // have the respondent sign to confirm that they agreed to this interview
+    string consent_filename = Path.concat("Consent Signatures", key(SURVEY_DICT) + ".png");
 
-	// if the file exists, then they must have already consented on a previous
-	// household visit so only take the signature if the file does not exist
-	if not fileexist(consent_filename) then
+    // if the file exists, then they must have already consented on a previous
+    // household visit so only take the signature if the file does not exist
+    if not fileexist(consent_filename) then
 
-		string consent_message = "Please sign your name, indicating that you consent to be interviewed for this survey.";
-		Image consent_signature;
+        string consent_message = "Please sign your name, indicating that you consent to be interviewed for this survey.";
+        Image consent_signature;
 
-		if not consent_signature.captureSignature(consent_message) then
-			errmsg("The respondent must consent before you can continue.");
-			reenter;
-		endif;
+        if not consent_signature.captureSignature(consent_message) then
+            errmsg("The respondent must consent before you can continue.");
+            reenter;
+        endif;
 
-		consent_signature.save(consent_filename);
+        consent_signature.save(consent_filename);
 
-	endif;
+    endif;
 </logic>
 
 

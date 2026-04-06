@@ -22,7 +22,7 @@ The initial elements of a List can be set on definition by listing each value, s
 The following variable modifiers apply to List objects:
 
 <list>
-	<li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
+    <li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
 </list>
 
 
@@ -31,14 +31,14 @@ The following variable modifiers apply to List objects:
 <logic>
 // numeric List objects
 List DaysPerMonthTypical = 31, 28, 31, 30, 31, 30,
-						   31, 31, 30, 31, 30, 31;
+                           31, 31, 30, 31, 30, 31;
 
 List numeric DaysPerMonthLeapYears = DaysPerMonthTypical;
 DaysPerMonthLeapYears(2) = 29;
 
 // string List
 List string MonthNames = "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-						 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec";
+                         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec";
 </logic>
 
 

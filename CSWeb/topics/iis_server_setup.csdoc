@@ -24,10 +24,10 @@ Locate the php.ini file for the new installation of PHP. You may have multiple c
 <subheader>Install MySQL Server 5.5.3+</subheader>
 Download the MySQL Server <link http://dev.mysql.com/downloads/mysql/>here</link>. For help with installation see the <link http://dev.mysql.com/doc/refman/5.6/en/windows-installation.html>documentation</link>. Do not forget to start the server. If you installed MySQL Server as a service, you can start it by doing the following:
 <list ordered>
-	<li> Win + R </li>
-	<li> Run services.msc </li>
-	<li> Right-click on MySQLXX </li>
-	<li> Start </li>
+    <li> Win + R </li>
+    <li> Run services.msc </li>
+    <li> Right-click on MySQLXX </li>
+    <li> Start </li>
 </list>
 Alternatively, if you did not install MySQL server as a service or have a web development environment like WampServer installed, you can start MySQL Server from the command line. You will need to open a command prompt and change directory to the directory that contains <b>mysqld.exe</b>.
 

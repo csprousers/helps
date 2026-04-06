@@ -34,14 +34,14 @@ example = replace(example, "Robert", "Bob");
 <logic>
 function string GetFileUri(string local_filename)
 
-	// get the full path in case the filename is relative
-	local_filename = Path.concat(local_filename);
+    // get the full path in case the filename is relative
+    local_filename = Path.concat(local_filename);
 
-	// convert all backslashes to forward slashes
-	local_filename = replace(local_filename, "\\", "/");
+    // convert all backslashes to forward slashes
+    local_filename = replace(local_filename, "\\", "/");
 
-	// encode the filename as a URI
-	exit "file:///" + encode(URI, local_filename);
+    // encode the filename as a URI
+    exit "file:///" + encode(URI, local_filename);
 
 end;
 

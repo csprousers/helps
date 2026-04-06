@@ -27,13 +27,13 @@ SystemApp google_maps;
 
 PROC LOCATION
 
-	// clear any previously used arguments
-	google_maps.clear();
+    // clear any previously used arguments
+    google_maps.clear();
 
-	// show barber shops near the location
-	google_maps.setArgument("action", "android.intent.action.VIEW");
-	google_maps.setArgument("data", maketext("geo:%f,%f?q=barber+shop", LATITUDE, LONGITUDE));
-	google_maps.exec("com.google.android.apps.maps");
+    // show barber shops near the location
+    google_maps.setArgument("action", "android.intent.action.VIEW");
+    google_maps.setArgument("data", maketext("geo:%f,%f?q=barber+shop", LATITUDE, LONGITUDE));
+    google_maps.exec("com.google.android.apps.maps");
 </logic>
 
 

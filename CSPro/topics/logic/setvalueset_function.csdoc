@@ -34,13 +34,13 @@ PROC D05_CAUSE_DEATH
 
 onfocus
 
-	if D02_SEX = 1 then
-		setvalueset(SEX, D05_CAUSE_DEATH_MALE_VS);
+    if D02_SEX = 1 then
+        setvalueset(SEX, D05_CAUSE_DEATH_MALE_VS);
 
-	else
-		setvalueset(SEX, D05_CAUSE_DEATH_FEMALE_VS);
+    else
+        setvalueset(SEX, D05_CAUSE_DEATH_FEMALE_VS);
 
-	endif;
+    endif;
 </logic>
 
 
@@ -51,7 +51,7 @@ PROC DISTRICT
 
 preproc
 
-	setvalueset(DISTRICT, maketext("DISTRICT_VS%v", PROVINCE));
+    setvalueset(DISTRICT, maketext("DISTRICT_VS%v", PROVINCE));
 </logic>
 
 <subheader>Example (Dynamic Value Set)</subheader>

@@ -15,8 +15,8 @@ The <logiccolor>Map.showCurrentLocation</logiccolor> function enables or disable
 In addition, there is a button on the right side of the map (shown below) that allows the user to zoom to their current location. If <arg>show_location</arg> is zero, both the blue dot and associated button are hidden. Display of the current location is enabled by default.
 
 <center>
-	<image map_current_location_button.png />~!~
-	Zoom To Button
+    <image map_current_location_button.png />~!~
+    Zoom To Button
 </center>
 
 

@@ -22,8 +22,8 @@ The function returns a logical value of 1 (true) if the file exists and is empty
 
 <logic>
 if fileempty(customReportFile) then
-	// print the header
-	filewrite(customReportFile,"SECONDS,KEYSTROKES");
+    // print the header
+    filewrite(customReportFile,"SECONDS,KEYSTROKES");
 endif;
 </logic>
 

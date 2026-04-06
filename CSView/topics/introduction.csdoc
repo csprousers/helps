@@ -11,13 +11,13 @@ When running a CSPro application, you can also display files using the <logiccol
 <subheader>Concepts</subheader>
 
 <list>
-	<li><topic supported_files.csdoc /></li>
+    <li><topic supported_files.csdoc /></li>
 </list>
 
 
 <subheader>How to ...</subheader>
 
 <list>
-	<li><topic run_production_views.csdoc /></li>
-	<li><topic get_help.csdoc /></li>
+    <li><topic run_production_views.csdoc /></li>
+    <li><topic get_help.csdoc /></li>
 </list>

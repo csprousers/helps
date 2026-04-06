@@ -20,7 +20,7 @@ In this example, to calculate the ratio of unmarried men per 100 unmarried women
 
 <logic>
 TABLE3[20, *] = 100 * ( TABLE3[1, *] + TABLE3[2, *] + TABLE3[3, *] + TABLE3[4, *] ) /
-					  ( TABLE3[11, *] + TABLE3[12, *] + TABLE3[13, *] + TABLE3[14, *] );
+                      ( TABLE3[11, *] + TABLE3[12, *] + TABLE3[13, *] + TABLE3[14, *] );
 </logic>
 
 

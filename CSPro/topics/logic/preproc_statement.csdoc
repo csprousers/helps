@@ -23,7 +23,7 @@ PROC INTERVIEW_DATE
 
 preproc
 
-	INTERVIEW_DATE = sysdate("YYYYMMDD");
+    INTERVIEW_DATE = sysdate("YYYYMMDD");
 </logic>
 
 <seealso proc_statement.csdoc onfocus_statement.csdoc onoccchange_statement.csdoc killfocus_statement.csdoc postproc_statement.csdoc order_of_executing_data_entry_events.csdoc order_of_executing_batch_edit_events.csdoc />

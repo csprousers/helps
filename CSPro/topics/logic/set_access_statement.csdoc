@@ -16,17 +16,17 @@ The <arg>dictionary_name</arg> refers to either an external dictionary or the ma
 <subheader>Dictionary Access Parameters</subheader>
 
 <table 3 header nowrap>
-	<cell>Type</cell><cell>Values</cell><cell>Description</cell>
-	<cell><arg>OrderType</arg></cell><cell><arg>Indexed</arg></cell><cell>Iterate based on the alphabetical value of the case's key (default for external dictionaries)</cell>
-	<cell></cell><cell><arg>Sequential</arg></cell><cell>Iterate based on the case's position in the file  (default for batch inputs)</cell>
-	<cell 3>&nbsp;</cell>
-	<cell><arg>Order</arg></cell><cell><arg>Ascending</arg></cell><cell>Iterate from low to high value (key or file position) (default)</cell>
-	<cell></cell><cell><arg>Descending</arg></cell><cell>Iterate from high to low value (key or file position)</cell>
-	<cell 3>&nbsp;</cell>
-	<cell><arg>CaseStatus</arg></cell><cell><arg>All</arg></cell><cell>Iterate through all cases, including deleted cases</cell>
-	<cell></cell><cell><arg>NotDeleted</arg></cell><cell>Iterate through all non-deleted cases (default)</cell>
-	<cell></cell><cell><arg>Partial</arg></cell><cell>Iterate through non-deleted partially saved cases</cell>
-	<cell></cell><cell><arg>Duplicate</arg></cell><cell>Iterate through non-deleted cases where there are at least two cases with the same key in the file</cell>
+    <cell>Type</cell><cell>Values</cell><cell>Description</cell>
+    <cell><arg>OrderType</arg></cell><cell><arg>Indexed</arg></cell><cell>Iterate based on the alphabetical value of the case's key (default for external dictionaries)</cell>
+    <cell></cell><cell><arg>Sequential</arg></cell><cell>Iterate based on the case's position in the file  (default for batch inputs)</cell>
+    <cell 3>&nbsp;</cell>
+    <cell><arg>Order</arg></cell><cell><arg>Ascending</arg></cell><cell>Iterate from low to high value (key or file position) (default)</cell>
+    <cell></cell><cell><arg>Descending</arg></cell><cell>Iterate from high to low value (key or file position)</cell>
+    <cell 3>&nbsp;</cell>
+    <cell><arg>CaseStatus</arg></cell><cell><arg>All</arg></cell><cell>Iterate through all cases, including deleted cases</cell>
+    <cell></cell><cell><arg>NotDeleted</arg></cell><cell>Iterate through all non-deleted cases (default)</cell>
+    <cell></cell><cell><arg>Partial</arg></cell><cell>Iterate through non-deleted partially saved cases</cell>
+    <cell></cell><cell><arg>Duplicate</arg></cell><cell>Iterate through non-deleted cases where there are at least two cases with the same key in the file</cell>
 </table>
 
 
@@ -44,8 +44,8 @@ PROC CENSUS_FF
 
 preproc
 
-	// process the batch input in order from the last province to the first
-	set access(CENSUS_DICT, OrderType.Indexed, Order.Descending);
+    // process the batch input in order from the last province to the first
+    set access(CENSUS_DICT, OrderType.Indexed, Order.Descending);
 </logic>
 
 
@@ -53,7 +53,7 @@ preproc
 
 <logic>
 forcase CENSUS_DICT(CaseStatus.Partial) do
-	interview_vs.add("Continue interview: " + getcaselabel(CENSUS_DICT), key(CENSUS_DICT));
+    interview_vs.add("Continue interview: " + getcaselabel(CENSUS_DICT), key(CENSUS_DICT));
 endfor;
 </logic>
 
@@ -63,7 +63,7 @@ endfor;
 <logic>
 // only process assignments in the area where the supervisor is working
 forcase GEOCODES_DICT(startswith, strip(MENU_GEOCODE_SELECTION)) do
-	// ...
+    // ...
 endfor;
 </logic>
 

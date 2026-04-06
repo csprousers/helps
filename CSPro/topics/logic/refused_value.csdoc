@@ -25,14 +25,14 @@ Advanced users may want to have more control over when a refused value can be en
 <logic>
 function OnRefused()
 
-	string probe_text = maketext("Are you sure that you want to select Refused for %s? "
-								 "Remember the approaches discussed in training about "
-								 "trying to get answers for all questions.", getlabel());
+    string probe_text = maketext("Are you sure that you want to select Refused for %s? "
+                                 "Remember the approaches discussed in training about "
+                                 "trying to get answers for all questions.", getlabel());
 
-	when warning("%s", probe_text) select("Yes", continue, "No", continue) default(1);
-		 1 -> exit true;
-		   -> exit false;
-	endwhen;
+    when warning("%s", probe_text) select("Yes", continue, "No", continue) default(1);
+         1 -> exit true;
+           -> exit false;
+    endwhen;
 
 end;
 </logic>

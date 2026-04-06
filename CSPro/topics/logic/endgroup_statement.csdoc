@@ -16,7 +16,7 @@ This function has superseded the <font blue>endsect</font> statement. Where <fon
 
 <logic>
 if KIDSBORN = 0 then
-	endgroup;
+    endgroup;
 endif;
 </logic>
 

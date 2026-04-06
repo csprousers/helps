@@ -27,8 +27,8 @@ The function returns a logical value of 1 (true) if the source string starts wit
 
 <logic>
 if startswith("9999", MENU_GEOCODE_SELECTION) then
-	errmsg("Are you sure that you want to continue in training mode?")
-	select("Yes", continue, "No", reenter);
+    errmsg("Are you sure that you want to continue in training mode?")
+    select("Yes", continue, "No", reenter);
 endif;
 </logic>
 

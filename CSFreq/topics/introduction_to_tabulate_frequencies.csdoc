@@ -9,12 +9,12 @@
 You produce a frequency report by:
 
 <list ordered>
-	<li>Opening a frequencies specifications file (*.fqf) or a CSPro dictionary describing the file from which you wish to get frequency distributions.</li>
-	<li>Choosing the item(s) for which you wish to produce frequency distributions.</li>
-	<li>Defining a universe (if desired).</li>
-	<li>Specifying a weight (if desired).</li>
-	<li>Specifying the type of frequency, whether you want statistics, and other options.</li>
-	<li>Tabulating the frequencies.</li>
+    <li>Opening a frequencies specifications file (*.fqf) or a CSPro dictionary describing the file from which you wish to get frequency distributions.</li>
+    <li>Choosing the item(s) for which you wish to produce frequency distributions.</li>
+    <li>Defining a universe (if desired).</li>
+    <li>Specifying a weight (if desired).</li>
+    <li>Specifying the type of frequency, whether you want statistics, and other options.</li>
+    <li>Tabulating the frequencies.</li>
 </list>
 
 
@@ -23,21 +23,21 @@ This guide contains the following information:
 <subheader>How to ...</subheader>
 
 <list>
-	<li><topic open_a_dictionary_or_specifications_file.csdoc /></li>
-	<li><topic choose_items.csdoc /></li>
-	<li><topic define_a_universe.csdoc /></li>
-	<li><topic specify_a_weight.csdoc /></li>
-	<li><topic select_frequency_options.csdoc /></li>
-	<li><topic run_frequencies.csdoc /></li>
-	<li><topic save_a_frequencies_specification_file.csdoc /></li>
-	<li><topic run_production_frequencies.csdoc /></li>
-	<li><topic get_help.csdoc /></li>
+    <li><topic open_a_dictionary_or_specifications_file.csdoc /></li>
+    <li><topic choose_items.csdoc /></li>
+    <li><topic define_a_universe.csdoc /></li>
+    <li><topic specify_a_weight.csdoc /></li>
+    <li><topic select_frequency_options.csdoc /></li>
+    <li><topic run_frequencies.csdoc /></li>
+    <li><topic save_a_frequencies_specification_file.csdoc /></li>
+    <li><topic run_production_frequencies.csdoc /></li>
+    <li><topic get_help.csdoc /></li>
 </list>
 
 <subheader>Summaries</subheader>
 
 <list>
-	<li><link menu_summary.csdoc>Menu</link></li>
-	<li><link toolbar_summary.csdoc>Toolbar</link></li>
-	<li><link keys_summary.csdoc>Keys</link></li>
+    <li><link menu_summary.csdoc>Menu</link></li>
+    <li><link toolbar_summary.csdoc>Toolbar</link></li>
+    <li><link keys_summary.csdoc>Keys</link></li>
 </list>

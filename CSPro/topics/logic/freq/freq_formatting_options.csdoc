@@ -3,10 +3,10 @@
 Frequency formatting options can be specified:
 
 <list>
-	<li>When using the <link Freq_statement_unnamed.csdoc>unnamed frequency</link> command.</li>
-	<li>When declaring a <link Freq_statement_named.csdoc>named frequency</link>.</li>
-	<li>When calling the <logiccolor>Freq.save</logiccolor> function.</li>
-	<li>When calling the <logiccolor>Freq.view</logiccolor> function.</li>
+    <li>When using the <link Freq_statement_unnamed.csdoc>unnamed frequency</link> command.</li>
+    <li>When declaring a <link Freq_statement_named.csdoc>named frequency</link>.</li>
+    <li>When calling the <logiccolor>Freq.save</logiccolor> function.</li>
+    <li>When calling the <logiccolor>Freq.view</logiccolor> function.</li>
 </list>
 
 Any options specified as part of a call to <logiccolor>Freq.save</logiccolor> or <logiccolor>Freq.view</logiccolor> will override options specified when declaring the named frequency.
@@ -71,10 +71,10 @@ The <logiccolor>decimals</logiccolor> command means that the frequency values wi
 The <logiccolor>sort</logiccolor> command allows you to control the order in which each row of the frequency table appears. The options include:
 
 <list>
-	<li><logiccolor>by valueset</logiccolor>: the rows will appear in the order that the values are defined in an item's value set.</li>
-	<li><logiccolor>by code</logiccolor>: the rows will appear in order sorted by each row's value.</li>
-	<li><logiccolor>by label</logiccolor>: the rows will appear in order sorted by each row's label as defined in an item's value set.</li>
-	<li><logiccolor>by Freq</logiccolor>: the rows will appear in order based on the frequency of each row's value.</li>
+    <li><logiccolor>by valueset</logiccolor>: the rows will appear in the order that the values are defined in an item's value set.</li>
+    <li><logiccolor>by code</logiccolor>: the rows will appear in order sorted by each row's value.</li>
+    <li><logiccolor>by label</logiccolor>: the rows will appear in order sorted by each row's label as defined in an item's value set.</li>
+    <li><logiccolor>by Freq</logiccolor>: the rows will appear in order based on the frequency of each row's value.</li>
 </list>
 
 By default, frequency tables are sorted ascending by code.

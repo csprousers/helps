@@ -4,7 +4,7 @@
 
 <logicsyntax>
 for <arg>dictionary_name</arg>『(<arg>mark_type</arg>)』 do
-	// statements
+    // statements
 endfor;
 </logicsyntax>
 
@@ -15,10 +15,10 @@ The <logiccolor>for</logiccolor> (dictionary) statement executes one or more sta
 The <arg>dictionary_name</arg> must be supplied and refers to an external dictionary associated with your application. An optional argument, <arg>mark_type</arg>, indicates what kinds of cases to process, and can be one of the following values:
 
 <indent><table 2>
-	<cell><arg>mark_type</arg></cell><cell><b>Description</b></cell>
-	<cell><b>marked</b></cell><cell>Process only the cases selected by the operator during the <logiccolor>selcase</logiccolor> function call.</cell>
-	<cell><b>unmarked</b></cell><cell>Process the cases <b>not</b> selected by the operator.</cell>
-	<cell><b>all</b></cell><cell>Process all of the cases that could have been selected by the operator.</cell>
+    <cell><arg>mark_type</arg></cell><cell><b>Description</b></cell>
+    <cell><b>marked</b></cell><cell>Process only the cases selected by the operator during the <logiccolor>selcase</logiccolor> function call.</cell>
+    <cell><b>unmarked</b></cell><cell>Process the cases <b>not</b> selected by the operator.</cell>
+    <cell><b>all</b></cell><cell>Process all of the cases that could have been selected by the operator.</cell>
 </table></indent>
 
 If not specified, the <arg>mark_type</arg> defaults to <b>marked</b>.
@@ -31,7 +31,7 @@ selcase(OCCUPATION_DICT,"Plantation") multiple;
 numeric maxEducation;
 
 for OCCUPATION_DICT do
-	maxEducation = high(maxEducation,MAXIMUM_EDUCATION);
+    maxEducation = high(maxEducation,MAXIMUM_EDUCATION);
 endfor;
 </logic>
 

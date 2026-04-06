@@ -3,7 +3,7 @@
 When you verify a case, you key the case a second time as if you were in Add mode. Even though there is already data in the data file, CSEntry does not show this to you. All fields on the current form start out blank. Each time you key a field, the system compares the value you keyed with the value in the data file. If these two values match, you move to the next field. If the values do not match, you get a message telling you so. When this happens, simply rekey the field. One of the following situations will occur:
 
 <list>
-	<li>The second value you key matches the value in the data file. The system assumes your first value is in error and moves to the next field. There will be no change to the data file for this field.</li>
-	<li>The second value you key matches the first value you keyed. The system assumes the value in the data file is in error and moves to the next field. The new value, which you keyed twice, will replace the original value in the data file.</li>
-	<li>The second value you key matches neither the value in the data file nor the first value you keyed. The system will throw away the first value you keyed, show you the mismatch message and wait for you to rekey the field again.</li>
+    <li>The second value you key matches the value in the data file. The system assumes your first value is in error and moves to the next field. There will be no change to the data file for this field.</li>
+    <li>The second value you key matches the first value you keyed. The system assumes the value in the data file is in error and moves to the next field. The new value, which you keyed twice, will replace the original value in the data file.</li>
+    <li>The second value you key matches neither the value in the data file nor the first value you keyed. The system will throw away the first value you keyed, show you the mismatch message and wait for you to rekey the field again.</li>
 </list>

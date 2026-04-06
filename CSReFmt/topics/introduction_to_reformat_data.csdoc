@@ -10,14 +10,14 @@ This guide contains the following information:
 <subheader>Concepts</subheader>
 
 <list>
-	<li><topic corresponding_items.csdoc /></li>
+    <li><topic corresponding_items.csdoc /></li>
 </list>
 
 <subheader>How to ...</subheader>
 
 <list>
-	<li><topic specify_files.csdoc /></li>
-	<li><topic run_reformat.csdoc /></li>
-	<li><topic run_production_reformats.csdoc /></li>
-	<li><topic get_help.csdoc /></li>
+    <li><topic specify_files.csdoc /></li>
+    <li><topic run_reformat.csdoc /></li>
+    <li><topic run_production_reformats.csdoc /></li>
+    <li><topic get_help.csdoc /></li>
 </list>

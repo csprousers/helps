@@ -5,9 +5,9 @@ In order to determine the total editing task, the user should understand what ed
 The three types of edit statistics reports are:
 
 <list>
-	<li><b>Case</b>: Output listing shows case by case.</li>
-	<li><b>Summary</b>: Output listing shows (1) a summary of the number of times each error message was generated, and (2) the number or errors as a percentage of total cases in which the edit test was invoked.</li>
-	<li><b>Frequency</b>: This report is generated when at least one <logiccolor>impute</logiccolor> statement is coded in the program. It assigns a value to a data item and logs the frequency of assignments.</li>
+    <li><b>Case</b>: Output listing shows case by case.</li>
+    <li><b>Summary</b>: Output listing shows (1) a summary of the number of times each error message was generated, and (2) the number or errors as a percentage of total cases in which the edit test was invoked.</li>
+    <li><b>Frequency</b>: This report is generated when at least one <logiccolor>impute</logiccolor> statement is coded in the program. It assigns a value to a data item and logs the frequency of assignments.</li>
 </list>
 
 Typically, during the testing phase, the report by case is very useful, because it permits detailed examination of the effects of the logic coded. After testing, it is usually not used because of the volume of reports generated.

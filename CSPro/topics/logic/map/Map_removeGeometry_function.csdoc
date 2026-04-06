@@ -33,22 +33,22 @@ Geometry boundary;
 numeric boundaryGeometryId;
 
 function showBoundary()
-	// Add boundary polygon to the map and save the id
-	boundaryGeometryId = mymap.addGeometry(boundary);
+    // Add boundary polygon to the map and save the id
+    boundaryGeometryId = mymap.addGeometry(boundary);
 end;
 
 function hideBoundary()
-	// Remove the boundary polygon from the map
-	mymap.removeGeometry(boundaryGeometryId);
-	boundaryGeometryId = 0;
+    // Remove the boundary polygon from the map
+    mymap.removeGeometry(boundaryGeometryId);
+    boundaryGeometryId = 0;
 end;
 
 function toggleBoundary()
-	if boundaryGeometryId = 0 then
-		showBoundary();
-	else
-		hideBoundary();
-	endif;
+    if boundaryGeometryId = 0 then
+        showBoundary();
+    else
+        hideBoundary();
+    endif;
 end;
 
 PROC SHOW_MAP

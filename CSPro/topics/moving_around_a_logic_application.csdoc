@@ -13,7 +13,7 @@ Since there is no logic, <logiccolor>PROC AGE</logiccolor> is generated "on-the-
 <logic>
 PROC AGE
 
-	if not ( AGE in 0:99 ) then
-		errmsg("Invalid age found");
-	endif;
+    if not ( AGE in 0:99 ) then
+        errmsg("Invalid age found");
+    endif;
 </logic>

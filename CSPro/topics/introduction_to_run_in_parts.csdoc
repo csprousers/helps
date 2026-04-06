@@ -4,9 +4,9 @@
 When CSPro runs a tabulation application, it automatically performs two or three processes. These processes are to:
 
 <list>
-	<li><b>Tabulate</b> the data file;</li>
-	<li><b>Consolidate</b> geographic areas (if the application uses area processing); and</li>
-	<li><b>Format</b> the tables with text.</li>
+    <li><b>Tabulate</b> the data file;</li>
+    <li><b>Consolidate</b> geographic areas (if the application uses area processing); and</li>
+    <li><b>Format</b> the tables with text.</li>
 </list>
 
 Run in parts allows you perform each of these processes separately. Run in parts is also used when you need to save the intermediate <link table_matrices_file_tab.csdoc>.tab</link> files for later use.

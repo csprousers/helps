@@ -19,10 +19,10 @@ The function returns the minimum valid value for an item or value set.
 <logic>
 PROC AGE
 
-	if RELATIONSHIP = 1 and AGE < minvalue(AGE_HEAD_VS) then
-		errmsg("The head of household must be at least %d-years-old.", minvalue(AGE_HEAD_VS));
-		reenter;
-	endif;
+    if RELATIONSHIP = 1 and AGE < minvalue(AGE_HEAD_VS) then
+        errmsg("The head of household must be at least %d-years-old.", minvalue(AGE_HEAD_VS));
+        reenter;
+    endif;
 </logic>
 
 <seealso maxvalue_function.csdoc low_function.csdoc getlabel_function.csdoc />

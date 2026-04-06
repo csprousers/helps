@@ -18,8 +18,8 @@ The function returns the number of the item selected: 1 for the first item, 2 fo
 
 <logic>
 if RELATIONSHIP = 2 and SEX = SEX(ptrHead) then
-	show("Sex of spouse is the same as the sex of head!",PERSON_REC,NAME,RELATIONSHIP,SEX,AGE,
-		title("Name","Rel","Sex","Age"));
+    show("Sex of spouse is the same as the sex of head!",PERSON_REC,NAME,RELATIONSHIP,SEX,AGE,
+        title("Name","Rel","Sex","Age"));
 endif;
 </logic>
 
@@ -29,9 +29,9 @@ endif;
 
 <logic>
 if ctrHead > 1 then // more than 1 head in the household
-	errmsg("More than 1 head of household (count=%d)",ctrHead);
-	numeric headToDelete = show(PERSON_REC, NAME, RELATIONSHIP, SEX, AGE, where RELATIONSHIP = 1);
-	// ...
+    errmsg("More than 1 head of household (count=%d)",ctrHead);
+    numeric headToDelete = show(PERSON_REC, NAME, RELATIONSHIP, SEX, AGE, where RELATIONSHIP = 1);
+    // ...
 endif;
 </logic>
 

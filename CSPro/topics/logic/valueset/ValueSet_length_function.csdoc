@@ -25,14 +25,14 @@ PROC HOUSEHOLD_SELECTION
 
 onfocus
 
-	ValueSet households_vs;
+    ValueSet households_vs;
 
-	// ...
+    // ...
 
-	if households_vs.length() = 0 then
-		errmsg("There are no households to select");
-		reenter MAIN_MENU;
-	endif;
+    if households_vs.length() = 0 then
+        errmsg("There are no households to select");
+        reenter MAIN_MENU;
+    endif;
 </logic>
 
 

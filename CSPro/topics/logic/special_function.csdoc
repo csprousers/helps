@@ -18,7 +18,7 @@ The function returns a logical value of 1 (true) if the variable is a special va
 
 <logic>
 if special(CHILDREN_EVER_BORN) then
-	CHILDREN_EVER_BORN = 0;
+    CHILDREN_EVER_BORN = 0;
 endif;
 </logic>
 

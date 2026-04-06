@@ -14,7 +14,7 @@ Now enter the following:
 
 <logic>
 if P06_MARITAL_STATUS <> 1 and P05_AGE < 12 then
-	errmsg("Not 'never married' but less than 12 years old");
+    errmsg("Not 'never married' but less than 12 years old");
 endif;
 </logic>
 
@@ -27,7 +27,7 @@ Program a skip after the marital status question to skip over "Age at First Marr
 <logic>
 PROC P06_MARITAL_STATUS
 
-	if P06_MARITAL_STATUS = 1 then
-		skip to P08_WORK_STATUS;
-	endif;
+    if P06_MARITAL_STATUS = 1 then
+        skip to P08_WORK_STATUS;
+    endif;
 </logic>

@@ -10,9 +10,9 @@ For examples and methodology on how to develop your edit routines, refer to the 
 This section contains the following information:
 
 <list>
-	<li><topic create_a_new_batch_edit_application.csdoc /></li>
-	<li><topic order_of_executing_batch_edit_events.csdoc /></li>
-	<li><topic methods_of_correcting_data.csdoc /></li>
-	<li><topic manipulate_automatic_reports.csdoc /></li>
-	<li><topic general_batch_editing_issues.csdoc /></li>
+    <li><topic create_a_new_batch_edit_application.csdoc /></li>
+    <li><topic order_of_executing_batch_edit_events.csdoc /></li>
+    <li><topic methods_of_correcting_data.csdoc /></li>
+    <li><topic manipulate_automatic_reports.csdoc /></li>
+    <li><topic general_batch_editing_issues.csdoc /></li>
 </list>

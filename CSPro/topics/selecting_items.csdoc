@@ -7,7 +7,7 @@ To quickly select several fields in their entirety, just grab their data entry b
 There are several methods of selection:
 
 <list>
-	<li>To select several items, hold down the left mouse button while dragging a selection box around the desired items. Or you can also hold down the <b>Ctrl</b> key while individually clicking on each item (box or text) to be selected with your left mouse button.</li>
-	<li>To select both a data entry box and its associated description text, hold down the <b>Shift</b> key while clicking on either the entry box or its associated text.</li>
-	<li>To select several data entry boxes and their associated descriptions, hold down both the <b>Shift</b> and <b>Ctrl</b> keys while individually clicking on either the edit box or its text for each different field.</li>
+    <li>To select several items, hold down the left mouse button while dragging a selection box around the desired items. Or you can also hold down the <b>Ctrl</b> key while individually clicking on each item (box or text) to be selected with your left mouse button.</li>
+    <li>To select both a data entry box and its associated description text, hold down the <b>Shift</b> key while clicking on either the entry box or its associated text.</li>
+    <li>To select several data entry boxes and their associated descriptions, hold down both the <b>Shift</b> and <b>Ctrl</b> keys while individually clicking on either the edit box or its text for each different field.</li>
 </list>

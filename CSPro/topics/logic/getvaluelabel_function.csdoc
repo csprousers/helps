@@ -11,9 +11,9 @@ s = getvaluelabel(<arg>item_name</arg>);
 The <logiccolor>getvaluelabel</logiccolor> function returns the value label associated with the current value of <arg>item_name</arg>. The label is determined in the following order, with the first valid label returned:
 
 <list ordered>
-	<li>The label for the value in the item's current value set.</li>
-	<li>The label for the value in the item's primary value set.</li>
-	<li>The value itself, formatted for displaying.</li>
+    <li>The label for the value in the item's current value set.</li>
+    <li>The label for the value in the item's primary value set.</li>
+    <li>The value itself, formatted for displaying.</li>
 </list>
 
 The function returns a value similar to calling:
@@ -33,13 +33,13 @@ The function returns a string containing the label.
 <logic>
 PROC GRADE_ATTENDING
 
-	if GRADE_ATTENDING > 3 and AGE < 15 then
-		errmsg("Someone aged under 15 cannot attend %s.", getvaluelabel(GRADE_ATTENDING));
-		reenter;
-	endif;
+    if GRADE_ATTENDING > 3 and AGE < 15 then
+        errmsg("Someone aged under 15 cannot attend %s.", getvaluelabel(GRADE_ATTENDING));
+        reenter;
+    endif;
 
-	// using the "%l" message formatter, the above error message can also written as:
-	errmsg("Someone aged under 15 cannot attend %l.", GRADE_ATTENDING);
+    // using the "%l" message formatter, the above error message can also written as:
+    errmsg("Someone aged under 15 cannot attend %l.", GRADE_ATTENDING);
 </logic>
 
 <seealso getlabel_function.csdoc message_formatting_options.csdoc />

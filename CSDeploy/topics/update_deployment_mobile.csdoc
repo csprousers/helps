@@ -5,17 +5,17 @@ Once an application has been installed on a mobile device, you may need to make 
 <subheader>On your computer:</subheader>
 
 <list>
-	<li>Make changes to the CSPro applications and/or other files in the deployment package.</li>
-	<li>Open the Deploy Application tool and deploy the updated application package to the same server that it was originally deployed to. This will overwrite the application package on the server with the newly updated package.</li>
+    <li>Make changes to the CSPro applications and/or other files in the deployment package.</li>
+    <li>Open the Deploy Application tool and deploy the updated application package to the same server that it was originally deployed to. This will overwrite the application package on the server with the newly updated package.</li>
 </list>
 
 <subheader>On the mobile device:</subheader>
 
 <list>
-	<li>Open CSEntry.</li>
-	<li>In Entry Applications, tap the menu icon or menu button and choose <b>Update Installed Applications</b>.</li>
-	<li>CSEntry will display a list of all applications for which there are available updates.</li>
-	<li>Find the name of the application you have just re-deployed and tap the <b>Update</b> button next to it.</li>
+    <li>Open CSEntry.</li>
+    <li>In Entry Applications, tap the menu icon or menu button and choose <b>Update Installed Applications</b>.</li>
+    <li>CSEntry will display a list of all applications for which there are available updates.</li>
+    <li>Find the name of the application you have just re-deployed and tap the <b>Update</b> button next to it.</li>
 </list>
 
 Files in the downloaded package overwrite the corresponding files on the mobile device. To avoid generating multiple copies of the same file, use the same directory layout, file and folder names in the updated package as were used in the original package.

@@ -9,6 +9,6 @@ If the application is defined as <b>system-controlled</b> type, you may use the 
 The following is true for both operator and system-controlled mode:
 
 <list>
-	<li>If you are in <b>add</b> mode, saving the case will keep you in add mode, allowing the operator to continue adding cases.</li>
-	<li>If you are in <b>modify</b> mode, saving the case will terminate modify mode. The operator has to select a new case and to get back into modify mode.</li>
+    <li>If you are in <b>add</b> mode, saving the case will keep you in add mode, allowing the operator to continue adding cases.</li>
+    <li>If you are in <b>modify</b> mode, saving the case will terminate modify mode. The operator has to select a new case and to get back into modify mode.</li>
 </list>

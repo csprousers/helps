@@ -27,10 +27,10 @@ The function returns a logical value of 1 (true) if a case is found and 0 (false
 <logic>
 PROC OCCUPATION
 
-	if not find(OCCUPATION_CODES_DICT, =, maketext("%04d", OCCUPATION)) then
-		errmsg("The occupation %d is not valid.", OCCUPATION);
-		reenter;
-	endif;
+    if not find(OCCUPATION_CODES_DICT, =, maketext("%04d", OCCUPATION)) then
+        errmsg("The occupation %d is not valid.", OCCUPATION);
+        reenter;
+    endif;
 </logic>
 
 <seealso locate_function.csdoc countcases_function.csdoc />

@@ -5,19 +5,19 @@ During data entry, the forms will be shown to the keyer in the order in which th
 To change the form order, simply drag and drop on the form tree. For example, suppose you currently have Form A, Form C, Form D and Form B in your level. The forms tree will now show the following:
 
 <list ordered>
-	<li>Form A</li>
-	<li>Form C</li>
-	<li>Form D</li>
-	<li>Form B</li>
+    <li>Form A</li>
+    <li>Form C</li>
+    <li>Form D</li>
+    <li>Form B</li>
 </list>
 
 If you drag the form icon for Form B and drop it on top of Form C, the forms tree will now show:
 
 <list ordered>
-	<li>Form A</li>
-	<li>Form B</li>
-	<li>Form C</li>
-	<li>Form D</li>
+    <li>Form A</li>
+    <li>Form B</li>
+    <li>Form C</li>
+    <li>Form D</li>
 </list>
 
 Similarly, to change the order of fields within a form, use drag and drop on the forms tree.
