@@ -40,4 +40,4 @@ When writing text files, CSPro is inconsistent in the way that newlines are writ
 </table>
 
 
-<seealso newline_handling.csdoc />
+<seealso newline_handling.csdoc unicode_primer.csdoc />

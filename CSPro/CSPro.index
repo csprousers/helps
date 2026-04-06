@@ -4398,7 +4398,7 @@
   },
   { "path": "undo_and_redo_changes.csdoc", "~title": "Undo and Redo Changes" },
   { "path": "undo_or_reset_changes_in_print_preview.csdoc", "~title": "Undo or Reset Changes in Print Preview" },
-  { "path": "unicode_primer.csdoc", "~title": "Unicode Primer" },
+  { "path": "unicode_primer.csdoc", "title": "Unicode" },
   { "path": "uninstalling_cspro.csdoc", "~title": "Uninstalling CSPro" },
   { "path": "change_unit_of_tabulation.csdoc", "title": "Unit of Tabulation",
     "subindex": [
