@@ -44,8 +44,8 @@ mymap.setMarkerOnClick(markerId, clickedOnMarker());
 
 // Display the map
 mymap.show();
-
 </logic>
+
 
 <subheader>Example 2</subheader>
 
@@ -54,18 +54,18 @@ PROC GLOBAL
 
 function launchHouseholdQuestionnaire(string caseid)
 
-	Pff household_pff;
+    Pff household_pff;
 
-	household_pff.setProperty("AppType", "Entry");
+    household_pff.setProperty("AppType", "Entry");
 
-	household_pff.setProperty("Key", caseid);
+    household_pff.setProperty("Key", caseid);
 
-	household_pff.setProperty("Application", "Household.ent");
-	household_pff.setProperty("InputData", "Household.csdb");
+    household_pff.setProperty("Application", "Household.ent");
+    household_pff.setProperty("InputData", "Household.csdb");
 
-	household_pff.setProperty("OnExit", "Menu.pff");
+    household_pff.setProperty("OnExit", "Menu.pff");
 
-	household_pff.exec();
+    household_pff.exec();
 
 end;
 
@@ -78,15 +78,15 @@ Map mymap;
 // Loop through all households in the listing dictionary
 forcase LIST_DICT do
 
-	// Create a marker for household at latitude and longitude from listing file
+    // Create a marker for household at latitude and longitude from listing file
     numeric markerId = mymap.addMarker(LI_LATITUDE, LI_LONGITUDE);
 
-	// Set the marker text to the household number
+    // Set the marker text to the household number
     mymap.setMarkerText(markerId, maketext("%v", LI_HOUSEHOLD_NUMBER));
 
-	// When marker is clicked launch household questionnaire application
-	// and prefill the ID items
-	string householdCode = key(LIST_DICT);
+    // When marker is clicked launch household questionnaire application
+    // and prefill the ID items
+    string householdCode = key(LIST_DICT);
     mymap.setMarkerOnClick(markerId, launchHouseholdQuestionnaire(householdCode));
 
 endfor;

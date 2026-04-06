@@ -14,7 +14,7 @@ The <logiccolor>Audio.recordInteractive</logiccolor> function launches an intera
 
 The recorded audio is stored in the <link Audio.csdoc>Audio</link> object and can be played back using <logiccolor>Audio.play</logiccolor> or saved to a file using <logiccolor>Audio.save</logiccolor>. If the <link Audio.csdoc>Audio</link> object already contains an audio recording, the recorded audio will be appended to the existing recording. To replace the existing recording rather than adding to it, call the <logiccolor>Audio.clear</logiccolor> function before calling <logiccolor>Audio.recordInteractive</logiccolor>.
 
-Recorded audio is stored in m4a format (AAC encoded in an MPEG-4 container). Files should be saved with the extension .m4a so that they will be recognized by media players.
+Recorded audio is stored in M4A format (AAC encoded in an MPEG-4 container). Files should be saved with the extension .m4a so that they will be recognized by media players.
 
 Audio recording is only supported on Android. This function will do nothing on Windows.
 

@@ -1,0 +1,41 @@
+﻿<title>StringWriter.writeEncoded Function</title>
+
+<i>This documentation also applies to the <logiccolor>Report.writeEncoded</logiccolor> function as a <logiccolor>Report</logiccolor> is a type of <logiccolor>StringWriter</logiccolor>.</i>
+
+
+<subheader>Format 1</subheader>
+
+<logicsyntax>
+b = object_name.writeEncoded(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argumentN</arg>』)
+</logicsyntax>
+
+
+<subheader>Format 2</subheader>
+
+<logicsyntax>
+b = object_name.writeEncoded(<arg>msg_num</arg>『, <arg>argument1</arg>, ..., <arg>argumentN</arg>』)
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>StringWriter.writeEncoded</logiccolor> function writes text to a <link StringWriter.csdoc>StringWriter</link> object's string buffer (or to a <link templated_reports.csdoc>templated report</link>). The text is written after <link encode_function.csdoc>encoding</link> the text for the StringWriter's <link StringWriter_statement.csdoc>encoding type</link> or the templated report's <link change_report_properties.csdoc>format</link>. When used as part of a <logiccolor>Report</logiccolor> object, the function is meant to be called from within the templated report's logic.
+
+<include include_StringWriter_write.hgi />
+
+
+<subheader>Example 2 (Report)</subheader>
+
+<logicdeclare Report HOUSEHOLD_REPORT />
+
+<report HTML>
+<?
+    HOUSEHOLD_REPORT.writeEncoded("The report was generated at: ", timestamp());
+
+    // alternatively, use $ to refer to HOUSEHOLD_REPORT
+    $.writeEncoded("The report was generated at: ", timestamp());
+?>
+</report>
+
+
+<seealso StringWriter.csdoc templated_reports.csdoc />

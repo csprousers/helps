@@ -1,6 +1,6 @@
 ﻿<title>Multiple Language Dictionaries</title>
 
-You can create dictionary labels in more than one language. To do this, while editing your dictionary, go to the <b>Edit</b> menu and select <b>Languages</b>. You will be presented with the following dialog box, from which you can add (or remove or modify) languages. (This is similar to the way that you <link define_languages.csdoc>define CAPI languages</link>.)
+You can create dictionary labels in more than one language. To do this, while editing your dictionary, go to the <b>Edit</b> menu and select <b>Languages</b>. You will be presented with the following dialog box, from which you can add (or remove or modify) languages. (This is similar to the way that you <link define_languages.csdoc>define languages for question text</link>.)
 
 <center><image multiple_languages_add_dialog.png /></center>
 
@@ -12,4 +12,4 @@ Each language will have its own set of labels for all of the dictionary elements
 
 When adding items to your data entry forms, you can specify that the field labels should be <link change_field_properties.csdoc>directly linked to the dictionary label</link>. This default setting ensures that the field labels change when the user changes the language during data entry.
 
-For your application to fully take advantage of multiple language dictionaries, you must define the languages that you would like to use in the CAPI language section. When running your data entry program, CSEntry will only list languages defined in the CAPI section. In this way, changing a language will change both the CAPI language text as well as the dictionary labels used.
+For your application to fully take advantage of multiple language dictionaries, you must also define <link define_languages.csdoc>question text languages</link>. When running your data entry program, CSEntry will only list these, but choosing a language will change both the question text language as well as the language used for dictionary labels.

@@ -22,6 +22,8 @@ The function returns the symbol label.
 
 <subheader>Example</subheader>
 
+<logicdeclare string BIRD_NAME />
+
 <logic>
 errmsg("%s", BIRD_NAME.getLabel());                 // Bird Name
 errmsg("%s", BIRD_NAME.getLabel(language := "FR")); // Nom de l'oiseau

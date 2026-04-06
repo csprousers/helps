@@ -3,12 +3,12 @@
 CSPro will convert your existing IMPS 3.1, IMPS 4.1, or ISSA dictionary (any version) to the CSPro dictionary format. You can also save your CSPro dictionary file out as an IMPS 3.1 or ISSA dictionary. Either way, just do the following:
 
 <list ordered>
-	<li>Click the <b>Tools</b> menu, and then click <b>Convert Dictionary</b>.</li>
-	<li>Choose whether you are converting between CSPro and IMPS, or CSPro and ISSA, then press <b>Nex</b>t.</li>
-	<li>Choose the type conversion you are performing and press <b>Next</b>.</li>
-	<li>Choose the file name of the dictionary you are converting.</li>
-	<li>Specify the file name of the dictionary you are generating.</li>
-	<li>Press <b>Finish</b> when ready.</li>
+    <li>Click the <b>Tools</b> menu, and then click <b>Convert Dictionary</b>.</li>
+    <li>Choose whether you are converting between CSPro and IMPS, or CSPro and ISSA, then press <b>Nex</b>t.</li>
+    <li>Choose the type conversion you are performing and press <b>Next</b>.</li>
+    <li>Choose the file name of the dictionary you are converting.</li>
+    <li>Specify the file name of the dictionary you are generating.</li>
+    <li>Press <b>Finish</b> when ready.</li>
 </list>
 
-<b>Note: The Convert Dictionary tool is no longer distributed with CSPro but is instead available on <link https://<definition csprousers_website />><definition csprousers_website /></link>.</b>
+<b>Note: The Convert Dictionary tool is no longer distributed with CSPro but is instead available at <link <definition csprousers_deprecated_tools />><definition csprousers_deprecated_tools /></link>.</b>

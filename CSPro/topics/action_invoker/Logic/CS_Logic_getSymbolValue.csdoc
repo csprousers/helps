@@ -40,4 +40,4 @@ The action throws an exception if any of its arguments are not specified in a va
 <include include_sort_list_example.hgi />
 
 
-<seealso CS_Logic.csdoc CS_Logic_getSymbol.csdoc CS_Logic_getSymbolMetadata.csdoc CS_Logic_updateSymbolValue.csdoc Symbol_getValueJson_function.csdoc />
+<seealso CS_Logic.csdoc CS_Logic_getSymbol.csdoc CS_Logic_getSymbolMetadata.csdoc CS_Logic_setSymbolValue.csdoc Symbol_getValueJson_function.csdoc />

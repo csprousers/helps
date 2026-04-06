@@ -2,7 +2,7 @@
 
 <link https://en.wikipedia.org/wiki/INI_file> INI</link>
 
-<subheader>Default Extensions (pre-8.0 CSPro specification files)</subheader>
+<subheader>Default Extensions (pre-CSPro 8.0 specification files)</subheader>
 
 .ent, .bch, .xtb, .csprops, .dcf, .cmp, .exf, .fqf, .ssf, .xl2cs
 

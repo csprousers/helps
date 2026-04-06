@@ -1,0 +1,54 @@
+﻿<title>CSPro ⇄ JSON Conversions: Report Object</title>
+
+
+The text of a CSPro <link templated_reports.csdoc>templated report</link> (<logiccolor>Report</logiccolor>) is represented as a <link JSON_primer.csdoc>JSON</link> string that is serialized according to the JSON serialization rules for <link string_JSON_representation.csdoc>string values</link>. The value is a string while the report is being created, and null otherwise.
+
+When converting a JSON value to a <logiccolor>Report</logiccolor>, an exception occurs if the value is not a valid string, or if the templated report is not in the process of creation.
+
+The JSON for a <logiccolor>Report</logiccolor> named <logiccolor>INT_INVEST_REPORT</logiccolor> retrieved using <logiccolor>Report.getJson</logiccolor> may look similar to:
+
+<color JSON>
+{
+  "name": "INT_INVEST_REPORT",
+  "type": "Report",
+  "template": {
+    "name": "international-investment.html",
+    "encoding": "HTML",
+    "path": "C:/surveys/reports/international-investment.html",
+    "extension": "html",
+    "contentType": "text/html"
+  },
+  "value": null
+}
+</color>
+
+The <logiccolor>Report</logiccolor>'s value will generally be null, but if converting the object to JSON while the Report's <link text_templates.csdoc>text template</link> is being generated, the value will reflect the text processed up to the point of the function call. For example, given the following templated report, written in Markdown:
+
+<report Markdown>
+<? $.setValueFromJson("\"Pre-title text!\""); ?>
+
+# Report Title
+
+~~$.getValueJson()~~
+
+Some **important** content!
+
+~~$.getValueJson()~~
+</report>
+
+The evaluated report will appear with the values represented as JSON strings encoded for Markdown:
+
+<color Markdown>
+Pre-title text!
+
+# Report Title
+
+"Pre\-title text\!\\n\\n\# Report Title\\n\\n"
+
+Some **important** content!
+
+"Pre\-title text\!\\n\\n\# Report Title\\n\\n\\"Pre\\\\\-title text\\\\\!\\\\\\\\n\\\\\\\\n\\\\\# Report Title\\\\\\\\n\\\\\\\\n\\"\\n\\nSome \*\*important\*\* content\!\\n\\n"
+</color>
+
+
+<seealso symbols_json_representation.csdoc />

@@ -22,7 +22,7 @@ The traditional CSPro listing file is a text file with the extension <b>.lst</b>
     <cell><b>JSON</b></cell><cell>.json</cell><cell>Default JSON viewer</cell>
     <cell><b>Excel</b></cell><cell>.xlsx</cell><cell>Microsoft Excel (or other application associated with Excel files)</cell>
     <cell><b>CSV</b></cell><cell>.csv</cell><cell>Application associated with .csv files (often Microsoft Excel)</cell>
-    <cell><b>CSPro Data</b></cell><cell>.csdb / .dat</cell><cell>Data Viewer</cell>
+    <cell><b>CSPro Data</b></cell><cell>.csdb / .dat</cell><cell><link DataManager::introduction.csdoc>Data Manager</link></cell>
 </table>
 
 Using any extension not in the table above will result in a text listing file.

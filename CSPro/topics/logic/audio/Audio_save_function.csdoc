@@ -10,9 +10,9 @@ b = audio_name.save(<arg>audio_filename</arg>);
 
 <subheader>Description</subheader>
 
-The <logiccolor>Audio.save</logiccolor> function saves the audio recording in an <link Audio.csdoc>Audio</link> object to the file specified by <arg>audio_filename</arg>. If the audio file already exists, the recording will be appended to the existing audio.
+The <logiccolor>Audio.save</logiccolor> function saves the audio recording in an <link Audio.csdoc>Audio</link> object to the file specified by <arg>audio_filename</arg>.
 
-Audio recorded using the functions <logiccolor>Audio.record</logiccolor> and <logiccolor>Audio.recordInteractive</logiccolor> is stored in m4a format (AAC encoded in an MPEG-4 container). Audio in this format should be saved with the extension .m4a so that it will be recognized by media players.
+Audio recorded using the functions <logiccolor>Audio.record</logiccolor> and <logiccolor>Audio.recordInteractive</logiccolor> is stored in M4A format (AAC encoded in an MPEG-4 container). Audio in this format should be saved with the extension .m4a so that it will be recognized by media players.
 
 
 <subheader>Return Value</subheader>

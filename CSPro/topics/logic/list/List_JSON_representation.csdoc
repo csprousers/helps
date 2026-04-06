@@ -1,0 +1,49 @@
+﻿<title>CSPro ⇄ JSON Conversions: List Object</title>
+
+
+A CSPro <link List.csdoc>List</link> is represented as a one-dimensional <link JSON_primer.csdoc>JSON</link> array. The underlying values of the List are serialized according to the JSON serialization rules for <link numeric_JSON_representation.csdoc>numeric values</link> or <link string_JSON_representation.csdoc>string values</link>.
+
+
+When converting a JSON value to a List, an exception occurs if the value is not an array or if any of the array elements cannot be converted to a CSPro number or string. An exception also occurs if the array is multi-dimensional, unless the secondary dimension contains an array with a single value. That is, both <colorinline JSON>[ 1, 2, 3 ]</colorinline> and <colorinline JSON>[ [1], [2], [3] ]</colorinline> result in successful conversions.
+
+
+<subheader>Example 1</subheader>
+
+<logic>
+List values = 1.23, refused, 0, 9;
+
+values.getJson() // returns:
+</logic>
+
+<color JSON>
+{
+  "name": "values",
+  "type": "List",
+  "contentType": "numeric",
+  "value": [
+    1.23,
+    "REFUSED",
+    0.0,
+    9.0
+  ]
+}
+</color>
+
+
+<subheader>Example 2</subheader>
+
+<logic>
+List string values = "Washer", "Dryer";
+
+values.getValueJson() // returns:
+</logic>
+
+<color JSON>
+[
+  "Washer",
+  "Dryer"
+]
+</color>
+
+
+<seealso symbols_json_representation.csdoc List_JavaScript_representation.csdoc />

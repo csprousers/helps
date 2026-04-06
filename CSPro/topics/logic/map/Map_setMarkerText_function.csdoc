@@ -4,7 +4,7 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-b = map_name.setMarkerText(<arg>markerId</arg>, <arg>text</arg>『, <arg>backgroundColor</arg>, <arg>textColor</arg>』]);
+b = map_name.setMarkerText(<arg>markerId</arg>, <arg>text</arg>『, <arg>backgroundColor</arg>, <arg>textColor</arg>』);
 </logicsyntax>
 
 
@@ -14,17 +14,9 @@ The <logiccolor>Map.setMarkerText</logiccolor> sets the icon for the marker with
 
 <logiccolor>Map.setMarkerText</logiccolor> sets the text used in the marker icon. The icon text should be kept short to avoid making the map crowded. To associate a longer description with a marker use <logiccolor>Map.setMarkerDescription</logiccolor> instead to display additional text in the marker list and in a popup on the map when the user taps the marker.
 
-The <arg>text</arg> may contain the following HTML tags:
-<list>
-<li>&ltb&gt - bold</li>
-<li>&lti&gt - italic</li>
-<li>&ltul&gt - underline</li>
-<li>&ltstrike&gt or &lts&gt - strikethrough</li>
-<li>&ltsup&gt - superscript</li>
-<li>&ltsub&gt - subscript</li>
-<li>&ltfont&gt - font (including color)</li>
-<li>&ltbr/&gt - line break</li>
-</list>
+The <arg>text</arg> may contain HTML tags, including:
+
+<include htmlish_text.hgi />
 
 If the marker icon was previously set with <logiccolor>Map.setMarkerImage</logiccolor>, calling <logiccolor>Map.setMarkerText</logiccolor> will replace the marker image with the new text.
 

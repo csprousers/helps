@@ -1,0 +1,12 @@
+<logic>
+StringWriter sw;
+
+do numeric ctr = 1 while ctr <= 3
+    sw.writeLine("Random number #%d: %d", ctr, random(0, 100));
+enddo;
+
+// the result may look like:
+errmsg("%s", sw.toString()); // Random number #1: 71
+                             // Random number #2: 89
+                             // Random number #3: 55
+</logic>

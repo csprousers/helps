@@ -1,0 +1,6 @@
+<table 2 header nowrap>
+    <cell>Function</cell><cell>Description</cell>
+    <include include_JS_functionality_functions.hgi />
+</table>
+
+When executing JavaScript from CSPro logic, any uncaught exceptions will be displayed as error messages.

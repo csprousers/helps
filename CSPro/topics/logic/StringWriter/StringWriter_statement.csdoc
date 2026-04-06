@@ -1,0 +1,50 @@
+﻿<title>StringWriter Statement</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+StringWriter <arg>string_writer_name</arg>;
+StringWriter <arg>string_writer_name</arg>(<arg>encoding_type</arg>);
+StringWriter <arg>string_writer_name</arg>(<arg>report_name</arg>);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>StringWriter</logiccolor> statement creates a <link StringWriter.csdoc>StringWriter</link>, an incremental string builder, with the name <arg>string_writer_name</arg>. The StringWriter name must be unique and must contain only letters, numbers, or the underscore character. The name must begin with a letter. You can declare StringWriter objects globally in <logiccolor>PROC GLOBAL</logiccolor> or locally in functions or procedures.
+
+If an <arg>encoding_type</arg> is specified in parentheses after the name of the object, text written to the StringWriter using the <logiccolor>StringWriter.writeEncoded</logiccolor> and <logiccolor>StringWriter.writeEncodedLine</logiccolor> functions will be encoded for that type. Any <link encode_function.csdoc>encoding type</link> supported by the <logiccolor>encode</logiccolor> function is valid for a StringWriter, though the most common types are <link html_in_cspro.csdoc>HTML</link> or <link markdown_overview.csdoc>Markdown</link>.
+
+If a <arg>report_name</arg> is specified in parentheses after the name of the object, the StringWriter object wraps a <link templated_reports.csdoc>templated report</link> and assumes the <link change_report_properties.csdoc>encoding type</link> used by the <logiccolor>Report</logiccolor> object.
+
+You cannot specify an <arg>encoding_type</arg> or <arg>report_name</arg> when declaring a StringWriter as a <link function_statement.csdoc>user-defined function</link> parameter because the StringWriter will assume the encoding type of the object passed to the function as an argument.
+
+
+<subheader>Example 1</subheader>
+
+<include include_StringWriter_example.hgi />
+
+
+<subheader>Example 2</subheader>
+
+<logic>
+function AddToStringWriter(StringWriter sw)
+    sw.writeLine("<** Hello, **>");
+    sw.writeEncodedLine("<** World! **>");
+end;
+
+// the result based on different encoding types is shown:
+
+StringWriter sw;                // <** Hello, **>
+AddToStringWriter(sw);          // <** World! **>
+
+StringWriter sw_html(HTML);     // <** Hello, **>
+AddToStringWriter(sw_html);     // &lt;** World! **&gt;<br>
+
+StringWriter sw_md(Markdown);   // <** Hello, **>
+AddToStringWriter(sw_md);       //  &lt;\*\* World\! \*\*&gt;<br>
+</logic>
+
+
+<seealso StringWriter.csdoc />

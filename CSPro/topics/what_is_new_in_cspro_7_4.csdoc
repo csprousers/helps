@@ -7,7 +7,7 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
 
 <list>
     <li>A new special value, <link refused_value.csdoc>refused</link>, allows for processing refusals differently from other numeric responses. Refusals are <link value_properties.csdoc>defined</link> in a dictionary value set, referenced in logic using <logiccolor>refused</logiccolor>, and are <link change_data_entry_options.csdoc>conditionally shown</link> to operators. The entry of refusals can be overridden using the <logiccolor>OnRefused</logiccolor> function.</li>
-    <li>A <link cspro_settings.csdoc>CSPro Settings</link> dialog, accessible in the CSPro Designer as well as in CSEntry, allows users to clear saved synchronization and <link data_sources.csdoc>data source</link> credentials.</li>
+    <li>A <link manage_credentials.csdoc>CSPro Settings</link> dialog, accessible in the CSPro Designer as well as in CSEntry, allows users to clear saved synchronization and <link data_sources.csdoc>data source</link> credentials. <i>(In CSPro 8.1 this dialog was renamed <link manage_credentials.csdoc>Manage Credentials</link>.)</i></li>
     <li>Licenses for open-source software that CSPro uses have been included and can be accessed using the Help -> About menu in the CSPro Designer.</li>
 </list>
 
@@ -18,7 +18,7 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
     <li>Change to the format of the <link data_source_csdb.csdoc>CSPro DB</link> data source to store data in a <link csdb_relational_format.csdoc>relational database format</link> that can be queried using SQL. CSPro DB files created in version 7.4 cannot be read in earlier versions of CSPro.</li>
     <li>Introduction of the new <link data_source_csdbe.csdoc>Encrypted CSPro DB</link> data source, allowing for <link encrypted_data.csdoc>file-based data encryption</link> with the ability to <link dictionary_security_options.csdoc>cache passwords</link>.</li>
     <li>Ability to include, as part of a PFF or in a <logiccolor>setfile</logiccolor> function call, a <link connection_string.csdoc>connection string</link> that details how to open a <link data_sources.csdoc>data source</link>.</li>
-    <li><link dictionary_security_options.csdoc>Dictionary options</link> include the ability to disallow use of a dictionary to modify data in Data Viewer or to export data to another output format.</li>
+    <li><link dictionary_security_options.csdoc>Dictionary options</link> include the ability to disallow use of a dictionary to modify data in <link DataManager::introduction.csdoc>Data Manager</link> or to export data to another output format.</li>
 </list>
 
 
@@ -42,12 +42,12 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
 </list>
 
 
-<subheader>Data Viewer</subheader>
+<subheader>Data Manager</subheader>
 
 <list>
     <li>The tool has been rewritten with additional features including multiple language support and additional ways to view case data.</li>
-    <li>A case's notes <link DataViewer::converting_data_files_to_other_formats.csdoc>can be extracted</link> as another CSPro data file, which can then be used for exporting or other data operations.</li>
-    <li>Ability to <link DataViewer::downloading_and_synchronizing_data.csdoc>download or synchronize</link> data from the local Dropbox folder or a local FTP server folder which can be faster than downloading data over the Internet.</li>
+    <li>A case's notes <link DataManager::converting_data_files_to_other_formats.csdoc>can be extracted</link> as another CSPro data file, which can then be used for exporting or other data operations.</li>
+    <li>Ability to <link DataManager::downloading_and_synchronizing_data.csdoc>download or synchronize</link> data from the local Dropbox folder or a local FTP server folder which can be faster than downloading data over the Internet.</li>
 </list>
 
 
@@ -94,7 +94,7 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
     <li>An operator (or respondent) can sign the Android screen using the <link execsystem_function_mobile.csdoc>execsystem</link> function and have the signature saved as an image file.</li>
     <li>A new menu option, <link CSDeploy::update_deployment_mobile.csdoc>Update Installed Applications</link>, to automatically check for and install new versions of an application that has been updated on a deployment server.</li>
     <li>Applications can be added to the device by <link CSDeploy::generate_deploy_qr_code.csdoc>scanning a QR code.</link></li>
-    <li>A new Settings screen, accessed via the menu on the Entry Applications screen, allows user to <link cspro_settings.csdoc>clear saved credentials</link>.</li>
+    <li>A new Settings screen, accessed via the menu on the Entry Applications screen, allows users to <link android_settings.csdoc>clear saved credentials</link>.</li>
     <li>The option for selecting that <link run_production_data_entry.csdoc>hidden applications</link> are shown has been moved to the Settings screen.</li>
     <li>The default setting for whether or not the case tree shows on phones and tablets can be <link csentry_settings_modification.csdoc>modified via logic</link>.</li>
 </list>

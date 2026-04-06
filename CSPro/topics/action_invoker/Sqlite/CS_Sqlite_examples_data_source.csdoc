@@ -11,7 +11,7 @@ numeric dbPopstan = tonumber(CS.Sqlite.open(name := "CEN2000"));
 
 // count the number of people who have private toilets
 numeric peopleWithPrivateToilets = tonumber(
-    CS.Sqlite.exec(db := dbPopstan,
+    CS.Sqlite.exec(dbId := dbPopstan,
                    sql := "SELECT COUNT(*) FROM `cases` "
                           "JOIN `level-1` ON `level-1`.`case-id` = `cases`.`id` "
                           "JOIN `housing` ON `housing`.`level-1-id` = `level-1`.`level-1-id` "
@@ -20,8 +20,8 @@ numeric peopleWithPrivateToilets = tonumber(
 
 // get a list of the provinces where data has been collected
 List numeric provinceList;
-provinceList.updateValueFromJson(
-    CS.Sqlite.exec(db := dbPopstan,
+provinceList.setValueFromJson(
+    CS.Sqlite.exec(dbId := dbPopstan,
                    sql := "SELECT `level-1`.`province` FROM `cases` "
                           "JOIN `level-1` ON `level-1`.`case-id` = `cases`.`id` "
                           "WHERE `cases`.`deleted` = 0 "
@@ -30,7 +30,7 @@ provinceList.updateValueFromJson(
                    rowFormat := "scalarArray"));
 
 // close the database
-CS.Sqlite.close(db := dbPopstan);
+CS.Sqlite.close(dbId := dbPopstan);
 </logic>
 
 
@@ -60,7 +60,7 @@ try {
     const maxAge = 18;
 
     let populationCountByProvince = CS.Sqlite.exec({
-        db: dbId,
+        dbId: dbId,
         sql: "SELECT `level-1`.`province`, COUNT(*) AS `population` FROM `cases` " +
              "JOIN `level-1` ON `level-1`.`case-id` = `cases`.`id` " +
              "JOIN `person` ON `person`.`level-1-id` = `level-1`.`level-1-id`  " +
@@ -84,7 +84,7 @@ finally {
     // close the database, suppressing any errors
     try {
         CS.Sqlite.close({
-            db: dbId
+            dbId: dbId
         });
     }
     catch {

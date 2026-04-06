@@ -1,0 +1,42 @@
+﻿<title>StringWriter Object</title>
+
+
+<subheader>Overview</subheader>
+
+A <logiccolor>StringWriter</logiccolor> is a CSPro <link object_dot_notation.csdoc>logic object</link> that supports building strings incrementally. Several write functions exist that add to the object's string buffer, either by writing text directly or by writing <link encode_function.csdoc>encoded</link> text. Using a StringWriter is simpler, and more efficient, than <link string_concatenation.csdoc>concatenating </link> many strings together.
+
+The <logiccolor>Report</logiccolor> object, referring to a <link templated_reports.csdoc>templated report</link>, is a kind of StringWriter, and <logiccolor>QSF</logiccolor>, the special name used to write to <link question_text.csdoc>question text</link>, is also a kind of StringWriter.
+
+
+<subheader>Functionality</subheader>
+
+A StringWriter is a CSPro logic object and the following functions can be called via <link object_dot_notation.csdoc>dot notation</link>:
+
+<table 2 header nowrap>
+    <cell>Function</cell><cell>Description</cell>
+    <cell><logiccolor StringWriter>clear</logiccolor></cell><cell>Clears the contents of the string buffer, resetting the buffer to a blank string.</cell>
+    <cell><logiccolor StringWriter>toString</logiccolor></cell><cell>Returns the current contents of the string buffer.</cell>
+    <cell><logiccolor StringWriter>write</logiccolor></cell><cell>Writes text to the string buffer without encoding.</cell>
+    <cell><logiccolor StringWriter>writeEncoded</logiccolor></cell><cell>Writes text to the string buffer with encoding.</cell>
+    <cell><logiccolor StringWriter>writeEncodedLine</logiccolor></cell><cell>Writes text and a newline to the string buffer with encoding.</cell>
+    <cell><logiccolor StringWriter>writeLine</logiccolor></cell><cell>Writes text and a newline to the string buffer without encoding.</cell>
+    <include "../Symbol/all_symbols_with_json_in_out.hgi" />
+</table>
+
+
+<subheader>Assignments</subheader>
+
+When a StringWriter, or a <logiccolor>Report</logiccolor> or <logiccolor>QSF</logiccolor>, is used as an argument to a <link user_defined_functions.csdoc>user-defined function</link>, it is <link function_arguments_ref.csdoc>passed by reference</link>. The StringWriter parameter will assume the encoding type of the object passed to the function as an argument.
+
+
+<subheader>Conversions</subheader>
+
+StringWriter objects can be converted to and from <link StringWriter_JSON_representation.csdoc>JSON strings</link>.
+
+
+<subheader>Example</subheader>
+
+<include include_StringWriter_example.hgi />
+
+
+<seealso string_statement.csdoc templated_reports.csdoc />

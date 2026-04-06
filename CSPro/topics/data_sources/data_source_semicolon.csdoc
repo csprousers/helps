@@ -58,6 +58,9 @@ The following behavior can be customized by specifying properties in the <link c
     <cell><b><colorinline JSON>"encoding"</colorinline></b></cell><cell>Determines the <link unicode_primer.csdoc>text encoding</link> of the file.</cell>
     <include properties_encoding_values.hgi />
     <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"newline"</colorinline></b></cell><cell>Determines what <link text_attributes.csdoc>control characters</link> are used when writing line endings.</cell>
+    <include properties_newline_values.hgi />
+    <cell 2>&nbsp;</cell>
     <include properties_header.hgi />
     <cell 2>&nbsp;</cell>
     <include properties_mappedSpecialValues.hgi />

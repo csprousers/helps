@@ -1,0 +1,82 @@
+﻿<title>declare Variable Modifier</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+declare <arg>variable_declaration</arg>;
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>declare</logiccolor> keyword instructs the compiler to compile the rest of the statement as a variable declaration, not a definition. A declaration provides information to the compiler about a variable, specifying its name and type, but does not actually define the variable. Once declared, the variable can be used throughout logic prior to its definition. The variable can be declared repeatedly but must be defined only once. The variable type used at definition must match that used at declaration.
+
+As of CSPro <definition CSPro::version />, the <logiccolor>declare</logiccolor> keyword only works with <link user_defined_functions.csdoc>CSPro logic</link> or <link javascript_user_defined_functions.csdoc>JavaScript</link> user-defined functions that use the variable type <logiccolor>function</logiccolor>. This is useful as a way to use a function in other functions without worrying about the order that the functions are defined in the logic file.
+
+When declaring a function, it is not necessary to name each parameter, and if a parameter name is provided, it does not need to match the name used at definition.
+
+For <link user_defined_functions.csdoc>CSPro logic declarations</link>, a compiler error occurs if the variable is never defined.
+
+For <link javascript_user_defined_functions.csdoc>JavaScript function declarations</link>, the function's existence is not known until runtime. If the function does not exist when called, a runtime error is displayed and the function returns <logiccolor>default</logiccolor> or a blank string, depending on the return type.
+
+
+<subheader>Example (Forward Declaring)</subheader>
+
+<logic>
+// declare two functions
+declare function string GetRandomString(Array string);
+
+declare function string GetStateInformation(numeric parameter_names_are_optional, string, Array string);
+
+// this function will use GetStateInformation prior to it being defined
+function DisplayPennsylvaniaInformation()
+
+    Array string pa_cities(3) = "Philadelphia", "Pittsburgh", "Punxsutawney";
+
+    // displays text similar to: Pennsylvania was founded in 1681. The state has famous cities including Punxsutawney.
+    errmsg("%s", GetStateInformation(1681, "Pennsylvania", pa_cities));
+
+end;
+
+// this function defines a previously declared function and it uses GetRandomString prior to it being defined
+function string GetStateInformation(numeric founding_year, string state_name, Array string city_names)
+
+    exit maketext("%s was founded in %d. The state has famous cities including %s.",
+                  state_name, founding_year, GetRandomString(city_names));
+
+end;
+
+// this function defines a previously declared function
+function string GetRandomString(Array string values);
+
+    seed(systime());
+    exit values(random(1, values.length()));
+
+end;
+</logic>
+
+
+<subheader>Example (JavaScript Function Wrapper)</subheader>
+
+<logic>
+PROC GLOBAL
+
+// declare that this CSPro function will call a JavaScript function called "sign"
+declare function numeric JS sign(numeric);
+
+PROC EXAMPLE
+
+    // add "sign" as a JavaScript function that wraps JavaScript's Math.sign function
+    JS.eval("function sign(value) { return Math.sign(value); }");
+
+    // use the function as if it were a CSPro function, but
+    // when called it will execute the JavaScript function
+
+    errmsg("%d %d %d", sign(123),  //  1
+                       sign(-975), // -1
+                       sign(0));   //  0
+</logic>
+
+
+<seealso user_defined_functions.csdoc javascript_user_defined_functions.csdoc />

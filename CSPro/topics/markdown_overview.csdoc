@@ -1,0 +1,26 @@
+﻿<title>Markdown Use in CSPro</title>
+
+
+<subheader>Overview</subheader>
+
+<link "https://en.wikipedia.org/wiki/Markdown">Markdown</link> is a <link "https://en.wikipedia.org/wiki/Lightweight_markup_language">lightweight markup language</link> designed for creating formatted text using a plain-text syntax. Markdown is often converted to HTML for display, but unlike HTML, which uses verbose tags, Markdown's syntax is simpler, using common punctuation characters, such as <b>**bold**</b> or <i>*italic*</i>. Because of its simplicity and portability, Markdown has become a standard in technical writing, on collaborative platforms such as GitHub, and in CSPro as an alternative to using <link html_in_cspro.csdoc>HTML</link>.
+
+The Markdown syntax is well-documented online, though elements that may be useful are highlighted on the <topic markdown_syntax.csdoc /> page. CSPro uses <link "https://github.com/mity/md4c/">MD4C</link>, an implementation of <link "https://commonmark.org/">CommonMark</link> with elements of <link "https://github.github.com/gfm/">GitHub Flavored Markdown</link>. When rendering Markdown documents, CSPro formats the content using CSS based on <link "https://github.com/sindresorhus/github-markdown-css">GitHub's style conventions</link>.
+
+
+<subheader>Markdown in CSPro</subheader>
+
+Markdown can be used in CSPro in the following ways:
+
+<list>
+    <li>As a way to specify <link question_text.csdoc>question text</link>.</li>
+    <li>As a format for <link templated_reports.csdoc>templated reports</link>.</li>
+    <li>Viewing Markdown files (with the extension <b>.md</b>) using the <logiccolor>view</logiccolor> logic function or <link CSView::supported_files.csdoc>CSView</link>.</li>
+    <li>Editing and viewing Markdown files using <link CSCode::language_markdown.csdoc>CSCode</link>.</li>
+    <li>As part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link> using the <colortag csdoc>&lt;md></colortag> tag.</li>
+</list>
+
+When viewing Markdown, CSPro will automatically convert Markdown to HTML.
+
+
+<seealso markdown_syntax.csdoc html_in_cspro.csdoc />

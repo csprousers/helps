@@ -64,7 +64,7 @@ The functionality of each data source is summarized in the following table:
 
 Data sources that support <i>notes, case labels, and case statuses</i> store <link notes_file_csnot.csdoc>notes</link> entered by the operator or set in logic, <link setcaselabel_function.csdoc>case labels</link> set in logic, and case status information such as whether a case has been <link ispartial_function.csdoc>partially saved</link> or <link isverified_function.csdoc>verified</link>.
 
-Data sources that contain an embedded dictionary can be opened in <link DataViewer::introduction_to_data_viewer.csdoc>Data Viewer</link> and some tools without the need to specify a dictionary.
+Data sources that contain an embedded dictionary can be opened in <link DataManager::introduction.csdoc>Data Manager</link> and some tools without the need to specify a dictionary.
 
 
 <subheader>Determining What Data Source Is Used</subheader>

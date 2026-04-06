@@ -1,0 +1,113 @@
+﻿<title>Image.getExif Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = image_name.getExif(<arg>tag_name</arg> ‖ <arg>hashmap_name</arg>『, <arg>values_for_display</arg>』);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>Image.getExif</logiccolor> function queries the <link "https://en.wikipedia.org/wiki/Exif">EXIF data</link> stored by an image held by the <link Image.csdoc>Image</link> object. EXIF data used by some image formats, primarily JPEG images, can include information about the device that took the photo, when the photo was taken, and the location&mdash;in GPS coordinates&mdash;where the photo was captured.
+
+EXIF data is stored as a mapping of tags to values, each stored in an Image File Directory (IFD) set. Values can be stored as strings or numbers, and when querying EXIF data, the raw value, potentially converted to a string, is returned. More information about EXIF data is available in the technical guide "<link "https://archive.org/details/exif-specs-3.0-dc-008-translation-2023-e">Exchangeable Image File format for Digital Still Cameras</link>."
+
+The <logiccolor>Image.getExif</logiccolor> function can be used to query a single value by providing a string expression, <arg>tag_name</arg>. Each IFD is searched for a tag with the <link exif_tags.csdoc>given name</link>, and the first non-blank value is returned. If the EXIF data does not contain a value for a valid tag, a blank string is returned. If the tag name is invalid, an error message is displayed and a blank string is returned. See the <topic exif_tags.csdoc /> page for a list of valid tag names.
+
+The <logiccolor>Image.getExif</logiccolor> function can also be used to query all EXIF data by providing one-dimensional string <link HashMap.csdoc>HashMap</link>. The HashMap's keys will contain the tag name for each EXIF data, with the key's value corresponding to the EXIF value.
+
+If the optional conditional expression <arg>values_for_display</arg> evaluates to <logiccolor>true</logiccolor>, a value suitable for displaying to a user is returned. The text used for display values is available by viewing code, including <link "https://github.com/libexif/libexif/blob/master/libexif/exif-entry.c">exif-entry.c</link>, that is part of <link "https://github.com/libexif/libexif">libexif</link>, the library that CSPro uses to parse EXIF data.
+
+
+<subheader>CSPro Prefix</subheader>
+
+Some useful EXIF data is stored in a format that can be challenging to parse. CSPro provides several custom tag names, starting with CSPro:, to simplify querying this data:
+
+<table 3 header>
+    <cell nowrap>Tag Name</cell><cell>Calculated Value</cell><cell>Source Tags</cell>
+    <cell nowrap>CSPro:TimestampOriginal</cell><cell>The <link https://en.wikipedia.org/wiki/Unix_time>UNIX time</link> when the picture was recorded. This value is only defined when the EXIF data contains time zone information.</cell><cell>DateTimeOriginal~!~OffsetTimeOriginal~!~ SubSecTimeOriginal&nbsp;(optional)</cell>
+    <cell nowrap>CSPro:GPSLatitude</cell><cell>The latitude, represented as a decimal value, as captured by the device's GPS receiver or location services.</cell><cell>GPSLatitudeRef~!~GPSLatitude</cell>
+    <cell nowrap>CSPro:GPSLongitude</cell><cell>The longitude, represented as a decimal value, as captured by the device's GPS receiver or location services.</cell><cell>GPSLongitudeRef~!~GPSLongitude</cell>
+</table>
+
+These calculated values are not included in the tags when using this function with a HashMap.
+
+
+<subheader>IFD Prefix</subheader>
+
+The tag names for some EXIF data are used by multiple IFD sets. In the rare chance that this occurs in images that you are trying to process, you can use the name of an IDF set, followed by a colon, to specify which IFD should be searched.
+
+<table 3 header>
+    <cell>IFD Prefix</cell><cell>Image File Directory</cell><cell>Example Use</cell>
+    <cell>0:</cell><cell>Primary Image</cell><cell>0:Make</cell>
+    <cell>1:</cell><cell>Thumbnail Image</cell><cell>1:JPEGInterchangeFormat</cell>
+    <cell>EXIF:</cell><cell>Extended Information</cell><cell>EXIF:ISOSpeed</cell>
+    <cell>GPS:</cell><cell>Geolocation Data</cell><cell>GPS:GPSAltitude</cell>
+    <cell>Interoperability:</cell><cell>Interoperability Information</cell><cell>Interoperability:InteroperabilityIndex</cell>
+</table>
+
+
+<subheader>Return Value</subheader>
+
+The function returns a string containing the value associated with the provided tag, or a blank string when used with a HashMap. If the Image object does not contain an image or if the tag name is invalid, a blank string is returned.
+
+
+<subheader>Example (String)</subheader>
+
+<logic>
+Image concert_image; // ...
+
+concert_image.getExif("Make");  // "NIKON"
+concert_image.getExif("Model"); // "COOLPIX S8100"
+</logic>
+
+
+<subheader>Example (HashMap)</subheader>
+
+<logic>
+Image enumerator_image; // ...
+HashMap string exif_values;
+
+enumerator_image.getExif(exif_values);
+
+exif_values("BrightnessValue");   // "7.97 EV (859.07 cd/m^2)"
+exif_values("ShutterSpeedValue"); // "10.60 EV (1/1552 sec.)"
+</logic>
+
+
+<subheader>Example (CSPro Prefix)</subheader>
+
+This shows examples of the CSPro-prefixed tags as well as the raw values that are used in the calculation:
+
+<logic>
+Image hawk_image; // ...
+
+tonumber(hawk_image.getExif("CSPro:TimestampOriginal")); // 1746544676.195
+hawk_image.getExif("DateTimeOriginal");                  // "2025:05:06 11:17:56"
+hawk_image.getExif("OffsetTimeOriginal");                // "-04:00"
+hawk_image.getExif("SubSecTimeOriginal");                // "195"
+
+tonumber(hawk_image.getExif("CSPro:GPSLatitude"));       // 38.847222
+hawk_image.getExif("GPSLatitudeRef");                    // "N"
+hawk_image.getExif("GPSLatitude");                       // "38, 50, 50.57"
+
+tonumber(hawk_image.getExif("CSPro:GPSLongitude"));      // -76.93
+hawk_image.getExif("GPSLongitudeRef");                   // "W"
+hawk_image.getExif("GPSLongitude");                      // "76, 55, 48.41"
+</logic>
+
+
+<subheader>Example (Values for Display Override)</subheader>
+
+<logic>
+Image roof_image; // ...
+
+roof_image.getExif("Flash");        // "16"
+roof_image.getExif("Flash", false); // "16"
+roof_image.getExif("Flash", true);  // "Flash did not fire, compulsory flash mode"
+</logic>
+
+
+<seealso Image.csdoc exif_tags.csdoc Image_height_function.csdoc Image_width_function.csdoc />

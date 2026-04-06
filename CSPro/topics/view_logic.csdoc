@@ -3,17 +3,17 @@
 To switch to the logic view within a data entry or batch application you can either:
 
 <list>
-	<li>press the <image logic.jpg /> icon, or </li>
-	<li>from the <b>View</b> menu select "Logic", or</li>
-	<li>press <b>Ctrl+L</b></li>
+    <li>press the <image logic_button.png /> icon, or </li>
+    <li>from the <b>View</b> menu select "Logic", or</li>
+    <li>press <b>Ctrl+L</b></li>
 </list>
 
 To return to the forms view, you can either:
 
 <list>
-	<li>press the <image formview.jpg /> icon, or</li>
-	<li>from the <b>View</b> menu select "Form", or</li>
-	<li>press <b>Ctrl+M</b></li>
+    <li>press the <image form_edit_button.png /> icon, or</li>
+    <li>from the <b>View</b> menu select "Form", or</li>
+    <li>press <b>Ctrl+M</b></li>
 </list>
 
 From the Logic Window you can create or modify procedures that add logic to your application. The view is divided into two areas:

@@ -1,0 +1,23 @@
+﻿<title>Data URL</title>
+
+A <link "https://en.wikipedia.org/wiki/Data_URI_scheme">data URL</link> is a type of <link "https://en.wikipedia.org/wiki/Uniform_resource_identifier">URI</link> where the type of data, and the data itself, is included in the URL. When accessing a data URL, no request to a server is made since all content is embedded in the URL. Data URLs are generally used as a replacement for small files, as they become unwieldy when used with large content.
+
+CSPro can create data URLs when serializing binary data, including the data of <link binary_dictionary_items.csdoc>binary dictionary items</link> when writing to <link properties_json_serialization.csdoc>JSON</link>, or when using the <link action_invoker.csdoc>Action Invoker</link> with <link action_invoker_binary_data.csdoc>binary data</link>. The data URLs that CSPro creates are encoded in <link "https://en.wikipedia.org/wiki/Base64">Base64</link> and look like:
+
+<indent>data:<arg>MIME-type</arg>;base64,<arg>content</arg></indent>
+
+For example:
+
+<logic>
+Document doc = "Data URLs added to CSPro 8.0.";
+doc.getValueJson(serializationOptions := "{ \"binaryDataFormat\": \"dataUrl\" }") // returns the binary data as:
+</logic>
+
+<link "data:text/plain;base64,RGF0YSBVUkxzIGFkZGVkIHRvIENTUHJvIDguMC4=">data:text/plain;base64,RGF0YSBVUkxzIGFkZGVkIHRvIENTUHJvIDguMC4=</link>
+
+Clicking on that link, or copying and pasting that link into a web browser's address bar, will show the text "Data URLs added to CSPro 8.0."
+
+Generally when using CSPro to create URLs with content, you will want to use <link localhost_url.csdoc>localhost URLs</link>, which are faster to create and more efficient. A localhost URL is temporary, only valid while the CSPro application is running, so a data URL may be a good choice if you need a URL that can permanently refer to the data. Data URLs are approximately 33% larger than the content itself, so using data URLs for large files is not advised.
+
+
+<seealso html_in_cspro.csdoc localhost_url.csdoc />

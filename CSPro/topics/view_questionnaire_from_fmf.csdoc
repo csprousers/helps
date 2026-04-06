@@ -3,14 +3,14 @@
 Within a data entry application, you can view a <link view_questionnaire.csdoc>questionnaire/pseudo paper version</link> of the form fields by either:
 
 <list>
-    <li>Clicking on the questionnaire view icon <image questionnaire_view.png /> from the form toolbar, or</li>
+    <li>Clicking on the questionnaire view icon <image questionnaire_view_button.png /> from the form toolbar, or</li>
     <li>Selecting <b>Questionnaire</b> from the <b>View</b> menu.</li>
 </list>
 
 To return to the data entry application, you can either:
 
 <list>
-    <li>Click on the form icon <image formview.jpg />, logic icon <image logic.jpg />, or question text icon <image question.jpg /> from the toolbar, or</li>
+    <li>Click on the form icon <image form_edit_button.png />, logic icon <image logic_button.png />, or question text icon <image question_text_button.png /> from the toolbar, or</li>
     <li>Press <b>Ctrl+M, Ctrl+L,</b> or <b>Ctrl+Q</b> respectively, or </li>
     <li>Choose any of the above options from the <b>View</b> menu.</li>
 </list>
@@ -27,7 +27,7 @@ The questionnaire view for the form is comprised of the following parts:
 
 If the form repeats, this will be indicated by a <image questionnaire_view_repeating_record.png /> appearing between the title bar and the form's field list. Clicking on <image questionnaire_view_repeating_record.png /> will toggle the roster orientation from horizontal to vertical and back again. Depending on how many fields are on the form, horizontal and/or vertical scroll bars will appear.
 
-<b>Field view</b>: Each field will display its unique dictionary name, followed by a colon (':') and the dictionary label. Unique to the questionnaire form view is the presence of the question text. The input display area will vary depending on how the field was defined in the dictionary:
+<b>Field view</b>: Each field will display its unique dictionary name, followed by a colon (':') and the dictionary label. Unique to the questionnaire form view is the presence of the <link question_text.csdoc>question text</link>. The input display area will vary depending on how the field was defined in the dictionary:
 
 <list>
     <li>If the field is numeric with discrete values (e.g., 1=Male, 2=Female), then the responses will use radio buttons.</li>

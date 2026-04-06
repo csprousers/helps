@@ -1,0 +1,11 @@
+﻿<title>Mapping Engine</title>
+
+
+<link Map.csdoc>Mapping</link> in CSPro is handled by one of two mapping engines: <link "https://developers.google.com/maps/documentation/android-sdk/overview">Google Maps</link> or <link "https://leafletjs.com">Leaflet</link>. Google Maps is the default mapping engine on Android, though Leaflet can be <link properties_mapping.csdoc>used as an alternative</link>, while on Windows, Leaflet is the only option.
+
+When deciding which mapping engine to use, you may want to consider how your application will be used. If the application will be run on both Android and Windows, you may want to use Leaflet so that users will have the same experience regardless of the platform. However, if the application will only be run on Android, you may prefer using Google Maps as that mapping engine will look similar to other maps that are shown on Android.
+
+If your application requires the <link Geometry_tracePolygon_function.csdoc>tracing</link> or <link Geometry_walkPolygon_function.csdoc>walking</link> of a polygon, you must use Google Maps, as that functionality is not supported using Leaflet. Conversely, if you are using offline maps using the ArcGIS Tile Package <link "https://desktop.arcgis.com/en/arcmap/10.3/map/working-with-arcmap/about-tile-packages.htm">Mixed tile format</link>, you must use Leaflet, as that format is not supported by CSPro's Google Maps implementation.
+
+
+<seealso mapping.csdoc Map.csdoc properties_mapping.csdoc />

@@ -1,14 +1,53 @@
 ﻿<title>JSON Serialization Properties</title>
 <context IDD_PROPERTIES_JSON />
 
-To view options related to <link JSON_primer.csdoc>JSON</link> serialization, including the <link symbols_json_representation.csdoc>serialization of symbols</link>, select <link properties_application.csdoc>Application Properties</link> from the <b>Options</b> menu of a data entry, batch edit, or tabulation application, and then select the <b>JSON Serialization</b> section.
+To view options related to <link JSON_primer.csdoc>JSON</link> serialization, including the <link symbols_json_representation.csdoc>serialization of symbols</link>, select <link properties_application.csdoc>Application Properties</link> from the <b>Options</b> menu of a data entry, batch edit, or tabulation application, and then select the <b>JSON Serialization</b> section. These options can also be <link JSON_serialization_options.csdoc>set dynamically</link>.
 
 
-<font #ff88888><i>Documentation about this feature will come in a future release. In the meantime you can see if the documentation is updated at:</i></font>
+<subheader>JSON Format</subheader>
 
-<link "https://www.csprousers.org/help/CSPro/properties_json_serialization.html">https://www.csprousers.org/help/CSPro/properties_json_serialization.html</link>
+<list>
+    <li><b>Compact</b> (default): JSON is written with no extra spacing.</li>
+    <li><b>Pretty</b>: JSON is written in a readable format with spaces and newlines.</li>
+</list>
 
-<note type="todo" text="HELP_TODO fill out and potentially add to What's New" />
+For example:
+
+<color JSON>
+{"jsonFormat":"compact","start":2000,"end":2025}
+</color>
+
+<color JSON>
+{
+  "jsonFormat": "pretty",
+  "start": 2000,
+  "end": 2025
+}
+</color>
+
+
+<subheader>Array Symbols</subheader>
+
+<list>
+    <li><b>Full Array</b> (default): An <logiccolor>Array</logiccolor> object is fully <link Array_JSON_representation.csdoc>written</link> as a JSON array.</li>
+    <li><b>Sparse Array</b>: An <logiccolor>Array</logiccolor> object is <link Array_JSON_representation.csdoc>written</link> as a JSON object with property names representing array indices and property values representing non-default values. Default values are considered 0, or <logiccolor>default</logiccolor> for <link initialize_hot_decks_using_saved_arrays.csdoc>saved arrays</link>.</li>
+</list>
+
+
+<subheader>HashMap Symbols</subheader>
+
+<list>
+    <li><b>Array Format</b>: A <logiccolor>HashMap</logiccolor> object is <link HashMap_JSON_representation.csdoc>written</link> as a JSON array with each element of the HashMap written as an object with <colorinline JSON>"key"</colorinline> and <colorinline JSON>"value"</colorinline> property names.</li>
+    <li><b>Object Format</b> (default): A <logiccolor>HashMap</logiccolor> object is <link HashMap_JSON_representation.csdoc>written</link> as a JSON object with each HashMap element's key written as a property name and its value written as a property value.</li>
+</list>
+
+
+<subheader>Binary Content</subheader>
+
+<list>
+    <li><b>Write as Data URL</b>: Data of binary <link object_dot_notation.csdoc>logic objects</link> and <link binary_dictionary_items.csdoc>dictionary items</link> is <link binary_data_JSON_representation.csdoc>written</link> as a <link data_url.csdoc>data URL</link>.</li>
+    <li><b>Write as Localhost URL</b> (default): Data of binary <link object_dot_notation.csdoc>logic objects</link> and <link binary_dictionary_items.csdoc>dictionary items</link> is <link binary_data_JSON_representation.csdoc>written</link> as a <link localhost_url.csdoc>localhost URL</link>. Localhost URLs are only valid while the CSPro application is running.</li>
+</list>
 
 
 <seealso JSON_serialization_options.csdoc />

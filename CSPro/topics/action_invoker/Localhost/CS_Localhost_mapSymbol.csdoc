@@ -1,47 +1,66 @@
 ﻿<title>Localhost.mapSymbol Action</title>
 
-<font #ff88888><i>Documentation about this feature will come in a future release. In the meantime you can see if the documentation is updated at:</i></font>
-
-<link "https://www.csprousers.org/help/CSPro/CS_Localhost_mapSymbol.html">https://www.csprousers.org/help/CSPro/CS_Localhost_mapSymbol.html</link>
-
-<note type="todo" text="HELP_TODO" />
-
-<html>
-<!--
 
 <subheader>Format</subheader>
 
 <logicsyntax>
 s = CS.Localhost.mapSymbol(<arg>name</arg> := ...『, <arg>contentType</arg> := ...』
                         『, <arg>evaluateImmediately</arg> := ...』)
-
 </logicsyntax>
 
-
-HELP_TODO ... waiting for binary items ... DEVELOPMENT NOTES:
-
-<list>
-    <li>Version 2: s = Localhost.createMapping(BINARY_OBJECT, …)</li>
-    <li>The binary object–for now an Audio, Document, Geometry, or Image object–is mapped to a URL that can be used in question text, reports, and other things shown in the embedded browser (e.g., showing a HTML file with the view function)</li>
-    <li>The URL lasts for the duration of the application</li>
-    <li>By default, the object is only accessed when requested by the web browser, so the object must have content at that point, not at the point the Localhost.createMapping is called</li>
-    <li>The consequence of the last point is that the same object cannot be used multiple times in a HTML view; e.g., this would fail as both url1 and url2 would display “image 2.jpg” (the mapping is to the my_image object, not to the at-the-moment contents of the object):
-    ~!~my_image.load("image 1.jpg");
-    string url1 = Localhost.createMapping(my_image);
-    my_image.load("image 2.jpg");
-    string url2 = Localhost.createMapping(my_image);</li>
-    <li>To address the previous point, if evaluateImmediately = true, the object’s data is loaded when the mapping is created, so it does not need to exist when requested by the web browser</li>
-    <li>If a contentType is not provided, CSPro will try to figure out a proper MIME type based on the object’s contents. Overriding the content type allows the user to specify a MIME type that defines what the object contains. By default, CSPro will try to figure out a proper MIME type, but for unknown types, this allows the user to specify the contents of data; e.g., “application/pdf”</li>
-</list>
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>name</arg></cell><cell>The name of the binary symbol (a <link object_dot_notation.csdoc>logic object</link> or <link binary_dictionary_items.csdoc>dictionary item</link>) to map.</cell><cell>string~!~required</cell>
+    <cell><arg>contentType</arg></cell><cell>The <link https://en.wikipedia.org/wiki/Media_type>MIME type</link> of the mapped content.</cell><cell nowrap>string~!~not required</cell>
+    <cell><arg>evaluateImmediately</arg></cell><cell>Whether to immediately load and cache the symbol's content.~!~The default value is <logiccolor>false</logiccolor>.</cell><cell nowrap>boolean~!~not required</cell>
+</table></indent>
 
 
-<list>
-    <li>In question text and report fills, ~~binary_object~~ and ~~~binary_object~~~ will be filled in with the result of Localhost.createMapping(binary_object):
-    ~!~e.g.: &lt;img src=”~~~binary_object~~~” /&gt;</li>
-</list>
+<subheader>Description</subheader>
+
+The <action>Localhost.mapSymbol</action> <link action_invoker.csdoc>action</link> creates a <link localhost_url.csdoc>localhost URL</link> that provides access to the binary data held by a binary <link object_dot_notation.csdoc>logic object</link> or <link binary_dictionary_items.csdoc>dictionary item</link>. This URL can be used to access the binary data in <link html_in_cspro.csdoc>web views</link>.
+
+By specifying <arg>contentType</arg>, you can override how the local web server defines the <link "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type">Content-Type header</link> when serving the symbol's content. If not specified, the MIME type of the symbol's data, if defined, is used.
+
+The <arg>evaluateImmediately</arg> argument, when set to <logiccolor>true</logiccolor>, results in the immediate loading of the binary data. The data is cached, so if the object changes after the localhost URL is created, the URL will access the original cached contents. When not evaluating the contents immediately, the URL will access the object's binary data at the time of the request. At that point, if the object does not contain a value, the local web server will respond with a <link https://en.wikipedia.org/wiki/HTTP_404>404 error</link>.
 
 
--->
-</html>
+<subheader>Return Value</subheader>
+
+The action returns a string containing the localhost URL that can be used to access the binary data. The URL is valid as long as the CSPro application is running.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, if no symbol has the specified name, or if the symbol is not a binary object.
+
+
+<subheader>Example (CSPro)</subheader>
+
+<logic>
+Image fox_photo;
+fox_photo.load("red-fox.jpg");
+
+// Image.view shows the image using a custom display
+fox_photo.view();
+
+// image_url may look like: http://localhost:52381/vf/1/red-fox.jpg
+string image_url = CS.Localhost.mapSymbol(name := "fox_photo");
+
+// using view with this URL displays the image using the web view's default image handling
+view(image_url);
+</logic>
+
+
+<subheader>Example (Question Text)</subheader>
+
+When processing <link text_templates.csdoc>text templates</link>, template expressions around binary symbols specified using tilde delimiters are created using the same routine as used by <action>Localhost.mapSymbol</action>. For example, these two expressions, shown in Markdown, result in the same outcome:
+
+<report Markdown>
+![~~filename(bird_photo)~~](~~~bird_photo~~~)
+
+![~~filename(bird_photo)~~](~~~CS.Localhost.mapSymbol(name := "bird_photo")~~~)
+</report>
+
 
 <seealso CS_Localhost.csdoc localhost_url.csdoc />

@@ -11,7 +11,7 @@ s = CS.File.copy(<arg>source</arg> := ..., <arg>destination</arg> := ...『, <ar
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
     <cell><arg>source</arg></cell><cell>The source path or <link sharable_uri.csdoc>sharable URI</link> of file(s) to copy.</cell><cell>string, array~!~required</cell>
     <cell><arg>destination</arg></cell><cell>The destination path, or directory, of the file(s) to be copied.</cell><cell>string~!~required</cell>
-    <cell><arg>overwrite</arg></cell><cell>If true, destination file(s) are replaced if they already exist.~!~The default value is <logiccolor>true</logiccolor>.</cell><cell>boolean~!~not required</cell>
+    <cell><arg>overwrite</arg></cell><cell>A flag that determines if destination file(s) are replaced when they already exist.~!~The default value is <logiccolor>"different"</logiccolor>.</cell><cell>string, boolean~!~not required</cell>
 </table></indent>
 
 
@@ -27,7 +27,16 @@ The <action>File.copy</action> <link action_invoker.csdoc>action</link> copies o
 
 If multiple files are specified when evaluating <arg>source</arg>, the <arg>destination</arg> must be a directory where all of the files are copied, using their original names. When copying only a single file, if <arg>destination</arg> is a directory, the source file is copied to that directory using its original name; otherwise, <arg>destination</arg> is considered the path of the new, copied file.
 
-The <arg>overwrite</arg> flag lets you conditionally copy files based on whether a file already exists. If set to <logiccolor>false</logiccolor>, an exception is thrown if the destination file already exists.
+The <arg>overwrite</arg> flag lets you conditionally copy files based on whether the destination file exists. Options include:
+
+<list>
+    <li><logiccolor>"always"</logiccolor>: The destination file is always overwritten.</li>
+    <li><logiccolor>"never"</logiccolor>: The destination file is never overwritten. The source file will not be copied.</li>
+    <li><logiccolor>"fail"</logiccolor>: An exception is thrown if the destination file already exists.</li>
+    <li><logiccolor>"different"</logiccolor>: The destination file is overwritten when different from the source file. A file is considered different if the destination file's size or modified time is different from that of the source file.</li>
+</list>
+
+When specified as a boolean, <arg>overwrite</arg> maps <logiccolor>true</logiccolor> to <logiccolor>"different"</logiccolor> and <logiccolor>false</logiccolor> to <logiccolor>"fail"</logiccolor>.
 
 
 <subheader>Return Value</subheader>
@@ -42,7 +51,7 @@ The action throws an exception if any of its arguments are not specified in a va
 <list>
     <li>The source file(s) do not exist.</li>
     <li>Multiple source files are specified but the destination is not a directory.</li>
-    <li>The destination file exists but the overwrite flag is <logiccolor>false</logiccolor>.</li>
+    <li>The destination file exists but the overwrite flag is <logiccolor>"fail"</logiccolor> (or <logiccolor>false</logiccolor>).</li>
 </list>
 
 

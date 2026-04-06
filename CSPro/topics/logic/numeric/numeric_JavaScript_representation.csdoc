@@ -1,0 +1,40 @@
+﻿<title>CSPro ⇄ JavaScript Conversions: Numeric Values</title>
+
+
+A CSPro numeric value, created as a <logiccolor>numeric</logiccolor> or as part of an object such as a <logiccolor>List</logiccolor>, is generally represented as a JavaScript <link "https://developer.mozilla.org/en-US/docs/Glossary/Number">number</link>. However, <link special_values.csdoc>special values</link> are serialized as follows:
+
+<table 3 header nowrap>
+    <cell>CSPro Value</cell><cell>JavaScript Type</cell><cell>JavaScript Value</cell>
+    <cell><logiccolor>notappl</logiccolor></cell><cell><link "https://developer.mozilla.org/en-US/docs/Glossary/Null">null</link></cell><cell><colorinline JavaScript>null</colorinline></cell>
+    <cell><logiccolor>missing</logiccolor></cell><cell><link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link></cell><cell><colorinline JavaScript>"MISSING"</colorinline></cell>
+    <cell><logiccolor>refused</logiccolor></cell><cell><link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link></cell><cell><colorinline JavaScript>"REFUSED"</colorinline></cell>
+    <cell><logiccolor>default</logiccolor></cell><cell><link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link></cell><cell><colorinline JavaScript>"DEFAULT"</colorinline></cell>
+</table>
+
+Note that <logiccolor>notappl</logiccolor> is <link numeric_JSON_representation.csdoc>serialized</link> as the string <colorinline JSON>"NOTAPPL"</colorinline> in JSON but as <colorinline JavaScript>null</colorinline> in JavaScript.
+
+
+When converting a JavaScript value to a CSPro numeric, the following conversions are supported:
+
+<table 3 header nowrap>
+    <cell>JavaScript Type</cell><cell>JavaScript Value</cell><cell>CSPro Value</cell>
+    <cell><link "https://developer.mozilla.org/en-US/docs/Glossary/Number">number</link></cell><cell>&mdash;</cell><cell>number</cell>
+    <cell><link "https://developer.mozilla.org/en-US/docs/Glossary/Boolean">boolean</link></cell><cell><colorinline JavaScript>true</colorinline></cell><cell><logiccolor>1</logiccolor></cell>
+    <cell><link "https://developer.mozilla.org/en-US/docs/Glossary/Boolean">boolean</link></cell><cell><colorinline JavaScript>false</colorinline></cell><cell><logiccolor>0</logiccolor></cell>
+    <cell><link "https://developer.mozilla.org/en-US/docs/Glossary/Null">null</link></cell><cell><colorinline JavaScript>null</colorinline></cell><cell><logiccolor>notappl</logiccolor></cell>
+    <cell><link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link></cell><cell><colorinline JavaScript>"NOTAPPL"</colorinline></cell><cell><logiccolor>notappl</logiccolor></cell>
+    <cell><link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link></cell><cell><colorinline JavaScript>"MISSING"</colorinline></cell><cell><logiccolor>missing</logiccolor></cell>
+    <cell><link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link></cell><cell><colorinline JavaScript>"REFUSED"</colorinline></cell><cell><logiccolor>refused</logiccolor></cell>
+    <cell><link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link></cell><cell><colorinline JavaScript>"DEFAULT"</colorinline></cell><cell><logiccolor>default</logiccolor></cell>
+</table>
+
+The strings representing <link special_values.csdoc>special values</link> are processed in a case-insensitive manner. For example, both <colorinline JavaScript>"MISSING"</colorinline> and <colorinline JavaScript>"miSSing"</colorinline> are converted to <logiccolor>missing</logiccolor>.
+
+Converting a <link "https://developer.mozilla.org/en-US/docs/Glossary/String">string</link> that contains a number succeeds as long as the number is not followed by a non-number. That is, <colorinline JavaScript>"40"</colorinline> is converted to <logiccolor>40</logiccolor> but <colorinline JavaScript>"40 days"</colorinline> results in an exception.
+
+Converting an <link "https://developer.mozilla.org/en-US/docs/Glossary/Array">array</link> containing a single value succeeds, but an exception occurs if the length of the array is not 1. For example, <colorinline JavaScript>[ 1979 ]</colorinline> is converted to <logiccolor>1979</logiccolor> but <colorinline JavaScript>[ 1979, 1982 ]</colorinline> results in an exception.
+
+Converting an <link "https://developer.mozilla.org/en-US/docs/Glossary/Object">object</link> or <link "https://developer.mozilla.org/en-US/docs/Glossary/Undefined">undefined</link> results in an exception.
+
+
+<seealso javascript_value_conversions.csdoc numeric_JSON_representation.csdoc />

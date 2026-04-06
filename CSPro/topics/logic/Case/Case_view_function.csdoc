@@ -23,6 +23,8 @@ The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>
 
 <subheader>Example</subheader>
 
+<logicdeclare Case CENSUS_DICT />
+
 <logic>
 PROC HOUSEHOLD_FORM
 

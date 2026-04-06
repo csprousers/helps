@@ -22,7 +22,7 @@ If you attempt to assign a string that is longer than the variable's size, the s
 The following variable modifiers apply to alphanumeric variables:
 
 <list>
-	<li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
+    <li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
 </list>
 
 
@@ -32,10 +32,10 @@ The following variable modifiers apply to alphanumeric variables:
 alpha(10) x, y;
 
 x = "hi mom";           // x will equal "hi mom    "
-						//               1234567890
+                        //               1234567890
 
-x = "good night, mom";	// x will equal "good night"
-						//               1234567890
+x = "good night, mom";  // x will equal "good night"
+                        //               1234567890
 </logic>
 
 <subheader>Example 2</subheader>
@@ -49,13 +49,13 @@ alpha flag;
 PROC Q5
 
 if Q5 = 1 then
-	reply = "Yes";
-	flag = "Y";    			// flag will equal "Y               "
-							//                  1234567890123456
+    reply = "Yes";
+    flag = "Y";             // flag will equal "Y               "
+                            //                  1234567890123456
 else
-	reply = "Not Reported"; // reply will equal "Not"
-							//                   123
+    reply = "Not Reported"; // reply will equal "Not"
+                            //                   123
 endif;
 </logic>
 
-<seealso string_statement.csdoc Array_statement.csdoc numeric_statement.csdoc />
+<seealso string_statement.csdoc StringWriter.csdoc Array_statement.csdoc numeric_statement.csdoc />

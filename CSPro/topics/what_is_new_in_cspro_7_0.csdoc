@@ -2,6 +2,8 @@
 
 This is a detailed list of changes in CSPro 7.0. For a more general overview, see the <i>readme.txt</i> file located in the CSPro installation folder.
 
+A feature showcase demonstrating some of CSPro 7.0's new features is available on <link <definition github_feature_showcase_url />/tree/7.0>GitHub</link>.
+
 
 <subheader>CSPro Designer</subheader>
 
@@ -27,7 +29,7 @@ This is a detailed list of changes in CSPro 7.0. For a more general overview, se
         ~!~
         <list>
             <li>Automatically advance on selection.</li>
-            <li>Show field labels above question text.</li>
+            <li>Show field labels above <link question_text.csdoc>question text</link>.</li>
             <li>Display error message numbers.</li>
         </list>
     </li>
@@ -90,7 +92,7 @@ This is a detailed list of changes in CSPro 7.0. For a more general overview, se
 <subheader>Tools</subheader>
 
 <list>
-    <li>A new tool, <link DataViewer::introduction_to_data_viewer.csdoc>Data Viewer</link>, allows for the viewing of data files in dictionary format (in lieu of using Text Viewer). The tool is also used to <link DataViewer::downloading_and_synchronizing_data.csdoc>download data from a synchronization server</link>.</li>
+    <li>A new tool, <link DataManager::introduction.csdoc>Data Viewer</link>, allows for the viewing of data files in dictionary format (in lieu of using Text Viewer). The tool is also used to <link DataManager::downloading_and_synchronizing_data.csdoc>download data from a synchronization server</link>. <i>(This tool was renamed to Data Manager in CSPro 8.1.)</i></li>
     <li>The <b>Export Data</b> tool can now output Stata exports in Unicode format. To open these exports, you need Stata version 14 or later.</li>
     <li>The <b>Excel to CSPro</b> tool is much improved, allowing you to create dictionaries from Excel data and to convert data from multiple worksheets.</li>
     <li>The <b>Concatenate Data</b> tool and the <logiccolor>fileconcat</logiccolor> function now combine case notes, partial save statuses, etc., and the tool can identify duplicate cases in files.</li>

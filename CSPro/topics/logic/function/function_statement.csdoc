@@ -1,14 +1,15 @@
 ﻿<title>Function Statement</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
 function 『<arg>return_type</arg>』 <arg>function_name</arg>(『<arg>parameter1_type</arg> <arg>parameter1_name</arg>, ...,』
-									 『<arg>parameterN_type</arg> <arg>parameterN_name</arg>』)
+                                     『<arg>parameterN_type</arg> <arg>parameterN_name</arg>』)
 
-	// statements
+    // statements
 
-	『<arg>function_name</arg> = <arg>return_value</arg>;』
+    『<arg>function_name</arg> = <arg>return_value</arg>;』
 
 end;
 </logicsyntax>
@@ -16,7 +17,7 @@ end;
 
 <subheader>Description</subheader>
 
-The <logiccolor>function</logiccolor> statement defines a <link user_defined_functions.csdoc>user-defined function</link> with the name <arg>function_name</arg>. Once defined, the function can be called in other user-defined functions or in procedures throughout your application.
+The <logiccolor>function</logiccolor> statement defines a <link user_defined_functions.csdoc>user-defined function</link> with the name <arg>function_name</arg>. Once defined, the function can be called in other user-defined functions or in procedures throughout your application. Using the <logiccolor>declare</logiccolor> keyword, you can declare a function prior to defining it.
 
 Numeric expressions, string expressions, <link object_dot_notation.csdoc>objects</link> (such as arrays and file handlers), and <link additional_function_examples.csdoc>function pointers</link> can be passed to a user-defined function as arguments. These parameters are defined by specifying the variable type (e.g., <arg>parameter1_type</arg>) and the name of the variable (e.g., <arg>parameter1_name</arg>). If no type is specified, the variable will be considered numeric. Preceding the parameter type with the <logiccolor>optional</logiccolor> keyword marks the parameter as an <link function_parameters_optional.csdoc>optional parameter</link> for which a caller does not need to supply a corresponding argument.
 
@@ -38,16 +39,16 @@ PROC GLOBAL
 
 function CompareValues(numeric value1, numeric value2)
 
-	if value1 <> value2 then
-		errmsg("The values entered, %d and %d, are not equal.", value1, value2);
-		reenter;
-	endif;
+    if value1 <> value2 then
+        errmsg("The values entered, %d and %d, are not equal.", value1, value2);
+        reenter;
+    endif;
 
 end;
 
 PROC BIRTH_DATE
 
-	CompareValues(BIRTH_DATE, BIRTH_DATE_FROM_PREVIOUS_ROUND);
+    CompareValues(BIRTH_DATE, BIRTH_DATE_FROM_PREVIOUS_ROUND);
 </logic>
 
 
@@ -58,11 +59,11 @@ PROC GLOBAL
 
 function string GetNameOfFirstFemale()
 
-	numeric female_index = seek(SEX = 2);
+    numeric female_index = seek(SEX = 2);
 
-	if female_index > 0 then
-		GetNameOfFirstFemale = NAME(female_index);
-	endif;
+    if female_index > 0 then
+        GetNameOfFirstFemale = NAME(female_index);
+    endif;
 
 end;
 </logic>
@@ -75,13 +76,13 @@ PROC GLOBAL
 
 function numeric SumList(List numeric numeric_list)
 
-	numeric summed_value = 0;
+    numeric summed_value = 0;
 
-	do numeric counter = 1 while counter <= length(numeric_list)
-		inc(summed_value, numeric_list(counter));
-	enddo;
+    do numeric counter = 1 while counter <= length(numeric_list)
+        inc(summed_value, numeric_list(counter));
+    enddo;
 
-	SumList = summed_value;
+    SumList = summed_value;
 
 end;
 </logic>
@@ -94,18 +95,18 @@ PROC GLOBAL
 
 function string CapitalizeFirstLetters(string text)
 
-	do numeric counter = 1 while counter <= length(text)
+    do numeric counter = 1 while counter <= length(text)
 
-		if counter = 1 or text[( counter - 1 ):1] = " " then
-			text[counter:1] = toupper(text[counter:1]);
-		endif;
+        if counter = 1 or text[( counter - 1 ):1] = " " then
+            text[counter:1] = toupper(text[counter:1]);
+        endif;
 
-	enddo;
+    enddo;
 
-	CapitalizeFirstLetters = text;
+    CapitalizeFirstLetters = text;
 
 end;
 </logic>
 
 
-<seealso user_defined_functions.csdoc function_parameters_optional.csdoc function_arguments_ref.csdoc additional_function_examples.csdoc exit_statement.csdoc />
+<seealso user_defined_functions.csdoc function_parameters_optional.csdoc function_arguments_ref.csdoc additional_function_examples.csdoc exit_statement.csdoc declare_modifier.csdoc />

@@ -39,6 +39,16 @@ Individual elements of HashMap objects can be retrieved or set by using an index
 When a HashMap is used as an argument to a <link user_defined_functions.csdoc>user-defined function</link>, it is <link function_arguments_ref.csdoc>passed by reference</link>.
 
 
+<subheader>Conversions</subheader>
+
+HashMap objects can be converted to and from:
+
+<list>
+    <li><link HashMap_JSON_representation.csdoc>JSON objects or arrays</link></li>
+    <li><link HashMap_JavaScript_representation.csdoc>JavaScript objects</link></li>
+</list>
+
+
 <subheader>Example</subheader>
 
 <logic>

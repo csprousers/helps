@@ -17,6 +17,8 @@ In addition to this object function, Case objects can be used as arguments to th
 
 <subheader>Example</subheader>
 
+<logicdeclare Case CENSUS_DICT />
+
 <logic>
 PROC HOUSEHOLD_FORM
 

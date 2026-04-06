@@ -3,14 +3,14 @@
 Within a batch application, you can view a <link view_questionnaire.csdoc>questionnaire/pseudo paper version</link> of the batch fields by either:
 
 <list>
-    <li>Clicking on the questionnaire view icon <image questionnaire_view.png /> from the batch toolbar, or</li>
+    <li>Clicking on the questionnaire view icon <image questionnaire_view_button.png /> from the batch toolbar, or</li>
     <li>Selecting <b>Questionnaire</b> from the <b>View</b> menu</li>
 </list>
 
 To return to the batch application, you can either:
 
 <list>
-    <li>Click on the logic icon <image logic.jpg /> from the toolbar, or</li>
+    <li>Click on the logic icon <image logic_button.png /> from the toolbar, or</li>
     <li>Press <b>Ctrl+L</b>, or</li>
     <li>Select <b>Logic</b> from the <b>View</b> menu.</li>
 </list>

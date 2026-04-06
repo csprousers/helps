@@ -3,18 +3,122 @@
 
 This is a detailed list of changes in CSPro 8.1. For a more general overview, see the <i>readme.txt</i> file located in the CSPro installation folder.
 
+A feature showcase demonstrating some of CSPro 8.1's new features is available on <link <definition github_feature_showcase_url />/tree/8.1/8.1>GitHub</link>.
+
 
 <subheader>General</subheader>
 
 <list>
+    <li>CSPro is now open source! The source code, written primarily in C++, JavaScript, Java/Kotlin, and PHP, with some code written in C#, is available on GitHub: <link https://<definition csprousers_github />><definition csprousers_github /></link>.</li>
+    <li><link markdown_overview.csdoc>Markdown</link> can be used while specifying <link question_text.csdoc>question text</link>, in <link templated_reports.csdoc>templated reports</link>, and can be viewed (as generated HTML) using the <logiccolor>view</logiccolor> function or in <link CSView::supported_files.csdoc>CSView</link>. Markdown can also be edited in <link CSCode::language_markdown.csdoc>CSCode</link> and included as part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link>.</li>
+    <li>Applications can now <link javascript_overview.csdoc>incorporate JavaScript</link> in addition to <link introduction_to_cspro_language.csdoc>CSPro logic</link>. Many open-source JavaScript libraries exist that can be brought into your application, and as a dynamically typed language, some programming tasks may be easier using JavaScript. By using the <link JS.csdoc>JS</link> namespace, it is possible to <link JS_eval_function.csdoc>evaluate JavaScript</link>, <link JS_invoke_function.csdoc>invoke functions</link>, and <link JS_setValue_function.csdoc>convert</link> CSPro symbols to JavaScript numbers, strings, arrays, and objects. It is also possible to create <link javascript_user_defined_functions.csdoc>function wrappers</link> in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked.</li>
+    <li>CSPro's handling of <link text_attributes.csdoc>text encoding and newline characters</link> is changing, with the aim to standardize the settings across file types.
+        <list>
+            <li>In a future release, files without a BOM (<link "https://en.wikipedia.org/wiki/Byte_order_mark">byte order mark</link>) will be treated as text encoded in UTF-8, not ANSI.</li>
+            <li>It will be possible to override this default behavior by specifying an <link text_attributes.csdoc>override</link>.</li>
+            <li>In this release, <link TextView::encoding.csdoc>Text Viewer</link> treats files without a BOM as UTF-8, with an <link TextView::encoding.csdoc>Encoding menu</link> that lets you change the encoding to ANSI.</li>
+            <li>To prepare for the future release, if you use external tools to process CSPro files, you will want to ensure that they process files without a BOM as UTF-8, and that they can handle newlines written only with a line feed character (<logiccolor>"\n"</logiccolor>, not <logiccolor>"\r\n"</logiccolor>).</li>
+        </list>
+    </li>
+    <li>Images in the <link "https://en.wikipedia.org/wiki/WebP">WebP</link> format can be loaded and saved using the <link Image.csdoc>Image</link> object and can be used as <link value_set_images.csdoc>value set images</link>.</li>
     <li>A new dialog, <link manage_application_files.csdoc>Manage Application Files</link>, replaces the Add Files and Drop Files dialogs, providing a central place to manage an application's files and each file's properties. New properties include:~!~~!~
         <list>
             <li><link properties_application.csdoc>Application</link>: the name and label can be modified.</li>
             <li><link change_dictionary_properties.csdoc>Dictionary</link>: options to allow external dictionaries to be synchronized as part of a <link synchronization_simple.csdoc>Simple Synchronization routine</link> and to build <link value_set_images.csdoc>value set images</link> into a <link binary_data_entry_application_file_pen.csdoc>compiled application (.pen)</link>.</li>
             <li><link change_message_properties.csdoc>Messages</link>: the message type&mdash;user-defined or system overrides&mdash;is now specified as a property, no longer based on the filename starting with "CSProRuntime".</li>
-            <li><link change_report_properties.csdoc>Report</link>: <link templated_reports.csdoc>~~ fills</link> can be escaped for writing to CSV format.</li>
+            <li><link change_report_properties.csdoc>Report</link>: <link templated_reports.csdoc>~~ fills</link> can be encoded for writing to Markdown or CSV formats.</li>
             <li><link resources.csdoc>Resources</link>: in addition to directories, it is now possible to add single files as resources, and options provide control over what files in directories are processed.</li>
-        </list></li>
+        </list>
+    </li>
+    <li>The CSPro Settings dialog has been renamed <link manage_credentials.csdoc>Manage Credentials</link> and now allows for the granular clearing of synchronization, data, and location credentials.</li>
+</list>
+
+
+<subheader>CSPro Designer</subheader>
+
+<list>
+    <li>Numeric value sets can be generated in <link generate_numeric_value_set.csdoc>descending order</link>.</li>
+    <li>Right-clicking on the header of one of the dictionary grids provides an option to reset the column widths for that grid. The calculation of the default grid widths has been modified to account for large monitors.</li>
+</list>
+
+
+<subheader>Data Entry</subheader>
+
+<list>
+    <li>The <link change_field_properties.csdoc>upper case</link> field property is applied to all text entered into a field, regardless of entry method. Previously, text pasted from the clipboard was not transformed to upper case.</li>
+</list>
+
+
+<subheader>Android</subheader>
+
+<list>
+    <li>CSEntry can be <link android_launching_csentry_from_other_applications.csdoc>launched using a deep link</link> that starts with <colorinline Kotlin>"https://csprousers.org/pff"</colorinline>. CSEntry runs the application specified as part of the deep link's path.</li>
+</list>
+
+
+<subheader>Reporting</subheader>
+
+<list>
+    <li>The <link templated_reports.csdoc>templated reports</link> system has expanded to <link text_templates.csdoc>text templates</link>, with this system used when processing reports, as before, but also now when processing dynamic <link questions.csdoc>question text</link>.</li>
+    <li><link templated_reports.csdoc>Templated reports</link> support <link markdown_overview.csdoc>Markdown</link> as a <link change_report_properties.csdoc>format</link>, with the Markdown automatically converted to HTML for display.</li>
+</list>
+
+
+<subheader>Mapping</subheader>
+
+<list>
+    <li>A new <link properties_mapping.csdoc>mapping property</link> allows <link "https://leafletjs.com">Leaflet</link> to be selected as the <link mapping_engine.csdoc>mapping engine</link> for Android. On Windows, Leaflet is the only available mapping engine.</li>
+    <li>Offline maps can now use ArcGIS Tile Packages that use the <link "https://enterprise.arcgis.com/en/server/10.8/publish-services/linux/inside-the-compact-cache-storage-format.htm">CompactV2 storage format</link> (with the file extension .tpkx).</li>
+    <li>When using Leaflet, ArcGIS Tile Packages created using the <link "https://desktop.arcgis.com/en/arcmap/10.3/map/working-with-arcmap/about-tile-packages.htm">Mixed tile format</link> ("JPEG in the center of the package with PNG 32 on the edge of the package") are supported.</li>
+    <li>Leaflet mapping supports using HTML tags in text entries for functions such as <logiccolor>Map.setTitle</logiccolor> and <logiccolor>Map.setMarkerText</logiccolor>. (This was already possible when using the Google Maps mapping engine.)</li>
+</list>
+
+
+<subheader>Question Text</subheader>
+
+<list>
+    <li><link question_text.csdoc>Question text</link> can be defined using <link markdown_overview.csdoc>Markdown</link>. The Markdown is rendered as HTML for display.</li>
+    <li>The default format for new question text <link question_text_properties.csdoc>can be specified</link>, and the <link enter_question_text.csdoc>editor's</link> toolbar displays the format with four options. The first two options, <image question-text-edit-html.png /> and <image question-text-edit-html-code.png />, are the HTML-based options that previously existed. A new option, <image question-text-edit-html-tt.png /> allows for the specification of question text as a HTML <link text_templates.csdoc>text template</link>, supporting <nowrap>&lt;? ?&gt;</nowrap> template expressions. This HTML is edited as code with no visual editor. The final option, <image question-text-edit-markdown-tt.png />, is for Markdown question text.</li>
+    <li>When using <link change_formatting.csdoc>formatting options</link>, or adding <link add_pictures.csdoc>images</link> or <link insert_link.csdoc>hyperlinks</link>, the question text editor will use the correct syntax based on whether the question is using HTML or Markdown.</li>
+    <li>To toggle between question text and <link create_helps_for_fields.csdoc>help text</link>, the editor's toolbar now contains two buttons: <image question-text-edit-question.png /> for question text and <image question-text-edit-help.png /> for help text.</li>
+    <li>You can view a preview of question text by pressing <b>Ctrl + F5</b> or selecting <b>Preview Text Template</b> from the <b>View</b> menu. This will not run the CSPro logic, so the preview will not necessarily look complete, but it can be useful to view an approximation of how the rendered question text will appear.</li>
+    <li>The <logiccolor>QSF</logiccolor> logic object gives access to the <link StringWriter.csdoc>StringWriter</link> in use when processing question text as a <link text_templates.csdoc>text template</link>.</li>
+</list>
+
+
+<subheader>Logic</subheader>
+
+<list>
+    <li>A new namespace, <logiccolor>JS</logiccolor>, contains functions that facilitate executing <link javascript_overview.csdoc>JavaScript</link> from within CSPro logic. Functions in the namespace include: <logiccolor>JS.eval</logiccolor>, <logiccolor>JS.getValue</logiccolor>, <logiccolor>JS.getValueJson</logiccolor>, <logiccolor>JS.hasValue</logiccolor>, <logiccolor>JS.invoke</logiccolor>, <logiccolor>JS.setValue</logiccolor>, and <logiccolor>JS.setValueFromJson</logiccolor>.</li>
+    <li>The new keyword <logiccolor>declare</logiccolor> can be used to declare a <link user_defined_functions.csdoc>user-defined function</link>. The declared function can be referenced in logic prior to its definition. Using a function prior to its definition was previously possible only using workarounds such as <logiccolor>invoke</logiccolor> or <link additional_function_examples.csdoc>function pointers</link>.</li>
+    <li>A new object, <link StringWriter.csdoc>StringWriter</link>, supports building strings incrementally. The <logiccolor>Report</logiccolor> object is a kind of StringWriter, and the <logiccolor>QSF</logiccolor> special name, used when processing question text, is also a kind of StringWriter. A StringWriter has the functions: <logiccolor StringWriter>clear</logiccolor>, <logiccolor StringWriter>toString</logiccolor>, <logiccolor StringWriter>write</logiccolor>, <logiccolor StringWriter>writeEncoded</logiccolor>, <logiccolor StringWriter>writeEncodedLine</logiccolor>, and <logiccolor StringWriter>writeLine</logiccolor>.</li>
+    <li>The <logiccolor>Report</logiccolor> object implements three new functions, inherited from its <logiccolor>StringWriter</logiccolor> parent: <logiccolor Report>writeEncoded</logiccolor>, <logiccolor Report>writeEncodedLine</logiccolor>, and <logiccolor Report>writeLine</logiccolor>.</li>
+    <li>The <logiccolor>encode</logiccolor> function supports encoding to <link markdown_overview.csdoc>Markdown</link> format.</li>
+    <li>A new function, <logiccolor>ValueSet.removeDuplicates</logiccolor>, removes duplicate entries from a dynamic value set.</li>
+    <li>The <link "https://en.wikipedia.org/wiki/Exif">EXIF data</link> of an image can be queried using the <logiccolor>Image.getExif</logiccolor> function. EXIF data in a JPEG can include useful information such as the date and time when a photo was taken, as well as GPS coordinates.</li>
+    <li>The <logiccolor>Image</logiccolor> object can now load <link "https://en.wikipedia.org/wiki/ICO_(file_format)">icon files (.ico)</link> on Windows and can <link Image_save_function.csdoc>save</link> to that format on all platforms.</li>
+    <li>Images used by the <logiccolor>Map.addImageButton</logiccolor> and <logiccolor>Map.setMarkerImage</logiccolor> functions can be specified as URLs pointing to local resources (using <link localhost_url.csdoc>localhost URLs</link>) or to remote servers.</li>
+    <li>If an <logiccolor>Array</logiccolor> object is defined with initial values and is also marked as a <link Array_statement.csdoc>saved array</link>, the initial values will only be used if the array does not exist in the <link saved_arrays_file_sva.csdoc>saved array file</link>.</li>
+    <li>The <logiccolor>Symbol.updateValueFromJson</logiccolor> function has been renamed <logiccolor>Symbol.setValueFromJson</logiccolor>, though the old name will remain as an alias for some time.</li>
+    <li>A <logiccolor>Geometry</logiccolor> object can be used as an argument to <logiccolor>Map.zoomTo</logiccolor>, which uses the Geometry object's bounds to set the rectangular region of the map when shown.</li>
+</list>
+
+
+<subheader>JavaScript</subheader>
+
+<list>
+    <li>JavaScript files can be associated with applications by using the <link manage_application_files.csdoc>Manage Application Files</link> interface. The JavaScript can be <link change_code_properties.csdoc>evaluated</link> as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global script</link> or as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">module</link>.</li>
+    <li>Functions in the <link JS.csdoc>JS</link> namespace allow interaction with JavaScript using CSPro logic:~!~~!~
+        <list>
+            <li><logiccolor>JS.eval</logiccolor>: Evaluates JavaScript in the global execution context.</li>
+            <li><logiccolor>JS.getValue</logiccolor>: Converts a JavaScript variable or property to its CSPro equivalent.</li>
+            <li><logiccolor>JS.getValueJson</logiccolor>: Returns the <link JSON_primer.csdoc>JSON</link> representation of a JavaScript variable or property.</li>
+            <li><logiccolor>JS.hasValue</logiccolor>: Returns whether a JavaScript variable or property is defined (not <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</link>).</li>
+            <li><logiccolor>JS.invoke</logiccolor>: Executes a JavaScript function that exists in the global execution context with any CSPro arguments <link javascript_value_conversions.csdoc>converted</link> to their JavaScript equivalents.</li>
+            <li><logiccolor>JS.setValue</logiccolor>: Converts a CSPro variable to its JavaScript equivalent and adds this as a variable to the global scope, or sets an object's property.</li>
+            <li><logiccolor>JS.setValueFromJson</logiccolor>: Create a JavaScript variable using <link JSON_primer.csdoc>JSON</link> and adds it as a variable to the global scope, or sets an object's property.</li>
+        </list>
+    </li>
 </list>
 
 
@@ -22,9 +126,25 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 
 <list>
     <li>A new action, <action>throwException</action>, throws an exception in the current execution environment.</li>
+    <li>A new action, <action>System.createShortcut</action>, creates a shortcut to a CSPro application or file. The shortcut is placed on the Windows Desktop, or on the Android launcher.</li>
     <li>The <action>UI.closeDialog</action> action has been renamed <action>UI.close</action>, though the old name will remain as an alias for some time. A new argument allows the <link html_dialog_ui.csdoc>HTML dialog</link> or <link html_in_cspro.csdoc>web view</link> to be closed without a valid result but instead with an exception that is thrown in the execution environment that launched the dialog or web view.</li>
+    <li>A new action, <action>UI.setWebViewOptions</action>, sets options for the current <link html_in_cspro.csdoc>web view</link>. These options include allowing access to a device's camera, geolocation, and microphone.</li>
     <li>The <link action_invoker_execution_json.csdoc>JSON format of exceptions</link> has changed from a string to an object with <link CS_throwException.csdoc>message, name, and cause</link> properties.</li>
+    <li>The <action>File.copy</action> action's <arg>overwrite</arg> flag has additional options to control whether a source file overwrites a destination file.</li>
+    <li>SQLite <link "https://sqlite.org/inmemorydb.html">in-memory databases</link> can be opened using <action>Sqlite.open</action> by specifying <logiccolor>":memory:"</logiccolor> as the <arg>name</arg>.</li>
+    <li>The version of SQLite included with CSPro now supports <link "https://www.sqlite.org/lang_mathfunc.html">mathematical functions</link> such as atan2 and sin.</li>
+    <li>Binary data can be <link action_invoker_binary_data.csdoc>cached</link>, an optimization useful when binary data will be used by multiple actions.</li>
     <li><link action_invoker_resource_ids.csdoc>Resource IDs</link>, such as those used by the <action>Sqlite</action> namespace's actions, do not need to be specified when they can be <link action_invoker_resource_ids.csdoc>calculated implicitly</link>.</li>
+    <li>The <action>Sqlite</action> namespace's database resource ID argument is now named <arg>dbId</arg>. The old name, <arg>db</arg>, will work in CSPro 8.1 but not in future versions.</li>
+    <li>The <action>Logic.updateSymbolValue</action> action has been renamed <action>Logic.setSymbolValue</action>, though the old name will remain as an alias for some time.</li>
+</list>
+
+
+<subheader>Tools</subheader>
+
+<list>
+    <li>The <link CSDiff::introduction_to_compare_data.csdoc>Compare Data</link> tool will match duplicate cases by <link uuid_function.csdoc>UUID</link> when running a comparison in <link CSDiff::run_a_compare.csdoc>indexed order</link>. Additionally, comparing cases in sequential order now works properly with data sources with duplicate cases.</li>
+    <li>The <link ParadataConcat::introduction_to_paradata_concatenator.csdoc>Paradata Concatenator</link> and <logiccolor>paradata</logiccolor> function's concatenation routines have been optimized, improving performance when processing many paradata logs.</li>
 </list>
 
 

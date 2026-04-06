@@ -6,10 +6,10 @@
 b = image_name.resample(<arg>width</arg>, <arg>height</arg>);
 
 b = image_name.resample(『width := <arg>width</arg>,』
-						『height := <arg>height</arg>』);
+                        『height := <arg>height</arg>』);
 
 b = image_name.resample(『maxWidth := <arg>max_width</arg>,』
-						『maxHeight := <arg>max_height</arg>』);
+                        『maxHeight := <arg>max_height</arg>』);
 </logicsyntax>
 
 
@@ -38,7 +38,7 @@ The first function call results in a resampling to 400 x 300. The second functio
 
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (<logiccolor>true</logiccolor>) if the image was resampled, 0 (<logiccolor>false</logiccolor>) if there was an error, and <logiccolor>default</logiccolor> if the image object does not contain an image.
+The function returns a logical value of 1 (<logiccolor>true</logiccolor>) if the image was resampled, 0 (<logiccolor>false</logiccolor>) if there was an error, and <logiccolor>default</logiccolor> if the Image object does not contain an image.
 
 
 <subheader>Example 1</subheader>

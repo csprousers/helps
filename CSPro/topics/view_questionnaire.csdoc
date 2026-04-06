@@ -3,7 +3,7 @@
 
 <subheader>Overview</subheader>
 
-The questionnaire view is a CSPro feature that displays the contents of a case and its components (dictionary, forms, question text) in a read-only mode that facilitates reviewing or printing. The questionnaire is displayed in an <link html_in_cspro.csdoc>embedded web browser</link>.
+The questionnaire view is a CSPro feature that displays the contents of a case and its components (dictionary, forms, <link question_text.csdoc>question text</link>) in a read-only mode that facilitates reviewing or printing. The questionnaire is displayed in an <link html_in_cspro.csdoc>embedded web browser</link>.
 
 The questionnaire view is available in the following contexts:
 

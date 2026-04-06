@@ -3,46 +3,50 @@
 The following is a summary of the menu options available throughout CSPro:
 
 <table 2 nowrap>
-	<cell 2><subheader>File</subheader></cell>
-	<cell><link create_a_cspro_application.csdoc>New</link></cell><cell>Create a new application.</cell>
-	<cell><link open_an_application.csdoc>Open</link></cell><cell>Open an existing application.</cell>
-	<cell 2>&nbsp;</cell>
-	<cell 2><subheader>Tools</subheader></cell>
-	<cell><link DataViewer::introduction_to_data_viewer.csdoc>Data Viewer</link></cell><cell>View data files.</cell>
-	<cell><link TextView::introduction_to_text_viewer.csdoc>Text Viewer</link></cell><cell>View text or data files.</cell>
-	<cell><link TblView::introduction_to_table_viewer.csdoc>Table Viewer</link></cell><cell>View CSPro tables.</cell>
-	<cell><link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link></cell><cell>Tabulate frequency distributions for file contents.</cell>
-	<cell><link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link></cell><cell>Deploy one or multiple applications to a server.</cell>
-	<cell><link CSPack::introduction_to_pack_application.csdoc>Pack Application</link></cell><cell>Pack entire CSPro application into a ZIP file.</cell>
-	<cell><link CSDiff::introduction_to_compare_data.csdoc>Compare Data</link></cell><cell>Compare contents of two similar data files.</cell>
-	<cell><link CSConcat::introduction_to_concatenate_data.csdoc>Concatenate Data</link></cell><cell>Join text or data files one after the other.</cell>
-	<cell><link Excel2CSPro::introduction_to_excel_to_cspro.csdoc>Excel to CSPro</link></cell><cell>Convert data from Excel to CSPro.</cell>
-	<cell><link CSExport::introduction_to_export_data.csdoc>Export Data</link></cell><cell>Export data to various formats.</cell>
-	<cell><link CSIndex::introduction_to_csindex.csdoc>Index Data</link></cell><cell>Identify duplicate cases in a data file.</cell>
-	<cell><link CSReFmt::introduction_to_reformat_data.csdoc>Reformat Data</link></cell><cell>Reformat data using two dictionaries.</cell>
-	<cell><link CSSort::introduction_to_sort_data.csdoc>Sort Data</link></cell><cell>Sort cases or records.</cell>
-	<cell><link ParadataConcat::introduction_to_paradata_concatenator.csdoc>Paradata Concatenator</link></cell><cell>Combine multiple paradata logs into a single log.</cell>
-	<cell><link ParadataViewer::introduction_to_paradata_viewer.csdoc>Paradata Viewer</link></cell><cell>Display reports about paradata collected during an application's run.</cell>
-	<cell><link CSCode::introduction.csdoc>CSCode</link></cell><cell>Edit code, JSON, and text files.</cell>
-	<cell><link CSDocument::introduction.csdoc>CSDocument</link></cell><cell>Author documents using a simple, limited, markup language.</cell>	
-	<cell><link CSView::introduction.csdoc>CSView</link></cell><cell>View files in a web browser.</cell>
-	<cell>PFF Editor</cell><cell>Edit a <link program_information_file_pff.csdoc>PFF file</link> in an interactive environment.</cell>
-	<cell>Production Runner</cell><cell>Automate the running of multiple CSPro applications.</cell>
-	<cell>Operator Statistics Viewer</cell><cell>View <link operator_statistics_file_log.csdoc>operator statistics files</link>.</cell>
-	<cell>Save Array Viewer</cell><cell>View and modify <link saved_arrays_file_sva.csdoc>saved arrays</link>.</cell>
-	<cell>Text Encoding Converter</cell><cell>Modify the <link unicode_primer.csdoc>encoding</link> of text files.</cell>
-	<cell><link designer_font_preferences.csdoc>Font Preferences</link></cell><cell>Change the font preferences for the CSPro Designer.</cell>
-	<cell 2>&nbsp;</cell>
-	<cell 2><subheader>Window</subheader></cell>
-	<cell><link change_windows.csdoc>Cascade</link></cell><cell>Arrange windows in an overlapping fashion.</cell>
-	<cell><link change_windows.csdoc>Tile Top to Bottom</link></cell><cell>Arrange windows one above the other.</cell>
-	<cell><link change_windows.csdoc>Tile Side by Side</link></cell><cell>Arrange windows one beside the other.</cell>
-	<cell 2>&nbsp;</cell>
-	<cell 2><subheader>Help</subheader></cell>
-	<cell><link get_help.csdoc>Help Topics</link></cell><cell>Get help on current application.</cell>
-	<cell><link get_help.csdoc>Examples Folder</link></cell><cell>Open the folder containing some CSPro examples.</cell>
-	<cell><link get_help.csdoc>Mailing List Signup</link></cell><cell>Sign up to the mailing list to receive CSPro news updates.</cell>
-	<cell><link get_help.csdoc>Technical Support</link></cell><cell>Get information about receiving technical support.</cell>
-	<cell><link <definition google_play />>Android CSEntry Application</link></cell><cell>Open Google Play to download the Android application.</cell>
-	<cell><link get_help.csdoc>About</link></cell><cell>Get information about the software.</cell>
+    <cell 2><subheader>File</subheader></cell>
+    <cell><link create_a_cspro_application.csdoc>New</link></cell><cell>Create a new application.</cell>
+    <cell><link open_an_application.csdoc>Open</link></cell><cell>Open an existing application.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>Tools</subheader></cell>
+    <cell><link DataManager::introduction.csdoc>Data Manager</link></cell><cell>View data files.</cell>
+    <cell><link TextView::introduction_to_text_viewer.csdoc>Text Viewer</link></cell><cell>View text or data files.</cell>
+    <cell><link TblView::introduction_to_table_viewer.csdoc>Table Viewer</link></cell><cell>View CSPro tables.</cell>
+    <cell><link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link></cell><cell>Tabulate frequency distributions for file contents.</cell>
+    <cell><link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link></cell><cell>Deploy one or multiple applications to a server.</cell>
+    <cell><link CSPack::introduction_to_pack_application.csdoc>Pack Application</link></cell><cell>Pack entire CSPro application into a ZIP file.</cell>
+    <cell><link CSDiff::introduction_to_compare_data.csdoc>Compare Data</link></cell><cell>Compare contents of two similar data files.</cell>
+    <cell><link CSConcat::introduction_to_concatenate_data.csdoc>Concatenate Data</link></cell><cell>Join text or data files one after the other.</cell>
+    <cell><link Excel2CSPro::introduction_to_excel_to_cspro.csdoc>Excel to CSPro</link></cell><cell>Convert data from Excel to CSPro.</cell>
+    <cell><link CSExport::introduction_to_export_data.csdoc>Export Data</link></cell><cell>Export data to various formats.</cell>
+    <cell><link CSIndex::introduction_to_csindex.csdoc>Index Data</link></cell><cell>Identify duplicate cases in a data file.</cell>
+    <cell><link CSReFmt::introduction_to_reformat_data.csdoc>Reformat Data</link></cell><cell>Reformat data using two dictionaries.</cell>
+    <cell><link CSSort::introduction_to_sort_data.csdoc>Sort Data</link></cell><cell>Sort cases or records.</cell>
+    <cell><link ParadataConcat::introduction_to_paradata_concatenator.csdoc>Paradata Concatenator</link></cell><cell>Combine multiple paradata logs into a single log.</cell>
+    <cell><link ParadataViewer::introduction_to_paradata_viewer.csdoc>Paradata Viewer</link></cell><cell>Display reports about paradata collected during an application's run.</cell>
+    <cell><link CSCode::introduction.csdoc>CSCode</link></cell><cell>Edit code, JSON, and text files.</cell>
+    <cell><link CSDocument::introduction.csdoc>CSDocument</link></cell><cell>Author documents using a simple, limited, markup language.</cell>
+    <cell><link CSView::introduction.csdoc>CSView</link></cell><cell>View files in a web browser.</cell>
+    <cell>PFF Editor</cell><cell>Edit a <link program_information_file_pff.csdoc>PFF file</link> in an interactive environment.</cell>
+    <cell>Production Runner</cell><cell>Automate the running of multiple CSPro applications.</cell>
+    <cell>Operator Statistics Viewer</cell><cell>View <link operator_statistics_file_log.csdoc>operator statistics files</link>.</cell>
+    <cell>Save Array Viewer</cell><cell>View and modify <link saved_arrays_file_sva.csdoc>saved arrays</link>.</cell>
+    <cell>Text Encoding Converter</cell><cell>Modify the <link unicode_primer.csdoc>encoding</link> of text files.</cell>
+    <cell><link designer_font_preferences.csdoc>Font Preferences</link></cell><cell>Change the font preferences for the CSPro Designer.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>Window</subheader></cell>
+    <cell><link change_windows.csdoc>Cascade</link></cell><cell>Arrange windows in an overlapping fashion.</cell>
+    <cell><link change_windows.csdoc>Tile Top to Bottom</link></cell><cell>Arrange windows one above the other.</cell>
+    <cell><link change_windows.csdoc>Tile Side by Side</link></cell><cell>Arrange windows one beside the other.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>Help</subheader></cell>
+    <cell><link get_help.csdoc>Help Topics</link></cell><cell>Get help for the current application.</cell>
+    <cell><link what_is_new_in_cspro.csdoc>What's New in CSPro?</link></cell><cell>View a list of changes in the current and previous releases of CSPro.</cell>
+    <cell><link get_help.csdoc>Examples Folder</link></cell><cell>Open the folder containing some CSPro examples.</cell>
+    <cell><link <definition github_feature_showcase_url />>Feature Showcases</link></cell><cell>View CSPro applications that demonstrate new features.</cell>
+    <cell><link https://<definition csprousers_forum />>CSPro Users Forum</link></cell><cell>Open the CSPro Users Forum.</cell>
+    <cell><link https://<definition csprousers_github />>CSPro Users GitHub</link></cell><cell>View the CSPro source code on GitHub.</cell>
+    <cell><link get_help.csdoc>Mailing List Signup</link></cell><cell>Sign up to the mailing list to receive CSPro news updates.</cell>
+    <cell><link get_help.csdoc>Technical Support</link></cell><cell>Get information about receiving technical support.</cell>
+    <cell><link <definition google_play />>Android CSEntry Application</link></cell><cell>Open Google Play to download the Android application.</cell>
+    <cell><link get_help.csdoc>About</link></cell><cell>Get information about the software.</cell>
 </table>

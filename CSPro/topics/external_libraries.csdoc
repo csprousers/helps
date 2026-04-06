@@ -14,7 +14,7 @@ Some popular JavaScript libraries are included in the <link html_in_cspro.csdoc>
     <li><link "https://jquery.com">jQuery</link>: "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers."</li>
     <li><link "https://jqueryui.com">jQuery UI</link>: "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of jQuery."</li>
     <li><link "https://lindell.me/JsBarcode">JsBarcode</link>: "JsBarcode is a barcode generator written in JavaScript."</li>
-    <li><link "https://leafletjs.com">Leaflet</link> (Windows only): "Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps."</li>
+    <li><link "https://leafletjs.com">Leaflet</link>: "Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps."</li>
     <li><link "https://github.com/janl/mustache.js">mustache.js</link>: "Mustache is a logic-less template syntax. It works by expanding tags in a template using values provided in a hash or object."</li>
     <li><link "https://github.com/alexei/sprintf.js">sprintf-js</link>: "sprintf-js is a complete open source JavaScript sprintf implementation for the browser."</li>
 </list>
@@ -31,7 +31,7 @@ To use these libraries in an <link html_in_cspro.csdoc>embedded web browser</lin
 <script src="/external/chartjs/chart.umd.js"></script>
 
 <!-- Handlebars.js -->
-<script src="/external/handlebars/handlebars.js"></script>
+<script src="/external/handlebars/handlebars.min.js"></script>
 
 <!-- jQuery -->
 <script src="/external/jquery/jquery.min.js"></script>
@@ -42,7 +42,7 @@ To use these libraries in an <link html_in_cspro.csdoc>embedded web browser</lin
 <!-- JsBarcode -->
 <script src="/external/js-barcode/JsBarcode.all.min.js"></script>
 
-<!-- Leaflet (Windows only) -->
+<!-- Leaflet -->
 <link rel="stylesheet" href="/external/leaflet/leaflet.css" />
 <script src="/external/leaflet/leaflet.js"></script>
 

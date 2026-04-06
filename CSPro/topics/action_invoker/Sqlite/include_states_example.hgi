@@ -1,5 +1,5 @@
 <logic>
-// example data available at: https://www.csprousers.org/resources/help/census2020.db
+// example data available at: <definition csprousers_help_resources />/census2020.db
 
 // open the SQLite database: census2020.db
 numeric dbCensus2020 = tonumber(CS.Sqlite.open(path := "census2020.db"));
@@ -13,21 +13,21 @@ endif;
 
 // string scalar: result is California
 string largestState =
-    CS.Sqlite.exec(db := dbCensus2020,
+    CS.Sqlite.exec(dbId := dbCensus2020,
                    sql := "SELECT `name` FROM `census2020` ORDER BY `resident_pop` DESC LIMIT 1;");
 
 // numeric scalar: result is 15920696
 numeric populationStatesBeginningWithA = tonumber(
-    CS.Sqlite.exec(db := dbCensus2020,
+    CS.Sqlite.exec(dbId := dbCensus2020,
                    sql := "SELECT SUM(`resident_pop`) FROM `census2020` WHERE `name` LIKE 'A%';"));
 
 // scalar array: result is California, District of Columbia, Georgia, Pennsylvania, Virginia, West Virginia
 List string statesEndingInIa;
-statesEndingInIa.updateValueFromJson(
-    CS.Sqlite.exec(db := dbCensus2020,
+statesEndingInIa.setValueFromJson(
+    CS.Sqlite.exec(dbId := dbCensus2020,
                    sql := "SELECT `name` FROM `census2020` WHERE `name` LIKE '%ia' ORDER BY `name`;",
                    rowFormat := "scalarArray"));
-                   
+
 // close the database
-CS.Sqlite.close(db := dbCensus2020);                   
+CS.Sqlite.close(dbId := dbCensus2020);
 </logic>

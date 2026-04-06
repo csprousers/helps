@@ -27,7 +27,15 @@ A Geometry is a CSPro logic object that can be defined as a <link binary_diction
     <include "../Symbol/all_symbols_with_json_in_out.hgi" />
 </table>
 
-In addition to these object functions, Geometry objects can be used as arguments to the <logiccolor>filename</logiccolor>, <logiccolor>Map.addGeometry</logiccolor>, <logiccolor>Map.clearGeometry</logiccolor>, and <logiccolor>Map.removeGeometry</logiccolor> functions.
+In addition to these object functions, Geometry objects can be used as arguments to the following functions:
+
+<list>
+    <li><logiccolor>filename</logiccolor></li>
+    <li><logiccolor>Map.addGeometry</logiccolor></li>
+    <li><logiccolor>Map.clearGeometry</logiccolor></li>
+    <li><logiccolor>Map.removeGeometry</logiccolor></li>
+    <li><logiccolor>Map.zoomTo</logiccolor></li>
+</list>
 
 
 <subheader>Assignments</subheader>
@@ -44,13 +52,22 @@ It is also possible to assign Geometry objects to a <link Document.csdoc>Documen
 <arg>document_name</arg> = <arg>geometry_name</arg>;
 </logicsyntax>
 
-You can also make the reverse assignment, assigning a Document to a Geometry object. A runtime error will occur if the Document's data was not valid geometry data.
+You can also make the reverse assignment, assigning a Document to a Geometry object. A runtime error will occur if the Document's data is not valid GeoJSON.
 
 <logicsyntax>
 <arg>geometry_name</arg> = <arg>document_name</arg>;
 </logicsyntax>
 
 When a Geometry object is used as an argument to a <link user_defined_functions.csdoc>user-defined function</link>, it is <link function_arguments_ref.csdoc>passed by reference</link>.
+
+
+<subheader>Conversions</subheader>
+
+Geometry objects can be converted to and from:
+
+<list>
+    <li><link Geometry_JSON_representation.csdoc>JSON objects</link></li>
+</list>
 
 
 <subheader>Example</subheader>

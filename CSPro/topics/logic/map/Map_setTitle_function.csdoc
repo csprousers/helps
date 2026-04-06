@@ -12,6 +12,10 @@ b = map_name.setTitle(<arg>title</arg>);
 
 The <logiccolor>Map.setTitle</logiccolor> function sets the text that is displayed directly above the map to the value of the string expression <arg>title</arg>. This can be used to display an instruction to the user such as "Tap on the map at the location of the household." By default the instruction is empty and is not shown. To remove the title call <logiccolor>Map.setTitle("")</logiccolor> function with an empty string.
 
+The <arg>title</arg> may contain HTML tags, including:
+
+<include htmlish_text.hgi />
+
 
 <subheader>Return Value</subheader>
 

@@ -21,6 +21,6 @@ The questionnaire view for the form is comprised of the following parts:
 
 If the form repeats, this will be indicated by a <image questionnaire_view_repeating_record.png /> appearing between the title bar and the form's field list. Clicking on <image questionnaire_view_repeating_record.png /> will toggle the roster orientation from horizontal to vertical and back again. Depending on how many fields are on the form, horizontal and/or vertical scroll bars will appear.
 
-<b>Field view</b>: Each field will display its unique dictionary name, followed by a colon (':') and the dictionary label. If any question text had been added it will follow the field label. The input display area will vary depending on whether or not data has been entered for a field; if data has been entered, it will appear within a box; if no data has been entered, you will see a gray-shaded box.
+<b>Field view</b>: Each field will display its unique dictionary name, followed by a colon (':') and the dictionary label. If any <link CSPro::question_text.csdoc>question text</link> had been added it will follow the field label. The input display area will vary depending on whether or not data has been entered for a field; if data has been entered, it will appear within a box; if no data has been entered, you will see a gray-shaded box.
 
 <seealso CSPro::view_questionnaire.csdoc />

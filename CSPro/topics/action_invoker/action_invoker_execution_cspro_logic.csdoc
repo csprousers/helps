@@ -60,7 +60,7 @@ Even with the conversion, the result is a string. If you want to convert it furt
     <cell>Return Type</cell><cell>Conversion Strategy</cell>
     <cell><b>number</b></cell><cell>Use the <logiccolor>tonumber</logiccolor> function.</cell>
     <cell><b>boolean</b></cell><cell>Use the <logiccolor>tonumber</logiccolor> function.</cell>
-    <cell><b>array</b></cell><cell>Use the <logiccolor>Symbol.updateValueFromJson</logiccolor> function with an <logiccolor>Array</logiccolor> or <logiccolor>List</logiccolor> object.</cell>
+    <cell><b>array</b></cell><cell>Use the <logiccolor>Symbol.setValueFromJson</logiccolor> function with an <logiccolor>Array</logiccolor> or <logiccolor>List</logiccolor> object.</cell>
     <cell><b>object</b></cell><cell>At this time, CSPro logic does not provide a way to work with objects. Consider using <link action_invoker_execution_javascript_embedded.csdoc>JavaScript</link> to work with actions that return objects.</cell>
 </table>
 

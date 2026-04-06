@@ -39,11 +39,12 @@ This is a detailed list of changes in CSPro 7.7. For a more general overview, se
 
 <list>
     <li>A new object, <link Geometry.csdoc>Geometry</link>, provides the ability to display and manipulate vector geometry (points, lines, and polygons). You can interactively <link Geometry_tracePolygon_function.csdoc>trace</link> or <link Geometry_walkPolygon_function.csdoc>walk</link> polygons and can compute a polygon's <link Geometry_area_function.csdoc>area</link> and <link Geometry_perimeter_function.csdoc>perimeter</link>. Geometry data can be <link Geometry_load_function.csdoc>loaded</link> from and <link Geometry_save_function.csdoc>saved</link> to <link https://geojson.org>GeoJSON</link> files.</li>
+    <li>The <logiccolor>Map</logiccolor> object can now be used on Windows, with <link "https://leafletjs.com">Leaflet</link> used as the <link mapping_engine.csdoc>mapping engine</link> that implements most of the features previously available only on Android.</li>
     <li>The <link map_base_map_specification.csdoc>default base map</link> can be defined in additional ways. If a <pffcolor>BaseMap</pffcolor> attribute is defined in a PFF, that base map will be used when showing <link Map.csdoc>Map</link> objects that have not had a base map specified.</li>
 </list>
 
 
-<subheader>CAPI Question Text</subheader>
+<subheader>Question Text</subheader>
 
 <list>
     <li>Question text can be added in <link change_formatting.csdoc>right-to-left</link> format, facilitating the addition of text in languages such as Arabic or Hebrew.</li>
@@ -62,7 +63,7 @@ This is a detailed list of changes in CSPro 7.7. For a more general overview, se
 
 <list>
     <li>A new operator, <logiccolor>:=</logiccolor>, allows you to specify <link function_named_arguments.csdoc>arguments by name</link> for some CSPro functions.</li>
-    <li>New functions for <link templated_reports.csdoc>logic-based reports</link>: <logiccolor Report>save</logiccolor>, <logiccolor Report>view</logiccolor>, and <logiccolor Report>write</logiccolor>.</li>
+    <li>New functions for <link templated_reports.csdoc>templated reports</link>: <logiccolor Report>save</logiccolor>, <logiccolor Report>view</logiccolor>, and <logiccolor Report>write</logiccolor>.</li>
     <li>A new object, <link Image.csdoc>Image</link>, allows for the storage and manipulation of images. It has the functions: <logiccolor Image>captureSignature</logiccolor>, <logiccolor Image>clear</logiccolor>, <logiccolor Image>height</logiccolor>, <logiccolor Image>load</logiccolor>, <logiccolor Image>resample</logiccolor>, <logiccolor Image>save</logiccolor>, <logiccolor Image>takePhoto</logiccolor>, <logiccolor Image>view</logiccolor>, and <logiccolor Image>width</logiccolor>.</li>
     <li>A new object, <link Document.csdoc>Document</link>, facilitates the storage of text or binary files. It has the functions: <logiccolor Document>clear</logiccolor>, <logiccolor Document>load</logiccolor>, <logiccolor Document>save</logiccolor>, and <logiccolor Document>view</logiccolor>.</li>
     <li>A new object, <link Geometry.csdoc>Geometry</link>, allows for the display and manipulation of vector geometry. It has the functions: <logiccolor Geometry>area</logiccolor>, <logiccolor Geometry>clear</logiccolor>, <logiccolor Geometry>getProperty</logiccolor>, <logiccolor Geometry>load</logiccolor>, <logiccolor Geometry>maxLatitude</logiccolor>, <logiccolor Geometry>maxLongitude</logiccolor>, <logiccolor Geometry>minLatitude</logiccolor>, <logiccolor Geometry>minLongitude</logiccolor>, <logiccolor Geometry>perimeter</logiccolor>, <logiccolor Geometry>save</logiccolor>, <logiccolor Geometry>setProperty</logiccolor>, <logiccolor Geometry>tracePolygon</logiccolor>, and <logiccolor Geometry>walkPolygon</logiccolor>.</li>
@@ -100,7 +101,7 @@ This is a detailed list of changes in CSPro 7.7. For a more general overview, se
 <subheader>Tools</subheader>
 
 <list>
-    <li><link DataViewer::introduction_to_data_viewer.csdoc>Data Viewer</link> allows you to <link DataViewer::data_viewer_export.csdoc>export data</link> directly to <link data_source_csv.csdoc>CSV</link>, <link data_source_excel.csdoc>Excel</link>, <link data_source_r.csdoc>R</link>, <link data_source_sas.csdoc>SAS</link>, <link data_source_spss.csdoc>SPSS</link>, and <link data_source_stata.csdoc>Stata</link> file types.</li>
+    <li><link DataManager::introduction.csdoc>Data Manager</link> allows you to <link DataManager::export_data.csdoc>export data</link> directly to <link data_source_csv.csdoc>CSV</link>, <link data_source_excel.csdoc>Excel</link>, <link data_source_r.csdoc>R</link>, <link data_source_sas.csdoc>SAS</link>, <link data_source_spss.csdoc>SPSS</link>, and <link data_source_stata.csdoc>Stata</link> file types.</li>
     <li>The <link CSExport::introduction_to_export_data.csdoc>Export Data</link> and <link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link> tools allow you to specify the dictionary language that is used when exporting labels or creating frequency tables.</li>
     <li>The <link ParadataViewer::introduction_to_paradata_viewer.csdoc>Paradata Viewer</link>'s <link ParadataViewer::location_mapper.csdoc>Location Mapper</link> has been redesigned and works using Leaflet mapping. Additionally, when saving <link ParadataViewer::report_viewer.csdoc>reports</link> to Excel format, the Excel column formats will match the formats defined in the <i>CSPro Reports.csrs</i> file.</li>
 </list>

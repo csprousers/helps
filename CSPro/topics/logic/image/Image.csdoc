@@ -1,6 +1,7 @@
 ﻿<title>Image Object</title>
 
-In logic, an <logiccolor>Image</logiccolor> object facilitates the storing and manipulating of images. Image objects can contain photos, signatures, or other kinds of visual media. CSPro supports reading and writing to JPEG, PNG, and BMP image formats.
+
+In logic, an <logiccolor>Image</logiccolor> object facilitates the storing and manipulating of images. Image objects can contain photos, signatures, or other kinds of visual media. CSPro supports reading and writing to <b>JPEG</b>, <b>PNG</b>, <b>WebP</b>, and <b>BMP</b> image formats, and provides limited support for <b>ICO</b> and <b>GIF</b> image formats.
 
 
 <subheader>Functionality</subheader>
@@ -11,6 +12,7 @@ An Image object is a CSPro logic object that can be defined as a <link binary_di
     <cell>Function</cell><cell>Description</cell>
     <cell><logiccolor Image>load</logiccolor></cell><cell>Reads an image from a file and stores its contents in the Image object.</cell>
     <cell><logiccolor Image>save</logiccolor></cell><cell>Writes the contents of the Image object to a file.</cell>
+    <cell><logiccolor Image>getExif</logiccolor></cell><cell>Returns the image's <link "https://en.wikipedia.org/wiki/Exif">EXIF data</link>.</cell>
     <cell><logiccolor Image>width</logiccolor></cell><cell>Returns the width of the image in pixels.</cell>
     <cell><logiccolor Image>height</logiccolor></cell><cell>Returns the height of the image in pixels.</cell>
     <cell><logiccolor Image>resample</logiccolor></cell><cell>Resamples the image to change the image's dimensions.</cell>
@@ -39,13 +41,22 @@ It is also possible to assign Image objects to a <link Document.csdoc>Document</
 <arg>document_name</arg> = <arg>image_name</arg>;
 </logicsyntax>
 
-You can also make the reverse assignment, assigning a document to an Image object. A runtime error will occur if the Document's data was not a valid image.
+You can also make the reverse assignment, assigning a document to an Image object. A runtime error will occur if the Document's data is not a valid image that CSPro can process.
 
 <logicsyntax>
 <arg>image_name</arg> = <arg>document_name</arg>;
 </logicsyntax>
 
 When an Image is used as an argument to a <link user_defined_functions.csdoc>user-defined function</link>, it is <link function_arguments_ref.csdoc>passed by reference</link>.
+
+
+<subheader>Conversions</subheader>
+
+Image objects can be converted to and from:
+
+<list>
+    <li><link Image_JSON_representation.csdoc>JSON objects</link></li>
+</list>
 
 
 <subheader>Example</subheader>

@@ -1,0 +1,14 @@
+﻿<title>Markdown</title>
+
+CSCode can be used to edit and view <link CSPro::markdown_overview.csdoc>Markdown</link> files.
+
+<subheader>Default Extensions</subheader>
+
+.md
+
+<subheader>Run Menu</subheader>
+
+<list>
+    <li>Run (<b>Ctrl + R</b>): View the Markdown, rendered as HTML using <link "https://github.com/sindresorhus/github-markdown-css">GitHub's style conventions</link>, in the HTML Viewer.</li>
+    <li>Save as HTML: Save the Markdown as a HTML file.</li>
+</list>

@@ -3,7 +3,7 @@
 
 <subheader>Overview</subheader>
 
-Running <link action_invoker.csdoc>Action Invoker</link> actions from <link CSCode::language_javascript.csdoc>JavaScript</link> requires calling static methods contained in an object, <logiccolor>CS</logiccolor>, that is automatically added to the global scope. Each Action Invoker namespace is an object of <logiccolor>CS</logiccolor>, with its actions available as static methods in two forms:
+Running <link action_invoker.csdoc>Action Invoker</link> actions from <link javascript_overview.csdoc>JavaScript</link> requires calling static methods contained in an object that <link properties_application.csdoc>by default</link> is automatically added to the global scope using the name <logiccolor>CS</logiccolor>. Each Action Invoker namespace is an object of <logiccolor>CS</logiccolor>, with its actions available as static methods in two forms:
 
 <list>
     <li><b>Synchronous</b> (sequentially): Use the action name.</li>
@@ -49,4 +49,4 @@ CS.File.readTextAsync({
 <include include_javascript_arguments_return_exception.hgi />
 
 
-<seealso action_invoker.csdoc action_invoker_execution_javascript_web.csdoc />
+<seealso action_invoker.csdoc action_invoker_execution_javascript_web.csdoc javascript_overview.csdoc />

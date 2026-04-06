@@ -16,6 +16,8 @@
 
 Because SQLite is such a popular format, there are many free viewers for SQLite that allow you to access unencrypted databases outside of CSPro.
 
+The version of SQLite included with CSPro supports <link "https://www.sqlite.org/lang_mathfunc.html">mathematical functions</link> such as atan2 and sin.
+
 
 <subheader>Working With SQLite Databases in CSPro</subheader>
 

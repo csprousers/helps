@@ -1,6 +1,6 @@
 ﻿<title>String Concatenation Operator</title>
 
-In addition to serving as the addition operator for numeric values, the + operator can be used to concatenate strings, similar to the <logiccolor>concat</logiccolor> function. For example, both lines of code below will give the same result:
+In addition to serving as the addition operator for numeric values, the <logiccolor>+</logiccolor> operator can be used to concatenate strings, similar to the <logiccolor>concat</logiccolor> function. For example, both lines of code below will give the same result:
 
 <logic>
 string text1 = "Hello";
@@ -11,7 +11,9 @@ string messagePlus = text1 + ", " + text2;
 string messageConcat = concat(text1, ", ", text2);
 </logic>
 
-The + operator is a convenient way to build strings and can be used along with other functions that return alphanumeric values.
+The <logiccolor>+</logiccolor> operator is a convenient way to build strings and can be used along with other functions that return alphanumeric values.
+
+If you are concatenating many strings, you might consider using <logiccolor>StringWriter</logiccolor>, an object that supports incrementally building a string.
 
 
 <subheader>Example</subheader>
@@ -20,7 +22,7 @@ The + operator is a convenient way to build strings and can be used along with o
 string message;
 
 do numeric counter = 1 while counter <= 13 by 2
-	message = message + edit("99 ", counter);
+    message = message + edit("99 ", counter);
 enddo;
 
 // message is now: "01 03 05 07 09 11 13"

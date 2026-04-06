@@ -9,7 +9,7 @@ function sortList(symbolName) {
     list.sort();
 
     // update the CSPro object
-    CS.Logic.updateSymbolValue({
+    CS.Logic.setSymbolValue({
         name: symbolName,
         value: list
     });

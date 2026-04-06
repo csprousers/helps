@@ -1,0 +1,49 @@
+﻿<title>JS.hasValue Function</title>
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+b = JS.hasValue(<arg>name</arg>);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>JS.hasValue</logiccolor> function returns whether a JavaScript variable or property is defined (not <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</link>).
+
+<include include_JS_name_specification.hgi />
+
+
+<subheader>Return Value</subheader>
+
+The function returns a logical value of 1 (<logiccolor>true</logiccolor>) if the variable or property is defined, and 0 (<logiccolor>false</logiccolor>) if undefined. If the JavaScript evaluation ends in an uncaught exception, the exception's message is suppressed (unlike other functions in the <logiccolor>JS</logiccolor> namespace) and the function returns <logiccolor>false</logiccolor>.
+
+
+<subheader>Example (Variables)</subheader>
+
+<logic>
+JS.hasValue("csproVersion");          // 0
+JS.setValue("csproVersion", <definition CSPro::version />);
+JS.hasValue("csproVersion");          // 1
+JS.eval("csproVersion = undefined;");
+JS.hasValue("csproVersion");          // 0
+</logic>
+
+
+<subheader>Example (Object Properties)</subheader>
+
+<logic>
+<include include_JS_setValueFromJson_example.hgi />
+
+JS.hasValue("france");                          // 1
+JS.hasValue("globalThis.france");               // 1
+JS.hasValue("france.capital");                  // 1
+JS.hasValue("france['CAPITAL']");               // 0
+JS.hasValue("france['CAPITAL'.toLowerCase()]"); // 1
+JS.hasValue("france.languages[0]");             // 1
+JS.hasValue("france.languages[1]");             // 0
+JS.hasValue("france[throw new Error()]")        // 0
+</logic>
+
+
+<seealso javascript_overview.csdoc JS.csdoc JS_getValue_function.csdoc JS_getValueJson_function.csdoc JS_setValue_function.csdoc JS_setValueFromJson_function.csdoc />

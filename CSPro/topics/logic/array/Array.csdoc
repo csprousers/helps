@@ -24,4 +24,14 @@ An Array is a CSPro logic object and the following functions can be called via <
 When an Array is used as an argument to a <link user_defined_functions.csdoc>user-defined function</link>, it is <link function_arguments_ref.csdoc>passed by reference</link>.
 
 
+<subheader>Conversions</subheader>
+
+Array objects can be converted to and from:
+
+<list>
+    <li><link Array_JSON_representation.csdoc>JSON arrays and objects</link></li>
+    <li><link Array_JavaScript_representation.csdoc>JavaScript arrays</link></li>
+</list>
+
+
 <seealso HashMap.csdoc List.csdoc />

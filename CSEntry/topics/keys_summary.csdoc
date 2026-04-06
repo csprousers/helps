@@ -3,62 +3,62 @@
 <subheader>Shortcuts specific to CSEntry</subheader>
 
 <table 2 header nowrap>
-	<cell>Shortcut Key</cell><cell>Description</cell>
-	<cell><b>Ctrl + A</b></cell><cell>Add cases to the data file.</cell>
-	<cell><b>Ctrl + B</b></cell><cell>View partial cases only.</cell>
-	<cell><b>Ctrl + C</b></cell><cell>Show responses for this field only.</cell>
-	<cell><b>Ctrl + D</b></cell><cell>Open another data file.</cell>
-	<cell><b>Ctrl + F</b></cell><cell>Find a case.</cell>
-	<cell><b>Ctrl + G</b></cell><cell>Toggle between tree and form.</cell>
-	<cell><b>Ctrl + J</b></cell><cell>Toggle full screen on and off.</cell>
-	<cell><b>Ctrl + K</b></cell><cell>Show responses for all fields.</cell>
-	<cell><b>Ctrl + M</b></cell><cell>Modify cases in the data file.</cell>
-	<cell><b>Ctrl + N</b></cell><cell>Edit field notes.</cell>
-	<cell><b>Ctrl + O</b></cell><cell>Open an existing application.</cell>
-	<cell><b>Ctrl + P</b></cell><cell>Pause entry operations to take a break.</cell>
-	<cell><b>Ctrl + Q</b></cell><cell>Show case list in sort or physical order.</cell>
-	<cell><b>Ctrl + S</b></cell><cell>Stop data entry operations.</cell>
-	<cell><b>Ctrl + T </b></cell><cell>Show names in tree instead of labels.</cell>
-	<cell><b>Ctrl + V</b></cell><cell>Verify cases in the data file.</cell>
-	<cell><b>Ctrl + W</b></cell><cell>Show operator statistics data file.</cell>
-	<cell><b>Ctrl + Z </b></cell><cell>Toggle the Case Tree on and off.</cell>
-	<cell 2>&nbsp;</cell>
-	<cell><b>Alt + A</b></cell><cell>Add level occurrence to this case.</cell>
-	<cell><b>Alt + Ins</b></cell><cell>Insert level occurrence at this location.</cell>
-	<cell><b>Alt + Del</b></cell><cell>Delete this level occurrence.</cell>
-	<cell 2>&nbsp;</cell>
-	<cell><b>Ins </b></cell><cell>Insert case at this location.</cell>
-	<cell><b>Del</b></cell><cell>Delete this case.</cell>
-	<cell 2>&nbsp;</cell>
-	<cell><b>Enter</b></cell><cell>Move forward to the next field.</cell>
-	<cell><b>Tab</b></cell><cell>Move forward to the next field.</cell>
-	<cell><b>Dn arrow</b></cell><cell>Move forward to the next field.</cell>
-	<cell><b>Up arrow</b></cell><cell>Move backward to the previous field.</cell>
-	<cell><b>Shift + Tab</b></cell><cell>Move backward to the previous field.</cell>
-	<cell 2>&nbsp;</cell>
-	<cell><b>PgDn</b></cell><cell>Next screen (in operator-controlled mode).</cell>
-	<cell><b>PgUp</b></cell><cell>Previous screen (in operator-controlled mode).</cell>
-	<cell><b>/ (num keypad)</b></cell><cell>End group occurrence (in operator-controlled mode).</cell>
-	<cell><b>Ctrl + / </b></cell><cell>End group (in operator-controlled mode).</cell>
-	<cell><b>+ (num keypad)</b></cell><cell>Skip to (in operator-controlled mode).</cell>
-	<cell 2>&nbsp;</cell>
-	<cell><b>Ctrl + Home</b></cell><cell>Move to the first case in the file (in modify mode).</cell>
-	<cell><b>Ctrl + PgUp</b></cell><cell>Move to the previous case in the file (in modify mode).</cell>
-	<cell><b>Ctrl + PgDn</b></cell><cell>Move to the next case in the file (in modify mode).</cell>
-	<cell><b>Ctrl + End</b></cell><cell>Move to the last case in the file (in modify mode).</cell>
-	<cell 2>&nbsp;</cell>
-	<cell><b>F1 </b></cell><cell>Show help contents and index.</cell>
-	<cell><b>F2</b></cell><cell>Show help for a field (switching from the question text).</cell>
-	<cell><b>Ctrl + F2</b></cell><cell>Show data values (in verify mode).</cell>
-	<cell><b>F3</b></cell><cell>Insert another occurrence of these fields here.</cell>
-	<cell><b>Ctrl + F3</b></cell><cell>Insert another occurrence of these fields after this one.</cell>
-	<cell><b>F4</b></cell><cell>Delete this occurrence of these fields.</cell>
-	<cell><b>Alt + F4</b></cell><cell>Quit the application.</cell>
-	<cell><b>F5</b></cell><cell>Sort occurrences of these fields on this field.</cell>
-	<cell><b>F6</b></cell><cell>Go to a particular field.</cell>
-	<cell><b>F7</b></cell><cell>Go to previous persistent field.</cell>
-	<cell><b>F10</b></cell><cell>Advance to end of the case (in system-controlled mode).</cell>
-	<cell><b>F11 </b></cell><cell>Start or continue interactive edit (in modify mode).</cell>
-	<cell><b>F12 </b></cell><cell>Go to the next level occurrence at this level.</cell>
-	<cell><b>Ctrl + F12</b></cell><cell>Go to the next level occurrence at the level above this.</cell>
+    <cell>Shortcut Key</cell><cell>Description</cell>
+    <cell><b>Ctrl + A</b></cell><cell>Add cases to the data file.</cell>
+    <cell><b>Ctrl + B</b></cell><cell>View partial cases only.</cell>
+    <cell><b>Ctrl + C</b></cell><cell>Show responses for this field only.</cell>
+    <cell><b>Ctrl + D</b></cell><cell>Open another data file.</cell>
+    <cell><b>Ctrl + F</b></cell><cell>Find a case.</cell>
+    <cell><b>Ctrl + G</b></cell><cell>Toggle between tree and form.</cell>
+    <cell><b>Ctrl + J</b></cell><cell>Toggle full screen on and off.</cell>
+    <cell><b>Ctrl + K</b></cell><cell>Show responses for all fields.</cell>
+    <cell><b>Ctrl + M</b></cell><cell>Modify cases in the data file.</cell>
+    <cell><b>Ctrl + N</b></cell><cell>Edit field notes.</cell>
+    <cell><b>Ctrl + O</b></cell><cell>Open an existing application.</cell>
+    <cell><b>Ctrl + P</b></cell><cell>Pause entry operations to take a break.</cell>
+    <cell><b>Ctrl + Q</b></cell><cell>Show case list in sort or physical order.</cell>
+    <cell><b>Ctrl + S</b></cell><cell>Stop data entry operations.</cell>
+    <cell><b>Ctrl + T </b></cell><cell>Show names in tree instead of labels.</cell>
+    <cell><b>Ctrl + V</b></cell><cell>Verify cases in the data file.</cell>
+    <cell><b>Ctrl + W</b></cell><cell>Show operator statistics data file.</cell>
+    <cell><b>Ctrl + Z </b></cell><cell>Toggle the Case Tree on and off.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b>Alt + A</b></cell><cell>Add level occurrence to this case.</cell>
+    <cell><b>Alt + Ins</b></cell><cell>Insert level occurrence at this location.</cell>
+    <cell><b>Alt + Del</b></cell><cell>Delete this level occurrence.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b>Ins </b></cell><cell>Insert case at this location.</cell>
+    <cell><b>Del</b></cell><cell>Delete this case.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b>Enter</b></cell><cell>Move forward to the next field.</cell>
+    <cell><b>Tab</b></cell><cell>Move forward to the next field.</cell>
+    <cell><b>Dn arrow</b></cell><cell>Move forward to the next field.</cell>
+    <cell><b>Up arrow</b></cell><cell>Move backward to the previous field.</cell>
+    <cell><b>Shift + Tab</b></cell><cell>Move backward to the previous field.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b>PgDn</b></cell><cell>Next screen (in operator-controlled mode).</cell>
+    <cell><b>PgUp</b></cell><cell>Previous screen (in operator-controlled mode).</cell>
+    <cell><b>/ (num keypad)</b></cell><cell>End group occurrence (in operator-controlled mode).</cell>
+    <cell><b>Ctrl + / </b></cell><cell>End group (in operator-controlled mode).</cell>
+    <cell><b>+ (num keypad)</b></cell><cell>Skip to (in operator-controlled mode).</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b>Ctrl + Home</b></cell><cell>Move to the first case in the file (in modify mode).</cell>
+    <cell><b>Ctrl + PgUp</b></cell><cell>Move to the previous case in the file (in modify mode).</cell>
+    <cell><b>Ctrl + PgDn</b></cell><cell>Move to the next case in the file (in modify mode).</cell>
+    <cell><b>Ctrl + End</b></cell><cell>Move to the last case in the file (in modify mode).</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b>F1 </b></cell><cell>Show help contents and index.</cell>
+    <cell><b>F2</b></cell><cell>Show help for a field (switching from the <link CSPro::question_text.csdoc>question text</link>).</cell>
+    <cell><b>Ctrl + F2</b></cell><cell>Show data values (in verify mode).</cell>
+    <cell><b>F3</b></cell><cell>Insert another occurrence of these fields here.</cell>
+    <cell><b>Ctrl + F3</b></cell><cell>Insert another occurrence of these fields after this one.</cell>
+    <cell><b>F4</b></cell><cell>Delete this occurrence of these fields.</cell>
+    <cell><b>Alt + F4</b></cell><cell>Quit the application.</cell>
+    <cell><b>F5</b></cell><cell>Sort occurrences of these fields on this field.</cell>
+    <cell><b>F6</b></cell><cell>Go to a particular field.</cell>
+    <cell><b>F7</b></cell><cell>Go to previous persistent field.</cell>
+    <cell><b>F10</b></cell><cell>Advance to end of the case (in system-controlled mode).</cell>
+    <cell><b>F11 </b></cell><cell>Start or continue interactive edit (in modify mode).</cell>
+    <cell><b>F12 </b></cell><cell>Go to the next level occurrence at this level.</cell>
+    <cell><b>Ctrl + F12</b></cell><cell>Go to the next level occurrence at the level above this.</cell>
 </table>

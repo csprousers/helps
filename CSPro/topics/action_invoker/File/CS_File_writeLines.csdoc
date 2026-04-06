@@ -4,7 +4,9 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-CS.File.writeLines(<arg>path</arg> := ..., <arg>lines</arg> := ...『, <arg>encoding</arg> := ...』)
+CS.File.writeLines(<arg>path</arg> := ..., <arg>lines</arg> := ...
+                『, <arg>encoding</arg> := ...』
+                『, <arg>newline</arg> := ...』)
 </logicsyntax>
 
 <indent><table 3 header nowrap>
@@ -12,6 +14,7 @@ CS.File.writeLines(<arg>path</arg> := ..., <arg>lines</arg> := ...『, <arg>enco
     <cell><arg>path</arg></cell><cell>The path of the file to write.</cell><cell>string~!~required</cell>
     <cell><arg>lines</arg></cell><cell>The array of strings to write.</cell><cell>array~!~required</cell>
     <cell><arg>encoding</arg></cell><cell>The <link unicode_primer.csdoc>encoding</link> to use while writing the text.~!~The default value is <logiccolor>"UTF-8"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>newline</arg></cell><cell>The <link text_attributes.csdoc>control characters</link> used to write line endings.~!~The default value is <logiccolor>"LF"</logiccolor>.</cell><cell>string~!~not required</cell>
 </table></indent>
 
 
@@ -20,6 +23,8 @@ CS.File.writeLines(<arg>path</arg> := ..., <arg>lines</arg> := ...『, <arg>enco
 The <action>File.writeLines</action> <link action_invoker.csdoc>action</link> writes an array of strings, <arg>lines</arg>, as lines to a text file specified as <arg>path</arg>. After writing each line, the action writes a newline character: <logiccolor>'\n'</logiccolor>. If a file already exists at <arg>path</arg>, it is overwritten with the new contents.
 
 <include include_encoding_output.hgi />
+
+<include include_newline_output.hgi />
 
 
 <subheader>Return Value</subheader>

@@ -46,7 +46,7 @@ The JSON data source stores <link binary_dictionary_items.csdoc>binary data</lin
 
 <list>
     <li><b>Saved to the disk</b>: By default, binary data files are saved in a subdirectory, located in the same directory as the JSON file, with the suffix " (files)". Files are named using the <link CS_Hash_createMd5.csdoc>MD5</link> of the binary data, followed by the file extension, if known. For example, binary data <i>carn03.jpg</i>, collected as part of <i>memory.json</i>, might be saved as: <i>memory.json (files)/244358f4725ac956bb74b3a17a588eb9.jpg</i>. When reading case data, binary data on the disk is <link "https://en.wikipedia.org/wiki/Lazy_loading">loaded asynchronously</link>, read from the disk only when needed by the application.</li>
-    <li><b>Embedded</b>: Alternatively, the binary data can be embedded in the JSON file, encoded as a <link "https://en.wikipedia.org/wiki/Data_URI_scheme">data URL</link>. This option will result in larger data files, but results in a single file containing all case data.</li>
+    <li><b>Embedded</b>: Alternatively, the binary data can be embedded in the JSON file, encoded as a <link data_url.csdoc>data URL</link>. This option will result in larger data files, but results in a single file containing all case data.</li>
 </list>
 
 
@@ -60,7 +60,7 @@ The following behavior can be customized by specifying properties in the <link c
     <cell><b><colorinline JSON>"binaryDataDirectory"</colorinline></b></cell><cell>By default, binary data saved to the disk is stored in a subdirectory with the suffix "(files)". This property allows you to specify a different directory where you want to read and write binary data. The property is evaluated relative to the path of the data file.</cell>
     <cell 2>&nbsp;</cell>
     <cell><b><colorinline JSON>"binaryDataFormat"</colorinline></b></cell><cell>Determines how binary data is stored (as described above).</cell>
-    <cell><indent><colorinline JSON>"dataUrl"</colorinline></indent></cell><cell><indent>Binary data is embedded in the file as a data URL.</indent></cell>
+    <cell><indent><colorinline JSON>"dataUrl"</colorinline></indent></cell><cell><indent>Binary data is embedded in the file as a <link data_url.csdoc>data URL</link>.</indent></cell>
     <cell><indent><colorinline JSON>"disk"</colorinline> ⁺⁺⁺</indent></cell><cell><indent>Binary data is saved to the disk.</indent></cell>
     <cell 2>&nbsp;</cell>
     <include properties_cache.hgi />

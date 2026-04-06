@@ -1,0 +1,48 @@
+﻿<title>JS.setValue Function</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+b = JS.setValue(<arg>name</arg>, <arg>value</arg>);
+</logicsyntax>
+
+
+<subheader>Description</subheader>
+
+The <logiccolor>JS.setValue</logiccolor> function sets the value of a JavaScript variable or property from a CSPro logic variable or object identified as <arg>value</arg>. This is a useful way to transfer data from CSPro logic to JavaScript when a <link javascript_value_conversions.csdoc>conversion routine</link> exists. This function can be used to create new variables or properties, or to modify existing ones. Another way to transfer data is using <link JSON_primer.csdoc>JSON</link> with the <logiccolor>JS.setValueFromJson</logiccolor> function.
+
+<include include_JS_name_specification.hgi />
+
+<include include_JS_conversions.hgi />
+
+All of the types, with the exception of <logiccolor>function</logiccolor>, can be converted from JavaScript by using the <logiccolor>JS.getValue</logiccolor> function.
+
+
+<subheader>Return Value</subheader>
+
+The function returns a logical value of 1 (<logiccolor>true</logiccolor>) if the JavaScript variable or property is successfully set. If JavaScript evaluation ends in an uncaught exception, the function returns 0 (<logiccolor>false</logiccolor>) and displays an error message.
+
+
+<subheader>Example</subheader>
+
+<logic>
+// create a JavaScript array using a CSPro List
+List numeric primeNumbers = 2, 3, 5, 7, 11, 13, 17, 19, 23;
+JS.setValue("primes", primeNumbers);
+
+// add to the array, setting the array's property, using a CSPro numeric expression
+JS.setValue("primes[9]", 29);
+
+// create a JavaScript string from a CSPro string expression
+JS.setValue("primeMessagePrefix",
+            maketext("This is an operation using values from CSPro %s:", diagnostics("version")));
+
+// displays: This is an operation using values from CSPro <definition CSPro::version />: The sum of the first 10 prime values is 129!
+errmsg("%s", JS.eval("`${primeMessagePrefix} "
+                     "The sum of the first ${primes.length} prime values "
+                     "is ${primes.reduce((a, b) => a + b)}!`"));
+</logic>
+
+
+<seealso javascript_overview.csdoc JS.csdoc JS_setValueFromJson_function.csdoc JS_hasValue_function.csdoc JS_getValue_function.csdoc />

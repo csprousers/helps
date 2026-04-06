@@ -11,7 +11,7 @@ The following is a summary of the menu options available while editing tabulatio
     <cell><link save_an_application_with_a_new_name.csdoc>Save As</link></cell><cell>Save the active application with a new name.</cell>
     <cell><link save_tables_for_the_table_viewer.csdoc>Save Tables</link></cell><cell>Save current table results in a file.</cell>
     <cell><link manage_application_files.csdoc>Manage Application Files</link></cell><cell>Add or remove files (such as an external dictionary) from an existing application.</cell>
-    <cell><link cspro_settings.csdoc>CSPro Settings</link></cell><cell>Clear cached credentials from your computer.</cell>
+    <cell><link manage_credentials.csdoc>Manage Credentials</link></cell><cell>Clear cached credentials from your computer.</cell>
     <cell><link load_and_save_formatting_preferences.csdoc>Load Preferences</link></cell><cell>Load stored table formatting preferences.</cell>
     <cell><link load_and_save_formatting_preferences.csdoc>Save Preferences</link></cell><cell>Save table formatting preferences.</cell>
     <cell><link run_a_tabulation_application.csdoc>Run</link></cell><cell>Run the application.</cell>

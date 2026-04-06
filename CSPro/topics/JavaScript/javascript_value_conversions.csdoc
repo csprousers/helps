@@ -1,0 +1,33 @@
+﻿<title>CSPro ⇄ JavaScript Value Conversions</title>
+
+
+Some CSPro symbols have routines that support the conversion of values from CSPro to and from <link javascript_overview.csdoc>JavaScript</link> objects. These operations occur explicitly when using functions such as <logiccolor>JS.getValue</logiccolor> and <logiccolor>JS.setValue</logiccolor>, and occur implicitly when using <logiccolor>JS.invoke</logiccolor> or calling a <link javascript_user_defined_functions.csdoc>JavaScript user-defined function</link>.
+
+<include include_JS_conversions.hgi />
+
+
+<subheader>Example </subheader>
+
+<logic>
+// displays: JavaScript print: CSPro values converted to JavaScript: 1.23 null MISSING
+JS.invoke("print", "CSPro values converted to JavaScript:", 1.23, notappl, missing);
+
+// displays: JavaScript print: CSPro objects converted to JavaScript: 1,4,9,16 43,days
+Array numeric cspro_numeric_array(2, 2) = 1, 4, 9, 16;
+List string cspro_string_list = "43", "days";
+
+JS.invoke("print", "CSPro objects converted to JavaScript:", cspro_numeric_array, cspro_string_list);
+
+// displays: Independence Hall is located in Philadelphia (39.95, -75.15)
+JS.eval("var js_location_independence_hall = { \"latitude\": 39.95, \"longitude\": -75.15 };");
+
+HashMap string cspro_location_independence_hall;
+JS.getValue("js_location_independence_hall", cspro_location_independence_hall);
+
+errmsg("Independence Hall is located in Philadelphia (%v, %v)",
+       cspro_location_independence_hall("latitude"),
+       cspro_location_independence_hall("longitude"));
+</logic>
+
+
+<seealso javascript_overview.csdoc JS_getValue_function.csdoc JS_setValue_function.csdoc />

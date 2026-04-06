@@ -123,7 +123,7 @@ The <pffcolor>[Parameters]</pffcolor> block is optional. This section defines pa
 
 <list>
     <li><pffcolor>Parameter</pffcolor>=allows you to pass in a string to your program. The parameter can be any length, although the string that retrieves the value in your program (via the <logiccolor>sysparm</logiccolor> function) must be large enough to accommodate it. Once the parameter is retrieved, it can be parsed by your program for further usage.</li>
-    <li><pffcolor>Language</pffcolor>=specifies the initial language of the program. The parameter must match the name of a language specified in the question text, dictionary, or message file.</li>
+    <li><pffcolor>Language</pffcolor>=specifies the initial language of the program. The parameter must match the name of a language specified in the <link question_text.csdoc>question text</link>, dictionary, or message file.</li>
     <li><pffcolor>OnExit</pffcolor>=specifies a PFF file to run after the data entry program closes. This can be useful, for example, if you want to relaunch a menu program after collecting data.</li>
 </list>
 

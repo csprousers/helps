@@ -42,4 +42,4 @@ The JSON result may look similar to:
 </color>
 
 
-<seealso Symbol_getJson_function.csdoc Symbol_updateValueFromJson_function.csdoc CS_Logic_getSymbolValue.csdoc />
+<seealso Symbol_getJson_function.csdoc Symbol_setValueFromJson_function.csdoc CS_Logic_getSymbolValue.csdoc />

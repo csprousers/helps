@@ -1,0 +1,13 @@
+﻿<title>CSPro ⇄ JavaScript Conversions: HashMap Object</title>
+
+
+A CSPro <link HashMap.csdoc>HashMap</link> is represented as an <link "https://developer.mozilla.org/en-US/docs/Glossary/Object">object</link>. The underlying keys and values of the HashMap are serialized according to the JavaScript serialization rules for <link numeric_JavaScript_representation.csdoc>numeric values</link> or <link string_JavaScript_representation.csdoc>string values</link>.
+
+
+When converting a JavaScript value to a HashMap, an exception occurs if the value is not an object, if the keys or values cannot be converted to a CSPro number or string, or if these keys or values do not match the HashMap's types. An exception also occurs if too few, or too many, dimensions are provided.
+
+
+For more information on the JavaScript serialization, look at the description of how HashMap objects are <link HashMap_JSON_representation.csdoc>serialized as JSON objects</link>.
+
+
+<seealso javascript_value_conversions.csdoc HashMap_JSON_representation.csdoc />

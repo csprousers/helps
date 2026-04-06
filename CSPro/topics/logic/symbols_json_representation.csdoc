@@ -9,11 +9,11 @@ CSPro symbols can be represented in <link JSON_primer.csdoc>JSON</link>. Every s
     <cell>Function / Action</cell><cell>Description</cell>
     <cell><logiccolor>Symbol.getJson</logiccolor></cell><cell>Returns a symbol's metadata and value.</cell>
     <cell><logiccolor>Symbol.getValueJson</logiccolor></cell><cell>Returns a symbol's value.</cell>
-    <cell><logiccolor>Symbol.updateValueFromJson</logiccolor></cell><cell>Modifies a symbol based on a JSON representation of the value.</cell>
+    <cell><logiccolor>Symbol.setValueFromJson</logiccolor></cell><cell>Modifies a symbol based on a JSON representation of the value.</cell>
     <cell><action>Logic.getSymbol</action></cell><cell>Returns a symbol's metadata and value.</cell>
     <cell><action>Logic.getSymbolMetadata</action></cell><cell>Returns a symbol's metadata.</cell>
     <cell><action>Logic.getSymbolValue</action></cell><cell>Returns a symbol's value.</cell>
-    <cell><action>Logic.updateSymbolValue</action></cell><cell>Modifies a symbol based on a JSON representation of the value.</cell>
+    <cell><action>Logic.setSymbolValue</action></cell><cell>Modifies a symbol based on a JSON representation of the value.</cell>
 </table>
 
 

@@ -1,0 +1,35 @@
+﻿<title>CSPro ⇄ JSON Conversions: StringWriter Object</title>
+
+The text of a CSPro <link StringWriter.csdoc>StringWriter</link> is represented as a <link JSON_primer.csdoc>JSON</link> string that is serialized according to the JSON serialization rules for <link string_JSON_representation.csdoc>string values</link>.
+
+When converting a JSON value to a StringWriter, an exception occurs if the value is not a valid string.
+
+The JSON for a <logiccolor>StringWriter</logiccolor> named <logiccolor>ea_table_html</logiccolor> that uses <link StringWriter_statement.csdoc>HTML encoding</link>, retrieved using <logiccolor>StringWriter.getJson</logiccolor>, may look similar to:
+
+<color JSON>
+{
+  "name": "ea_table_html",
+  "type": "StringWriter",
+  "encoding": "HTML",
+  "value": ""
+}
+</color>
+
+The <logiccolor>StringWriter.getValueJson</logiccolor> function returns the same value as <logiccolor>StringWriter.toString</logiccolor>, encoded as a JSON string. For example:
+
+<logic>
+StringWriter ea_table_html(HTML);
+
+ea_table_html.setValueFromJson("\"<table><tr><td>\"");
+ea_table_html.writeEncoded("Blind <Hoon> Time");
+ea_table_html.write("</td></tr></table>");
+
+// <table><tr><td>Blind &lt;Hoon&gt; Time</td></tr></table>
+errmsg("%s", ea_table_html.toString());
+
+// "<table><tr><td>Blind &lt;Hoon&gt; Time</td></tr></table>"
+errmsg("%s", ea_table_html.getValueJson());
+</logic>
+
+
+<seealso symbols_json_representation.csdoc />

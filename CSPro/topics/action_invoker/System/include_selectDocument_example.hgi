@@ -5,7 +5,7 @@ string selectDocumentJson = CS.System.selectDocument(contentType := "image/*");
 if selectDocumentJson <> "" then
     // convert the JSON into a CSPro-usable format using a HashMap
     HashMap string selectDocumentResult;
-    selectDocumentResult.updateValueFromJson(selectDocumentJson);
+    selectDocumentResult.setValueFromJson(selectDocumentJson);
 
     // create the new image path, using the original filename
     dircreate("Images");

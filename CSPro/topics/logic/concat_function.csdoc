@@ -12,6 +12,8 @@ s = concat(<arg>string1</arg>, <arg>string2</arg>『, ..., <arg>stringN</arg>』
 
 The <logiccolor>concat</logiccolor> function concatenates the values of two or more string expressions (<arg>string1</arg> + <arg>string2</arg> + ... + <arg>stringN</arg>). The strings can be alphanumeric items, text strings, or functions that return strings. You can also use the <link string_concatenation.csdoc>+ operator</link> to concatenate strings.
 
+If you are concatenating many strings, you might consider using <logiccolor>StringWriter</logiccolor>, an object that supports incrementally building a string.
+
 
 <subheader>Return Value</subheader>
 

@@ -53,4 +53,4 @@ if( precipitationDict.value == undefined || precipitationDict.value.case == unde
 </color>
 
 
-<seealso CS_Logic.csdoc CS_Logic_getSymbolMetadata.csdoc CS_Logic_getSymbolValue.csdoc CS_Logic_updateSymbolValue.csdoc Symbol_getJson_function.csdoc />
+<seealso CS_Logic.csdoc CS_Logic_getSymbolMetadata.csdoc CS_Logic_getSymbolValue.csdoc CS_Logic_setSymbolValue.csdoc Symbol_getJson_function.csdoc />

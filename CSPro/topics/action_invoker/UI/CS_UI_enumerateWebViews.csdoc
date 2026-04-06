@@ -23,7 +23,7 @@ The action returns an object with two properties:
     <cell><colorinline JSON>"webViews"</colorinline></cell><cell>An array containing details about each web view currently showing. The topmost showing web view is the first entry in the array.</cell>
 </table>
 
-For example, this object, represented in <link JSON_primer.csdoc>JSON</link>, may look like this when called from a <link html_dialog_ui.csdoc>HTML dialog</link> from an application that uses <link html_question_text.csdoc>HTML question text</link>:
+For example, this object, represented in <link JSON_primer.csdoc>JSON</link>, may look like this when called from a <link html_dialog_ui.csdoc>HTML dialog</link> from an application that uses <link question_text.csdoc>question text</link>:
 
 <color JSON>
 {

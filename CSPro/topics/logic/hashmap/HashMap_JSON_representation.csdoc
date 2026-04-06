@@ -1,0 +1,164 @@
+﻿<title>CSPro ⇄ JSON Conversions: HashMap Object</title>
+
+
+A CSPro <link HashMap.csdoc>HashMap</link> is generally represented as a <link JSON_primer.csdoc>JSON</link> object. The underlying keys and values of the HashMap are serialized according to the JSON serialization rules for <link numeric_JSON_representation.csdoc>numeric values</link> or <link string_JSON_representation.csdoc>string values</link>. Each element of the HashMap is written as an object with <colorinline JSON>"key"</colorinline> and <colorinline JSON>"value"</colorinline> property names.
+
+Based on JSON serialization options&mdash;defined as an <link properties_json_serialization.csdoc>application property</link> or <link JSON_serialization_options.csdoc>dynamically</link>&mdash;a HashMap can be serialized as a JSON array. In this mode, each HashMap element's key is written as a property name and its value is written as a property value.
+
+For example, with this HashMap:
+
+<logic>
+HashMap states2020(string, string);
+
+states2020("Pennsylvania", "population") = 13011844;
+states2020("Pennsylvania", "representatives") = 17;
+
+states2020("Virginia", "population") = 8654542;
+states2020("Virginia", "representatives") = 11;
+</logic>
+
+The two types of serialization result in the following JSON:
+
+<table 2 header nowrap>
+    <cell>Object Format (default)</cell><cell>Array Format</cell>
+    <cell>
+<color JSON>
+{
+  "Pennsylvania": {
+    "population": 13011844.0,
+    "representatives": 17.0
+  },
+  "Virginia": {
+    "population": 8654542.0,
+    "representatives": 11.0
+  }
+}
+</color>
+    </cell><cell>
+<color JSON>
+[
+  {
+    "key": "Pennsylvania",
+    "value": [
+      {
+        "key": "population",
+        "value": 13011844.0
+      },
+      {
+        "key": "representatives",
+        "value": 17.0
+      }
+    ]
+  },
+  {
+    "key": "Virginia",
+    "value": [
+      {
+        "key": "population",
+        "value": 8654542.0
+      },
+      {
+        "key": "representatives",
+        "value": 11.0
+      }
+    ]
+  }
+]
+</color>
+    </cell>
+</table>
+
+Because JSON keys are strings, when serializing to a JSON object, a key such as <logiccolor>5</logiccolor> and <logiccolor>"5"</logiccolor> will both be serialized as <colorinline JSON>"5"</colorinline>. Serializing to a JSON array avoids this possibility.
+
+
+When converting a JSON value to a HashMap, an exception occurs if the value is not an object or an array. A JSON object is parsed with each object's property name used as a HashMap key and that property's value used as a HashMap value. A JSON array is parsed with the HashMap key and value coming from each object's <colorinline JSON>"key"</colorinline> and <colorinline JSON>"value"</colorinline> property values. If a HashMap's dimension is <logiccolor>all</logiccolor> (not <logiccolor>numeric</logiccolor> or <logiccolor>string</logiccolor>), the key will always be stored as a string. An exception occurs if the keys or values cannot be converted to a CSPro number or string, or if these keys or values do not match the HashMap's types. An exception also occurs if too few, or too many, dimensions are provided.
+
+
+<subheader>Example 1</subheader>
+
+<logic>
+HashMap string foundingFathers;
+
+foundingFathers("Alexander") = "Hamilton";
+foundingFathers("Benjamin") = "Franklin";
+foundingFathers("George") = "Washington";
+foundingFathers("James") = "Madison";
+foundingFathers("Thomas") = "Jefferson";
+
+foundingFathers.getJson() // returns:
+</logic>
+
+<color JSON>
+{
+  "name": "foundingFathers",
+  "type": "HashMap",
+  "contentType": "string",
+  "dimensions": [
+    [
+      "numeric",
+      "string"
+    ]
+  ],
+  "value": {
+    "Alexander": "Hamilton",
+    "Benjamin": "Franklin",
+    "George": "Washington",
+    "James": "Madison",
+    "Thomas": "Jefferson"
+  }
+}
+</color>
+
+
+<subheader>Example 2 (Object Format)</subheader>
+
+<logic>
+HashMap numeric values;
+
+values(1.23) = refused;
+values(0) = 9;
+values("comedian") = 2008;
+values("riffing") = 2025;
+
+values.getValueJson(serializationOptions := "{ \"HashMapFormat\": \"object\" }") // returns:
+</logic>
+
+<color JSON>
+{
+  "0": 9.0,
+  "1.23": "REFUSED",
+  "comedian": 2008.0,
+  "riffing": 2025.0
+}
+</color>
+
+
+<subheader>Example 3 (Array Format)</subheader>
+
+<logic>
+values.getValueJson(serializationOptions := "{ \"HashMapFormat\": \"array\" }") // returns:
+</logic>
+
+<color JSON>
+[
+  {
+    "key": 0.0,
+    "value": 9.0
+  },
+  {
+    "key": 1.23,
+    "value": "REFUSED"
+  },
+  {
+    "key": "comedian",
+    "value": 2008.0
+  },
+  {
+    "key": "riffing",
+    "value": 2025.0
+  }
+]
+</color>
+
+
+<seealso symbols_json_representation.csdoc HashMap_JavaScript_representation.csdoc />

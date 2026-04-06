@@ -1,0 +1,39 @@
+Each <arg>argument</arg> is sequentially inserted into the <arg>string_exp</arg> or <arg>msg_num</arg>. Arguments can be numeric or string expressions, but the type of the argument must match the type of the receiving field in the message text. See <link message_formatting_options.csdoc>Message Formatting Options</link> for a complete list of formatting options.
+
+The following table summarizes the options for writing to a StringWriter:
+
+<table 3 header nowrap>
+    <cell>Function</cell><cell>Text Encoded</cell><cell>Newline Added</cell>
+    <cell><logiccolor StringWriter>write</logiccolor></cell><cell><font red>✘</font></cell><cell></cell>
+    <cell><logiccolor StringWriter>writeLine</logiccolor></cell><cell><font red>✘</font></cell><cell><logiccolor>'\n'</logiccolor></cell>
+    <cell><logiccolor StringWriter>writeEncoded</logiccolor></cell><cell><font green>✔</font></cell><cell></cell>
+    <cell><logiccolor StringWriter>writeEncodedLine</logiccolor></cell><cell><font green>✔</font></cell><cell><logiccolor>'\n'</logiccolor>, <colortag HTML><br></colortag>, etc.</cell>
+</table>
+
+
+<subheader>Return Value</subheader>
+
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
+
+
+<subheader>Example 1 (StringWriter)</subheader>
+
+<logic>
+StringWriter sw_html(HTML);
+
+sw_html.write("Terms ");
+sw_html.writeEncoded("& Conditions:");
+
+sw_html.writeLine("<strong>");
+sw_html.writeEncodedLine("<<< Do not use the application if you do not accept the T&Cs! >>>");
+sw_html.writeLine("</strong>");
+
+string result = sw_html.toString();
+
+// the result, with HTML encoding:
+</logic>
+
+<color HTML>
+Terms &amp; Conditions:<strong>
+&lt;&lt;&lt; Do not use the application if you do not accept the T&amp;Cs! &gt;&gt;&gt;<br></strong>
+</color>

@@ -49,7 +49,7 @@ write("Shapefile and tile packages in folder and subfolders:");
 
 List string map_files;
 
-dirlist(map_files, "C:/Survey/Maps", filter := "*.shp;*.tpk", recursive := true);
+dirlist(map_files, "C:/Survey/Maps", filter := "*.shp;*.tpk;*.tpkx", recursive := true);
 
 do numeric ctr = 1 while ctr <= map_files.length()
     write("%s", map_files(ctr));
@@ -60,7 +60,7 @@ enddo;
 <subheader>Example 2</subheader>
 
 <logic>
-// get a list of all shared images on Android that can be loaded using the image object
+// get a list of all shared images on Android that can be loaded using the Image object
 List string image_files;
 
 dirlist(image_files, Media.Images, filter := FileType.Image);

@@ -1,0 +1,6 @@
+﻿<title>Change Language</title>
+<context ID_LANGUAGE />
+
+In a data entry application, you can change the question language at any time.
+
+Press <b>Ctrl+L</b> or from the <b>Options</b> menu, select <b>Change Language</b>. A dialog box will come up to allow you to select question and help text from among the available languages.

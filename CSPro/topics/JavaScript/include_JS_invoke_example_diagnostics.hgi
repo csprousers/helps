@@ -1,0 +1,18 @@
+CSPro logic <link user_defined_functions.csdoc>user-defined functions</link> can be used as arguments. With the following JavaScript script <link manage_application_files.csdoc>added to the application</link>...
+
+<color JavaScript>
+function getCSProVersion(diagnosticsCallback) {
+    return diagnosticsCallback("version");
+}
+</color>
+
+...it is possible to call into JavaScript and then have JavaScript call back into CSPro.
+
+<logic>
+function string ExecDiagnostics(string property)
+    exit diagnostics(property);
+end;
+
+JS.invoke("getCSProVersion", ExecDiagnostics)); // <definition CSPro::version />
+diagnostics("version");                         // <definition CSPro::version />
+</logic>

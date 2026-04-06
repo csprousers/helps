@@ -32,7 +32,7 @@ The Global Settings dialog is accessible by selecting <b>File</b> -> <b>Global S
 
 <b>wkhtmltopdf</b>
 
-<indent>If you want to export Document Sets to <link export_format_pdf.csdoc>PDF</link> format, you need the open source tool <link "https://wkhtmltopdf.og/">wkhtmltopdf</link>. The path of this tool may look like:~!~~!~~!~<i>C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe</i></indent>
+<indent>If you want to export Document Sets to <link export_format_pdf.csdoc>PDF</link> format, you need the open-source tool <link "https://wkhtmltopdf.og/">wkhtmltopdf</link>. The path of this tool may look like:~!~~!~~!~<i>C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe</i></indent>
 
 
 <b>CSPro Code</b>

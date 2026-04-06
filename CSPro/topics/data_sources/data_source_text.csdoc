@@ -56,6 +56,9 @@ The following behavior can be customized by specifying properties in the <link c
 <table 2 header>
     <cell nowrap>Property Name and Values</cell><cell>Description</cell>
     <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"newline"</colorinline></b></cell><cell>Determines what <link text_attributes.csdoc>control characters</link> are used when writing line endings to the notes and statuses files.</cell>
+    <include properties_newline_values.hgi />
+    <cell 2>&nbsp;</cell>
     <include properties_cache.hgi />
 </table>
 

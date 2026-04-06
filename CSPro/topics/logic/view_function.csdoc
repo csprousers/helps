@@ -14,7 +14,7 @@ The <logiccolor>view</logiccolor> function displays a variety of media. <include
 The first argument to the function indicates what to view:
 
 <list>
-    <li><arg>file_name</arg> (string expression): The contents of the file are displayed, either in an embedded web browser, or using the system's default viewer for that file type. For example, if an Excel document is referenced, the function will open the document in Excel. However, if a HTML document is referenced, it will be shown in an embedded web browser. Documents are considered HTML if they have one of the following extensions: <i>.html</i>, <i>.htm</i>, or <i>.cshtml</i>.</li>
+    <li><arg>file_name</arg> (string expression): The contents of the file are displayed, either in an embedded web browser, or using the system's default viewer for that file type. For example, if an Excel document is referenced, the function will open the document in Excel. However, if a <link html_in_cspro.csdoc>HTML</link> or <link markdown_overview.csdoc>Markdown</link> document is referenced, it will be shown in an embedded web browser. Documents are considered HTML or derivable if they have one of the following extensions: <i>.html</i>, <i>.htm</i>, <i>.cshtml</i>, or <i>.md</i>. Markdown documents are automatically converted to HTML and displayed using CSS based on <link "https://github.com/sindresorhus/github-markdown-css">GitHub's style conventions</link>.</li>
     <li><arg>website_url</arg> (string expression): An embedded web browser is used to display the website.</li>
     <li><arg>object_name</arg>: The contents of the object are displayed, generally in an embedded web browser. Passing an object to the <logiccolor>view</logiccolor> function is identical to calling the <i>view</i> function on the object using <link object_dot_notation.csdoc>dot notation</link>. For example, the following calls are identical:~!~~!~
     <indent><logiccolor Image>image_name.view();</logiccolor>~!~~!~<logiccolor>view(image_name);</logiccolor></indent>
@@ -53,4 +53,4 @@ view(CENSUS_DICT);
 </logic>
 
 
-<seealso html_in_cspro.csdoc action_invoker_execution_javascript_web.csdoc CSView::introduction.csdoc />
+<seealso CSView::introduction.csdoc html_in_cspro.csdoc markdown_overview.csdoc action_invoker_execution_javascript_web.csdoc />

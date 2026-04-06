@@ -4,7 +4,7 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-b = image_name.load(<arg>image_filename</arg>);
+b = image_name.load(<arg>image_file_path</arg>);
 
 b = image_name.load(<arg>valueset_name</arg>, <arg>value</arg>);
 </logicsyntax>
@@ -12,7 +12,7 @@ b = image_name.load(<arg>valueset_name</arg>, <arg>value</arg>);
 
 <subheader>Description</subheader>
 
-The <logiccolor>Image.load</logiccolor> function reads an image from a file and stores its contents in the <link Image.csdoc>Image</link> object. In the first version of the function, the string expression <arg>image_filename</arg> specifies the location of the image on the disk.
+The <logiccolor>Image.load</logiccolor> function reads an image from a file and stores its contents in the <link Image.csdoc>Image</link> object. In the first version of the function, the string expression <arg>image_file_path</arg> specifies the location of the image on the disk.
 
 The second version simplifies loading <link value_set_images.csdoc>value set images</link>. It is equivalent to calling:
 
@@ -20,7 +20,16 @@ The second version simplifies loading <link value_set_images.csdoc>value set ima
 image_name.load(getimage(<arg>valueset_name</arg>, <arg>value</arg>));
 </logicsyntax>
 
-The following types of images can be loaded: JPEG (.jpg/.jpeg), PNG (.png), BMP (.bmp), and GIF (.gif). Although GIF files can be loaded, the <logiccolor>Image.save</logiccolor> function cannot files in the GIF format.
+The following types of images are supported:
+
+<list>
+    <li><b>JPEG</b> (.jpg/.jpeg).</li>
+    <li><b>PNG</b> (.png).</li>
+    <li><b>WebP</b> (.webp).</li>
+    <li><b>BMP</b> (.bmp).</li>
+    <li><b>ICO</b> (.ico). ICO files can only be loaded on Windows but can be <link Image_save_function.csdoc>saved</link> on all platforms.</li>
+    <li><b>GIF</b> (.gif). GIF files can only be loaded and cannot be <link Image_save_function.csdoc>saved</link>.</li>
+</list>
 
 
 <subheader>Return Value</subheader>

@@ -19,7 +19,7 @@ A user-defined function:
     <li>Can contain CSPro statements and functions, as well as other user-defined functions. If no return value is assigned to the function, the value <logiccolor>default</logiccolor> (or a blank string) is returned.</li>
 </list>
 
-The <logiccolor>function</logiccolor> statement allows the creation of a user-defined function.
+The <logiccolor>function</logiccolor> statement allows the creation of a user-defined function. You can use the <logiccolor>declare</logiccolor> keyword to declare a function prior to defining it.
 
 You can use the <logiccolor>invoke</logiccolor> function or <action>Logic.invoke</action> action to call a function with the function name specified only at runtime. Additionally, you can execute user-defined functions while viewing <link html_in_cspro.csdoc>HTML content</link> by using the <link action_invoker_execution_javascript_web.csdoc>Action Invoker</link>.
 

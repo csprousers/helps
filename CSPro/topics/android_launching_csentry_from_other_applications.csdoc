@@ -1,0 +1,67 @@
+﻿<title>Launching CSEntry from Other Android Applications</title>
+
+If you are an Android application developer and would like to launch CSEntry from your application, there are two approaches, both of which are demonstrated in the <link "<definition github_csesntry_launcher_url />">CSEntry Launcher</link> application on GitHub.
+
+The two approaches, using an <link "https://developer.android.com/reference/android/content/Intent">Intent</link> or a <link "https://developer.android.com/training/app-links/deep-linking">deep link</link>, have the following differences:
+
+<list>
+    <li>Deep links can open non-entry applications.</li>
+    <li>Deep links for entry applications open the Case Listing activity, whereas the Intent approach skips the Case Listing and opens the Entry activity.</li>
+</list>
+
+If you are instead interested in ways to interactive with other applications from within CSEntry, there are a <link android_interacting_with_other_applications.csdoc>variety of ways</link> to do this.
+
+
+<subheader>Launching CSEntry Using an Intent</subheader>
+
+To launch CSEntry, create an Intent using the class <colorinline Kotlin>"gov.census.cspro.csentry.ui.EntryActivity"</colorinline>:
+
+<color Kotlin>
+val intent = Intent()
+intent.component = ComponentName("gov.census.cspro.csentry", "gov.census.cspro.csentry.ui.EntryActivity")
+</color>
+
+Specify the <link program_information_file_pff.csdoc>PFF</link>'s filename or path as an extra:
+
+<color Kotlin>
+intent.putExtra("PffFilename", "CSEntry Application.pff")
+</color>
+
+If PffFilename is a fully evaluated file path, that file will be opened. If not, CSEntry will recursively look at files in the <i>csentry</i> directory until finding a file with the filename.
+
+To pass additional parameters that will get added to the PFF, add them as extras. For example, to set the operator ID and the case key:
+
+<color Kotlin>
+intent.putExtra("OperatorID", "John Doe")
+intent.putExtra("Key", "01050669557")
+</color>
+
+Finally, launch the activity using the Intent:
+
+<color Kotlin>
+startActivity(intent)
+</color>
+
+
+<subheader>Launching CSEntry Using a Deep Link</subheader>
+
+Deep links that run applications using CSEntry begin with <colorinline Kotlin>"https://csprousers.org/pff"</colorinline>. The <link program_information_file_pff.csdoc>PFF</link>'s filename is specified, following <colorinline Kotlin>"/pff"</colorinline>, as part of the URI's path. If multiple path segments are provided, for example <colorinline Kotlin>"https://csprousers.org/pff/my-directory/my-survey.pff"</colorinline>, the path is treated as a full file path to be evaluated from within the <i>csentry</i> directory. If only a single path segment is provided, for example <colorinline Kotlin>"https://csprousers.org/pff/my-survey.pff"</colorinline>, then CSEntry will recursively look at files in the <i>csentry</i> directory until finding a file with the filename.
+
+To pass additional parameters that will get added to the PFF, add them as <link "https://en.wikipedia.org/wiki/Query_string">query parameters</link>.
+
+For example, code to launch CSEntry using a deep link might look like:
+
+<color Kotlin>
+val uri = Uri.parse("https://csprousers.org/pff")
+    .buildUpon()
+    .appendPath("CSEntry Application.pff")
+    .appendQueryParameter("OperatorID", "John Doe")
+    .appendQueryParameter("Key", "01050669557")
+    .build()
+
+val intent = Intent(Intent.ACTION_VIEW, uri)
+startActivity(intent)
+</color>
+
+
+<seealso android_development.csdoc android_interacting_with_other_applications.csdoc />

@@ -1,0 +1,5 @@
+<logic>
+JS.eval("const artist = 'Roberta Flack';"); // undefined
+JS.eval("artist.toUpperCase();");           // ROBERTA FLACK
+JS.eval("[ ...artist ];");                  // R,o,b,e,r,t,a, ,F,l,a,c,k
+</logic>

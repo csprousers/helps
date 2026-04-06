@@ -2,33 +2,44 @@
 <context ID_FILE_RUN IDD_FILEBROW />
 
 <list ordered>
-	<li>Click <image run_button.png /> on the toolbar; press <b>Ctrl+R</b>; or from the <b>File</b> menu, select <b>Run</b>.</li>
-	<li>Enter or select the name of the input file.</li>
-	<li>Enter or select the name of the reference file against which comparisons are made.</li>
-	<li>Enter or change the name of the listing file where results are written.</li>
-	<li>Select the comparison method.</li>
-	<li>Select the comparison order.</li>
+    <li>Click <image run_button.png /> on the toolbar; press <b>Ctrl + R</b>; or from the <b>File</b> menu, select <b>Run</b>.</li>
+    <li>Enter or select the name of the input <link CSPro::data_sources.csdoc>data source</link>.</li>
+    <li>Enter or select the name of the reference data against which comparisons are made.</li>
+    <li>Enter or change the name of the listing file where results are written.</li>
+    <li>Select the comparison method.</li>
+    <li>Select the comparison order.</li>
 </list>
 
 <subheader>Tips</subheader>
 
 <list>
-	<li>Use the Browse Buttons to find files.</li>
-	<li>The output listing shows either dictionary names or labels, depending on which are shown on the selection tree. To toggle between names and labels, press <b>Ctrl+T</b> before you run compare.</li>
+    <li>Use the Browse Buttons to find files.</li>
+    <li>The output listing shows either dictionary names or labels, depending on which are shown on the selection tree. To toggle between names and labels, press <b>Ctrl + T</b> before you run compare.</li>
 </list>
 
 
 <subheader>Comparison Method</subheader>
 
 <list>
-	<li><b>Compare Input to Reference (only)</b>: The input file is inspected case by case in the selected comparison order. The reference file is inspected for a corresponding case. Any cases, levels, or records which are present in the input file but missing from the reference file are listed. Any item values which are different between the two files are listed. If there are any extra cases, levels, or records in the reference file they are NOT listed.</li>
-	<li><b>Compare Input to Reference and Reference to Input</b>: Same as Compare Input to Reference (only) above, but if there are any extra cases, levels, or records in the reference file they ARE listed.</li>
+    <li><b>Compare Input to Reference (only)</b>: The input data is inspected case by case in the selected comparison order. The reference data is inspected for a corresponding case. Any cases, levels, or records which are present in the input data but missing from the reference data are listed. Any item values which are different between the two data sources are listed. If there are any extra cases, levels, or records in the reference data they are NOT listed.</li>
+    <li><b>Compare Input to Reference and Reference to Input</b>: Same as Compare Input to Reference (only) above, but if there are any extra cases, levels, or records in the reference data they ARE listed.</li>
 </list>
 
 
 <subheader>Comparison Order</subheader>
 
 <list>
-	<li><b>Compare in Indexed Order</b>: Cases in the input file are compared in sorted order by case ids, regardless where the cases are located in the data files.</li>
-	<li><b>Compare in Sequential Order</b>: Cases in the input file are compared in the physical order they occur in the file.</li>
+    <li><b>Indexed order (by case key)</b>: Cases in the input data are compared in sorted order by case key (ID values), regardless of where the cases are located in the data files.</li>
+    <li><b>Sequential order</b>: Cases in the input data are compared in the physical order that they occur in a data file or as provided by a data source.</li>
+</list>
+
+
+<subheader>Duplicate Case Handling</subheader>
+
+Some data sources allow duplicate cases. These are cases share the same case key (ID values). These data sources generally use a <link CSPro::uuid_function.csdoc>UUID</link> to uniquely identify each of the cases. When running a comparison in indexed order, the Compare Data will:
+
+<list ordered>
+    <li>Match cases first by case key.</li>
+    <li>When there are cases sharing the same case key, the cases will be matched based on UUID.</li>
+    <li>When there is no UUID match, an input duplicate case will be compared against a reference case that has a case key and UUID combination that does not match any case in the input data. If there is no such match, the case will be listed as missing.</li>
 </list>

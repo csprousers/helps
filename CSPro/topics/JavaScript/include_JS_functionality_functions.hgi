@@ -1,0 +1,7 @@
+<cell><logiccolor>JS.eval</logiccolor></cell><cell>Evaluates JavaScript in the global execution context.</cell>
+<cell><logiccolor>JS.getValue</logiccolor></cell><cell>Converts a JavaScript variable or property to its CSPro equivalent.</cell>
+<cell><logiccolor>JS.getValueJson</logiccolor></cell><cell>Returns the <link JSON_primer.csdoc>JSON</link> representation of a JavaScript variable or property.</cell>
+<cell><logiccolor>JS.hasValue</logiccolor></cell><cell>Returns whether a JavaScript variable or property is defined (not <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</link>).</cell>
+<cell><logiccolor>JS.invoke</logiccolor></cell><cell>Executes a JavaScript function that exists in the global execution context with any CSPro arguments <link javascript_value_conversions.csdoc>converted</link> to their JavaScript equivalents.</cell>
+<cell><logiccolor>JS.setValue</logiccolor></cell><cell>Converts a CSPro variable to its JavaScript equivalent and adds this as a variable to the global scope, or sets an object's property.</cell>
+<cell><logiccolor>JS.setValueFromJson</logiccolor></cell><cell>Create a JavaScript variable using <link JSON_primer.csdoc>JSON</link> and adds it as a variable to the global scope, or sets an object's property.</cell>
