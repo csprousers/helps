@@ -1,4 +1,4 @@
-﻿<title>GetDeviceID Function</title>
+<title>GetDeviceID Function</title>
 
 <subheader>Format</subheader>
 
@@ -19,15 +19,15 @@ The function returns a string with the unique ID. If you choose to serialize thi
 <logic>
 PROC USER_NAME
 
-	if not loadcase(USER_PERMISSIONS_DICT,USER_NAME) then
-		errmsg("The entered user name is not in the database of users.");
-		reenter;
+    if not loadcase(USER_PERMISSIONS_DICT,USER_NAME) then
+        errmsg("The entered user name is not in the database of users.");
+        reenter;
 
-	elseif USER_ALLOWED_DEVICE <> getdeviceid() then
-		errmsg("You, %s, do not have permission to use device %s.",strip(USER_NAME),getdeviceid());
-		reenter;
+    elseif USER_ALLOWED_DEVICE <> getdeviceid() then
+        errmsg("You, %s, do not have permission to use device %s.",strip(USER_NAME),getdeviceid());
+        reenter;
 
-	endif;
+    endif;
 </logic>
 
 <seealso getoperatorid_function.csdoc getusername_function.csdoc getbluetoothname_function.csdoc />

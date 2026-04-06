@@ -1,8 +1,8 @@
-﻿<title>Delete a Case</title>
+<title>Delete a Case</title>
 <context ID_DELETECASE />
 
 <list ordered>
-	<li>Make sure you are not in Add, Modify, or Verify mode. You may need to stop (<b>Ctrl+S</b>) data entry first.</li>
-	<li>From the File Tree move the highlight bar to or click on the case ID you want to delete.</li>
-	<li>Press <b>Ctrl+Del</b> or from the Edit menu, select <b>Delete Case</b>.</li>
+    <li>Make sure you are not in Add, Modify, or Verify mode. You may need to stop (<b>Ctrl+S</b>) data entry first.</li>
+    <li>From the File Tree move the highlight bar to or click on the case ID you want to delete.</li>
+    <li>Press <b>Ctrl+Del</b> or from the Edit menu, select <b>Delete Case</b>.</li>
 </list>

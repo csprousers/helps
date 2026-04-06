@@ -1,11 +1,11 @@
-﻿<title>Move Between Cases</title>
+<title>Move Between Cases</title>
 <context ID_FIRST_CASE ID_LAST_CASE ID_PREV_CASE ID_NEXT_CASE />
 
 Once you have finished modifying (or simply viewing) a case, you may move to a different case in one of the following ways:
 
 <list>
-	<li>From the File Tree move the highlight bar to or click on a different case ID.</li>
-	<li>Use the toolbar to select first, previous, next or last case in the data file.</li>
-	<li>From the <b>Navigation</b> menu select <b>First Case</b>, <b>Previous Case</b>, <b>Next Case</b>, or <b>Last Case</b>.</li>
-	<li>Use the special keys to select first, previous, next or last case in the data file.</li>
+    <li>From the File Tree move the highlight bar to or click on a different case ID.</li>
+    <li>Use the toolbar to select first, previous, next or last case in the data file.</li>
+    <li>From the <b>Navigation</b> menu select <b>First Case</b>, <b>Previous Case</b>, <b>Next Case</b>, or <b>Last Case</b>.</li>
+    <li>Use the special keys to select first, previous, next or last case in the data file.</li>
 </list>

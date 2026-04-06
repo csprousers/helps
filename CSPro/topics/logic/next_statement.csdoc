@@ -1,4 +1,4 @@
-﻿<title>Next Statement</title>
+<title>Next Statement</title>
 
 <subheader>Format</subheader>
 
@@ -22,12 +22,12 @@ spouseNumber = 0;
 
 for numeric ctr in PERSON do
 
-	if P02_REL <> 2 then
-		next;
-	endif;
+    if P02_REL <> 2 then
+        next;
+    endif;
 
-	inc(spouseNumber);
-	spouseIndices(spouseNumber) = ctr;
+    inc(spouseNumber);
+    spouseIndices(spouseNumber) = ctr;
 
 enddo;
 </logic>

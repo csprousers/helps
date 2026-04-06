@@ -1,4 +1,4 @@
-﻿<title>Insert Function</title>
+<title>Insert Function</title>
 
 <subheader>Format</subheader>
 
@@ -41,7 +41,7 @@ For this example, we are processing data that did not require housing records to
 
 <logic>
 if totocc(HOUSING_REC) = 0 then
-	insert(HOUSING_REC); // note the absence of a subscript
+    insert(HOUSING_REC); // note the absence of a subscript
 endif;
 </logic>
 

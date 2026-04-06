@@ -1,4 +1,4 @@
-﻿<title>List.removeDuplicates Function</title>
+<title>List.removeDuplicates Function</title>
 
 
 <subheader>Format</subheader>
@@ -24,7 +24,7 @@ The function returns the number of duplicates removed from the List. If the List
 List string women_names;
 
 for POPULATION_RECORD where HH_SEX = 2 and HH_AGE in 12:95 do
-	women_names.add(HH_NAME);
+    women_names.add(HH_NAME);
 enddo;
 
 women_names.show("Women in Household");

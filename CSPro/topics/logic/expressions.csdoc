@@ -1,4 +1,4 @@
-﻿<title>Expressions</title>
+<title>Expressions</title>
 
 An expression is a combination of operators and operands. Operands can be constants, items, variables, functions, or some combination thereof. Operators can be <b>arithmetic</b> (+, -, *, /), <b>relational</b> (=, &lt;>, >, &lt;, >=, &lt;=) or <b>logical</b> (<logiccolor>and, or, not</logiccolor>). Every expression evaluates to a value and can therefore be used as a sub-expression of other expressions. There are three types of expressions: numeric, string, and logical.
 

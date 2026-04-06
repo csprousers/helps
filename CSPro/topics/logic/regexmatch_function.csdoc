@@ -1,4 +1,4 @@
-﻿<title>RegExMatch Function</title>
+<title>RegExMatch Function</title>
 
 
 <subheader>Format</subheader>
@@ -18,8 +18,8 @@ The <logiccolor>regexmatch</logiccolor> function tests whether the <arg>target_s
 The function returns an integer value of:
 
 <table 2 nowrap>
-	<cell>1</cell><cell>if <arg>target_string</arg> matches <arg>regex_string.</arg></cell>
-	<cell>0</cell><cell>if <arg>target_string</arg> does not match <arg>regex_string.</arg></cell>
+    <cell>1</cell><cell>if <arg>target_string</arg> matches <arg>regex_string.</arg></cell>
+    <cell>0</cell><cell>if <arg>target_string</arg> does not match <arg>regex_string.</arg></cell>
 </table>
 
 
@@ -33,11 +33,11 @@ Regular expressions have their own syntax separate from CSPro logic. Therefore, 
 <logic>
 // Matches format xxx-xxx-xxxx
 if regexmatch(TELEPHONE_NUMBER, "^([0-9]{3}-){2}[0-9]{4}$") then
-	// ...
+    // ...
 endif;
 
 // Basic validation for email
 if regexmatch(EMAIL, @"^[^@\s]+@[^@\s]+\.[^@\s]+$") then
-	// ...
+    // ...
 endif;
 </logic>

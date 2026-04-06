@@ -1,4 +1,4 @@
-﻿<title>StringWriter.writeLine Function</title>
+<title>StringWriter.writeLine Function</title>
 
 <i>This documentation also applies to the <logiccolor>Report.writeLine</logiccolor> function as a <logiccolor>Report</logiccolor> is a type of <logiccolor>StringWriter</logiccolor>.</i>
 

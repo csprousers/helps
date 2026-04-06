@@ -1,4 +1,4 @@
-﻿<title>GetImage Function</title>
+<title>GetImage Function</title>
 
 <subheader>Format</subheader>
 
@@ -19,9 +19,9 @@ The function returns a string containing the image filename, or a blank string i
 <logic>
 PROC IMAGE_SELECTOR
 
-	string image_filename = getimage(IMAGE_SELECTOR_VS1, IMAGE_SELECTOR);
+    string image_filename = getimage(IMAGE_SELECTOR_VS1, IMAGE_SELECTOR);
 
-	view(image_filename);
+    view(image_filename);
 </logic>
 
 <seealso getlabel_function.csdoc setvalueset_function.csdoc Image_load_function.csdoc />

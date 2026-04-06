@@ -1,4 +1,4 @@
-﻿<title>Clipboard.putText Action</title>
+<title>Clipboard.putText Action</title>
 
 
 <subheader>Format</subheader>
@@ -8,8 +8,8 @@ CS.Clipboard.putText(<arg>text</arg> := ...)
 </logicsyntax>
 
 <indent><table 3 header nowrap>
-	<cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-	<cell><arg>text</arg></cell><cell>The text to put onto the clipboard.</cell><cell>string, number~!~required</cell>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>text</arg></cell><cell>The text to put onto the clipboard.</cell><cell>string, number~!~required</cell>
 </table></indent>
 
 

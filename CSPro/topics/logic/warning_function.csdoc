@@ -1,10 +1,10 @@
-﻿<title>Warning Function</title>
+<title>Warning Function</title>
 
 
 <subheader>Format 1</subheader>
 
 <logicsyntax>
-i =	warning(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』);
+i = warning(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』);
 </logicsyntax>
 
 <subheader>Format 2</subheader>
@@ -16,11 +16,11 @@ i = warning(<arg>msg_num</arg>『, <arg>argument1</arg>, ..., <arg>argument20</a
 <subheader>Format 3</subheader>
 
 <logicsyntax>
-i =	warning(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』)
+i = warning(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』)
 
-	『select(<arg>caption1</arg>, <arg>fieldname1</arg>『, ..., <arg>caption5</arg>, <arg>fieldname5</arg>』) 『default(<arg>default_option</arg>)』 』
-	『case ‖ summary』
-	『denom = <arg>numeric_denom</arg>』;
+    『select(<arg>caption1</arg>, <arg>fieldname1</arg>『, ..., <arg>caption5</arg>, <arg>fieldname5</arg>』) 『default(<arg>default_option</arg>)』 』
+    『case ‖ summary』
+    『denom = <arg>numeric_denom</arg>』;
 </logicsyntax>
 
 
@@ -49,14 +49,14 @@ When the <b>select</b> keyword is used, the function returns the sequence number
 <logic>
 PROC MARITAL_STATUS
 
-	if curocc() > 1 and MARITAL_STATUS in 1, 2 /* married, partner */ and SEX = SEX(HEAD) then
-		warning("Is the sex of this person the same as that of the head of household?")
-		select("Correct", continue,
-			   "Incorrect: Change this person's sex", SEX,
-			   "Incorrect: Change the head's sex", SEX(HEAD))
-		default(1); // during an advance, use the first choice: continue;
-					// if not processing an advance, the focus will be on button 1
-	endif;
+    if curocc() > 1 and MARITAL_STATUS in 1, 2 /* married, partner */ and SEX = SEX(HEAD) then
+        warning("Is the sex of this person the same as that of the head of household?")
+        select("Correct", continue,
+               "Incorrect: Change this person's sex", SEX,
+               "Incorrect: Change the head's sex", SEX(HEAD))
+        default(1); // during an advance, use the first choice: continue;
+                    // if not processing an advance, the focus will be on button 1
+    endif;
 </logic>
 
 

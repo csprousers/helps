@@ -1,4 +1,4 @@
-﻿<title>Map.removeMarker Function</title>
+<title>Map.removeMarker Function</title>
 
 
 <subheader>Format</subheader>
@@ -27,22 +27,22 @@ PROC GLOBAL
 // or to remove the marker from the map
 function editMarker(Map m, numeric markerId)
 
-	numeric sel = accept("Edit marker", "Text", "Description", "Remove");
-	if sel = 1 then
-		string newText = prompt("Enter new icon text");
-		if newText <> "" then
-			m.setMarkerText(markerId, newText);
-		endif;
-	elseif sel = 2 then
-		string newDescription = prompt("Enter new icon description");
-		if newDescription <> "" then
-			m.setMarkerDescription(markerId, newDescription);
-		endif;
-	elseif sel = 3 then
-		if accept("Confirm marker removal from the map", "Yes", "No") = 1 then
-		  m.removeMarker(markerId);
-		endif;
-	endif;
+    numeric sel = accept("Edit marker", "Text", "Description", "Remove");
+    if sel = 1 then
+        string newText = prompt("Enter new icon text");
+        if newText <> "" then
+            m.setMarkerText(markerId, newText);
+        endif;
+    elseif sel = 2 then
+        string newDescription = prompt("Enter new icon description");
+        if newDescription <> "" then
+            m.setMarkerDescription(markerId, newDescription);
+        endif;
+    elseif sel = 3 then
+        if accept("Confirm marker removal from the map", "Yes", "No") = 1 then
+          m.removeMarker(markerId);
+        endif;
+    endif;
 end;
 
 PROC SHOW_MAP

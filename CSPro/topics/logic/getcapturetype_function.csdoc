@@ -1,4 +1,4 @@
-﻿<title>GetCaptureType Function</title>
+<title>GetCaptureType Function</title>
 
 <i><b>Feature Upgrade</b>: Starting with CSPro 7.1, you should no longer use this function as it may soon be removed from CSPro. To replicate the behavior of the function, you can use the <logiccolor>getproperty</logiccolor> function with the argument <logiccolor>"CaptureType"</logiccolor>.</i>
 
@@ -25,10 +25,10 @@ PROC SEX
 
 onfocus
 
-	// change SEX from a radio button to a drop down box
-	if getcapturetype(SEX) = 1 then
-		setcapturetype(SEX,3);
-	endif;
+    // change SEX from a radio button to a drop down box
+    if getcapturetype(SEX) = 1 then
+        setcapturetype(SEX,3);
+    endif;
 </logic>
 
 <seealso setcapturetype_function.csdoc />

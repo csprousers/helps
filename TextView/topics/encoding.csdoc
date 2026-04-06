@@ -1,4 +1,4 @@
-﻿<title>Text Encoding</title>
+<title>Text Encoding</title>
 
 An encoding defines how a text file's bytes are interpreted as characters. Most modern programs use <link "https://en.wikipedia.org/wiki/UTF-8">UTF-8</link>, a variable-length encoding scheme that uses between one and four bytes to represent a character.
 

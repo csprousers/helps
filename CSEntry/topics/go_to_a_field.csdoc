@@ -1,9 +1,9 @@
-﻿<title>Go to a Field</title>
+<title>Go to a Field</title>
 <context IDD_GOTO />
 
 <list ordered>
-	<li>Enter the field name as defined in the data entry application.</li>
-	<li>Enter the field occurrence number, if the field has multiple occurrences.</li>
+    <li>Enter the field name as defined in the data entry application.</li>
+    <li>Enter the field occurrence number, if the field has multiple occurrences.</li>
 </list>
 
 A field can have multiple occurrences because it appears in a roster or because it appears on repeating forms. If the filed does not have multiple occurrences or you want to go to the first occurrence, leave the field occurrence number blank.

@@ -1,4 +1,4 @@
-﻿<title>KeyList Function</title>
+<title>KeyList Function</title>
 
 
 <subheader>Format</subheader>
@@ -25,10 +25,10 @@ The function returns the number of cases in file.
 <logic>
 PROC ACTION
 
-	if ACTION in 1,3,6 and keylist(CENSUS_DICT) = 0 then // actions that require cases
-		errmsg("No cases have been entered yet.");
-		reenter;
-	endif;
+    if ACTION in 1,3,6 and keylist(CENSUS_DICT) = 0 then // actions that require cases
+        errmsg("No cases have been entered yet.");
+        reenter;
+    endif;
 </logic>
 
 
@@ -37,18 +37,18 @@ PROC ACTION
 <logic>
 PROC HOUSEHOLD_NUMBER
 
-	List string enteredKeys;
+    List string enteredKeys;
 
-	keylist(CENSUS_DICT, enteredKeys);
+    keylist(CENSUS_DICT, enteredKeys);
 
-	do numeric keyCtr = 1 while keyCtr <= enteredKeys.length()
+    do numeric keyCtr = 1 while keyCtr <= enteredKeys.length()
 
-		if HOUSEHOLD_NUMBER = tonumber(enteredKeys(keyCtr)[9:2]) then
-			errmsg("The household number %d has already been entered.", HOUSEHOLD_NUMBER);
-			reenter;
-		endif;
+        if HOUSEHOLD_NUMBER = tonumber(enteredKeys(keyCtr)[9:2]) then
+            errmsg("The household number %d has already been entered.", HOUSEHOLD_NUMBER);
+            reenter;
+        endif;
 
-	enddo;
+    enddo;
 </logic>
 
 

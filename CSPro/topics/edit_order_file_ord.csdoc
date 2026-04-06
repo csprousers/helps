@@ -1,3 +1,3 @@
-﻿<title>Edit Order File (.ord)</title>
+<title>Edit Order File (.ord)</title>
 
 The Edit Order File is a text file that contains information about the sequence in which fields defined in the associated data dictionary are edited during batch editing. Each item in the associated CSPro dictionary is listed in the Edit Order File in the sequence in which the procedures for that item will be executed.

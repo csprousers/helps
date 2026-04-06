@@ -1,4 +1,4 @@
-﻿<title>SyncConnect Function (LocalDropbox)</title>
+<title>SyncConnect Function (LocalDropbox)</title>
 
 <i>This page describes the <logiccolor>syncconnect</logiccolor> function when connecting to a Dropbox folder on the local computer. For generalized information on the function, see the documentation for the <logiccolor>syncconnect</logiccolor> function.</i>
 
@@ -18,10 +18,10 @@ The <logiccolor>syncconnect</logiccolor> function opens a connection to Dropbox 
 // connect to local Dropbox folder
 if syncconnect(LocalDropbox) then
 
-	// Download the latest cases from Dropbox
-	syncdata(GET, SURVEY_DICT);
+    // Download the latest cases from Dropbox
+    syncdata(GET, SURVEY_DICT);
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

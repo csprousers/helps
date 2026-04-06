@@ -1,4 +1,4 @@
-﻿<title>Move Around a Dictionary</title>
+<title>Move Around a Dictionary</title>
 
 
 <html>
@@ -7,7 +7,7 @@
 <meta name="generator" content="Adobe RoboHelp 11" />
 <style type="text/css">/*<![CDATA[*/
 body {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 /*]]>*/</style>
 </head>
@@ -16,70 +16,70 @@ body {
 
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><b><font
-	 style="font-family: Arial; font-size: 10pt; font-weight: bold;" color="#000000"
-	 face="Arial" size="2">Press&#160;To</font></b></p>
+     style="font-family: Arial; font-size: 10pt; font-weight: bold;" color="#000000"
+     face="Arial" size="2">Press&#160;To</font></b></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Up Arrow&#160;Move up one line</font></p>
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Up Arrow&#160;Move up one line</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Down Arrow&#160;Move down one line</font></p>
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Down Arrow&#160;Move down one line</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Page Up&#160;Scroll up one screen (if possible)</font></p>
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Page Up&#160;Scroll up one screen (if possible)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Page Down&#160;Scroll down one screen (if possible)</font></p>
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Page Down&#160;Scroll down one screen (if possible)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Ctrl+Home&#160;Jump to first record, item, or value (from
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Ctrl+Home&#160;Jump to first record, item, or value (from
  the view only)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Ctrl+End&#160;Jump to last record, item, or value (from the
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Ctrl+End&#160;Jump to last record, item, or value (from the
  view only)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Ctrl+Left Arrow&#160;Scrolls left (if possible, and from
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Ctrl+Left Arrow&#160;Scrolls left (if possible, and from
  the tree only)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Ctrl+Right Arrow&#160;Scrolls right (if possible, and from
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Ctrl+Right Arrow&#160;Scrolls right (if possible, and from
  the tree only)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Ctrl+Up Arrow&#160;Multi-selects rows (from the view)</font></p>
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Ctrl+Up Arrow&#160;Multi-selects rows (from the view)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">&#160;Scrolls up (if possible, and from the tree only)</font></p>
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">&#160;Scrolls up (if possible, and from the tree only)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Ctrl+Down Arrow&#160;Multi-selects rows (from the view)</font></p>
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Ctrl+Down Arrow&#160;Multi-selects rows (from the view)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">&#160;Scrolls down (if possible, and from the tree only)</font></p>
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">&#160;Scrolls down (if possible, and from the tree only)</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><b><font
-	 style="font-family: Arial; font-size: 10pt; font-weight: bold;" color="#000000"
-	 face="Arial" size="2">See also:</font></b> <a href="add_dictionary_elements.html"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Add</font></a><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">,</font> <a href="modify_dictionary_elements.html"><font style="font-family: Arial;
-	 font-size: 10pt;" face="Arial" size="2">Modify,</font></a> <a href="delete_dictionary_elements.html"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Delete</font></a>
+     style="font-family: Arial; font-size: 10pt; font-weight: bold;" color="#000000"
+     face="Arial" size="2">See also:</font></b> <a href="add_dictionary_elements.html"><font
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Add</font></a><font
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">,</font> <a href="modify_dictionary_elements.html"><font style="font-family: Arial;
+     font-size: 10pt;" face="Arial" size="2">Modify,</font></a> <a href="delete_dictionary_elements.html"><font
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Delete</font></a>
  <font style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-		 size="2">Dictionary Elements.</font> <a href="data_dictionary_toolbar.html"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Toolbar
+         size="2">Dictionary Elements.</font> <a href="data_dictionary_toolbar.html"><font
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Toolbar
  Summary</font></a></p>
 </body>
 </html>

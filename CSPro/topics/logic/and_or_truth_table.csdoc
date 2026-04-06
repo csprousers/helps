@@ -1,21 +1,21 @@
-﻿<title>And/Or Truth Table</title>
+<title>And/Or Truth Table</title>
 
 The truth table summarizes all possible evaluations when two expressions (X and Y) joined by an operator (<logiccolor>and</logiccolor> or <logiccolor>or</logiccolor>) are true, false.
 
 <subheader>and (X and Y)</subheader>
 
 <table 3 center>
-	<cell></cell><cell 2><b>Y</b></cell>
-	<cell><b>X</b></cell><cell><b>true</b></cell><cell><b>false</b></cell>
-	<cell><b>true</b></cell><cell>true</cell><cell>false</cell>
-	<cell><b>false</b></cell><cell>false</cell><cell>false</cell>
+    <cell></cell><cell 2><b>Y</b></cell>
+    <cell><b>X</b></cell><cell><b>true</b></cell><cell><b>false</b></cell>
+    <cell><b>true</b></cell><cell>true</cell><cell>false</cell>
+    <cell><b>false</b></cell><cell>false</cell><cell>false</cell>
 </table>
- 
+
 <subheader>or (X or Y)</subheader>
 
 <table 3 center>
-	<cell></cell><cell 2><b>Y</b></cell>
-	<cell><b>X</b></cell><cell><b>true</b></cell><cell><b>false</b></cell>
-	<cell><b>true</b></cell><cell>true</cell><cell>true</cell>
-	<cell><b>false</b></cell><cell>true</cell><cell>false</cell>
+    <cell></cell><cell 2><b>Y</b></cell>
+    <cell><b>X</b></cell><cell><b>true</b></cell><cell><b>false</b></cell>
+    <cell><b>true</b></cell><cell>true</cell><cell>true</cell>
+    <cell><b>false</b></cell><cell>true</cell><cell>false</cell>
 </table>

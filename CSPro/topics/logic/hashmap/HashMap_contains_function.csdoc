@@ -1,4 +1,4 @@
-﻿<title>HashMap.contains Function</title>
+<title>HashMap.contains Function</title>
 
 
 <subheader>Format</subheader>
@@ -29,19 +29,19 @@ PROC CENSUS_FF
 
 preproc
 
-	// get a list of special cases to output from the external file
-	forcase SPECIAL_CASES_DICT do
-		casesToOutput(SPECIAL_CASE_KEY) = true;
-	endfor;
+    // get a list of special cases to output from the external file
+    forcase SPECIAL_CASES_DICT do
+        casesToOutput(SPECIAL_CASE_KEY) = true;
+    endfor;
 
 PROC CENSUS_LEVEL
 
 preproc
 
-	// do not output this case if it was not in the list of special cases
-	if not casesToOutput.contains(key(CENSUS_DICT)) then
-		skip case;
-	endif;
+    // do not output this case if it was not in the list of special cases
+    if not casesToOutput.contains(key(CENSUS_DICT)) then
+        skip case;
+    endif;
 </logic>
 
 

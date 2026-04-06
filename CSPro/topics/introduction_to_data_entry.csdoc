@@ -1,4 +1,4 @@
-﻿<title>Introduction to Data Entry</title>
+<title>Introduction to Data Entry</title>
 <context IDR_FORM_FRAME />
 
 The Data Entry module allows you to create, using a single dictionary, one or more <link introduction_to_forms_design.csdoc>forms</link> (screens) for data entry. You may also specify the data entry behavior and incorporate <link create_and_edit_logic.csdoc>logic</link> in a program to check for consistency between variables and to set up skip patterns. After you have developed the forms and the program to your satisfaction, use <link CSEntry::introduction_to_data_entry.csdoc>CSEntry</link> to input the data.
@@ -8,8 +8,8 @@ You may enter the data in the office after the information is collected or you m
 This section contains the following information:
 
 <list>
-	<li><link data_entry_philosophies.csdoc>General Data Entry Concepts</link></li>
-	<li><link operator_vs_system_controlled.csdoc>CSPro Data Entry Concepts</link></li>
-	<li><link create_a_new_data_entry_application.csdoc>Create a Data Entry Application</link></li>
-	<li><link change_the_order_of_entry.csdoc>Change Data Entry Characteristics</link></li>
+    <li><link data_entry_philosophies.csdoc>General Data Entry Concepts</link></li>
+    <li><link operator_vs_system_controlled.csdoc>CSPro Data Entry Concepts</link></li>
+    <li><link create_a_new_data_entry_application.csdoc>Create a Data Entry Application</link></li>
+    <li><link change_the_order_of_entry.csdoc>Change Data Entry Characteristics</link></li>
 </list>

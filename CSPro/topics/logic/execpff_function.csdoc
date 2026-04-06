@@ -1,4 +1,4 @@
-﻿<title>ExecPFF Function</title>
+<title>ExecPFF Function</title>
 
 <subheader>Format</subheader>
 
@@ -36,13 +36,13 @@ The function returns a logical value of 1 (true) if the new application is start
 <logic>
 PROC MENU
 
-	if MENU = 1 then
-		execpff("Household.pff", stop);
+    if MENU = 1 then
+        execpff("Household.pff", stop);
 
-	elseif MENU = 2 then
-		execpff("Agriculture.pff", stop);
+    elseif MENU = 2 then
+        execpff("Agriculture.pff", stop);
 
-	endif;
+    endif;
 </logic>
 
 <seealso Pff_exec_function.csdoc execsystem_function_desktop.csdoc execsystem_function_mobile.csdoc />

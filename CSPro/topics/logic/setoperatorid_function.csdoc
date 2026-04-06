@@ -1,4 +1,4 @@
-﻿<title>SetOperatorId Function</title>
+<title>SetOperatorId Function</title>
 
 <subheader>Format</subheader>
 
@@ -19,14 +19,14 @@ The function returns 1 (true) if successful or 0 (false) if the function failed 
 <logic>
 PROC USER_ID
 
-	LF_USER_ID = USER_ID;
+    LF_USER_ID = USER_ID;
 
-	if not loadcase(LOGINS_DICT, LF_USER_ID) then
-		errmsg("Invalid login.");
-		reenter;
-	endif;
+    if not loadcase(LOGINS_DICT, LF_USER_ID) then
+        errmsg("Invalid login.");
+        reenter;
+    endif;
 
-	setoperatorid(strip(LF_USER_NAME));
+    setoperatorid(strip(LF_USER_NAME));
 </logic>
 
 <seealso getoperatorid_function.csdoc />

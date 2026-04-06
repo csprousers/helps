@@ -1,4 +1,4 @@
-﻿<title>Test CSPro Program</title>
+<title>Test CSPro Program</title>
 
 The CSPro program should be thoroughly tested using the file with "invented" data. Earlier in this guide is a discussion of the <logiccolor>errmsg</logiccolor> statement and a technique for listing records before and after imputation. This technique (or a similar one) should be used to verify that imputations are being done properly and under the right circumstances. Each record that contains imputed items should be examined closely. Records containing no imputed items also should be checked to ensure that no imputations were needed.
 

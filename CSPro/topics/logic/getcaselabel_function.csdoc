@@ -1,4 +1,4 @@
-﻿<title>GetCaseLabel Function</title>
+<title>GetCaseLabel Function</title>
 
 <subheader>Format</subheader>
 
@@ -19,11 +19,11 @@ The function returns the label if one has been set, or a blank string if there i
 <logic>
 PROC LAST_FIELD
 
-	string end_query = maketext("Are you finished entering '%s'?", getcaselabel(CENSUS_DICT));
+    string end_query = maketext("Are you finished entering '%s'?", getcaselabel(CENSUS_DICT));
 
-	if accept(end_query, "Yes", "No") <> 1 then
-		reenter;
-	endif;
+    if accept(end_query, "Yes", "No") <> 1 then
+        reenter;
+    endif;
 </logic>
 
 <seealso setcaselabel_function.csdoc key_function.csdoc />

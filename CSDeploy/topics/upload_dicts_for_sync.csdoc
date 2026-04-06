@@ -1,4 +1,4 @@
-﻿<title>Upload Dictionaries for Data Synchronization</title>
+<title>Upload Dictionaries for Data Synchronization</title>
 
 In order to use <link CSPro::synchronization.csdoc>data synchronization</link> to send data captured on mobile devices to a server, you first need to upload the dictionary for the data that you wish synchronize. Uploading your dictionary to the server prepares the server to be able to accept the data when the data is uploaded from a CSPro application in the field. The deployment tool can optionally upload dictionaries in your CSPro applications to the server as part of deployment.
 

@@ -1,4 +1,4 @@
-﻿<title>CurrentKey Function</title>
+<title>CurrentKey Function</title>
 
 <subheader>Format</subheader>
 
@@ -22,9 +22,9 @@ The function returns a string containing the current key.
 <logic>
 PROC LOCATION
 
-	errmsg("Confirm that the farm stand's identifier is: %s", currentkey(FARM_STAND_DICT))
-	select("Correct", continue,
-		   "Incorrect", reenter);
+    errmsg("Confirm that the farm stand's identifier is: %s", currentkey(FARM_STAND_DICT))
+    select("Correct", continue,
+           "Incorrect", reenter);
 </logic>
 
 

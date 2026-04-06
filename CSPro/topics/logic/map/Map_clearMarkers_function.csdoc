@@ -1,4 +1,4 @@
-﻿<title>Map.clearMarkers Function</title>
+<title>Map.clearMarkers Function</title>
 
 
 <subheader>Format</subheader>
@@ -26,18 +26,18 @@ The function returns a logical value of 1 (true).
 // to filter households by status
 function filterMapHouseholds(Map myMap)
 
-	numeric choice = accept("Choose status to show", "Not started", "Partial", "Complete");
-	if choice > 0 then
+    numeric choice = accept("Choose status to show", "Not started", "Partial", "Complete");
+    if choice > 0 then
 
-		// Clear current markers
-		myMap.clearMarkers();
+        // Clear current markers
+        myMap.clearMarkers();
 
-		// Add markers for households matching status chosen
-		forcase HOUSEHOLD_DICT where HOUSEHOLD_STATUS = choice do
-			numeric marker = myMap.addMarker(HOUSEHOLD_LATITUDE, HOUSEHOLD_LONGITUDE);
-			myMap.setMarkerDescription(marker, maketext("%l - %s", HOUSEHOLD_NUMBER, HOUSEHOLD_HEAD_NAME));
-		endfor;
-	endif;
+        // Add markers for households matching status chosen
+        forcase HOUSEHOLD_DICT where HOUSEHOLD_STATUS = choice do
+            numeric marker = myMap.addMarker(HOUSEHOLD_LATITUDE, HOUSEHOLD_LONGITUDE);
+            myMap.setMarkerDescription(marker, maketext("%l - %s", HOUSEHOLD_NUMBER, HOUSEHOLD_HEAD_NAME));
+        endfor;
+    endif;
 
 end;
 </logic>

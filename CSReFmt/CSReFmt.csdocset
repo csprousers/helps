@@ -1,31 +1,31 @@
-﻿{
-  "title": "CSPro Reformat Help", 
+{
+  "title": "CSPro Reformat Help",
   "import": {
-    "tableOfContents": "CSReFmt.toc", 
-    "index": "CSReFmt.index", 
+    "tableOfContents": "CSReFmt.toc",
+    "index": "CSReFmt.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
-    ], 
+    ],
     "contextIds": [
-      "../Shared/afxres.h", 
+      "../Shared/afxres.h",
       "CSReFmt/resource.h"
     ]
-  }, 
+  },
   "settings": {
     "imageDirectories": [
       "images"
-    ], 
+    ],
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

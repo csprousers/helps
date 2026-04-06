@@ -1,4 +1,4 @@
-﻿<title>Introduction to Production Tabulations</title>
+<title>Introduction to Production Tabulations</title>
 
 
 <html>
@@ -7,7 +7,7 @@
 <meta name="generator" content="Adobe RoboHelp 11" />
 <style type="text/css">/*<![CDATA[*/
 body {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 /*]]>*/</style>
 </head>
@@ -16,7 +16,7 @@ body {
 
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Production
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Production
  applications can be run either interactively from CSPro or using batch
  (*.BAT) files to execute one CSPro program after another. For small surveys
  all the tabulation work can usually be done within CSPro. For a population
@@ -24,23 +24,23 @@ body {
  processing.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">When
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">When
  you run tabulation from CSPro, you can produce the entire tabulation in
  one run or you can tabulate in parts, that is one step, or process, at
  a time. The entire tabulation process consists of three processes:</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-left: 11.70pt; margin-top: 0.00pt; margin-bottom: 0.00pt;
-	 text-indent: -11.70pt;"><b><font style="font-family: Arial; font-size: 10pt;
-										 font-weight: bold;" face="Arial"
-										 size="2">Tabulate –</font></b><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">&#160;One
+     text-indent: -11.70pt;"><b><font style="font-family: Arial; font-size: 10pt;
+                                         font-weight: bold;" face="Arial"
+                                         size="2">Tabulate –</font></b><font
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">&#160;One
  or more data files are processed to produce table matrices, row and columns
  of tabulated numbers.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-left: 11.70pt; margin-top: 0.00pt; margin-bottom: 0.00pt;
-	 text-indent: -11.70pt;"><b><font style="font-family: Arial; font-size: 10pt;
-										 font-weight: bold;" face="Arial"
-										 size="2">Consolidate –</font></b>
+     text-indent: -11.70pt;"><b><font style="font-family: Arial; font-size: 10pt;
+                                         font-weight: bold;" face="Arial"
+                                         size="2">Consolidate –</font></b>
  <font style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Tables
  matrices are added together for different lower geographic areas, say
  districts, to produce tables for higher geographic areas such as provinces
@@ -48,23 +48,23 @@ body {
  given.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-left: 11.70pt; margin-top: 0.00pt; margin-bottom: 0.00pt;
-	 text-indent: -13.50pt;"><b><font style="font-family: Arial; font-size: 10pt;
-										 font-weight: bold;" face="Arial"
-										 size="2">Format –</font></b> <font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Table
+     text-indent: -13.50pt;"><b><font style="font-family: Arial; font-size: 10pt;
+                                         font-weight: bold;" face="Arial"
+                                         size="2">Format –</font></b> <font
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Table
  matrices are surrounded with titles, headings, and stubs to be displayed
  or printed for the end user.</font><b><font style="font-family: Arial;
-											 font-size: 10pt; font-weight: bold;"
-											 face="Arial" size="2">&#160;</font></b><b><font
-	 style="font-family: Arial; font-size: 10pt; font-weight: bold;" face="Arial"
-	 size="2">&#160;&#160;</font></b></p>
+                                             font-size: 10pt; font-weight: bold;"
+                                             face="Arial" size="2">&#160;</font></b><b><font
+     style="font-family: Arial; font-size: 10pt; font-weight: bold;" face="Arial"
+     size="2">&#160;&#160;</font></b></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">You
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">You
  can have CSPro</font> <a href="introduction_to_run_in_parts.html"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Run
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Run
  in Parts</font></a> <font style="font-family: Arial; font-size: 10pt;"
-							 face="Arial" size="2">to perform each of these
+                             face="Arial" size="2">to perform each of these
  processes one at a time.</font></p>
 </body>
 </html>

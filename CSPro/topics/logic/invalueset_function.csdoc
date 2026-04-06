@@ -1,4 +1,4 @@
-﻿<title>InValueSet Function</title>
+<title>InValueSet Function</title>
 
 
 <subheader>Format</subheader>
@@ -22,7 +22,7 @@ The function returns a logical value of 1 (true) if the item's value is within t
 
 <logic>
 if not invalueset(P08_MARITAL_STATUS) then
-	errmsg("Marital status is out of range. Value is %d", P08_MARITAL_STATUS);
+    errmsg("Marital status is out of range. Value is %d", P08_MARITAL_STATUS);
 endif;
 </logic>
 
@@ -31,8 +31,8 @@ endif;
 
 <logic>
 if D02_SEX = 1 and not invalueset(D05_CAUSE_DEATH, D05_CAUSE_DEATH_MALE_VS) then
-	errmsg("A man cannot die of %l", D05_CAUSE_DEATH);
-	reenter;
+    errmsg("A man cannot die of %l", D05_CAUSE_DEATH);
+    reenter;
 endif;
 </logic>
 
@@ -46,17 +46,17 @@ PROC P12_EDUCATION
 
 if invalueset(AGE) and !special(AGE) then
 
-	recode AGE :: $ 	-> numeric age_agrees_with_education;
-          < 5  :: 0 	-> true; 	// for ages 0-4, no educ attainment expected
-          5-10 :: 1 	-> true; 	// for ages 5-10, primary attainment expected
-         11-16 :: 2 	-> true; 	// for ages 11-16, secondary attainment expected
-		   16  :: 0,1,2 -> true;	// for ages 17+, any educ attainment allowed
-		                -> false;	// any other combination is incorrect
-	endrecode;
-	
-	if age_agrees_with_education = false then
-		errmsg("Inconsistency between age (%d) and educ attainment (%d)", AGE, $);
-	endif;
+    recode AGE :: $     -> numeric age_agrees_with_education;
+          < 5  :: 0     -> true;    // for ages 0-4, no educ attainment expected
+          5-10 :: 1     -> true;    // for ages 5-10, primary attainment expected
+         11-16 :: 2     -> true;    // for ages 11-16, secondary attainment expected
+           16  :: 0,1,2 -> true;    // for ages 17+, any educ attainment allowed
+                        -> false;   // any other combination is incorrect
+    endrecode;
+
+    if age_agrees_with_education = false then
+        errmsg("Inconsistency between age (%d) and educ attainment (%d)", AGE, $);
+    endif;
 
 endif;
 </logic>

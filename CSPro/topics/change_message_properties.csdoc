@@ -1,4 +1,4 @@
-﻿<title>Change Message Properties</title>
+<title>Change Message Properties</title>
 <context ID_ADD_MESSAGES IDD_PAGE_PROPERTIES_APP_MESSAGE_FILE />
 
 To modify the properties for a <link message_file_mgf.csdoc>message file</link>, open the <b>File</b> menu and select <b>Manage Application Files</b>. Properties include:

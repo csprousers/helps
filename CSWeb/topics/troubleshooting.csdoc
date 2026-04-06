@@ -1,4 +1,4 @@
-﻿<title>Troubleshooting</title>
+<title>Troubleshooting</title>
 
 <subheader>Troubleshooting Problems</subheader>
 
@@ -11,10 +11,10 @@ If you need assistance setting up CSWeb or troubleshooting problems, please emai
 To reconfigure or reset your CSWeb installation:
 
 <list ordered>
-	<li>Locate the CSWeb sources folder in your web server's root directory.</li>
-	<li>Delete the file <b>src/AppBundle/config.php</b>.</li>
-	<li>Delete the contents of <b>var/cache</b> folder.</li>
-	<li>Open your web browser and launch the CSWeb setup page.</li>
+    <li>Locate the CSWeb sources folder in your web server's root directory.</li>
+    <li>Delete the file <b>src/AppBundle/config.php</b>.</li>
+    <li>Delete the contents of <b>var/cache</b> folder.</li>
+    <li>Open your web browser and launch the CSWeb setup page.</li>
 </list>
 
 <subheader>Code or configuration changes not taking effect</subheader>
@@ -52,4 +52,3 @@ The server URL is not correct. The host portion of the URL is probably correct b
 <subheader>Issues with CURL library when using IIS</subheader>
 
 If you run into issues with the CURL library while using IIS a workaround is to disable the curl extension in php.ini and enable allow_url_fopen.
-

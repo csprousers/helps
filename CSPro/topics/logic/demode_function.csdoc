@@ -1,4 +1,4 @@
-﻿<title>DeMode Function</title>
+<title>DeMode Function</title>
 
 <subheader>Format</subheader>
 
@@ -15,16 +15,16 @@ The <logiccolor>demode</logiccolor> function returns the data entry mode and is 
 The function returns an integer but there are also aliased values for the modes. There are three data entry operator modes:
 
 <table 2 header nowrap>
-	<cell>Return Value</cell><cell>Mode</cell>
-	<cell>1</cell><cell><b>add</b> (entering new cases)</cell>
-	<cell>2</cell><cell><b>modify</b> (modifying cases that have already been entered)</cell>
-	<cell>3</cell><cell><b>verify</b> (reentering cases as a check for differences between the first and second entry)</cell>
+    <cell>Return Value</cell><cell>Mode</cell>
+    <cell>1</cell><cell><b>add</b> (entering new cases)</cell>
+    <cell>2</cell><cell><b>modify</b> (modifying cases that have already been entered)</cell>
+    <cell>3</cell><cell><b>verify</b> (reentering cases as a check for differences between the first and second entry)</cell>
 </table>
 
 <subheader>Example</subheader>
 
 <logic>
 if demode() = add then
-	INTERVIEW_START_DATE = sysdate("YYYYMMDD");
+    INTERVIEW_START_DATE = sysdate("YYYYMMDD");
 endif;
 </logic>

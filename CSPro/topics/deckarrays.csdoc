@@ -1,4 +1,4 @@
-﻿<title>DeckArrays</title>
+<title>DeckArrays</title>
 
 "DeckArrays" in CSPro is a simplified way of working with hot decks. It is important to understand the hot deck process well before using DeckArrays, because the functions <logiccolor>getdeck</logiccolor> and <logiccolor>putdeck</logiccolor> automatically handle recodes and thus hide much of the hot deck behavior from the programmer. DeckArrays eliminate the need for the programmer to recode variables to fit within the boundaries of an array, as the recodes are processed automatically based on values defined within a <link value_sets_description.csdoc>value set </link>.
 
@@ -35,63 +35,63 @@ Array HD_HeadAgeFromSpouse(SEX_VS, AGE_VS); // dims = Head's sex + Spouse's age
 
 PROC AGE
 
-	universe RELATIONSHIP = 1; // we're only editing head of households here
+    universe RELATIONSHIP = 1; // we're only editing head of households here
 
-	// assumption: by now RELATIONSHIP and SEX have been edited for the head of HH
+    // assumption: by now RELATIONSHIP and SEX have been edited for the head of HH
 
-	numeric ptrSpouse = seek(RELATIONSHIP = 2);  // code 2 means spouse
-	numeric minSpouseAge = 12;
+    numeric ptrSpouse = seek(RELATIONSHIP = 2);  // code 2 means spouse
+    numeric minSpouseAge = 12;
 
-	if SEX = 1 then
-		minSpouseAge = 15; // males cannot marry until 15
-	endif;
+    if SEX = 1 then
+        minSpouseAge = 15; // males cannot marry until 15
+    endif;
 
-	if AGE in 15:95 then  // the head of HH has a valid age
+    if AGE in 15:95 then  // the head of HH has a valid age
 
-		// Then we can update the hot deck based on the head's sex and HH size.
-		// Note if there are more than 10 persons in the HH we are capping it at 10
+        // Then we can update the hot deck based on the head's sex and HH size.
+        // Note if there are more than 10 persons in the HH we are capping it at 10
 
-		putdeck(HD_HeadAgeFromHHSize,AGE,SEX,low(totocc(),maxHHSize));  // update the hot deck
-		putdeck(HD_HeadAgeFromHHSize,AGE,   ,low(totocc(),maxHHSize));  // same as above
+        putdeck(HD_HeadAgeFromHHSize,AGE,SEX,low(totocc(),maxHHSize));  // update the hot deck
+        putdeck(HD_HeadAgeFromHHSize,AGE,   ,low(totocc(),maxHHSize));  // same as above
 
-		// now let's see if we can update the other hot deck based on the spouse's age
+        // now let's see if we can update the other hot deck based on the spouse's age
 
-		if ptrSpouse <> 0 and AGE(ptrSpouse) in minSpouseAge:95 then
+        if ptrSpouse <> 0 and AGE(ptrSpouse) in minSpouseAge:95 then
 
-			// the spouse has a valid age
+            // the spouse has a valid age
 
-			putdeck(HD_HeadAgeFromSpouse, AGE, SEX, AGE(ptrSpouse)); // update the hot deck
-			putdeck(HD_HeadAgeFromSpouse, AGE,    , AGE(ptrSpouse)); // same as above
+            putdeck(HD_HeadAgeFromSpouse, AGE, SEX, AGE(ptrSpouse)); // update the hot deck
+            putdeck(HD_HeadAgeFromSpouse, AGE,    , AGE(ptrSpouse)); // same as above
 
-			// Because SEX is located in the current record, and we are currently
-			// processing the head of HH, we don't need to pass in the head of HH's
-			// sex--it can be left blank and CSPro will pick the correct value, since
-			// we defined that array position using the SEX_VS above.
+            // Because SEX is located in the current record, and we are currently
+            // processing the head of HH, we don't need to pass in the head of HH's
+            // sex--it can be left blank and CSPro will pick the correct value, since
+            // we defined that array position using the SEX_VS above.
 
-			// Note the age of the spouse must always be passed to putdeck, because
-			// we are updating the hot deck based on the spouse's age, not the head
-			// of HH's age (don't forget we will use this hot deck when the age of
-			// the head is invalid)
+            // Note the age of the spouse must always be passed to putdeck, because
+            // we are updating the hot deck based on the spouse's age, not the head
+            // of HH's age (don't forget we will use this hot deck when the age of
+            // the head is invalid)
 
-		endif;
+        endif;
 
-	else  // the head of household's age is invalid so we must impute it
+    else  // the head of household's age is invalid so we must impute it
 
-		if ptrSpouse <> 0 and AGE(ptrSpouse) in minSpouseAge:95 then
+        if ptrSpouse <> 0 and AGE(ptrSpouse) in minSpouseAge:95 then
 
-			// the spouse has a valid age, use the spouse hot deck to retrieve an age for the head
+            // the spouse has a valid age, use the spouse hot deck to retrieve an age for the head
 
-			impute (AGE, getdeck (HD_HeadAgeFromSpouse, , AGE(ptrSpouse) ) );
+            impute (AGE, getdeck (HD_HeadAgeFromSpouse, , AGE(ptrSpouse) ) );
 
-		else
-			// the spouse didn't have a valid age, use the other hot deck
-			// based on the size of the household
+        else
+            // the spouse didn't have a valid age, use the other hot deck
+            // based on the size of the household
 
-			impute (AGE, getdeck (HD_HeadAgeFromHHSize, low(totocc(),maxHHSize) ) );
+            impute (AGE, getdeck (HD_HeadAgeFromHHSize, low(totocc(),maxHHSize) ) );
 
-		endif;
+        endif;
 
-	endif;
+    endif;
 </logic>
 
 

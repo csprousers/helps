@@ -1,4 +1,4 @@
-﻿<title>Numeric Statement</title>
+<title>Numeric Statement</title>
 
 
 <subheader>Format</subheader>
@@ -22,9 +22,9 @@ While a locally-declared variable cannot have the same name as a globally-declar
 The following variable modifiers apply to numeric variables:
 
 <list>
-	<li><logiccolor>config</logiccolor>: to initialize the variable from <link user_configuration_settings.csdoc>configuration settings</link>.</li>
-	<li><logiccolor>ensure</logiccolor>: to create a variable only when it has not already been declared in a dictionary or logic.</li>
-	<li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
+    <li><logiccolor>config</logiccolor>: to initialize the variable from <link user_configuration_settings.csdoc>configuration settings</link>.</li>
+    <li><logiccolor>ensure</logiccolor>: to create a variable only when it has not already been declared in a dictionary or logic.</li>
+    <li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
 </list>
 
 
@@ -36,16 +36,16 @@ PROC GLOBAL
 numeric NumOfKids, NumOfMoms;
 
 PROC CHILDREN
-	numeric x;
+    numeric x;
 
-	NumOfKids = NumOfKids + 1;
-	x = NumOfKids + NumOfAdults;
+    NumOfKids = NumOfKids + 1;
+    x = NumOfKids + NumOfAdults;
 
 PROC BIOLOGICAL_MOTHER
-	numeric x;	// redeclaring a variable named "x", which is okay
+    numeric x;  // redeclaring a variable named "x", which is okay
 
-	NumOfMoms = NumOfMoms + 1;
-	x = NumOfMoms + NumOfDads;
+    NumOfMoms = NumOfMoms + 1;
+    x = NumOfMoms + NumOfDads;
 </logic>
 
 

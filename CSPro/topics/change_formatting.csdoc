@@ -1,4 +1,4 @@
-﻿<title>Change Formatting</title>
+<title>Change Formatting</title>
 <context ID_FORMAT_BOLD ID_FORMAT_ITALIC ID_FORMAT_UNDERLINE ID_FORMAT_COLOR ID_FORMAT_ALIGN_LEFT ID_FORMAT_ALIGN_CENTER ID_FORMAT_ALIGN_RIGHT ID_FORMAT_OUTLINE_BULLET ID_FORMAT_OUTLINE_NUMBER ID_TEXT_DIR_LTR ID_TEXT_DIR_RTL />
 
 The <link enter_question_text.csdoc>question text editor</link> allows you to apply fonts, colors, and formatting to your question text. You can either use the formatting controls on the toolbar or in the <b>Question Text</b> menu.

@@ -1,4 +1,4 @@
-﻿<title>JSON Primer</title>
+<title>JSON Primer</title>
 
 <link https://en.wikipedia.org/wiki/JSON>JSON</link>, an acronym for <b>J</b>ava<b>S</b>cript <b>O</b>bject <b>N</b>otation, is a format for representing objects in text format using property/value pairs. The format is widely used by web-based applications, and details about the JSON format can be readily found <link https://en.wikipedia.org/wiki/JSON>online</link>. A general overview and an example will demonstrate basic features:
 

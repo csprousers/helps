@@ -1,4 +1,4 @@
-﻿<title>Use the Query Constructor</title>
+<title>Use the Query Constructor</title>
 
 The Query Constructor is accessible by selecting the appropriate option from the <b>View</b> menu, or by pressing <b>Ctrl + Q</b>. The Query Constructor presents a text box where you can enter a SQL query to execute on the paradata log, which is a <link CSPro::sqlite_in_cspro.csdoc>SQLite file</link>. This option is for advanced users to test their queries before adding them to reports.
 

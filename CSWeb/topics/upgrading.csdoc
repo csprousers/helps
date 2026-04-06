@@ -1,4 +1,4 @@
-﻿<title>Upgrading from Previous Versions</title>
+<title>Upgrading from Previous Versions</title>
 
 If you already have an older version CSWeb installed on your server and you want to upgrade to a newer version of CSWeb follow the steps below. <i>The upgrade script with not upgrade to another major release. For example, the upgrade script will not upgrade from CSWeb 7.x to 8.x. Instead, install CSWeb 8.x as a new installation.</i>
 

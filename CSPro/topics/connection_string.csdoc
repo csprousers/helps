@@ -1,4 +1,4 @@
-﻿<title>Connection String</title>
+<title>Connection String</title>
 
 
 A connection string is a text string that details how to open a <link data_sources.csdoc>data source</link>. Typically a connection string is just a file name. Connection strings are used in <link program_information_file_pff.csdoc>PFF files</link> as well as in logic when data sources are specified, such as when using the <logiccolor>setfile</logiccolor> function. A connection string is made up of several components:

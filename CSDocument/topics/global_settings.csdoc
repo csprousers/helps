@@ -1,4 +1,4 @@
-﻿<title>Global Settings</title>
+<title>Global Settings</title>
 <context ID_FILE_GLOBAL_SETTINGS IDD_GLOBAL_SETTINGS />
 
 The Global Settings dialog is accessible by selecting <b>File</b> -> <b>Global Settings</b>. The following settings apply to how CSDocument processes, compiles, and builds documents.

@@ -1,4 +1,4 @@
-﻿<title>Create Helps for Fields</title>
+<title>Create Helps for Fields</title>
 
 In addition to <link question_text.csdoc>question text</link>, a CAPI application can have help information for each question. During entry, the <b>F2</b> key is used to display a question's help text.
 

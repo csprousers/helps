@@ -1,4 +1,4 @@
-﻿<title>Change Fonts or Colors</title>
+<title>Change Fonts or Colors</title>
 
 There is no "global" way to change fonts or colors in a table. The formats of the individual elements, e.g., Title, Spanner, Caption, etc., must be individually modified to replace the 'default' fonts and colors.
 

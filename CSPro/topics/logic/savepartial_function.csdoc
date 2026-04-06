@@ -1,4 +1,4 @@
-﻿<title>SavePartial Function</title>
+<title>SavePartial Function</title>
 
 
 <subheader>Format</subheader>
@@ -29,7 +29,7 @@ PROC LINE_NUMBER
 
 preproc
 
-	savepartial();
+    savepartial();
 </logic>
 
 

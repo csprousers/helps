@@ -1,4 +1,4 @@
-﻿<title>Checking Errors</title>
+<title>Checking Errors</title>
 
 You can check for errors at the time you enter the data or perform <link CSEntry::edit_interactively.csdoc>interactive editing</link> after the data have already been entered.
 
@@ -11,11 +11,11 @@ During data entry the system automatically displays a message if value for item 
 <logic>
 PROC AGE
 
-	if AGE in 0:110 then
-		exit; // the age range is OK, nothing else to do
-	else
-		errmsg("Person %d, has incorrect age: %d", $);
-	endif;
+    if AGE in 0:110 then
+        exit; // the age range is OK, nothing else to do
+    else
+        errmsg("Person %d, has incorrect age: %d", $);
+    endif;
 </logic>
 
 So what does this code do? If a person's age is in the range from 0 to 110 ('0' is for infants born less than 12 months before the Census reference date), then the value is accepted as valid and program flow exits the procedure. If not, then the value is either outside this range or missing, in which case the subsequent <logiccolor>errmsg</logiccolor> statement will be executed, showing the reported age for Person N.
@@ -25,24 +25,24 @@ More involved edits may be needed for other variables. For example, fertility in
 <logic>
 PROC FERTILITY
 
-	if FERTILITY in 0:20 then // there are 0-20 children
-		if SEX = 1 then // if sex = male
-			errmsg("male has fertility info present"); // message displayed
-			reenter; // operator must enter valid value
-		else // sex is not male
-			if SEX = 2 then // if sex = female, check woman's age
-				if AGE < 15 then // 15 = minimum age for fertility
-					errmsg("woman is too young (%d) to have children", AGE);
-				endif;
-			endif;
-		endif;
-	else // fertility is blank
-		if SEX = 2 then // a problem if the woman is "of age"
-			if AGE >= 15 then
-				errmsg("woman aged %d should have fertility info", AGE);
-			endif;
-		endif;
-	endif;
+    if FERTILITY in 0:20 then // there are 0-20 children
+        if SEX = 1 then // if sex = male
+            errmsg("male has fertility info present"); // message displayed
+            reenter; // operator must enter valid value
+        else // sex is not male
+            if SEX = 2 then // if sex = female, check woman's age
+                if AGE < 15 then // 15 = minimum age for fertility
+                    errmsg("woman is too young (%d) to have children", AGE);
+                endif;
+            endif;
+        endif;
+    else // fertility is blank
+        if SEX = 2 then // a problem if the woman is "of age"
+            if AGE >= 15 then
+                errmsg("woman aged %d should have fertility info", AGE);
+            endif;
+        endif;
+    endif;
 </logic>
 
 As you see, the complexity of the logic used to find (and soon, correct!) errors will depend on the specifications provided. In the case where specifications are minimal, it is important that the programmer consider all situations/paths in developing the logic.

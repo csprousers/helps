@@ -1,4 +1,4 @@
-﻿<title>ValueSet.sort Function</title>
+<title>ValueSet.sort Function</title>
 
 
 <subheader>Format</subheader>
@@ -26,7 +26,7 @@ The function returns a logical value of 1 (true).
 ValueSet enumerators_vs;
 
 forcase STAFF_DICT where STAFF_ROLE = 1 do
-	enumerators_vs.add(STAFF_NAME, STAFF_CODE);
+    enumerators_vs.add(STAFF_NAME, STAFF_CODE);
 endfor;
 
 enumerators_vs.sort();

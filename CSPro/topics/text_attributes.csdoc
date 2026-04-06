@@ -1,4 +1,4 @@
-﻿<title>Text Attributes</title>
+<title>Text Attributes</title>
 
 When CSPro reads or writes text files, there are two primary attributes to consider when determining how the contents of the text file are read, and how the contents are written such that they can be successfully processed by other applications:
 

@@ -1,4 +1,4 @@
-﻿<title>SysParm Function</title>
+<title>SysParm Function</title>
 
 <subheader>Format</subheader>
 
@@ -30,9 +30,9 @@ County=5
 <subheader>Example Logic</subheader>
 
 <logic>
-errmsg("%s",sysparm());					// displays Otter
-STATE = tonumber(sysparm("State"));		// sets STATE to 20
-COUNTY = tonumber(sysparm("County"));	// sets COUNTY to 5
+errmsg("%s",sysparm());                 // displays Otter
+STATE = tonumber(sysparm("State"));     // sets STATE to 20
+COUNTY = tonumber(sysparm("County"));   // sets COUNTY to 5
 </logic>
 
 <seealso Pff_getProperty_function.csdoc />

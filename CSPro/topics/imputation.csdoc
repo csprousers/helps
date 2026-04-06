@@ -1,4 +1,4 @@
-﻿<title>Imputation</title>
+<title>Imputation</title>
 
 Imputation refers to the process of providing values for missing, erroneous, or inconsistent responses. For example, if a person's sex code is invalid (i.e., out of range or otherwise unacceptable) or missing; then an appropriate response should be substituted.
 

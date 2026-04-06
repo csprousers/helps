@@ -1,4 +1,4 @@
-﻿<title>Format Row, Column, or Cell Data</title>
+<title>Format Row, Column, or Cell Data</title>
 
 These are really special cases for the general <topic format_a_part_of_a_table.csdoc />. The only difference is that you can select multiple rows (stubs) or columns (heads) to format. This is very useful to modify decimal places, indentation or specific attributes of specific stubs or columns, e.g., make "total" rows bold.
 

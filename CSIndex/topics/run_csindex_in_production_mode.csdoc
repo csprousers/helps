@@ -1,4 +1,4 @@
-﻿<title>Run Index Data in Production Mode</title>
+<title>Run Index Data in Production Mode</title>
 
 To create one or more indices in production mode, you can customize the behavior of Index Data by creating a PFF file.
 
@@ -32,8 +32,8 @@ DuplicateCase=List
 The <pffcolor>[Run Information]</pffcolor> block is required. While <pffcolor>Version</pffcolor> and <pffcolor>AppType</pffcolor> must appear exactly as shown in the example above, there are two optional properties:
 
 <list>
-	<li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only).</li>
-	<li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
+    <li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only).</li>
+    <li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
 </list>
 
 <subheader>[Files]</subheader>
@@ -45,8 +45,8 @@ The <pffcolor>[Files]</pffcolor> block is required and names the file(s) to be i
 The <pffcolor>[Parameters]</pffcolor> block is optional:
 
 <list>
-	<li><pffcolor>ViewListing</pffcolor> determines whether the listing file is viewed. <pffcolor>ViewListing</pffcolor>=Always means that you will always see the generated listing file, while <pffcolor>ViewListing</pffcolor>=Never means that you will never see the generated listing file.</li>
-	<li><pffcolor>DuplicateCase</pffcolor> indicates in which mode the tool should run. You can automatically remove duplicate cases (<pffcolor>DuplicateCase</pffcolor>=KeepFirst) or you can query the user about duplicates to remove (<pffcolor>DuplicateCase</pffcolor>=Prompt or <pffcolor>DuplicateCase</pffcolor>=PromptIfDifferent). Alternatively, if you do not want to output data, you can get a list of duplicates (<pffcolor>DuplicateCase</pffcolor>=List) or you can view the case contents of duplicates (<pffcolor>DuplicateCase</pffcolor>=View).</li>
+    <li><pffcolor>ViewListing</pffcolor> determines whether the listing file is viewed. <pffcolor>ViewListing</pffcolor>=Always means that you will always see the generated listing file, while <pffcolor>ViewListing</pffcolor>=Never means that you will never see the generated listing file.</li>
+    <li><pffcolor>DuplicateCase</pffcolor> indicates in which mode the tool should run. You can automatically remove duplicate cases (<pffcolor>DuplicateCase</pffcolor>=KeepFirst) or you can query the user about duplicates to remove (<pffcolor>DuplicateCase</pffcolor>=Prompt or <pffcolor>DuplicateCase</pffcolor>=PromptIfDifferent). Alternatively, if you do not want to output data, you can get a list of duplicates (<pffcolor>DuplicateCase</pffcolor>=List) or you can view the case contents of duplicates (<pffcolor>DuplicateCase</pffcolor>=View).</li>
 </list>
 
 The default values are <pffcolor>ViewListing</pffcolor>=Always and <pffcolor>DuplicateCase</pffcolor>=List.

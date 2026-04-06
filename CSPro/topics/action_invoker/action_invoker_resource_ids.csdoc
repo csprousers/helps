@@ -1,4 +1,4 @@
-﻿<title>Action Invoker Resource IDs</title>
+<title>Action Invoker Resource IDs</title>
 
 
 The <link action_invoker.csdoc>Action Invoker</link> does not have the concept of <link object_dot_notation.csdoc>objects</link> that can manage resources. Instead, actions that use resources return a numeric resource ID, which is then used to identify the resource in subsequent actions. Resources ID are used in the following areas:

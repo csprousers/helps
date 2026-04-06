@@ -1,11 +1,11 @@
-﻿<title>When Statement</title>
+<title>When Statement</title>
 
 <subheader>Format</subheader>
 
 <logicsyntax>
 when <arg>expression1</arg> 『:: <arg>expression2</arg> :: <arg>expressionN</arg>』;
-     『<arg>value1</arg>』    『:: <arg>value2</arg>      :: <arg>valueN</arg>』		-> <arg>statement</arg>;
-												 『-> <arg>else_statement</arg>;』
+     『<arg>value1</arg>』    『:: <arg>value2</arg>      :: <arg>valueN</arg>』        -> <arg>statement</arg>;
+                                                 『-> <arg>else_statement</arg>;』
 endwhen;
 </logicsyntax>
 
@@ -21,9 +21,9 @@ Each value provided must evaluate to the same type (number or string) as its res
 Values can be provided in the following ways:
 
 <list>
-	<li>An individual value. For example: <logiccolor>50</logiccolor></li>
-	<li>Using the syntax of <link in_operator.csdoc>in lists</link>, meaning that multiple values can be separated with commas and ranges be separated by colons. For example: <logiccolor>1,3,5:9</logiccolor></li>
-	<li>An individual value preceded by one of the following operators: &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;. If such an operator is used, the expression's value is compared with the value using the operator. For example: <logiccolor>&gt;= 65</logiccolor></li>
+    <li>An individual value. For example: <logiccolor>50</logiccolor></li>
+    <li>Using the syntax of <link in_operator.csdoc>in lists</link>, meaning that multiple values can be separated with commas and ranges be separated by colons. For example: <logiccolor>1,3,5:9</logiccolor></li>
+    <li>An individual value preceded by one of the following operators: &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;. If such an operator is used, the expression's value is compared with the value using the operator. For example: <logiccolor>&gt;= 65</logiccolor></li>
 </list>
 
 
@@ -32,13 +32,13 @@ Values can be provided in the following ways:
 <logic>
 function SimpleWhenExample(numeric sex, numeric age)
 
-	when sex :: age;
-		 1   ::        -> errmsg("Male");
-		 2   ::  0: 11 -> errmsg("Young female");
-		 2   :: 12: 49 -> errmsg("Fertile female");
-		 2   :: 50:120 -> errmsg("Older female");
-					   -> errmsg("Invalid sex or age");
-	endwhen;
+    when sex :: age;
+         1   ::        -> errmsg("Male");
+         2   ::  0: 11 -> errmsg("Young female");
+         2   :: 12: 49 -> errmsg("Fertile female");
+         2   :: 50:120 -> errmsg("Older female");
+                       -> errmsg("Invalid sex or age");
+    endwhen;
 
 end;
 
@@ -54,11 +54,11 @@ SimpleWhenExample(2, 150); // Invalid sex or age
 <logic>
 PROC EMPLOYMENT_STATUS
 
-	when EMPLOYMENT_STATUS;
-		  1:2 -> skip to UNEMPLOYMENT;
-		 <= 6 -> skip to INFORMAL_EMPLOYMENT
-		 >= 7 -> skip to FORMAL_EMPLOYMENT;
-	endwhen;
+    when EMPLOYMENT_STATUS;
+          1:2 -> skip to UNEMPLOYMENT;
+         <= 6 -> skip to INFORMAL_EMPLOYMENT
+         >= 7 -> skip to FORMAL_EMPLOYMENT;
+    endwhen;
 </logic>
 
 

@@ -1,4 +1,4 @@
-﻿<title>Data Dictionary File (.dcf)</title>
+<title>Data Dictionary File (.dcf)</title>
 
 Each data file manipulated by CSPro must be described by a data dictionary. The data dictionary file contains information defining the layout of a data file, including levels, records, items, value sets and values.
 

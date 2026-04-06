@@ -1,4 +1,4 @@
-﻿<title>PutNote Function</title>
+<title>PutNote Function</title>
 
 <subheader>Format</subheader>
 
@@ -19,8 +19,8 @@ The function returns a logical value of 1 (true) if successful and 0 (false) oth
 <logic>
 PROC STATUS
 
-	// set the case note to a description of the interview status
-	putnote("Interview Status: " + getlabel(STATUS,STATUS),CENSUS_DICT);
+    // set the case note to a description of the interview status
+    putnote("Interview Status: " + getlabel(STATUS,STATUS),CENSUS_DICT);
 </logic>
 
 <seealso getnote_function.csdoc editnote_function.csdoc />

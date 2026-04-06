@@ -1,4 +1,4 @@
-﻿<title>JavaScript Interface (deprecated)</title>
+<title>JavaScript Interface (deprecated)</title>
 
 <i><b>Feature Upgrade</b>: Starting with <link what_is_new_in_cspro_8_0.csdoc>CSPro 8.0</link>, you should no longer use this feature, the JavaScript interface, that was introduced in <link what_is_new_in_cspro_7_7.csdoc>CSPro 7.7</link>. All functionality, and more, can be achieved using the <link action_invoker_execution_javascript_web.csdoc>Action Invoker</link>. The JavaScript interface will be removed in a future version of CSPro. This documentation is for reference only and should not be used for new projects.</i>
 

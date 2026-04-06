@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "Data Entry User's Guide",
   "documents": [
     { "path": "introduction_to_data_entry.csdoc", "~title": "Introduction to Data Entry" }

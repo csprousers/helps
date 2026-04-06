@@ -1,4 +1,4 @@
-﻿<title>Document Statement</title>
+<title>Document Statement</title>
 
 
 <subheader>Format</subheader>
@@ -18,7 +18,7 @@ The <logiccolor>Document</logiccolor> statement creates a <link Document.csdoc>D
 The following variable modifiers apply to Document objects:
 
 <list>
-	<li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
+    <li><logiccolor>persistent</logiccolor>: to persist the variable's value from one run of an application to another.</li>
 </list>
 
 

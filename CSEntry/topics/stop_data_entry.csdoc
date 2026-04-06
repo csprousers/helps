@@ -1,4 +1,4 @@
-﻿<title>Stop Data Entry</title>
+<title>Stop Data Entry</title>
 <context ID_STOP IDD_DLG_DISCARD IDD_DLG_DISCARD_MOD IDD_DLG_PARTIAL IDD_DLG_PARTIAL_MOD />
 
 To stop data entry press <b>Esc</b> or <b>Ctrl+S</b>; click <b>Stop Button</b> on the toolbar; or from the <b>Mode</b> menu select <b>Stop</b>. This function has no effect if you are already stopped. Stopping add, modify, or verify will make an entry into the operator statistics file.
@@ -8,9 +8,9 @@ If you are at the beginning of a case or have not made any changes, the session 
 If you have started, but not completed entry/modification/verification of a case, two or more of the following choices will appear depending on the mode of data entry and whether partial save is allowed:
 
 <table 2 header nowrap>
-	<cell>Option</cell><cell>Description</cell>
-	<cell><b>Partial Save</b></cell><cell>Partially save the changes you have made so far and remember the field you are on, so you can complete the work later. Available only if partial save is possible. In add and verify mode, all ID fields must have been entered.</cell>
-	<cell><b>Finish</b></cell><cell>Finish the case and save the modifications you have made. Available only in modify mode.</cell>
-	<cell><b>Discard</b></cell><cell>Discard all the changes you have made since you opened this case. Always available.</cell>
-	<cell><b>Cancel</b></cell><cell>Cancel this operation and return to entering the case. Always available.</cell>
+    <cell>Option</cell><cell>Description</cell>
+    <cell><b>Partial Save</b></cell><cell>Partially save the changes you have made so far and remember the field you are on, so you can complete the work later. Available only if partial save is possible. In add and verify mode, all ID fields must have been entered.</cell>
+    <cell><b>Finish</b></cell><cell>Finish the case and save the modifications you have made. Available only in modify mode.</cell>
+    <cell><b>Discard</b></cell><cell>Discard all the changes you have made since you opened this case. Always available.</cell>
+    <cell><b>Cancel</b></cell><cell>Cancel this operation and return to entering the case. Always available.</cell>
 </table>

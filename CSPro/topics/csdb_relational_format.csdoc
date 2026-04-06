@@ -1,4 +1,4 @@
-﻿<title>CSPro DB File Format</title>
+<title>CSPro DB File Format</title>
 
 <link data_source_csdb.csdoc>CSPro DB</link> files are <link sqlite_in_cspro.csdoc>SQLite database</link> files. SQLite is a file-based relational database which means that it is possible to use SQL commands to query the CSPro data. SQL queries can be run from a CSPro program using the <logiccolor>sqlquery</logiccolor> function. In addition, there are also many free viewers for SQLite that allow you to access the data outside of CSPro.
 

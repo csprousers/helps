@@ -1,4 +1,4 @@
-﻿<title>List.length Function</title>
+<title>List.length Function</title>
 
 
 <subheader>Format</subheader>
@@ -26,7 +26,7 @@ List string file_listing;
 dirlist(file_listing, pathname(InputFile), "*.csdb");
 
 if file_listing.length() > 0 then
-	skip to DATA_ALREADY_ENTERED;
+    skip to DATA_ALREADY_ENTERED;
 endif;
 </logic>
 

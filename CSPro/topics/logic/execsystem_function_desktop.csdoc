@@ -1,4 +1,4 @@
-﻿<title>ExecSystem Function (Desktop)</title>
+<title>ExecSystem Function (Desktop)</title>
 
 
 <subheader>Format</subheader>
@@ -17,17 +17,17 @@ The string expression <arg>action</arg> is the name of the application or proces
 An optional set of three <arg>flags</arg> controls the way that the application is opened, and includes the following options:
 
 <table 3 header nowrap>
-	<cell>Category</cell><cell>Flag</cell><cell>Description</cell>
-	<cell>Program Control</cell><cell><b>nowait</b></cell><cell>The application is opened alongside CSPro. This is the default option.</cell>
-	<cell></cell><cell><b>wait</b></cell><cell>The application is opened and CSPro waits until it closes to resume program control.</cell>
-	<cell></cell><cell><b>stop</b></cell><cell>CSPro immediately closes and then opens the application. This is similar to what would occur if using the <logiccolor>stop</logiccolor> function with an argument of 1.</cell>
-	<cell 3>&nbsp;</cell>
-	<cell>Window Size</cell><cell><b>normal</b></cell><cell>The application's window is opened in its normal state. This is the default option.</cell>
-	<cell></cell><cell><b>maximized</b></cell><cell>The application's window is opened in its maximized state.</cell>
-	<cell></cell><cell><b>minimized</b></cell><cell>The application's window is opened in its minimized state.</cell>
-	<cell 3>&nbsp;</cell>
-	<cell>Window Focus</cell><cell><b>focus</b></cell><cell>The application is opened and immediately has focus (is "active"). This is the default option.</cell>
-	<cell></cell><cell><b>nofocus</b></cell><cell>The application is opened without focus.</cell>
+    <cell>Category</cell><cell>Flag</cell><cell>Description</cell>
+    <cell>Program Control</cell><cell><b>nowait</b></cell><cell>The application is opened alongside CSPro. This is the default option.</cell>
+    <cell></cell><cell><b>wait</b></cell><cell>The application is opened and CSPro waits until it closes to resume program control.</cell>
+    <cell></cell><cell><b>stop</b></cell><cell>CSPro immediately closes and then opens the application. This is similar to what would occur if using the <logiccolor>stop</logiccolor> function with an argument of 1.</cell>
+    <cell 3>&nbsp;</cell>
+    <cell>Window Size</cell><cell><b>normal</b></cell><cell>The application's window is opened in its normal state. This is the default option.</cell>
+    <cell></cell><cell><b>maximized</b></cell><cell>The application's window is opened in its maximized state.</cell>
+    <cell></cell><cell><b>minimized</b></cell><cell>The application's window is opened in its minimized state.</cell>
+    <cell 3>&nbsp;</cell>
+    <cell>Window Focus</cell><cell><b>focus</b></cell><cell>The application is opened and immediately has focus (is "active"). This is the default option.</cell>
+    <cell></cell><cell><b>nofocus</b></cell><cell>The application is opened without focus.</cell>
 </table>
 
 A combination of flags can be used, with each set separated by a comma.

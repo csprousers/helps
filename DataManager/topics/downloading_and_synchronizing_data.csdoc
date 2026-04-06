@@ -1,4 +1,4 @@
-﻿<title>Downloading and Synchronizing Data</title>
+<title>Downloading and Synchronizing Data</title>
 
 There are two features within Data Manager that allow you to download or synchronize your data from the server that was used for <link CSPro::synchronization.csdoc>data synchronization</link>. These options only work with CSPro DB (<b>.csdb</b>) or Encrypted CSPro DB (<b>.csdbe</b>) files.
 

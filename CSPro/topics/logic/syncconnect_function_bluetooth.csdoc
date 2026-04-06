@@ -1,4 +1,4 @@
-﻿<title>SyncConnect Function (Bluetooth)</title>
+<title>SyncConnect Function (Bluetooth)</title>
 
 <i>This page describes the <logiccolor>syncconnect</logiccolor> function when connecting, via Bluetooth, to another device running a CSPro application. For generalized information on the function, see the documentation for the <logiccolor>syncconnect</logiccolor> function.</i>
 
@@ -26,10 +26,10 @@ string server_name = "supervisor21";
 // connect to the supervisor's device using Bluetooth
 if syncconnect(Bluetooth, server_name) then
 
-	// send the latest cases to the supervisor's device
-	syncdata(PUT, SURVEY_DICT);
+    // send the latest cases to the supervisor's device
+    syncdata(PUT, SURVEY_DICT);
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

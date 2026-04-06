@@ -1,4 +1,4 @@
-﻿<title>Tabulate Counts or Percents</title>
+<title>Tabulate Counts or Percents</title>
 
 
 <html>
@@ -7,7 +7,7 @@
 <meta name="generator" content="Adobe RoboHelp 11" />
 <style type="text/css">/*<![CDATA[*/
 body {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 /*]]>*/</style>
 </head>
@@ -16,7 +16,7 @@ body {
 
 <p style="text-align: left; margin-left: 0.50pt; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">In
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">In
  addition to the quantitative numbers generated in your tabulations, you
  can choose to show the distribution of values for an item as a percentage
  of either row or column totals, or as a percentage of the table total.
@@ -25,9 +25,9 @@ body {
  not to display values which might identify individual cases.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><b><font
-	 style="font-family: Arial; font-size: 10pt; font-weight: bold;" face="Arial"
-	 size="2">See also:</font></b> <a href="add_percents_to_a_table.html"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Include
+     style="font-family: Arial; font-size: 10pt; font-weight: bold;" face="Arial"
+     size="2">See also:</font></b> <a href="add_percents_to_a_table.html"><font
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Include
  Percents</font></a></p>
 </body>
 </html>

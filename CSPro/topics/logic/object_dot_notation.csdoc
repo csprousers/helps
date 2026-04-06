@@ -1,4 +1,4 @@
-﻿<title>Dot Notation, Logic Objects, and Namespaces</title>
+<title>Dot Notation, Logic Objects, and Namespaces</title>
 
 
 <subheader>Object Dot Notation</subheader>
@@ -60,4 +60,3 @@ string manualText = CS.File.readText(path := "manual.txt");
 
 
 <seealso variables.csdoc />
-

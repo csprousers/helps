@@ -1,4 +1,4 @@
-﻿<title>Interactive GPS Modes</title>
+<title>Interactive GPS Modes</title>
 
 The interactive GPS modes provide three easy-to-use approaches to taking GPS readings. Each mode displays a widget which lessens the need to design and implement a custom interface. Additionally, each interactive GPS mode automatically opens and closes the GPS unit, so there is no need to call <logiccolor>gps(open)</logiccolor> and <logiccolor>gps(close)</logiccolor>. All three interactive GPS modes are only supported on Android.
 

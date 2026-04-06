@@ -1,4 +1,4 @@
-﻿<title>File Action Invoker Namespace</title>
+<title>File Action Invoker Namespace</title>
 
 The <action>File</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to read from and write to files, and to manipulate files on the file system.
 

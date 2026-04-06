@@ -1,4 +1,4 @@
-﻿<title>GetOccLabel Function</title>
+<title>GetOccLabel Function</title>
 
 <subheader>Format</subheader>
 
@@ -24,8 +24,8 @@ The function returns a string containing the occurrence label. If an occurrence 
 
 <logic>
 if EXPENSES > SALES then
-	errmsg("You could not have made a profit on %s if expenses were greater than sales.",getocclabel());
-	reenter;
+    errmsg("You could not have made a profit on %s if expenses were greater than sales.",getocclabel());
+    reenter;
 endif;
 </logic>
 

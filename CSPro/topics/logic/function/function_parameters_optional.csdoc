@@ -1,4 +1,4 @@
-﻿<title>Optional Function Parameters</title>
+<title>Optional Function Parameters</title>
 
 <subheader>Format</subheader>
 
@@ -54,12 +54,12 @@ PROC GLOBAL
 
 function string GetName(optional numeric person_occurrence)
 
-	// if the argument for the occurrence number (person_occurrence) is not passed
-	// to the function, person_occurrence will be notappl and the function will
-	// return the name from the current record; otherwise, person_occurrence will
-	// be defined and the function will return the name for the specified record
+    // if the argument for the occurrence number (person_occurrence) is not passed
+    // to the function, person_occurrence will be notappl and the function will
+    // return the name from the current record; otherwise, person_occurrence will
+    // be defined and the function will return the name for the specified record
 
-	if person_occurrence = notappl then
+    if person_occurrence = notappl then
         person_occurrence = curocc(POPULATION_RECORD);
     endif;
 
@@ -70,8 +70,8 @@ end;
 
 PROC AGE
 
-	errmsg("%s is %d years younger than the head of household (%s)",
-		   GetName(), AGE(1) - AGE, GetName(1));
+    errmsg("%s is %d years younger than the head of household (%s)",
+           GetName(), AGE(1) - AGE, GetName(1));
 </logic>
 
 
@@ -103,8 +103,8 @@ DOB = 19520218;
 ACTUAL_ENUMERATION_DATE = 20200401;
 
 errmsg("%d", CalculateAge(DOB, ACTUAL_ENUMERATION_DATE)); // 68
-errmsg("%d", CalculateAge(DOB)); 						  // 67
-errmsg("%d", CalculateAge()); 							  // 998
+errmsg("%d", CalculateAge(DOB));                          // 67
+errmsg("%d", CalculateAge());                             // 998
 </logic>
 
 

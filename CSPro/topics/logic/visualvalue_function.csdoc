@@ -1,4 +1,4 @@
-﻿<title>VisualValue Function</title>
+<title>VisualValue Function</title>
 
 
 <subheader>Format</subheader>
@@ -29,10 +29,10 @@ PROC INTERVIEW_START_DATE
 
 preproc
 
-	// do not overwrite the start date if modifying the case
-	if visualvalue(INTERVIEW_START_DATE) = notappl then
-		INTERVIEW_START_DATE = sysdate("YYYYMMDD");
-	endif;
+    // do not overwrite the start date if modifying the case
+    if visualvalue(INTERVIEW_START_DATE) = notappl then
+        INTERVIEW_START_DATE = sysdate("YYYYMMDD");
+    endif;
 </logic>
 
 

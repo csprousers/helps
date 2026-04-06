@@ -1,10 +1,10 @@
-﻿<title>Order of Executing Data Entry Events</title>
+<title>Order of Executing Data Entry Events</title>
 
 An "event" is a unit of logic associated with an element of the edit tree, such as a form, a field, etc. The order in which events are executed during data entry is dependent on two factors:
 
 <list ordered>
-	<li>The inherent order imposed by the CSPro software design, and</li>
-	<li>The order in which data items are entered, which is determined by the designer of the application</li>
+    <li>The inherent order imposed by the CSPro software design, and</li>
+    <li>The order in which data items are entered, which is determined by the designer of the application</li>
 </list>
 
 CSPro is based on the concept of a "case" containing one or more types of "collections of information." The "case" will usually correspond to the questionnaire used in the survey or census, and the "collections of information" [or groups of data items] will usually correspond to one or more record types that make up the case/questionnaire. These elements constitute a hierarchy, and in applying logic, CSPro follows this hierarchy; that is, it begins with any logic that pertains to the file itself, and works "down the tree" through the various levels. CSPro executes application events one case at a time. During data entry, <logiccolor>preproc</logiccolor>, <logiccolor>onfocus</logiccolor>, <logiccolor>onoccchange</logiccolor>, <logiccolor>killfocus</logiccolor> and <logiccolor>postproc</logiccolor> statements are executed in the order in which they are encountered.

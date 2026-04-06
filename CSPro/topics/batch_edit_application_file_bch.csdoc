@@ -1,4 +1,4 @@
-﻿<title>Batch Edit Application File (.bch)</title>
+<title>Batch Edit Application File (.bch)</title>
 
 The batch edit application file is the master file for a batch edit application. This file specifies all other files contained in the application, along with other information. CSPro allows you to open, close and save batch edit application files. When you do so, all other files associated with the application are also opened, closed or saved.
 

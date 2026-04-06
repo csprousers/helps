@@ -1,4 +1,4 @@
-﻿<title>Subscripts</title>
+<title>Subscripts</title>
 
 Items with multiple occurrences or in multiple records have one name (the item name), but can occur multiple times. In order to indicate the specific occurrence of the item, you may need to use an index or subscript. The subscripts are integers and are numbered from 1.
 

@@ -1,4 +1,4 @@
-﻿<title>OnKey Character Map</title>
+<title>OnKey Character Map</title>
 <context IDD_ONKEY_CHAR_MAP ID_VIEW_ONKEY_CHAR_MAP />
 
 When editing a data entry application, select <b>View</b> -> <b>OnKey Character Map</b>.

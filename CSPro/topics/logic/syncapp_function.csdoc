@@ -1,4 +1,4 @@
-﻿<title>SyncApp Function</title>
+<title>SyncApp Function</title>
 
 <subheader>Format</subheader>
 
@@ -41,10 +41,10 @@ The function returns a logical value of 1 (true) if the update was successful an
 <logic>
 if syncconnect(CSWeb,"https://www.myserver.org/api") then
 
-	// get the latest versions of the application files from the server
-	syncapp();
+    // get the latest versions of the application files from the server
+    syncapp();
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

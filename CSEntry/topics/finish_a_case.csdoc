@@ -1,4 +1,4 @@
-﻿<title>Finish a Case</title>
+<title>Finish a Case</title>
 
 Normally you finish a case when you have completed entering all the forms in the case. CSEntry asks you whether you want to accept the case or not. If you accept the case, CSEntry immediately writes the case to the data file.
 

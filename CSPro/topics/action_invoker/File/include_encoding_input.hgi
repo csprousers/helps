@@ -1,4 +1,4 @@
-﻿The <arg>encoding</arg> argument allows you to specify how the contents of the file are <link unicode_primer.csdoc>decoded</link> to text. There are few cases where this may be necessary, as the default of reading UTF-8 text will generally meet the needs of most users. Options include:
+The <arg>encoding</arg> argument allows you to specify how the contents of the file are <link unicode_primer.csdoc>decoded</link> to text. There are few cases where this may be necessary, as the default of reading UTF-8 text will generally meet the needs of most users. Options include:
 
 <list>
     <li><logiccolor>"ANSI"</logiccolor>: The contents are decoded as part of the <link "https://en.wikipedia.org/wiki/Windows_code_page">Windows code page</link>.</li>

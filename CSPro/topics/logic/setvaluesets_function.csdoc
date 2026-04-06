@@ -1,4 +1,4 @@
-﻿<title>SetValueSets Function</title>
+<title>SetValueSets Function</title>
 
 <subheader>Format</subheader>
 
@@ -21,16 +21,16 @@ The function returns the number of items whose value sets were changed.
 <logic>
 function ResetLanguage(language)
 
-	if language = 1 then // English
-		setvaluesets("_ENG");
+    if language = 1 then // English
+        setvaluesets("_ENG");
 
-	elseif language = 2 then // Russian
-		setvaluesets("_RUS");
+    elseif language = 2 then // Russian
+        setvaluesets("_RUS");
 
-	else // Tajik
-		setvaluesets("_TAJ");
+    else // Tajik
+        setvaluesets("_TAJ");
 
-	endif;
+    endif;
 
 end;
 </logic>

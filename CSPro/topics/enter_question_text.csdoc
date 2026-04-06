@@ -1,4 +1,4 @@
-﻿<title>Enter Question Text</title>
+<title>Enter Question Text</title>
 <context ID_QSF_EDITOR />
 
 CAPI applications include a <link question_text.csdoc>question text</link> window (at the top of the form). You can customize the text that appears in this window for each question in the application.

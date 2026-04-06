@@ -1,13 +1,13 @@
-﻿<title>Export Statement</title>
+<title>Export Statement</title>
 
 <subheader>Format</subheader>
 
 <logicsyntax>
 export to file_name
-		 『rec_name(record_name | alpha_exp)』
-		 『rec_type(record_name | alpha_exp)』
-		 『case_id (『item_list]』)』
-		 record_item_list;
+         『rec_name(record_name | alpha_exp)』
+         『rec_type(record_name | alpha_exp)』
+         『case_id (『item_list]』)』
+         record_item_list;
 </logicsyntax>
 
 
@@ -42,16 +42,16 @@ PROC CENSUS_2000_DICTIONARY_FF
 
 PROC QUEST // export done at LEVEL procedure
 
-	set behavior() export(SPSS, ItemOnly);
+    set behavior() export(SPSS, ItemOnly);
 
-	do numeric i = 1 until i > totocc(PERSON)
-		if P03_SEX(i) = 2 and P04_AGE(i) in 15:54 then
-			export to SPSS_EXPORT
-					  case_id(PROVINCE, DISTRICT, EA, HU, HH)
-					  LINE(i), P18_BORN(i), P19_LIVING(i), P20_BORN12(i);
-			errmsg("Record exported for female ages 15-54") summary;
-		endif;
-	enddo;
+    do numeric i = 1 until i > totocc(PERSON)
+        if P03_SEX(i) = 2 and P04_AGE(i) in 15:54 then
+            export to SPSS_EXPORT
+                      case_id(PROVINCE, DISTRICT, EA, HU, HH)
+                      LINE(i), P18_BORN(i), P19_LIVING(i), P20_BORN12(i);
+            errmsg("Record exported for female ages 15-54") summary;
+        endif;
+    enddo;
 </logic>
 
 

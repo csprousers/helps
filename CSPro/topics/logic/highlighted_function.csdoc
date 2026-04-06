@@ -1,4 +1,4 @@
-﻿<title>Highlighted Function</title>
+<title>Highlighted Function</title>
 
 
 <subheader>Format</subheader>
@@ -22,9 +22,9 @@ The function returns 1 (true) if the field has been passed (green or yellow) and
 
 <logic>
 if highlighted(HOURS_WORKED) then
-	errmsg("Hours Worked = %d",HOURS_WORKED);
+    errmsg("Hours Worked = %d",HOURS_WORKED);
 else
-	errmsg("Skipped or not entered yet!");
+    errmsg("Skipped or not entered yet!");
 endif;
 </logic>
 

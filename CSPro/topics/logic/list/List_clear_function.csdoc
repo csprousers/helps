@@ -1,4 +1,4 @@
-﻿<title>List.clear Function</title>
+<title>List.clear Function</title>
 
 
 <subheader>Format</subheader>
@@ -27,11 +27,11 @@ List possible_ages;
 
 PROC AGE
 
-	possible_ages.clear();
+    possible_ages.clear();
 
-	do numeric counter = 1 while counter <= curocc()
-		possible_ages.add(AGE);
-	enddo;
+    do numeric counter = 1 while counter <= curocc()
+        possible_ages.add(AGE);
+    enddo;
 </logic>
 
 

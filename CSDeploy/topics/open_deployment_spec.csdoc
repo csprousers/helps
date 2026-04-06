@@ -1,6 +1,6 @@
-﻿<title>Open a Deployment Specification File</title>
+<title>Open a Deployment Specification File</title>
 
 <list ordered>
-	<li>From the <b>File</b> menu, select <b>Open</b>; or press <b>Ctrl+O</b>.</li>
-	<li>Select the specification file (.csds), if you had previously saved one.</li>
+    <li>From the <b>File</b> menu, select <b>Open</b>; or press <b>Ctrl+O</b>.</li>
+    <li>Select the specification file (.csds), if you had previously saved one.</li>
 </list>

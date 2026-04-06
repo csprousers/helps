@@ -1,4 +1,4 @@
-﻿<title>Skip Statement</title>
+<title>Skip Statement</title>
 
 <subheader>Formats</subheader>
 
@@ -31,9 +31,9 @@ Note that the <logiccolor>skip</logiccolor> statement behaves differently from t
 <logic>
 PROC ATTENDED_SCHOOL_YN
 
-	if ATTENDED_SCHOOL_YN = 2 then
-		skip to REASON_NEVER_ATTEND;
-	endif;
+    if ATTENDED_SCHOOL_YN = 2 then
+        skip to REASON_NEVER_ATTEND;
+    endif;
 </logic>
 
 <subheader>Example 2</subheader>
@@ -43,9 +43,9 @@ PROC CHILDREN_EVER_BORN
 
 preproc
 
-	if SEX = 1 or AGE < 12 then
-		skip to next;
-	endif;
+    if SEX = 1 or AGE < 12 then
+        skip to next;
+    endif;
 </logic>
 
 <subheader>Example 3</subheader>
@@ -55,9 +55,9 @@ PROC MARRIAGE_AGE
 
 preproc
 
-	if MARITAL_STATUS = 1 then
-		skip;
-	endif;
+    if MARITAL_STATUS = 1 then
+        skip;
+    endif;
 </logic>
 
 <seealso advance_statement.csdoc ask_statement.csdoc move_statement.csdoc reenter_statement.csdoc />

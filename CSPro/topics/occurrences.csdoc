@@ -1,4 +1,4 @@
-﻿<title>Occurrences</title>
+<title>Occurrences</title>
 <context ID_EDIT_FLATTEN_OCCURRENCES />
 
 This item property defines the number of consecutive repetitions of the item in the data record. The dictionary will reserve space equal to the product of the <link item_length.csdoc>length</link> of the item times the declared number of occurrences for the item.

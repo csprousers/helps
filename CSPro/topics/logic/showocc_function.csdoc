@@ -1,4 +1,4 @@
-﻿<title>ShowOcc Function</title>
+<title>ShowOcc Function</title>
 
 <subheader>Format</subheader>
 
@@ -23,11 +23,11 @@ PROC MYSURVEY_QUEST
 
 preproc
 
-	// fill in and potentially hide occurrence labels for the household roster
-	do numeric ctr = 1 while ctr <= totocc(PERSON_ROSTER)
-		showocc(PERSON_ROSTER(ctr),KEEP_PERSON(ctr));
-		setocclabel(PERSON_ROSTER(ctr),strip(NAME(ctr)));
-	enddo;
+    // fill in and potentially hide occurrence labels for the household roster
+    do numeric ctr = 1 while ctr <= totocc(PERSON_ROSTER)
+        showocc(PERSON_ROSTER(ctr),KEEP_PERSON(ctr));
+        setocclabel(PERSON_ROSTER(ctr),strip(NAME(ctr)));
+    enddo;
 </logic>
 
 <seealso hideocc_function.csdoc setocclabel_function.csdoc occurrence_labels.csdoc />

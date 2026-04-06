@@ -1,4 +1,4 @@
-﻿<title>OnOccChange Statement</title>
+<title>OnOccChange Statement</title>
 
 <subheader>Format</subheader>
 
@@ -21,9 +21,9 @@ PROC PERSON_FORM
 
 onoccchange
 
-	if curocc() > 0 then
-		personName = strip(FIRST_NAME(curocc())) + " " + strip(LAST_NAME(curocc()));
-	endif;
+    if curocc() > 0 then
+        personName = strip(FIRST_NAME(curocc())) + " " + strip(LAST_NAME(curocc()));
+    endif;
 </logic>
 
 <seealso proc_statement.csdoc preproc_statement.csdoc onfocus_statement.csdoc killfocus_statement.csdoc postproc_statement.csdoc order_of_executing_data_entry_events.csdoc order_of_executing_batch_edit_events.csdoc />

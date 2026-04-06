@@ -1,4 +1,4 @@
-﻿<title>Change Windows</title>
+<title>Change Windows</title>
 <context ID_WINDOW_NEXT ID_WINDOW_PREV ID_WINDOW_TILE_VERT ID_WINDOW_TILE_HORZ ID_WINDOW_CASCADE />
 
 <subheader>To cascade windows ...</subheader>

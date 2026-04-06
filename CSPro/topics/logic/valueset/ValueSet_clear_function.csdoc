@@ -1,4 +1,4 @@
-﻿<title>ValueSet.clear Function</title>
+<title>ValueSet.clear Function</title>
 
 
 <subheader>Format</subheader>
@@ -29,9 +29,9 @@ PROC LINE_NUMBER_OF_MOTHER
 
 onfocus
 
-	name_valueset.clear();
+    name_valueset.clear();
 
-	// construct value set...
+    // construct value set...
 </logic>
 
 

@@ -1,4 +1,4 @@
-﻿<title>GetBuffer Function</title>
+<title>GetBuffer Function</title>
 
 <subheader>Format</subheader>
 
@@ -20,6 +20,6 @@ The function returns a string containing the item's contents.
 
 <logic>
 if special(AGE) then
-	errmsg("Person's age is invalid, AGE = %s",getbuffer(AGE));
+    errmsg("Person's age is invalid, AGE = %s",getbuffer(AGE));
 endif;
 </logic>

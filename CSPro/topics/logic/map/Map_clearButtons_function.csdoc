@@ -1,4 +1,4 @@
-﻿<title>Map.clearButtons Function</title>
+<title>Map.clearButtons Function</title>
 
 
 <subheader>Format</subheader>
@@ -30,18 +30,18 @@ numeric showFilter = true;
 // to update the buttons
 function updateButtons(Map myMap)
 
-	// Clear existing buttons
-	myMap.clearButtons();
+    // Clear existing buttons
+    myMap.clearButtons();
 
-	if showAddHousehold then
-		myMap.addTextButton("Add", addHousehold(myMap));
-	endif;
+    if showAddHousehold then
+        myMap.addTextButton("Add", addHousehold(myMap));
+    endif;
 
-	if showFilterButton then
-		myMap.addTextButton("Filter", filterHouseholds(myMap));
-	endif;
+    if showFilterButton then
+        myMap.addTextButton("Filter", filterHouseholds(myMap));
+    endif;
 
-	myMap.addTextButton("Done", closeMap(myMap));
+    myMap.addTextButton("Done", closeMap(myMap));
 end;
 </logic>
 

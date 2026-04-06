@@ -1,4 +1,4 @@
-﻿<title>Message.getText Action</title>
+<title>Message.getText Action</title>
 
 
 <subheader>Format</subheader>
@@ -8,10 +8,10 @@ s = CS.Message.getText(<arg>number</arg> := ...『, <arg>type</arg> := ...』『
 </logicsyntax>
 
 <indent><table 3 header nowrap>
-	<cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-	<cell><arg>number</arg></cell><cell>The message number.</cell><cell>number~!~required</cell>
-	<cell><arg>type</arg></cell><cell>The message set to query.~!~The default value is <logiccolor>"user"</logiccolor>.</cell><cell>string~!~not required</cell>
-	<cell><arg>text</arg></cell><cell>Default text for this message (if not found in a message set).</cell><cell>string~!~not required</cell>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>number</arg></cell><cell>The message number.</cell><cell>number~!~required</cell>
+    <cell><arg>type</arg></cell><cell>The message set to query.~!~The default value is <logiccolor>"user"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>text</arg></cell><cell>Default text for this message (if not found in a message set).</cell><cell>string~!~not required</cell>
 </table></indent>
 
 
@@ -42,8 +42,8 @@ string userMessage = CS.Message.getText(number := 12001,
 
 <color JavaScript>
 const partialSaveMessage = CS.Message.getText({
-	number: 89222,
-	type: "system"
+    number: 89222,
+    type: "system"
 });
 </color>
 

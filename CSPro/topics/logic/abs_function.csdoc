@@ -1,4 +1,4 @@
-﻿<title>ABS Function</title>
+<title>ABS Function</title>
 
 <subheader>Format</subheader>
 
@@ -18,6 +18,6 @@ The function returns the absolute value. If the value of the numeric expression 
 
 <logic>
 if abs(X - target) < abs(Y - target) then
-	// ...
+    // ...
 endif;
 </logic>

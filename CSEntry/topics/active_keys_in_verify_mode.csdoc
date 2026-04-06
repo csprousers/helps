@@ -1,14 +1,14 @@
-﻿<title>Active Keys in Verify Mode</title>
+<title>Active Keys in Verify Mode</title>
 
 Moving around a case in <b>Verify</b> mode is much more restricted than in <b>Add</b> or <b>Modify</b> mode. However, you can use the following keys:
 
 <list>
-	<li>Previous Field (Up arrow, Shift+Tab)</li>
-	<li>Next Field (Down arrow, Enter)</li>
-	<li>End Group Occurrence (/ on numeric keypad) (<b>operator-controlled</b> applications only)</li>
-	<li>End Group (Ctrl + /) (<b>operator-controlled</b> applications only)</li>
-	<li>End Level Occurrence (F12)</li>
-	<li>End Level (Ctrl + F12) (<b>operator-controlled</b> applications only)</li>
-	<li>Previous Persistent (F7)</li>
-	<li>Advance to End (F10) (<b>system-controlled</b> applications only)</li>
+    <li>Previous Field (Up arrow, Shift+Tab)</li>
+    <li>Next Field (Down arrow, Enter)</li>
+    <li>End Group Occurrence (/ on numeric keypad) (<b>operator-controlled</b> applications only)</li>
+    <li>End Group (Ctrl + /) (<b>operator-controlled</b> applications only)</li>
+    <li>End Level Occurrence (F12)</li>
+    <li>End Level (Ctrl + F12) (<b>operator-controlled</b> applications only)</li>
+    <li>Previous Persistent (F7)</li>
+    <li>Advance to End (F10) (<b>system-controlled</b> applications only)</li>
 </list>

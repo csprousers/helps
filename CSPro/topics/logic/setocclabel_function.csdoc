@@ -1,4 +1,4 @@
-﻿<title>SetOccLabel Function</title>
+<title>SetOccLabel Function</title>
 
 <subheader>Format</subheader>
 
@@ -19,7 +19,7 @@ The function returns a logical value of 1 (true) if the label was set successful
 <logic>
 PROC PERSON_NAME
 
-	setocclabel(PERSON_ROSTER,strip(PERSON_NAME));
+    setocclabel(PERSON_ROSTER,strip(PERSON_NAME));
 </logic>
 
 <subheader>Example 2</subheader>
@@ -29,10 +29,10 @@ PROC MYSURVEY_QUEST
 
 preproc
 
-	// fill in occurrence labels for the household roster
-	do numeric ctr = 1 while ctr <= totocc(PERSON_ROSTER)
-		setocclabel(PERSON_ROSTER(ctr),strip(NAME(ctr)));
-	enddo;
+    // fill in occurrence labels for the household roster
+    do numeric ctr = 1 while ctr <= totocc(PERSON_ROSTER)
+        setocclabel(PERSON_ROSTER(ctr),strip(NAME(ctr)));
+    enddo;
 </logic>
 
 <seealso getocclabel_function.csdoc occurrence_labels.csdoc showocc_function.csdoc />

@@ -1,4 +1,4 @@
-﻿<title>Message Action Invoker Namespace</title>
+<title>Message Action Invoker Namespace</title>
 
 The <action>Message</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to work with <link message_file_mgf.csdoc>messages</link> and to format text.
 
@@ -6,9 +6,9 @@ The <action>Message</action> namespace, part of the <link action_invoker.csdoc>A
 <subheader>Functionality</subheader>
 
 <table 2 header nowrap>
-	<cell>Action</cell><cell>Description</cell>
-	<cell><action>Message.formatText</action></cell><cell>Creates a formatted string with inserted values using base text specified by a message number or text.</cell>
-	<cell><action>Message.getText</action></cell><cell>Returns the base (unformatted) text for a message.</cell>
+    <cell>Action</cell><cell>Description</cell>
+    <cell><action>Message.formatText</action></cell><cell>Creates a formatted string with inserted values using base text specified by a message number or text.</cell>
+    <cell><action>Message.getText</action></cell><cell>Returns the base (unformatted) text for a message.</cell>
 </table>
 
 

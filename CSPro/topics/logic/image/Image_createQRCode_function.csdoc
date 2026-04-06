@@ -1,15 +1,15 @@
-﻿<title>Image.createQRCode Function</title>
+<title>Image.createQRCode Function</title>
 
 
 <subheader>Format</subheader>
 
 <logicsyntax>
 b = image_name.createQRCode(<arg>qr_code_text</arg>,
-							『errorCorrection := <arg>ecc</arg>,』
-							『scale := <arg>scale</arg>,』
-							『quietZone := <arg>quiet_zone</arg>,』
-							『darkColor := <arg>dark_color</arg>,』
-							『lightColor := <arg>light_color</arg>』);
+                            『errorCorrection := <arg>ecc</arg>,』
+                            『scale := <arg>scale</arg>,』
+                            『quietZone := <arg>quiet_zone</arg>,』
+                            『darkColor := <arg>dark_color</arg>,』
+                            『lightColor := <arg>light_color</arg>』);
 </logicsyntax>
 
 
@@ -43,11 +43,11 @@ cspro_<definition version_condensed />_barcode.view();
 <logic>
 Image csentry_apk_url;
 csentry_apk_url.createQRCode("<definition google_play />",
-							 errorCorrection := "quartile",
-							 scale := 6,
-							 quietZone := 8,
-							 darkColor := "white",
-							 lightColor := "green");
+                             errorCorrection := "quartile",
+                             scale := 6,
+                             quietZone := 8,
+                             darkColor := "white",
+                             lightColor := "green");
 csentry_apk_url.view();
 </logic>
 

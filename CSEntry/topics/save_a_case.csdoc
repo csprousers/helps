@@ -1,4 +1,4 @@
-﻿<title>Save a Case</title>
+<title>Save a Case</title>
 
 Saving a case will write the contents of the current case to the data file, including any changes you have made. This includes all records, of all types, into which data have been entered. If a record type has been declared <b>Required</b> (in the data dictionary), and no data was entered for this record type, a blank record of the required type will be written as part of the questionnaire, and a message informing you of this action will be issued. There is no way to suppress this message. Records are written to the output file in the order in which the record types were defined in the data dictionary.
 
@@ -9,6 +9,6 @@ If the application is defined as <b>system-controlled</b> type, you may use the 
 The following is true for both operator and system-controlled mode:
 
 <list>
-	<li>If you are in <b>add</b> mode, saving the case will keep you in add mode, allowing the operator to continue adding cases.</li>
-	<li>If you are in <b>modify</b> mode, saving the case will terminate modify mode. The operator has to select a new case and to get back into modify mode.</li>
+    <li>If you are in <b>add</b> mode, saving the case will keep you in add mode, allowing the operator to continue adding cases.</li>
+    <li>If you are in <b>modify</b> mode, saving the case will terminate modify mode. The operator has to select a new case and to get back into modify mode.</li>
 </list>

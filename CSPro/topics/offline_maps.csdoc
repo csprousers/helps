@@ -1,4 +1,4 @@
-﻿<title>Offline Maps</title>
+<title>Offline Maps</title>
 
 The default <link map_base_map_specification.csdoc>base map</link> shown is the Google Maps road map, or Esri's Streets tile layer, depending on which <link mapping_engine.csdoc>mapping engine</link> is used. Both of these maps require an Internet connection. You can instead use an offline map from a file stored on your device. Offline map files store map tiles which are images of pieces of a map at various levels of detail. Rather than downloading map images from an online map provider, CSPro will read the images directly from an offline map file.
 

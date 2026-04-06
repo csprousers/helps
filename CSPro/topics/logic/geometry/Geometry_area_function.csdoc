@@ -1,4 +1,4 @@
-﻿<title>Geometry.area Function</title>
+<title>Geometry.area Function</title>
 
 
 <subheader>Format</subheader>
@@ -29,8 +29,8 @@ Geometry mygeometry;
 // Capture polygon
 if mygeometry.tracePolygon() then
 
-	// Compute the area of the captured polygon
-	AREA = mygeometry.area();
+    // Compute the area of the captured polygon
+    AREA = mygeometry.area();
 
 endif;
 </logic>

@@ -1,4 +1,4 @@
-﻿<title>Map.clear Function</title>
+<title>Map.clear Function</title>
 
 
 <subheader>Format</subheader>
@@ -23,12 +23,12 @@ The function returns a logical value of 1 (true).
 <logic>
 function buildMap(Map myMap)
 
-	// clear all properties
-	myMap.clear();
+    // clear all properties
+    myMap.clear();
 
-	// build the map
-	myMap.setBaseMap("Maps/Suitland.mbtiles");
-	// ...
+    // build the map
+    myMap.setBaseMap("Maps/Suitland.mbtiles");
+    // ...
 
 end;
 </logic>

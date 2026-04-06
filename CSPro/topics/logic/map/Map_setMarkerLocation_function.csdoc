@@ -1,4 +1,4 @@
-﻿<title>Map.setMarkerLocation Function</title>
+<title>Map.setMarkerLocation Function</title>
 
 
 <subheader>Format</subheader>
@@ -32,7 +32,7 @@ numeric markerId;
 // This function is called when the user taps on the map.
 // It moves the marker to the location that the user tapped.
 function mapClicked()
-	mymap.setMarkerLocation(markerId, mymap.getLastClickLatitude(), mymap.getLastClickLongitude());
+    mymap.setMarkerLocation(markerId, mymap.getLastClickLatitude(), mymap.getLastClickLongitude());
 end;
 
 PROC SHOW_MAP

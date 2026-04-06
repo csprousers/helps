@@ -1,10 +1,10 @@
-﻿<title>ForCase Statement</title>
+<title>ForCase Statement</title>
 
 <subheader>Format</subheader>
 
 <logicsyntax>
 forcase <arg>dictionary_name</arg> 『where <arg>condition</arg>』 do
-	// statements
+    // statements
 endfor;
 </logicsyntax>
 
@@ -20,7 +20,7 @@ It is possible, by specifying <link set_access_statement.csdoc>dictionary access
 numeric incomplete_households;
 
 forcase CENSUS_DICT where INTERVIEW_STATUS = 3 do
-	inc(incomplete_households);
+    inc(incomplete_households);
 endfor;
 
 </logic>

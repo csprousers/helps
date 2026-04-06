@@ -1,4 +1,4 @@
-﻿<title>Ask Statement</title>
+<title>Ask Statement</title>
 
 <subheader>Format</subheader>
 
@@ -14,7 +14,7 @@ The <logiccolor>ask</logiccolor> statement is an inversion of the <logiccolor>sk
 
 <logicsyntax>
 if not <arg>condition</arg> then
-	skip to <arg>next_field</arg>;
+    skip to <arg>next_field</arg>;
 endif;
 </logicsyntax>
 
@@ -25,7 +25,7 @@ PROC MARRIAGE_AGE
 
 preproc
 
-	ask if MARITAL_STATUS in 2:5;
+    ask if MARITAL_STATUS in 2:5;
 </logic>
 
 <seealso advance_statement.csdoc move_statement.csdoc reenter_statement.csdoc skip_statement.csdoc />

@@ -1,12 +1,12 @@
-﻿<title>Modes of Operation</title>
+<title>Modes of Operation</title>
 
 There are five different modes or states of operation within CSEntry. They are as follows:
 
 <table 2 header nowrap>
-	<cell>Mode</cell><cell>Description</cell>
-	<cell><b>Add</b></cell><cell>Enter new cases.</cell>
-	<cell><b>Modify</b></cell><cell>Modify previously entered cases.</cell>
-	<cell><b>Verify</b></cell><cell>Verify previously entered cases.</cell>
-	<cell><b>Pause</b></cell><cell>Temporarily stop adding, modifying, or verifying cases. The timer maintained for statistics collection is suspended. Pause is used when you plan to continue from where you left off after a short delay.</cell>
-	<cell><b>Stop</b></cell><cell>Not adding, modifying, or verifying cases in the data file. No form is visible.</cell>
+    <cell>Mode</cell><cell>Description</cell>
+    <cell><b>Add</b></cell><cell>Enter new cases.</cell>
+    <cell><b>Modify</b></cell><cell>Modify previously entered cases.</cell>
+    <cell><b>Verify</b></cell><cell>Verify previously entered cases.</cell>
+    <cell><b>Pause</b></cell><cell>Temporarily stop adding, modifying, or verifying cases. The timer maintained for statistics collection is suspended. Pause is used when you plan to continue from where you left off after a short delay.</cell>
+    <cell><b>Stop</b></cell><cell>Not adding, modifying, or verifying cases in the data file. No form is visible.</cell>
 </table>

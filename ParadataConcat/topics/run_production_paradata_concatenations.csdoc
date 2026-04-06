@@ -1,4 +1,4 @@
-﻿<title>Run Production Paradata Concatenations</title>
+<title>Run Production Paradata Concatenations</title>
 
 You can run production paradata concatenations by using the PFF as a command line parameter for ParadataConcat.exe (the associated filename of this utility). For example, if you name your PFF MyParadataConcat.pff, then you can run the concatenation program by invoking:
 

@@ -1,4 +1,4 @@
-﻿<title>SeekMin Function</title>
+<title>SeekMin Function</title>
 
 
 <html>
@@ -10,21 +10,21 @@
 <body>
 
 <p style="font-family: Arial, sans-serif; font-size: 10pt; margin-left: 12px;
-	 text-indent: -12px;"><span style="font-weight: bold;">Format:</span><br />
+     text-indent: -12px;"><span style="font-weight: bold;">Format:</span><br />
 <span style="font-family: 'Courier New', monospace;">i =</span> <span style="color: #0000ff;
-	 font-weight: bold; font-family: 'Courier New', monospace;">seekmin</span><span
-	 style="font-family: 'Courier New', monospace;">(multiple-item condition[,</span><span
-	 style="font-style: italic; font-family: 'Courier New', monospace;">numeric-expr</span><span
-	 style="font-family: 'Courier New', monospace;">]);</span></p>
+     font-weight: bold; font-family: 'Courier New', monospace;">seekmin</span><span
+     style="font-family: 'Courier New', monospace;">(multiple-item condition[,</span><span
+     style="font-style: italic; font-family: 'Courier New', monospace;">numeric-expr</span><span
+     style="font-family: 'Courier New', monospace;">]);</span></p>
 <p style="font-family: Arial, sans-serif; font-size: 10pt; margin-left: 12px;
-	 text-indent: -12px;"><span style="font-weight: bold;">Description:</span><br />
+     text-indent: -12px;"><span style="font-weight: bold;">Description:</span><br />
 The <span style="font-weight: bold;">seekmin</span> function returns the
  occurrence number of the item with the lowest value that satisfies a certain
  condition in a multiply occurring item. If <span style="font-style: italic;">numeric-expr</span>
  is included, the function starts searching the multiply occurring record
  for a true condition starting at occurrence <span style="font-style: italic;">numeric-expr</span>.</p>
 <p style="font-family: Arial, sans-serif; font-size: 10pt; margin-left: 12px;
-	 text-indent: -12px;"><span style="font-weight: bold;">Return value:</span><br />
+     text-indent: -12px;"><span style="font-weight: bold;">Return value:</span><br />
 The function returns the occurrence number of an item that meets the condition
  or 0 if no such item is found.</p>
 </body>

@@ -1,4 +1,4 @@
-﻿<title>PostProc Statement</title>
+<title>PostProc Statement</title>
 
 <subheader>Format</subheader>
 
@@ -24,8 +24,8 @@ PROC MARITAL_STATUS
 postproc
 
 if MARITAL_STATUS <> 1 and AGE < 12 then
-	errmsg("People aged less than 12 cannot be married.");
-	reenter;
+    errmsg("People aged less than 12 cannot be married.");
+    reenter;
 endif;
 </logic>
 

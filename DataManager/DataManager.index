@@ -1,4 +1,4 @@
-﻿[
+[
   { "path": "shortcut_keys.csdoc", "title": "Accelerator Keys" },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Menu Option" },
   { "path": "navigating_windows.csdoc", "title": "Case View" },
@@ -7,7 +7,7 @@
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Display Options" },
   { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Downloading and Synchronizing Data" },
   { "path": "export_data.csdoc", "title": "Exporting Data to Other Formats",
-    "subindex": [ 
+    "subindex": [
       { "path": "export_data.csdoc", "title": "Comma Delimited (CSV)" },
       { "path": "export_data.csdoc", "title": "Excel" },
       { "path": "export_data.csdoc", "title": "JSON" },

@@ -1,4 +1,4 @@
-﻿<title>EndCase Statement</title>
+<title>EndCase Statement</title>
 
 <subheader>Format</subheader>
 
@@ -14,7 +14,7 @@ The <logiccolor>endcase</logiccolor> statement ends batch editing for the curren
 
 <logic>
 if HHTYPE = 2 then
-	endcase;
+    endcase;
 endif;
 </logic>
 

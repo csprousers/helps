@@ -1,4 +1,4 @@
-﻿<title>Path Action Invoker Namespace</title>
+<title>Path Action Invoker Namespace</title>
 
 The <action>Path</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to query information about the file system or to perform operations on a path.
 

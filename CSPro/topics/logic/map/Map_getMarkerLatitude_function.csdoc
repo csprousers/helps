@@ -1,4 +1,4 @@
-﻿<title>Map.getMarkerLatitude Function</title>
+<title>Map.getMarkerLatitude Function</title>
 
 
 <subheader>Format</subheader>
@@ -23,9 +23,9 @@ The function returns the latitude of the marker in degrees if the marker was fou
 PROC GLOBAL
 
 function onDragMarker(Map dragMap, numeric markerId)
-	numeric lat = dragMap.getMarkerLatitude(markerId);
-	numeric lon = dragMap.getMarkerLongitude(markerId);
-	errmsg("Marker was moved to: %f, %f", lat, lon);
+    numeric lat = dragMap.getMarkerLatitude(markerId);
+    numeric lon = dragMap.getMarkerLongitude(markerId);
+    errmsg("Marker was moved to: %f, %f", lat, lon);
 end;
 
 PROC SHOW_MAP

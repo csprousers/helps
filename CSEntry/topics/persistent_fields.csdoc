@@ -1,4 +1,4 @@
-﻿<title>Persistent Fields</title>
+<title>Persistent Fields</title>
 
 The application designer may define ID fields to be persistent. This usually occurs when the designer does not anticipate the IDs changing between cases within the data file, such as for geographic IDs. The operator will enter values for the first case, and then the system will use those values for the IDs of  subsequent cases.
 

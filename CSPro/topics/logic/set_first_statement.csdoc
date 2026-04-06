@@ -1,4 +1,4 @@
-﻿<title>Set First Statement</title>
+<title>Set First Statement</title>
 
 <subheader>Format</subheader>
 
@@ -17,11 +17,11 @@ The <arg>dictionary_name</arg> refers to either an external dictionary or the ma
 <logic>
 PROC MENU
 
-	set first(SURVEY_DICT);
+    set first(SURVEY_DICT);
 
-	do while loadcase(SURVEY_DICT)
-		// process the cases in ascending key order
-	enddo;
+    do while loadcase(SURVEY_DICT)
+        // process the cases in ascending key order
+    enddo;
 </logic>
 
 <seealso set_last_statement.csdoc locate_function.csdoc set_access_statement.csdoc />

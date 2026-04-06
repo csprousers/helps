@@ -1,4 +1,4 @@
-﻿<title>GetOperatorId Function</title>
+<title>GetOperatorId Function</title>
 
 <subheader>Format</subheader>
 
@@ -20,8 +20,8 @@ The function returns a string containing the operator ID assigned to or entered 
 LF_USER_ID = getoperatorid();
 
 if not loadcase(LOGINS_DICT, LF_USER_ID) then
-	errmsg("You do not have access to this system");
-	stop(1);
+    errmsg("You do not have access to this system");
+    stop(1);
 endif;
 </logic>
 

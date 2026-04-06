@@ -1,4 +1,4 @@
-﻿Only some CSPro types have conversion routines. The following table summarizes conversion routines, with the conversion described in detail at the provided links:
+Only some CSPro types have conversion routines. The following table summarizes conversion routines, with the conversion described in detail at the provided links:
 
 <table 2 header nowrap>
     <cell>CSPro Object</cell><cell>JavaScript Conversion</cell>

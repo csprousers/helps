@@ -1,31 +1,31 @@
-﻿{
-  "title": "CSPro Pack Application Help", 
+{
+  "title": "CSPro Pack Application Help",
   "import": {
-    "tableOfContents": "CSPack.toc", 
-    "index": "CSPack.index", 
+    "tableOfContents": "CSPack.toc",
+    "index": "CSPack.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
-    ], 
+    ],
     "contextIds": [
-      "../Shared/afxres.h", 
+      "../Shared/afxres.h",
       "CSPack/resource.h"
     ]
-  }, 
+  },
   "settings": {
     "imageDirectories": [
       "images"
-    ], 
+    ],
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

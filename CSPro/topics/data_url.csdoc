@@ -1,4 +1,4 @@
-﻿<title>Data URL</title>
+<title>Data URL</title>
 
 A <link "https://en.wikipedia.org/wiki/Data_URI_scheme">data URL</link> is a type of <link "https://en.wikipedia.org/wiki/Uniform_resource_identifier">URI</link> where the type of data, and the data itself, is included in the URL. When accessing a data URL, no request to a server is made since all content is embedded in the URL. Data URLs are generally used as a replacement for small files, as they become unwieldy when used with large content.
 

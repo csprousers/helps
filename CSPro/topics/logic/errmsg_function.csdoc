@@ -1,4 +1,4 @@
-﻿<title>ErrMsg Function</title>
+<title>ErrMsg Function</title>
 
 <subheader>Format 1</subheader>
 
@@ -6,8 +6,8 @@
 i = errmsg(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』)
 
           『select(<arg>caption1</arg>, <arg>fieldname1</arg>『, ..., <arg>caption5</arg>, <arg>fieldname5</arg>』)』
-		  『case ‖ summary』
-		  『denom = <arg>numeric_denom</arg>』;
+          『case ‖ summary』
+          『denom = <arg>numeric_denom</arg>』;
 </logicsyntax>
 
 <subheader>Format 2</subheader>
@@ -16,18 +16,18 @@ i = errmsg(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20<
 i = errmsg(<arg>msg_num</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』)
 
           『select(<arg>caption1</arg>, <arg>fieldname1</arg>『, ..., <arg>caption5</arg>, <arg>fieldname5</arg>』)』
-		  『case ‖ summary』
-		  『denom = <arg>numeric_denom</arg>』;
+          『case ‖ summary』
+          『denom = <arg>numeric_denom</arg>』;
 </logicsyntax>
 
 <subheader>Format 3</subheader>
 
 <logicsyntax>
-i =	errmsg(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』)
+i = errmsg(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』)
 
-		  『select(<arg>caption1</arg>, <arg>fieldname1</arg>『, ..., <arg>caption5</arg>, <arg>fieldname5</arg>』) 『default(<arg>default_option</arg>)』 』
-		  『case ‖ summary』
-		  『denom = <arg>numeric_denom</arg>』;
+          『select(<arg>caption1</arg>, <arg>fieldname1</arg>『, ..., <arg>caption5</arg>, <arg>fieldname5</arg>』) 『default(<arg>default_option</arg>)』 』
+          『case ‖ summary』
+          『denom = <arg>numeric_denom</arg>』;
 </logicsyntax>
 
 <subheader>Description</subheader>
@@ -66,7 +66,7 @@ numeric decimalValue = 12.567;
 
 errmsg( "%f"        , decimalValue);    //   12.567000
 errmsg( "%-10.3f"   , decimalValue);    //   12.567
-errmsg( "%d"        , decimalValue);    //   12			  Note the usage of %d
+errmsg( "%d"        , decimalValue);    //   12           Note the usage of %d
 errmsg( "%10.2f"    , decimalValue);    //        12.57
 errmsg( "%10.3f"    , decimalValue);    //       12.567
 errmsg( "%+10.3f"   , decimalValue);    //      +12.567
@@ -109,7 +109,7 @@ When the <b>select</b> keyword is used, the function returns the sequence number
 <b>Example 2</b>
 
 <logic>if count(PERSONS where RELATIONSHIP=2) > 1 then
-	errmsg("Head of HH has more than 1 spouse") denom = HH_COUNT summary;
+    errmsg("Head of HH has more than 1 spouse") denom = HH_COUNT summary;
 endif;</logic>
 
 

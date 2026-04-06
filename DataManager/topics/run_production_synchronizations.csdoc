@@ -1,4 +1,4 @@
-﻿<title>Run Production Synchronizations</title>
+<title>Run Production Synchronizations</title>
 
 You can run production <link CSPro::synchronization.csdoc>synchronizations</link> by customizing their behavior by creating a PFF file. You then use the PFF as a command line parameter for DataManager.exe (the associated filename of this utility). For example, suppose you've named your Sync PFF <b>Download Data.pff</b>; you can then run the synchronization by invoking this file from the command line:
 

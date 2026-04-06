@@ -1,4 +1,4 @@
-﻿<title>Step 2: Add a Universe</title>
+<title>Step 2: Add a Universe</title>
 
 <subheader>(Exercise 6, Modify the Table)</subheader>
 
@@ -7,12 +7,12 @@ We will now add a universe to our table. A universe is a filter, or a way of res
 <center><image exercise_06_02_tally_attributes_table.png /></center>
 
 <list ordered>
-	<li>Right-click anywhere on the table.</li>
-	<li>Select <b>Tally Attributes (Table)</b> from the right-click menu.</li>
-	<li>In the section of the dialog box marked <b>Universe</b>, type <logiccolor>MARITAL_STATUS = 1</logiccolor>. Be sure to type this correctly, otherwise you may see the message "Invalid Universe Syntax."</li>
-	<li>Click <b>OK</b>.</li>
-	<li>Run the tabulation by clicking <image run_button.png /> on the toolbar, or pressing <b>Ctrl+R</b>. When CSPro prompts you to save the changes, click on <b>Yes</b>.</li>
-	<li>Select <b>MyData.dat</b> as the data file to tabulate, as in the previous exercise.</li>
+    <li>Right-click anywhere on the table.</li>
+    <li>Select <b>Tally Attributes (Table)</b> from the right-click menu.</li>
+    <li>In the section of the dialog box marked <b>Universe</b>, type <logiccolor>MARITAL_STATUS = 1</logiccolor>. Be sure to type this correctly, otherwise you may see the message "Invalid Universe Syntax."</li>
+    <li>Click <b>OK</b>.</li>
+    <li>Run the tabulation by clicking <image run_button.png /> on the toolbar, or pressing <b>Ctrl+R</b>. When CSPro prompts you to save the changes, click on <b>Yes</b>.</li>
+    <li>Select <b>MyData.dat</b> as the data file to tabulate, as in the previous exercise.</li>
 </list>
 
 When you have completed this step you should see a table that looks something like the following. Notice that the counts are lower than in the previous step because we are not counting unmarried people.

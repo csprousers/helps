@@ -1,4 +1,4 @@
-﻿<title>Length Function</title>
+<title>Length Function</title>
 
 
 <subheader>Format</subheader>
@@ -22,8 +22,8 @@ The function returns the length of the string as an integer value. If using an <
 
 <logic>
 alpha (30) NAME = "John Henry";
-length(NAME);					// returns 30
-length(strip(NAME));			// returns 10
+length(NAME);                   // returns 30
+length(strip(NAME));            // returns 10
 </logic>
 
 
@@ -51,9 +51,9 @@ length(usmca_countries); // returns 3;
 Array AgeSexDeckArray(AGE_VS, SEX_VS);
 
 do numeric age_counter = 1 while age_counter <= length(AgeSexDeckArray, 1)
-	do numeric sex_counter = 1 while sex_counter <= length(AgeSexDeckArray, 2)
-		// ...
-	enddo;
+    do numeric sex_counter = 1 while sex_counter <= length(AgeSexDeckArray, 2)
+        // ...
+    enddo;
 enddo;
 </logic>
 

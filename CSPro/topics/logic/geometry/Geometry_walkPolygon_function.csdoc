@@ -1,4 +1,4 @@
-﻿<title>Geometry.walkPolygon Function</title>
+<title>Geometry.walkPolygon Function</title>
 
 
 <subheader>Format</subheader>
@@ -33,8 +33,8 @@ Geometry outline;
 // Have the user walk the outline of a polygon
 if outline.walkPolygon() then
 
-	// Save the outline to a GeoJSON file
-	outline.save("outline.geojson");
+    // Save the outline to a GeoJSON file
+    outline.save("outline.geojson");
 
 endif;
 </logic>
@@ -56,8 +56,8 @@ mymap.setTitle("Tap points on the map to outline the plot");
 // Have the user walk the outline of a polygon using the map
 if plot.walkPolygon(mymap) then
 
-	// Capture the plot area
-	PLOT_AREA = plot.area();
+    // Capture the plot area
+    PLOT_AREA = plot.area();
 
 endif;
 </logic>

@@ -1,4 +1,4 @@
-﻿<title>CSPro Program Structure</title>
+<title>CSPro Program Structure</title>
 
 CSPro logic consists of a collection of events defined as procedures. Each procedure performs the operations you specify using CSPro statements and functions written in the CSPro language. A CSPro program includes a declaration section and one or more procedural sections.
 
@@ -15,14 +15,14 @@ PROC GLOBAL
 
 // variables
 numeric MinAgeDifferenceParent = 12,
-		MaxAgeDifferenceMother = 55;
+        MaxAgeDifferenceMother = 55;
 
 string personName;
 Array validRelationships(5);
 
 // user-defined function
 function numeric IsMotherValidByAge(numeric motherAge, numeric childAge)
-	IsMotherValidByAge = ( ( motherAge - childAge ) in MinAgeDifferenceParent:MaxAgeDifferenceMother );
+    IsMotherValidByAge = ( ( motherAge - childAge ) in MinAgeDifferenceParent:MaxAgeDifferenceMother );
 end;
 </logic>
 
@@ -41,27 +41,27 @@ PROC MYDICT_FF // form file procedure
 
 preproc
 
-	// statements
+    // statements
 
 PROC MYDICT_QUEST // level procedure
 
 preproc
 
-	// statements
+    // statements
 
 postproc
 
-	// statements
+    // statements
 
 PROC HOUSING_FORM // form procedure
 
 postproc
 
-	// statements
+    // statements
 
 PROC INCOME // field procedure
 
-	// statements (implicitly in the postproc)
+    // statements (implicitly in the postproc)
 </logic>
 
 

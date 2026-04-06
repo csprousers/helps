@@ -1,4 +1,4 @@
-﻿<title>Index File (.csidx)</title>
+<title>Index File (.csidx)</title>
 
 The index file stores the case IDs and their physical location in the data file. This helps CSPro applications manipulate the data file more quickly. The file is a <link CSPro::sqlite_in_cspro.csdoc>SQLite database</link> and should not be modified file outside of CSPro.
 

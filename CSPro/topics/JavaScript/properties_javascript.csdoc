@@ -1,4 +1,4 @@
-﻿<title>JavaScript Properties</title>
+<title>JavaScript Properties</title>
 <context IDD_PROPERTIES_JAVASCRIPT />
 
 To view options related to <link javascript_overview.csdoc>JavaScript</link> execution, select <link properties_application.csdoc>Application Properties</link> from the <b>Options</b> menu of a data entry, batch edit, or tabulation application, and then select the <b>JavaScript</b> section.

@@ -1,4 +1,4 @@
-﻿<title>LogText Function</title>
+<title>LogText Function</title>
 
 <subheader>Format</subheader>
 
@@ -21,9 +21,9 @@ The function returns a logical value of 1 (true) if successful and 0 (false) oth
 <logic>
 PROC RELATIONSHIP
 
-	if RELATIONSHIP = 1 then
-		logtext("Head of household registered as %s",strip(NAME));
-	endif;
+    if RELATIONSHIP = 1 then
+        logtext("Head of household registered as %s",strip(NAME));
+    endif;
 </logic>
 
 <seealso paradata.csdoc trace_function.csdoc write_function.csdoc message_formatting_options.csdoc />

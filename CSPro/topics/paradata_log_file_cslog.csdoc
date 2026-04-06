@@ -1,4 +1,4 @@
-﻿<title>Paradata Log File (.cslog)</title>
+<title>Paradata Log File (.cslog)</title>
 
 Paradata log files contain information about <link paradata.csdoc>paradata</link> events stored during an application's run. Files created using this type have the extension <b>.cslog</b> and are not text files so they cannot be viewed in <link tool_list.csdoc>Text Viewer</link>.
 

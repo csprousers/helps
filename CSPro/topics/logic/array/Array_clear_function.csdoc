@@ -1,4 +1,4 @@
-﻿<title>Array.clear Function</title>
+<title>Array.clear Function</title>
 
 
 <subheader>Format</subheader>
@@ -28,7 +28,7 @@ Array string HouseholdMemberNames(100);
 HouseholdMemberNames.clear();
 
 do numeric counter = 1 while counter <= count(NAME)
-	HouseholdMemberNames(counter) = NAME(counter);
+    HouseholdMemberNames(counter) = NAME(counter);
 enddo;
 
 numeric selection = showarray(HouseholdMemberNames, title("Select a Household Member"));

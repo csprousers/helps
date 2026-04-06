@@ -1,4 +1,4 @@
-﻿<title>Operator Statistics File (.log)</title>
+<title>Operator Statistics File (.log)</title>
 
 CSEntry generates an <link CSEntry::understand_operator_statistics.csdoc>operator statistics</link> <b>.log</b> file for the primary data file when executing non-CAPI entry applications. The <b>.log</b> file is a comma-delimited text file with a fixed format. It is designed to be easily imported into other software packages for custom processing. The log file can also be processed by a CSPro application with the appropriate data dictionary. To facilitate this effort, a dictionary matching the <b>.log</b> file's format (shown below) has been provided with the CSPro installation. The dictionary can be found in the Examples folder:
 

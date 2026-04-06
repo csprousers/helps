@@ -1,4 +1,4 @@
-﻿<title>Choose Type of Sort</title>
+<title>Choose Type of Sort</title>
 <context IDD_SORTTYPE ID_OPTIONS_SORT_TYPE />
 
 To select the type of sort you wish to perform, press either <b>Ctrl+T</b>, click on the toolbar button <image sort_type_button.png />, or go to the <b>Options</b> menu and choose <b>Sort Type</b>. The four sort choices available to you are described below.
@@ -62,6 +62,6 @@ This type of sort can be useful for reordering records within cases. For example
 <subheader>Notes</subheader>
 
 <list>
-	<li>Sort Data will test to make sure that single record types (if defined) are present for each questionnaire.</li>
-	<li>For case sorts, Sort Data will also check for duplicate case ID values. If duplicate are encountered, no sort is done but a list of duplicate case IDs is displayed.</li>
+    <li>Sort Data will test to make sure that single record types (if defined) are present for each questionnaire.</li>
+    <li>For case sorts, Sort Data will also check for duplicate case ID values. If duplicate are encountered, no sort is done but a list of duplicate case IDs is displayed.</li>
 </list>

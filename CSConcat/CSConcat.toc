@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "Concatenate Data User's Guide",
   "documents": [
     { "path": "introduction_to_concatenate_data.csdoc", "~title": "Introduction to Concatenate Data" }

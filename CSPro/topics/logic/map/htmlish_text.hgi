@@ -1,4 +1,4 @@
-﻿<indent><table 2>
+<indent><table 2>
     <cell>&ltb&gt</cell><cell><b>bold</b></cell>
     <cell>&lti&gt</cell><cell><i>italic</i>  </cell>
     <cell>&ltu&gt</cell><cell><html><u>underline</u></html></cell>

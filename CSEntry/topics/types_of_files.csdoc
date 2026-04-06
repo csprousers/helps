@@ -1,4 +1,4 @@
-﻿<title>Types of Files</title>
+<title>Types of Files</title>
 
 CSEntry manipulates one primary data file. This is the file where the cases you add, modify or verify are stored. There may be other external data files associated with an application, such as lookup files.
 

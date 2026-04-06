@@ -1,4 +1,4 @@
-﻿<title>Image.takePhoto Function</title>
+<title>Image.takePhoto Function</title>
 
 <subheader>Format</subheader>
 
@@ -12,8 +12,8 @@ b = image_name.takePhoto(『<arg>message</arg>』);
 The <logiccolor>Image.takePhoto</logiccolor> function takes a photo using a device's camera and stores the photo in the <link Image.csdoc>Image</link> object. This function only works on Android devices. The camera UI includes two options:
 
 <list>
-	<li><b>Flip camera icon</b>: Tap to toggle between the front and rear-facing camera.</li>
-	<li><b>Camera icon</b>: Tap to take the photo.</li>
+    <li><b>Flip camera icon</b>: Tap to toggle between the front and rear-facing camera.</li>
+    <li><b>Camera icon</b>: Tap to take the photo.</li>
 </list>
 
 <center><image camera.png /></center>

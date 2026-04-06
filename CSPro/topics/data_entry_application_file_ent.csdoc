@@ -1,4 +1,4 @@
-﻿<title>Data Entry Application File (.ent)</title>
+<title>Data Entry Application File (.ent)</title>
 
 The data entry application file is the master file for data entry application. This file specifies all other files contained in the application, along with other information. CSPro allows you to open, close and save data entry application files. When you do so, all other files associated with the application are also opened, closed or saved.
 

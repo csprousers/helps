@@ -1,31 +1,31 @@
-﻿{
-  "title": "CSPro Compare Data Help", 
+{
+  "title": "CSPro Compare Data Help",
   "import": {
-    "tableOfContents": "CSDiff.toc", 
-    "index": "CSDiff.index", 
+    "tableOfContents": "CSDiff.toc",
+    "index": "CSDiff.index",
     "settings": [
       "../Shared/settings.json"
-    ], 
+    ],
     "definitions": [
       "../Shared/definitions.json"
-    ], 
+    ],
     "contextIds": [
-      "../Shared/afxres.h", 
+      "../Shared/afxres.h",
       "CSDiff/resource.h"
     ]
-  }, 
+  },
   "settings": {
     "imageDirectories": [
       "images"
-    ], 
+    ],
     "pathAdjustments": [
       {
-        "path": "topics", 
-        "adjustment": ".", 
+        "path": "topics",
+        "adjustment": ".",
         "relativeToPath": false
       }
     ]
-  }, 
+  },
   "documents": [
     "topics"
   ]

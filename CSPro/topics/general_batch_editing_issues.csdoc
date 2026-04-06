@@ -1,4 +1,4 @@
-﻿<title>General Batch Editing Issues</title>
+<title>General Batch Editing Issues</title>
 
 This guide has described the CSPro language and has presented examples of various types of edits. However, the job of writing and testing a CSPro program to perform many edits is still a large one. Because of the structure of the CSPro language, this job can be distributed among several people if it is well coordinated.
 

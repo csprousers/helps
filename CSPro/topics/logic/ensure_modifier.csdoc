@@ -1,4 +1,4 @@
-﻿<title>ensure Variable Modifier</title>
+<title>ensure Variable Modifier</title>
 
 
 <subheader>Format</subheader>
@@ -26,19 +26,19 @@ ensure numeric SUPERVISOR_CODE;
 
 PROC DATA_TRANSMISSION
 
-	// assuming that 0 is never a valid value for SUPERVISOR_CODE, then
-	// you could have two synchronization routines in your code, one for
-	// surveys where there are supervisors (and SUPERVISOR_CODE is defined
-	// in a dictionary), and another for surveys where interviewers directly
-	// send data to headquarters
+    // assuming that 0 is never a valid value for SUPERVISOR_CODE, then
+    // you could have two synchronization routines in your code, one for
+    // surveys where there are supervisors (and SUPERVISOR_CODE is defined
+    // in a dictionary), and another for surveys where interviewers directly
+    // send data to headquarters
 
-	if SUPERVISOR_CODE = 0 then
-		SyncWithHeadquarters();
+    if SUPERVISOR_CODE = 0 then
+        SyncWithHeadquarters();
 
-	else
-		SyncWithSupervisor();
+    else
+        SyncWithSupervisor();
 
-	endif;
+    endif;
 </logic>
 
 

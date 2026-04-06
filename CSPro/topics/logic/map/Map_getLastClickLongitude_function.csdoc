@@ -1,4 +1,4 @@
-﻿<title>Map.getLastClickLongitude Function</title>
+<title>Map.getLastClickLongitude Function</title>
 
 
 <subheader>Format</subheader>
@@ -34,7 +34,7 @@ numeric markerId;
 function mapClicked()
     numeric lat = mymap.getLastClickLatitude();
     numeric lon = mymap.getLastClickLongitude();
-	mymap.setMarkerLocation(markerId, lat, lon);
+    mymap.setMarkerLocation(markerId, lat, lon);
 end;
 
 PROC SHOW_MAP

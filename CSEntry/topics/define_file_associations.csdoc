@@ -1,4 +1,4 @@
-﻿<title>Define File Associations</title>
+<title>Define File Associations</title>
 <context IDD_PIFDLG />
 
 The <b>Define File Associations</b> dialog box is presented when an <b>Entry</b> application is executed. This page explains why certain files are asked of you. To find out more about the allowable <i>Source Type</i> options and what can be chosen, see <topic CSPro::data_sources.csdoc />.

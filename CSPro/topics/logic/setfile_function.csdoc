@@ -1,4 +1,4 @@
-﻿<title>SetFile Function</title>
+<title>SetFile Function</title>
 
 
 <subheader>Format</subheader>
@@ -30,9 +30,9 @@ The function returns a logical value of 1 (true) if the new file is successfully
 
 <logic>
 if REGION = 1 then
-	setfile(GEOCODES_DICT, "Eastern.csdb");
+    setfile(GEOCODES_DICT, "Eastern.csdb");
 else
-	setfile(GEOCODES_DICT, "Western.csdb");
+    setfile(GEOCODES_DICT, "Western.csdb");
 endif;
 </logic>
 

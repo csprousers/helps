@@ -1,4 +1,4 @@
-﻿<title>Converting an IMPS Data Entry Application</title>
+<title>Converting an IMPS Data Entry Application</title>
 
 CSPro provides a utility to <link converting_within_imps.csdoc>convert</link> existing IMPS data dictionaries to CSPro. However, there is no automated tool to convert CENTRY application files. You must create the forms again in CSPro.
 

@@ -1,4 +1,4 @@
-﻿<title>GetUserName Function</title>
+<title>GetUserName Function</title>
 
 <subheader>Format</subheader>
 
@@ -21,8 +21,8 @@ PROC USER_NAME
 
 preproc
 
-	USER_NAME = getusername();
-	noinput;
+    USER_NAME = getusername();
+    noinput;
 </logic>
 
 <seealso getdeviceid_function.csdoc getoperatorid_function.csdoc getos_function.csdoc getbluetoothname_function.csdoc />

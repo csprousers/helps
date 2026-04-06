@@ -1,4 +1,4 @@
-﻿<title>GetBluetoothName Function</title>
+<title>GetBluetoothName Function</title>
 
 <subheader>Format</subheader>
 
@@ -28,8 +28,8 @@ PROC DEVICE_NAME
 
 preproc
 
-	DEVICE_NAME = getbluetoothname();
-	noinput;
+    DEVICE_NAME = getbluetoothname();
+    noinput;
 </logic>
 
 

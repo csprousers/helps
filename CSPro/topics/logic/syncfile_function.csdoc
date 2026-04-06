@@ -1,4 +1,4 @@
-﻿<title>SyncFile Function</title>
+<title>SyncFile Function</title>
 
 <subheader>Format</subheader>
 
@@ -15,8 +15,8 @@ The <logiccolor>syncfile</logiccolor> function uploads or downloads one or more 
 The function can upload files from the local device (client) to the server as well as download files from the server. The <arg>direction</arg> argument determines which of these operations is performed. It must be one of the following values:
 
 <list>
-	<li><b>GET</b>: Download files from the server and save them on the client.</li>
-	<li><b>PUT</b>: Upload files from the client to the server.</li>
+    <li><b>GET</b>: Download files from the server and save them on the client.</li>
+    <li><b>PUT</b>: Upload files from the client to the server.</li>
 </list>
 
 The <arg>from_path</arg> argument is a string expression that specifies the path of the file to transfer. If the direction is GET then this is the path of the file on the server to download. If the direction is PUT then this is the full path to the file name on the client to upload.
@@ -36,10 +36,10 @@ The function returns a logical value of 1 (true) if the transfer was successful 
 <logic>
 if syncconnect(CSWeb, "https://www.myserver.org/api") then
 
-	// upload all images in images directory to the images directory on the server
-	syncfile(PUT, "Images/*.jpg", "/Images/");
+    // upload all images in images directory to the images directory on the server
+    syncfile(PUT, "Images/*.jpg", "/Images/");
 
-	syncdisconnect();
+    syncdisconnect();
 
 endif;
 </logic>

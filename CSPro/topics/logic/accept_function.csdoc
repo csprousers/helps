@@ -1,4 +1,4 @@
-﻿<title>Accept Function</title>
+<title>Accept Function</title>
 
 
 <subheader>Format 1</subheader>
@@ -32,10 +32,10 @@ The function returns the index of the choice selected: 1 for the first choice, 2
 numeric manual_choice = accept("Open which manual?", "Supervisor", "Interviewer");
 
 if manual_choice = 1 then
-	view("../Manuals/Supervisor.pdf");
+    view("../Manuals/Supervisor.pdf");
 
 elseif manual_choice = 2 then
-	view("../Manuals/Interviewer.pdf");
+    view("../Manuals/Interviewer.pdf");
 
 endif;
 </logic>
@@ -47,7 +47,7 @@ endif;
 List string household_names;
 
 do numeric ctr = 1 while ctr <= count(NAME)
-	household_names.add(NAME(ctr));
+    household_names.add(NAME(ctr));
 enddo;
 
 numeric interview_index = accept("Select a Person to Interview", household_names);

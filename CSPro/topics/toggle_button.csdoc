@@ -1,4 +1,4 @@
-﻿<title>Toggle Button</title>
+<title>Toggle Button</title>
 
 The Toggle Button capture type allows an enumerator to select a single discrete value or to proceed with no selection. To use the capture type, define a single value set value for a numeric or alphanumeric field. If the user selects the Toggle Button, that value will be selected. If the user does not select the Toggle Button, then the field will be validated with a value of <logiccolor>notappl</logiccolor> for numeric fields and <logiccolor>""</logiccolor> for alphanumeric fields.
 

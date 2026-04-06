@@ -1,4 +1,4 @@
-﻿<title>Change Windows</title>
+<title>Change Windows</title>
 <context ID_WINDOW_CASCADE ID_WINDOW_TILE_HORZ ID_WINDOW_TILE_VERT />
 
 <b>Cascade</b>: Use this command to arrange multiple opened windows in an overlapping fashion.

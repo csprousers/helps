@@ -1,8 +1,8 @@
-﻿{
-  "title": "Batch Edit User's Guide", 
+{
+  "title": "Batch Edit User's Guide",
   "documents": [
-    { "path": "introduction.csdoc", "~title": "Introduction to Batch Applications" }, 
-    { "path": "selecting_a_batch_application_to_run.csdoc", "~title": "Selecting a Batch Application to Run" }, 
+    { "path": "introduction.csdoc", "~title": "Introduction to Batch Applications" },
+    { "path": "selecting_a_batch_application_to_run.csdoc", "~title": "Selecting a Batch Application to Run" },
     { "path": "define_file_associations.csdoc", "~title": "Define File Associations" }
   ]
 }

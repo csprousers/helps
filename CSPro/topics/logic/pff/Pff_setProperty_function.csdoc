@@ -1,4 +1,4 @@
-﻿<title>Pff.setProperty Function</title>
+<title>Pff.setProperty Function</title>
 
 
 <subheader>Format</subheader>
@@ -51,27 +51,27 @@ The function returns a logical value of 1 (true) because it will always successf
 <logic>
 PROC REPORT_SELECTION
 
-	// run the batch application to generate a report on...
-	Pff report_pff;
-	report_pff.load("../Report/Report.pff");
+    // run the batch application to generate a report on...
+    Pff report_pff;
+    report_pff.load("../Report/Report.pff");
 
-	// ...the data file for the selected province and region
-	if REPORT_SELECTION = 1 then
-		report_pff.setProperty("InputData", maketext("../Data/%v%v.csdb", PROVINCE, REGION));
+    // ...the data file for the selected province and region
+    if REPORT_SELECTION = 1 then
+        report_pff.setProperty("InputData", maketext("../Data/%v%v.csdb", PROVINCE, REGION));
 
-	// ...the data files for all the regions in the selected province
-	elseif REPORT_SELECTION = 2 then
-		report_pff.setProperty("InputData", maketext("../Data/%v*.csdb", PROVINCE));
+    // ...the data files for all the regions in the selected province
+    elseif REPORT_SELECTION = 2 then
+        report_pff.setProperty("InputData", maketext("../Data/%v*.csdb", PROVINCE));
 
-	// ...the data files for the entire country
-	else
-		List string data_files_listing;
-		dirlist(data_files_listing, "../Data", filter := "*.csdb", recursive := true);
-		report_pff.setProperty("InputData", data_files_listing);
+    // ...the data files for the entire country
+    else
+        List string data_files_listing;
+        dirlist(data_files_listing, "../Data", filter := "*.csdb", recursive := true);
+        report_pff.setProperty("InputData", data_files_listing);
 
-	endif;
+    endif;
 
-	report_pff.exec();
+    report_pff.exec();
 </logic>
 
 

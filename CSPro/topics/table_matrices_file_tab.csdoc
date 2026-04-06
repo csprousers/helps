@@ -1,4 +1,4 @@
-﻿<title>Table Matrices File (.tab)</title>
+<title>Table Matrices File (.tab)</title>
 
 A table matrices file (.tab) contains the output of tabulated numbers from CSPro's tabulation engine. They are row and column contents of the tabulated tables, without any surrounding text.
 

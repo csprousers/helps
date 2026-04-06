@@ -1,32 +1,32 @@
-﻿<title>Converting within IMPS</title>
+<title>Converting within IMPS</title>
 
 <subheader>Convert an IMPS 3.1 (DOS) data dictionary to CSPro</subheader>
 
 <list>
-	<li>Hypens (dashes) within record and item names are changed to underlines.</li>
-	<li>All common items in IMPS are changed to ID items in CSPro.</li>
-	<li>As CSPro does not allow the use of subitems in the ID section, any subitems found in the IMPS common section will be converted to ID items. This could increase the length of the ID section. Therefore we advise you to check your CSPro dictionary after conversion if you receive a message about "subitems found in common, promoted to ID items". Similarly, if you receive any error messages during the conversion about overlapping items, this is most likely due to the use of subitems in the common block of IMPS.</li>
-	<li>If you have used "NR" as a value name in your IMPS dictionary, it will be converted to the special value <logiccolor>missing</logiccolor>.</li>
-	<li>If you have used "NA" as a value name in your IMPS dictionary, it will be converted to the special value <logiccolor>notappl</logiccolor>.</li>
+    <li>Hypens (dashes) within record and item names are changed to underlines.</li>
+    <li>All common items in IMPS are changed to ID items in CSPro.</li>
+    <li>As CSPro does not allow the use of subitems in the ID section, any subitems found in the IMPS common section will be converted to ID items. This could increase the length of the ID section. Therefore we advise you to check your CSPro dictionary after conversion if you receive a message about "subitems found in common, promoted to ID items". Similarly, if you receive any error messages during the conversion about overlapping items, this is most likely due to the use of subitems in the common block of IMPS.</li>
+    <li>If you have used "NR" as a value name in your IMPS dictionary, it will be converted to the special value <logiccolor>missing</logiccolor>.</li>
+    <li>If you have used "NA" as a value name in your IMPS dictionary, it will be converted to the special value <logiccolor>notappl</logiccolor>.</li>
 </list>
 
 <subheader>Convert an IMPS 4.1 (Windows) data dictionary to CSPro</subheader>
 
 <list>
-	<li>All hierarchy information is lost.</li>
-	<li>All other comments as listed under <i>IMPS 3.1 to CSPro</i> apply.</li>
+    <li>All hierarchy information is lost.</li>
+    <li>All other comments as listed under <i>IMPS 3.1 to CSPro</i> apply.</li>
 </list>
 
 <subheader>Convert a CSPro data dictionary to IMPS 3.1 (DOS)</subheader>
 
 <list>
-	<li>Underlines within record and item names are changed to hyphens (dashes).</li>
-	<li>All level record, item, and value set labels are lost.</li>
-	<li>All value labels are truncated to 16 characters.</li>
-	<li>Value sets, after the first, are converted to subitems.</li>
-	<li>All notes are lost.</li>
-	<li>All level information is lost.</li>
-	<li>All special values (<logiccolor>missing</logiccolor>, <logiccolor>refused</logiccolor>, <logiccolor>notappl</logiccolor>, and <logiccolor>default</logiccolor>) are lost.</li>
+    <li>Underlines within record and item names are changed to hyphens (dashes).</li>
+    <li>All level record, item, and value set labels are lost.</li>
+    <li>All value labels are truncated to 16 characters.</li>
+    <li>Value sets, after the first, are converted to subitems.</li>
+    <li>All notes are lost.</li>
+    <li>All level information is lost.</li>
+    <li>All special values (<logiccolor>missing</logiccolor>, <logiccolor>refused</logiccolor>, <logiccolor>notappl</logiccolor>, and <logiccolor>default</logiccolor>) are lost.</li>
 </list>
 
 CSPro allows the use of long names even though IMPS only allows 16 characters. Therefore, if any of your unique names are longer than 16 characters, you will receive a message for each variable that its name will be truncated to 16.

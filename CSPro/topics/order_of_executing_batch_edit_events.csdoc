@@ -1,4 +1,4 @@
-﻿<title>Order of Executing Batch Edit Events</title>
+<title>Order of Executing Batch Edit Events</title>
 
 CSPro executes the procedures in an application one case at a time. There are two main procedures for each element: a <logiccolor>preproc</logiccolor> and a <logiccolor>postproc</logiccolor>. If the type of procedure is not named, <logiccolor>postproc</logiccolor> is assumed. (There are three additional procedures that are not common in batch applications: onfocus, <logiccolor>killfocus</logiccolor>, and <logiccolor>onoccchange</logiccolor>.)
 

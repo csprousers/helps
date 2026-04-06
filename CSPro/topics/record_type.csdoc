@@ -1,4 +1,4 @@
-﻿<title>Record Type</title>
+<title>Record Type</title>
 
 The Record Type is an alphanumeric item that uniquely identifies a dictionary record, and therefore helps describe your <link data_file_type_structure.csdoc>data file's organization</link>.
 
@@ -9,8 +9,8 @@ For example, a typical Housing and Population census data file would most likely
 If your dictionary contains only one record, you do not need to use a Record Type. Therefore, you can 'reclaim' the location that was set aside for the Record Type as follows:
 
 <list ordered>
-	<li>Select the (ID Items) set or the one-and-only record your dictionary contains from the dictionary tree.</li>
-	<li>In the view on the right, you'll notice the first line is (record type). Only three values are used, Starting Position, Length, and Data Type. Of these three values, you can only modify the start position and length. Change the length to 0. This will effectively "remove" the record type. (You can always reinstate it later by resetting the start position and length to non-zero values).</li>
+    <li>Select the (ID Items) set or the one-and-only record your dictionary contains from the dictionary tree.</li>
+    <li>In the view on the right, you'll notice the first line is (record type). Only three values are used, Starting Position, Length, and Data Type. Of these three values, you can only modify the start position and length. Change the length to 0. This will effectively "remove" the record type. (You can always reinstate it later by resetting the start position and length to non-zero values).</li>
 </list>
 
 Similarly, if you would like to modify the length of the Record Type, proceed as above.

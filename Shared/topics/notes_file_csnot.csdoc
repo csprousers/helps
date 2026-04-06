@@ -1,4 +1,4 @@
-﻿<title>Notes File (.csnot)</title>
+<title>Notes File (.csnot)</title>
 
 The notes file is a text file that contains all notes processed by a data entry application. The file contains the case IDs, the name of the data item to which each note belongs, the name of the operator, the time the note was left, and the note text. There may be multiple note records for a particular field.
 

@@ -1,4 +1,4 @@
-﻿<title>Use Specification Files</title>
+<title>Use Specification Files</title>
 
 If you think that you will frequently run a paradata concatenation on the same set of files, then you can use a specification file that contains the parameters of the concatenation. Once you have <link specify_logs.csdoc>specified</link> the input and output logs, then you can select <b>Save As</b> from the <b>File</b> menu. This will create a <link CSPro::program_information_file_pff.csdoc>PFF file</link> with the specified settings.
 

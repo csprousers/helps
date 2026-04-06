@@ -1,4 +1,4 @@
-﻿<title>Interacting With Other Android Applications</title>
+<title>Interacting With Other Android Applications</title>
 
 Most users using <link android_development.csdoc>CSEntry on Android</link> will be content working within the confines of the CSPro ecosystem. However, some users may want to share data between Android applications. To facilitate this, CSPro supports several ways to interact with other Android applications.
 

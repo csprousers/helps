@@ -1,4 +1,4 @@
-﻿<title>ChangeKeyboard Function</title>
+<title>ChangeKeyboard Function</title>
 
 <i><b>Feature Upgrade</b>: Starting with CSPro 7.1, you should no longer use this function as it may soon be removed from CSPro. To replicate the behavior of the function, you can use the <logiccolor>setproperty</logiccolor> function with the argument <logiccolor>"Keyboard"</logiccolor>.</i>
 
@@ -25,8 +25,8 @@ PROC NAME
 
 onfocus
 
-	// use the Dvorak keyboard to key in the name
-	changekeyboard(NAME,66569);
+    // use the Dvorak keyboard to key in the name
+    changekeyboard(NAME,66569);
 </logic>
 
 <seealso change_keyboard_input.csdoc />

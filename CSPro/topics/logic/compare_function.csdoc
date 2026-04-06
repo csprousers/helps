@@ -1,4 +1,4 @@
-﻿<title>compare Function</title>
+<title>compare Function</title>
 
 
 <subheader>Format</subheader>
@@ -20,9 +20,9 @@ The <logiccolor>compare</logiccolor> function <link string_comparisons.csdoc>com
 The function returns an integer value of:
 
 <table 2 nowrap>
-	<cell>-1</cell><cell>if <arg>string1</arg> would be listed alphabetically before <arg>string2.</arg></cell>
-	<cell>0</cell><cell>if the strings are identical.</cell>
-	<cell>1</cell><cell>if <arg>string1</arg> would be listed alphabetically after <arg>string2</arg>.</cell>
+    <cell>-1</cell><cell>if <arg>string1</arg> would be listed alphabetically before <arg>string2.</arg></cell>
+    <cell>0</cell><cell>if the strings are identical.</cell>
+    <cell>1</cell><cell>if <arg>string1</arg> would be listed alphabetically after <arg>string2</arg>.</cell>
 </table>
 
 
@@ -30,7 +30,7 @@ The function returns an integer value of:
 
 <logic>
 if compare(thisCaseKey, previousCaseKey) = -1 then
-	// ...
+    // ...
 endif;
 </logic>
 
@@ -39,7 +39,7 @@ Direct string comparisons can also be made. For example, the following code is p
 
 <logic>
 if thisCaseKey < previousCaseKey then
-	// ...
+    // ...
 endif;
 </logic>
 

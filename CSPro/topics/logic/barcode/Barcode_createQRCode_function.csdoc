@@ -1,14 +1,14 @@
-﻿<title>Barcode.createQRCode Function</title>
+<title>Barcode.createQRCode Function</title>
 
 <subheader>Format</subheader>
 
 <logicsyntax>
 b = Barcode.createQRCode(<arg>image_filename</arg>, <arg>qr_code_text</arg>,
-						 『errorCorrection := <arg>ecc</arg>,』
-						 『scale := <arg>scale</arg>,』
-						 『quietZone := <arg>quiet_zone</arg>,』
-						 『darkColor := <arg>dark_color</arg>,』
-						 『lightColor := <arg>light_color</arg>』);
+                         『errorCorrection := <arg>ecc</arg>,』
+                         『scale := <arg>scale</arg>,』
+                         『quietZone := <arg>quiet_zone</arg>,』
+                         『darkColor := <arg>dark_color</arg>,』
+                         『lightColor := <arg>light_color</arg>』);
 </logicsyntax>
 
 
@@ -39,12 +39,12 @@ Barcode.createQRCode("cspro-<definition version_condensed />-barcode.png", "Than
 
 <logic>
 Barcode.createQRCode("Google-Play-CSEntry-url.jpg",
-					 "<definition google_play />",
-					 errorCorrection := "quartile",
-					 scale := 6,
-					 quietZone := 8,
-					 darkColor := "white",
-					 lightColor := "green");
+                     "<definition google_play />",
+                     errorCorrection := "quartile",
+                     scale := 6,
+                     quietZone := 8,
+                     darkColor := "white",
+                     lightColor := "green");
 </logic>
 
 <center><barcode text="<definition google_play />" errorCorrection="quartile" scale="6" quietZone="8" darkColor="white" lightColor="green" /></center>

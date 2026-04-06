@@ -1,4 +1,4 @@
-﻿<title>Begin Production Editing</title>
+<title>Begin Production Editing</title>
 
 If no changes to the CSPro program are needed, only the <b>Run</b> program step needs to be executed for each batch of data to be edited. If the data dictionary is changed, then you must re-compile the program before running it again. During production processing, edit statistics for each run should be checked to ensure that the number of errors and imputations are within the normal range.
 

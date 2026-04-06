@@ -1,4 +1,4 @@
-﻿<title>Capture Types</title>
+<title>Capture Types</title>
 
 Occasionally it may be useful to display to an enumerator or keyer the possible values for a given field in a data entry application. For example, if a survey is being conducted on a tablet, it may be easier for an enumerator to use a finger or stylus to select a value, rather than to key the value using the screen's touch keyboard. CSPro's capture types allow for such flexibility by allowing the program to specify the capture type associated with a field.
 
@@ -21,15 +21,15 @@ The CSPro Designer shows the fields that use capture types by coloring the borde
 <subheader>Capture Types</subheader>
 
 <list>
-	<li><link barcode_capture_type.csdoc>Barcode</link> - Capture contents of a barcode.</li>
-	<li><topic check_box.csdoc /> - Capture a multiple response variable.</li>
-	<li><link date_capture_type.csdoc>Date</link> - Capture a date.</li>
-	<li><topic drop_down.csdoc /> - Capture a discrete value as a drop down or a numeric range as a combo box.</li>
-	<li><topic number_pad.csdoc /> - Capture a numeric value.</li>
-	<li><topic radio_button.csdoc /> - Capture a discrete value.</li>
-	<li><topic slider.csdoc /> - Capture a numeric range.</li>
-	<li><topic text_box.csdoc /> - Capture numeric or alphanumeric text. The default capture type.</li>
-	<li><topic toggle_button.csdoc /> - Capture a discrete value with two states (selected and not selected)</li>
+    <li><link barcode_capture_type.csdoc>Barcode</link> - Capture contents of a barcode.</li>
+    <li><topic check_box.csdoc /> - Capture a multiple response variable.</li>
+    <li><link date_capture_type.csdoc>Date</link> - Capture a date.</li>
+    <li><topic drop_down.csdoc /> - Capture a discrete value as a drop down or a numeric range as a combo box.</li>
+    <li><topic number_pad.csdoc /> - Capture a numeric value.</li>
+    <li><topic radio_button.csdoc /> - Capture a discrete value.</li>
+    <li><topic slider.csdoc /> - Capture a numeric range.</li>
+    <li><topic text_box.csdoc /> - Capture numeric or alphanumeric text. The default capture type.</li>
+    <li><topic toggle_button.csdoc /> - Capture a discrete value with two states (selected and not selected)</li>
 </list>
 
 

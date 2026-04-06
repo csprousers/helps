@@ -1,4 +1,4 @@
-﻿<title>List.sort Function</title>
+<title>List.sort Function</title>
 
 
 <subheader>Format</subheader>
@@ -24,7 +24,7 @@ The function returns a logical value of 1 (true). If the List is read-only, the 
 List string children_names;
 
 for POPULATION_RECORD where HH_RELATIONSHIP = 3 do
-	children_names.add(HH_NAME);
+    children_names.add(HH_NAME);
 enddo;
 
 children_names.show("Children in Household (before sort)");

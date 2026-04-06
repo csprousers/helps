@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JSON Conversions: Numeric Values</title>
+<title>CSPro ⇄ JSON Conversions: Numeric Values</title>
 
 
 A CSPro numeric value, created as a <logiccolor>numeric</logiccolor> or as part of an object such as a <logiccolor>List</logiccolor>, is generally represented as a <link JSON_primer.csdoc>JSON</link> number. However, <link special_values.csdoc>special values</link> are serialized as strings:

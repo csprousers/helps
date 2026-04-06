@@ -1,4 +1,4 @@
-﻿<title>Introduction to Compare Data</title>
+<title>Introduction to Compare Data</title>
 <context IDR_MAINFRAME />
 
 <b>Compare Data</b> is a CSPro tool that allows you to compare two data files and identify the differences. The data files must have the same structure, that is, be described by the same CSPro data dictionary.
@@ -10,19 +10,19 @@ This guide contains the following information:
 <subheader>How to ...</subheader>
 
 <list>
-	<li><topic open_a_dictionary_or_specifications_file.csdoc /></li>
-	<li><topic choose_items_to_compare.csdoc /></li>
-	<li><topic run_a_compare.csdoc /></li>
-	<li><topic save_a_compare_specification_file.csdoc /></li>
-	<li><topic run_production_compares.csdoc /></li>
-	<li><topic get_help.csdoc /></li>
+    <li><topic open_a_dictionary_or_specifications_file.csdoc /></li>
+    <li><topic choose_items_to_compare.csdoc /></li>
+    <li><topic run_a_compare.csdoc /></li>
+    <li><topic save_a_compare_specification_file.csdoc /></li>
+    <li><topic run_production_compares.csdoc /></li>
+    <li><topic get_help.csdoc /></li>
 </list>
 
 
 <subheader>Summaries</subheader>
 
 <list>
-	<li><link menu_summary.csdoc>Menu</link></li>
-	<li><link toolbar_summary.csdoc>Toolbar</link></li>
-	<li><link keys_summary.csdoc>Keys</link></li>
+    <li><link menu_summary.csdoc>Menu</link></li>
+    <li><link toolbar_summary.csdoc>Toolbar</link></li>
+    <li><link keys_summary.csdoc>Keys</link></li>
 </list>

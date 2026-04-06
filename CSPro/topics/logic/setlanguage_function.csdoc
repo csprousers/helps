@@ -1,4 +1,4 @@
-﻿<title>SetLanguage Function</title>
+<title>SetLanguage Function</title>
 
 <subheader>Format</subheader>
 
@@ -19,13 +19,13 @@ The function returns 1 (true) if the language exists and the language was succes
 <logic>
 PROC INTERVIEW_LANGUAGE
 
-	if INTERVIEW_LANGUAGE = 1 then
-		setlanguage("EN");
-	elseif INTERVIEW_LANGUAGE = 2 then
-		setlanguage("FR");
-	else
-		setlanguage("ZH");
-	endif;
+    if INTERVIEW_LANGUAGE = 1 then
+        setlanguage("EN");
+    elseif INTERVIEW_LANGUAGE = 2 then
+        setlanguage("FR");
+    else
+        setlanguage("ZH");
+    endif;
 </logic>
 
 <seealso getlanguage_function.csdoc OnChangeLanguage_global_function.csdoc multiple_language_applications.csdoc />

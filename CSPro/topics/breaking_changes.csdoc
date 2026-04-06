@@ -1,4 +1,4 @@
-﻿<title>Breaking Changes</title>
+<title>Breaking Changes</title>
 
 In general, newer versions of CSPro can execute applications and process data created in earlier versions of CSPro, but occasionally there are significant changes that result in behavior that is different from the previous versions. This list, as well as the list of <link deprecated_features.csdoc>deprecated features</link>, is intended to help users keep abreast of changes that may impact their applications or any external tools that were written to interact with CSPro specification and data files. For information on how to handle the changes, review the <link what_is_new_in_cspro.csdoc>What's New</link> page for the version when the change occurred.
 

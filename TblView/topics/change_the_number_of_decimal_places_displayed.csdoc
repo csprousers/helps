@@ -1,4 +1,4 @@
-﻿<title>Change the Number of Decimal Places Displayed</title>
+<title>Change the Number of Decimal Places Displayed</title>
 
 This option is controlled through the Format (Stub), Format (Column Head), or Format (Data Cell) menus since only these have data values associated with them.
 

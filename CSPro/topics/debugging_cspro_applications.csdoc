@@ -1,4 +1,4 @@
-﻿<title>Debugging CSPro Applications</title>
+<title>Debugging CSPro Applications</title>
 
 There is no structured debugger that works with CSPro. However, there are several techniques that can be used to find problems and solve them. One technique is to "comment out" code. By enclosing specific code between <link comments.csdoc>multiline comments</link> <logiccolor>/* */</logiccolor>, you can isolate specific areas of code that may be the cause of your problem.
 

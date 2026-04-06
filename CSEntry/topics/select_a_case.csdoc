@@ -1,10 +1,10 @@
-﻿<title>Select a Case</title>
+<title>Select a Case</title>
 <context ID_FINDCASE IDD_QSRCHDLG />
 
 Use any of the following methods to select a case to view and/or modify.
 
 <list>
-	<li>From the File Tree move the highlight bar to or click on the case ID. Then press <b>Ctrl+M</b> or from the <b>File</b> menu, select <b>Modify Case</b>.</li>
-	<li>From the File Tree, double click on the case ID.</li>
-	<li>Press <b>Ctrl+F</b> or from the <b>Edit</b> menu, select <b>Find Case</b>. Then enter the case ID. The case ID must be entered exactly as it appears in the file.</li>
+    <li>From the File Tree move the highlight bar to or click on the case ID. Then press <b>Ctrl+M</b> or from the <b>File</b> menu, select <b>Modify Case</b>.</li>
+    <li>From the File Tree, double click on the case ID.</li>
+    <li>Press <b>Ctrl+F</b> or from the <b>Edit</b> menu, select <b>Find Case</b>. Then enter the case ID. The case ID must be entered exactly as it appears in the file.</li>
 </list>

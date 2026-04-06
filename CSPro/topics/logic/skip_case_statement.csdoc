@@ -1,4 +1,4 @@
-﻿<title>Skip Case Statement</title>
+<title>Skip Case Statement</title>
 
 <subheader>Format</subheader>
 
@@ -15,7 +15,7 @@ The <logiccolor>skip case</logiccolor> statement ends batch edit processing of t
 <logic>
 // remove any vacant households
 if totocc(PERSON_REC) = 0 then
-	skip case;
+    skip case;
 endif;
 </logic>
 

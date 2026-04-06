@@ -1,4 +1,4 @@
-﻿<title>Proc Statement</title>
+<title>Proc Statement</title>
 
 <subheader>Format</subheader>
 
@@ -17,23 +17,23 @@ PROC ITEM_NAME
 
 preproc
 
-	// statements
+    // statements
 
 onfocus
 
-	// statements
+    // statements
 
 onoccchange
 
-	// statements (only valid for rosters and multiply-occurring forms)
+    // statements (only valid for rosters and multiply-occurring forms)
 
 killfocus
 
-	// statements
+    // statements
 
 postproc
 
-	// statements
+    // statements
 </logic>
 
 <seealso preproc_statement.csdoc onfocus_statement.csdoc onoccchange_statement.csdoc killfocus_statement.csdoc postproc_statement.csdoc order_of_executing_data_entry_events.csdoc order_of_executing_batch_edit_events.csdoc />

@@ -1,18 +1,18 @@
-﻿<title>Errors in Censuses and Surveys</title>
+<title>Errors in Censuses and Surveys</title>
 
 <subheader>Type of Errors</subheader>
 
 Editing is the process of maximizing the quality of data, in the shortest time possible, while minimizing the introduction of new errors. The process involves a number of sequential, interrelated activities as shown below. During each activity errors may occur.
 
 <table 2 header>
-	<cell>Activity</cell><cell>Possible Errors</cell>
-	<cell>Enumeration</cell><cell>Respondent Errors, Enumerator Errors</cell>
-	<cell>Field Editing</cell><cell>Field Checking, Office Checking</cell>
-	<cell>Office Coding</cell><cell>Miscodes</cell>
-	<cell>Data Capture</cell><cell>Miskeys, Incorrectly Scanned</cell>
-	<cell>Computer Editing</cell><cell>Logic Errors, Misallocation, Miscorrection</cell>
-	<cell>Tabulation</cell><cell>Distribution of Unknowns</cell>
-	<cell>Publication</cell><cell>Misprints</cell>
+    <cell>Activity</cell><cell>Possible Errors</cell>
+    <cell>Enumeration</cell><cell>Respondent Errors, Enumerator Errors</cell>
+    <cell>Field Editing</cell><cell>Field Checking, Office Checking</cell>
+    <cell>Office Coding</cell><cell>Miscodes</cell>
+    <cell>Data Capture</cell><cell>Miskeys, Incorrectly Scanned</cell>
+    <cell>Computer Editing</cell><cell>Logic Errors, Misallocation, Miscorrection</cell>
+    <cell>Tabulation</cell><cell>Distribution of Unknowns</cell>
+    <cell>Publication</cell><cell>Misprints</cell>
 </table>
 
 <subheader>Errors in Enumeration</subheader>

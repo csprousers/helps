@@ -1,17 +1,17 @@
-﻿<title>Run Reformat</title>
+<title>Run Reformat</title>
 
 Once you specify two dictionaries, the tool displays the differences between the two dictionaries. You can toggle between viewing dictionary names and labels by selecting <b>Dictionary Names</b> from the <b>View</b> menu. If you would like to only see changes that will potentially result in destructive changes (e.g., decreased occurrences, reduced item length, etc.), you can select <b>Show Only Destructive Changes</b> from the <b>View</b> menu. These destructive changes are shown in red.
 
 After you have confirmed that you would like to reformat data with the displayed changes:
 
 <list ordered>
-	<li>Click on the <b>Reformat Data</b> button. The tool will create a new reformatted data file.</li>
-	<li>A summary report with additional information about the newly created file&mdash;such as the number of records input and output by record type and a listing of invalid records&mdash;will be displayed.</li>
+    <li>Click on the <b>Reformat Data</b> button. The tool will create a new reformatted data file.</li>
+    <li>A summary report with additional information about the newly created file&mdash;such as the number of records input and output by record type and a listing of invalid records&mdash;will be displayed.</li>
 </list>
 
 <subheader>Tips</subheader>
 
 <list>
-	<li>Newly defined fields in the output data file are blank filled.</li>
-	<li>Record and item occurrences are dropped if the number of occurrences in the output file is less than the number of input occurrences.</li>
+    <li>Newly defined fields in the output data file are blank filled.</li>
+    <li>Record and item occurrences are dropped if the number of occurrences in the output file is less than the number of input occurrences.</li>
 </list>

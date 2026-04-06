@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "CSDocument User's Guide",
   "documents": [
     { "path": "introduction.csdoc", "~title": "Introduction to CSDocument" }

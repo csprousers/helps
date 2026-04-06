@@ -1,4 +1,4 @@
-﻿<title>Question Text Properties</title>
+<title>Question Text Properties</title>
 <context IDD_QSF_PROPERTIES ID_QSF_PROPERTIES />
 
 To modify settings used by the CSPro Designer when <link enter_question_text.csdoc>editing</link> <link question_text.csdoc>question text</link>, select <b>Properties</b> from the <b>Question Text</b> menu.

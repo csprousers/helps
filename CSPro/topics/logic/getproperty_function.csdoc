@@ -1,4 +1,4 @@
-﻿<title>GetProperty Function</title>
+<title>GetProperty Function</title>
 
 <subheader>Format</subheader>
 
@@ -27,9 +27,9 @@ PROC APPLICATION_FF
 
 preproc
 
-	if getproperty("OperatorID") = "No" then
-		setoperatorid(getusername());
-	endif;
+    if getproperty("OperatorID") = "No" then
+        setoperatorid(getusername());
+    endif;
 </logic>
 
 

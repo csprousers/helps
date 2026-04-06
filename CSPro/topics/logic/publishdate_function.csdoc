@@ -1,4 +1,4 @@
-﻿<title>PublishDate Function</title>
+<title>PublishDate Function</title>
 
 <subheader>Format</subheader>
 
@@ -20,8 +20,8 @@ The function returns a number in the form YYYYMMddHHmmss , where YYYY is the yea
 numeric publishDay = int(publishdate() / 1000000); // ignore the time
 
 if datediff(publishDay,sysdate("YYYYMMDD")) > 20 then
-	errmsg("This program expires after 20 days. Sync to get a new program.");
-	stop(1);
+    errmsg("This program expires after 20 days. Sync to get a new program.");
+    stop(1);
 endif;
 </logic>
 

@@ -1,4 +1,4 @@
-﻿<title>Designer Font Preferences</title>
+<title>Designer Font Preferences</title>
 <context IDD_FONTPREFDLG ID_PREFERENCES_FONTS />
 
 <subheader>ANSI Font Handling</subheader>

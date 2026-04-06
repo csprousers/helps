@@ -1,4 +1,4 @@
-﻿<title>Trace Function</title>
+<title>Trace Function</title>
 
 Programmers use tracing to obtain low-level information about how an application runs, with the information often used for debugging purposes to understand why a program does not execute as expected. CSPro offers limited tracing functionality for two objectives: logging user-generated information and tracking executed statements. Tracing messages can be displayed in a window or saved to a file.
 
@@ -26,7 +26,7 @@ To send a message to the trace log, simply pass a string to the <logiccolor>trac
 
 <logic>
 if distance > 100 then
-	trace("distance (%d) > 100!",distance);
+    trace("distance (%d) > 100!",distance);
 endif;
 </logic>
 
@@ -70,11 +70,11 @@ set trace;
 numeric value = 10;
 
 if value > 10 then
-	errmsg("A");
+    errmsg("A");
 elseif value < 10 then
-	errmsg("B");
+    errmsg("B");
 else
-	errmsg("C");
+    errmsg("C");
 endif;
 
 errmsg("This statement will appear on the trace window");

@@ -1,4 +1,4 @@
-﻿<title>Step 3: Change the Title Font</title>
+<title>Step 3: Change the Title Font</title>
 
 <subheader>(Exercise 6, Modify the Table)</subheader>
 
@@ -7,12 +7,12 @@ CSPro gives you great control over the format of your tables. As an example, in 
 <center><image exercise_06_03_format_title.png /></center>
 
 <list ordered>
-	<li>Right-click on the title <b>Table 1. Age by Sex</b> at the top of the table.</li>
-	<li>Select <b>Format (Title)</b> from the right-click menu.</li>
-	<li>In the section of the dialog box marked <b>Font and Color</b> click on the <b>Change</b> button.</li>
-	<li>In the <b>Font</b> dialog box that appears, change the <b>Size</b> from <b>12</b> to <b>16</b>.</li>
-	<li>Click <b>OK</b> to close the <b>Font</b> dialog box.</li>
-	<li>Click <b>OK</b> to close the <b>Format (Title)</b> dialog box.</li>
+    <li>Right-click on the title <b>Table 1. Age by Sex</b> at the top of the table.</li>
+    <li>Select <b>Format (Title)</b> from the right-click menu.</li>
+    <li>In the section of the dialog box marked <b>Font and Color</b> click on the <b>Change</b> button.</li>
+    <li>In the <b>Font</b> dialog box that appears, change the <b>Size</b> from <b>12</b> to <b>16</b>.</li>
+    <li>Click <b>OK</b> to close the <b>Font</b> dialog box.</li>
+    <li>Click <b>OK</b> to close the <b>Format (Title)</b> dialog box.</li>
 </list>
 
 When you have completed this step you should see that the title is now larger.

@@ -3,9 +3,9 @@
 The <logiccolor>include</logiccolor> command is used to specify what variables should be tabulated. At least one frequency table will be created for every variable specified in the <logiccolor>include</logiccolor> list. The <arg>variables_to_tabulate</arg> is a list of variables, separated by commas, that can include:
 
 <list>
-	<li><b>Dictionary names</b>: dictionaries, records, and items</li>
-	<li><b>Form names</b>: forms, groups, and blocks</li>
-	<li><b>Logic names</b>: <logiccolor>numeric</logiccolor> and <logiccolor>string</logiccolor> variables</li>
+    <li><b>Dictionary names</b>: dictionaries, records, and items</li>
+    <li><b>Form names</b>: forms, groups, and blocks</li>
+    <li><b>Logic names</b>: <logiccolor>numeric</logiccolor> and <logiccolor>string</logiccolor> variables</li>
 </list>
 
 The optional <logiccolor>exclude</logiccolor> command is used to specify variables that should be removed from the inclusion list. The <arg>variables_not_to_tabulate</arg> is a list of variables as defined above. The <logiccolor>exclude</logiccolor> command is particularly useful when including records. For example, if you want to tabulate most items on a record with a couple exceptions, you might code:
@@ -23,13 +23,13 @@ When including or excluding a name that may contain more than one variable&mdash
 You can override the default selection by adding one or more of these flags to the <logiccolor>include</logiccolor>/<logiccolor>exclude</logiccolor> list:
 
 <table 2 header nowrap>
-	<cell>Flag</cell><cell>Include/Exclude All...</cell>
-	<cell><logiccolor>numeric</logiccolor></cell><cell>numeric items</cell>
-	<cell><logiccolor>float</logiccolor></cell><cell>numeric items with decimals</cell>
-	<cell><logiccolor>integer</logiccolor></cell><cell>numeric items without decimals</cell>
-	<cell><logiccolor>long</logiccolor></cell><cell>numeric items without decimals and length 3 - 15</cell>
-	<cell><logiccolor>short</logiccolor></cell><cell>numeric items without decimals and length 1 - 2</cell>
-	<cell><logiccolor>alpha</logiccolor></cell><cell>alphanumeric items</cell>
+    <cell>Flag</cell><cell>Include/Exclude All...</cell>
+    <cell><logiccolor>numeric</logiccolor></cell><cell>numeric items</cell>
+    <cell><logiccolor>float</logiccolor></cell><cell>numeric items with decimals</cell>
+    <cell><logiccolor>integer</logiccolor></cell><cell>numeric items without decimals</cell>
+    <cell><logiccolor>long</logiccolor></cell><cell>numeric items without decimals and length 3 - 15</cell>
+    <cell><logiccolor>short</logiccolor></cell><cell>numeric items without decimals and length 1 - 2</cell>
+    <cell><logiccolor>alpha</logiccolor></cell><cell>alphanumeric items</cell>
 </table>
 
 These six flags will never include items that have subitems. You can use a combination of flags; for example, this would include all items from <logiccolor>PERSON_REC</logiccolor> with the exception of items that have subitems (though the subitems would be included).
@@ -78,13 +78,13 @@ An optional command, <logiccolor>disjoint</logiccolor>, is a shortcut way of ind
 
 <logic>
 Freq include(P03_SEX)
-	 disjoint;
+     disjoint;
 </logic>
 
 When using <logiccolor>disjoint</logiccolor>, you can use <logiccolor>(*)</logiccolor> as an occurrence to specify that you would like to ignore the disjoint setting. For example, this code would create 49 tables (for the combined occurrences, for occurrence 3, occurrence 4, and so on until occurrence 50).
 
 <logic>
 Freq include(P03_SEX(*), P03_SEX)
-	 exclude(P03_SEX(1), P03_SEX(2))
-	 disjoint;
+     exclude(P03_SEX(1), P03_SEX(2))
+     disjoint;
 </logic>

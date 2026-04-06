@@ -1,4 +1,4 @@
-﻿<title>Debug Table Totals</title>
+<title>Debug Table Totals</title>
 
 
 <html>
@@ -7,7 +7,7 @@
 <meta name="generator" content="Adobe RoboHelp 11" />
 <style type="text/css">/*<![CDATA[*/
 body {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 /*]]>*/</style>
 </head>
@@ -20,36 +20,36 @@ body {
  methods. There are some easy ways to figure out the cause of such discrepancies.</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Some values that exist in your data file may not be in the
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Some values that exist in your data file may not be in the
  value set and thus these values will not be counted in the totals. For
  example, a value set might include the numbers 1 through 6. The data file
  might have a value of 7 or 8 for the variable or in some cases might contain
  blank (notappl) values for the variable. To see if this is the case, try</font>
  <a href="include_exclude_special_values_in_a_variable.html"><font style="font-family: Arial;
-	 font-size: 10pt;" face="Arial" size="2">including custom special values</font></a>
+     font-size: 10pt;" face="Arial" size="2">including custom special values</font></a>
  <font style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-		 size="2">in your table. Make sure to check the boxes for the special
+         size="2">in your table. Make sure to check the boxes for the special
  values</font> <b><font style="font-family: Arial; font-size: 10pt; font-weight: bold;"
-						 color="#000000" face="Arial" size="2">notappl</font></b><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">,</font> <b><font style="font-family: Arial; font-size: 10pt;
-								 font-weight: bold;" color="#000000" face="Arial"
-								 size="2">undefined</font></b><font style="font-family: Arial;
-	 font-size: 10pt;" color="#000000" face="Arial" size="2">, and</font>
+                         color="#000000" face="Arial" size="2">notappl</font></b><font
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">,</font> <b><font style="font-family: Arial; font-size: 10pt;
+                                 font-weight: bold;" color="#000000" face="Arial"
+                                 size="2">undefined</font></b><font style="font-family: Arial;
+     font-size: 10pt;" color="#000000" face="Arial" size="2">, and</font>
  <b><font style="font-family: Arial; font-size: 10pt; font-weight: bold;"
-			 color="#000000" face="Arial" size="2">default</font></b><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">. Run the table again and check to see if any of the rows/columns
+             color="#000000" face="Arial" size="2">default</font></b><font
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">. Run the table again and check to see if any of the rows/columns
  for special values have counts in them.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: center; margin-top: 0.00pt; margin-bottom: 0.00pt;"><img
-	 src="custspecvalsfortotal.jpg" alt="Table Including Custom Special Values"
-	 title="Table Including Custom Special Values" width="626" height="342"
-	 border="0" /></p>
+     src="custspecvalsfortotal.jpg" alt="Table Including Custom Special Values"
+     title="Table Including Custom Special Values" width="626" height="342"
+     border="0" /></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;
-	 font-family: Arial; font-size: 10pt;">If you have counts for the special
+     font-family: Arial; font-size: 10pt;">If you have counts for the special
  value <b><font style="font-weight: bold;">undefined</font></b> then there
  are values in your data file that are not in the value set that you are
  tabulating. You may either edit the data file to eliminate such values
@@ -59,13 +59,13 @@ body {
  value found</a> option.</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">If you have counts for the special value</font> <b><font
-	 style="font-family: Arial; font-size: 10pt; font-weight: bold;" color="#000000"
-	 face="Arial" size="2">notappl</font></b> <font style="font-family: Arial;
-													 font-size: 10pt;"
-													 color="#000000" face="Arial"
-													 size="2">then there
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">If you have counts for the special value</font> <b><font
+     style="font-family: Arial; font-size: 10pt; font-weight: bold;" color="#000000"
+     face="Arial" size="2">notappl</font></b> <font style="font-family: Arial;
+                                                     font-size: 10pt;"
+                                                     color="#000000" face="Arial"
+                                                     size="2">then there
  are blanks in your data file for the variable in question. You will either
  need to impute the blanks or add an entry for notappl to your value set.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
@@ -87,8 +87,8 @@ body {
  values.</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">There may be some values in your value set that are repeated
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">There may be some values in your value set that are repeated
  and are being counted in more than one row or column of the table. For
  example, in the following value set, age 5 is in both the 0-5 and the
  5-10 ranges and therefore each person with and age of 5 will be counted
@@ -97,28 +97,28 @@ body {
  the age categories will not match the total.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: center; margin-top: 0.00pt; margin-bottom: 0.00pt;"><img
-	 src="overlapvaluesset.jpg" alt="Overlapping Values in a Dictionary"
-	 title="Overlapping Values in a Dictionary" width="590" height="99"
-	 border="0" /></p>
+     src="overlapvaluesset.jpg" alt="Overlapping Values in a Dictionary"
+     title="Overlapping Values in a Dictionary" width="590" height="99"
+     border="0" /></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">Check your value set to make sure that no single value is
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">Check your value set to make sure that no single value is
  repeated and that no ranges overlap. Of course, in some cases, you may
  want to have overlapping ranges in your value set, for example if you
  want to show</font> <a href="add_subtotals_to_a_table.html"><font style="font-family: Arial;
-	 font-size: 10pt;" face="Arial" size="2">subtotals</font></a><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">.</font></p>
+     font-size: 10pt;" face="Arial" size="2">subtotals</font></a><font
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">.</font></p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;">&#160;</p>
 <p style="text-align: left; margin-top: 0.00pt; margin-bottom: 0.00pt;"><font
-	 style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
-	 size="2">See Also:</font> <a href="implications_of_data_dictionary_value_sets.html"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Implications
+     style="font-family: Arial; font-size: 10pt;" color="#000000" face="Arial"
+     size="2">See Also:</font> <a href="implications_of_data_dictionary_value_sets.html"><font
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Implications
  of Data Dictionary Value Sets</font></a><font style="font-family: Arial;
-												 font-size: 10pt;" face="Arial"
-												 size="2">,</font> <a href="special_values.html"><font
-	 style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Special
+                                                 font-size: 10pt;" face="Arial"
+                                                 size="2">,</font> <a href="special_values.html"><font
+     style="font-family: Arial; font-size: 10pt;" face="Arial" size="2">Special
  Values</font></a></p>
 </body>
 </html>

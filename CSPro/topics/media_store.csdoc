@@ -1,4 +1,4 @@
-﻿<title>Media Store</title>
+<title>Media Store</title>
 
 
 On Android, the <link "https://developer.android.com/reference/android/provider/MediaStore">Media Store</link> is a mechanism for accessing audio, image, and video content that can be shared across applications. The media of the given type is not necessarily stored in a single directory. The media can all be accessed using the following identifiers:

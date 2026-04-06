@@ -1,13 +1,13 @@
-﻿<title>Test Application</title>
+<title>Test Application</title>
 
 CAPI applications require even more testing than data entry applications from paper forms because of the enumerator's need to be able to move easily and quickly around the questionnaire.
 
 Here are some suggestions on how to test an application.
 
 <list>
-	<li>Go through the case in intended sequence to test skip patterns, range checks, and edit checks.</li>
-	<li>If breaking off and restarting the interview are allowed, try doing that from different locations. Can you get back to where you left off easily?</li>
-	<li>Test moving around within the application, moving backward and forward.</li>
-	<li>Test moving between sections, if that is allowed.</li>
-	<li>Test field helps and general helps.</li>
+    <li>Go through the case in intended sequence to test skip patterns, range checks, and edit checks.</li>
+    <li>If breaking off and restarting the interview are allowed, try doing that from different locations. Can you get back to where you left off easily?</li>
+    <li>Test moving around within the application, moving backward and forward.</li>
+    <li>Test moving between sections, if that is allowed.</li>
+    <li>Test field helps and general helps.</li>
 </list>

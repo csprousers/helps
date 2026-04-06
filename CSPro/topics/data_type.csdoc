@@ -1,4 +1,4 @@
-﻿<title>Data Type</title>
+<title>Data Type</title>
 
 This <link item_properties.csdoc>item property</link> specifies the data types allowed for <link item_description.csdoc>dictionary items</link>. The first two data types listed below (<b>Numeric</b> and <b>Alpha</b>) are always available, with numeric as the default type selected by CSPro. The remaining data types store <link binary_dictionary_items.csdoc>binary data</link> and are only available if the dictionary option <link data_dictionary_menu.csdoc>Enable Binary Items</link> has been checked.
 

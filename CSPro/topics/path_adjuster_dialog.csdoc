@@ -1,4 +1,4 @@
-﻿<title>Path Adjuster Dialog</title>
+<title>Path Adjuster Dialog</title>
 <context ID_CODE_PATH_ADJUSTER IDD_PATH_ADJUSTER />
 
 When editing a data entry or batch application, or while using CSCode, select <b>Code</b> -> <b>Path Adjuster</b>. A dialog is shown that facilitates working with absolute and relative paths in CSPro logic.
@@ -10,10 +10,10 @@ The dialog allows you to specify a path and see how it is expressed as a <link s
 If specifying a directory or file path in the <b>Relative To</b> field, the dialog will display the evaluated relative path. In the above example, relative paths would appear as following:
 
 <table 2 header>
-	<cell>Relative To (Directory)</cell><cell>Relative Path (CSPro Logic)</cell>
-	<cell>C:\AMO</cell><cell><logiccolor>"Images\\UVA.jpg"</logiccolor></cell>
-	<cell>C:\AMO\Images</cell><cell><logiccolor>"UVA.jpg"</logiccolor></cell>
-	<cell>C:\AMO\Reports</cell><cell><logiccolor>"..\\Images\\UVA.jpg"</logiccolor></cell>
+    <cell>Relative To (Directory)</cell><cell>Relative Path (CSPro Logic)</cell>
+    <cell>C:\AMO</cell><cell><logiccolor>"Images\\UVA.jpg"</logiccolor></cell>
+    <cell>C:\AMO\Images</cell><cell><logiccolor>"UVA.jpg"</logiccolor></cell>
+    <cell>C:\AMO\Reports</cell><cell><logiccolor>"..\\Images\\UVA.jpg"</logiccolor></cell>
 </table>
 
 The <b>...</b> button allows you to browse for a directory or file path. The <b>Copy</b> button copies the text, or CSPro logic, to the clipboard.

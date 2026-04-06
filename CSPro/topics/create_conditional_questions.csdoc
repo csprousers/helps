@@ -1,4 +1,4 @@
-﻿<title>Create Conditional Questions</title>
+<title>Create Conditional Questions</title>
 
 By using conditions, it is possible to determine what <link question_text.csdoc>question text</link> is displayed at runtime based on previous responses.
 

@@ -1,4 +1,4 @@
-﻿<title>Supported Files</title>
+<title>Supported Files</title>
 
 CSView is primarily intended for displaying <link CSPro::html_in_cspro.csdoc>HTML</link> or <link CSPro::markdown_overview.csdoc>Markdown</link> files, which generally have the extensions:
 

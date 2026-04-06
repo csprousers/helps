@@ -1,4 +1,4 @@
-﻿<title>Introduction to CSCode</title>
+<title>Introduction to CSCode</title>
 <context IDR_MAINFRAME />
 
 <b>CSCode</b>, a <link CSPro::tool_list.csdoc>CSPro tool</link>, is a text editor with support for tabbed editing of documents. The tool facilitates editing, validating, and running files in multiple supported languages listed below.

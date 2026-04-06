@@ -1,4 +1,4 @@
-﻿<title>Change Keyboard Input</title>
+<title>Change Keyboard Input</title>
 <context IDD_KEYBOARD_LAYOUTS />
 
 To manually change the keyboard input for a field, view the <link change_field_properties.csdoc>field's properties</link> and select <b>Keyboard Input</b> -> <b>Change</b>.
@@ -10,11 +10,11 @@ You can specify a specific keyboard input method for a field if you would like t
 The keyboard input method will only apply to the selected field. After the keyer moves away from the field, the input method will return to the default keyboard setting. For example, suppose that there are four fields:
 
 <table 2 header nowrap>
-	<cell>Field Name</cell><cell>Keyboard ID </cell>
-	<cell>Field1</cell><cell>0</cell>
-	<cell>Field2</cell><cell>0</cell>
-	<cell>Field3</cell><cell>1067</cell>
-	<cell>Field4</cell><cell>0</cell>
+    <cell>Field Name</cell><cell>Keyboard ID </cell>
+    <cell>Field1</cell><cell>0</cell>
+    <cell>Field2</cell><cell>0</cell>
+    <cell>Field3</cell><cell>1067</cell>
+    <cell>Field4</cell><cell>0</cell>
 </table>
 
 In the above scenario, the keyboard input method will only be modified for Field3, which will be entered in Armenian. However, suppose that the keyer manually changes the keyboard from the default keyboard to Arabic while on the Field2. In that case, Field3 will be entered in Armenian, and then the input method will be changed back to Arabic for Field4. In other words, the Default Keyboard input method resets the keyboard back to whatever input method was last active on another field with a keyboard ID of 0.

@@ -1,4 +1,4 @@
-﻿<title>This Item ($)</title>
+<title>This Item ($)</title>
 
 The dollar sign ($) is a short way of referring to a data item if used within that data item's procedure.
 
@@ -9,11 +9,11 @@ Pressing <b>Ctrl + 4</b> (4 is where the dollar sign is on many keyboards) will 
 <logic>
 PROC AGE
 
-	if MARITAL_STATUS > 1 then // ever married
+    if MARITAL_STATUS > 1 then // ever married
 
-		if $ < 12 then // the same as AGE < 12
-			errmsg("Person too young (%d) to be married",$);
-		endif;
+        if $ < 12 then // the same as AGE < 12
+            errmsg("Person too young (%d) to be married",$);
+        endif;
 
-	endif;
+    endif;
 </logic>

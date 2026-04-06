@@ -1,10 +1,10 @@
-﻿<title>Passing Function Arguments by Reference</title>
+<title>Passing Function Arguments by Reference</title>
 
 <subheader>Format</subheader>
 
 <logicsyntax>
 function FunctionName(numeric function_variable)
-	function_variable = 500;
+    function_variable = 500;
 end;
 
 // using ref, any changes made to function_variable
@@ -48,22 +48,22 @@ errmsg("%d", test_value); // pass by reference, prints 999
 <logic>
 function numeric ReadGPS(optional numeric latitude, optional numeric longitude)
 
-	numeric successful_reading = false;
+    numeric successful_reading = false;
 
     if gps(open) then
 
-		// attempt to read the GPS for up to two minutes
-		if gps(read, 120) then
-			successful_reading = true;
-			latitude = gps(latitude);
-			longitude = gps(longitude);
-		endif;
+        // attempt to read the GPS for up to two minutes
+        if gps(read, 120) then
+            successful_reading = true;
+            latitude = gps(latitude);
+            longitude = gps(longitude);
+        endif;
 
-		gps(close);
+        gps(close);
 
-	endif;
+    endif;
 
-	exit successful_reading;
+    exit successful_reading;
 
 end;
 

@@ -1,4 +1,4 @@
-﻿<title>EndLevel Statement</title>
+<title>EndLevel Statement</title>
 
 <subheader>Format</subheader>
 
@@ -18,7 +18,7 @@ In <link operator_vs_system_controlled.csdoc>system-controlled</link> applicatio
 
 <logic>
 if MORE_WOMEN = 0 then
-	endlevel;
+    endlevel;
 endif;
 </logic>
 

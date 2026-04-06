@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JSON Conversions: Array Object</title>
+<title>CSPro ⇄ JSON Conversions: Array Object</title>
 
 
 A CSPro <link Array.csdoc>Array</link> is generally represented as a <link JSON_primer.csdoc>JSON</link> array. The underlying values of the Array are serialized according to the JSON serialization rules for <link numeric_JSON_representation.csdoc>numeric values</link> or <link string_JSON_representation.csdoc>string values</link>.

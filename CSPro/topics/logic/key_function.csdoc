@@ -1,4 +1,4 @@
-﻿<title>Key Function</title>
+<title>Key Function</title>
 
 <subheader>Format</subheader>
 
@@ -22,7 +22,7 @@ The function returns a string containing the key. If there has been no previous 
 <logic>
 // do not output any cases with IDs starting with 04
 if key(CENSUS_DICT)[1:2] = "04" then
-	skip case;
+    skip case;
 endif;
 </logic>
 

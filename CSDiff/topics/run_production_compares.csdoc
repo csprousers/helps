@@ -1,4 +1,4 @@
-﻿<title>Run Production Compares</title>
+<title>Run Production Compares</title>
 
 To run production compares, you'll need to customize its behavior by creating a PFF file. You can then use the PFF file as a command line parameter in DOS or in a Windows icon for CSDiff.exe (the associated filename of this utility). For example, if you name your PFF MyCompare.cmp.pff, then you can run the compare data program by invoking:
 
@@ -35,8 +35,8 @@ ViewListing=Always
 The <pffcolor>[Run Information]</pffcolor> block is required. While <pffcolor>Version</pffcolor> and <pffcolor>AppType</pffcolor> must appear exactly as shown in the example above, there are two optional properties:
 
 <list>
-	<li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only).</li>
-	<li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
+    <li><pffcolor>Description</pffcolor>=if specified, it will be used instead of the name of the file in the list of applications (mobile only).</li>
+    <li><pffcolor>ShowInApplicationListing</pffcolor>=determines whether the application associated with this PFF is displayed on the mobile Entry Applications screen. The possible options are: <b>Always</b> (default), <b>Never</b>, and <b>Hidden</b>. Operators must manually elect to show hidden applications, whereas PFFs with the <b>Never</b> option will never be shown.</li>
 </list>
 
 <subheader>[Files]</subheader>
@@ -48,9 +48,9 @@ The <pffcolor>[Files]</pffcolor> block is required and defines the four files th
 The <pffcolor>[Parameters]</pffcolor> block is optional. ViewListing determines whether the listing file is viewed. There are three options:
 
 <list>
-	<li><pffcolor>ViewListing</pffcolor>=Always means you will always see the generated listing file.</li>
-	<li><pffcolor>ViewListing</pffcolor>=Never means you will never see the generated listing file.</li>
-	<li><pffcolor>ViewListing</pffcolor>=OnError means you will see the generated listing file only if an error(s) occurred during the run.</li>
+    <li><pffcolor>ViewListing</pffcolor>=Always means you will always see the generated listing file.</li>
+    <li><pffcolor>ViewListing</pffcolor>=Never means you will never see the generated listing file.</li>
+    <li><pffcolor>ViewListing</pffcolor>=OnError means you will see the generated listing file only if an error(s) occurred during the run.</li>
 </list>
 
 If the <pffcolor>ViewListing</pffcolor> entry is missing, the default action will be Always.

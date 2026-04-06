@@ -1,4 +1,4 @@
-﻿<title>String Concatenation Operator</title>
+<title>String Concatenation Operator</title>
 
 In addition to serving as the addition operator for numeric values, the <logiccolor>+</logiccolor> operator can be used to concatenate strings, similar to the <logiccolor>concat</logiccolor> function. For example, both lines of code below will give the same result:
 

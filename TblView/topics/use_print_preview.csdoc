@@ -1,4 +1,4 @@
-﻿<title>Use Print Preview</title>
+<title>Use Print Preview</title>
 <context ID_FILE_PRINT_PREVIEW ID_VIEW_PAGEPRINTVIEW />
 
 Print Preview is a view of the tables as they are display on the printed page, i.e., what they will look like when they are printed on the default printer. To view Print Preview, press the <image preview.jpg /> Print Preview Button button on the toolbar or under <b>File</b> menu, select <b>Print Preview</b>.

@@ -1,4 +1,4 @@
-﻿<title>List Object</title>
+<title>List Object</title>
 
 In logic, a <logiccolor>List</logiccolor> is similar to an <link Array.csdoc>one-dimensional array</link> but without a defined size. That is, a List is a collection of values, either numeric or string, that can grow or shrink in size.
 

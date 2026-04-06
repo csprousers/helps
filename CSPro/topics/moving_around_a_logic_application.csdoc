@@ -1,4 +1,4 @@
-﻿<title>Moving Around a Logic Application</title>
+<title>Moving Around a Logic Application</title>
 
 To move around your edit application, select individual items from the <b>Forms</b> (in a data entry application) or <b>Edits</b> (in a batch application) tree tab. The logic view will update to display the programming logic (if any) for that item. If you select the root of the tree, all logic written for the entire edit application is displayed.
 
@@ -13,7 +13,7 @@ Since there is no logic, <logiccolor>PROC AGE</logiccolor> is generated "on-the-
 <logic>
 PROC AGE
 
-	if not ( AGE in 0:99 ) then
-		errmsg("Invalid age found");
-	endif;
+    if not ( AGE in 0:99 ) then
+        errmsg("Invalid age found");
+    endif;
 </logic>

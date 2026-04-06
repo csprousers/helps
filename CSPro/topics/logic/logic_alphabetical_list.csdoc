@@ -1,4 +1,4 @@
-﻿<title>Alphabetical List of Functions and Statements</title>
+<title>Alphabetical List of Functions and Statements</title>
 
 The following table lists functions and statements that can be used in logic. Listings that are marked <sup>(CS)</sup> are part of the <link action_invoker.csdoc>Action Invoker</link>. In addition, some CSPro <link object_dot_notation.csdoc>objects</link> have functions that can be invoked on the object. A list of such functions can be found in the summary pages for each of these objects:
 

@@ -1,4 +1,4 @@
-﻿<title>Mapping</title>
+<title>Mapping</title>
 
 CSBatch and CSEntry support displaying interactive maps on both Android and Windows devices. There are two ways to integrate maps into an application:
 

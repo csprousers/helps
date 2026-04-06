@@ -1,4 +1,4 @@
-﻿<title>Write Function</title>
+<title>Write Function</title>
 
 <subheader>Format</subheader>
 
@@ -48,7 +48,7 @@ numeric decimalValue = 12.567;
 
 errmsg( "%f"        , decimalValue);    //   12.567000
 errmsg( "%-10.3f"   , decimalValue);    //   12.567
-errmsg( "%d"        , decimalValue);    //   12			  Note the usage of %d
+errmsg( "%d"        , decimalValue);    //   12           Note the usage of %d
 errmsg( "%10.2f"    , decimalValue);    //        12.57
 errmsg( "%10.3f"    , decimalValue);    //       12.567
 errmsg( "%+10.3f"   , decimalValue);    //      +12.567

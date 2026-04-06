@@ -1,4 +1,4 @@
-﻿<title>Use the Table Metadata Browser</title>
+<title>Use the Table Metadata Browser</title>
 
 The Table Metadata Browser is accessible by selecting the appropriate option from the <b>View</b> menu, or by pressing <b>Ctrl + H</b>. The Table Metadata Browser is for advanced users who want to look at the details of the SQL tables stored in a paradata log. Each table is listed, and by clicking on the table, you can view information about the table's columns. By clicking on a table column, you can view any codes that are associated with that column's values.
 

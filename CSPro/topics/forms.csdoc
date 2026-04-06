@@ -1,4 +1,4 @@
-﻿<title>Forms</title>
+<title>Forms</title>
 
 Form layout should be easy for the interviewer to see and understand. For this reason, it's usually best to place fewer items on each form that you might with a non-CAPI application. Also, remember that screen real estate is limited in a CAPI application, since <link question_text.csdoc>question text</link> will occupy a large portion (sometimes up to half) of the top of the entry window.
 

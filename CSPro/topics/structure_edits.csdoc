@@ -1,12 +1,12 @@
-﻿<title>Structure Edits</title>
+<title>Structure Edits</title>
 
 Structure edits can be used to check coverage and to establish that each case has the correct number and type of records. The tests that make up a structure edit ensure that the questionnaires are complete before beginning the consistency edit. In a typical Housing and Population census, the structure edits will check that:
 
 <list>
-	<li>For all collective and conventional households within an enumeration area, all required records are present and are in the proper order.</li>
-	<li>Each enumeration area (EA) batch has the correct geographic codes.</li>
-	<li>Where required, each household has one and only one housing record.</li>
-	<li>Each occupied housing unit has at least one person record, and vacant housing units (where permitted) have no person records.</li>
-	<li>Within a household (conventional or collective), there must be one and only one person record for each member of the household (i.e., no duplicate or missing records) such that the total number of person records is equal to the recorded count of persons in the household.</li>
-	<li>Within each conventional household, there is one and only one qualified head of household; within each collective household, there is no head of household.</li>
+    <li>For all collective and conventional households within an enumeration area, all required records are present and are in the proper order.</li>
+    <li>Each enumeration area (EA) batch has the correct geographic codes.</li>
+    <li>Where required, each household has one and only one housing record.</li>
+    <li>Each occupied housing unit has at least one person record, and vacant housing units (where permitted) have no person records.</li>
+    <li>Within a household (conventional or collective), there must be one and only one person record for each member of the household (i.e., no duplicate or missing records) such that the total number of person records is equal to the recorded count of persons in the household.</li>
+    <li>Within each conventional household, there is one and only one qualified head of household; within each collective household, there is no head of household.</li>
 </list>

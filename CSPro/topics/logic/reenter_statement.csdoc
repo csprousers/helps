@@ -1,4 +1,4 @@
-﻿<title>Reenter Statement</title>
+<title>Reenter Statement</title>
 
 <subheader>Format</subheader>
 
@@ -17,10 +17,10 @@ When a <logiccolor>reenter</logiccolor> statement is executed, the <logiccolor>p
 <logic>
 PROC RELATIONSHIP
 
-	if curocc() = 1 and RELATIONSHIP <> 1 then
-		errmsg("The head of household must be entered on the first row.");
-		reenter;
-	endif;
+    if curocc() = 1 and RELATIONSHIP <> 1 then
+        errmsg("The head of household must be entered on the first row.");
+        reenter;
+    endif;
 </logic>
 
 <subheader>Example 2</subheader>
@@ -28,10 +28,10 @@ PROC RELATIONSHIP
 <logic>
 PROC DOB_YEAR
 
-	if DOB_YEAR = CensusYear and DOB_MONTH > CensusMonth then
-		errmsg("The date of birth cannot be after the census date. Reenter the month and year.");
-		reenter DOB_MONTH;
-	endif;
+    if DOB_YEAR = CensusYear and DOB_MONTH > CensusMonth then
+        errmsg("The date of birth cannot be after the census date. Reenter the month and year.");
+        reenter DOB_MONTH;
+    endif;
 </logic>
 
 <seealso advance_statement.csdoc ask_statement.csdoc move_statement.csdoc skip_statement.csdoc />

@@ -1,4 +1,4 @@
-﻿<title>Text Box</title>
+<title>Text Box</title>
 
 The Text Box attribute is the default option for a field and indicates that no capture type will be displayed. On Windows, tickmarks divide each character. Text boxes with tick marks are not resizable.
 

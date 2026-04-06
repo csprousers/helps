@@ -1,4 +1,4 @@
-﻿<title>OnChar Global Function</title>
+<title>OnChar Global Function</title>
 
 <subheader>Format</subheader>
 
@@ -40,11 +40,11 @@ The <logiccolor>OnChar</logiccolor> function must return an integer value. The v
 <logic>
 function OnChar(numeric keystroke)
 
-	if keystroke = 24110 then // 帮 (bang)
-		move to HELP_FORM;
-	else
-		OnChar = keystroke;
-	endif;
+    if keystroke = 24110 then // 帮 (bang)
+        move to HELP_FORM;
+    else
+        OnChar = keystroke;
+    endif;
 
 end;
 </logic>

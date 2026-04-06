@@ -1,4 +1,4 @@
-﻿<title>List.seek Function</title>
+<title>List.seek Function</title>
 
 
 <subheader>Format</subheader>
@@ -26,7 +26,7 @@ List string keys_to_process;
 // ...
 
 if keys_to_process.seek(key(DICT_NAME)) = 0 then
-	skip case;
+    skip case;
 endif;
 </logic>
 

@@ -1,4 +1,4 @@
-﻿<title>CSPro ⇄ JavaScript Conversions: List Object</title>
+<title>CSPro ⇄ JavaScript Conversions: List Object</title>
 
 
 A CSPro <link List.csdoc>List</link> is represented as a one-dimensional JavaScript <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">array</link>. The underlying values of the List are serialized according to the JavaScript serialization rules for <link numeric_JavaScript_representation.csdoc>numeric values</link> or <link string_JavaScript_representation.csdoc>string values</link>.

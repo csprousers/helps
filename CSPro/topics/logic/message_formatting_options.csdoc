@@ -1,4 +1,4 @@
-﻿<title>Message Formatting Options</title>
+<title>Message Formatting Options</title>
 
 <subheader>Format</subheader>
 
@@ -14,14 +14,14 @@ Several functions<font red>*</font> take an argument that consists of a message 
 The message can contain optional arguments, <arg>argument1</arg> to <arg>argumentN</arg>, that will be inserted into the message. Each argument, denoted in the message text with a percent sign, is sequentially inserted into the message. Arguments can be numeric or string expressions, but the type of the argument must match the type of the receiving field in the message text. There are seven formatters:
 
 <table 2 nowrap header>
-	<cell>Formatter</cell><cell>Result</cell>
-	<cell><logiccolor>"%d"</logiccolor></cell><cell>Inserts a number that is displayed as an integer.</cell>
-	<cell><logiccolor>"%f"</logiccolor></cell><cell>Inserts a number that is displayed as a decimal value (with six decimal places shown by default).</cell>
-	<cell><logiccolor>"%s"</logiccolor></cell><cell>Inserts a text string.</cell>
-	<cell><logiccolor>"%v"</logiccolor></cell><cell>Inserts a variable formatted intelligently (see below).</cell>
-	<cell><logiccolor>"%l"</logiccolor></cell><cell>Inserts a variable's value label (see below).</cell>
-	<cell><logiccolor>"%p"</logiccolor></cell><cell>Inserts the name of the current procedure, which can be useful for debugging. No argument should be supplied if using this option.</cell>
-	<cell><logiccolor>"%c"</logiccolor></cell><cell>Inserts the first character of a text string, or no characters if the string is blank.</cell>
+    <cell>Formatter</cell><cell>Result</cell>
+    <cell><logiccolor>"%d"</logiccolor></cell><cell>Inserts a number that is displayed as an integer.</cell>
+    <cell><logiccolor>"%f"</logiccolor></cell><cell>Inserts a number that is displayed as a decimal value (with six decimal places shown by default).</cell>
+    <cell><logiccolor>"%s"</logiccolor></cell><cell>Inserts a text string.</cell>
+    <cell><logiccolor>"%v"</logiccolor></cell><cell>Inserts a variable formatted intelligently (see below).</cell>
+    <cell><logiccolor>"%l"</logiccolor></cell><cell>Inserts a variable's value label (see below).</cell>
+    <cell><logiccolor>"%p"</logiccolor></cell><cell>Inserts the name of the current procedure, which can be useful for debugging. No argument should be supplied if using this option.</cell>
+    <cell><logiccolor>"%c"</logiccolor></cell><cell>Inserts the first character of a text string, or no characters if the string is blank.</cell>
 </table>
 
 
@@ -37,11 +37,11 @@ The <logiccolor>"%l"</logiccolor> formatter looks up the value set label associa
 Numeric and string arguments have a couple additional options that can be specified after the percent sign: <logiccolor>"%[n]d"</logiccolor>, <logiccolor>"%[n.d]f"</logiccolor>, and <logiccolor>"%[n.d]s"</logiccolor>. In these cases, <logiccolor>"n"</logiccolor> controls the length of the replacement text and <logiccolor>"d"</logiccolor> controls either the number of decimal places shown or the length of the string. There are some rules:
 
 <list>
-	<li>If the number is positive, as in <logiccolor>"%+5d"</logiccolor>, the text is right justified to the size of the field (e.g., <logiccolor>"    9"</logiccolor>).</li>
-	<li>If the number is negative, as in <logiccolor>"%-5d"</logiccolor>, the text is left justified to the size of the field (e.g., <logiccolor>"9    "</logiccolor>).</li>
-	<li>For numbers, if a leading zero proceeds the number, as in <logiccolor>"%05d"</logiccolor>, the text is right justified to the size of the field but instead of being padded with spaces, it is padded with zeros (e.g., <logiccolor>"00009"</logiccolor>).</li>
-	<li>For numbers, if the number is preceded by a plus sign, as in <logiccolor>"%+d"</logiccolor>, the sign of the number is always displayed (e.g., <logiccolor>"+9"</logiccolor>).</li>
-	<li>Numbers are never truncated. Text strings are not truncated unless used as in <logiccolor>"%0.5s"</logiccolor>, where the second part, <logiccolor>".5"</logiccolor>, indicates the maximum number of characters.</li>
+    <li>If the number is positive, as in <logiccolor>"%+5d"</logiccolor>, the text is right justified to the size of the field (e.g., <logiccolor>"    9"</logiccolor>).</li>
+    <li>If the number is negative, as in <logiccolor>"%-5d"</logiccolor>, the text is left justified to the size of the field (e.g., <logiccolor>"9    "</logiccolor>).</li>
+    <li>For numbers, if a leading zero proceeds the number, as in <logiccolor>"%05d"</logiccolor>, the text is right justified to the size of the field but instead of being padded with spaces, it is padded with zeros (e.g., <logiccolor>"00009"</logiccolor>).</li>
+    <li>For numbers, if the number is preceded by a plus sign, as in <logiccolor>"%+d"</logiccolor>, the sign of the number is always displayed (e.g., <logiccolor>"+9"</logiccolor>).</li>
+    <li>Numbers are never truncated. Text strings are not truncated unless used as in <logiccolor>"%0.5s"</logiccolor>, where the second part, <logiccolor>".5"</logiccolor>, indicates the maximum number of characters.</li>
 </list>
 
 
@@ -72,7 +72,7 @@ numeric decimalValue = 12.567;
 
 errmsg( "%f"        , decimalValue);    //   12.567000
 errmsg( "%-10.3f"   , decimalValue);    //   12.567
-errmsg( "%d"        , decimalValue);    //   12			   Note the usage of %d
+errmsg( "%d"        , decimalValue);    //   12            Note the usage of %d
 errmsg( "%10.2f"    , decimalValue);    //        12.57
 errmsg( "%10.3f"    , decimalValue);    //       12.567
 errmsg( "%+10.3f"   , decimalValue);    //      +12.567

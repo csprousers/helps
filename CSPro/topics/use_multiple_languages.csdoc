@@ -1,4 +1,4 @@
-﻿<title>Use Multiple Languages</title>
+<title>Use Multiple Languages</title>
 
 If your application supports <link using_multiple_languages.csdoc>multiple languages</link>, then two <link question_text.csdoc>question text</link> windows will be shown. Use the drop down list in the toolbar above each question text window to select a language. Each question can have text for each language, although this is not required.
 

@@ -1,4 +1,4 @@
-﻿<title>Set Last Statement</title>
+<title>Set Last Statement</title>
 
 <subheader>Format</subheader>
 
@@ -17,13 +17,13 @@ The <arg>dictionary_name</arg> refers to either an external dictionary or the ma
 <logic>
 PROC MENU
 
-	set access(SURVEY_DICT, Order.Descending);
+    set access(SURVEY_DICT, Order.Descending);
 
-	set last(SURVEY_DICT);
+    set last(SURVEY_DICT);
 
-	do while loadcase(SURVEY_DICT)
-		// process the cases in descending key order
-	enddo;
+    do while loadcase(SURVEY_DICT)
+        // process the cases in descending key order
+    enddo;
 </logic>
 
 <seealso set_first_statement.csdoc locate_function.csdoc set_access_statement.csdoc />
