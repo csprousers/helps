@@ -5,10 +5,10 @@
 
 <logicsyntax>
 d = impute(<arg>item_name</arg>, <arg>new_value</arg>)
-    『title(<arg>frequency_table_title</arg>)』
-    『valueset(<arg>valueset_name</arg>)』
-    『specific』
-    『stat(『<arg>item_name1</arg>, ..., <arg>item_nameN</arg>』)』;
+   『title(<arg>frequency_table_title</arg>)』
+   『valueset(<arg>valueset_name</arg>)』
+   『specific』
+   『stat(『<arg>item_name1</arg>, ..., <arg>item_nameN</arg>』)』;
 </logicsyntax>
 
 

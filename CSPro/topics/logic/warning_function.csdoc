@@ -18,9 +18,9 @@ i = warning(<arg>msg_num</arg>『, <arg>argument1</arg>, ..., <arg>argument20</a
 <logicsyntax>
 i = warning(<arg>string_exp</arg>『, <arg>argument1</arg>, ..., <arg>argument20</arg>』)
 
-    『select(<arg>caption1</arg>, <arg>fieldname1</arg>『, ..., <arg>caption5</arg>, <arg>fieldname5</arg>』) 『default(<arg>default_option</arg>)』 』
-    『case ‖ summary』
-    『denom = <arg>numeric_denom</arg>』;
+   『select(<arg>caption1</arg>, <arg>fieldname1</arg>『, ..., <arg>caption5</arg>, <arg>fieldname5</arg>』) 『default(<arg>default_option</arg>)』 』
+   『case ‖ summary』
+   『denom = <arg>numeric_denom</arg>』;
 </logicsyntax>
 
 

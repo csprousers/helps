@@ -5,11 +5,11 @@
 
 <logicsyntax>
 b = image_name.createQRCode(<arg>qr_code_text</arg>,
-                            『errorCorrection := <arg>ecc</arg>,』
-                            『scale := <arg>scale</arg>,』
-                            『quietZone := <arg>quiet_zone</arg>,』
-                            『darkColor := <arg>dark_color</arg>,』
-                            『lightColor := <arg>light_color</arg>』);
+                           『errorCorrection := <arg>ecc</arg>,』
+                           『scale := <arg>scale</arg>,』
+                           『quietZone := <arg>quiet_zone</arg>,』
+                           『darkColor := <arg>dark_color</arg>,』
+                           『lightColor := <arg>light_color</arg>』);
 </logicsyntax>
 
 

@@ -7,7 +7,7 @@ export to file_name
          『rec_name(record_name | alpha_exp)』
          『rec_type(record_name | alpha_exp)』
          『case_id (『item_list]』)』
-         record_item_list;
+          record_item_list;
 </logicsyntax>
 
 

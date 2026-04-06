@@ -5,7 +5,7 @@
 <logicsyntax>
 when <arg>expression1</arg> 『:: <arg>expression2</arg> :: <arg>expressionN</arg>』;
      『<arg>value1</arg>』    『:: <arg>value2</arg>      :: <arg>valueN</arg>』        -> <arg>statement</arg>;
-                                                 『-> <arg>else_statement</arg>;』
+                                                  『-> <arg>else_statement</arg>;』
 endwhen;
 </logicsyntax>
 
