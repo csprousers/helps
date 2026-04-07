@@ -24,8 +24,13 @@
   { "path": "introduction_to_csweb.csdoc", "~title": "Introduction to CSWeb" },
   { "path": "map_report.csdoc", "~title": "Map Report" },
   { "path": "minimum_requirements.csdoc", "~title": "Minimum Server Requirements" },
-  { "path": "production.csdoc", "~title": "Running CSWeb in Production" },
-  { "path": "server_optimizations.csdoc", "title": "Server Optimization Quick Reference" },
+  { "path": "production.csdoc", "~title": "Running CSWeb in Production",
+    "subindex": [
+      { "path": "best_practices.csdoc", "title": "Best Practices" },
+      { "path": "server_optimizations.csdoc", "title": "Server Optimization" }
+    ]
+  },
+  { "path": "server_optimizations.csdoc", "title": "Server Optimization" },
   { "path": "sync_report.csdoc", "~title": "Sync Report" },
   { "path": "troubleshooting.csdoc", "~title": "Troubleshooting" },
   { "path": "upgrading.csdoc", "~title": "Upgrading from Previous Versions" },

@@ -9,9 +9,10 @@ This is a quick reference for systems administrators.
 ---
 
 ## MySQL (`my.ini`)
+<br>
 
 | Setting | Recommended Value | Note |
-|---|---|---|
+|:---|:---|:---|
 | `innodb_buffer_pool_size` | 50% of total RAM | Most impactful single setting — keeps working data in memory |
 | `innodb_buffer_pool_instances` | `8` | Reduces contention under concurrent load |
 | `innodb_log_buffer_size` | `64M` | Sized for one second of peak write traffic |
@@ -32,7 +33,7 @@ This is a quick reference for systems administrators.
 ### OPcache
 
 | Setting | Value |
-|---|---|
+|:---|:---|
 | `zend_extension` | `php_opcache.dll` (Windows) / `opcache.so` (Linux — usually auto-loaded) |
 | `opcache.enable` | `1` |
 | `opcache.memory_consumption` | `256` | Not pre-allocated — only consumed as files are cached |
@@ -46,7 +47,7 @@ This is a quick reference for systems administrators.
 ### APCu
 
 | Setting | Value |
-|---|---|
+|:---|:---|
 | `extension` | `php_apcu.dll` — obtain from [pecl.php.net](https://pecl.php.net/package/APCu) |
 | `apc.enabled` | `1` |
 | `apc.shm_size` | `32M` |
@@ -68,7 +69,7 @@ This is a quick reference for systems administrators.
 *IIS Manager → FastCGI Settings → Edit PHP entry*
 
 | Setting | Default | Recommended |
-|---|---|---|
+|:---|:---|:---|
 | `maxInstances` | 4 | `50` — set below MySQL `max_connections` |
 | `instanceMaxRequests` | 200 | `10000` |
 | `activityTimeout` | 30s | `60s` |
@@ -79,7 +80,7 @@ This is a quick reference for systems administrators.
 *IIS Manager → Application Pools → [pool] → Advanced Settings*
 
 | Setting | Default | Recommended |
-|---|---|---|
+|:---|:---|:---|
 | Idle Time-out | 20 min | `0` (disabled) |
 | Regular Time Interval recycling | 1740 min | `0` (disabled) or schedule off-peak |
 | Maximum Worker Processes | 1 | `1` — do not increase; APCu is not shared across worker processes |
@@ -93,7 +94,7 @@ This is a quick reference for systems administrators.
 PHP-FPM manages the pool of PHP worker processes on Linux. The equivalent of IIS `maxInstances` is controlled by the `pm` (process manager) mode and its associated settings.
 
 | Setting | Default | Recommended |
-|---|---|---|
+|:---|:---|:---|
 | `pm` | `dynamic` | `dynamic` — leave as-is |
 | `pm.max_children` | 5 | `50` — maximum PHP worker processes; set below MySQL `max_connections` |
 | `pm.start_servers` | 2 | `10` — processes spawned on startup |
@@ -107,7 +108,7 @@ PHP-FPM manages the pool of PHP worker processes on Linux. The equivalent of IIS
 ### Apache Settings (`/etc/apache2/apache2.conf` or `/etc/httpd/conf/httpd.conf`)
 
 | Setting | Default | Recommended |
-|---|---|---|
+|:---|:---|:---|
 | `KeepAlive` | On | `On` — allows connection reuse across multiple requests |
 | `KeepAliveTimeout` | 5s | `5s` — leave as-is for REST API workloads |
 | `MaxKeepAliveRequests` | 100 | `500` — increase for high-volume sync workloads |
@@ -115,7 +116,7 @@ PHP-FPM manages the pool of PHP worker processes on Linux. The equivalent of IIS
 **MPM Worker / Event settings** (`/etc/apache2/mods-enabled/mpm_event.conf`):
 
 | Setting | Default | Recommended |
-|---|---|---|
+|:---|:---|:---|
 | `MaxRequestWorkers` | 150 | `400` — maximum simultaneous connections |
 | `ThreadsPerChild` | 25 | `25` — leave as-is |
 | `ServerLimit` | 16 | `16` — leave as-is |
@@ -139,7 +140,7 @@ Enable the module with: `sudo a2enmod deflate && sudo systemctl restart apache2`
 ### WAMP (IIS + Windows)
 
 | Change Made | Action Required |
-|---|---|
+|:---|:---|
 | `php.ini` changes | Restart Application Pool |
 | OPcache / APCu settings | Restart Application Pool |
 | New PHP extension added | Restart Application Pool |
@@ -149,7 +150,7 @@ Enable the module with: `sudo a2enmod deflate && sudo systemctl restart apache2`
 ### LAMP (Apache + Linux)
 
 | Change Made | Action Required |
-|---|---|
+|:---|:---|
 | `php.ini` changes | `sudo systemctl restart php[version]-fpm` |
 | OPcache / APCu settings | `sudo systemctl restart php[version]-fpm` |
 | PHP-FPM pool changes | `sudo systemctl restart php[version]-fpm` |
@@ -175,3 +176,6 @@ SHOW VARIABLES LIKE 'max_connections';
 Verify each value matches what was set in `my.ini`. If a value still shows the old default, MySQL did not pick up the config change — confirm the correct `my.ini` path is being used and restart the MySQL service.
 
 </md>
+
+
+<seealso best_practices.csdoc />

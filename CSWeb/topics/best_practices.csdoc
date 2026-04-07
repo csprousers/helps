@@ -1,21 +1,20 @@
 <title>CSWeb Best Practices</title>
 
 <md>
-
 ---
 
 ## Security
 
 Securing your CSWeb installation is critical, especially for sensitive survey or census data. Consult your systems administrator to review the following:
 
-- MySQL should not be exposed directly to the internet
-- HTTPS should be enabled for all CSWeb traffic
-- User accounts should follow the principle of least privilege
+- MySQL should not be exposed directly to the Internet.
+- HTTPS should be enabled for all CSWeb traffic.
+- User accounts should follow the principle of least privilege.
 
-**For large-scale censuses:** Some organizations establish additional layers of security, such as placing MySQL in a DMZ and restricting device sync to a closed mobile network (APN) so that data never travels over the public internet. This approach has been used successfully in national census deployments to ensure complete network isolation between field devices and backend infrastructure. In these cases administrators ensured that:
+**For large-scale censuses:** Some organizations establish additional layers of security, such as placing MySQL in a DMZ and restricting device sync to a closed mobile network (APN) so that data never travels over the public Internet. This approach has been used successfully in national census deployments to ensure complete network isolation between field devices and backend infrastructure. In these cases administrators ensured that:
 
-- The CSWeb dashboard is not be publicly accessible on the internet
-- The REST API is restricted to known devices only
+- The CSWeb dashboard is not publicly accessible on the Internet.
+- The REST API is restricted to known devices only.
 
 ---
 
@@ -25,9 +24,9 @@ The default CSWeb installation is suitable for most deployments. However, for la
 
 **Consider performance tuning if you are experiencing any of the following:**
 
-- Enumerators are reporting slow or failed syncs
-- The server becomes unresponsive or sluggish during peak data collection periods
-- Sync times are noticeably longer than expected given your network conditions
+- Enumerators are reporting slow or failed syncs.
+- The server becomes unresponsive or sluggish during peak data collection periods.
+- Sync times are noticeably longer than expected given your network conditions.
 
 Before making any changes, consult a qualified systems administrator. The following areas are most relevant:
 
@@ -41,7 +40,7 @@ Default PHP settings are conservative and not optimized for production workloads
 
 - **APCu** — Allows frequently used application data such as lookup tables and reference dictionaries to be stored in memory rather than read from disk on every request. Particularly beneficial under high concurrent load.
 
-- **Production error reporting** — Default PHP error settings are intended for development environments and can expose sensitive system information. Production settings should be confirmed before go-live.
+- **Production error reporting** — Default PHP error settings are intended for development environments and can expose sensitive system information. Production settings should be confirmed before going live.
 
 ---
 
@@ -63,7 +62,7 @@ Default MySQL and MariaDB settings are designed for minimal hardware and may not
 
 Default web server settings may limit the number of concurrent requests that can be processed, causing queuing under heavy load. Key areas for your administrator to review:
 
-- **PHP process pool size** (FastCGI pool on IIS / PHP-FPM pool on Apache) — When a sync request arrives, the web server hands it to a PHP process to handle. There is a limit to how many PHP processes can run simultaneously. By default this limit is set conservatively. Tuning helps handle peak traffic.
+- **PHP process pool size** (PHP-FPM pool on Apache / FastCGI pool on IIS) — When a sync request arrives, the web server hands it to a PHP process to handle. There is a limit to how many PHP processes can run simultaneously. By default this limit is set conservatively. Tuning helps handle peak traffic.
 
 - **Worker process timeouts** — If a PHP process takes too long to respond, the web server terminates it and returns an error to the device. Default timeout values can cause legitimate sync requests to be cancelled prematurely under heavy server load. Adjusting timeouts helps server with processing the requests better.
 
@@ -72,4 +71,4 @@ Default web server settings may limit the number of concurrent requests that can
 ---
 </md>
 
-Your administrator can refer to the <link server_optimizations.csdoc>CSWeb Web Server Optimization Settings</link> for specific recommended settings.
+<seealso server_optimizations.csdoc />
