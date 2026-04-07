@@ -17,6 +17,7 @@ CSWeb is intended for large surveys and censuses. For small and medium surveys, 
 
 This guide contains the following information:
 
+
 <subheader>Server Setup</subheader>
 
 <list>
@@ -26,8 +27,11 @@ This guide contains the following information:
     <li><topic iis_server_setup.csdoc /></li>
     <li><topic iis_csweb_setup.csdoc /></li>
     <li><topic production.csdoc /></li>
+    <li><topic best_practices.csdoc /></li>
+    <li><topic server_optimizations.csdoc /></li>
     <li><topic upgrading.csdoc /></li>
 </list>
+
 
 <subheader>How to ...</subheader>
 

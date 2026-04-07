@@ -1,0 +1,181 @@
+<title>CSWeb Server Optimization Quick Reference</title>
+
+<md>
+
+## **Applies to:** IIS + PHP FastCGI + MySQL on Windows Server (WAMP) and Apache + PHP-FPM + MySQL on Linux (LAMP)
+
+This is a quick reference for systems administrators.
+
+---
+
+## MySQL (`my.ini`)
+<br>
+
+| Setting | Recommended Value | Note |
+|:---|:---|:---|
+| `innodb_buffer_pool_size` | 50% of total RAM | Most impactful single setting — keeps working data in memory |
+| `innodb_buffer_pool_instances` | `8` | Reduces contention under concurrent load |
+| `innodb_log_buffer_size` | `64M` | Sized for one second of peak write traffic |
+| `innodb_log_file_size` | 6% of buffer pool size | e.g. 16G pool → 1G log file. Reduces log rotation frequency without excessive recovery time |
+| `innodb_flush_log_at_trx_commit` | `2` | Flushes to OS cache per commit, to disk per second — appropriate for field data workloads |
+| `max_connections` | `500` | Set above expected peak concurrent connections |
+| `thread_cache_size` | `100` | Reduces thread creation overhead during connection spikes |
+| `back_log` | `250` | Absorbs short connection queue bursts |
+| `slow_query_log` | `1` | Keep enabled as safety net |
+| `long_query_time` | `10` | Only logs catastrophic queries — no overhead under normal operation |
+
+**Storage:** SSD for the MySQL data directory is strongly recommended for large-scale deployments. HDD performance degrades significantly under high concurrent write load.
+
+---
+
+## PHP (`php.ini`)
+
+### OPcache
+
+| Setting | Value |
+|:---|:---|
+| `zend_extension` | `php_opcache.dll` (Windows) / `opcache.so` (Linux — usually auto-loaded) |
+| `opcache.enable` | `1` |
+| `opcache.memory_consumption` | `256` | Not pre-allocated — only consumed as files are cached |
+| `opcache.interned_strings_buffer` | `16` |
+| `opcache.max_accelerated_files` | `20000` |
+| `opcache.validate_timestamps` | `0` — OPcache must be manually reset after deployments |
+| `opcache.revalidate_freq` | `0` |
+| `opcache.enable_file_override` | `1` |
+| `opcache.cache_id` | `csweb_cache` — required on Windows/IIS for shared cache across worker processes |
+
+### APCu
+
+| Setting | Value |
+|:---|:---|
+| `extension` | `php_apcu.dll` — obtain from [pecl.php.net](https://pecl.php.net/package/APCu) |
+| `apc.enabled` | `1` |
+| `apc.shm_size` | `32M` |
+| `apc.ttl` | `0` — static reference data; cache clears on IIS restart |
+| `apc.enable_cli` | `0` |
+| `apc.serializer` | `php` |
+
+**Windows:** APCu is not bundled with PHP. Download the NTS x64 DLL matching your PHP version from [pecl.php.net](https://pecl.php.net/package/APCu) and place it in your PHP `ext` directory.
+
+**Linux:** Install via `sudo apt install php[version]-apcu` or `sudo pecl install apcu`.
+
+**After any code deployment:** run `opcache_reset()` or restart the PHP process to clear stale cached bytecode.
+
+---
+
+## IIS (WAMP)
+
+### FastCGI Settings
+*IIS Manager → FastCGI Settings → Edit PHP entry*
+
+| Setting | Default | Recommended |
+|:---|:---|:---|
+| `maxInstances` | 4 | `50` — set below MySQL `max_connections` |
+| `instanceMaxRequests` | 200 | `10000` |
+| `activityTimeout` | 30s | `60s` |
+| `requestTimeout` | 90s | `120s` |
+| `PHP_FCGI_MAX_REQUESTS` (env var) | 500 | `10000` — must match `instanceMaxRequests` |
+
+### Application Pool Settings
+*IIS Manager → Application Pools → [pool] → Advanced Settings*
+
+| Setting | Default | Recommended |
+|:---|:---|:---|
+| Idle Time-out | 20 min | `0` (disabled) |
+| Regular Time Interval recycling | 1740 min | `0` (disabled) or schedule off-peak |
+| Maximum Worker Processes | 1 | `1` — do not increase; APCu is not shared across worker processes |
+
+---
+
+## Apache (LAMP)
+
+### PHP-FPM Pool (`/etc/php/[version]/fpm/pool.d/www.conf`)
+
+PHP-FPM manages the pool of PHP worker processes on Linux. The equivalent of IIS `maxInstances` is controlled by the `pm` (process manager) mode and its associated settings.
+
+| Setting | Default | Recommended |
+|:---|:---|:---|
+| `pm` | `dynamic` | `dynamic` — leave as-is |
+| `pm.max_children` | 5 | `50` — maximum PHP worker processes; set below MySQL `max_connections` |
+| `pm.start_servers` | 2 | `10` — processes spawned on startup |
+| `pm.min_spare_servers` | 1 | `5` — minimum idle processes kept ready |
+| `pm.max_spare_servers` | 3 | `20` — maximum idle processes kept ready |
+| `pm.max_requests` | 500 | `10000` — requests per worker before recycling; reduces process churn |
+| `request_terminate_timeout` | 0 | `120s` — terminates hung workers; align with PHP `max_execution_time` |
+
+**After changes:** restart PHP-FPM with `sudo systemctl restart php[version]-fpm`
+
+### Apache Settings (`/etc/apache2/apache2.conf` or `/etc/httpd/conf/httpd.conf`)
+
+| Setting | Default | Recommended |
+|:---|:---|:---|
+| `KeepAlive` | On | `On` — allows connection reuse across multiple requests |
+| `KeepAliveTimeout` | 5s | `5s` — leave as-is for REST API workloads |
+| `MaxKeepAliveRequests` | 100 | `500` — increase for high-volume sync workloads |
+
+**MPM Worker / Event settings** (`/etc/apache2/mods-enabled/mpm_event.conf`):
+
+| Setting | Default | Recommended |
+|:---|:---|:---|
+| `MaxRequestWorkers` | 150 | `400` — maximum simultaneous connections |
+| `ThreadsPerChild` | 25 | `25` — leave as-is |
+| `ServerLimit` | 16 | `16` — leave as-is |
+
+**Note:** Apache with PHP-FPM should use **mpm_event** or **mpm_worker**, not **mpm_prefork**. Prefork is incompatible with PHP-FPM and significantly less efficient under concurrent load. Confirm with: `apache2ctl -V | grep MPM`
+
+### Response Compression (`mod_deflate`)
+```html
+# Add to apache2.conf or a .conf file in conf-available/
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/json; charset=utf-8
+</IfModule>
+```
+Enable the module with: `sudo a2enmod deflate && sudo systemctl restart apache2`
+
+---
+
+## Restart Reference
+
+### WAMP (IIS + Windows)
+
+| Change Made | Action Required |
+|:---|:---|
+| `php.ini` changes | Restart Application Pool |
+| OPcache / APCu settings | Restart Application Pool |
+| New PHP extension added | Restart Application Pool |
+| FastCGI settings | `iisreset` |
+| `my.ini` MySQL changes | Restart MySQL Service |
+
+### LAMP (Apache + Linux)
+
+| Change Made | Action Required |
+|:---|:---|
+| `php.ini` changes | `sudo systemctl restart php[version]-fpm` |
+| OPcache / APCu settings | `sudo systemctl restart php[version]-fpm` |
+| PHP-FPM pool changes | `sudo systemctl restart php[version]-fpm` |
+| Apache config changes | `sudo systemctl restart apache2` |
+| `my.cnf` MySQL changes | `sudo systemctl restart mysql` |
+
+---
+
+## Post-Change Validation
+
+**PHP — confirm via `phpinfo()`:**
+- OPcache section present → Opcode Caching: **Enabled**
+- `cache_id` shows **csweb_cache**
+- APCu section present and enabled
+
+**MySQL — confirm settings took effect by running in MySQL client:**
+```sql
+SHOW VARIABLES LIKE 'innodb_buffer_pool_size';
+SHOW VARIABLES LIKE 'innodb_log_file_size';
+SHOW VARIABLES LIKE 'innodb_flush_log_at_trx_commit';
+SHOW VARIABLES LIKE 'max_connections';
+```
+Verify each value matches what was set in `my.ini`. If a value still shows the old default, MySQL did not pick up the config change — confirm the correct `my.ini` path is being used and restart the MySQL service.
+
+</md>
+
+
+<seealso best_practices.csdoc />
