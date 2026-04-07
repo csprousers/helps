@@ -1,0 +1,18 @@
+<title>Network Action Invoker Namespace</title>
+
+The <action>Network</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to make HTTP requests and handle responses.
+
+
+<subheader>Functionality</subheader>
+
+<table 2 header nowrap>
+    <cell>Action</cell><cell>Description</cell>
+    <cell><action>Network.fetch</action></cell><cell>Submits a HTTP request to a server and returns the initial response.</cell>
+    <cell><action>Network.fetchBody</action></cell><cell>Processes the body of a HTTP response.</cell>
+    <cell><action>Network.fetchBytes</action></cell><cell>Submits a HTTP request to a server and returns the response as bytes.</cell>
+    <cell><action>Network.fetchJson</action></cell><cell>Submits a HTTP request to a server and returns the response in JSON format.</cell>
+    <cell><action>Network.fetchText</action></cell><cell>Submits a HTTP request to a server and returns the response in text format.</cell>
+</table>
+
+
+<seealso action_invoker.csdoc />
