@@ -1,0 +1,19 @@
+<subheader>Headers</subheader>
+
+You can include additional information in the request by specifying <link "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers">headers</link> to send as part of the HTTP request. When specified as an array, or if an array element is a string, it is added as a fully defined header. If the headers are specified as an object, or if an array element is an object, that object's key/value pairs are combined to create a header with the object's key corresponding to a header name, and the object's value corresponding to a header value.
+
+For example, the following headers, shown as a JSON array and object, are identical:
+
+<color JSON>
+[
+  "Accept: application/json",
+  "Authorization: Bearer ACCESS_TOKEN"
+]
+</color>
+
+<color JSON>
+{
+  "Accept": "application/json",
+  "Authorization": "Bearer ACCESS_TOKEN"
+}
+</color>

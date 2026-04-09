@@ -1,0 +1,8 @@
+The convenience methods include:
+
+<list>
+    <li><action>Network.fetchBytes</action>: The response is returned as <link action_invoker_binary_data.csdoc>binary data</link>.</li>
+    <li><action>Network.fetchFile</action>: The response is saved to the disk.</li>
+    <li><action>Network.fetchJson</action>: The response is parsed as <link JSON_primer.csdoc>JSON</link> and returned as an array, object, etc.</li>
+    <li><action>Network.fetchText</action>: The response is returned as  text.</li>
+</list>

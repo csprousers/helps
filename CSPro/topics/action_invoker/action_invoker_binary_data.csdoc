@@ -8,7 +8,13 @@ The <link action_invoker.csdoc>Action Invoker</link> does not directly allow bin
 When specifying a format to describe binary data passed to the Action Invoker as an input, typically using the argument <arg>bytesFormat</arg>, there are six options, with the default option, if none is specified, as <logiccolor>"autodetect"</logiccolor>:
 
 <list>
-    <li><logiccolor>"autodetect"</logiccolor>: When autodetecting the format, the binary data string's prefix is examined. If it begins with <logiccolor>"data:"</logiccolor>, it is processed as if it were a <link data_url.csdoc>data URL</link>. If it begins with <logiccolor>"cscache:"</logiccolor>, it is processed as if the bytes are stored in memory. If the prefix matches neither  of those values, it is processed as if it were encoded as Base64.</li>
+    <li><logiccolor>"autodetect"</logiccolor>: When autodetecting the format, the binary data string's prefix is examined:
+        <list>
+            <li>If it begins with <logiccolor>"data:"</logiccolor>, it is processed as a <link data_url.csdoc>data URL</link>.</li>
+            <li>If it begins with <logiccolor>"cspro://cache/"</logiccolor>, it is processed as if the bytes are stored in memory due to a previous call where the binary data output format was specified using <logiccolor>"cache"</logiccolor>.</li>
+            <li>If the prefix matches neither of those values, it is processed as if it were encoded as Base64.</li>
+        </list>
+    </li>
     <li><logiccolor>"Base64"</logiccolor>: The binary data string represents bytes in <link "https://en.wikipedia.org/wiki/Base64">Base64 format</link>.</li>
     <li><logiccolor>"cache"</logiccolor>: The binary data string represents bytes previously stored in memory when <logiccolor>"cache"</logiccolor> was used as the output format for binary data returned by another action. By default, once the bytes are accessed, they are cleared from the cache. If you want to keep the bytes in memory for future use, append <logiccolor>"?clear=false"</logiccolor> to the cache key.</li>
     <li><logiccolor>"dataUrl"</logiccolor>: The binary data string contains a <link data_url.csdoc>data URL</link>.</li>
@@ -25,7 +31,7 @@ When specifying a format for the binary data that Action Invoker returns, there 
 
 <list>
     <li><logiccolor>"Base64"</logiccolor>: The string returned represents bytes in <link "https://en.wikipedia.org/wiki/Base64">Base64 format</link>.</li>
-    <li><logiccolor>"cache"</logiccolor>: The bytes are stored in memory and the string returned contains a key that can be used by other actions to retrieve the bytes. This key is only valid as long as the application is running.</li>
+    <li><logiccolor>"cache"</logiccolor>: The bytes are stored in memory and the string returned contains a key that can be used by other actions to retrieve the bytes. This key, which is prefixed with <logiccolor>"cspro://cache/"</logiccolor>, is only valid as long as the application is running.</li>
     <li><logiccolor>"dataUrl"</logiccolor>: The string returned contains a <link data_url.csdoc>data URL</link>.</li>
     <li><logiccolor>"hex"</logiccolor>: The string returned represents bytes in <link "https://en.wikipedia.org/wiki/Hexadecimal">hexadecimal format</link>. The hexadecimal characters are returned in lowercase.</li>
     <li><logiccolor>"localhostUrl"</logiccolor>: The string returned contains a <link localhost_url.csdoc>localhost URL</link> that can be used to access the binary data, served using a local web server. This URL is only valid as long as the application is running.</li>
@@ -48,7 +54,7 @@ Here is the presentation of the text <logiccolor>"Hello, World!"</logiccolor> in
 Here is what the text may look like when returned as a format that is only valid when the application is running:
 
 <list>
-    <li><b>Cache</b>: <logiccolor>"cscache:819"</logiccolor></li>
+    <li><b>Cache</b>: <logiccolor>"cspro://cache/f48a857c"</logiccolor></li>
     <li><b>Localhost URL</b>: <logiccolor>"http://localhost:50505/vf/1"</logiccolor></li>
 </list>
 

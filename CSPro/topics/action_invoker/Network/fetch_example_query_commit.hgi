@@ -1,0 +1,25 @@
+<color JavaScript>
+// query information about the latest CSPro commit;
+// the GitHub API requires the specification of a User-Agent header
+const response = CS.Network.fetch({
+    url: "https://api.github.com/repos/csprousers/cspro/commits?per_page=1",
+    headers: [
+        "User-Agent: CSPro Help Documentation Example"
+    ]
+});
+
+if (response.ok) {
+    // with a successful response, retrieve the body as JSON using the
+    // resource ID (fetchId) returned from the initial call to Network.fetch
+    const commits = CS.Network.fetchBody({
+        fetchId: response.fetchId,
+        bodyFormat: "json"
+    });
+
+    const latestCommit = commits[0].commit;
+
+    console.log(`Latest commit authored by "${latestCommit.author.name}", ` +
+                `committed on "${latestCommit.committer.date}", ` +
+                `with message: "${latestCommit.message"}"`);
+}
+</color>

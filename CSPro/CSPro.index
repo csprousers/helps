@@ -1331,6 +1331,7 @@
     ]
   },
   { "path": "object_dot_notation.csdoc", "title": "Dot Notation" },
+  { "path": "CS_Network_fetchFile.csdoc", "title": "Download File" },
   { "path": "drag_option_menu.csdoc", "~title": "Drag Options Menu",
     "subindex": [
       { "path": "drag_option_menu.csdoc", "title": "Require Enter Key" },
@@ -1563,6 +1564,7 @@
   { "path": "viewing_multiple_and_facing_pages.csdoc", "title": "Facing Pages" },
   { "path": "boolean_values.csdoc", "title": "false" },
   { "path": "what_is_new_in_cspro.csdoc", "title": "Features" },
+  { "path": "CS_Network.csdoc", "title": "Fetch API" },
   { "path": "change_field_font.csdoc", "title": "Field",
     "subindex": [
       { "path": "change_field_font.csdoc", "title": "Change Box Size" },
@@ -2055,6 +2057,12 @@
     ]
   },
   { "path": "htmldialog_function.csdoc", "~title": "htmldialog Function" },
+  { "path": "CS_Network.csdoc", "title": "HTTP",
+    "subindex": [
+      { "path": "CS_Network.csdoc", "title": "Request" },
+      { "path": "CS_Network.csdoc", "title": "Response" }
+    ]
+  },
   { "path": "questionnaire_and_dictionary_organization.csdoc", "title": "Identification",
     "subindex": [
       { "path": "questionnaire_and_dictionary_organization.csdoc", "title": "Data Dictionary" },
@@ -2816,6 +2824,16 @@
   { "path": "nature_of_census_and_survey_data.csdoc", "~title": "Nature of Census and Survey Data" },
   { "path": "move_around_a_dictionary.csdoc", "title": "Navigating a Dictionary" },
   { "path": "navigating_between_pages_tables_and_areas.csdoc", "title": "Navigating Between Pages  Tables  and Areas" },
+  { "path": "CS_Network.csdoc", "~title": "Network Action Invoker Namespace",
+    "subindex": [
+      { "path": "CS_Network_fetch.csdoc", "~title": "Network.fetch Action" },
+      { "path": "CS_Network_fetchBody.csdoc", "~title": "Network.fetchBody Action" },
+      { "path": "CS_Network_fetchBytes.csdoc", "~title": "Network.fetchBytes Action" },
+      { "path": "CS_Network_fetchFile.csdoc", "~title": "Network.fetchFile Action" },
+      { "path": "CS_Network_fetchJson.csdoc", "~title": "Network.fetchJson Action" },
+      { "path": "CS_Network_fetchText.csdoc", "~title": "Network.fetchText Action" }
+    ]
+  },
   { "path": "network_data_entry.csdoc", "~title": "Network Data Entry" },
   { "path": "what_is_new_in_cspro.csdoc", "title": "New Features" },
   { "path": "newline_handling.csdoc", "~title": "Newline Handling",

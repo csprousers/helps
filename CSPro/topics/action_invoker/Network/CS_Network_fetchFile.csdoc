@@ -1,0 +1,71 @@
+<title>Network.fetchFile Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.Network.fetchFile (<arg>url</arg> := ..., <arg>path</arg> := ...
+                       『, <arg>method</arg> := ...』
+                       『, <arg>headers</arg> := ...』
+                       『, <arg>body</arg> := ...』『, <arg>bodyFormat</arg> := ...』
+                       『, <arg>detailed</arg> := ...』
+                       『, <arg>responseHeadersFormat</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>url</arg></cell><cell>The URL to fetch.</cell><cell>string~!~required</cell>
+    <cell><arg>path</arg></cell><cell>The path of the file to create from the fetched content.</cell><cell>string~!~required</cell>
+    <include fetch_arguments_optional.hgi />
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Network.fetchFile</action> <link action_invoker.csdoc>action</link> submits a HTTP request to a server and writes the response to the disk, potentially also returning response details. The file is written to a file specified as <arg>path</arg>. If a file already exists at <arg>path</arg>, it is overwritten with the new contents.
+
+This action is a wrapper around the actions <action>Network.fetch</action> and <action>Network.fetchBody</action>. <include fetch_convenience_methods.hgi />
+
+
+<include fetch_url.hgi />
+
+<include fetch_method.hgi />
+
+<include fetch_headers.hgi />
+
+<include fetch_body.hgi />
+
+<include fetch_detailed_response.hgi />
+
+
+<subheader>Return Value</subheader>
+
+By default, the action writes the response to the disk and returns the fully evaluated path of the written file. If <arg>detailed</arg> is <logiccolor>true</logiccolor>, the action returns an object with the response "body" as the file path and details about the response as described above.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <include fetch_exceptions.hgi />
+    <li>The file cannot be created or fully written.</li>
+</list>
+
+
+<subheader>Example (CSPro Logic)</subheader>
+
+<logic>
+string imagesBaseUrl = "https://raw.githubusercontent.com/csprousers/cspro/refs/heads/dev/cspro/html/images/";
+string imageFilename = "cspro-logo-medium.png";
+
+string downloadedImageFilePath = CS.Network.fetchFile(
+    url := imagesBaseUrl + imageFilename,
+    path := imageFilename
+);
+
+view(downloadedImageFilePath);
+</logic>
+
+
+<seealso CS_Network.csdoc />
