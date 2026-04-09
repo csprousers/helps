@@ -1331,6 +1331,7 @@
     ]
   },
   { "path": "object_dot_notation.csdoc", "title": "Dot Notation" },
+  { "path": "CS_Network_fetchFile.csdoc", "title": "Download File" },
   { "path": "drag_option_menu.csdoc", "~title": "Drag Options Menu",
     "subindex": [
       { "path": "drag_option_menu.csdoc", "title": "Require Enter Key" },
@@ -2828,6 +2829,7 @@
       { "path": "CS_Network_fetch.csdoc", "~title": "Network.fetch Action" },
       { "path": "CS_Network_fetchBody.csdoc", "~title": "Network.fetchBody Action" },
       { "path": "CS_Network_fetchBytes.csdoc", "~title": "Network.fetchBytes Action" },
+      { "path": "CS_Network_fetchFile.csdoc", "~title": "Network.fetchFile Action" },
       { "path": "CS_Network_fetchJson.csdoc", "~title": "Network.fetchJson Action" },
       { "path": "CS_Network_fetchText.csdoc", "~title": "Network.fetchText Action" }
     ]

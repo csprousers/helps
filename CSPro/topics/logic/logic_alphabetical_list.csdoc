@@ -194,6 +194,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><action>Network.fetch</action> <sup>(CS)</sup></cell><cell>Submits a HTTP request to a server and returns the initial response.</cell>
     <cell><action>Network.fetchBody</action> <sup>(CS)</sup></cell><cell>Processes the body of a HTTP response.</cell>
     <cell><action>Network.fetchBytes</action> <sup>(CS)</sup></cell><cell>Submits a HTTP request to a server and returns the response as bytes.</cell>
+    <cell><action>Network.fetchFile</action> <sup>(CS)</sup></cell><cell>Submits a HTTP request to a server and writes the response to the disk.</cell>
     <cell><action>Network.fetchJson</action> <sup>(CS)</sup></cell><cell>Submits a HTTP request to a server and returns the response in JSON format.</cell>
     <cell><action>Network.fetchText</action> <sup>(CS)</sup></cell><cell>Submits a HTTP request to a server and returns the response in text format.</cell>
     <cell><logiccolor>next</logiccolor></cell><cell>Ends a <logiccolor>do</logiccolor>, <logiccolor>while</logiccolor>, or <logiccolor>for</logiccolor> loop early and continues execution with the next iteration of the loop.</cell>
