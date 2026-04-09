@@ -56,7 +56,7 @@ For example, serializing a Document dictionary item, <logiccolor>CHEST_XRAY</log
 </table>
 
 
-To modify a Document's value from JSON using <logiccolor>Document.setValueFromJson</logiccolor>, CSPro can parse binary data as a <link data_url.csdoc>data URL</link> or can read a file from the disk. An exception occurs if the value is not defined properly. For more information, see details on how to <link binary_data_JSON_representation.csdoc>specify binary data for JSON deserialization</link>.
+To modify a Document's value from JSON using <logiccolor>Document.setValueFromJson</logiccolor>, CSPro can parse binary data as a <link data_url.csdoc>data URL</link>, can read a file from the disk, or can access <link action_invoker_binary_data.csdoc>Action Invoker cached binary data</link>. An exception occurs if the value is not defined properly. For more information, see details on how to <link binary_data_JSON_representation.csdoc>specify binary data for JSON deserialization</link>.
 
 
 <seealso symbols_json_representation.csdoc binary_data_JSON_representation.csdoc />

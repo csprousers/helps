@@ -54,7 +54,9 @@ There are several ways to set binary data using JSON. If you want to clear a val
 string data_url = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAAEElEQVR4nGP4z/CfgSH+BAANggMmwP+nGgAAAABJRU5ErkJggg==";
 
 Image tiny_image;
-tiny_image.setValueFromJson(maketext("{ \"content\": { \"url\": \"%s\" } }", data_url));
+tiny_image.setValueFromJson(
+    maketext('{ "content": { "url": "%s" } }', data_url)
+);
 
 // width = 1, height = 2
 errmsg("width = %d, height = %d", tiny_image.width(), tiny_image.height());
@@ -67,7 +69,24 @@ errmsg("width = %d, height = %d", tiny_image.width(), tiny_image.height());
 string file_path = "european-robin-chirps.m4a";
 
 Audio bird_sounds;
-bird_sounds.setValueFromJson(maketext("{ \"content\": { \"path\": \"%s\" } }", file_path));
+bird_sounds.setValueFromJson(
+    maketext('{ "content": { "path": "%s" } }', file_path)
+);
+</logic>
+
+
+<b>Action Invoker Cached Binary Data</b>: If using the <link action_invoker.csdoc>Action Invoker</link>, it is possible to <link action_invoker_binary_data.csdoc>cache binary data</link> returned as the result of some actions. Updating an object's binary data using this cache can be specified using the <colorinline JSON>"url"</colorinline> property. For example:
+
+<logic>
+string cacheKey = CS.Network.fetchBytes(
+    url := "https://raw.githubusercontent.com/csprousers/cspro/refs/heads/dev/cspro/html/images/cspro-logo-medium.png",
+    responseBodyFormat := "cache"
+);
+
+Image cspro_logo;
+cspro_logo.setValueFromJson(
+    maketext('{ "content": { "url": %s } }', encode(JsonString, cacheKey))
+);
 </logic>
 
 
