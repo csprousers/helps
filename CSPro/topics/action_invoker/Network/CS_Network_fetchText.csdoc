@@ -1,4 +1,80 @@
 <title>Network.fetchText Action</title>
 
 
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.Network.fetchText(<arg>url</arg> := ...
+                      『, <arg>method</arg> := ...』
+                      『, <arg>headers</arg> := ...』
+                      『, <arg>body</arg> := ...』『, <arg>bodyFormat</arg> := ...』
+                      『, <arg>detailed</arg> := ...』
+                      『, <arg>responseHeadersFormat</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>url</arg></cell><cell>The URL to fetch.</cell><cell>string~!~required</cell>
+    <include fetch_arguments_optional.hgi />
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Network.fetchText</action> <link action_invoker.csdoc>action</link> submits a HTTP request to a server and returns the response, with or without details, in text format.
+
+This action is a wrapper around the actions <action>Network.fetch</action> and <action>Network.fetchBody</action>. <include fetch_convenience_methods.hgi />
+
+
+<include fetch_url.hgi />
+
+<include fetch_method.hgi />
+
+<include fetch_headers.hgi />
+
+<include fetch_body.hgi />
+
+<include fetch_detailed_response.hgi />
+
+
+<subheader>Return Value</subheader>
+
+By default, the action returns a string with the HTTP response body as text. If <arg>detailed</arg> is <logiccolor>true</logiccolor>, the action returns an object with the response body as text and details about the response as described above.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <include fetch_exceptions.hgi />
+</list>
+
+
+<subheader>Example (CSPro Logic)</subheader>
+
+<logic>
+errmsg("This is the readme for the CSPro open source repository:\n\n%s",
+       CS.Network.fetchText(url := "https://raw.githubusercontent.com/csprousers/cspro/refs/heads/dev/README.md"));
+</logic>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+CS.Network.fetchTextAsync({
+    url: "https://raw.githubusercontent.com/csprousers/cspro/refs/heads/dev/cspro/zUtilO/Versioning.h"
+})
+.then(text => {
+    console.log("This is the current versioning information from " +
+                "the CSPro open source repository:\n\n" + text);
+})
+.catch(e => {
+    CS.UI.alertAsync({
+        text: e.message
+    });
+});
+</color>
+
+
 <seealso CS_Network.csdoc />

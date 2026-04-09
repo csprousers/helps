@@ -1,0 +1,11 @@
+<subheader>Method</subheader>
+
+The optional argument, <arg>method</arg>, details the <link "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods">HTTP request method</link>, with the argument defaulting to <logiccolor>"GET"</logiccolor>. The possible options include:
+
+<table 2 header>
+    <cell>Method</cell><cell>Option</cell>
+    <cell><logiccolor>"GET"</logiccolor></cell><cell>"The GET method requests a representation of the specified resource."</cell>
+    <cell><logiccolor>"POST"</logiccolor></cell><cell>"The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server." When using POST, you must specify a <arg>body</arg>.</cell>
+    <cell><logiccolor>"PUT"</logiccolor></cell><cell>"The PUT method replaces all current representations of the target resource with the request content."</cell>
+    <cell><logiccolor>"DELETE"</logiccolor></cell><cell>"The DELETE method deletes the specified resource."</cell>
+</table>

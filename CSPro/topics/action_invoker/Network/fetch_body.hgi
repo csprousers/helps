@@ -1,0 +1,38 @@
+<subheader>Body</subheader>
+
+If your request requires a payload, such as when using the POST method, the request body is specified using the argument <arg>body</arg>, with the format optionally specified using <arg>bodyFormat</arg>.
+
+The <arg>body</arg> will be treated as JSON when:
+
+<list>
+    <li><arg>bodyFormat</arg> is <logiccolor>"json"</logiccolor>.</li>
+    <li><arg>bodyFormat</arg> is undefined and:
+        <list>
+            <li><arg>body</arg> is defined as an object;</li>
+            <li>or the header has <logiccolor>"Content-Type"</logiccolor> set to <logiccolor>"application/json"</logiccolor>.</li>
+        </list>
+    </li>
+</list>
+
+For example, the body specified in these arguments would be treated as JSON:
+
+<color JSON>
+{
+  "url": "https://...",
+  "body": {
+    "name": "CSPro Mailing List",
+    "email": "<definition mailing_list />"
+  }
+}</color>
+
+
+If none of these JSON-related conditions applies, the <arg>body</arg> is converted from <link action_invoker_binary_data.csdoc>binary data</link> specified using a string. If the <arg>body</arg>'s MIME type is known (e.g., from a <link data_url.csdoc>data URL</link>), a <logiccolor>"Content-Type"</logiccolor> header with this type will be set if no such header exists. For example:
+
+<color JSON>
+{
+  "url": "https://...",
+  "method": "POST",
+  "body": "Hello, World!",
+  "bodyFormat": "text"
+}
+</color>

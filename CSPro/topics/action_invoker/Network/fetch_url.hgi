@@ -1,0 +1,3 @@
+<subheader>URL</subheader>
+
+The required argument, <arg>url</arg>, specifies the address of the server resource to access, such as a file or an API endpoint. The URL must contain valid characters. To convert dynamic text to a valid URL, use the <logiccolor>encode</logiccolor> function with the arguments <i>URI</i> or <i>URIComponent</i>.

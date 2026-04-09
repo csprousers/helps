@@ -1,0 +1,2 @@
+<li>There is an error submitting the HTTP request to the server or processing the response.</li>
+<li>The response status code is not in the range 200 - 299. If you need to process a response with a status code not in this range, use the action <action>Network.fetchBody</action>.</li>

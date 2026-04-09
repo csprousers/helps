@@ -1,4 +1,85 @@
 <title>Network.fetchJson Action</title>
 
 
+<subheader>Format</subheader>
+
+
+<logicsyntax>
+s = CS.Network.fetchJson(<arg>url</arg> := ...
+                      『, <arg>method</arg> := ...』
+                      『, <arg>headers</arg> := ...』
+                      『, <arg>body</arg> := ...』『, <arg>bodyFormat</arg> := ...』
+                      『, <arg>detailed</arg> := ...』
+                      『, <arg>responseHeadersFormat</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>url</arg></cell><cell>The URL to fetch.</cell><cell>string~!~required</cell>
+    <include fetch_arguments_optional.hgi />
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Network.fetchJson</action> <link action_invoker.csdoc>action</link> submits a HTTP request to a server and returns the response, with or without details, in <link JSON_primer.csdoc>JSON</link> format.
+
+This action is a wrapper around the actions <action>Network.fetch</action> and <action>Network.fetchBody</action>. <include fetch_convenience_methods.hgi />
+
+
+<include fetch_url.hgi />
+
+<include fetch_method.hgi />
+
+<include fetch_headers.hgi />
+
+<include fetch_body.hgi />
+
+<include fetch_detailed_response.hgi />
+
+
+<subheader>Return Value</subheader>
+
+By default, the action returns the HTTP response body parsed as JSON, returning a string, number, boolean, array, or object. If <arg>detailed</arg> is <logiccolor>true</logiccolor>, the action returns an object with the response body as parsed JSON and details about the response as described above.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <include fetch_exceptions.hgi />
+    <li>The response is not valid JSON.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+// display information about latest few CSPro releases;
+// the GitHub API requires the specification of a User-Agent header
+CS.Network.fetchJsonAsync({
+    url: "https://api.github.com/repos/csprousers/cspro/releases?page=1&per_page=5",
+    headers: [
+        "User-Agent: CSPro Help Documentation Example"
+    ]
+})
+.then(releases => {
+    // the releases endpoint returns an array of objects
+    releases.forEach(release => {
+        console.log(
+            `Release tagged '${release.tag_name}' ` +
+            `authored by '${release.author.login}' ` +
+            `created at '${release.created_at}'`
+        );
+    });
+})
+.catch(e => {
+    CS.UI.alertAsync({
+        text: e.message
+    });
+});
+</color>
+
+
 <seealso CS_Network.csdoc />
