@@ -1,0 +1,8 @@
+<table 2 header>
+    <cell>Key</cell><cell>Value</cell>
+    <cell><colorinline JSON>"fetchId"</colorinline></cell><cell>A numeric <link action_invoker_resource_ids.csdoc>resource ID</link> that identifies this successful response's body. This can be used to retrieve the response body using the action <action>Network.fetchBody</action>.</cell>
+    <cell><colorinline JSON>"status"</colorinline></cell><cell>A number indicating the <link "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status">HTTP status code</link> of the response.</cell>
+    <cell><colorinline JSON>"ok"</colorinline></cell><cell>A boolean flag indicating if the response was successful. Success is a status code in the <link https://developer.mozilla.org/en-US/docs/Web/API/Response/ok>range 200 - 299</link>.</cell>
+    <cell><colorinline JSON>"headers"</colorinline></cell><cell>An object, or array, based on the optional argument <arg>responseHeadersFormat</arg>, with the response headers. If returned as an object, which is the default setting, the header names and values are represented as the keys and values of the <colorinline JSON>"headers"</colorinline> object. If returned as an array, the headers are returned as an array of strings. The response header format mirrors that of the request headers detailed above.</cell>
+    <cell><colorinline JSON>"error"</colorinline></cell><cell>Text from the server, returned as the response body, describing the error if the response was received unsuccessfully.</cell>
+</table>

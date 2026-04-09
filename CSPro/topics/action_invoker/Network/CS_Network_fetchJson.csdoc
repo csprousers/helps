@@ -56,10 +56,10 @@ The action throws an exception if any of its arguments are not specified in a va
 <subheader>Example (JavaScript)</subheader>
 
 <color JavaScript>
-// display information about latest few CSPro releases;
+// display information about the latest few CSPro releases;
 // the GitHub API requires the specification of a User-Agent header
 CS.Network.fetchJsonAsync({
-    url: "https://api.github.com/repos/csprousers/cspro/releases?page=1&per_page=5",
+    url: "https://api.github.com/repos/csprousers/cspro/releases?per_page=5",
     headers: [
         "User-Agent: CSPro Help Documentation Example"
     ]

@@ -1,4 +1,56 @@
 <title>Network.fetchBody Action</title>
 
 
-<seealso CS_Network.csdoc />
+<logicsyntax>
+s = CS.Network.fetchBody(『<arg>fetchId</arg> := ...』
+                      『, <arg>bodyFormat</arg> := ...』
+                      『, <arg>cancel</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>fetchId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Network.fetch</action>.</cell><cell>number~!~not required</cell>
+    <cell><arg>bodyFormat</arg></cell><cell>The <link action_invoker_binary_data.csdoc>format</link> in which the body is returned.~!~The default value is <logiccolor>"dataUrl"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>cancel</arg></cell><cell>A flag indicating that the body can be discarded.</cell><cell>boolean~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Network.fetchBody</action> <link action_invoker.csdoc>action</link> processes the response of a HTTP request initiated by <action>Network.fetch</action>. The pending response is identified using <arg>fetchId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Network.fetch</action>. While optional, this should generally be specified explicitly. (If there is only one pending response, the resource ID can be calculated implicitly.) Once the response is processed, the resource ID is no longer valid.
+
+The argument <arg>cancel</arg>, if set to <logiccolor>true</logiccolor>, results in the body of the response being discarded. If you want to conditionally process a response, for example based on the value of a header, this is more efficient than retrieving the entire response using an action such as <action>Network.fetchJson</action>.
+
+If retrieving the response, the argument <arg>bodyFormat</arg> determines how the body is returned. Options include:
+
+<list>
+    <li><logiccolor>"json"</logiccolor>: The response body is parsed as JSON, returning a string, number, boolean, array, or object. This is similar to <action>Network.fetchJson</action>.</li>
+    <li><logiccolor>"text"</logiccolor>: The response is returned as text. This is similar to <action>Network.fetchText</action>.</li>
+    <li>If <arg>bodyFormat</arg> is specified and not one of the above options, it is used to specify the <link action_invoker_binary_data.csdoc>format</link> of the returned binary data. If requesting a large amount of data, consider using the <logiccolor>"cache"</logiccolor> format to avoid representing a huge number of bytes as a string. This is similar to <action>Network.fetchBytes</action>.</li>
+    <li>If no <arg>bodyFormat</arg> is specified, but the MIME type of the response is JSON or text-based, then it will be returned as JSON or text.</li>
+    <li>If none of the above rules apply, the response defaults to a <link data_url.csdoc>data URL</link>.</li>
+</list>
+
+
+<subheader>Return Value</subheader>
+
+The action returns the response body in the format specified. When discarding the body using <arg>cancel</arg>, the action returns undefined.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The fetch ID is not valid.</li>
+    <li>The connection times out.</li>
+    <li>The response is not valid for its type (e.g., invalid JSON).</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<include fetch_example_query_commit.hgi />
+
+
+<seealso CS_Network.csdoc CS_Network_fetch.csdoc />

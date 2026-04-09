@@ -1,4 +1,68 @@
 <title>Network.fetch Action</title>
 
 
-<seealso CS_Network.csdoc />
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.Network.fetch(<arg>url</arg> := ...
+                  『, <arg>method</arg> := ...』
+                  『, <arg>headers</arg> := ...』
+                  『, <arg>body</arg> := ...』『, <arg>bodyFormat</arg> := ...』
+                  『, <arg>responseHeadersFormat</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>url</arg></cell><cell>The URL to fetch.</cell><cell>string~!~required</cell>
+    <include fetch_arguments_optional_no_detailed.hgi />
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Network.fetch</action> <link action_invoker.csdoc>action</link> submits a HTTP request to a server and returns details about the response. When the response results in a <link "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status">HTTP status code</link> in the <link https://developer.mozilla.org/en-US/docs/Web/API/Response/ok>range 200 - 299</link>, the action returns a <link action_invoker_resource_ids.csdoc>resource ID</link>, <arg>fetchId</arg>, that can be used to retrieve the response body using the action <action>Network.fetchBody</action>.
+
+This action is useful as a way to initiate requests where the result may not fall in the <colorinline JSON>"ok"</colorinline> range. For simpler requests, there are actions that serve as wrappers around this and <action>Network.fetchBody</action>. <include fetch_convenience_methods.hgi />
+
+
+<include fetch_url.hgi />
+
+<include fetch_method.hgi />
+
+<include fetch_headers.hgi />
+
+<include fetch_body.hgi />
+
+
+<subheader>Return Value</subheader>
+
+The action returns an object containing information about the response:
+
+<include fetch_detailed_response_without_body.hgi />
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form or if there is an error submitting the HTTP request. Unlike the other fetch convenience methods, an exception is not thrown if the response status code is not in the range 200 - 299.
+
+
+<subheader>Example 1 (JavaScript)</subheader>
+
+<include fetch_example_query_commit.hgi />
+
+
+<subheader>Example 2 (JavaScript)</subheader>
+
+<color JavaScript>
+// request a page that returns a 404 Not Found response
+const response = CS.Network.fetch({
+    url: "https://httpbin.org/status/404",
+    responseHeadersFormat: "array"
+});
+
+// displays: Response "status" = 404, "ok" = false, first "header" = HTTP/1.1 404 NOT FOUND
+console.log(`Response "status" = ${response.status}, "ok" = ${response.ok}, first "header" = ${response.headers[0]}`);
+</color>
+
+
+<seealso CS_Network.csdoc CS_Network_fetchBody.csdoc />

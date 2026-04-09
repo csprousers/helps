@@ -1,0 +1,5 @@
+<cell><arg>method</arg></cell><cell>The HTTP request method.~!~The default value is is <logiccolor>"GET"</logiccolor>.</cell><cell>string~!~not required</cell>
+<cell><arg>headers</arg></cell><cell>Request headers to send to the server.</cell><cell>array, object~!~not required</cell>
+<cell><arg>body</arg></cell><cell>The body to include with the request.</cell><cell>object, string~!~not required</cell>
+<cell><arg>bodyFormat</arg></cell><cell>The <link action_invoker_binary_data.csdoc>format</link> of the body.~!~The default value is <logiccolor>"autodetect"</logiccolor>.</cell><cell>string~!~not required</cell>
+<cell><arg>responseHeadersFormat</arg></cell><cell>Indicates how response headers are returned.~!~The default value is <logiccolor>"object"</logiccolor>.</cell><cell>string~!~not required</cell>
