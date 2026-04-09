@@ -148,4 +148,11 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 </list>
 
 
+<subheader>CSWeb</subheader>
+
+<list>
+    <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> now requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
+</list>
+
+
 <seealso what_is_new_in_cspro.csdoc />
