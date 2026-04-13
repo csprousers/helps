@@ -4100,6 +4100,15 @@
       { "path": "synctime_function.csdoc", "title": "Statistics" }
     ]
   },
+  { "path": "sync_services.csdoc", "~title": "Synchronization Services",
+    "subindex": [
+      { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth" },
+      { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
+      { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
+      { "path": "sync_service_ftp.csdoc", "title": "FTP" },
+      { "path": "sync_service_local_files.csdoc", "title": "Local Files" }
+    ]
+  },
   { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Synchronous Execution" },
   { "path": "syncmessage_function.csdoc", "~title": "SyncMessage Function" },
   { "path": "syncparadata_function.csdoc", "~title": "SyncParadata Function" },

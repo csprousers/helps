@@ -1,0 +1,9 @@
+<title>Synchronization Services</title>
+
+<list>
+    <li><topic sync_service_bluetooth.csdoc /></li>
+    <li><topic sync_service_csweb.csdoc /></li>
+    <li><topic sync_service_dropbox.csdoc /></li>
+    <li><topic sync_service_ftp.csdoc /></li>
+    <li><topic sync_service_local_files.csdoc /></li>
+</list>

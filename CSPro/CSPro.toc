@@ -931,6 +931,22 @@
         ]
       },
       {
+        "title": "Synchronization",
+        "chapters": [
+          {
+            "title": "Services",
+            "documents": [
+              { "path": "sync_services.csdoc", "title": "Overview" },
+              { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
+              { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth" },
+              { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
+              { "path": "sync_service_ftp.csdoc", "title": "FTP" },
+              { "path": "sync_service_local_files.csdoc", "title": "Local Files" }
+            ]
+          }
+        ]
+      },
+      {
         "title": "CSPro Statements and Functions",
         "documents": [
           { "path": "statement_format_symbols.csdoc", "~title": "Statement Format Symbols" },
