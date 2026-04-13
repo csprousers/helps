@@ -43,11 +43,11 @@ The following behavior can be customized by specifying properties in the <link c
     <include properties_record.hgi />
 </table>
 
-For example, the following connection string, specified in a <link run_production_batch_edits.csdoc>batch PFF</link>, would result in a SPSS file containing the values of the <logiccolor>HOUSING_REC</logiccolor> record:
+For example, the following connection string specifies a SPSS file containing the values of the <logiccolor>HOUSING_REC</logiccolor> record:
 
-<pff>
-OutputData=housing.sav|record=HOUSING_REC
-</pff>
+<color property_string>
+housing.sav|record=HOUSING_REC
+</color>
 
 
 <seealso data_sources.csdoc />

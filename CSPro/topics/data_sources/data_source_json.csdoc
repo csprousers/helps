@@ -82,11 +82,11 @@ The following behavior can be customized by specifying properties in the <link c
     <cell><indent><colorinline JSON>false</colorinline> ⁺⁺⁺</indent></cell><cell><indent>Only codes are written.</indent></cell>
 </table>
 
-For example, the following connection string, specified in a <link run_production_data_entry.csdoc>data entry PFF</link>, would attach to an <link dictionary_types.csdoc>external dictionary</link> a JSON file where labels are written and the binary data directory is overridden to a subdirectory named "Images":
+For example, the following connection string specifies a JSON file where labels are written and the binary data directory is overridden to a subdirectory named "Images":
 
-<pff>
-CENSUS_<definition System::year />_DICT=.\Census.json|writeLabels=true&binaryDataDirectory=Images
-</pff>
+<color property_string>
+Census.json|writeLabels=true&binaryDataDirectory=Images
+</color>
 
 
 <seealso data_sources.csdoc />

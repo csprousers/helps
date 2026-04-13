@@ -62,11 +62,11 @@ The following behavior can be customized by specifying properties in the <link c
     <include properties_cache.hgi />
 </table>
 
-For example, the following connection string, specified in a <link run_production_data_entry.csdoc>data entry PFF</link>, would attach to an <link dictionary_types.csdoc>external dictionary</link> a Text file with caching enabled:
+For example, the following connection string specifies a Text file with caching enabled:
 
-<pff>
-CENSUS_<definition System::year />_DICT=.\Census.dat|cache=true
-</pff>
+<color property_string>
+Census.dat|cache=true
+</color>
 
 
 <seealso data_sources.csdoc data_file_type_structure.csdoc />

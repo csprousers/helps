@@ -3,9 +3,9 @@
 
 A connection string is a text string that details how to open a <link data_sources.csdoc>data source</link>. Typically a connection string is just a file name. Connection strings are used in <link program_information_file_pff.csdoc>PFF files</link> as well as in logic when data sources are specified, such as when using the <logiccolor>setfile</logiccolor> function. A connection string is made up of several components:
 
-<logicsyntax>
-<arg>file_name</arg> | <arg>property_name1</arg>=<arg>property_value1</arg> & <arg>property_name2</arg>=<arg>property_value2</arg>
-</logicsyntax>
+<color property_string>
+file_name | property_name1=property_value1 & property_name2=property_value2
+</color>
 
 The <arg>file_name</arg> argument is the file name of the data source. It can be specified as a relative or absolute path. If only the file name is specified, then the connection string is complete. However, if any properties are specified, then the properties must be separated from the file name by a pipe <logiccolor>'|'</logiccolor> character.
 

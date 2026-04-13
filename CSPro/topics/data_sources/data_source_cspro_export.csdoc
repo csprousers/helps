@@ -38,11 +38,11 @@ The following behavior can be customized by specifying properties in the <link c
     <include properties_record.hgi />
 </table>
 
-For example, the following connection string, specified in a <link run_production_batch_edits.csdoc>batch PFF</link>, would result in cases from the <logiccolor>SCHOOL_REC</logiccolor> record being written using the <link data_source_json.csdoc>CSPro DB</link> data source with an overridden name for the dictionary (rather than the default <i>school.csdb.dcf</i>).
+For example, the following connection string results in cases from the <logiccolor>SCHOOL_REC</logiccolor> record being written using the <link data_source_json.csdoc>CSPro DB</link> data source with an overridden name for the dictionary (rather than the default <i>school.csdb.dcf</i>).
 
-<pff>
-OutputData=.\school.csdb|type=CSProExport&record=SCHOOL_REC&dictionaryPath=school-export.dcf
-</pff>
+<color property_string>
+school.csdb|type=CSProExport&record=SCHOOL_REC&dictionaryPath=school-export.dcf
+</color>
 
 
 <seealso data_sources.csdoc />
