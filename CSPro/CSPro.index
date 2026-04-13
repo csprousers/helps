@@ -420,7 +420,7 @@
   { "path": "assignment_statement.csdoc", "~title": "Assignment Statement" },
   { "path": "statements.csdoc", "title": "Assignment Statements" },
   { "path": "HashMap.csdoc", "title": "Associative Array" },
-  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Asynchronous Execution" },
+  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Asynchronous Execution (Action Invoker)" },
   { "path": "Audio.csdoc", "~title": "Audio Object",
     "subindex": [
       { "path": "Audio_clear_function.csdoc", "~title": "Audio.clear Function" },
@@ -4109,7 +4109,7 @@
       { "path": "sync_service_local_files.csdoc", "title": "Local Files" }
     ]
   },
-  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Synchronous Execution" },
+  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Synchronous Execution (Action Invoker)" },
   { "path": "syncmessage_function.csdoc", "~title": "SyncMessage Function" },
   { "path": "syncparadata_function.csdoc", "~title": "SyncParadata Function" },
   { "path": "syncserver_function.csdoc", "~title": "SyncServer Function" },
