@@ -16,9 +16,9 @@ By default, each keyer will be able to view, modify, and verify cases in the sha
 
 <subheader>Using Data Synchronization on the Local Network</subheader>
 
-CSPro supports the transfer of data files between computers using the <link synchronization.csdoc>synchronization</link> feature. This can be used to transfer data between the keyers' computers and a server. Normally synchronization is used to transfer data over the Internet to a central server, but it can also be used with a server that is connected only to the local network.
+CSPro supports the transfer of data files between computers using the <link synchronization.csdoc>synchronization</link> feature. This can be used to transfer data between the keyers' computers and a <link sync_services.csdoc>synchronization service</link>. Normally synchronization is used to transfer data over the Internet to a central server, but it can also be used with a server that is connected only to the local network.
 
-When using synchronization, each keyer enters data to a separate data file on their computer. After entering data, they use CSEntry's synchronize functionality to transfer the data that they keyed over the network to a server. The combined data from all keyers can then be downloaded from the server.
+When using synchronization, each keyer enters data to a separate data file on their computer. After entering data, they use CSEntry's synchronize functionality to transfer the data that they keyed over the network to a synchronization service. The combined data from all keyers can then be downloaded from the service.
 
 <center><image network_data_entry_using_sync.png /></center>
 

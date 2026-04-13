@@ -33,12 +33,12 @@ The <pffcolor>[Run Information]</pffcolor> block is required and must appear exa
 
 <subheader>[ExternalFiles]</subheader>
 
-The <pffcolor>[ExternalFiles]</pffcolor> block is required. It relates the dictionary name to the data file that will be synced. If the data file does not exist, it will be created. A copy of the dictionary must exist on the server (which it automatically will if using CSWeb).
+The <pffcolor>[ExternalFiles]</pffcolor> block is required. It relates the dictionary name to the data file that will be synced. If the data file does not exist, it will be created. A copy of the dictionary must exist on the <link CSPro::sync_services.csdoc>synchronization service</link> (which it automatically will if using CSWeb).
 
 
 <subheader>[Parameters]</subheader>
 
-The <pffcolor>[Parameters]</pffcolor> block is required and includes information about the server to be used during the synchronization.
+The <pffcolor>[Parameters]</pffcolor> block is required and includes information about the <link CSPro::sync_services.csdoc>synchronization service</link> to be used.
 
 <list>
     <li><pffcolor>SyncType</pffcolor>= specifies the type of server to be used during the synchronization. Possible options include: <b>CSWeb</b>, <b>Dropbox</b>, <b>LocalDropbox</b>, <b>FTP</b>, and <b>LocalFiles</b>.</li>

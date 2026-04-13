@@ -1,12 +1,14 @@
 <title>Save a Deployment Specification File</title>
 
-Once you have configured your deployment pacakge, you can store your choices for future use. The file in which these selections are stored is a Deployment Specification file (.csds). You can use this file at a later date to build and deploy your application. For example, if you make changes to your data entry application logic or forms, you can use the Deployment Specification file to place the updated application package on the server so that interviewers in the field can update the version on their tablets.
+Once you have configured your deployment pacakge, you can store your choices for future use. The file in which these selections are stored is a Deployment Specification file (.csds). You can use this file at a later date to build and deploy your application. For example, if you make changes to your data entry application logic or forms, you can use the Deployment Specification file to place the updated application package on the <link CSPro::sync_services.csdoc>synchronization service</link> so that interviewers in the field can update the version on their tablets.
+
 
 <subheader>To save to the current specification file ...</subheader>
 
 <list ordered>
     <li>From the <b>File</b> menu, select <b>Save</b>; or press <b>Ctrl+S</b>.</li>
 </list>
+
 
 <subheader>To save to a different specification file ...</subheader>
 

@@ -1,6 +1,6 @@
 <title>Synchronize Data</title>
 <context ID_FILE_SYNCHRONIZE />
 
-A data entry application may be able to synchronize data with a remote server. If so, the <b>Synchronize</b> menu option (off the <b>File</b> menu) will be enabled when you are not currently working in any case. When you select this option, CSEntry will attempt to connect to the remote server and then synchronize data, as well as possibly the data entry application itself, using parameters specified by the application programmer.
+A data entry application may be able to synchronize data with a <link CSPro::sync_services.csdoc>synchronization service</link>. If so, the <b>Synchronize</b> menu option (off the <b>File</b> menu) will be enabled when you are not currently working in any case. When you select this option, CSEntry will attempt to connect to the remote server and then synchronize data, as well as possibly the data entry application itself, using parameters specified by the application programmer.
 
 You may have to enter a username and/or password before the synchronization process begins.
