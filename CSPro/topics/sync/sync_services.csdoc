@@ -7,3 +7,13 @@
     <li><topic sync_service_ftp.csdoc /></li>
     <li><topic sync_service_local_files.csdoc /></li>
 </list>
+
+
+<subheader>Determining What Synchronization Service Is Used</subheader>
+
+All synchronization services have behavior that can be customized by specifying properties in the <link sync_connection_string.csdoc>connection string</link>. When CSPro analyzes a connection string to determine what service to use, the default behavior is to identify the service using the resource, especially the resource's prefix. The property <colorinline JSON>"type"</colorinline> can be used to override this behavior.
+
+<include sync_connection_string_implicit_calculation.hgi />
+
+
+<seealso synchronization.csdoc />

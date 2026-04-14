@@ -1,0 +1,34 @@
+<title>Synchronization Connection String</title>
+
+
+<subheader>Overview</subheader>
+
+A synchronization connection string is a kind of <link connection_string.csdoc>connection string</link> used to identify a <link sync_services.csdoc>synchronization service</link>. The resource is typically the URL of a server, such as a URL to a <link sync_service_csweb.csdoc>CSWeb server</link>.
+
+Synchronization connection strings are used in <link program_information_file_pff.csdoc>PFF files</link> as well as in logic when synchronization services are specified, such as when using the <logiccolor>syncconnect</logiccolor> function.
+
+For example, this connection string specifies a <link sync_service_csweb.csdoc>CSWeb</link> URL and a property defining the username and password:
+
+<color property_string>
+https://example.org/csweb/api|username=jackw&password=MyPa%24%24w0rd%21
+</color>
+
+Used in logic, this might look like:
+
+<logic>
+syncconnect(maketext(
+    "https://example.org/csweb/api|username=%s&password=%s",
+    encode(PercentEncoding, "jackw"),
+    encode(PercentEncoding, "MyPa$$w0rd!")
+));
+</logic>
+
+The properties that can be specified differ for each synchronization service and are documented in the topics describing each service.
+
+
+<subheader>Type Calculation</subheader>
+
+The property <colorinline JSON>"type"</colorinline> can be used to specify the synchronization service type. Generally, it is not necessary to define a type because it can be deduced from the resource, especially the resource's prefix. <include sync_connection_string_implicit_calculation.hgi />
+
+
+<seealso connection_string.csdoc sync_services.csdoc  />

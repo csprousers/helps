@@ -1,0 +1,13 @@
+The following table lists the type values as well as any rules for implicit type calculations:
+
+<table 3 header nowrap>
+    <cell>Synchronization Service</cell><cell nowrap>Type</cell><cell>Resource</cell>
+    <cell><link sync_service_bluetooth.csdoc>Bluetooth</link></cell><cell nowrap><colorinline JSON>"Bluetooth"</colorinline></cell><cell>Resource is <colorinline JSON>"Bluetooth"</colorinline>.</cell>
+    <cell><link sync_service_csweb.csdoc>CSWeb</link></cell><cell nowrap><colorinline JSON>"CSWeb"</colorinline></cell><cell>Resource begins with <colorinline JSON>"https://"</colorinline> or <colorinline JSON>"http://"</colorinline>.</cell>
+    <cell><link sync_service_dropbox.csdoc>Dropbox</link></cell><cell nowrap><colorinline JSON>"Dropbox"</colorinline></cell><cell>Resource is <colorinline JSON>"Dropbox"</colorinline>.</cell>
+    <cell><link sync_service_dropbox.csdoc>Dropbox (Local Files)</link></cell><cell nowrap><colorinline JSON>"Dropbox"</colorinline></cell><cell>Resource is <colorinline JSON>"Dropbox"</colorinline> with property <colorinline JSON>"useLocal"</colorinline> set to <colorinline JSON>"true"</colorinline>.</cell>
+    <cell><link sync_service_ftp.csdoc>FTP</link></cell><cell nowrap><colorinline JSON>"FTP"</colorinline></cell><cell>Resource begins with <colorinline JSON>"ftp://"</colorinline>, <colorinline JSON>"ftps://"</colorinline> or <colorinline JSON>"ftpse://"</colorinline>.</cell>
+    <cell><link sync_service_local_files.csdoc>Local Files</link></cell><cell nowrap><colorinline JSON>"LocalFiles"</colorinline></cell><cell>Resource begins with <colorinline JSON>"file:///"</colorinline>.</cell>
+</table>
+
+If the type cannot be deduced due to implicit calculations, and if it is not explicitly specified, it is assumed to be a path to a directory to use for the <link sync_service_local_files.csdoc>Local Files</link> synchronization service.

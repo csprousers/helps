@@ -50,6 +50,13 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 </list>
 
 
+<subheader>Synchronization</subheader>
+
+<list>
+    <li>Referencing synchronization services, such as when using <logiccolor>syncconnect</logiccolor>, is possible using a single string, a <link sync_connection_string.csdoc>synchronization connection string</link>.</li>
+</list>
+
+
 <subheader>Android</subheader>
 
 <list>

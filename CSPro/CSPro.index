@@ -881,7 +881,8 @@
   { "path": "connection_string.csdoc", "~title": "Connection String",
     "subindex": [
       { "path": "data_connection_string.csdoc", "~title": "Data Connection String" },
-      { "path": "encode_function.csdoc", "title": "Percent Encoding" }
+      { "path": "encode_function.csdoc", "title": "Percent Encoding" },
+      { "path": "sync_connection_string.csdoc", "~title": "Synchronization Connection String" }
     ]
   },
   { "path": "batch_edit_applications.csdoc", "title": "Consistency Checks" },
@@ -1121,10 +1122,10 @@
   { "path": "data_sources.csdoc", "~title": "Data Sources",
     "subindex": [
       { "path": "data_source_csv.csdoc", "title": "Comma Delimited (CSV)" },
+      { "path": "data_connection_string.csdoc", "title": "Connection String" },
       { "path": "data_source_csdb.csdoc", "title": "CSPro DB" },
       { "path": "data_source_cspro_export.csdoc", "title": "CSPro Export" },
       { "path": "data_source_csweb.csdoc", "title": "CSWeb" },
-      { "path": "data_connection_string.csdoc", "~title": "Data Connection String" },
       { "path": "data_source_csdbe.csdoc", "title": "Encrypted CSPro DB" },
       { "path": "data_source_excel.csdoc", "title": "Excel" },
       { "path": "data_source_memory.csdoc", "title": "In-Memory" },
@@ -4098,6 +4099,7 @@
   { "path": "synchronization.csdoc", "title": "Synchronization",
     "subindex": [
       { "path": "synchronization.csdoc", "title": "Overview" },
+      { "path": "sync_services.csdoc", "title": "Services" },
       { "path": "synchronization_simple.csdoc", "title": "Simple Synchronization" },
       { "path": "synctime_function.csdoc", "title": "Statistics" }
     ]
@@ -4105,6 +4107,7 @@
   { "path": "sync_services.csdoc", "~title": "Synchronization Services",
     "subindex": [
       { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth" },
+      { "path": "sync_connection_string.csdoc", "title": "Connection String" },
       { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
       { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
       { "path": "sync_service_ftp.csdoc", "title": "FTP" },

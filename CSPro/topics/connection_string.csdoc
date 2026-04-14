@@ -11,6 +11,7 @@ For more information on connection strings, including implicit type calculations
 
 <list>
     <li><topic data_connection_string.csdoc /></li>
+    <li><topic sync_connection_string.csdoc /></li>
 </list>
 
 
@@ -38,7 +39,7 @@ C:\cspro-projects\data\body-measurements.csdbe|password=MyPa%24%24w0rd%21
 ../data/body-measurements.json|verbose&binaryDataFormat=dataUrl
 </color>
 
-The following are examples of sync connection strings specified using text:
+The following are examples of <link sync_connection_string.csdoc>synchronization connection strings</link> specified using text:
 
 <color property_string>
 https://example.org/csweb/api
@@ -84,7 +85,7 @@ The following shows the above <link data_connection_string.csdoc>data connection
 }
 </color>
 
-The following shows the above sync connection strings specified using JSON:
+The following shows the above <link sync_connection_string.csdoc>synchronization connection strings</link> specified using JSON:
 
 <color JSON>
 {
@@ -100,4 +101,4 @@ The following shows the above sync connection strings specified using JSON:
 </color>
 
 
-<seealso data_connection_string.csdoc sync_services.csdoc />
+<seealso data_connection_string.csdoc sync_connection_string.csdoc />

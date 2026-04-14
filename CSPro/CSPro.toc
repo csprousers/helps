@@ -938,6 +938,7 @@
             "title": "Services",
             "documents": [
               { "path": "sync_services.csdoc", "title": "Overview" },
+              { "path": "sync_connection_string.csdoc", "~title": "Synchronization Connection String" },
               { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
               { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth" },
               { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
