@@ -53,7 +53,11 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <subheader>Synchronization</subheader>
 
 <list>
-    <li>Referencing synchronization services, such as when using <logiccolor>syncconnect</logiccolor>, is possible using a single string, a <link sync_connection_string.csdoc>synchronization connection string</link>.</li>
+    <li>Referencing synchronization services, such as when using <logiccolor>syncconnect</logiccolor>, is possible using a single string, a <link sync_connection_string.csdoc>synchronization connection string</link>. This eliminates the need to specify the type of the service.
+        <list>
+            <li>The <pffcolor>SyncService</pffcolor> <link program_information_file_pff.csdoc>PFF attribute</link> replaces the previous attributes named <i>SyncType</i> and <i>SyncUrl</i>.</li>
+        </list>
+    </li>
 </list>
 
 
