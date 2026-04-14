@@ -67,12 +67,21 @@ If an override is coded, any <logiccolor>impute</logiccolor> statement that foll
 Applications using the <logiccolor>impute</logiccolor> function can generate up to three files:
 
 <list>
-    <li>Imputation <link frequencies_file.csdoc>frequencies</link> (with the default extension .impute_freq.lst)</li>
-    <li>Imputation stat dictionary (if using <logiccolor>stat</logiccolor>, with the default extension .impute_stat.dcf)</li>
-    <li>Imputation stat data (if using <logiccolor>stat</logiccolor>, with the default extension .impute_stat.csdb)</li>
+    <li>Imputation <link frequencies_file.csdoc>frequencies</link> (with the default extension .impute_freq.lst).</li>
+    <li>Imputation stat dictionary (when using <logiccolor>stat</logiccolor>, with the default extension .impute_stat.dcf).</li>
+    <li>Imputation stat data (when using <logiccolor>stat</logiccolor>, with the default extension .impute_stat.csdb).</li>
 </list>
 
 You can specify the names of these data files in the <link run_a_batch_edit_application.csdoc>File Associations</link> dialog or in your application's <link run_production_batch_edits.csdoc>PFF file</link>.
+
+Using a <link connection_string.csdoc>connection string</link> with the property <colorinline JSON>"dictionaryPath"</colorinline>, you can override the default file path of the stat dictionary. The property is evaluated relative to the path of the data file. For example:
+
+<pff>
+ImputeStat=.\imputations.csdb|dictionaryPath=imputations.dcf
+</pff>
+
+
+<subheader>Imputation Frequencies</subheader>
 
 The frequencies report contains five columns:
 
