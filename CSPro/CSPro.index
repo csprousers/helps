@@ -4082,6 +4082,7 @@
     ]
   },
   { "path": "synchronization.csdoc", "title": "sync.log File" },
+  { "path": "syncable_name.csdoc", "~title": "Syncable Name" },
   { "path": "syncapp_function.csdoc", "~title": "SyncApp Function" },
   { "path": "syncconnect_function.csdoc", "~title": "SyncConnect Function",
     "subindex": [
@@ -4101,7 +4102,8 @@
       { "path": "synchronization.csdoc", "title": "Overview" },
       { "path": "sync_services.csdoc", "title": "Services" },
       { "path": "synchronization_simple.csdoc", "title": "Simple Synchronization" },
-      { "path": "synctime_function.csdoc", "title": "Statistics" }
+      { "path": "synctime_function.csdoc", "title": "Statistics" },
+      { "path": "syncable_name.csdoc", "~title": "Syncable Name" }
     ]
   },
   { "path": "sync_services.csdoc", "~title": "Synchronization Services",

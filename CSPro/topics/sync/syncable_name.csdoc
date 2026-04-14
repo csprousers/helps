@@ -1,0 +1,25 @@
+<title>Syncable Name</title>
+
+
+<subheader>Overview</subheader>
+
+When defined, a <link introduction_to_data_dictionary.csdoc>dictionary's</link> syncable name overrides its actual name when <link synchronization.csdoc>synchronizing</link> data, sending or receiving cases, from a <link sync_services.csdoc>synchronization service</link>. The dictionary name is associated with different databases or data sets on the synchronization service, and specifying a syncable name allows the same underlying dictionary to be used to access multiple sets of data.
+
+For example, while preparing for a census, you might set the dictionary's syncable name to CENSUS_PILOT_DICT. Data synchronized during the preparation phase would be saved in databases with names based on CENSUS_PILOT_DICT. Prior to census enumeration, the syncable name would be cleared and then data synchronized after that would point would be saved in a database with a name based on the actual dictionary name, CENSUS_DICT.
+
+Another use of syncable names is to separate different rounds of a survey into different databases. For example, you might use syncable names such as AI_USE_DICT_ESWATINI, AI_USE_DICT_LESOTHO, and so on.
+
+
+<subheader>Specifying a Syncable Name</subheader>
+
+There are two ways to specify the syncable name override, which is set on a per-dictionary basis. You can use the <link dictionary_property_panel.csdoc>dictionary property panel</link> to define a <b>Syncable Name Override</b>. This setting will be used by default in all instances that the dictionary interacts with a synchronization service, including during <link CSDeploy::upload_dicts_for_sync.csdoc>deployment</link>.
+
+When applicable, such as when using the <link data_source_csweb.csdoc>CSWeb data source</link>, the name can be overridden in the <link sync_connection_string.csdoc>synchronization connection string</link> using the property <colorinline JSON>"dictionaryName"</colorinline>. For example:
+
+<color property_string>
+<definition csweb_example_url />|dictionaryName=AI_USE_DICT_ESWATINI
+<definition csweb_example_url />|dictionaryName=AI_USE_DICT_LESOTHO
+</color>
+
+
+<seealso synchronization.csdoc />

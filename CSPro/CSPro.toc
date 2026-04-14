@@ -943,7 +943,8 @@
               { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth" },
               { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
               { "path": "sync_service_ftp.csdoc", "title": "FTP" },
-              { "path": "sync_service_local_files.csdoc", "title": "Local Files" }
+              { "path": "sync_service_local_files.csdoc", "title": "Local Files" },
+              { "path": "syncable_name.csdoc", "~title": "Syncable Name" }
             ]
           }
         ]

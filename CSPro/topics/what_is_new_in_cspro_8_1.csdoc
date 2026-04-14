@@ -58,6 +58,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
             <li>The <pffcolor>SyncService</pffcolor> <link program_information_file_pff.csdoc>PFF attribute</link> replaces the previous attributes named <i>SyncType</i> and <i>SyncUrl</i>.</li>
         </list>
     </li>
+    <li>The same dictionary can be used to <link synchronization.csdoc>synchronize</link> data to different databases or data sets on the same <link sync_services.csdoc>synchronization service</link> by specifying a <link syncable_name.csdoc>syncable name</link>. This name, rather than the dictionary's actual name, will be used when sending or receiving cases from a <link sync_services.csdoc>synchronization service</link>.</li>
 </list>
 
 
