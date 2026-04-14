@@ -911,6 +911,7 @@
       {
         "title": "Data Sources",
         "documents": [
+          { "path": "data_connection_string.csdoc", "~title": "Data Connection String" },
           { "path": "data_source_csdb.csdoc", "title": "CSPro DB" },
           { "path": "data_source_csdbe.csdoc", "title": "Encrypted CSPro DB" },
           { "path": "data_source_text.csdoc", "title": "Text" },

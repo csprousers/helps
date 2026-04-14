@@ -880,6 +880,7 @@
   { "path": "connection_function.csdoc", "~title": "Connection Function" },
   { "path": "connection_string.csdoc", "~title": "Connection String",
     "subindex": [
+      { "path": "data_connection_string.csdoc", "~title": "Data Connection String" },
       { "path": "encode_function.csdoc", "title": "Percent Encoding" }
     ]
   },
@@ -1123,6 +1124,7 @@
       { "path": "data_source_csdb.csdoc", "title": "CSPro DB" },
       { "path": "data_source_cspro_export.csdoc", "title": "CSPro Export" },
       { "path": "data_source_csweb.csdoc", "title": "CSWeb" },
+      { "path": "data_connection_string.csdoc", "~title": "Data Connection String" },
       { "path": "data_source_csdbe.csdoc", "title": "Encrypted CSPro DB" },
       { "path": "data_source_excel.csdoc", "title": "Excel" },
       { "path": "data_source_memory.csdoc", "title": "In-Memory" },

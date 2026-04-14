@@ -1,33 +1,103 @@
 <title>Connection String</title>
 
 
-A connection string is a text string that details how to open a <link data_sources.csdoc>data source</link>. Typically a connection string is just a file name. Connection strings are used in <link program_information_file_pff.csdoc>PFF files</link> as well as in logic when data sources are specified, such as when using the <logiccolor>setfile</logiccolor> function. A connection string is made up of several components:
+<subheader>Overview</subheader>
+
+A connection string describes how to open a <link data_sources.csdoc>data source</link> or connect to a <link sync_services.csdoc>synchronization service</link>. It can be specified as a text string or as a <link JSON_primer.csdoc>JSON object</link>. CSPro uses a connection string to determine how to open or connect to a resource, generally a file or a server. A connection string contains a primary value that identifies the resource and optionally contains properties that are used when accessing the resource. Properties typically have a property value associated with each property name.
+
+CSPro can implicitly calculate the types of most resources. For example, the extension of <colorinline JSON>"Popstan.csdb"</colorinline> indicates that this connection string references a <link data_source_csdb.csdoc>CSPro DB data source</link>, and <colorinline JSON>"Dropbox"</colorinline> indicates a reference to a <link sync_service_dropbox.csdoc>Dropbox synchronization service</link>.
+
+For more information on connection strings, including implicit type calculations, see:
+
+<list>
+    <li><topic data_connection_string.csdoc /></li>
+</list>
+
+
+<subheader>Connection Strings Specified as Text</subheader>
+
+A connection string, specified as a text string, is made up of several components:
 
 <color property_string>
-file_name | property_name1=property_value1 & property_name2=property_value2
+resource|property_name1=property_value1&property_name2=property_value2
 </color>
 
-The <arg>file_name</arg> argument is the file name of the data source. It can be specified as a relative or absolute path. If only the file name is specified, then the connection string is complete. However, if any properties are specified, then the properties must be separated from the file name by a pipe <logiccolor>'|'</logiccolor> character.
+The <arg>resource</arg> argument is generally the file name of a data source or the URL of a synchronization service. File names can be specified as relative or absolute paths. If only the resource is specified, then the connection string is complete. However, if any properties are specified, then the properties must be separated from the resource with a pipe <logiccolor>'|'</logiccolor> character.
 
-Multiple properties can be specified, with each grouping separated by the ampersand <logiccolor>'&'</logiccolor> character. The property name is listed, followed by an equals <logiccolor>'='</logiccolor> sign, and then the property value is given. Most property values can be defined in human-readable text, but if the value contains special characters such as <logiccolor>'&'</logiccolor> or <logiccolor>'='</logiccolor> characters, it must be <link "https://en.wikipedia.org/wiki/Percent-encoding">percent-encoded</link>, which you can do using the <link string_encoder_dialog.csdoc>String Encoder</link>.
+Multiple properties can be specified, with each grouping separated by the ampersand <logiccolor>'&'</logiccolor> character. The property name is listed, followed by an equals <logiccolor>'='</logiccolor> sign, and then the property value is given. Most properties must be specified as name–value pairs, but some properties can be defined simply by defining the name.
 
-The property <logiccolor>"type"</logiccolor> is used by CSPro to specify the type of a data file. Generally this is not necessary to define because the data file type can be deduced from the file extension, but in a couple cases it is necessary. This, for example, is how the <link data_source_none.csdoc>None data source</link> is specified in a PFF:
+Most property values can be defined in human-readable text, but if the value contains special characters such as <logiccolor>'&'</logiccolor> or <logiccolor>'='</logiccolor> characters, it must be <link "https://en.wikipedia.org/wiki/Percent-encoding">percent-encoded</link>. You can encode such strings using the <link string_encoder_dialog.csdoc>String Encoder</link>, or dynamically percent-encode strings in logic using the <logiccolor>encode</logiccolor> function with the <arg>PercentEncoding</arg> argument.
 
-<pff>
-InputData=|type=None
-</pff>
+The following are examples of <link data_connection_string.csdoc>data connection strings</link> specified using text:
 
-Other properties are documented in the topics describing the data sources. An example of one property is the <logiccolor>"password"</logiccolor> property for <link data_source_csdbe.csdoc>Encrypted CSPro DB</link> data sources. It can be specified in logic:
+<color property_string>
+C:\cspro-projects\data\body-measurements.csdb
+
+C:\cspro-projects\data\body-measurements.csdbe|password=MyPa%24%24w0rd%21
+
+../data/body-measurements.json|verbose&binaryDataFormat=dataUrl
+</color>
+
+The following are examples of sync connection strings specified using text:
+
+<color property_string>
+https://example.org/csweb/api
+
+Dropbox|email=jackw%40example.org
+</color>
+
+Using arguments not known at runtime, the following logic shows how to use <logiccolor>encode</logiccolor> to ensure that property values are percent-encoded as shown in the examples above:
 
 <logic>
-string pin_number = prompt("Enter your PIN number:", password, numeric);
+maketext(@"C:\cspro-projects\data\body-measurements.csdbe|password=%s",
+         encode(PercentEncoding, "MyPa$$w0rd!"));
 
-setfile(HOUSEHOLD_DICT, "Household.csdbe|password=" + pin_number);
+maketext("Dropbox|email=%s",
+         encode(PercentEncoding, "jackw@example.org"));
 </logic>
 
-Or specified for the PFF:
 
-<center><image file_associations_connection_string.png /></center>
+<subheader>Connection Strings Specified as JSON</subheader>
+
+In contexts where CSPro is parsing JSON, a value specified as a JSON string will be parsed as a text-based connection string. However, if a JSON object is provided, it is parsed using different rules. The resource must be specified using the name <colorinline JSON>"path"</colorinline> or <colorinline JSON>"url"</colorinline>. When using <colorinline JSON>"path"</colorinline>, generally intended for data connection strings the path can be specified as a relative or absolute path. Optional properties are specified as JSON strings. The property values do not need to be percent-encoded but instead should be encoded properly using rules for JSON strings.
+
+The following shows the above <link data_connection_string.csdoc>data connection strings</link> specified using JSON:
+
+<color JSON>
+{
+  "path": "C:\\cspro-data\\body-measurements.csdb"
+}
+</color>
+
+<color JSON>
+{
+  "path": "C:\\cspro-data\\body-measurements.csdbe",
+  "password": "MyPa$$w0rd!"
+}
+</color>
+
+<color JSON>
+{
+  "path": "../data/body-measurements.json",
+  "verbose": true,
+  "binaryDataFormat": "dataUrl"
+}
+</color>
+
+The following shows the above sync connection strings specified using JSON:
+
+<color JSON>
+{
+  "url": "https://example.org/csweb/api"
+}
+</color>
+
+<color JSON>
+{
+  "url": "Dropbox",
+  "email": "jackw@example.org"
+}
+</color>
 
 
-<seealso data_sources.csdoc />
+<seealso data_connection_string.csdoc sync_services.csdoc />

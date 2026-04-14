@@ -1,0 +1,55 @@
+<title>Data Connection String</title>
+
+
+<subheader>Overview</subheader>
+
+A data connection string is a kind of <link connection_string.csdoc>connection string</link> used to specify a <link data_sources.csdoc>data source</link>. The resource is typically a file path or file name, which can be specified as a relative or absolute path.
+
+Data connection strings are used in <link program_information_file_pff.csdoc>PFF files</link> as well as in logic when data sources are specified, such as when using the <logiccolor>setfile</logiccolor> function.
+
+For example, this connection string defines a resource, an <link data_source_csdbe.csdoc>Encrypted CSPro DB data source</link>, and a property defining the password used to open the file:
+
+<color property_string>
+Census.csdbe|password=MyPa%24%24w0rd%21
+</color>
+
+Used in logic, this might look like:
+
+<logic>
+setfile(CENSUS_DICT, "Census.csdbe|password=" + encode(PercentEncoding, "MyPa$$w0rd!"));
+</logic>
+
+The properties that can be specified differ for each data source and are documented in the topics describing each data source.
+
+
+<subheader>Type Calculation</subheader>
+
+The property <colorinline JSON>"type"</colorinline> can be used to specify the data source type. Generally, it is not necessary to define a type because it can be deduced from the file extension, but in a couple cases it is necessary. This, for example, is how the <link data_source_none.csdoc>None data source</link>, which does not have a resource, is specified:
+
+<color property_string>
+|type=None
+</color>
+
+The table below lists the type values as well as the default extension for each data source. If no type is explicitly specified, it will be matched based on the extension. If it matches none, the <link data_source_text.csdoc>Text</link> data source is used. In other words, most extensions will map to a Text data source.
+
+<table 3 header nowrap>
+    <cell>Data Source</cell><cell nowrap>Default Extension</cell><cell>Type</cell>
+    <cell><link data_source_csdb.csdoc>CSPro DB</link></cell><cell nowrap>.csdb</cell><cell><colorinline JSON>"CSProDB"</colorinline></cell>
+    <cell><link data_source_csdbe.csdoc>Encrypted CSPro DB</link></cell><cell nowrap>.csdbe</cell><cell><colorinline JSON>"EncryptedCSProDB"</colorinline></cell>
+    <cell><link data_source_text.csdoc>Text</link></cell><cell nowrap>.dat</cell><cell><colorinline JSON>"Text"</colorinline></cell>
+    <cell><link data_source_json.csdoc>JSON</link></cell><cell nowrap>.json</cell><cell><colorinline JSON>"JSON"</colorinline></cell>
+    <cell><link data_source_none.csdoc>None</link></cell><cell nowrap>&mdash;</cell><cell><colorinline JSON>"None"</colorinline></cell>
+    <cell><link data_source_memory.csdoc>In-Memory</link></cell><cell nowrap>&mdash;</cell><cell><colorinline JSON>"Memory"</colorinline></cell>
+    <cell><link data_source_csv.csdoc>Comma Delimited (CSV)</link></cell><cell nowrap>.csv</cell><cell><colorinline JSON>"CSV"</colorinline></cell>
+    <cell><link data_source_semicolon.csdoc>Semicolon Delimited</link></cell><cell nowrap>.skv</cell><cell><colorinline JSON>"Semicolon"</colorinline></cell>
+    <cell><link data_source_tab.csdoc>Tab Delimited</link></cell><cell nowrap>.tsv</cell><cell><colorinline JSON>"Tab"</colorinline></cell>
+    <cell><link data_source_excel.csdoc>Excel</link></cell><cell nowrap>.xlsx</cell><cell><colorinline JSON>"Excel"</colorinline></cell>
+    <cell><link data_source_r.csdoc>R</link></cell><cell nowrap>.RData / .rda</cell><cell><colorinline JSON>"R"</colorinline></cell>
+    <cell><link data_source_sas.csdoc>SAS</link></cell><cell nowrap>.xpt</cell><cell><colorinline JSON>"SAS"</colorinline></cell>
+    <cell><link data_source_spss.csdoc>SPSS</link></cell><cell nowrap>.sav</cell><cell><colorinline JSON>"SPSS"</colorinline></cell>
+    <cell><link data_source_stata.csdoc>Stata</link></cell><cell nowrap>.dta</cell><cell><colorinline JSON>"Stata"</colorinline></cell>
+    <cell><link data_source_cspro_export.csdoc>CSPro Export</link></cell><cell nowrap>&mdash;</cell><cell><colorinline JSON>"CSProExport"</colorinline></cell>
+</table>
+
+
+<seealso connection_string.csdoc data_sources.csdoc  />
