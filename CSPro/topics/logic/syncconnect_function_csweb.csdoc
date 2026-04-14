@@ -22,7 +22,7 @@ For more information about CSWeb servers, see the <link synchronization.csdoc>Sy
 <subheader>Example</subheader>
 
 <logic>
-string ServerUrl = "https://www.myserver.org/api";
+string ServerUrl = "<definition csweb_example_url />";
 
 // connect to the CSWeb server
 if syncconnect(CSWeb, ServerUrl) then

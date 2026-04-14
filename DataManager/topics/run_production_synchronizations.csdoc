@@ -21,7 +21,7 @@ MY_DICT=.\MyData.dat
 [Parameters]
 SyncType=CSWeb
 SyncDirection=Get
-SyncUrl=https://www.myserver.org/api
+SyncUrl=<definition csweb_example_url />
 Silent=Yes
 </pff>
 

@@ -20,7 +20,7 @@ Application=.\Deployment.csds
 
 [Parameters]
 DeployToOverride=CSWeb
-SyncUrl=https://www.myserver.org/api
+SyncUrl=<definition csweb_example_url />
 </pff>
 
 

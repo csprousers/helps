@@ -10,14 +10,14 @@ Synchronization connection strings are used in <link program_information_file_pf
 For example, this connection string specifies a <link sync_service_csweb.csdoc>CSWeb</link> URL and a property defining the username and password:
 
 <color property_string>
-https://example.org/csweb/api|username=jackw&password=MyPa%24%24w0rd%21
+<definition csweb_example_url />|username=jackw&password=MyPa%24%24w0rd%21
 </color>
 
 Used in logic, this might look like:
 
 <logic>
 syncconnect(maketext(
-    "https://example.org/csweb/api|username=%s&password=%s",
+    "<definition csweb_example_url />|username=%s&password=%s",
     encode(PercentEncoding, "jackw"),
     encode(PercentEncoding, "MyPa$$w0rd!")
 ));

@@ -39,7 +39,7 @@ The function returns a logical value of 1 (true) if the update was successful an
 <subheader>Example</subheader>
 
 <logic>
-if syncconnect(CSWeb,"https://www.myserver.org/api") then
+if syncconnect(CSWeb, "<definition csweb_example_url />") then
 
     // get the latest versions of the application files from the server
     syncapp();

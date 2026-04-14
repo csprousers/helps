@@ -42,7 +42,7 @@ C:\cspro-projects\data\body-measurements.csdbe|password=MyPa%24%24w0rd%21
 The following are examples of <link sync_connection_string.csdoc>synchronization connection strings</link> specified using text:
 
 <color property_string>
-https://example.org/csweb/api
+<definition csweb_example_url />
 
 Dropbox|email=jackw%40example.org
 </color>
@@ -89,7 +89,7 @@ The following shows the above <link sync_connection_string.csdoc>synchronization
 
 <color JSON>
 {
-  "url": "https://example.org/csweb/api"
+  "url": "<definition csweb_example_url />"
 }
 </color>
 

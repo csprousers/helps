@@ -14,14 +14,14 @@ The <logiccolor>syncconnect</logiccolor> function opens a connection to an FTP s
 
 CSPro synchronization can work with FTP servers using encrypted transmission via TLS/SSL. There are two modes that CSPro supports for encrypted FTP: explicit and implicit. To use explicit TLS/SSL, provide a URL for the server that starts with <logiccolor>"ftpes://"</logiccolor>. To use implicit TLS/SSL, provide a URL for the server that starts with <logiccolor>"ftps://"</logiccolor>. For servers that do not support TLS/SSL, use a URL that starts with <logiccolor>"ftp://"</logiccolor>. FTP over SSH (SFTP) is not supported.
 
-You can optionally specify a port number by adding it to the end of the URL, separated by a colon. For example, the URL <logiccolor>"ftp://myserver.com:27"</logiccolor> tells CSPro to connect to port 27. If no port is specified, the standard FTP port will be used (port 21 for FTP or port 990 for FTPS).
+You can optionally specify a port number by adding it to the end of the URL, separated by a colon. For example, the URL <logiccolor>"ftp://example.org:27"</logiccolor> tells CSPro to connect to port 27. If no port is specified, the standard FTP port will be used (port 21 for FTP or port 990 for FTPS).
 
 <b>Note: </b>If the attempt to establish an Internet connection was unsuccessful, CSPro will alert you with an error message. If you wish to preempt this error message in order to handle this situation on your own, use the <topic connection_function.csdoc />.
 
 <subheader>Example</subheader>
 
 <logic>
-string ftpServerUrl = "ftpes://myserver.org";
+string ftpServerUrl = "ftpes://example.org";
 
 // connect to the FTP server
 if syncconnect(FTP, ftpServerUrl) then
