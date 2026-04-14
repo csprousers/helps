@@ -42,7 +42,7 @@ If you wish to create an encrypted output file, use a .csdbe extension:
 
 <logic>fileconcat(CENSUS_DICT, "output.csdbe", "input.csdb");</logic>
 
-In this scenario the user will be prompted to provide a password for the output file. If you prefer to specify the password yourself, include it in the output file specification using a <link connection_string.csdoc>connection string</link>:
+In this scenario the user will be prompted to provide a password for the output file. If you prefer to specify the password yourself, include it in the output file specification using a <link data_connection_string.csdoc>connection string</link>:
 
 <logic>fileconcat(CENSUS_DICT, "output.csdbe|password=1234", "input.csdb");</logic>
 

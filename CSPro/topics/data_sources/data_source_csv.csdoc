@@ -3,7 +3,7 @@
 
 <subheader>Overview</subheader>
 
-The <b>Comma Delimited (CSV)</b> <link data_sources.csdoc>data source</link> allows writing, but not reading, data to a <link "https://en.wikipedia.org/wiki/Comma-separated_values">comma-separated values</link> file. When writing data, each value is separated by a comma. This data source only supports writing the values from one <link record_description.csdoc>record</link>, which by default is the first record defined in the dictionary. To specify writing data from another record, you must define the <colorinline JSON>"record"</colorinline> property in the <link connection_string.csdoc>connection string</link>.
+The <b>Comma Delimited (CSV)</b> <link data_sources.csdoc>data source</link> allows writing, but not reading, data to a <link "https://en.wikipedia.org/wiki/Comma-separated_values">comma-separated values</link> file. When writing data, each value is separated by a comma. This data source only supports writing the values from one <link record_description.csdoc>record</link>, which by default is the first record defined in the dictionary. To specify writing data from another record, you must define the <colorinline JSON>"record"</colorinline> property in the <link data_connection_string.csdoc>connection string</link>.
 
 Because CSV files can be read by Microsoft Excel and many other programs, using this data source allows you to share data with a large number of users in an open, text-based, format.
 
@@ -50,7 +50,7 @@ For example, a value like <logiccolor>"She said, \"Hello\""</logiccolor> would b
 
 <subheader>Customizable Behavior</subheader>
 
-The following behavior can be customized by specifying properties in the <link connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
+The following behavior can be customized by specifying properties in the <link data_connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
 
 <table 2 header>
     <cell nowrap>Property Name and Values</cell><cell>Description</cell>

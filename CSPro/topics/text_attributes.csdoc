@@ -31,7 +31,7 @@ The following table outlines how CSPro currently interprets and writes text enco
     <cell 4>&nbsp;</cell>
     <cell 4><b>Data sources:</b></cell>
     <cell><link data_source_text.csdoc>Text data files</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell>🔜</cell>
-    <cell><link notes_file_csnot.csdoc>Text notes files</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> <link connection_string.csdoc>connection string property</link></cell>
+    <cell><link notes_file_csnot.csdoc>Text notes files</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> <link data_connection_string.csdoc>connection string property</link></cell>
     <cell><link status_file_sts.csdoc>Text status files</link></cell><cell>ANSI</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
     <cell><link data_source_csv.csdoc>Comma Delimited</link></cell><cell>&mdash;</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
     <cell><link data_source_semicolon.csdoc>Semicolon Delimited</link></cell><cell>&mdash;</cell><cell>UTF-8 (BOM)</cell><cell><logiccolor>"encoding"</logiccolor> connection string property</cell>
@@ -71,7 +71,7 @@ When writing text files, CSPro is inconsistent in the way that newlines are writ
     <cell 3>&nbsp;</cell>
     <cell 3><b>Data sources:</b></cell>
     <cell><link data_source_text.csdoc>Text data files</link></cell><cell><logiccolor>"\r\n"</logiccolor></cell><cell>🔜</cell>
-    <cell><link notes_file_csnot.csdoc>Text notes files</link></cell><cell><logiccolor>"\r\n"</logiccolor></cell><cell><logiccolor>"newline"</logiccolor> <link connection_string.csdoc>connection string property</link></cell>
+    <cell><link notes_file_csnot.csdoc>Text notes files</link></cell><cell><logiccolor>"\r\n"</logiccolor></cell><cell><logiccolor>"newline"</logiccolor> <link data_connection_string.csdoc>connection string property</link></cell>
     <cell><link status_file_sts.csdoc>Text status files</link></cell><cell><logiccolor>"\r\n"</logiccolor></cell><cell><logiccolor>"newline"</logiccolor> connection string property</cell>
     <cell><link data_source_csv.csdoc>Comma Delimited</link></cell><cell><logiccolor>"\r\n"</logiccolor></cell><cell><logiccolor>"newline"</logiccolor> connection string property</cell>
     <cell><link data_source_semicolon.csdoc>Semicolon Delimited</link></cell><cell><logiccolor>"\r\n"</logiccolor></cell><cell><logiccolor>"newline"</logiccolor> connection string property</cell>

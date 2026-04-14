@@ -51,7 +51,7 @@ Because newlines are used to indicate the start of a new record, if a value cont
 
 <subheader>Customizable Behavior</subheader>
 
-The following behavior can be customized by specifying properties in the <link connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
+The following behavior can be customized by specifying properties in the <link data_connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
 
 <table 2 header>
     <cell nowrap>Property Name and Values</cell><cell>Description</cell>

@@ -17,7 +17,7 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
 <list>
     <li>Change to the format of the <link data_source_csdb.csdoc>CSPro DB</link> data source to store data in a <link csdb_relational_format.csdoc>relational database format</link> that can be queried using SQL. CSPro DB files created in version 7.4 cannot be read in earlier versions of CSPro.</li>
     <li>Introduction of the new <link data_source_csdbe.csdoc>Encrypted CSPro DB</link> data source, allowing for <link encrypted_data.csdoc>file-based data encryption</link> with the ability to <link dictionary_security_options.csdoc>cache passwords</link>.</li>
-    <li>Ability to include, as part of a PFF or in a <logiccolor>setfile</logiccolor> function call, a <link connection_string.csdoc>connection string</link> that details how to open a <link data_sources.csdoc>data source</link>.</li>
+    <li>Ability to include, as part of a PFF or in a <logiccolor>setfile</logiccolor> function call, a <link data_connection_string.csdoc>connection string</link> that details how to open a <link data_sources.csdoc>data source</link>.</li>
     <li><link dictionary_security_options.csdoc>Dictionary options</link> include the ability to disallow use of a dictionary to modify data in <link DataManager::introduction.csdoc>Data Manager</link> or to export data to another output format.</li>
 </list>
 
