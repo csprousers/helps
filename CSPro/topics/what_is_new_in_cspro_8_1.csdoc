@@ -10,6 +10,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 
 <list>
     <li>CSPro is now open source! The source code, written primarily in C++, JavaScript, Java/Kotlin, and PHP, with some code written in C#, is available on GitHub: <link https://<definition csprousers_github />><definition csprousers_github /></link>.</li>
+    <li>CSWeb data can be <link CSWeb::accessing_data.csdoc>viewed directly</link> using Data Manager without needing to download the data to your local machine.</li>
     <li><link markdown_overview.csdoc>Markdown</link> can be used while specifying <link question_text.csdoc>question text</link>, in <link templated_reports.csdoc>templated reports</link>, and can be viewed (as generated HTML) using the <logiccolor>view</logiccolor> function or in <link CSView::supported_files.csdoc>CSView</link>. Markdown can also be edited in <link CSCode::language_markdown.csdoc>CSCode</link> and included as part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link>.</li>
     <li>Applications can now <link javascript_overview.csdoc>incorporate JavaScript</link> in addition to <link introduction_to_cspro_language.csdoc>CSPro logic</link>. Many open-source JavaScript libraries exist that can be brought into your application, and as a dynamically typed language, some programming tasks may be easier using JavaScript. By using the <link JS.csdoc>JS</link> namespace, it is possible to <link JS_eval_function.csdoc>evaluate JavaScript</link>, <link JS_invoke_function.csdoc>invoke functions</link>, and <link JS_setValue_function.csdoc>convert</link> CSPro symbols to JavaScript numbers, strings, arrays, and objects. It is also possible to create <link javascript_user_defined_functions.csdoc>function wrappers</link> in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked.</li>
     <li>HTTP requests can be made and responses processed using actions in the <link action_invoker.csdoc>Action Invoker's</link> <action>Network</action> namespace.</li>
@@ -167,6 +168,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 
 <list>
     <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> now requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
+    <li>The <i>Data</i> tab now contains two <link CSWeb::accessing_data.csdoc>Manage in CSPro</link> options, one to view data directly using Data Manager without downloading the entire data set, as well as the previous option to download the data to your local machine.</li>
 </list>
 
 

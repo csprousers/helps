@@ -9,11 +9,18 @@
     ]
   },
   { "path": "best_practices.csdoc", "title": "Best Practices" },
+  { "path": "accessing_data.csdoc", "title": "Data",
+    "subindex": [
+      { "path": "accessing_data.csdoc", "title": "Download" },
+      { "path": "accessing_data.csdoc", "title": "View " }
+    ]
+  },
   { "path": "data_settings.csdoc", "~title": "Data Settings",
     "subindex": [
       { "path": "additional_configuration_options.csdoc", "~title": "Additional Configuration Options" }
     ]
   },
+  { "path": "accessing_data.csdoc", "title": "Download Data" },
   { "path": "get_help.csdoc", "~title": "Get Help" },
   { "path": "iis_server_setup.csdoc", "title": "IIS",
     "subindex": [
@@ -34,5 +41,6 @@
   { "path": "sync_report.csdoc", "~title": "Sync Report" },
   { "path": "troubleshooting.csdoc", "~title": "Troubleshooting" },
   { "path": "upgrading.csdoc", "~title": "Upgrading from Previous Versions" },
-  { "path": "upload_files.csdoc", "~title": "Upload Files" }
+  { "path": "upload_files.csdoc", "~title": "Upload Files" },
+  { "path": "accessing_data.csdoc", "title": "View Data" }
 ]
