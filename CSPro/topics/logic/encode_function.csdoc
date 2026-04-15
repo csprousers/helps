@@ -21,7 +21,7 @@ The encoding types are:
     <cell>HTML</cell><cell>Encodes the characters &lt; &gt; &amp and newlines for writing to <link html_in_cspro.csdoc>HTML</link> files.</cell>
     <cell>Markdown</cell><cell>Encodes special characters such as * for writing to <link markdown_overview.csdoc>Markdown</link> files.</cell>
     <cell>CSV</cell><cell>Encodes the characters , " and newlines for writing to comma-separated values files.</cell>
-    <cell>URI</cell><cell>Encodes a <link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI>group of characters</link> for writing uniform resource identifiers (URIs).</cell>
+    <cell>URI</cell><cell>Encodes a <link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI>group of characters</link> for writing Uniform Resource Identifiers (URIs).</cell>
     <cell>URIComponent</cell><cell>Encodes a <link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent>group of characters</link> for writing the components of URIs.</cell>
     <cell>PercentEncoding</cell><cell>Encodes a <link https://en.wikipedia.org/wiki/Percent-encoding>group of characters</link> for writing to formats such as <link connection_string.csdoc>connection strings</link>.</cell>
     <cell>JsonString</cell><cell>Encodes text for writing as a valid <link https://datatracker.ietf.org/doc/html/rfc7159#section-7>JSON string</link>.</cell>

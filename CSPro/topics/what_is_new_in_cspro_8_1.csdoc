@@ -32,6 +32,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
         </list>
     </li>
     <li>The CSPro Settings dialog has been renamed <link manage_credentials.csdoc>Manage Credentials</link> and now allows for the granular clearing of synchronization, data, and location credentials.</li>
+    <li><link cspro_uris.csdoc>CSPro URIs</link>, using the custom scheme <i>cspro://</i>, can identify <link data_sources.csdoc>data sources</link> and <link sync_services.csdoc>synchronization services</link>. On Windows, the URI scheme is registered with the operating system and opening URIs can result in opening resources in <link DataManager::introduction.csdoc>Data Manager</link> or <link TextView::introduction_to_text_viewer.csdoc>Text Viewer</link>.</li>
 </list>
 
 

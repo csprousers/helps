@@ -1,0 +1,65 @@
+<title>CSPro URIs</title>
+
+
+<subheader>Overview</subheader>
+
+Uniform Resource Identifiers (URIs) provide a standardized way to identify and access resources. They typically follow the structure <i>scheme://resource</i>, where the scheme indicates how the resource should be interpreted or handled. Some widely used schemes include <i>https</i> for web resources and <i>mailto</i> for email messages.
+
+CSPro uses a URI with the custom scheme <i>cspro</i>. A CSPro URI does not use an <link "https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Syntax">authority</link>. The first part of the resource path is a description, or action, with the following options:
+
+<list>
+    <li><b>/data</b>: Identifies a <link data_sources.csdoc>data source</link>. This can be used in places where a <link data_connection_string.csdoc>data connection string</link> is expected.</li>
+    <li><b>/sync</b>: Identifies a <link sync_services.csdoc>synchronization service</link>. This can be used in places where a <link sync_connection_string.csdoc>synchronization connection string</link> is expected.</li>
+    <li><b>/text</b>: Identifies a text file.</li>
+    <li><b>/cache</b>: Identifies <link action_invoker_binary_data.csdoc>binary data cached</link> by the Action Invoker.</li>
+</list>
+
+Beyond the scheme, empty authority, and path, a CSPro URI can contain properties specified as a <link "https://en.wikipedia.org/wiki/Query_string">query string</link>. If creating a query string dynamically in logic, you can use the <logiccolor>encode</logiccolor> function with the <arg>URIComponent</arg> argument.
+
+A tool, CSPro URI Handler, is distributed with the CSPro suite and registered with Windows so that URIs that begin with <i>cspro://</i> are handled by CSPro. URIs that begin with the path <b>/data</b> are opened in <link DataManager::introduction.csdoc>Data Manager</link> and URIs that begin with <b>/text</b> are opened in <link TextView::introduction_to_text_viewer.csdoc>Text Viewer</link>.
+
+
+<subheader>Data CSPro URIs</subheader>
+
+CSPro URIs with a path beginning in <b>/data</b> can be used as <link data_connection_string.csdoc>data connection strings</link>. For example, the following two statements result in identical behavior:
+
+<logic>
+setfile(HOUSING_DICT, "housing.json|writeLabels=true");
+
+setfile(HOUSING_DICT, "cspro:///data/housing.json?writeLabels=true");
+</logic>
+
+On Windows, data CSPro URIs are opened in <link DataManager::introduction.csdoc>Data Manager</link>. For example, if the CSPro examples are installed in the directory <i>C:\cspro-examples\</i>, the following URI would open the Popstan Census data file:
+
+<color text>
+cspro:///data/C:/cspro-examples/Popstan%20Census/Popstan%20Census.dat
+</color>
+
+The following defines a property, specified as a query string, so that Data Manager does not ask for a dictionary to describe the <link data_source_text.csdoc>Text data source</link>, and further gives the key (case IDs) of a case to open.
+
+<color text>
+cspro:///data/C:/cspro-examples/Popstan%20Census/Popstan%20Census.dat?dictionaryPath=Census%20Dictionary.dcf&key=010117100110870031
+</color>
+
+
+<subheader>Sync CSPro URIs</subheader>
+
+CSPro URIs with a path beginning in <b>/sync</b> can be used as <link sync_connection_string.csdoc>sync connection strings</link>. For example, the following two statements result in identical behavior:
+
+<logic>
+syncconnect("<definition csweb_example_url />|username=islands&password=violet")
+
+syncconnect("cspro:///sync/<definition csweb_example_url />?username=islands&password=violet")
+</logic>
+
+
+<subheader>Text CSPro URIs</subheader>
+
+On Windows, CSPro URIs with a path beginning in <b>/text</b> are opened in <link TextView::introduction_to_text_viewer.csdoc>Text Viewer</link>. For example, pasting this URL in File Explorer or a web browser will open the <i>readme.txt</i> file located in the CSPro installation folder.
+
+<color text>
+cspro:///text/C:/Program%20Files%20(x86)/CSPro%20<definition CSPro::version />/readme.txt
+</color>
+
+
+<seealso connection_string.csdoc />

@@ -51,7 +51,8 @@
               { "path": "tabulation_applications.csdoc", "~title": "Tabulation Applications" },
               { "path": "data_dictionary.csdoc", "~title": "Data Dictionary" },
               { "path": "forms_design.csdoc", "~title": "Forms Design" },
-              { "path": "tool_list.csdoc", "~title": "Tool List" }
+              { "path": "tool_list.csdoc", "~title": "Tool List" },
+              { "path": "cspro_uris.csdoc", "~title": "CSPro URIs" }
             ]
           },
           {

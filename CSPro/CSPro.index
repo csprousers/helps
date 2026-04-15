@@ -1001,6 +1001,11 @@
       { "path": "what_is_cspro.csdoc", "title": "What is" }
     ]
   },
+  { "path": "cspro_uris.csdoc", "title": "cspro://",
+    "subindex": [
+      { "path": "cspro_uris.csdoc", "~title": "CSPro URIs" }
+    ]
+  },
   { "path": "create_a_cspro_application.csdoc", "title": "CSPro Application",
     "subindex": [
       { "path": "create_a_cspro_application.csdoc", "title": "Create" }
@@ -4465,10 +4470,12 @@
       { "path": "change_field_properties.csdoc", "title": "Case Fields" }
     ]
   },
-  { "path": "sharable_uri.csdoc", "title": "URI",
+  { "path": "cspro_uris.csdoc", "title": "URI",
     "subindex": [
+      { "path": "cspro_uris.csdoc", "~title": "CSPro URIs" },
       { "path": "sharable_uri.csdoc", "~title": "Sharable URI" },
-      { "path": "encode_function.csdoc", "title": "URI Encoding" }
+      { "path": "encode_function.csdoc", "title": "URI Encoding" },
+      { "path": "cspro_uris.csdoc", "title": "URI Handler" }
     ]
   },
   { "path": "localhost_url.csdoc", "title": "URL",
