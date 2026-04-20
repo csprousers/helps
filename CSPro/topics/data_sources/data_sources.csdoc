@@ -8,7 +8,6 @@ In CSPro, a data source is a file used to store case data. Traditionally, CSPro 
 The format of the cases in a data source is described by a <link data_dictionary.csdoc>dictionary</link> containing <link level_description.csdoc>levels</link>, <link record_description.csdoc>records</link>, and <link item_description.csdoc>items</link>. The way that these entities are serialized depends on the data source used, and is described on the help pages for each data source.
 
 
-
 <subheader>CSPro Data Sources</subheader>
 
 The following are full-fledged data sources that work with CSPro data to facilicate reading and writing cases:
@@ -82,4 +81,4 @@ The data sources that do not use file names must be specified by specifying the 
 Finally, because <link data_source_cspro_export.csdoc>CSPro Export</link> wraps other data sources, to use it you must specify the <colorinline JSON>"type"</colorinline>: <colorinline JSON>"CSProExport"</colorinline>.
 
 
-<seealso case_read_optimization.csdoc />
+<seealso case_read_optimization.csdoc sync_services.csdoc />

@@ -56,4 +56,4 @@ end;
 </logic>
 
 
-<seealso synchronization.csdoc syncconnect_function_bluetooth.csdoc syncserver_function.csdoc />
+<seealso synchronization.csdoc sync_service_bluetooth.csdoc syncserver_function.csdoc />

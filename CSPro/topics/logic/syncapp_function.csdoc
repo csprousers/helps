@@ -12,7 +12,7 @@ The <logiccolor>syncapp</logiccolor> function updates application files, such as
 
 The function checks for an updated version of the application on the server that the program is currently connected to from a previous call to <logiccolor>syncconnect</logiccolor>. If the version of the application on the server is newer than the currently running version, then the new package is downloaded from the server and the application on the device is updated.
 
-This function only works on Android. It is not supported on Windows. It may be used with CSWeb, Dropbox and FTP servers as well as with peer to peer synchronization via Bluetooth.
+This function only works on Android. It is not supported on Windows. It may be used with <link sync_service_csweb.csdoc>CSWeb</link>, <link sync_service_dropbox.csdoc>Dropbox</link>, and <link sync_service_ftp.csdoc>FTP servers</link>, as well as with peer to peer synchronization via <link sync_service_bluetooth.csdoc>Bluetooth</link>.
 
 Using <logiccolor>syncapp</logiccolor> is typically only for advanced scenarios, such as when you want to update an application over Bluetooth or when you want to initiate an update from within a menu program. In most cases it is simpler to use <link CSDeploy::update_deployment_mobile.csdoc>Update Installed Applications</link> from the menu in the Entry Applications screen of CSEntry as it does the same update as <logiccolor>syncapp</logiccolor> without requiring any custom logic.
 

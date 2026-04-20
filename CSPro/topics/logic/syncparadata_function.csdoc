@@ -1,5 +1,6 @@
 <title>SyncParadata Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
@@ -21,7 +22,7 @@ The function can upload paradata from the local device (client) to the service a
 
 The <logiccolor>syncparadata</logiccolor> function keeps track of what paradata has been transferred each time the client and service are synchronized and uses this information to only transfer paradata that has been collected since the last synchronization. This significantly reduces the amount of data transferred and therefore reduces bandwidth and the cost of air time.
 
-Paradata logs can be very large so be careful about adding paradata synchronizations to your applications. If you are interested in syncing paradata, a general suggestion is to use BOTH when syncing between devices using Bluetooth, and to use PUT to a CSWeb, Dropbox, or FTP server.
+Paradata logs can be very large so be careful about adding paradata synchronizations to your applications. If you are interested in syncing paradata, a general suggestion is to use BOTH when syncing between devices using <link sync_service_bluetooth.csdoc>Bluetooth</link>, and to use PUT for <link sync_service_csweb.csdoc>CSWeb</link>, <link sync_service_dropbox.csdoc>Dropbox</link>, or an <link sync_service_ftp.csdoc>FTP server</link>.
 
 
 <subheader>Return Value</subheader>

@@ -16,7 +16,7 @@ A feature showcase demonstrating some of CSPro 7.0's new features is available o
 
 <list>
     <li>Introduction of the new <link data_source_csdb.csdoc>CSPro DB</link> and <link data_source_none.csdoc>None</link> data sources.</li>
-    <li>Using the <link synchronization.csdoc>synchronization functions</link>, CSPro DB data files can be synchronized with Dropbox and FTP servers on a case by case, rather than data file, basis.</li>
+    <li>Using the <link synchronization.csdoc>synchronization functions</link>, CSPro DB data files can be synchronized with <link sync_service_dropbox.csdoc>Dropbox</link> and <link sync_service_ftp.csdoc>FTP</link> servers on a case by case, rather than data file, basis.</li>
     <li>The creation of listing and operator statistics files <link data_source_options.csdoc>can be disabled</link>.</li>
 </list>
 
@@ -101,7 +101,7 @@ A feature showcase demonstrating some of CSPro 7.0's new features is available o
 <subheader>CSWeb</subheader>
 
 <list>
-    <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> introduced as a convenient way to synchronize CSPro data files on a central server.</li>
+    <li><link sync_service_csweb.csdoc>CSWeb</link> introduced as a convenient way to synchronize CSPro data files on a central server.</li>
 </list>
 
 

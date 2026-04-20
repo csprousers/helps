@@ -44,7 +44,7 @@ This is a general error that could be caused by a number of different problems w
 
 <i>Failed to connect to localhost</i>
 
-You are using a server URL that uses localhost. Localhost can only be used to access the server from a web browser running on the server itself. To access the server from another computer or device you must use either a domain name or the IP address of the server. If your server does not have a domain name or a static IP address you will need to obtain one. If you are unsure how to do this, you may want to consider using Dropbox synchronization instead of CSWeb.
+You are using a server URL that uses localhost. Localhost can only be used to access the server from a web browser running on the server itself. To access the server from another computer or device you must use either a domain name or the IP address of the server. If your server does not have a domain name or a static IP address you will need to obtain one. If you are unsure how to do this, you may want to consider using <link CSPro::sync_service_dropbox.csdoc>Dropbox</link> synchronization instead of CSWeb.
 
 <i>Unable to resolve host</i>
 

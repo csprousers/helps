@@ -16,4 +16,4 @@ This option is used in tandem with the <link run_production_data_entry.csdoc>run
 
 <subheader>Clear Credentials</subheader>
 
-By selecting this option, any <link manage_credentials.csdoc>cached credentials</link> saved to secure storage will be removed. These include credentials for <link sync_services.csdoc>synchronization services</link> (e.g., <link syncconnect_function_csweb.csdoc>CSWeb</link> and <link syncconnect_function_dropbox.csdoc>Dropbox</link> access tokens), and hashed password keys used to open <link encrypted_data.csdoc>encrypted data files</link>.
+By selecting this option, any <link manage_credentials.csdoc>cached credentials</link> saved to secure storage will be removed. These include credentials for <link sync_services.csdoc>synchronization services</link> (e.g., <link CSPro::sync_service_csweb.csdoc>CSWeb</link> and <link CSPro::sync_service_dropbox.csdoc>Dropbox</link> access tokens), and hashed password keys used to open <link encrypted_data.csdoc>encrypted data files</link>.

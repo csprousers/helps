@@ -33,4 +33,4 @@ preproc
 </logic>
 
 
-<seealso setbluetoothname_function.csdoc getdeviceid_function.csdoc getoperatorid_function.csdoc getos_function.csdoc getusername_function.csdoc syncconnect_function_bluetooth.csdoc />
+<seealso setbluetoothname_function.csdoc getdeviceid_function.csdoc getoperatorid_function.csdoc getos_function.csdoc getusername_function.csdoc sync_service_bluetooth.csdoc  />

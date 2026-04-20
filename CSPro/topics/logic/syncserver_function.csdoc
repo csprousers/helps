@@ -1,5 +1,6 @@
 <title>SyncServer Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
@@ -9,7 +10,7 @@ b = syncserver(<arg>Bluetooth</arg>『, <arg>file_root_path</arg>』);
 
 <subheader>Description</subheader>
 
-The <logiccolor>syncserver</logiccolor> function runs a local server that allows peer-to-peer synchronization between two devices via Bluetooth, without needing an Internet connection. The function waits for a connection from another device (a client) made when the client calls <logiccolor>syncconnect</logiccolor> to start a Bluetooth synchronization. Once the two devices are connected, the client device calls <logiccolor>syncdata</logiccolor> and <logiccolor>syncfile</logiccolor> to copy data and/or files to and from the server. Finally, the client device calls <logiccolor>syncdisconnect</logiccolor> to end the session.
+The <logiccolor>syncserver</logiccolor> function runs a local server that allows peer-to-peer synchronization between two devices via Bluetooth, without needing an Internet connection. The function waits for a connection from another device (a client) made when the client calls <logiccolor>syncconnect</logiccolor> to start a <link sync_service_bluetooth.csdoc>Bluetooth synchronization</link>. Once the two devices are connected, the client device calls <logiccolor>syncdata</logiccolor> and <logiccolor>syncfile</logiccolor> to copy data and/or files to and from the server. Finally, the client device calls <logiccolor>syncdisconnect</logiccolor> to end the session.
 
 The server in a peer-to-peer synchronization is passive. It does not call <logiccolor>syncdata</logiccolor> or <logiccolor>syncfile</logiccolor>. It simply responds to requests initiated from the client. The Bluetooth server runs until either the client successfully connects and disconnects or the operator cancels the synchronization.
 
