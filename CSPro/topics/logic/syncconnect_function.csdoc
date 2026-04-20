@@ -14,7 +14,7 @@ The <logiccolor>syncconnect</logiccolor> function opens a connection to a server
     <li><link sync_service_csweb.csdoc>CSWeb</link></li>
     <li><link syncconnect_function_bluetooth.csdoc>Bluetooth</link></li>
     <li><link syncconnect_function_dropbox.csdoc>Dropbox</link></li>
-    <li><link syncconnect_function_ftp.csdoc>FTP</link></li>
+    <li><link sync_service_ftp.csdoc>FTP</link></li>
     <li><link syncconnect_function_dropbox_local.csdoc>LocalDropbox</link></li>
     <li><link syncconnect_function_files_local.csdoc>LocalFiles</link></li>
 </list>
@@ -52,6 +52,9 @@ Prior to <link what_is_new_in_cspro_8_1.csdoc>CSPro 8.1</link>, the <logiccolor>
 <logicsyntax>
 // CSWeb
 b = syncconnect(<arg>CSWeb</arg>, <arg>csweb_url</arg>『, <arg>username</arg>『, <arg>password</arg>』』);
+
+// FTP
+b = syncconnect(<arg>FTP</arg>, <arg>ftp_url</arg>『, <arg>username</arg>『, <arg>password</arg>』』);
 </logicsyntax>
 
 

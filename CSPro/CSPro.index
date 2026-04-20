@@ -1775,7 +1775,7 @@
       { "path": "tool_list.csdoc", "title": "Tabulate Frequencies Tool" }
     ]
   },
-  { "path": "syncconnect_function_ftp.csdoc", "title": "FTP Synchronization" },
+  { "path": "sync_service_ftp.csdoc", "~title": "FTP Synchronization Service" },
   { "path": "change_the_view.csdoc", "title": "Full Screen" },
   { "path": "run_production_data_entry.csdoc", "title": "FullScreen" },
   { "path": "function_statement.csdoc", "~title": "Function Statement" },
@@ -4098,7 +4098,7 @@
       { "path": "syncconnect_function_bluetooth.csdoc", "title": "Bluetooth" },
       { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
       { "path": "syncconnect_function_dropbox.csdoc", "title": "Dropbox" },
-      { "path": "syncconnect_function_ftp.csdoc", "title": "FTP" },
+      { "path": "sync_service_ftp.csdoc", "title": "FTP" },
       { "path": "syncconnect_function_dropbox_local.csdoc", "title": "LocalDropbox" },
       { "path": "syncconnect_function_files_local.csdoc", "title": "LocalFiles" }
     ]

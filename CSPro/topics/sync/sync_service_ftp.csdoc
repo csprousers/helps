@@ -3,9 +3,59 @@
 
 <subheader>Overview</subheader>
 
-CSPro can connect to a File Transfer Protocol (FTP) server, using it as a <link sync_services.csdoc>synchronization service</link>. After connecting to a FTP server, <link synchronization.csdoc>synchronization</link> routines can transfer cases, files, and other data. FTP servers are useful for users conducting small- to medium-sized survey operations who are not able to configure the preeminent CSPro synchronization option, <link sync_service_csweb.csdoc>CSWeb</link>.
+CSPro can connect to a File Transfer Protocol (FTP) server, using it as a <link sync_services.csdoc>synchronization service</link>. After connecting to an FTP server, <link synchronization.csdoc>synchronization</link> routines can transfer cases, files, and other data. FTP servers are useful for users conducting small- to medium-sized survey operations who are not able to configure the preeminent CSPro synchronization option, <link sync_service_csweb.csdoc>CSWeb</link>.
 
-CSPro can work with FTP servers using encrypted transmission via <link "https://en.wikipedia.org/wiki/FTPS#Transport_Layer_Security_(TLS)/Secure_Socket_Layer_(SSL)">TLS/SSL</link>. There are two modes that CSPro supports for encrypted FTP: explicit and implicit. To use explicit TLS/SSL, provide a URL for the server that starts with <logiccolor>"ftpes://"</logiccolor>. To use implicit TLS/SSL, provide a URL for the server that starts with <logiccolor>"ftps://"</logiccolor>. For servers that do not support TLS/SSL, use a URL that starts with <logiccolor>"ftp://"</logiccolor>. FTP over SSH (SFTP) is not supported.
+CSPro can work with FTP servers using encrypted transmission via <link "https://en.wikipedia.org/wiki/FTPS#Transport_Layer_Security_(TLS)/Secure_Socket_Layer_(SSL)">TLS/SSL</link>. There are two modes that CSPro supports when using File Transfer Protocol Secure (FTPS): explicit and implicit. To use explicit TLS/SSL, provide a URL for the server that starts with <logiccolor>"ftpes://"</logiccolor>. To use implicit TLS/SSL, provide a URL for the server that starts with <logiccolor>"ftps://"</logiccolor>. For servers that do not support TLS/SSL, use a URL that starts with <logiccolor>"ftp://"</logiccolor>. FTP over SSH (SFTP) is not supported.
 
 
-<seealso sync_services.csdoc sync_service_local_files.csdoc />
+<subheader>FTP Connection</subheader>
+
+A connection to an FTP server occurs as a result of a function call to <logiccolor>syncconnect</logiccolor>, or as part of a CSPro operation such as a <link synchronization_simple.csdoc>Simple Synchronization</link> or an <link CSDeploy::introduction_to_deployment.csdoc>application deployment</link>.
+
+The resource of an FTP <link sync_connection_string.csdoc>connection string</link> is the server URL. You can optionally specify a port number by adding it to the end of the URL, separated by a colon. For example, the URL <logiccolor>"ftp://example.org:27"</logiccolor> tells CSPro to connect to port 27. If no port is specified, the standard FTP port will be used: 21 for FTP or 990 for FTPS.
+
+The username and password can also be specified in the connection string. If the username and password are not specified, the user will be prompted to enter them the first time the connection is made.
+
+These are options that can be specified in the connection string. Note that values must be <link connection_string.csdoc>properly encoded</link> based on the way that the connection string is defined (as a string, as a <link JSON_primer.csdoc>JSON object</link>, or as a <link cspro_uris.csdoc>CSPro URI</link>).
+
+<table 2 header>
+    <cell nowrap>Property Name and Values</cell><cell>Description</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"username"</colorinline></b></cell><cell>The user's username. This is only used if a password is also provided.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"password"</colorinline></b></cell><cell>The user's password. Hardcoding passwords in applications is not recommended. This is only used if a username is also provided.</cell>
+</table>
+
+The following logic shows how to create a connection to an FTP server:
+
+<logic>
+// CSPro will prompt for the username and password
+syncconnect("ftpes://example.org");
+
+// the credentials are specified using percent-encoding
+// to properly account for any special characters
+syncconnect(maketext(
+    "ftpes://example.org|username=%s&password=%s",
+    encode(PercentEncoding, "jackw"),
+    encode(PercentEncoding, "MyPa$$w0rd!")
+));
+</logic>
+
+
+<subheader>Credential Storage</subheader>
+
+When connecting to an FTP server, the username and password are stored in the operating system's secure storage and do not need to be entered again. You can use the <link manage_credentials.csdoc>Manage Credentials</link> dialog to manually clear these credentials.
+
+
+<subheader>Locally Run FTP Server</subheader>
+
+If you are running the FTP server on the same machine that you are using for synchronization operations, you use the <link sync_service_local_files.csdoc>Local Files</link> synchronization service to speed up operations. Rather than connecting over the Internet to server, CSPro will directly access the contents of the server on the local machine. For example, if the home directory of the FTP server is located at <i>C:\ftp-server\surveys</i>, you can connect directly using:
+
+<logic>
+syncconnect("file:///C:/ftp-server/surveys");
+</logic>
+
+The FTP home directory should contain a folder named <i>CSPro</i>, which contains the files used for synchronization operations.
+
+
+<seealso sync_services.csdoc synchronization.csdoc sync_service_local_files.csdoc />
