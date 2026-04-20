@@ -11,7 +11,7 @@ b = syncconnect(<arg>differing_arguments</arg>);
 The <logiccolor>syncconnect</logiccolor> function opens a connection to a server to start a synchronization session. The function has four forms based on the type of connection, with each form described on a separate page:
 
 <list>
-    <li><link syncconnect_function_csweb.csdoc>CSWeb</link></li>
+    <li><link sync_service_csweb.csdoc>CSWeb</link></li>
     <li><link syncconnect_function_bluetooth.csdoc>Bluetooth</link></li>
     <li><link syncconnect_function_dropbox.csdoc>Dropbox</link></li>
     <li><link syncconnect_function_ftp.csdoc>FTP</link></li>
@@ -21,10 +21,38 @@ The <logiccolor>syncconnect</logiccolor> function opens a connection to a server
 
 After a successful connection, call <logiccolor>syncdata</logiccolor> and <logiccolor>syncfile</logiccolor> to synchronize data and files between the device and the server. When finished transferring data, call <logiccolor>syncdisconnect</logiccolor> to close the connection.
 
-<b>Note: </b>If the attempt to establish an Internet connection was unsuccessful, CSPro will alert you with an error message. If you wish to preempt this error message in order to handle this situation on your own, use the <topic connection_function.csdoc />.
+<b>Note: </b>If the attempt to establish an Internet connection was unsuccessful, CSPro will alert you with an error message. If you wish to preempt this error message in order to handle this situation on your own, use the <logiccolor>connection</logiccolor> function.
+
 
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if the connection was successful and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if the connection was successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
+
+
+<subheader>Example</subheader>
+
+<logic>
+// connect to the CSWeb server
+if syncconnect(CSWeb, "<definition csweb_example_url />") then
+
+    // upload the latest cases
+    syncdata(PUT, SURVEY_DICT);
+
+    // disconnect from the server when complete
+    syncdisconnect();
+
+endif;
+</logic>
+
+
+<subheader>Deprecated Syntax</subheader>
+
+Prior to <link what_is_new_in_cspro_8_1.csdoc>CSPro 8.1</link>, the <logiccolor>syncconnect</logiccolor> function required as the first argument the specification of the type of synchronization service. This old syntax is still accepted but may not be supported in the future.
+
+<logicsyntax>
+// CSWeb
+b = syncconnect(<arg>CSWeb</arg>, <arg>csweb_url</arg>『, <arg>username</arg>『, <arg>password</arg>』』);
+</logicsyntax>
+
 
 <seealso synchronization.csdoc syncdisconnect_function.csdoc syncserver_function.csdoc syncdata_function.csdoc syncfile_function.csdoc syncparadata_function.csdoc connection_function.csdoc />

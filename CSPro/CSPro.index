@@ -1033,8 +1033,12 @@
     ]
   },
   { "path": "tool_list.csdoc", "title": "CSView" },
-  { "path": "data_source_csweb.csdoc", "~title": "CSWeb Data Source" },
-  { "path": "syncconnect_function_csweb.csdoc", "title": "CSWeb Synchronization" },
+  { "path": "sync_service_csweb.csdoc", "title": "CSWeb",
+    "subindex": [
+      { "path": "data_source_csweb.csdoc", "title": "Data Source" },
+      { "path": "sync_service_csweb.csdoc", "title": "Synchronization Service" }
+    ]
+  },
   { "path": "curocc_function.csdoc", "~title": "CurOcc Function" },
   { "path": "currentkey_function.csdoc", "~title": "CurrentKey Function",
     "subindex": [
@@ -4092,7 +4096,7 @@
   { "path": "syncconnect_function.csdoc", "~title": "SyncConnect Function",
     "subindex": [
       { "path": "syncconnect_function_bluetooth.csdoc", "title": "Bluetooth" },
-      { "path": "syncconnect_function_csweb.csdoc", "title": "CSWeb" },
+      { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
       { "path": "syncconnect_function_dropbox.csdoc", "title": "Dropbox" },
       { "path": "syncconnect_function_ftp.csdoc", "title": "FTP" },
       { "path": "syncconnect_function_dropbox_local.csdoc", "title": "LocalDropbox" },

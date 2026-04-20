@@ -26,4 +26,4 @@ if syncconnect(LocalDropbox) then
 endif;
 </logic>
 
-<seealso synchronization.csdoc syncconnect_function.csdoc syncconnect_function_dropbox.csdoc syncconnect_function_files_local.csdoc syncconnect_function_csweb.csdoc syncconnect_function_bluetooth.csdoc syncconnect_function_ftp.csdoc />
+<seealso synchronization.csdoc syncconnect_function.csdoc syncconnect_function_dropbox.csdoc syncconnect_function_files_local.csdoc syncconnect_function_bluetooth.csdoc syncconnect_function_ftp.csdoc />
