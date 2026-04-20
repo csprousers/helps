@@ -41,7 +41,7 @@ Once interviewers in the field have used data synchronization to upload data to 
 
 <subheader>Simple Synchronizations</subheader>
 
-Basic synchronizations can be set up by specifying a few options <link synchronization_simple.csdoc>documented here</link>.
+Basic synchronizations can be set up by defining a <link synchronization_simple.csdoc>Simple Synchronization</link> routine.
 
 
 <subheader>Advanced Synchronizations</subheader>
