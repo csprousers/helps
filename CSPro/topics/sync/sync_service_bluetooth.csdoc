@@ -1,4 +1,11 @@
 <title>Bluetooth Synchronization Service</title>
 
 
-<seealso sync_services.csdoc />
+<subheader>Overview</subheader>
+
+The Bluetooth <link sync_services.csdoc>synchronization service</link> allows a device to connect to another device as a client, with the other device acting as a <link syncserver_function.csdoc>passive server</link> that responds to client commands. The two devices must be physically close, as <link "https://en.wikipedia.org/wiki/Bluetooth">Bluetooth</link> is a short-range wireless technology.
+
+Bluetooth allows two devices, such as computers, laptops, tablets, or phones, to connect to transfer data. Android and Windows devices can connect over Bluetooth. When using Bluetooth, no Internet connection is required, however the two devices must be in close physical proximity. This is useful when transferring data in areas where no Internet connection is available.
+
+
+<seealso sync_services.csdoc syncserver_function.csdoc />

@@ -1,4 +1,13 @@
 <title>Dropbox Synchronization Service</title>
 
 
-<seealso sync_services.csdoc />
+<subheader>Overview</subheader>
+
+Dropbox is a free, cloud-based <link sync_services.csdoc>synchronization service</link> ideal for small- to medium-sized survey operations. <link "https://www.dropbox.com">Dropbox</link> is a file hosting service run by an American company. Using Dropbox requires no server setup or maintenance and avoids the complexity of configuring the preeminent CSPro synchronization option, <link sync_service_csweb.csdoc>CSWeb</link>. However, data stored on Dropbox is managed by an external company, and some organizations restrict storing data with third parties.
+
+To use Dropbox, you must first <link "https://www.dropbox.com/register">create</link> or use an existing account. Using Dropbox does not require the <link "https://www.dropbox.com/install">client software</link> to be installed on your machine, as access to Dropbox will be made using requests over the Internet.
+
+If you do have the client software installed on Windows, an optimization allows you to connect to your Dropbox files using the <link sync_service_local_files.csdoc>Local Files</link> synchronization service. When doing this, the Dropbox client manages data transfers. This option is primarily useful when downloading large amounts of data, which may take a long time through the online Dropbox connection.
+
+
+<seealso sync_services.csdoc sync_service_local_files.csdoc />

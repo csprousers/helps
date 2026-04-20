@@ -1,4 +1,11 @@
 <title>FTP Synchronization Service</title>
 
 
-<seealso sync_services.csdoc />
+<subheader>Overview</subheader>
+
+CSPro can connect to a File Transfer Protocol (FTP) server, using it as a <link sync_services.csdoc>synchronization service</link>. After connecting to a FTP server, <link synchronization.csdoc>synchronization</link> routines can transfer cases, files, and other data. FTP servers are useful for users conducting small- to medium-sized survey operations who are not able to configure the preeminent CSPro synchronization option, <link sync_service_csweb.csdoc>CSWeb</link>.
+
+CSPro can work with FTP servers using encrypted transmission via <link "https://en.wikipedia.org/wiki/FTPS#Transport_Layer_Security_(TLS)/Secure_Socket_Layer_(SSL)">TLS/SSL</link>. There are two modes that CSPro supports for encrypted FTP: explicit and implicit. To use explicit TLS/SSL, provide a URL for the server that starts with <logiccolor>"ftpes://"</logiccolor>. To use implicit TLS/SSL, provide a URL for the server that starts with <logiccolor>"ftps://"</logiccolor>. For servers that do not support TLS/SSL, use a URL that starts with <logiccolor>"ftp://"</logiccolor>. FTP over SSH (SFTP) is not supported.
+
+
+<seealso sync_services.csdoc sync_service_local_files.csdoc />

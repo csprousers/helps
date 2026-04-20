@@ -42,4 +42,4 @@ syncserver(Bluetooth, "..");
 </logic>
 
 
-<seealso synchronization.csdoc syncconnect_function.csdoc syncdata_function.csdoc syncdisconnect_function.csdoc syncfile_function.csdoc syncmessage_function.csdoc setbluetoothname_function.csdoc />
+<seealso synchronization.csdoc sync_service_bluetooth.csdoc syncconnect_function.csdoc syncdata_function.csdoc syncdisconnect_function.csdoc syncfile_function.csdoc syncmessage_function.csdoc setbluetoothname_function.csdoc />

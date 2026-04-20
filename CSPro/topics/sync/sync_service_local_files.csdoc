@@ -1,4 +1,17 @@
 <title>Local Files Synchronization Service</title>
 
 
-<seealso sync_services.csdoc />
+<subheader>Overview</subheader>
+
+The Local Files <link sync_services.csdoc>synchronization service</link> simulates the file-based synchronization services (such as <link sync_service_dropbox.csdoc>Dropbox</link> and <link sync_service_ftp.csdoc>FTP</link>) on a local machine. It is useful for:
+
+<list>
+    <li>Synchronizing with Dropbox files when the <link "https://www.dropbox.com/install">client software</link> is installed on a Windows machine.</li>
+    <li>Synchronizing with an FTP server hosted on a local machine.</li>
+    <li>Testing synchronization operations.</li>
+</list>
+
+Synchronizing with local files is particularly helpful when working with large quantities of data that would take a long time to transfer via requests over the Internet (to Dropbox or to an FTP server).
+
+
+<seealso sync_services.csdoc sync_service_dropbox.csdoc sync_service_ftp.csdoc />
