@@ -1,6 +1,6 @@
 <title>Introduction to Data Manager</title>
 
-<b>Data Manager</b> is a tool that allows you to examine, but not change, the cases in a CSPro data file. When viewing a case you can see information about:
+<b>Data Manager</b> is a tool that allows you to examine cases in a CSPro <link CSPro::data_sources.csdoc>data source</link>. When viewing a case you can see information about:
 
 <list>
     <li>Case data displayed in dictionary format</li>
@@ -9,7 +9,7 @@
     <li>Synchronization history</li>
 </list>
 
-Once a data file is open in Data Manager, it can be used seamlessly, without having to respecify dictionary or data files (such as when invoking the Export Data or Tabulate Frequencies tools).
+Once a data file is open in Data Manager, it can be used seamlessly, without having to respecify dictionary or data sources (such as when invoking the <link CSExport::introduction_to_export_data.csdoc>Export Data</link> or <link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link> tools).
 
 This guide contains the following information:
 

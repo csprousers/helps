@@ -1,0 +1,5 @@
+<list>
+    <li><b>Upload changes to server (PUT)</b>: Only data that is modified on the device will be sent to the synchronization service. No data will be downloaded from the service. This is the most common option for interviewers when all interviewers work on unique assignments.</li>
+    <li><b>Download changes from server (GET)</b>: Only receive modified data from the synchronization service. No local changes to the data will be uploaded to the service. This might be used for a supervisor who wants to see what changes interviewers have made but does not want to make changes themselves, or for a user at headquarters who wants to review data.</li>
+    <li><b>Sync local and remote changes (BOTH)</b>: Send local changes to the synchronization service and download changes from the service. This option can be used when multiple interviewers need to work on the same assignments. Note that if both interviewers modify a case at the same time, one will overwrite the changes made by the other.</li>
+</list>
