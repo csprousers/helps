@@ -5,9 +5,84 @@
 
 Dropbox is a free, cloud-based <link sync_services.csdoc>synchronization service</link> ideal for small- to medium-sized survey operations. <link "https://www.dropbox.com">Dropbox</link> is a file hosting service run by an American company. Using Dropbox requires no server setup or maintenance and avoids the complexity of configuring the preeminent CSPro synchronization option, <link sync_service_csweb.csdoc>CSWeb</link>. However, data stored on Dropbox is managed by an external company, and some organizations restrict storing data with third parties.
 
-To use Dropbox, you must first <link "https://www.dropbox.com/register">create</link> or use an existing account. Using Dropbox does not require the <link "https://www.dropbox.com/install">client software</link> to be installed on your machine, as access to Dropbox will be made using requests over the Internet.
+To use Dropbox, you must <link "https://www.dropbox.com/register">create</link> or use an existing account. Using Dropbox does not require the <link "https://www.dropbox.com/install">client software</link> to be installed on your machine, as access to Dropbox will be made using requests over the Internet.
 
 If you do have the client software installed on Windows, an optimization allows you to connect to your Dropbox files using the <link sync_service_local_files.csdoc>Local Files</link> synchronization service. When doing this, the Dropbox client manages data transfers. This option is primarily useful when downloading large amounts of data, which may take a long time through the online Dropbox connection.
+
+
+<subheader>Dropbox Connection</subheader>
+
+A connection to Dropbox occurs as a result of a <logiccolor>syncconnect</logiccolor> function call, or as part of a CSPro operation such as a <link synchronization_simple.csdoc>Simple Synchronization</link> or an <link CSDeploy::introduction_to_deployment.csdoc>application deployment</link>.
+
+The resource of a Dropbox <link sync_connection_string.csdoc>connection string</link> is simply the text <logiccolor>"Dropbox"</logiccolor>.
+
+Dropbox will authenticate the connection and confirm that you want to allow CSPro to access data stored on Dropbox. At this authentication stage, it is possible to specify which Dropbox account you want to use. However, if you want to specify this directly, you can use the connection string property <colorinline JSON>"email"</colorinline>.
+
+These are options that can be specified in the connection string. Note that values must be <link connection_string.csdoc>properly encoded</link> based on the way that the connection string is defined (as a string, as a <link JSON_primer.csdoc>JSON object</link>, or as a <link cspro_uris.csdoc>CSPro URI</link>).
+
+<table 2 header>
+    <cell nowrap>Property Name and Values</cell><cell>Description</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"email"</colorinline></b></cell><cell>The email address associated with the Dropbox account. The connection fails if the user authenticates using a different email address.</cell>
+</table>
+
+The following are examples of how to create connections to Dropbox:
+
+<logic>
+// Dropbox's authentication screen allows the user to specify what account they want to use
+syncconnect("Dropbox");
+
+// an error occurs if the user does not authenticate with jackw@example.org
+syncconnect(maketext(
+    "Dropbox|email=%s",
+    encode(PercentEncoding, "jackw@example.org")
+));
+</logic>
+
+
+<subheader>Credential Storage</subheader>
+
+When connecting to Dropbox, an access token is generated that provides access to Dropbox data for some amount of time without needing to always authenticate the access. This token is stored in your operating system's secure storage. You can use the <link manage_credentials.csdoc>Manage Credentials</link> dialog to manually clear this credential.
+
+
+<subheader>Local Dropbox Connection</subheader>
+
+On Windows, if you have the client software installed on your machine and are logged into Dropbox using the same account used for CSPro synchronization, you can use the <link sync_service_local_files.csdoc>Local Files</link> synchronization service to speed up operations. Rather than connecting over the Internet to Dropbox, CSPro will directly access the Dropbox contents on the local machine. For example, if the Dropbox directory is mapped to <i>C:\surveys\dropbox</i>, you can connect directly using:
+
+<logic>
+syncconnect("file:///C:/surveys/dropbox");
+</logic>
+
+The Dropbox home directory should contain a folder named <i>CSPro</i>, which contains the files used for synchronization operations.
+
+Alternatively, CSPro can try to automatically determine where the Dropbox directory is located when the following options are specified in the connection string. The default behavior is marked with ⁺⁺⁺.
+
+<table 2 header>
+    <cell nowrap>Property Name and Values</cell><cell>Description</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"useLocal"</colorinline></b></cell><cell>Determines whether CSPro tries to access Dropbox using the client software.</cell>
+    <cell><indent><colorinline JSON>false</colorinline> ⁺⁺⁺</indent></cell><cell><indent>Do not use the client software, only access Dropbox using a remote connection.</indent></cell>
+    <cell><indent><colorinline JSON>true</colorinline></indent></cell><cell><indent>Only use the client software. An error occurs if it does not exist.</indent></cell>
+    <cell><indent><colorinline JSON>"try"</colorinline></indent></cell><cell><indent>Try to use the client software. If not possible, use the remote connection.</indent></cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"account"</colorinline></b></cell><cell>The type of account to use.</cell>
+    <cell><indent><colorinline JSON>"personal"</colorinline></indent></cell><cell><indent>Use a personal Dropbox account.</indent></cell>
+    <cell><indent><colorinline JSON>"business"</colorinline></indent></cell><cell><indent>The a business Dropbox account.</indent></cell>
+</table>
+
+When <colorinline JSON>"useLocal"</colorinline> is <colorinline JSON>true</colorinline> or <colorinline JSON>"try"</colorinline>, CSPro will try to identify the location of the Dropbox directory. If there are multiple Dropbox accounts on the machine, the <colorinline JSON>"account"</colorinline> property allows you to specify which type of account to use. If not specified, the personal account is used when both personal and business accounts exist. If <colorinline JSON>"account"</colorinline> is defined but <colorinline JSON>"useLocal"</colorinline> is not, <colorinline JSON>"useLocal"</colorinline> defaults to <colorinline JSON>"try"</colorinline>.
+
+The <colorinline JSON>"email"</colorinline> property is ignored when using the client software.
+
+The following are examples of how to create local connections to Dropbox:
+
+<logic>
+// access Dropbox using the client software when possible
+syncconnect("Dropbox|useLocal=try");
+
+// access the business account on Dropbox only using the client software
+syncconnect("Dropbox|useLocal=true&account=business");
+</logic>
 
 
 <seealso sync_services.csdoc sync_service_local_files.csdoc />

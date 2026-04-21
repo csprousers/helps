@@ -1355,7 +1355,7 @@
   { "path": "add_lines_or_boxes_to_a_form.csdoc", "title": "Draw Boxes on a Form" },
   { "path": "drop_down.csdoc", "title": "Drop Down" },
   { "path": "manage_application_files.csdoc", "title": "Drop Files from an Application" },
-  { "path": "syncconnect_function_dropbox.csdoc", "title": "Dropbox Synchronization" },
+  { "path": "sync_service_dropbox.csdoc", "~title": "Dropbox Synchronization Service" },
   { "path": "include_exclude_special_values_in_a_variable.csdoc", "title": "Dump",
     "subindex": [
       { "path": "include_exclude_special_values_in_a_variable.csdoc", "title": "Undefined Values" }
@@ -2493,7 +2493,6 @@
   { "path": "loadcase_function.csdoc", "~title": "LoadCase Function" },
   { "path": "loading_and_saving_preferences.csdoc", "~title": "Loading and Saving Preferences" },
   { "path": "loadsetting_function.csdoc", "~title": "loadsetting Function" },
-  { "path": "syncconnect_function_dropbox_local.csdoc", "title": "LocalDropbox Synchronization" },
   { "path": "syncconnect_function_files_local.csdoc", "title": "LocalFiles Synchronization" },
   { "path": "CS_Localhost.csdoc", "~title": "Localhost Action Invoker Namespace",
     "subindex": [
@@ -4097,9 +4096,8 @@
     "subindex": [
       { "path": "syncconnect_function_bluetooth.csdoc", "title": "Bluetooth" },
       { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
-      { "path": "syncconnect_function_dropbox.csdoc", "title": "Dropbox" },
+      { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
       { "path": "sync_service_ftp.csdoc", "title": "FTP" },
-      { "path": "syncconnect_function_dropbox_local.csdoc", "title": "LocalDropbox" },
       { "path": "syncconnect_function_files_local.csdoc", "title": "LocalFiles" }
     ]
   },

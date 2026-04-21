@@ -10,7 +10,7 @@ CSPro can work with FTP servers using encrypted transmission via <link "https://
 
 <subheader>FTP Connection</subheader>
 
-A connection to an FTP server occurs as a result of a function call to <logiccolor>syncconnect</logiccolor>, or as part of a CSPro operation such as a <link synchronization_simple.csdoc>Simple Synchronization</link> or an <link CSDeploy::introduction_to_deployment.csdoc>application deployment</link>.
+A connection to an FTP server occurs as a result of a <logiccolor>syncconnect</logiccolor> function call , or as part of a CSPro operation such as a <link synchronization_simple.csdoc>Simple Synchronization</link> or an <link CSDeploy::introduction_to_deployment.csdoc>application deployment</link>.
 
 The resource of an FTP <link sync_connection_string.csdoc>connection string</link> is the server URL. You can optionally specify a port number by adding it to the end of the URL, separated by a colon. For example, the URL <logiccolor>"ftp://example.org:27"</logiccolor> tells CSPro to connect to port 27. If no port is specified, the standard FTP port will be used: 21 for FTP or 990 for FTPS.
 
@@ -26,7 +26,7 @@ These are options that can be specified in the connection string. Note that valu
     <cell><b><colorinline JSON>"password"</colorinline></b></cell><cell>The user's password. Hardcoding passwords in applications is not recommended. This is only used if a username is also provided.</cell>
 </table>
 
-The following logic shows how to create a connection to an FTP server:
+The following are examples of how to create connections to FTP servers:
 
 <logic>
 // CSPro will prompt for the username and password
@@ -49,10 +49,10 @@ When connecting to an FTP server, the username and password are stored in the op
 
 <subheader>Locally Run FTP Server</subheader>
 
-If you are running the FTP server on the same machine that you are using for synchronization operations, you use the <link sync_service_local_files.csdoc>Local Files</link> synchronization service to speed up operations. Rather than connecting over the Internet to server, CSPro will directly access the contents of the server on the local machine. For example, if the home directory of the FTP server is located at <i>C:\ftp-server\surveys</i>, you can connect directly using:
+If you are running the FTP server on the same machine that you are using for synchronization operations, you use the <link sync_service_local_files.csdoc>Local Files</link> synchronization service to speed up operations. Rather than connecting over the Internet to server, CSPro will directly access the contents of the server on the local machine. For example, if the home directory of the FTP server is located at <i>C:\surveys\ftp-server</i>, you can connect directly using:
 
 <logic>
-syncconnect("file:///C:/ftp-server/surveys");
+syncconnect("file:///C:/surveys/ftp-server");
 </logic>
 
 The FTP home directory should contain a folder named <i>CSPro</i>, which contains the files used for synchronization operations.

@@ -1528,8 +1528,6 @@
             "documents": [
               { "path": "syncconnect_function.csdoc", "~title": "SyncConnect Function" },
               { "path": "syncconnect_function_bluetooth.csdoc", "~title": "SyncConnect Function (Bluetooth)" },
-              { "path": "syncconnect_function_dropbox.csdoc", "~title": "SyncConnect Function (Dropbox)" },
-              { "path": "syncconnect_function_dropbox_local.csdoc", "~title": "SyncConnect Function (LocalDropbox)" },
               { "path": "syncconnect_function_files_local.csdoc", "~title": "SyncConnect Function (LocalFiles)" },
               { "path": "syncserver_function.csdoc", "~title": "SyncServer Function" },
               { "path": "syncdisconnect_function.csdoc", "~title": "SyncDisconnect Function" },

@@ -34,4 +34,4 @@ if syncconnect(Bluetooth, server_name) then
 endif;
 </logic>
 
-<seealso syncconnect_function.csdoc syncconnect_function_dropbox.csdoc syncconnect_function_dropbox_local.csdoc syncconnect_function_files_local.csdoc syncmessage_function.csdoc getbluetoothname_function.csdoc setbluetoothname_function.csdoc />
+<seealso syncconnect_function.csdoc syncconnect_function_files_local.csdoc syncmessage_function.csdoc getbluetoothname_function.csdoc setbluetoothname_function.csdoc />
