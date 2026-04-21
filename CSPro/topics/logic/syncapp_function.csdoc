@@ -1,10 +1,12 @@
 <title>SyncApp Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
 b = syncapp();
 </logicsyntax>
+
 
 <subheader>Description</subheader>
 
@@ -32,14 +34,15 @@ Be careful when including data files in an application package that is used with
 
 Note that if as part of the application update the currently running .pen file is updated to a newer version, <logiccolor>syncapp</logiccolor> will restart the application in order to run the updated version. This means that any logic that follows the call to <logiccolor>syncapp</logiccolor> will not be executed. To avoid problems, make sure that the call to <logiccolor>syncapp</logiccolor> is the last call in the procedure. For example, to combine the application update with calls to <logiccolor>syncdata</logiccolor> to update data files, place the calls to <logiccolor>syncdata</logiccolor> before the call to <logiccolor>syncapp</logiccolor>.
 
+
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if the update was successful and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if the update was successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
 
 <subheader>Example</subheader>
 
 <logic>
-if syncconnect(CSWeb, "<definition csweb_example_url />") then
+if syncconnect("<definition csweb_example_url />") then
 
     // get the latest versions of the application files from the server
     syncapp();
@@ -48,5 +51,6 @@ if syncconnect(CSWeb, "<definition csweb_example_url />") then
 
 endif;
 </logic>
+
 
 <seealso synchronization.csdoc syncconnect_function.csdoc syncdata_function.csdoc syncdisconnect_function.csdoc syncserver_function.csdoc />

@@ -42,7 +42,7 @@ The function returns a logical value of 1 (true) if the transfer was successful 
 <subheader>Example 1</subheader>
 
 <logic>
-if syncconnect(CSWeb, "<definition csweb_example_url />") then
+if syncconnect("<definition csweb_example_url />") then
 
      // send the latest survey data to the server
     syncdata(PUT, SURVEY_DICT);
@@ -59,7 +59,7 @@ endif;
 <subheader>Example 2</subheader>
 
 <logic>
-if syncconnect(Bluetooth) then
+if syncconnect("Bluetooth") then
 
     // sync data for only the province and district assigned to the interviewer
     string assignment_universe = maketext("%v%v", ASSIGNED_PROVINCE, ASSIGNED_DISTRICT);

@@ -35,12 +35,12 @@ Because <link binary_data_entry_application_file_pen.csdoc>binary data entry app
 Configuration settings are a convenient way to store some information outside of your <link logic_file_apc.csdoc>logic file</link>. If you are using a revision control system (e.g., Git), there may be some values, like the URL you are using to synchronize data, that you do not want to store in your publicly visible logic. You can define these settings on your machine without having to share them with strangers. For example, this is logic that you can safely commit to a public repository:
 
 <logic>
-config ftpServerUrl;
+config string ftpServerUrl;
 
-syncconnect(FTP, ftpServerUrl);
+syncconnect(ftpServerUrl);
 </logic>
 
-For this to work, you need to use the dialog box to add an attribute <logiccolor>"ftpServerUrl"</logiccolor> with the FTP server URL as its value.
+For this to work, you need to use the dialog box to add an attribute <logiccolor>"ftpServerUrl"</logiccolor> with the <link sync_service_ftp.csdoc>FTP server</link> URL as its value.
 
 
 <seealso config_modifier.csdoc loadsetting_function.csdoc savesetting_function.csdoc CS_Settings.csdoc csentry_settings_modification.csdoc />

@@ -27,13 +27,13 @@ Paradata logs can be very large so be careful about adding paradata synchronizat
 
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if the transfer was successful and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if the transfer was successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
 
 
 <subheader>Example</subheader>
 
 <logic>
-if syncconnect(Bluetooth) then
+if syncconnect("Bluetooth") then
 
     // other sync actions...
 
