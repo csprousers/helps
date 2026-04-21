@@ -4,26 +4,30 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-b = syncserver(<arg>Bluetooth</arg>『, <arg>file_root_path</arg>』);
+b = syncserver(Bluetooth『, <arg>file_root_path</arg>』);
 </logicsyntax>
 
 
 <subheader>Description</subheader>
 
-The <logiccolor>syncserver</logiccolor> function runs a local server that allows peer-to-peer synchronization between two devices via Bluetooth, without needing an Internet connection. The function waits for a connection from another device (a client) made when the client calls <logiccolor>syncconnect</logiccolor> to start a <link sync_service_bluetooth.csdoc>Bluetooth synchronization</link>. Once the two devices are connected, the client device calls <logiccolor>syncdata</logiccolor> and <logiccolor>syncfile</logiccolor> to copy data and/or files to and from the server. Finally, the client device calls <logiccolor>syncdisconnect</logiccolor> to end the session.
+The <logiccolor>syncserver</logiccolor> function runs a local server that allows peer-to-peer synchronization between two devices using Bluetooth. No Internet connection is required, but the two devices must be in close physical proximity because <link "https://en.wikipedia.org/wiki/Bluetooth">Bluetooth</link> is a short-range wireless technology.
 
-The server in a peer-to-peer synchronization is passive. It does not call <logiccolor>syncdata</logiccolor> or <logiccolor>syncfile</logiccolor>. It simply responds to requests initiated from the client. The Bluetooth server runs until either the client successfully connects and disconnects or the operator cancels the synchronization.
+The function waits for a connection from another device, the "client," made when the client calls <logiccolor>syncconnect</logiccolor> to start <link sync_service_bluetooth.csdoc>Bluetooth synchronization</link>. You can use the <logiccolor>setbluetoothname</logiccolor> function if you want to set the server device's Bluetooth name that the client sees when trying to make a connection.
 
-The <logiccolor>syncserver</logiccolor> function displays a dialog to the operator indicating that it is waiting for a client device to connect. During this time, no other logic on the server is executed. Once a connection is made, the dialog displays the progress of the synchronization. When the client disconnects by calling <logiccolor>syncdisconnect</logiccolor>, the dialog is removed and <logiccolor>syncserver</logiccolor> returns. If no connection is made, the operator can use the cancel button on the dialog to cause <logiccolor>syncserver</logiccolor> to return and continue executing any logic that follows. The server only allows connections while the <logiccolor>syncserver</logiccolor> function is running, so the server must call <logiccolor>syncserver</logiccolor> before the client device calls <logiccolor>syncconnect</logiccolor>.
+Once the two devices are connected, the client calls functions such as <logiccolor>syncdata</logiccolor> and <logiccolor>syncfile</logiccolor> to copy data and/or files to and from the server. Finally, the client calls <logiccolor>syncdisconnect</logiccolor> to end the session.
 
-The first argument must be the keyword <arg>Bluetooth</arg>. The second argument, <arg>file_root_path</arg>, is an optional string expression of the path to use as the base directory from which to transfer files when the client calls <logiccolor>syncfile</logiccolor>. The remote path specified in the call to <logiccolor>syncfile</logiccolor> is appended to this base directory to determine the full path of files on the server. In other words, <logiccolor>"/"</logiccolor> in a <logiccolor>syncfile</logiccolor> call from the client refers to the <arg>file_root_path</arg> directory on the server. For example, if <arg>file_root_path</arg> is <logiccolor>"C:\MyApp\MyFiles"</logiccolor> and the client calls <logiccolor>syncfile(GET,"/Images/image.jpg")</logiccolor>, then the file <b>image.jpg</b> will be read from the directory <b>C:\MyApp\MyFiles\Images\</b> on the server. If no <arg>file_root_path</arg> is specified, the application directory is used. The rules that dictate which files can be synced on the server differ depending on the operating system. On Android files inside the <b>csentry</b> directory can be synced by default. To sync outside the csentry directory use <arg>file_root_path</arg> to specify a path outside the csentry directory. On Windows any file can be synced.
+The server in a peer-to-peer synchronization is passive. It does not call any synchronization functions. It simply responds to requests initiated by the client. The Bluetooth server runs until either the client successfully disconnects (after connecting), or the operator cancels the synchronization.
 
-When connecting over Bluetooth, no Internet connection is required, but the two devices must be in close physical proximity.
+If the client's synchronization logic depends on data from the server, such data can be passed between devices by having the client use <logiccolor>syncmessage</logiccolor> to send a message, which the server responds to using <logiccolor>OnSyncMessage</logiccolor>.
+
+The <logiccolor>syncserver</logiccolor> function displays a dialog to the operator indicating that it is waiting for a client to connect. During this time, no other logic on the server is executed. Once a connection is made, the dialog displays the progress of the synchronization. When the client disconnects by calling <logiccolor>syncdisconnect</logiccolor>, the dialog is removed and <logiccolor>syncserver</logiccolor> returns. If no connection is made, the operator can use the dialog's cancel button to cause <logiccolor>syncserver</logiccolor> to return and continue executing any logic that follows. The server only allows connections while the <logiccolor>syncserver</logiccolor> function is running, so the server must call <logiccolor>syncserver</logiccolor> before the client device calls <logiccolor>syncconnect</logiccolor>.
+
+The first argument must be the keyword <arg>Bluetooth</arg>. The second argument, <arg>file_root_path</arg>, is an optional string expression of the path to use as the base directory from which to transfer files when the client calls <logiccolor>syncfile</logiccolor>. The remote path specified in the call to <logiccolor>syncfile</logiccolor> is appended to this base directory to determine the full path of files on the server. In other words, <logiccolor>"/"</logiccolor> in a <logiccolor>syncfile</logiccolor> call from the client refers to the <arg>file_root_path</arg> directory on the server. For example, if <arg>file_root_path</arg> is <logiccolor>@"C:\MyApp\MyFiles"</logiccolor> and the client calls <logiccolor>syncfile(GET, "/Images/image.jpg")</logiccolor>, then the file <b>image.jpg</b> will be read from the directory <b>C:\MyApp\MyFiles\Images\</b> on the server. If no <arg>file_root_path</arg> is specified, the application directory is used. The rules that dictate what files can be synced on the server differ depending on the operating system. On Android, only files within the <i>csentry</i> directory can be synced. On Windows, any file can be synced.
 
 
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if the synchronization was successful and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if the synchronization was successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
 
 
 <subheader>Example 1</subheader>
@@ -42,4 +46,4 @@ syncserver(Bluetooth, "..");
 </logic>
 
 
-<seealso synchronization.csdoc sync_service_bluetooth.csdoc syncconnect_function.csdoc syncdata_function.csdoc syncdisconnect_function.csdoc syncfile_function.csdoc syncmessage_function.csdoc setbluetoothname_function.csdoc />
+<seealso synchronization.csdoc sync_service_bluetooth.csdoc setbluetoothname_function.csdoc syncmessage_function.csdoc />

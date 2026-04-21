@@ -525,12 +525,14 @@
       { "path": "change_block_properties.csdoc", "~title": "Change Block Properties" }
     ]
   },
-  { "path": "getbluetoothname_function.csdoc", "title": "Bluetooth Name",
+  { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth",
     "subindex": [
-      { "path": "setbluetoothname_function.csdoc", "title": "Modify" }
+      { "path": "getbluetoothname_function.csdoc", "title": "Name (Get)" },
+      { "path": "setbluetoothname_function.csdoc", "title": "Name (Set)" },
+      { "path": "syncserver_function.csdoc", "title": "Server" },
+      { "path": "sync_service_bluetooth.csdoc", "title": "Synchronization Service" }
     ]
   },
-  { "path": "syncconnect_function_bluetooth.csdoc", "title": "Bluetooth Synchronization" },
   { "path": "boolean_values.csdoc", "~title": "Boolean Values" },
   { "path": "external_libraries.csdoc", "title": "Bootstrap" },
   { "path": "add_borders.csdoc", "title": "Border",
@@ -4094,7 +4096,7 @@
   { "path": "syncapp_function.csdoc", "~title": "SyncApp Function" },
   { "path": "syncconnect_function.csdoc", "~title": "SyncConnect Function",
     "subindex": [
-      { "path": "syncconnect_function_bluetooth.csdoc", "title": "Bluetooth" },
+      { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth" },
       { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
       { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
       { "path": "sync_service_ftp.csdoc", "title": "FTP" },

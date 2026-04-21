@@ -15,7 +15,7 @@ end;
 
 <subheader>Description</subheader>
 
-The <logiccolor>syncmessage</logiccolor> function sends a string message from one device to another device that is acting as a <link syncserver_function.csdoc>Bluetooth server</link>. The string expression <arg>message_name</arg> identifies the message, and an optional string expression <arg>message_value</arg> defines a value associated with the message. The client device sends this message to a Bluetooth server.
+The <logiccolor>syncmessage</logiccolor> function sends a string message from one device, a <link sync_service_bluetooth.csdoc>Bluetooth client</link>, to another device that is acting as a <link syncserver_function.csdoc>Bluetooth server</link>. The string expression <arg>message_name</arg> identifies the message, and an optional string expression <arg>message_value</arg> defines a value associated with the message. The client device sends this message to a Bluetooth server.
 
 The application running on the Bluetooth server must have a <link user_defined_functions.csdoc>user-defined function</link> with the name <logiccolor>OnSyncMessage</logiccolor> that has two string parameters and returns a string. While the <logiccolor>syncserver</logiccolor> function is running, the <logiccolor>OnSyncMessage</logiccolor> function is called anytime a message is received and the return value of that function is returned to the Bluetooth client.
 
@@ -32,7 +32,7 @@ The function returns the message returned by the <logiccolor>OnSyncMessage</logi
 syncmessage("STAFF_CODE", STAFF_CODE);
 
 if syncmessage("TRAINING_MODE") <> maketext("%d", TRAINING_MODE) then
-    errmsg("You cannot sync with a device that is not in the same training mode as your device");
+    errmsg("You cannot sync with a device that is not in the same training mode as your device.");
     syncdisconnect();
 endif;
 

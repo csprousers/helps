@@ -1527,7 +1527,6 @@
             "title": "Synchronization Functions",
             "documents": [
               { "path": "syncconnect_function.csdoc", "~title": "SyncConnect Function" },
-              { "path": "syncconnect_function_bluetooth.csdoc", "~title": "SyncConnect Function (Bluetooth)" },
               { "path": "syncserver_function.csdoc", "~title": "SyncServer Function" },
               { "path": "syncdisconnect_function.csdoc", "~title": "SyncDisconnect Function" },
               { "path": "syncdata_function.csdoc", "~title": "SyncData Function" },
