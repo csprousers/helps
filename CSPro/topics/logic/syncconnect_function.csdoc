@@ -16,7 +16,7 @@ The <logiccolor>syncconnect</logiccolor> function opens a connection to a server
     <li><link sync_service_dropbox.csdoc>Dropbox</link></li>
     <li><link sync_service_dropbox.csdoc>Dropbox (Local Files)</link></li>
     <li><link sync_service_ftp.csdoc>FTP</link></li>
-    <li><link syncconnect_function_files_local.csdoc>LocalFiles</link></li>
+    <li><link sync_service_local_files.csdoc>Local Files</link></li>
 </list>
 
 After a successful connection, call <logiccolor>syncdata</logiccolor> and <logiccolor>syncfile</logiccolor> to synchronize data and files between the device and the server. When finished transferring data, call <logiccolor>syncdisconnect</logiccolor> to close the connection.
@@ -59,6 +59,9 @@ b = syncconnect(LocalDropbox);
 
 // FTP
 b = syncconnect(FTP, <arg>ftp_url</arg>『, <arg>username</arg>『, <arg>password</arg>』』);
+
+// Local Files
+b = syncconnect(LocalFiles, <arg>directory_path</arg>);
 </logicsyntax>
 
 
