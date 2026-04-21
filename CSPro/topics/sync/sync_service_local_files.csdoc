@@ -75,4 +75,7 @@ syncconnect("Dropbox|useLocal=true");
 </logic>
 
 
+<include sync_file_based_directory_structure.hgi />
+
+
 <seealso sync_services.csdoc sync_service_dropbox.csdoc sync_service_ftp.csdoc />

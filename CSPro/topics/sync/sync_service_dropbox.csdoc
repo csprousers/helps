@@ -85,4 +85,7 @@ syncconnect("Dropbox|useLocal=true&account=business");
 </logic>
 
 
+<include sync_file_based_directory_structure.hgi />
+
+
 <seealso sync_services.csdoc sync_service_local_files.csdoc />
