@@ -1731,6 +1731,12 @@
             ]
           },
           {
+            "title": "Sync Namespace",
+            "documents": [
+              { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" }
+            ]
+          },
+          {
             "title": "System Namespace",
             "documents": [
               { "path": "CS_System.csdoc", "~title": "System Action Invoker Namespace" },

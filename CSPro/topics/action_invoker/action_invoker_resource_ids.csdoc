@@ -1,11 +1,12 @@
 <title>Action Invoker Resource IDs</title>
 
 
-The <link action_invoker.csdoc>Action Invoker</link> does not have the concept of <link object_dot_notation.csdoc>objects</link> that can manage resources. Instead, actions that use resources return a numeric resource ID, which is then used to identify the resource in subsequent actions. Resources ID are used in the following areas:
+The <link action_invoker.csdoc>Action Invoker</link> does not have the concept of <link object_dot_notation.csdoc>objects</link> that can manage resources. Instead, actions that use resources return a numeric <i>resource ID</i>, which is then used to identify the resource in subsequent actions. Resources ID are used in the following areas:
 
 <list>
-    <li><action>Sqlite</action> actions that access <link sqlite_in_cspro.csdoc>SQLite databases</link>.</li>
     <li><action>Network.fetch</action> actions that initiate HTTP requests to be processed by <action>Network.fetchBody</action>.</li>
+    <li><action>Sqlite</action> actions that access <link sqlite_in_cspro.csdoc>SQLite databases</link>.</li>
+    <li><action>Sync</action> actions that interact with <link sync_services.csdoc>synchronization services</link>.</li>
 </list>
 
 

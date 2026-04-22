@@ -69,6 +69,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
     <li>Multiple dictionaries can now be synchronized as part of <link synchronization_simple.csdoc>Simple Synchronization routine</link>.</li>
     <li>You can specify what <link sync_service_dropbox.csdoc>Dropbox account</link> you want to use for synchronizing, supporting operations where multiple Dropbox accounts are in use.</li>
     <li>An option allows creating the directory used for <link sync_service_local_files.csdoc>Local Files</link> synchronization, facilitating easy testing of synchronization operations on a local machine.</li>
+    <li>Synchronization routines can be executed using the <link action_invoker.csdoc>Action Invoker</link>'s <action>Sync</action> namespace.</li>
 </list>
 
 
@@ -150,6 +151,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <list>
     <li>A new action, <action>throwException</action>, throws an exception in the current execution environment.</li>
     <li>A new namespace, <action>Network</action>, provides functionality to make HTTP requests and handle responses, with the actions: <action>Network.fetch</action>, <action>Network.fetchBody</action>, <action>Network.fetchBytes</action>, <action>Network.fetchFile</action>, <action>Network.fetchJson</action>, and <action>Network.fetchText</action></li>
+    <li>A new namespace, <action>Sync</action>, provides ways to interact with <link sync_services.csdoc>synchronization services</link>.</li>
     <li>A new action, <action>System.createShortcut</action>, creates a shortcut to a CSPro application or file. The shortcut is placed on the Windows Desktop, or on the Android launcher.</li>
     <li>The <action>UI.closeDialog</action> action has been renamed <action>UI.close</action>, though the old name will remain as an alias for some time. A new argument allows the <link html_dialog_ui.csdoc>HTML dialog</link> or <link html_in_cspro.csdoc>web view</link> to be closed without a valid result but instead with an exception that is thrown in the execution environment that launched the dialog or web view.</li>
     <li>A new action, <action>UI.setWebViewOptions</action>, sets options for the current <link html_in_cspro.csdoc>web view</link>. These options include allowing access to a device's camera, geolocation, and microphone.</li>

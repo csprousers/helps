@@ -223,6 +223,7 @@
       { "path": "CS_Path.csdoc", "title": "Namespace: Path" },
       { "path": "CS_Settings.csdoc", "title": "Namespace: Settings" },
       { "path": "CS_Sqlite.csdoc", "title": "Namespace: Sqlite" },
+      { "path": "CS_Sync.csdoc", "title": "Namespace: Sync" },
       { "path": "CS_System.csdoc", "title": "Namespace: System" },
       { "path": "CS_UI.csdoc", "title": "Namespace: UI" },
       { "path": "CS_OnActionInvokerResult.csdoc", "~title": "OnActionInvokerResult Global Function" },
@@ -4092,6 +4093,7 @@
     ]
   },
   { "path": "synchronization.csdoc", "title": "sync.log File" },
+  { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
   { "path": "syncable_name.csdoc", "~title": "Syncable Name" },
   { "path": "syncapp_function.csdoc", "~title": "SyncApp Function" },
   { "path": "syncconnect_function.csdoc", "~title": "SyncConnect Function",
@@ -4112,6 +4114,7 @@
       { "path": "sync_services.csdoc", "title": "Services" },
       { "path": "synchronization_simple.csdoc", "title": "Simple Synchronization" },
       { "path": "synctime_function.csdoc", "title": "Statistics" },
+      { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
       { "path": "syncable_name.csdoc", "~title": "Syncable Name" }
     ]
   },
@@ -4463,7 +4466,7 @@
       { "path": "do_statement.csdoc", "~title": "Do Statement" }
     ]
   },
-  { "path": "syncapp_function.csdoc", "title": "Update application",
+  { "path": "syncapp_function.csdoc", "title": "Update Application",
     "subindex": [
       { "path": "syncapp_function.csdoc", "~title": "SyncApp Function" }
     ]

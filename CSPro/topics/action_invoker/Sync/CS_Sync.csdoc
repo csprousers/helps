@@ -1,0 +1,15 @@
+<title>Sync Action Invoker Namespace</title>
+
+The <action>Sync</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to interact with <link sync_services.csdoc>synchronization services</link>.
+
+After creating a connection to a synchronization service, a <link action_invoker_resource_ids.csdoc>resource ID</link> is returned that identifies the service in subsequent actions until the connection is closed.
+
+
+<subheader>Functionality</subheader>
+
+<table 2 header nowrap>
+    <cell>Action</cell><cell>Description</cell>
+</table>
+
+
+<seealso action_invoker.csdoc CS_Network.csdoc />

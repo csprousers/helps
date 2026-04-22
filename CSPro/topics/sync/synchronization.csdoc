@@ -40,23 +40,21 @@ Basic synchronizations can be set up by defining a <link synchronization_simple.
 
 <subheader>Advanced Synchronizations</subheader>
 
-For more advanced synchronization scenarios, CSPro has logic functions that can be used to implement data and file synchronizations. Using logic, it is possible to synchronize data files, including those associated with external dictionaries, and non-data files over either the Internet or Bluetooth.
+For more advanced synchronization scenarios, CSPro has <link introduction_to_cspro_language.csdoc>logic</link> <link logic_alphabetical_list.csdoc>functions</link>, and <link action_invoker.csdoc>Action Invoker</link> <link CS_Sync.csdoc>actions</link>, that can be used to implement data and file synchronizations. It is possible to synchronize data sources, including those associated with external dictionaries, and non-data files over either the Internet or Bluetooth.
 
+The following functions and actions are available:
 
-<subheader>Synchronization from Logic</subheader>
-
-There are several logic functions related to synchronization:
-
-<list>
-    <li><logiccolor>syncconnect</logiccolor> is used to connect to the synchronization service, initiating the synchronization session.</li>
-    <li><logiccolor>syncdisconnect</logiccolor> is used after synchronizing to end the session.</li>
-    <li><logiccolor>syncdata</logiccolor> is used to synchronize cases in CSPro data sources.</li>
-    <li><logiccolor>syncfile</logiccolor> is used to upload or download non-data files.</li>
-    <li><logiccolor>syncparadata</logiccolor> is used to synchronize <link paradata.csdoc>paradata</link>.</li>
-    <li><logiccolor>syncapp</logiccolor> is used to update an application on the device from a new version on the service.</li>
-    <li><logiccolor>syncmessage</logiccolor> is used to send string messages over Bluetooth.</li>
-    <li><logiccolor>synctime</logiccolor> returns the time of the last synchronization of a data source or a specific case.</li>
-</list>
+<table 3 header nowrap>
+    <cell>Function</cell><cell>Action</cell><cell>Description</cell>
+    <cell><logiccolor>syncconnect</logiccolor></cell><cell nowrap></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
+    <cell><logiccolor>syncdisconnect</logiccolor></cell><cell nowrap></cell><cell>Ends a synchronization session, disconnecting from the service.</cell>
+    <cell><logiccolor>syncdata</logiccolor></cell><cell nowrap></cell><cell>Synchronizes cases in CSPro data sources.</cell>
+    <cell><logiccolor>syncfile</logiccolor></cell><cell nowrap></cell><cell>Uploads or downloads non-data files.</cell>
+    <cell><logiccolor>syncparadata</logiccolor></cell><cell nowrap></cell><cell>Synchronizes <link paradata.csdoc>paradata</link>.</cell>
+    <cell><logiccolor>syncapp</logiccolor></cell><cell nowrap></cell><cell>Updates an application on the device from a new version on the service.</cell>
+    <cell><logiccolor>syncmessage</logiccolor></cell><cell nowrap></cell><cell>Sends string messages over Bluetooth.</cell>
+    <cell><logiccolor>synctime</logiccolor></cell><cell nowrap></cell><cell>Returns the time of the last synchronization of a data source or a specific case.</cell>
+</table>
 
 While it is possible to use <logiccolor>syncfile</logiccolor> to synchronize CSPro data sources, it is more efficient to use <logiccolor>syncdata</logiccolor> since it will only send/receive cases that have been modified whereas <logiccolor>syncfile</logiccolor> always sends the entire file.
 
