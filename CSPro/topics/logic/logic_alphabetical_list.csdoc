@@ -100,7 +100,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>filesize</logiccolor></cell><cell>Returns the size of a file in bytes.</cell>
     <cell><logiccolor>filetime</logiccolor></cell><cell>Returns the last modification date/time of a file or a directory.</cell>
     <cell><logiccolor>filewrite</logiccolor></cell><cell>Writes a line of text to a File.</cell>
-    <cell><logiccolor>find</logiccolor></cell><cell>Determines the existence of a case in a data file that matches a condition.</cell>
+    <cell><logiccolor>find</logiccolor></cell><cell>Determines the existence of a case in a data source that matches a condition.</cell>
     <cell><logiccolor>for</logiccolor></cell><cell>Loops through multiple records or items.</cell>
     <cell><link for_dict_statement.csdoc><font monospace blue>for (dictionary)</font></link></cell><cell>Loops through the cases selected during a <logiccolor>selcase</logiccolor> operation.</cell>
     <cell><logiccolor>forcase</logiccolor></cell><cell>Loops through the cases in an external file.</cell>
@@ -211,7 +211,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>onoccchange</logiccolor></cell><cell>Declares that the following statements are executed when the group's current occurrence changes.</cell>
     <cell><logiccolor>OnRefused</logiccolor></cell><cell>Provides a way to override the selection of a <link refused_value.csdoc>refused value</link>.</cell>
     <cell><logiccolor>OnStop</logiccolor></cell><cell>Provides control over stopping or exiting data entry.</cell>
-    <cell><logiccolor>OnSyncMessage</logiccolor></cell><cell>Allows users to respond to a message sent by a Bluetooth client using <logiccolor>syncmessage</logiccolor>.</cell>
+    <cell><logiccolor>OnSyncMessage</logiccolor></cell><cell>Allows users to respond to a message sent by a <link sync_service_bluetooth.csdoc>Bluetooth client</link> using <logiccolor>syncmessage</logiccolor>.</cell>
     <cell><logiccolor>OnSystemMessage</logiccolor></cell><cell>Provides a way to override the displaying of system error messages.</cell>
     <cell><logiccolor>OnViewQuestionnaire</logiccolor></cell><cell>Provides a way to override the displaying of the <link view_questionnaire.csdoc>questionnaire view</link>.</cell>
     <cell><logiccolor>open</logiccolor></cell><cell>Opens a dictionary or external file.</cell>
@@ -266,12 +266,12 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>seekmin</logiccolor></cell><cell>Searches a multiply occurring item for an item with the lowest value that meets a condition.</cell>
     <cell><logiccolor>selcase</logiccolor></cell><cell>Allows a data entry operator to select and load a case from an external file.</cell>
     <cell><logiccolor>set</logiccolor></cell><cell>Sets the values of various system parameters.</cell>
-    <cell><logiccolor>set access</logiccolor></cell><cell>Sets the order in which cases in a data file are processed.</cell>
+    <cell><logiccolor>set access</logiccolor></cell><cell>Sets the order in which cases in a data source are processed.</cell>
     <cell><logiccolor>set attributes</logiccolor></cell><cell>Modifies the field properties in a data entry application.</cell>
     <cell><logiccolor>set behavior</logiccolor></cell><cell>Modifies parameters related to field validation or sets export parameters.</cell>
-    <cell><logiccolor>set first</logiccolor></cell><cell>Positions the first case in a data file as the next case to be processed.</cell>
+    <cell><logiccolor>set first</logiccolor></cell><cell>Positions the first case in a data source as the next case to be processed.</cell>
     <cell><logiccolor>set errmsg</logiccolor></cell><cell>Modifies the way that error messages are displayed on desktop CSEntry.</cell>
-    <cell><logiccolor>set last</logiccolor></cell><cell>Positions the last case in a data file as the next case to be processed.</cell>
+    <cell><logiccolor>set last</logiccolor></cell><cell>Positions the last case in a data source as the next case to be processed.</cell>
     <cell><logiccolor>setbluetoothname</logiccolor></cell><cell>Sets the name of the device as broadcast to other Bluetooth devices.</cell>
     <cell><logiccolor>setcapturepos</logiccolor></cell><cell>Allows the manual declaration of the window coordinates of the capture type.</cell>
     <cell><logiccolor>setcapturetype</logiccolor></cell><cell>Sets the capture type associated with a field.</cell>
@@ -312,15 +312,15 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>strip</logiccolor></cell><cell>Removes trailing blanks from a string.</cell>
     <cell><logiccolor>sum</logiccolor></cell><cell>Returns the sum of an item that occurs multiple times.</cell>
     <cell><logiccolor>swap</logiccolor></cell><cell>Switches the order of two occurrences within a group.</cell>
-    <cell><logiccolor>syncapp</logiccolor></cell><cell>Updates an application from a new version of the deployed package on a <link sync_services.csdoc>synchronization service</link>.</cell>
-    <cell><logiccolor>syncconnect</logiccolor></cell><cell>Connects to <link sync_service_csweb.csdoc>CSWeb</link>, <link sync_service_dropbox.csdoc>Dropbox</link>, or a <link sync_service_ftp.csdoc>FTP server</link>, or to another device using <link sync_service_bluetooth.csdoc>Bluetooth</link>, to begin a synchronization session.</cell>
+    <cell><logiccolor>syncapp</logiccolor></cell><cell>Updates an application from a new version of the deployed package on a synchronization service.</cell>
+    <cell><logiccolor>syncconnect</logiccolor></cell><cell>Connects to CSWeb, Dropbox, or an FTP server, or to another device using Bluetooth, to begin a synchronization session.</cell>
     <cell><logiccolor>syncdata</logiccolor></cell><cell>Sends or receives cases between the current device and a server or another device.</cell>
     <cell><logiccolor>syncdisconnect</logiccolor></cell><cell>Ends the current synchronization session.</cell>
-    <cell><logiccolor>syncfile</logiccolor></cell><cell>Sends or receives files between the current device and a server or another device.</cell>
-    <cell><logiccolor>syncmessage</logiccolor></cell><cell>Sends and receives a string message to a <link syncserver_function.csdoc>Bluetooth server</link>.</cell>
-    <cell><logiccolor>syncparadata</logiccolor></cell><cell>Sends or receives paradata between the current device and a server or another device.</cell>
-    <cell><logiccolor>syncserver</logiccolor></cell><cell>Starts running a server on the current device, to which other devices can connect using <link sync_service_bluetooth.csdoc>Bluetooth</link>.</cell>
-    <cell><logiccolor>synctime</logiccolor></cell><cell>Returns the time of the last synchronization of a data file or a specific case.</cell>
+    <cell><logiccolor>syncfile</logiccolor></cell><cell>Sends or receives files between the current device and a synchronization service.</cell>
+    <cell><logiccolor>syncmessage</logiccolor></cell><cell>Sends and receives a string message to a Bluetooth server.</cell>
+    <cell><logiccolor>syncparadata</logiccolor></cell><cell>Sends or receives paradata between the current device and a synchronization service.</cell>
+    <cell><logiccolor>syncserver</logiccolor></cell><cell>Starts running a server on the current device, to which other devices can connect using Bluetooth.</cell>
+    <cell><logiccolor>synctime</logiccolor></cell><cell>Returns the time of the last synchronization of a data source or a specific case.</cell>
     <cell><logiccolor>sysdate</logiccolor></cell><cell>Returns the current system date.</cell>
     <cell><logiccolor>sysparm</logiccolor></cell><cell>Returns a parameter a PFF file.</cell>
     <cell><action>System.createShortcut</action> <sup>(CS)</sup></cell><cell>Creates a shortcut to a CSPro application or file.</cell>

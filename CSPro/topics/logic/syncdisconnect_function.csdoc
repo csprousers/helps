@@ -10,7 +10,7 @@ b = syncdisconnect();
 
 <subheader>Description</subheader>
 
-The <logiccolor>syncdisconnect</logiccolor> function ends a <link synchronization.csdoc>synchronization</link> session previously started by calling <logiccolor>syncconnect</logiccolor>.
+The <logiccolor>syncdisconnect</logiccolor> function ends a <link synchronization.csdoc>synchronization</link> session previously started by calling <logiccolor>syncconnect</logiccolor>. This closes the connection to the <link sync_services.csdoc>synchronization service</link>.
 
 
 <subheader>Return Value</subheader>
@@ -30,4 +30,4 @@ if syncconnect("Dropbox") then
 endif;
 </logic>
 
-<seealso synchronization.csdoc syncconnect_function.csdoc syncdata_function.csdoc syncfile_function.csdoc syncparadata_function.csdoc syncserver_function.csdoc />
+<seealso synchronization.csdoc syncconnect_function.csdoc />
