@@ -14,7 +14,7 @@
     }
   ],
   "titleLinkage": "outputNamePrefix",
-  "titleLinkPrefix": "https://www.csprousers.org/help/",
+  "titleLinkPrefix": "https://csprousers.org/help/",
   "externalLinkage": "forbid",
   "logicLinkage": "project",
   "builds": [
@@ -35,7 +35,7 @@
       "outputDirectory": "../Outputs/CHM",
       "buildType": "CHM",
       "chmButtons": [
-        { "text": "Forum", "link": "http://www.csprousers.org/forum" },
+        { "text": "Forum", "link": "http://csprousers.org/forum" },
         { "text": "Support", "link": "CSPro::get_help.csdoc" }
       ]
     },
