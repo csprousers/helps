@@ -1,0 +1,8 @@
+<table 2 header nowrap>
+    <cell>Synchronization Service</cell><cell>Example Connection String</cell>
+    <cell><link sync_service_bluetooth.csdoc>Bluetooth</link></cell><cell><logiccolor>"Bluetooth"</logiccolor></cell>
+    <cell><link sync_service_csweb.csdoc>CSWeb</link></cell><cell><logiccolor>"<definition csweb_example_url />"</logiccolor></cell>
+    <cell><link sync_service_dropbox.csdoc>Dropbox</link></cell><cell><logiccolor>"Dropbox"</logiccolor></cell>
+    <cell><link sync_service_ftp.csdoc>FTP</link></cell><cell><logiccolor>"ftpes://example.org"</logiccolor></cell>
+    <cell><link sync_service_local_files.csdoc>Local Files</link></cell><cell><logiccolor>"file:///C:/surveys/ftp-server"</logiccolor></cell>
+</table>

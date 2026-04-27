@@ -8,7 +8,7 @@ A CSPro synchronization service is a service that facilitates the <link synchron
 CSPro interacts with synchronization services in contexts such as:
 
 <list>
-    <li>Using synchronization functions in logic such as <logiccolor>syncconnect</logiccolor> and <logiccolor>syncdata</logiccolor>.</li>
+    <li>Using synchronization functions in logic such as <logiccolor>syncconnect</logiccolor> and <logiccolor>syncdata</logiccolor>, or actions such as <action>Sync.connect</action> and <action>Sync.syncParadata</action>.</li>
     <li>Synchronizing data using <link DataManager::downloading_and_synchronizing_data.csdoc>Data Manager</link> or when running <link synchronization_simple.csdoc>Simple Synchronizations</link>.</li>
     <li><link CSDeploy::install_deployment_mobile.csdoc>Installing</link> or <link CSDeploy::introduction_to_deployment.csdoc>deploying</link> applications.</li>
 </list>

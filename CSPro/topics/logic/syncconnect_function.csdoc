@@ -3,25 +3,31 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-b = syncconnect(<arg>differing_arguments</arg>);
+b = syncconnect(<arg>connection_string</arg>);
 </logicsyntax>
+
 
 <subheader>Description</subheader>
 
-The <logiccolor>syncconnect</logiccolor> function opens a connection to a server to start a synchronization session. The function has four forms based on the type of connection, with each form described on a separate page:
+The <logiccolor>syncconnect</logiccolor> function connects to a <link sync_services.csdoc>synchronization service</link>, initiating a <link synchronization.csdoc>synchronization session</link>. Once a session is created, you can synchronize:
 
 <list>
-    <li><link sync_service_csweb.csdoc>CSWeb</link></li>
-    <li><link sync_service_bluetooth.csdoc>Bluetooth</link></li>
-    <li><link sync_service_dropbox.csdoc>Dropbox</link></li>
-    <li><link sync_service_dropbox.csdoc>Dropbox (Local Files)</link></li>
-    <li><link sync_service_ftp.csdoc>FTP</link></li>
-    <li><link sync_service_local_files.csdoc>Local Files</link></li>
+    <li>Applications using <logiccolor>syncapp</logiccolor>.</li>
+    <li>Case data using <logiccolor>syncdata</logiccolor>.</li>
+    <li>Files using <logiccolor>syncfile</logiccolor>.</li>
+    <li>Messages using <logiccolor>syncmessage</logiccolor>.</li>
+    <li>Paradata using <logiccolor>syncparadata</logiccolor>.</li>
 </list>
 
-After a successful connection, call <logiccolor>syncdata</logiccolor> and <logiccolor>syncfile</logiccolor> to synchronize data and files between the device and the server. When finished transferring data, call <logiccolor>syncdisconnect</logiccolor> to close the connection.
+The session is active until it is closed using <logiccolor>syncdisconnect</logiccolor>.
 
-<b>Note: </b>If the attempt to establish an Internet connection was unsuccessful, CSPro will alert you with an error message. If you wish to preempt this error message in order to handle this situation on your own, use the <logiccolor>connection</logiccolor> function.
+The string argument <arg>connection_string</arg> is a <link sync_connection_string.csdoc>synchronization connection string</link>, generally a server URL or text identifying the service. This string contains information about the resource that CSPro will connect to, and any additional parameters (such as a username and password). Details about properties specific to each synchronization service are available on the documentation describing each of the services that CSPro supports:
+
+<include ../sync/sync_services_table_with_connection_strings.hgi />
+
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available using the <action>Sync.connect</action> action. When using actions, multiple synchronization sessions can be created, whereas using CSPro logic, there is only one session per call to <logiccolor>syncconnect</logiccolor>.
+
+<b>Note</b>: If the attempt to establish an Internet connection is unsuccessful, CSPro displays an error message. If you wish to preempt this error message in order to handle this situation on your own, use the <logiccolor>connection</logiccolor> function to determine if Internet access is available.
 
 
 <subheader>Return Value</subheader>
@@ -68,4 +74,4 @@ b = syncconnect(LocalFiles, <arg>directory_path</arg>);
 </logicsyntax>
 
 
-<seealso synchronization.csdoc syncdisconnect_function.csdoc syncserver_function.csdoc syncdata_function.csdoc syncfile_function.csdoc syncparadata_function.csdoc connection_function.csdoc />
+<seealso synchronization.csdoc syncdisconnect_function.csdoc CS_Sync_connect.csdoc />

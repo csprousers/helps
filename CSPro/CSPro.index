@@ -4093,7 +4093,12 @@
     ]
   },
   { "path": "synchronization.csdoc", "title": "sync.log File" },
-  { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
+  { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace",
+    "subindex": [
+      { "path": "CS_Sync_connect.csdoc", "~title": "Sync.connect Action" },
+      { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" }
+    ]
+  },
   { "path": "syncable_name.csdoc", "~title": "Syncable Name" },
   { "path": "syncapp_function.csdoc", "~title": "SyncApp Function" },
   { "path": "syncconnect_function.csdoc", "~title": "SyncConnect Function",

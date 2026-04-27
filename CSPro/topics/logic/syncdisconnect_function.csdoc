@@ -12,6 +12,8 @@ b = syncdisconnect();
 
 The <logiccolor>syncdisconnect</logiccolor> function ends a <link synchronization.csdoc>synchronization</link> session previously started by calling <logiccolor>syncconnect</logiccolor>. This closes the connection to the <link sync_services.csdoc>synchronization service</link>.
 
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available using the <action>Sync.disconnect</action> action. When using actions, multiple synchronization sessions can be created, whereas using CSPro logic, there is only one session per call to <logiccolor>syncconnect</logiccolor>.
+
 
 <subheader>Return Value</subheader>
 
@@ -30,4 +32,4 @@ if syncconnect("Dropbox") then
 endif;
 </logic>
 
-<seealso synchronization.csdoc syncconnect_function.csdoc />
+<seealso synchronization.csdoc syncconnect_function.csdoc CS_Sync_disconnect.csdoc />

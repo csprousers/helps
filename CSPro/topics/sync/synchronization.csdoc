@@ -46,8 +46,8 @@ The following functions and actions are available:
 
 <table 3 header nowrap>
     <cell>Function</cell><cell>Action</cell><cell>Description</cell>
-    <cell><logiccolor>syncconnect</logiccolor></cell><cell nowrap></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
-    <cell><logiccolor>syncdisconnect</logiccolor></cell><cell nowrap></cell><cell>Ends a synchronization session, disconnecting from the service.</cell>
+    <cell><logiccolor>syncconnect</logiccolor></cell><cell nowrap><action>Sync.connect</action></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
+    <cell><logiccolor>syncdisconnect</logiccolor></cell><cell nowrap><action>Sync.disconnect</action></cell><cell>Ends a synchronization session, disconnecting from the service.</cell>
     <cell><logiccolor>syncdata</logiccolor></cell><cell nowrap></cell><cell>Synchronizes cases in CSPro data sources.</cell>
     <cell><logiccolor>syncfile</logiccolor></cell><cell nowrap></cell><cell>Uploads or downloads non-data files.</cell>
     <cell><logiccolor>syncparadata</logiccolor></cell><cell nowrap></cell><cell>Synchronizes <link paradata.csdoc>paradata</link>.</cell>
@@ -121,4 +121,4 @@ To get additional details on synchronization errors you can look at the <i>sync.
 <b>On Windows</b> you can find the file in the directory <i>%AppData%\CSPro</i>. On Windows you can also locate the <i>sync.log</i> file from the Help menu in CSPro Designer under Troubleshooting. When asking for technical support with synchronization issues, please attach the <i>sync.log</i> file from your device to your email or forum post.
 
 
-<seealso synchronization_simple.csdoc sync_services.csdoc />
+<seealso synchronization_simple.csdoc sync_services.csdoc CS_Sync.csdoc />

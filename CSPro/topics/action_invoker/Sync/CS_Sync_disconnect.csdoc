@@ -1,0 +1,47 @@
+<title>Sync.disconnect Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+CS.Sync.disconnect(『<arg>syncId</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Sync.disconnect</action> <link action_invoker.csdoc>action</link> ends a <link synchronization.csdoc>synchronization session</link>, disconnecting from a <link sync_services.csdoc>synchronization service</link>.
+
+The connection is identified using <arg>syncId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>. While optional, this should generally be specified explicitly. (If there is only one synchronization session active, the resource ID can be calculated implicitly.)
+
+Once the connection is closed, additional requests to the synchronization service cannot occur until creating another connection.
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>syncdisconnect</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns undefined.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The synchronization connection ID is not valid.</li>
+    <li>There is a network error while disconnecting from the synchronization service.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<include connect_sendMessage_disconnect_example.hgi />
+
+
+<seealso CS_Sync.csdoc CS_Sync_connect.csdoc syncdisconnect_function.csdoc />

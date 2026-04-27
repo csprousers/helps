@@ -2,14 +2,16 @@
 
 The <action>Sync</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to interact with <link sync_services.csdoc>synchronization services</link>.
 
-After creating a connection to a synchronization service, a <link action_invoker_resource_ids.csdoc>resource ID</link> is returned that identifies the service in subsequent actions until the connection is closed.
+After <link CS_Sync_connect.csdoc>creating</link> a connection to a synchronization service, a <link action_invoker_resource_ids.csdoc>resource ID</link> is returned that identifies the service in subsequent actions until the connection is <link CS_Sync_disconnect.csdoc>closed</link>.
 
 
 <subheader>Functionality</subheader>
 
 <table 2 header nowrap>
     <cell>Action</cell><cell>Description</cell>
+    <cell><action>Sync.connect</action></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
+    <cell><action>Sync.disconnect</action></cell><cell>Ends a synchronization session, disconnecting from the service.</cell>
 </table>
 
 
-<seealso action_invoker.csdoc CS_Network.csdoc />
+<seealso action_invoker.csdoc CS_Network.csdoc synchronization.csdoc />
