@@ -50,7 +50,7 @@ The following functions and actions are available:
     <cell><logiccolor>syncdisconnect</logiccolor></cell><cell nowrap><action>Sync.disconnect</action></cell><cell>Ends a synchronization session, disconnecting from the service.</cell>
     <cell><logiccolor>syncdata</logiccolor></cell><cell nowrap></cell><cell>Synchronizes cases in CSPro data sources.</cell>
     <cell><logiccolor>syncfile</logiccolor></cell><cell nowrap></cell><cell>Uploads or downloads non-data files.</cell>
-    <cell><logiccolor>syncparadata</logiccolor></cell><cell nowrap></cell><cell>Synchronizes <link paradata.csdoc>paradata</link>.</cell>
+    <cell><logiccolor>syncparadata</logiccolor></cell><cell nowrap><action>Sync.syncParadata</action></cell><cell>Synchronizes <link paradata.csdoc>paradata</link>.</cell>
     <cell><logiccolor>syncapp</logiccolor></cell><cell nowrap></cell><cell>Updates an application on the device from a new version on the service.</cell>
     <cell><logiccolor>syncmessage</logiccolor></cell><cell nowrap></cell><cell>Sends string messages over Bluetooth.</cell>
     <cell><logiccolor>synctime</logiccolor></cell><cell nowrap></cell><cell>Returns the time of the last synchronization of a data source or a specific case.</cell>

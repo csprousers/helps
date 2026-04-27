@@ -15,7 +15,11 @@ d = CS.Sync.connect(<arg>connection</arg> := ...)
 
 <subheader>Description</subheader>
 
-The <action>Sync.connect</action> <link action_invoker.csdoc>action</link> connects to a <link sync_services.csdoc>synchronization service</link>, initiating a <link synchronization.csdoc>synchronization session</link>.
+The <action>Sync.connect</action> <link action_invoker.csdoc>action</link> connects to a <link sync_services.csdoc>synchronization service</link>, initiating a <link synchronization.csdoc>synchronization session</link>. Once a session is created, you can synchronize:
+
+<list>
+    <li>Paradata using <action>Sync.syncParadata</action>.</li>
+</list>
 
 The session is active until it is closed using <action>Sync.disconnect</action>.
 

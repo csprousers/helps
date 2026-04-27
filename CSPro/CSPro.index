@@ -3037,7 +3037,7 @@
       { "path": "logtext_function.csdoc", "~title": "LogText Function" },
       { "path": "paradata_function.csdoc", "~title": "paradata Function" },
       { "path": "properties_paradata.csdoc", "title": "Properties" },
-      { "path": "syncparadata_function.csdoc", "title": "Sync" },
+      { "path": "syncparadata_function.csdoc", "title": "Synchronization" },
       { "path": "tool_list.csdoc", "title": "Viewer" }
     ]
   },
@@ -4096,7 +4096,8 @@
   { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace",
     "subindex": [
       { "path": "CS_Sync_connect.csdoc", "~title": "Sync.connect Action" },
-      { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" }
+      { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" },
+      { "path": "CS_Sync_syncParadata.csdoc", "~title": "Sync.syncParadata Action" }
     ]
   },
   { "path": "syncable_name.csdoc", "~title": "Syncable Name" },

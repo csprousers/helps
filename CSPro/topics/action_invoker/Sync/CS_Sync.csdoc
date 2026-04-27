@@ -11,6 +11,7 @@ After <link CS_Sync_connect.csdoc>creating</link> a connection to a synchronizat
     <cell>Action</cell><cell>Description</cell>
     <cell><action>Sync.connect</action></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
     <cell><action>Sync.disconnect</action></cell><cell>Ends a synchronization session, disconnecting from the service.</cell>
+    <cell><action>Sync.syncParadata</action></cell><cell>Synchronizes the events in a <link paradata.csdoc>paradata</link> log with a synchronization service.</cell>
 </table>
 
 

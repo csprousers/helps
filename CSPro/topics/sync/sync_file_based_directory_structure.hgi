@@ -8,5 +8,5 @@ Once CSPro connects to a file-based synchronization service, it looks for or cre
     <cell><b>/CSPro/apps/</b></cell><cell>Applications <link CSDeploy::introduction_to_deployment.csdoc>deployed</link> and used in operations such as <logiccolor>syncapp</logiccolor> or while <link CSDeploy::update_deployment_mobile.csdoc>updating applications</link>.~!~&nbsp;</cell>
     <cell><b>/CSPro/DataSync/</b></cell><cell>Case data uploaded using <logiccolor>syncdata</logiccolor>, and the <link data_dictionary_file_dcf.csdoc>dictionary</link> describing it, are stored in subdirectories named using the dictionary's <link syncable_name.csdoc>syncable name</link>. For example: <i>/CSPro/DataSync/LFS<definition System::year />_DICT/data/</i> and <i>/CSPro/DataSync/LFS<definition System::year />_DICT/dict/</i>.~!~&nbsp;</cell>
     <cell><b>/CSPro/messages/</b></cell><cell>Messages sent using <logiccolor>syncmessage</logiccolor>.~!~&nbsp;</cell>
-    <cell><b>/CSPro/paradata/</b></cell><cell><link paradata.csdoc>Paradata</link> logs uploaded using <logiccolor>syncparadata</logiccolor>.</cell>
+    <cell><b>/CSPro/paradata/</b></cell><cell><link paradata.csdoc>Paradata</link> logs uploaded using <logiccolor>syncparadata</logiccolor> or <action>Sync.syncParadata</action>.</cell>
 </table>
