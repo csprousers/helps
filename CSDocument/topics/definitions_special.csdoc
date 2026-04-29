@@ -4,6 +4,7 @@ The following special definitions can be used as part of a <link cspro_document.
 
 <table 3 header nowrap>
     <cell>Definition</cell><cell>Description</cell><cell nowrap>Evaluated Value</cell>
+    <cell><b>CSPro::serializer</b></cell><cell>The version of a <link CSPro::binary_data_entry_application_file_pen.csdoc>.pen file</link> that would be created with the current version of CSPro.</cell><cell nowrap><definition CSPro::serializer /></cell>
     <cell><b>CSPro::version</b></cell><cell>The CSPro version used to build the document.</cell><cell nowrap><definition CSPro::version /></cell>
     <cell><b>DocumentSet::title</b></cell><cell>The <link cspro_document_set.csdoc>CSPro Document Set</link>'s title.</cell><cell nowrap><definition DocumentSet::title /></cell>
     <cell><b>System::year</b></cell><cell>The year when the document was built.</cell><cell nowrap><definition System::year /></cell>
