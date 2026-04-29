@@ -1,0 +1,27 @@
+<logic>
+// on the Bluetooth client:
+syncmessage("STAFF_CODE", STAFF_CODE);
+
+if syncmessage("TRAINING_MODE") <> maketext("%d", TRAINING_MODE) then
+    errmsg("You cannot sync with a device that is not in the same training mode as your device.");
+    syncdisconnect();
+endif;
+
+
+// on the Bluetooth server:
+PROC GLOBAL
+
+function string OnSyncMessage(string message_name, string message_value)
+
+    // store information about the sync in the paradata log
+    if message_name = "STAFF_CODE" then
+        logtext("Syncing with %s at %s", message_value, timestring());
+
+    // return the training mode
+    elseif message_name = "TRAINING_MODE" then
+        exit maketext("%d", TRAINING_MODE);
+
+    endif;
+
+end;
+</logic>

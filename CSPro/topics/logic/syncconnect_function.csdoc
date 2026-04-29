@@ -15,8 +15,8 @@ The <logiccolor>syncconnect</logiccolor> function connects to a <link sync_servi
     <li>Applications using <logiccolor>syncapp</logiccolor>.</li>
     <li>Case data using <logiccolor>syncdata</logiccolor>.</li>
     <li>Files using <logiccolor>syncfile</logiccolor>.</li>
-    <li>Messages using <logiccolor>syncmessage</logiccolor>.</li>
-    <li>Paradata using <logiccolor>syncparadata</logiccolor>.</li>
+    <li><link sync_message.csdoc>Messages</link> using <logiccolor>syncmessage</logiccolor>.</li>
+    <li><link paradata.csdoc>Paradata</link> using <logiccolor>syncparadata</logiccolor>.</li>
 </list>
 
 The session is active until it is closed using <logiccolor>syncdisconnect</logiccolor>.

@@ -211,7 +211,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>onoccchange</logiccolor></cell><cell>Declares that the following statements are executed when the group's current occurrence changes.</cell>
     <cell><logiccolor>OnRefused</logiccolor></cell><cell>Provides a way to override the selection of a <link refused_value.csdoc>refused value</link>.</cell>
     <cell><logiccolor>OnStop</logiccolor></cell><cell>Provides control over stopping or exiting data entry.</cell>
-    <cell><logiccolor>OnSyncMessage</logiccolor></cell><cell>Allows users to respond to a message sent by a <link sync_service_bluetooth.csdoc>Bluetooth client</link> using <logiccolor>syncmessage</logiccolor>.</cell>
+    <cell><logiccolor>OnSyncMessage</logiccolor></cell><cell>Allows users to respond to a <link sync_message.csdoc>synchronization message</link> sent by a <link sync_service_bluetooth.csdoc>Bluetooth client</link>.</cell>
     <cell><logiccolor>OnSystemMessage</logiccolor></cell><cell>Provides a way to override the displaying of system error messages.</cell>
     <cell><logiccolor>OnViewQuestionnaire</logiccolor></cell><cell>Provides a way to override the displaying of the <link view_questionnaire.csdoc>questionnaire view</link>.</cell>
     <cell><logiccolor>open</logiccolor></cell><cell>Opens a dictionary or external file.</cell>
@@ -314,13 +314,14 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>swap</logiccolor></cell><cell>Switches the order of two occurrences within a group.</cell>
     <cell><action>Sync.connect</action> <sup>(CS)</sup></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
     <cell><action>Sync.disconnect</action> <sup>(CS)</sup></cell><cell>Ends a synchronization session, disconnecting from the synchronization service.</cell>
+    <cell><action>Sync.sendMessage</action> <sup>(CS)</sup></cell><cell>Sends a message to a synchronization service and returns the service's response.</cell>
     <cell><action>Sync.syncParadata</action> <sup>(CS)</sup></cell><cell>Synchronizes the events in a paradata log with a synchronization service.</cell>
     <cell><logiccolor>syncapp</logiccolor></cell><cell>Updates an application from a new version of the deployed package on a synchronization service.</cell>
     <cell><logiccolor>syncconnect</logiccolor></cell><cell>Connects to CSWeb, Dropbox, or an FTP server, or to another device using Bluetooth, to begin a synchronization session.</cell>
     <cell><logiccolor>syncdata</logiccolor></cell><cell>Sends or receives cases between the current device and a server or another device.</cell>
     <cell><logiccolor>syncdisconnect</logiccolor></cell><cell>Ends the current synchronization session.</cell>
     <cell><logiccolor>syncfile</logiccolor></cell><cell>Sends or receives files between the current device and a synchronization service.</cell>
-    <cell><logiccolor>syncmessage</logiccolor></cell><cell>Sends and receives a string message to a Bluetooth server.</cell>
+    <cell><logiccolor>syncmessage</logiccolor></cell><cell>Sends a message to a synchronization service and returns the service's response.</cell>
     <cell><logiccolor>syncparadata</logiccolor></cell><cell>Sends or receives paradata between the current device and a synchronization service.</cell>
     <cell><logiccolor>syncserver</logiccolor></cell><cell>Starts running a server on the current device, to which other devices can connect using Bluetooth.</cell>
     <cell><logiccolor>synctime</logiccolor></cell><cell>Returns the time of the last synchronization of a data source or a specific case.</cell>

@@ -947,6 +947,12 @@
               { "path": "sync_service_local_files.csdoc", "title": "Local Files" },
               { "path": "syncable_name.csdoc", "~title": "Syncable Name" }
             ]
+          },
+          {
+            "title": "Messages",
+            "documents": [
+              { "path": "sync_message.csdoc", "~title": "Synchronization Messages" }
+            ]
           }
         ]
       },
@@ -1736,6 +1742,7 @@
               { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
               { "path": "CS_Sync_connect.csdoc", "~title": "Sync.connect Action" },
               { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" },
+              { "path": "CS_Sync_sendMessage.csdoc", "~title": "Sync.sendMessage Action" },
               { "path": "CS_Sync_syncParadata.csdoc", "~title": "Sync.syncParadata Action" }
             ]
           },

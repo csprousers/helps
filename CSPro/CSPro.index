@@ -586,7 +586,7 @@
       { "path": "OnKey_global_function.csdoc", "~title": "OnKey Global Function" },
       { "path": "refused_value.csdoc", "title": "OnRefused Global Function" },
       { "path": "OnStop_global_function.csdoc", "~title": "OnStop Global Function" },
-      { "path": "syncmessage_function.csdoc", "title": "OnSyncMessage Global Function" },
+      { "path": "sync_message.csdoc", "title": "OnSyncMessage Global Function" },
       { "path": "OnSystemMessage_global_function.csdoc", "~title": "OnSystemMessage Global Function" },
       { "path": "OnViewQuestionnaire_global_function.csdoc", "~title": "OnViewQuestionnaire Global Function" }
     ]
@@ -2943,7 +2943,7 @@
   { "path": "onoccchange_statement.csdoc", "~title": "OnOccChange Statement" },
   { "path": "refused_value.csdoc", "title": "OnRefused Global Function" },
   { "path": "OnStop_global_function.csdoc", "~title": "OnStop Global Function" },
-  { "path": "syncmessage_function.csdoc", "title": "OnSyncMessage Global Function" },
+  { "path": "sync_message.csdoc", "title": "OnSyncMessage Global Function" },
   { "path": "OnSystemMessage_global_function.csdoc", "~title": "OnSystemMessage Global Function" },
   { "path": "OnViewQuestionnaire_global_function.csdoc", "~title": "OnViewQuestionnaire Global Function" },
   { "path": "open_an_application.csdoc", "~title": "Open an Existing Application" },
@@ -4097,6 +4097,7 @@
     "subindex": [
       { "path": "CS_Sync_connect.csdoc", "~title": "Sync.connect Action" },
       { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" },
+      { "path": "CS_Sync_sendMessage.csdoc", "~title": "Sync.sendMessage Action" },
       { "path": "CS_Sync_syncParadata.csdoc", "~title": "Sync.syncParadata Action" }
     ]
   },
@@ -4122,6 +4123,13 @@
       { "path": "synctime_function.csdoc", "title": "Statistics" },
       { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
       { "path": "syncable_name.csdoc", "~title": "Syncable Name" }
+    ]
+  },
+  { "path": "sync_message.csdoc", "~title": "Synchronization Messages",
+    "subindex": [
+      { "path": "sync_message.csdoc", "title": "OnSyncMessage Global Function" },
+      { "path": "CS_Sync_sendMessage.csdoc", "~title": "Sync.sendMessage Action" },
+      { "path": "syncmessage_function.csdoc", "~title": "SyncMessage Function" }
     ]
   },
   { "path": "sync_services.csdoc", "~title": "Synchronization Services",

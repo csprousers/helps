@@ -1,59 +1,35 @@
 <title>SyncMessage Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
-// Bluetooth client
 s = syncmessage(<arg>message_name</arg>『, <arg>message_value</arg>』);
-
-// Bluetooth server
-function string OnSyncMessage(string message_name, string message_value)
-    exit <arg>message_response</arg>;
-end;
 </logicsyntax>
 
 
 <subheader>Description</subheader>
 
-The <logiccolor>syncmessage</logiccolor> function sends a string message from one device, a <link sync_service_bluetooth.csdoc>Bluetooth client</link>, to another device that is acting as a <link syncserver_function.csdoc>Bluetooth server</link>. The string expression <arg>message_name</arg> identifies the message, and an optional string expression <arg>message_value</arg> defines a value associated with the message. The client device sends this message to a Bluetooth server.
+The <logiccolor>syncmessage</logiccolor> function sends a <link sync_message.csdoc>message</link> to a <link sync_services.csdoc>synchronization service</link>. The string expression <arg>message_name</arg> identifies the message, and an optional string expression <arg>message_value</arg> defines a value associated with the message.
 
-The application running on the Bluetooth server must have a <link user_defined_functions.csdoc>user-defined function</link> with the name <logiccolor>OnSyncMessage</logiccolor> that has two string parameters and returns a string. While the <logiccolor>syncserver</logiccolor> function is running, the <logiccolor>OnSyncMessage</logiccolor> function is called anytime a message is received and the return value of that function is returned to the Bluetooth client.
+Typically messages are sent from one device, a <link sync_service_bluetooth.csdoc>Bluetooth client</link>, to another device that is acting as a <link syncserver_function.csdoc>Bluetooth server</link>. Using the <logiccolor>OnSyncMessage</logiccolor> callback function, the server can respond to the message.
+
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available using the <action>Sync.sendMessage</action> action. When using actions, multiple synchronization sessions can be created, whereas using CSPro logic, there is only one session per call to <logiccolor>syncconnect</logiccolor>.
+
+
+<include ../sync/sync_message_OnSyncMessage.hgi />
 
 
 <subheader>Return Value</subheader>
 
-The function returns the message returned by the <logiccolor>OnSyncMessage</logiccolor> function running on the Bluetooth server. If no message is returned, a blank string is returned.
+When connected via Bluetooth, the function returns the response returned by <logiccolor>OnSyncMessage</logiccolor>. If no such function exists, an error is shown and the function returns a blank string.
+
+If connected to another synchronization service, the response is a blank string unless the service has been <link sync_message.csdoc>modified</link> to return responses.
 
 
 <subheader>Example</subheader>
 
-<logic>
-// on the client...
-syncmessage("STAFF_CODE", STAFF_CODE);
-
-if syncmessage("TRAINING_MODE") <> maketext("%d", TRAINING_MODE) then
-    errmsg("You cannot sync with a device that is not in the same training mode as your device.");
-    syncdisconnect();
-endif;
+<include ../sync/sync_message_example.hgi />
 
 
-// on the server
-PROC GLOBAL
-
-function string OnSyncMessage(string message_name, string message_value)
-
-    // store information about the sync in the paradata log
-    if message_name = "STAFF_CODE" then
-        logtext("Syncing with %s at %s", message_value, timestring());
-
-    // return the training mode
-    elseif message_name = "TRAINING_MODE" then
-        exit maketext("%d", TRAINING_MODE);
-
-    endif;
-
-end;
-</logic>
-
-
-<seealso synchronization.csdoc sync_service_bluetooth.csdoc syncserver_function.csdoc />
+<seealso synchronization.csdoc sync_message.csdoc CS_Sync_sendMessage.csdoc />

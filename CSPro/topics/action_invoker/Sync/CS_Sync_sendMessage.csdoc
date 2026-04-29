@@ -1,0 +1,80 @@
+<title>Sync.sendMessage Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.Sync.sendMessage(<arg>syncId</arg> := ...,
+                        <arg>name</arg> := ...
+                     『, <arg>value</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~recommended</cell>
+    <cell><arg>name</arg></cell><cell>A name to identify the message.</cell><cell>string~!~required</cell>
+    <cell><arg>value</arg></cell><cell>A value associated with the message.</cell><cell nowrap>string, number, boolean, array, object~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Sync.sendMessage</action> <link action_invoker.csdoc>action</link> sends a <link sync_message.csdoc>message</link> to a <link sync_services.csdoc>synchronization service</link>.
+
+The connection is identified using <arg>syncId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>. While optional, this should generally be specified explicitly. (If there is only one synchronization session active, the resource ID can be calculated implicitly.)
+
+The string argument <arg>name</arg> identifies the message. An optional argument <arg>value</arg> defines a value associated with the message.
+
+Typically messages are sent from one device, a <link sync_service_bluetooth.csdoc>Bluetooth client</link>, to another device that is acting as a <link syncserver_function.csdoc>Bluetooth server</link>. Using the <logiccolor>OnSyncMessage</logiccolor> callback function, the server can respond to the message.
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>syncmessage</logiccolor>.
+
+
+<include ../../sync/sync_message_OnSyncMessage.hgi />
+
+
+<subheader>Return Value</subheader>
+
+When connected via Bluetooth, the function returns the string response returned by <logiccolor>OnSyncMessage</logiccolor>. If no such function exists, an error is shown and the function returns undefined.
+
+If connected to another synchronization service, the response is undefined unless the service has been <link sync_message.csdoc>modified</link> to return responses. In such a case, the return value is of the type of the response set by the synchronization service so it can be a string, an object, etc.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The synchronization connection ID is not valid.</li>
+    <li>There is a network error while sending or receiving data from the synchronization service.</li>
+    <li>There is no <logiccolor>OnSyncMessage</logiccolor> function on the server's device to handle Bluetooth messages.</li>
+</list>
+
+
+<subheader>Example 1 (JavaScript)</subheader>
+
+<i>This is a full example of using asynchronous action calls to connect to a synchronization service, send a message, display the response, and disconnect.</i>
+
+<include connect_sendMessage_disconnect_example.hgi />
+
+
+<subheader>Example 2 (JavaScript)</subheader>
+
+<i>This is an example of sending a message with a value.</i>
+
+<color JavaScript>
+// ...syncId received from a previous call to Sync.connect
+
+CS.Sync.sendMessage({
+    syncId: syncId,
+    name: "NOTIFY_CSPRO_VERSION",
+    value: {
+        version: <definition CSPro::version />,
+        versionFull: "<definition version_full />",
+        versionSerializer: <definition CSPro::serializer />
+    }
+});
+</color>
+
+
+<seealso CS_Sync.csdoc sync_message.csdoc syncmessage_function.csdoc />

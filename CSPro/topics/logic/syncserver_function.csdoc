@@ -18,7 +18,7 @@ Once the two devices are connected, the client calls functions such as <logiccol
 
 The server in a peer-to-peer synchronization is passive. It does not call any synchronization functions. It simply responds to requests initiated by the client. The Bluetooth server runs until either the client successfully disconnects (after connecting), or the operator cancels the synchronization.
 
-If the client's synchronization logic depends on data from the server, such data can be passed between devices by having the client use <logiccolor>syncmessage</logiccolor> to send a message, which the server responds to using <logiccolor>OnSyncMessage</logiccolor>.
+If the client's synchronization logic depends on data from the server, such data can be passed between devices by having the client send a <link sync_message.csdoc>message</link> using <logiccolor>syncmessage</logiccolor> or <action>Sync.sendMessage</action>, which the server responds to using <logiccolor>OnSyncMessage</logiccolor>.
 
 The <logiccolor>syncserver</logiccolor> function displays a dialog to the operator indicating that it is waiting for a client to connect. During this time, no other logic on the server is executed. Once a connection is made, the dialog displays the progress of the synchronization. When the client disconnects by calling <logiccolor>syncdisconnect</logiccolor>, the dialog is removed and <logiccolor>syncserver</logiccolor> returns. If no connection is made, the operator can use the dialog's cancel button to cause <logiccolor>syncserver</logiccolor> to return and continue executing any logic that follows. The server only allows connections while the <logiccolor>syncserver</logiccolor> function is running, so the server must call <logiccolor>syncserver</logiccolor> before the client device calls <logiccolor>syncconnect</logiccolor>.
 
@@ -46,4 +46,4 @@ syncserver(Bluetooth, "..");
 </logic>
 
 
-<seealso synchronization.csdoc sync_service_bluetooth.csdoc setbluetoothname_function.csdoc syncmessage_function.csdoc />
+<seealso synchronization.csdoc sync_service_bluetooth.csdoc setbluetoothname_function.csdoc sync_message.csdoc />

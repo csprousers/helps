@@ -52,7 +52,7 @@ The following functions and actions are available:
     <cell><logiccolor>syncfile</logiccolor></cell><cell nowrap></cell><cell>Uploads or downloads non-data files.</cell>
     <cell><logiccolor>syncparadata</logiccolor></cell><cell nowrap><action>Sync.syncParadata</action></cell><cell>Synchronizes <link paradata.csdoc>paradata</link>.</cell>
     <cell><logiccolor>syncapp</logiccolor></cell><cell nowrap></cell><cell>Updates an application on the device from a new version on the service.</cell>
-    <cell><logiccolor>syncmessage</logiccolor></cell><cell nowrap></cell><cell>Sends string messages over Bluetooth.</cell>
+    <cell><logiccolor>syncmessage</logiccolor></cell><cell nowrap><action>Sync.sendMessage</action></cell><cell>Sends a <link sync_message.csdoc>message</link> and returns the service's response.</cell>
     <cell><logiccolor>synctime</logiccolor></cell><cell nowrap></cell><cell>Returns the time of the last synchronization of a data source or a specific case.</cell>
 </table>
 
