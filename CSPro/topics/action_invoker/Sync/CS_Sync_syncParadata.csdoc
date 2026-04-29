@@ -11,7 +11,7 @@ CS.Sync.syncParadata(『<arg>syncId</arg> := ...』
 
 <indent><table 3 header nowrap>
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~not required</cell>
+    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~recommended</cell>
     <cell><arg>direction</arg></cell><cell>The synchronization direction.~!~The default value is <logiccolor>"both"</logiccolor>.</cell><cell>string~!~not required</cell>
     <cell><arg>path</arg></cell><cell>The path of a paradata log, or logs, to synchronize.</cell><cell>string, array~!~not required</cell>
 </table></indent>
@@ -86,4 +86,4 @@ CS.Sync.syncParadata({
 </color>
 
 
-<seealso CS_Sync.csdoc paradata.csdoc  syncparadata_function.csdoc />
+<seealso CS_Sync.csdoc paradata.csdoc syncparadata_function.csdoc />

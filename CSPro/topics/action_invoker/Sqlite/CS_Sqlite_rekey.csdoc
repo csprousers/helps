@@ -9,7 +9,7 @@ CS.Sqlite.rekey(<arg>dbId</arg> := ..., <arg>encryptionKey</arg> := ...『, <arg
 
 <indent><table 3 header nowrap>
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-    <cell><arg>dbId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sqlite.open</action>.</cell><cell>number~!~not required</cell>
+    <cell><arg>dbId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sqlite.open</action>.</cell><cell>number~!~recommended</cell>
     <cell><arg>encryptionKey</arg></cell><cell>The new encryption key, or a blank string to remove the encryption.</cell><cell>string~!~required</cell>
     <cell><arg>encryptionKeyFormat</arg></cell><cell>The <link action_invoker_binary_data.csdoc>format</link> of <arg>encryptionKey</arg>.~!~The default value is <logiccolor>"autodetect"</logiccolor>.</cell><cell>string~!~not required</cell>
 </table></indent>

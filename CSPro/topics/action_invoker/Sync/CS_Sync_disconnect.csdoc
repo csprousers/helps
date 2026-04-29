@@ -9,7 +9,7 @@ CS.Sync.disconnect(『<arg>syncId</arg> := ...』)
 
 <indent><table 3 header nowrap>
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~not required</cell>
+    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~recommended</cell>
 </table></indent>
 
 

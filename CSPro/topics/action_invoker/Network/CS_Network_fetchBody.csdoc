@@ -2,14 +2,14 @@
 
 
 <logicsyntax>
-s = CS.Network.fetchBody(『<arg>fetchId</arg> := ...』
+s = CS.Network.fetchBody(<arg>fetchId</arg> := ...
                       『, <arg>bodyFormat</arg> := ...』
                       『, <arg>cancel</arg> := ...』)
 </logicsyntax>
 
 <indent><table 3 header nowrap>
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-    <cell><arg>fetchId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Network.fetch</action>.</cell><cell>number~!~not required</cell>
+    <cell><arg>fetchId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Network.fetch</action>.</cell><cell>number~!~recommended</cell>
     <cell><arg>bodyFormat</arg></cell><cell>The <link action_invoker_binary_data.csdoc>format</link> in which the body is returned.~!~The default value is <logiccolor>"dataUrl"</logiccolor>.</cell><cell>string~!~not required</cell>
     <cell><arg>cancel</arg></cell><cell>A flag indicating that the body can be discarded.</cell><cell>boolean~!~not required</cell>
 </table></indent>
