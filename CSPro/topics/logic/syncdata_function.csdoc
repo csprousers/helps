@@ -20,7 +20,7 @@ The function can upload cases from the local device (client) to the service as w
     <li><b>BOTH</b>: Sync cases in the local data source with the service in both directions (i.e., perform both a GET and a PUT).</li>
 </list>
 
-The <arg>dictionary_name</arg> argument must be the name of a data dictionary corresponding to the data source to synchronize. This dictionary must be an external dictionary. CSPro uses the data source that is currently associated with this dictionary, either because it was specified when the application started or via a call to <logiccolor>setfile</logiccolor>.
+The <arg>dictionary_name</arg> argument must be the name of a data dictionary corresponding to the data source to synchronize. This dictionary must be an <link dictionary_types.csdoc>external dictionary</link>, or the <link dictionary_types.csdoc>main dictionary</link> of a data entry application. CSPro uses the data source that is currently associated with this dictionary, either because it was specified when the application started or via a call to <logiccolor>setfile</logiccolor>.
 
 For synchronization with <link sync_service_csweb.csdoc>CSWeb</link>, the dictionary must first be uploaded to CSWeb. See the <link CSWeb::introduction_to_csweb.csdoc>CSWeb documentation</link> for more information.
 
