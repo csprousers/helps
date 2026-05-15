@@ -1,11 +1,23 @@
 <title>Accessing Data</title>
 
-<subheader>Download CSPro DB File</subheader>
+There are two ways to access data stored on CSWeb by using the <link DataManager::introduction.csdoc>Data Manager</link> tool that is included as part of the CSPro suite. The difference in approaches determines whether CSWeb data is fully downloaded onto your local machine.
 
-<list ordered>
-    <li>Navigate to the <b>Data</b> tab of CSWeb.</li>
-    <li>Under the <b>Download</b> column click the file download icon for the dictionary you want to download.</li>
-    <li>This will download a PFF file. Double click the PFF file to launch the <link DataManager::downloading_and_synchronizing_data.csdoc>Data Manager</link> tool.</li>
-    <li>You will be asked to enter your CSWeb username and password.</li>
-    <li>The data will be downloaded as a single <link CSPro::data_source_csdb.csdoc>CSPro DB</link> file.</li>
+Once you navigate to CSWeb's <b>Data</b> tab, you will see a list of dictionaries along with a <b>Manage in CSPro</b> column with two icons.
+
+
+<subheader>View Data</subheader>
+
+<list>
+    <li>Clicking the Data Manager icon launches Data Manager and displays the data on the server.</li>
+    <li>This opens the data using a <link CSPro::data_source_csweb.csdoc>CSWeb data source</link> identified using a <link CSPro::cspro_uris.csdoc>CSPro URI</link>.</li>
+    <li>The CSWeb data is not fully downloaded onto your machine. Only cases that you view will be transferred.</li>
+</list>
+
+
+<subheader>Download Data</subheader>
+
+<list>
+    <li>Clicking the <link CSPro::program_information_file_pff.csdoc>PFF</link> icon downloads a <link DataManager::run_production_synchronizations.csdoc>PFF file</link> that contains details about the dictionary.</li>
+    <li>Running this PFF will launch Data Manager to <link DataManager::downloading_and_synchronizing_data.csdoc>download or synchronize</link> the data.</li>
+    <li>The CSWeb data will be fully downloaded onto your machine into a single <link CSPro::data_source_csdb.csdoc>CSPro DB</link> file.</li>
 </list>

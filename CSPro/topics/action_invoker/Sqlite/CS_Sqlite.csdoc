@@ -2,6 +2,8 @@
 
 The <action>Sqlite</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to work with <link sqlite_in_cspro.csdoc>SQLite databases</link>.
 
+After <link CS_Sqlite_open.csdoc>creating</link> a connection to a database, a <link action_invoker_resource_ids.csdoc>resource ID</link> is returned that identifies the database in subsequent actions until the database connection is <link CS_Sqlite_close.csdoc>closed</link>.
+
 
 <subheader>Functionality</subheader>
 
@@ -23,4 +25,4 @@ The <action>Sqlite</action> namespace, part of the <link action_invoker.csdoc>Ac
 </list>
 
 
-<seealso action_invoker.csdoc action_invoker_resource_ids.csdoc sqlite_in_cspro.csdoc />
+<seealso action_invoker.csdoc sqlite_in_cspro.csdoc />

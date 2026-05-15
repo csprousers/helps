@@ -10,8 +10,14 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 
 <list>
     <li>CSPro is now open source! The source code, written primarily in C++, JavaScript, Java/Kotlin, and PHP, with some code written in C#, is available on GitHub: <link https://<definition csprousers_github />><definition csprousers_github /></link>.</li>
+    <li>CSWeb data can be <link CSWeb::accessing_data.csdoc>viewed directly</link> using <link DataManager::introduction.csdoc>Data Manager</link> without needing to download the data to your local machine.</li>
     <li><link markdown_overview.csdoc>Markdown</link> can be used while specifying <link question_text.csdoc>question text</link>, in <link templated_reports.csdoc>templated reports</link>, and can be viewed (as generated HTML) using the <logiccolor>view</logiccolor> function or in <link CSView::supported_files.csdoc>CSView</link>. Markdown can also be edited in <link CSCode::language_markdown.csdoc>CSCode</link> and included as part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link>.</li>
     <li>Applications can now <link javascript_overview.csdoc>incorporate JavaScript</link> in addition to <link introduction_to_cspro_language.csdoc>CSPro logic</link>. Many open-source JavaScript libraries exist that can be brought into your application, and as a dynamically typed language, some programming tasks may be easier using JavaScript. By using the <link JS.csdoc>JS</link> namespace, it is possible to <link JS_eval_function.csdoc>evaluate JavaScript</link>, <link JS_invoke_function.csdoc>invoke functions</link>, and <link JS_setValue_function.csdoc>convert</link> CSPro symbols to JavaScript numbers, strings, arrays, and objects. It is also possible to create <link javascript_user_defined_functions.csdoc>function wrappers</link> in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked.</li>
+    <li>The Data Viewer tool has been renamed <link DataManager::introduction.csdoc>Data Manager</link> and has new features including:
+        <list>
+            <li>Synchronizing data with a <link DataManager::downloading_and_synchronizing_data.csdoc>universe</link>.</li>
+        </list>
+    </li>
     <li>HTTP requests can be made and responses processed using actions in the <link action_invoker.csdoc>Action Invoker's</link> <action>Network</action> namespace.</li>
     <li>CSPro's handling of <link text_attributes.csdoc>text encoding and newline characters</link> is changing, with the aim to standardize the settings across file types.
         <list>
@@ -32,6 +38,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
         </list>
     </li>
     <li>The CSPro Settings dialog has been renamed <link manage_credentials.csdoc>Manage Credentials</link> and now allows for the granular clearing of synchronization, data, and location credentials.</li>
+    <li><link cspro_uris.csdoc>CSPro URIs</link>, using the custom scheme <i>cspro://</i>, can identify <link data_sources.csdoc>data sources</link> and <link sync_services.csdoc>synchronization services</link>. On Windows, the URI scheme is registered with the operating system and opening URIs can result in opening resources in <link DataManager::introduction.csdoc>Data Manager</link> or <link TextView::introduction_to_text_viewer.csdoc>Text Viewer</link>.</li>
 </list>
 
 
@@ -47,6 +54,25 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 
 <list>
     <li>The <link change_field_properties.csdoc>upper case</link> field property is applied to all text entered into a field, regardless of entry method. Previously, text pasted from the clipboard was not transformed to upper case.</li>
+</list>
+
+
+<subheader>Synchronization</subheader>
+
+<list>
+    <li>Referencing <link sync_services.csdoc>synchronization services</link>, such as when using <logiccolor>syncconnect</logiccolor>, is possible using a single string, a <link sync_connection_string.csdoc>synchronization connection string</link>. This eliminates the need to specify the type of the service.
+        <list>
+            <li>The <pffcolor>SyncService</pffcolor> <link program_information_file_pff.csdoc>PFF attribute</link>, using this connection string, replaces the previous attributes named <i>SyncType</i> and <i>SyncUrl</i>.</li>
+        </list>
+    </li>
+    <li>The same dictionary can be used to <link synchronization.csdoc>synchronize</link> data to different databases or data sets on the same <link sync_services.csdoc>synchronization service</link> by specifying a <link syncable_name.csdoc>syncable name</link>. This name, rather than the dictionary's actual name, will be used when sending or receiving cases from a <link sync_services.csdoc>synchronization service</link>.</li>
+    <li>The <logiccolor>syncdata</logiccolor> function can now be used with a data entry application's <link dictionary_types.csdoc>main dictionary</link>.</li>
+    <li>Multiple dictionaries can now be synchronized as part of <link synchronization_simple.csdoc>Simple Synchronization routine</link>.</li>
+    <li>You can specify what <link sync_service_dropbox.csdoc>Dropbox account</link> you want to use for synchronizing, supporting operations where multiple Dropbox accounts are in use.</li>
+    <li><link sync_message.csdoc>Synchronization messages</link>, previously only handled by <link sync_service_bluetooth.csdoc>Bluetooth</link>, are now stored when sent to all <link sync_services.csdoc>synchronization services</link>.</li>
+    <li>Paradata in logs other than the currently open log can be synchronized using <action>Sync.syncParadata</action>.</li>
+    <li>An option supports creating the directory used for <link sync_service_local_files.csdoc>Local Files</link> synchronization, facilitating easy testing of synchronization operations on a local machine.</li>
+    <li>Synchronization routines can be executed using the <link action_invoker.csdoc>Action Invoker</link>'s <action>Sync</action> namespace with the actions: <action>Sync.connect</action>, <action>Sync.disconnect</action>, <action>Sync.sendMessage</action>, and <action>Sync.syncParadata</action>.</li>
 </list>
 
 
@@ -128,6 +154,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <list>
     <li>A new action, <action>throwException</action>, throws an exception in the current execution environment.</li>
     <li>A new namespace, <action>Network</action>, provides functionality to make HTTP requests and handle responses, with the actions: <action>Network.fetch</action>, <action>Network.fetchBody</action>, <action>Network.fetchBytes</action>, <action>Network.fetchFile</action>, <action>Network.fetchJson</action>, and <action>Network.fetchText</action></li>
+    <li>A new namespace, <action>Sync</action>, provides ways to interact with <link sync_services.csdoc>synchronization services</link>, with the actions: <action>Sync.connect</action>, <action>Sync.disconnect</action>, <action>Sync.sendMessage</action>, and <action>Sync.syncParadata</action>.</li>
     <li>A new action, <action>System.createShortcut</action>, creates a shortcut to a CSPro application or file. The shortcut is placed on the Windows Desktop, or on the Android launcher.</li>
     <li>The <action>UI.closeDialog</action> action has been renamed <action>UI.close</action>, though the old name will remain as an alias for some time. A new argument allows the <link html_dialog_ui.csdoc>HTML dialog</link> or <link html_in_cspro.csdoc>web view</link> to be closed without a valid result but instead with an exception that is thrown in the execution environment that launched the dialog or web view.</li>
     <li>A new action, <action>UI.setWebViewOptions</action>, sets options for the current <link html_in_cspro.csdoc>web view</link>. These options include allowing access to a device's camera, geolocation, and microphone.</li>
@@ -154,6 +181,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 
 <list>
     <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> now requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
+    <li>The <i>Data</i> tab now contains two <link CSWeb::accessing_data.csdoc>Manage in CSPro</link> options, one to view data directly using <link DataManager::introduction.csdoc>Data Manager</link> without downloading the entire data set, as well as the previous option to download the data to your local machine.</li>
 </list>
 
 

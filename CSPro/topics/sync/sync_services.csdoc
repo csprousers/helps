@@ -1,0 +1,63 @@
+<title>Synchronization Services</title>
+
+
+<subheader>Overview</subheader>
+
+A CSPro synchronization service is a service that facilitates the <link synchronization.csdoc>synchronization</link> of cases, files, and other data. This service is generally a server that CSPro connects to over the Internet, but it can also be a service running on a local machine, or another device.
+
+CSPro interacts with synchronization services in contexts such as:
+
+<list>
+    <li>Using synchronization functions in logic such as <logiccolor>syncconnect</logiccolor> and <logiccolor>syncdata</logiccolor>, or actions such as <action>Sync.connect</action> and <action>Sync.syncParadata</action>.</li>
+    <li>Synchronizing data using <link DataManager::downloading_and_synchronizing_data.csdoc>Data Manager</link> or when running <link synchronization_simple.csdoc>Simple Synchronizations</link>.</li>
+    <li><link CSDeploy::install_deployment_mobile.csdoc>Installing</link> or <link CSDeploy::introduction_to_deployment.csdoc>deploying</link> applications.</li>
+</list>
+
+The most powerful server-based synchronization service is <link sync_service_csweb.csdoc>CSWeb</link>. This is a web application, designed specifically for CSPro data synchronization, that users can host on their own servers to securely manage synchronization operations.
+
+Users without the ability to manage a server may consider using <link sync_service_dropbox.csdoc>Dropbox</link>, a generally free server-based synchronization service that is suitable for survey-sized data sets.
+
+The <link sync_service_bluetooth.csdoc>Bluetooth</link> synchronization service facilitates transferring data between devices. This does not require an Internet connection, but the devices must be located near each other.
+
+
+<subheader>CSPro Synchronization Sources</subheader>
+
+<b><link sync_service_csweb.csdoc>CSWeb</link></b>: CSWeb is a <link CSWeb::introduction_to_csweb.csdoc>web server</link> running the CSPro synchronization service and is best suited for censuses and large surveys. CSWeb can be run on any web server with PHP and MySQL. It can be hosted on a headquarters computer, a hosted website, or a cloud-based virtual server. Configuring and maintaining a CSWeb server requires experience with web server <link CSWeb::best_practices.csdoc>administration</link> and cybersecurity. Users without these skills should consider using <link sync_service_dropbox.csdoc>Dropbox</link> or <link sync_service_ftp.csdoc>FTP</link> instead.
+
+<b><link sync_service_dropbox.csdoc>Dropbox</link></b>: Dropbox is a free, cloud-based synchronization service ideal for small- to medium-sized survey operations. It requires no server setup or maintenance and avoids the complexity of configuring a CSWeb server. However, data stored on <link "https://www.dropbox.com">Dropbox</link> is managed by an external company, and some organizations restrict storing data with third parties.
+
+<b><link sync_service_dropbox.csdoc>Dropbox (Local Files)</link></b>: Dropbox (Local Files) is a variant of the <link sync_service_local_files.csdoc>Local Files</link> synchronization service that uses data stored on Dropbox, but accesses it through the Dropbox <link "https://www.dropbox.com/install">client software</link> rather than over the Internet. The Dropbox client manages data transfers. This option is primarily useful when downloading large amounts of data, which may take a long time through the online Dropbox connection. This option is only supported on Windows.
+
+<b><link sync_service_ftp.csdoc>FTP</link></b>: A File Transfer Protocol (FTP) server provides a synchronization option for those conducting small- to medium-sized survey operations. It is suitable for users who cannot configure a CSWeb server but prefer not to use Dropbox.
+
+<b><link sync_service_bluetooth.csdoc>Bluetooth</link></b>: The Bluetooth synchronization service allows a device to connect to another device as a client, with the other device acting as a <link syncserver_function.csdoc>passive server</link> that responds to client commands. The two devices must be physically close, as <link "https://en.wikipedia.org/wiki/Bluetooth">Bluetooth</link> is a short-range wireless technology.
+
+<b><link sync_service_local_files.csdoc>Local Files</link></b>: The Local Files synchronization service simulates the file-based synchronization services (such as Dropbox and FTP) on a local machine. It is useful for testing synchronization operations, and can also be used to synchronize with an FTP server hosted locally. Instead of synchronizing over the Internet, this service assumes that all files are stored on the local machine. It is particularly helpful when working with large quantities of data that would take a long time to transfer online.
+
+
+<subheader>Functionality</subheader>
+
+The functionality of each synchronization service is summarized in the following table:
+
+<table 7 header nowrap>
+    <cell>Feature</cell><cell nowrap><center>CSWeb</center></cell><cell nowrap><center>Dropbox</center></cell><cell nowrap><center>Dropbox~!~(Local Files)</center></cell><cell nowrap><center>FTP</center></cell><cell nowrap><center>Bluetooth</center></cell><cell nowrap><center>Local Files</center></cell>
+    <cell>Connection type:</cell><cell><center>Internet</center></cell><cell><center>Internet</center></cell><cell><center>Local machine</center></cell><cell><center>Internet</center></cell><cell><center>Bluetooth</center></cell><cell><center>Local machine</center></cell>
+    <cell>Case storage:</cell><cell><center>Database</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>&mdash;</center></cell><cell><center>Files</center></cell>
+    <cell>File storage:</cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>&mdash;</center></cell><cell><center>Files</center></cell>
+    <cell>Message storage:</cell><cell><center>Database</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>&mdash;</center></cell><cell><center>Files</center></cell>
+    <cell>Paradata storage:</cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>&mdash;</center></cell><cell><center>Files</center></cell>
+    <cell>Application storage:</cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>Files</center></cell><cell><center>&mdash;</center></cell><cell><center>Files</center></cell>
+    <cell>Supports application <link CSDeploy::install_deployment_mobile.csdoc>deployment</link>:</cell><cell><center><font green>✔</font></center></cell><cell><center><font green>✔</font></center></cell><cell><center><font red>✘</font></center></cell><cell><center><font green>✔</font></center></cell><cell><center><font red>✘</font></center></cell><cell><center><font red>✘</font></center></cell>
+    <cell>Supports application <link syncapp_function.csdoc>updating</link>:</cell><cell><center><font green>✔</font></center></cell><cell><center><font green>✔</font></center></cell><cell><center><font green>✔</font></center></cell><cell><center><font green>✔</font></center></cell><cell><center><font green>✔</font></center></cell><cell><center><font green>✔</font></center></cell>
+    <cell>Efficient case filtering using a <link syncdata_function.csdoc>universe</link>:</cell><cell><center><font green>✔</font></center></cell><cell><center><font red>✘</font></center></cell><cell><center><font red>✘</font></center></cell><cell><center><font red>✘</font></center></cell><cell><center><font green>✔</font></center></cell><cell><center><font red>✘</font></center></cell>
+</table>
+
+
+<subheader>Determining What Synchronization Service Is Used</subheader>
+
+All synchronization services have behavior that can be customized by specifying properties in the <link sync_connection_string.csdoc>connection string</link>. When CSPro analyzes a connection string to determine what service to use, the default behavior is to identify the service using the resource, especially the resource's prefix. The property <colorinline JSON>"type"</colorinline> can be used to override this behavior.
+
+<include sync_connection_string_implicit_calculation.hgi />
+
+
+<seealso synchronization.csdoc />

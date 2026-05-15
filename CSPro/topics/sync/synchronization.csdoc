@@ -1,0 +1,124 @@
+<title>Synchronization Overview</title>
+
+
+<subheader>Synchronization Strategies</subheader>
+
+When using mobile devices for a survey or census, it is important to be able to transfer data collected in the field back to the head office. This allows for faster processing and analysis as well as better monitoring of field operations.
+
+In CSPro, transferring data between devices in the field and the head office is referred to as synchronization. CSPro supports data synchronization over the Internet between interviewers' devices in the field and a central server. Interviewers use CSEntry to collect data on tablets, phones, or laptops and then use the Internet to synchronize the data on their devices with a server at the head office or in the cloud. In CSPro, the data collection itself may be done entirely offline, with no Internet connection. When an interviewer is able to connect to the Internet they may synchronize with the server and transfer any data collected since the last synchronization. Synchronization may be done using Wi-Fi or a mobile data connection.
+
+<center>
+    <image synchronization_internet_flow.png />~!~
+    <i>Direct synchronization between interviewers and central server over the Internet.</i>
+</center>
+
+In situations where an interviewer rarely or never has access to the Internet, CSPro supports peer-to-peer synchronization between devices using <link sync_service_bluetooth.csdoc>Bluetooth</link>. Bluetooth synchronization does not require an Internet connection. It is a direct connection between two devices that are in close proximity. Using Bluetooth, an interviewer may synchronize their device with a supervisor's device, transferring their data to the supervisor. Later, the supervisor travels to a location where they are able to connect their device to the Internet in order to synchronize with the central server. In this scenario, a supervisor might visit multiple interviewers in order to synchronize with them and later upload their data to the server at the head office.
+
+<center>
+    <image synchronization_bluetooth_flow.png />~!~
+    <i>Synchronization with supervisor over Bluetooth when interviewers do not have Internet access.</i>
+</center>
+
+CSPro supports both one-way and two-way data synchronization. This means that it is possible to send data from the interviewer's device to the server as well as to download data from the server to the interviewer's device. You can configure your synchronization to only send data to the server, to only receive data from the server, or to both send and receive data.
+
+It is possible to synchronize both CSPro <link data_sources.csdoc>data sources</link> and files such as applications, images, and text files. It is possible to update data entry applications in the field by downloading the latest <link binary_data_entry_application_file_pen.csdoc>.pen</link> and <link program_information_file_pff.csdoc>.pff</link> files from the server. This way, modifications to the application at the head office can easily be distributed to interviewers in the field. It is, however, simpler to deploy and update application files on mobile devices using the <link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link> tool. This tool packages application files for deployment, uploads them to a server, and allows interviewers in the field to install and update them on a tablet by choosing <link CSDeploy::install_deployment_mobile.csdoc>Add Application</link> from the menu on their mobile device.
+
+
+<subheader>Synchronization Service</subheader>
+
+For synchronization over the Internet, a central server is required. CSPro supports several <link sync_services.csdoc>synchronization services</link>, including <link sync_service_csweb.csdoc>CSWeb</link>, <link sync_service_dropbox.csdoc>Dropbox</link>, and <link sync_service_ftp.csdoc>FTP</link>.
+
+When synchronizing CSPro data sources, synchronization is done at the case (questionnaire) level. CSPro keeps track of which cases have been added or updated and only sends cases that are new or have been modified since the last synchronization. This significantly reduces the amount of data transferred and therefore reduces bandwidth and the cost of air time. It also reduces the chance that two interviewers overwrite each other's work by both syncing to the same data file on the server. As long as two interviewers do not modify the same case at the same time, they may both synchronize to the same server without overwriting each other's data.
+
+Once interviewers in the field have used data synchronization to upload data to the server, you can use the <link DataManager::introduction.csdoc>Data Manager</link> tool to download the data. When using CSWeb for data file synchronization, data is stored in a MySQL database on the server. When using either Dropbox or FTP, data will be stored on the server in a set of files in the directory <i>/CSPro/DataSync</i>. In both cases, the data on the server cannot be opened directly by CSPro. In order to retrieve the data that has been uploaded to the server, use Data Manager's <link DataManager::downloading_and_synchronizing_data.csdoc>download function</link>. This will download all the data on the server into a single CSPro data file that can be used by other CSPro applications and tools.
+
+
+<subheader>Simple Synchronizations</subheader>
+
+Basic synchronizations can be set up by defining a <link synchronization_simple.csdoc>Simple Synchronization</link> routine.
+
+
+<subheader>Advanced Synchronizations</subheader>
+
+For more advanced synchronization scenarios, CSPro has <link introduction_to_cspro_language.csdoc>logic</link> <link logic_alphabetical_list.csdoc>functions</link>, and <link action_invoker.csdoc>Action Invoker</link> <link CS_Sync.csdoc>actions</link>, that can be used to implement data and file synchronizations. It is possible to synchronize data sources, including those associated with external dictionaries, and non-data files over either the Internet or Bluetooth.
+
+The following functions and actions are available:
+
+<table 3 header nowrap>
+    <cell>Function</cell><cell>Action</cell><cell>Description</cell>
+    <cell><logiccolor>syncconnect</logiccolor></cell><cell nowrap><action>Sync.connect</action></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
+    <cell><logiccolor>syncdisconnect</logiccolor></cell><cell nowrap><action>Sync.disconnect</action></cell><cell>Ends a synchronization session, disconnecting from the service.</cell>
+    <cell><logiccolor>syncdata</logiccolor></cell><cell nowrap></cell><cell>Synchronizes cases in CSPro data sources.</cell>
+    <cell><logiccolor>syncfile</logiccolor></cell><cell nowrap></cell><cell>Uploads or downloads non-data files.</cell>
+    <cell><logiccolor>syncparadata</logiccolor></cell><cell nowrap><action>Sync.syncParadata</action></cell><cell>Synchronizes <link paradata.csdoc>paradata</link>.</cell>
+    <cell><logiccolor>syncapp</logiccolor></cell><cell nowrap></cell><cell>Updates an application on the device from a new version on the service.</cell>
+    <cell><logiccolor>syncmessage</logiccolor></cell><cell nowrap><action>Sync.sendMessage</action></cell><cell>Sends a <link sync_message.csdoc>message</link> and returns the service's response.</cell>
+    <cell><logiccolor>synctime</logiccolor></cell><cell nowrap></cell><cell>Returns the time of the last synchronization of a data source or a specific case.</cell>
+</table>
+
+While it is possible to use <logiccolor>syncfile</logiccolor> to synchronize CSPro data sources, it is more efficient to use <logiccolor>syncdata</logiccolor> since it will only send/receive cases that have been modified whereas <logiccolor>syncfile</logiccolor> always sends the entire file.
+
+You will generally call <logiccolor>syncconnect</logiccolor> once to start the session followed by multiple calls to <logiccolor>syncdata</logiccolor>, <logiccolor>syncapp</logiccolor>, and <logiccolor>syncfile</logiccolor>, followed by a call to <logiccolor>syncdisconnect</logiccolor>. In the example below, we connect to the server and upload cases from the data source associated with the dictionary <logiccolor>SURVEY_DICT</logiccolor>.
+
+<logic>
+// connect to the CSWeb server
+if syncconnect("<definition csweb_example_url />") then
+
+    // send the latest cases to the CSWeb server
+    syncdata(PUT, SURVEY_DICT);
+
+    syncdisconnect();
+
+endif;
+</logic>
+
+
+<subheader>Bluetooth Synchronization from Logic</subheader>
+
+Bluetooth synchronization is done between two devices. One device, called the <link sync_service_bluetooth.csdoc>client</link>, has logic similar to what is used for server-based services like CSWeb. The second device plays the role of a <link syncapp_function.csdoc>server</link>. With Bluetooth synchronization, the server is passive. The device acting as the server runs only a single logic function, <logiccolor>syncserver</logiccolor>, which waits and processes commands from the client device. Only the client device runs synchronization functions like <logiccolor>syncconnect</logiccolor> and <logiccolor>syncdata</logiccolor>.
+
+The client and server devices must be in close physical proximity in order to connect to each other. The server device must first execute the <logiccolor>syncserver</logiccolor> function which causes it to wait for connections from nearby devices. Then the client device executes <logiccolor>syncconnect</logiccolor> which initiates the connection between the two devices. The client then executes one or more calls to <logiccolor>syncdata</logiccolor> and/or other synchronization functions, followed by a call to <logiccolor>syncdisconnect</logiccolor>, which ends the session. This requires that the two operators using the devices coordinate to start the synchronization routines on the two devices at roughly the same time.
+
+<center><image synchronization_bluetooth_server_flow.png /></center>
+
+The following example shows the logic that would be written for the client and for the server:
+
+<b>Client Logic</b>:
+
+<logic>
+// connect to supervisor via Bluetooth
+if syncconnect("Bluetooth") then
+
+    // send the latest cases to the supervisor
+    syncdata(PUT, SURVEY_DICT);
+
+    syncdisconnect();
+
+endif;
+</logic>
+
+<b>Server Logic</b>:
+
+<logic>
+// start peer-to-peer Bluetooth server
+syncserver(Bluetooth);
+</logic>
+
+
+<subheader>Application Deployment over the Internet</subheader>
+
+The synchronization functions all assume that your CSPro application is already installed on interviewers' devices. This means that it is not possible to use the above methods to download a new application for initial installation. While it is possible to simply copy the application to an interviewer's device by connecting it to a PC via USB, in some cases it is preferable for the interviewer to download applications over the Internet. To download an application onto a device, use <link CSDeploy::install_deployment_mobile.csdoc>Add Application</link> from CSEntry's <i>Entry Applications</i> menu. To package and upload an application to a synchronization service from where it can be downloaded, use the <link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link> tool. Once an application has been installed on a mobile device, it can easily be updated by redeploying the application to the server and then using <link CSDeploy::update_deployment_mobile.csdoc>Update Installed Applications</link> from the menu on the mobile device or by using <logiccolor>syncapp</logiccolor> in application logic.
+
+
+<subheader>Troubleshooting</subheader>
+
+Many errors that you may encounter during synchronization are caused by a lack of network connectivity rather than a problem within your CSPro application. An easy way to identify the source of the problem is to attempt to connect to the synchronization service within your web browser. For example, if you are trying to synchronize data on a tablet using Dropbox, go to <link "https://dropbox.com">https://dropbox.com</link> within its web browser. If you are unable to connect, then there is a problem with your connection to the Internet which needs to be resolved.
+
+To get additional details on synchronization errors you can look at the <i>sync.log</i> file. This file lists all synchronization operations along with any errors encountered. This includes errors in uploading/downloading applications in Application Deployment and accessing data in Data Manager.
+
+<b>On Android</b> devices you can find the <i>sync.log</i> file in the <i>csentry</i> directory. <include ../../../Shared/topics/csentry_directory.hgi />
+
+<b>On Windows</b> you can find the file in the directory <i>%AppData%\CSPro</i>. On Windows you can also locate the <i>sync.log</i> file from the Help menu in CSPro Designer under Troubleshooting. When asking for technical support with synchronization issues, please attach the <i>sync.log</i> file from your device to your email or forum post.
+
+
+<seealso synchronization_simple.csdoc sync_services.csdoc CS_Sync.csdoc />

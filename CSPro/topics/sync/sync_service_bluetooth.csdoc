@@ -1,0 +1,34 @@
+<title>Bluetooth Synchronization Service</title>
+
+
+<subheader>Overview</subheader>
+
+The Bluetooth <link sync_services.csdoc>synchronization service</link> allows a device to connect to another device as a client, with the other device acting as a <link syncserver_function.csdoc>passive server</link> that responds to client commands. The two devices must be physically close, as <link "https://en.wikipedia.org/wiki/Bluetooth">Bluetooth</link> is a short-range wireless technology.
+
+Bluetooth allows two devices, such as computers, laptops, tablets, or phones, to connect to transfer data. Android and Windows devices can connect over Bluetooth. When using Bluetooth, no Internet connection is required, however the two devices must be in close physical proximity. This is useful when transferring data in areas where no Internet connection is available.
+
+
+<subheader>Bluetooth Connection</subheader>
+
+A connection to another device using Bluetooth occurs as a result of a <logiccolor>syncconnect</logiccolor> function call, or as part of a CSPro operation such as an <link CSDeploy::introduction_to_deployment.csdoc>application deployment</link>. For CSPro to successfully establish a connection, the device running the server must call the function <logiccolor>syncserver</logiccolor> at roughly the same time as the client attempts to make the connection.
+
+The resource of a Bluetooth <link sync_connection_string.csdoc>connection string</link> is simply the text <logiccolor>"Bluetooth"</logiccolor>.
+
+When attempting to make a connection, CSPro displays a dialog showing the names of nearby Bluetooth devices. The <logiccolor>getbluetoothname</logiccolor> and <logiccolor>setbluetoothname</logiccolor> functions provide functionality to get or set a device's Bluetooth name. If you do not want the user to pick the Bluetooth device manually, and you know the name of the device running the server, you can include the server's Bluetooth name as part of the connection string's path. For example: <logiccolor>"Bluetooth/USD_865K"</logiccolor> would connect to a device with the Bluetooth name <logiccolor>"USD_865K"</logiccolor>.
+
+The following are examples of how to create connections to devices running the Bluetooth server:
+
+<logic>
+// connect to a Bluetooth device, allowing the user to select the device
+syncconnect("Bluetooth");
+
+// connect to a Bluetooth device named "François", properly encoding the
+// name's characters so that they are valid as part of a path
+syncconnect(maketext(
+    "Bluetooth/%s",
+    encode(URIComponent, "François")
+));
+</logic>
+
+
+<seealso sync_services.csdoc syncmessage_function.csdoc syncserver_function.csdoc />

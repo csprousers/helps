@@ -29,7 +29,7 @@ Upon opening an Encrypted CSPro DB data source, CSPro requires the specification
 
 <subheader>Customizable Behavior</subheader>
 
-The following behavior can be customized by specifying properties in the <link connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
+The following behavior can be customized by specifying properties in the <link data_connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
 
 <table 2 header>
     <cell nowrap>Property Name and Values</cell><cell>Description</cell>
@@ -39,11 +39,11 @@ The following behavior can be customized by specifying properties in the <link c
     <cell><b><colorinline JSON>"password"</colorinline></b></cell><cell>The password used to encrypt the file.</cell>
 </table>
 
-For example, the following connection string, specified in a <link run_production_data_entry.csdoc>data entry PFF</link>, would attach to an <link dictionary_types.csdoc>external dictionary</link> an Encrypted CSPro DB file with caching enabled and a password specified:
+For example, the following connection string specifies an Encrypted CSPro DB file with caching enabled and a password specified:
 
-<pff>
-CENSUS_<definition System::year />_DICT=.\Census.csdbe|cache=true&password=jiw~d_fpF9
-</pff>
+<color property_string>
+Census.csdbe|cache=true&password=jiw~d_fpF9
+</color>
 
 
 <seealso data_sources.csdoc csdb_relational_format.csdoc data_source_csdb.csdoc />

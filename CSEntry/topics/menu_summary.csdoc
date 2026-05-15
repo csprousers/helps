@@ -7,7 +7,7 @@ The following is a summary of the <b>CSEntry/Data Entry</b> menus for Windows:
     <cell><link open_an_application.csdoc>Open Application</link></cell><cell>Open a new data entry application.</cell>
     <cell><link open_a_data_file.csdoc>Open Data File</link></cell><cell>Open a new file for data entry in the current application.</cell>
     <cell><link save_partial_case.csdoc>Save Partial Case</link></cell><cell>Partially save the current case and continue entry.</cell>
-    <cell><link synchronize_data.csdoc>Synchronize</link></cell><cell>Synchronize the data with a remote server.</cell>
+    <cell><link synchronize_data.csdoc>Synchronize</link></cell><cell>Synchronize the data with a <link CSPro::sync_services.csdoc>synchronization service</link>.</cell>
     <cell 2>&nbsp;</cell>
     <cell 2><subheader>Mode</subheader></cell>
     <cell><link begin_adding_cases.csdoc>Add Case</link></cell><cell>Switch to add mode.</cell>

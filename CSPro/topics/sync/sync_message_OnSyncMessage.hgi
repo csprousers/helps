@@ -1,0 +1,12 @@
+<subheader>OnSyncMessage Callback Function</subheader>
+
+<logicsyntax>
+// OnSyncMessage callback function syntax for Bluetooth servers
+function string OnSyncMessage(string message_name, string message_value)
+    exit <arg>message_response</arg>;
+end;
+</logicsyntax>
+
+For devices running as a <link syncapp_function.csdoc>Bluetooth server</link>, you can add a <link user_defined_functions.csdoc>user-defined function</link> with the name <logiccolor>OnSyncMessage</logiccolor> that has two string parameters and returns a string. While the <logiccolor>syncserver</logiccolor> function is running, the <logiccolor>OnSyncMessage</logiccolor> function is called anytime a message is received. The function's return value is returned to the Bluetooth client.
+
+When sending a message using Bluetooth, if <logiccolor>OnSyncMessage</logiccolor> is not defined in the server's code, both the server and client devices will display an error message.

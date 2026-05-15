@@ -17,7 +17,7 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
 <list>
     <li>Change to the format of the <link data_source_csdb.csdoc>CSPro DB</link> data source to store data in a <link csdb_relational_format.csdoc>relational database format</link> that can be queried using SQL. CSPro DB files created in version 7.4 cannot be read in earlier versions of CSPro.</li>
     <li>Introduction of the new <link data_source_csdbe.csdoc>Encrypted CSPro DB</link> data source, allowing for <link encrypted_data.csdoc>file-based data encryption</link> with the ability to <link dictionary_security_options.csdoc>cache passwords</link>.</li>
-    <li>Ability to include, as part of a PFF or in a <logiccolor>setfile</logiccolor> function call, a <link connection_string.csdoc>connection string</link> that details how to open a <link data_sources.csdoc>data source</link>.</li>
+    <li>Ability to include, as part of a PFF or in a <logiccolor>setfile</logiccolor> function call, a <link data_connection_string.csdoc>connection string</link> that details how to open a <link data_sources.csdoc>data source</link>.</li>
     <li><link dictionary_security_options.csdoc>Dictionary options</link> include the ability to disallow use of a dictionary to modify data in <link DataManager::introduction.csdoc>Data Manager</link> or to export data to another output format.</li>
 </list>
 
@@ -47,7 +47,7 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
 <list>
     <li>The tool has been rewritten with additional features including multiple language support and additional ways to view case data.</li>
     <li>A case's notes <link DataManager::converting_data_files_to_other_formats.csdoc>can be extracted</link> as another CSPro data file, which can then be used for exporting or other data operations.</li>
-    <li>Ability to <link DataManager::downloading_and_synchronizing_data.csdoc>download or synchronize</link> data from the local Dropbox folder or a local FTP server folder which can be faster than downloading data over the Internet.</li>
+    <li>Ability to <link DataManager::downloading_and_synchronizing_data.csdoc>download or synchronize</link> data from the local <link sync_service_dropbox.csdoc>Dropbox</link> folder or a <link sync_service_local_files.csdoc>local FTP server</link> folder which can be faster than downloading data over the Internet.</li>
 </list>
 
 
@@ -61,12 +61,12 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
     <li>A new statement, <logiccolor>when</logiccolor>, executes a statement based on the value of one or more other variables.</li>
     <li>A new version of <logiccolor>recode</logiccolor>, sharing the syntax of <logiccolor>when</logiccolor>, with additional options for what the recoded value can be assigned to.</li>
     <li>A new function, <logiccolor>startswith</logiccolor>, that returns if a string begins with a specified prefix.</li>
-    <li>A new function, <logiccolor>syncapp</logiccolor>, for downloading new versions of an application from a deployment server.</li>
-    <li>A new function, <logiccolor>syncmessage</logiccolor>, sends and receives string messages from a Bluetooth server.</li>
+    <li>A new function, <logiccolor>syncapp</logiccolor>, for downloading new versions of an application from a <link sync_services.csdoc>synchronization service</link>.</li>
+    <li>A new function, <logiccolor>syncmessage</logiccolor>, sends and receives string <link sync_message.csdoc>messages</link> from a <link syncserver_function.csdoc>Bluetooth server</link>.</li>
     <li>A new function, <logiccolor>Barcode.read</logiccolor>, reads a barcode using an Android device's camera.</li>
     <li>A new object, <link SystemApp.csdoc>SystemApp</link>, that simplifies interacting with external applications. It has the functions: <logiccolor SystemApp>clear</logiccolor>, <logiccolor SystemApp>exec</logiccolor>, <logiccolor SystemApp>getResult</logiccolor>, and <logiccolor SystemApp>setArgument</logiccolor>.</li>
     <li>Using <logiccolor>ValueSet.add</logiccolor> it is possible to add a single value or a range of values from an existing value set.</li>
-    <li>New options for the <logiccolor>syncconnect</logiccolor> function to connect to a local Dropbox or FTP folder.</li>
+    <li>New options for the <logiccolor>syncconnect</logiccolor> function to connect to a <link sync_service_dropbox.csdoc>local Dropbox</link> or <link sync_service_local_files.csdoc>FTP folder</link>.</li>
     <li>A range of occurrences can be supplied to <logiccolor>insert</logiccolor> for mass insertions or <logiccolor>delete</logiccolor> for mass deletions.</li>
     <li>The <logiccolor>tolower</logiccolor> and <logiccolor>toupper</logiccolor> functions work properly with accented characters.</li>
     <li>The <logiccolor>view</logiccolor> function, on Windows, now displays webpages in an embedded browser.</li>
@@ -92,7 +92,7 @@ This is a detailed list of changes in CSPro 7.4. For a more general overview, se
 
 <list>
     <li>An operator (or respondent) can sign the Android screen using the <link execsystem_function_mobile.csdoc>execsystem</link> function and have the signature saved as an image file.</li>
-    <li>A new menu option, <link CSDeploy::update_deployment_mobile.csdoc>Update Installed Applications</link>, to automatically check for and install new versions of an application that has been updated on a deployment server.</li>
+    <li>A new menu option, <link CSDeploy::update_deployment_mobile.csdoc>Update Installed Applications</link>, to automatically check for and install new versions of an application that has been updated on a <link sync_services.csdoc>synchronization service</link>.</li>
     <li>Applications can be added to the device by <link CSDeploy::generate_deploy_qr_code.csdoc>scanning a QR code.</link></li>
     <li>A new Settings screen, accessed via the menu on the Entry Applications screen, allows users to <link android_settings.csdoc>clear saved credentials</link>.</li>
     <li>The option for selecting that <link run_production_data_entry.csdoc>hidden applications</link> are shown has been moved to the Settings screen.</li>

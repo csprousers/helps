@@ -1,0 +1,36 @@
+<color JavaScript>
+let syncId;
+
+// connect to CSWeb, supplying the username and password
+CS.Sync.connectAsync({
+    connection: {
+        url: "<definition csweb_example_url />",
+        username: "jackw",
+        password: "MyPa$$w0rd!"
+    }
+})
+.then(id => {
+    // store the resource ID that identifies this synchronization connection
+    syncId = id;
+
+    // send a message to the server
+    return CS.Sync.sendMessageAsync({
+        syncId: syncId,
+        name: "Demonstrating Sync.sendMessage at: " + new Date().toString()
+    });
+})
+.then(response => {
+    print("Successfully sent a message and received: " + JSON.stringify(response));
+})
+.finally(() => {
+    // close the synchronization connection
+    if( syncId != undefined ) {
+        return CS.Sync.disconnectAsync({
+            syncId: syncId
+        });
+    }
+})
+.catch(error => {
+    print("Error syncing: " + error);
+})
+</color>

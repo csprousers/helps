@@ -38,7 +38,7 @@ This example uses the <link action_invoker_execution_javascript_web.csdoc>asynch
 
     CS.UI.alertAsync({
         title: "Synchronization Error",
-        text: "There was an error sending the data to the server!"
+        text: "There was an error sending the data to the synchronization service!"
     });
 </script>
 </color>

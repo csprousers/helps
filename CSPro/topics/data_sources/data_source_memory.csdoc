@@ -9,9 +9,11 @@ The initial behavior of the In-Memory data source is as if a file were opened wi
 
 A similar data source, <link data_source_none.csdoc>None</link>, is also not associated with a data file, but cases do not persist in memory.
 
-Typically CSPro uses a file extension to determine what kind of data source to open, but because there is no file associated with an In-Memory data source, you must use the <link connection_string.csdoc>connection string</link> to specify that you want to use an In-Memory data source. For example, the following connection string, specified in a <link run_production_data_entry.csdoc>data entry PFF</link>, would result in the main dictionary being attached to an In-Memory data source:
+Typically CSPro uses a file extension to determine what kind of data source to open, but because there is no file associated with an In-Memory data source, you must use the <link data_connection_string.csdoc>connection string</link> to specify that you want to use an In-Memory data source. The following connection string specifies an In-Memory data source:
 
-<pff>InputData=|type=Memory</pff>
+<color property_string>
+|type=Memory
+</color>
 
 
 <subheader>Functionality</subheader>

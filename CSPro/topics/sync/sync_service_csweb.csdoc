@@ -1,0 +1,46 @@
+<title>CSWeb Synchronization Service</title>
+
+
+<subheader>Overview</subheader>
+
+<link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> is the preeminent CSPro synchronization option. It is a web server running the CSPro <link sync_services.csdoc>synchronization service</link> and is best suited for censuses and large surveys. CSWeb can be run on any web server with PHP and MySQL. It can be hosted on a headquarters computer, a hosted website, or a cloud-based virtual server. Configuring and maintaining a CSWeb server requires experience with web server <link CSWeb::best_practices.csdoc>administration</link> and cybersecurity. Users without these skills should consider using <link sync_service_dropbox.csdoc>Dropbox</link> or <link sync_service_ftp.csdoc>FTP</link> instead.
+
+
+<subheader>CSWeb Connection</subheader>
+
+A connection to CSWeb occurs as a result of a <logiccolor>syncconnect</logiccolor> function call, or as part of a CSPro operation such as a <link synchronization_simple.csdoc>Simple Synchronization</link> or an <link CSDeploy::introduction_to_deployment.csdoc>application deployment</link>.
+
+The resource of a CSWeb <link sync_connection_string.csdoc>connection string</link> is the server URL. The username and password can also be specified in the connection string. If the username and password are not specified, the user will be prompted to enter them the first time the connection is made.
+
+These are options that can be specified in the connection string. Note that values must be <link connection_string.csdoc>properly encoded</link> based on the way that the connection string is defined (as a string, as a <link JSON_primer.csdoc>JSON object</link>, or as a <link cspro_uris.csdoc>CSPro URI</link>).
+
+<table 2 header>
+    <cell nowrap>Property Name and Values</cell><cell>Description</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"username"</colorinline></b></cell><cell>The user's username. This is only used if a password is also provided.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"password"</colorinline></b></cell><cell>The user's password. Hardcoding passwords in applications is not recommended. This is only used if a username is also provided.</cell>
+</table>
+
+The following are examples of how to create connections to CSWeb:
+
+<logic>
+// CSPro will prompt for the username and password
+syncconnect("<definition csweb_example_url />");
+
+// the credentials are specified using percent-encoding
+// to properly account for any special characters
+syncconnect(maketext(
+    "<definition csweb_example_url />|username=%s&password=%s",
+    encode(PercentEncoding, "jackw"),
+    encode(PercentEncoding, "MyPa$$w0rd!")
+));
+</logic>
+
+
+<subheader>Credential Storage</subheader>
+
+When connecting to CSWeb, an access token is generated that provides access to the server for some amount of time without needing to always provide a username and password. This token is stored in your operating system's secure storage. You can use the <link manage_credentials.csdoc>Manage Credentials</link> dialog to manually clear this credential.
+
+
+<seealso sync_services.csdoc synchronization.csdoc CSWeb::introduction_to_csweb.csdoc />

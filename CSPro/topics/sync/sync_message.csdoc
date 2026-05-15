@@ -1,0 +1,25 @@
+<title>Synchronization Messages</title>
+
+
+<subheader>Overview</subheader>
+
+When connected to a <link sync_services.csdoc>synchronization service</link>, it is possible to send a message to the service using the function <logiccolor>syncmessage</logiccolor> or the action <action>Sync.sendMessage</action>. The message is identified by a name and it can have an optional value with additional details.
+
+Typically, a client will send a message with some information to log, or with some information that informs an expected response.
+
+Because a <link syncapp_function.csdoc>Bluetooth server</link> is passive&mdash;only responding to requests from a <link sync_service_bluetooth.csdoc>Bluetooth client</link>&mdash;a message can be sent to the server with the server responding via a special <link user_defined_functions.csdoc>user-defined function</link> with the name <logiccolor>OnSyncMessage</logiccolor>. This allows information from the passive server to inform the synchronization process.
+
+On <link sync_service_csweb.csdoc>CSWeb</link>, messages are stored in the <i>cspro_messages</i> database table. By default, CSWeb returns an undefined response, but users can modify the CSWeb source file <i>MessagesController.php</i> to customize what value is returned.
+
+The file-based synchronization services (<link sync_service_dropbox.csdoc>Dropbox</link>, <link sync_service_ftp.csdoc>FTP</link>, and <link sync_service_local_files.csdoc>Local Files</link>) store the message in a file in the directory <i>/CSPro/messages/</i> and return an undefined response.
+
+
+<include sync_message_OnSyncMessage.hgi />
+
+
+<subheader>Example</subheader>
+
+<include sync_message_example.hgi />
+
+
+<seealso synchronization.csdoc syncmessage_function.csdoc CS_Sync_sendMessage.csdoc />

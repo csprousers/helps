@@ -9,9 +9,11 @@ The initial behavior of the None data source is as if a file were opened with no
 
 A similar data source, <link data_source_memory.csdoc>In-Memory</link>, is also not associated with a data file, but cases written persist in memory until the data source is closed.
 
-Typically CSPro uses a file extension to determine what kind of data source to open, but because there is no file associated with a None data source, you must use the <link connection_string.csdoc>connection string</link> to specify that you want to use a None data source. For example, the following connection string, specified in a <link run_production_data_entry.csdoc>data entry PFF</link>, would result in the main dictionary being attached to a None data source:
+Typically CSPro uses a file extension to determine what kind of data source to open, but because there is no file associated with a None data source, you must use the <link data_connection_string.csdoc>connection string</link> to specify that you want to use a None data source. The following connection string specifies a None data source:
 
-<pff>InputData=|type=None</pff>
+<color property_string>
+|type=None
+</color>
 
 
 <subheader>Functionality</subheader>

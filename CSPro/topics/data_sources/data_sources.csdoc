@@ -8,7 +8,6 @@ In CSPro, a data source is a file used to store case data. Traditionally, CSPro 
 The format of the cases in a data source is described by a <link data_dictionary.csdoc>dictionary</link> containing <link level_description.csdoc>levels</link>, <link record_description.csdoc>records</link>, and <link item_description.csdoc>items</link>. The way that these entities are serialized depends on the data source used, and is described on the help pages for each data source.
 
 
-
 <subheader>CSPro Data Sources</subheader>
 
 The following are full-fledged data sources that work with CSPro data to facilicate reading and writing cases:
@@ -69,7 +68,7 @@ Data sources that contain an embedded dictionary can be opened in <link DataMana
 
 <subheader>Determining What Data Source Is Used</subheader>
 
-All data sources have behavior that can be customized by specifying properties in the <link connection_string.csdoc>connection string</link>. When CSPro analyzes a connection string to determine what data source to use, the default behavior is to match the data source using the file extension. If the extension matches any of the extensions listed in the data source tables above, that data source is used. If it matches none, the <link data_source_text.csdoc>Text</link> data source is used. In other words, most extensions will map to a Text data source.
+All data sources have behavior that can be customized by specifying properties in the <link data_connection_string.csdoc>connection string</link>. When CSPro analyzes a connection string to determine what data source to use, the default behavior is to match the data source using the file extension. If the extension matches any of the extensions listed in the data source tables above, that data source is used. If it matches none, the <link data_source_text.csdoc>Text</link> data source is used. In other words, most extensions will map to a Text data source.
 
 The <colorinline JSON>"type"</colorinline> property can be used to override this behavior for data sources that do not use a proprietary file format. For example, the <b>.tsv</b> extension is associated with the <link data_source_tab.csdoc>Tab Delimited</link> data source, but if you instead wanted to use that extension for a Text data source, you could use the connection string:
 
@@ -82,4 +81,4 @@ The data sources that do not use file names must be specified by specifying the 
 Finally, because <link data_source_cspro_export.csdoc>CSPro Export</link> wraps other data sources, to use it you must specify the <colorinline JSON>"type"</colorinline>: <colorinline JSON>"CSProExport"</colorinline>.
 
 
-<seealso case_read_optimization.csdoc />
+<seealso case_read_optimization.csdoc sync_services.csdoc />

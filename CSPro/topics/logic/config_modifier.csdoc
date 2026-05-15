@@ -29,7 +29,7 @@ If no value exists in the configuration settings, numeric values will default to
 // the compiler will issue a warning and the variable's value will start as ""
 config string serverUrl;
 
-syncconnect(CSWeb, serverUrl);
+syncconnect(serverUrl);
 </logic>
 
 

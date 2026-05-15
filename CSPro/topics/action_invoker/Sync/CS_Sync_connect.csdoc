@@ -1,0 +1,54 @@
+<title>Sync.connect Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+d = CS.Sync.connect(<arg>connection</arg> := ...)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>connection</arg></cell><cell>The <link sync_connection_string.csdoc>synchronization connection string</link> specifying the <link sync_services.csdoc>synchronization service</link>.</cell><cell>string, object~!~required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Sync.connect</action> <link action_invoker.csdoc>action</link> connects to a <link sync_services.csdoc>synchronization service</link>, initiating a <link synchronization.csdoc>synchronization session</link>. Once a session is created, you can synchronize:
+
+<list>
+    <li><link sync_message.csdoc>Messages</link> using <action>Sync.sendMessage</action>.</li>
+    <li><link paradata.csdoc>Paradata</link> using <action>Sync.syncParadata</action>.</li>
+</list>
+
+The session is active until it is closed using <action>Sync.disconnect</action>.
+
+The string argument <arg>connection</arg> is a <link sync_connection_string.csdoc>synchronization connection string</link>, generally a server URL or text identifying the service. This string contains information about the resource that CSPro will connect to, and any additional parameters (such as a username and password). Connection strings can be specified as a single string or as an object (with the rules for each <link connection_string.csdoc>described here</link>). Details about properties specific to each synchronization service are available on the documentation describing each of the services that CSPro supports:
+
+<include ../../sync/sync_services_table_with_connection_strings.hgi />
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>syncconnect</logiccolor>. When using actions, multiple synchronization sessions can be created, whereas using CSPro logic, there is only one session per call to <logiccolor>syncconnect</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns a numeric <link action_invoker_resource_ids.csdoc>resource ID</link> that is used to identify this synchronization session in calls to future <action>Sync</action> actions.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>There is a network error while connecting to the synchronization service.</li>
+    <li>The service rejected the connection (e.g., the user does not have a valid password or permissions).</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<include connect_sendMessage_disconnect_example.hgi />
+
+
+<seealso CS_Sync.csdoc CS_Sync_disconnect.csdoc syncconnect_function.csdoc />

@@ -21,7 +21,7 @@ Examine, but not change, the contents of any CSPro tables file. A table file is 
 
 <subheader><link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link></subheader>
 
-Deploy one or multiple applications to a server so that they can be downloaded onto interviewer devices.
+Deploy one or multiple applications to a <link sync_services.csdoc>synchronization service</link> so that they can be downloaded onto interviewer devices.
 
 
 <subheader><link CSPack::introduction_to_pack_application.csdoc>Pack Application</link></subheader>

@@ -18,7 +18,7 @@ Binary dictionary items can only be used when using the following <link data_sou
 
 <subheader>Syncing Binary Dictionary Items</subheader>
 
-Binary dictionary items are <link synchronization.csdoc>synchronized</link> as part of a call to <logiccolor>syncdata</logiccolor>. If binary data has already been uploaded to a synchronization server, the data will not be uploaded again. However, it is still a good idea to be aware of the size of the binary data that you synchronize, as syncing these cases can slow down syncing activities significantly.
+Binary dictionary items are <link synchronization.csdoc>synchronized</link> as part of a call to <logiccolor>syncdata</logiccolor>. If binary data has already been uploaded to a <link sync_services.csdoc>synchronization service</link>, the data will not be uploaded again. However, it is still a good idea to be aware of the size of the binary data that you synchronize, as syncing these cases can slow down syncing activities significantly.
 
 
 <subheader>Usage Within CSPro Applications</subheader>

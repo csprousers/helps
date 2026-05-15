@@ -1,0 +1,89 @@
+<title>Sync.syncParadata Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+CS.Sync.syncParadata(『<arg>syncId</arg> := ...』
+                   『, <arg>direction</arg> := ...』
+                   『, <arg>path</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~recommended</cell>
+    <cell><arg>direction</arg></cell><cell>The synchronization direction.~!~The default value is <logiccolor>"both"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>path</arg></cell><cell>The path of a paradata log, or logs, to synchronize.</cell><cell>string, array~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Sync.syncParadata</action> <link action_invoker.csdoc>action</link> synchronizes the events in a <link paradata.csdoc>paradata</link> log with a <link sync_services.csdoc>synchronization service</link>. The action can upload paradata from the local device (client) to the service as well as download paradata from the service. It keeps track of what paradata has been transferred each time the client and service synchronize. This information is used to only transfer paradata that has been collected since the last synchronization. This significantly reduces the amount of data transferred.
+
+The connection is identified using <arg>syncId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>. While optional, this should generally be specified explicitly. (If there is only one synchronization session active, the resource ID can be calculated implicitly.)
+
+The <arg>direction</arg> argument determines whether paradata is uploaded, downloaded, or both. Options include:
+
+<list>
+    <li><b><logiccolor>"get"</logiccolor></b>: Download any paradata that was sent to the service (from another paradata log) since the last synchronization.</li>
+    <li><b><logiccolor>"put"</logiccolor></b>: Upload to the service any paradata that has been collected since the last synchronization.</li>
+    <li><b><logiccolor>"both"</logiccolor></b>: Synchronize paradata with the service in both directions (i.e., perform both a <logiccolor>"get"</logiccolor> and a <logiccolor>"put"</logiccolor>).</li>
+</list>
+
+Paradata logs can be very large so be careful when adding paradata synchronization to an application. If you are interested in syncing paradata, a general suggestion is to use <logiccolor>"both"</logiccolor> when syncing between devices using <link sync_service_bluetooth.csdoc>Bluetooth</link>, and to use <logiccolor>"put"</logiccolor> for <link sync_service_csweb.csdoc>CSWeb</link>, <link sync_service_dropbox.csdoc>Dropbox</link>, or <link sync_service_ftp.csdoc>FTP</link>.
+
+If no argument for <arg>path</arg> is provided, the currently open paradata log is synchronized. However, using <arg>path</arg>, you can synchronize one or more paradata logs. Logs are specified as:
+
+<list>
+    <li>A single string representing a paradata log.</li>
+    <li>A single string using wildcard characters <logiccolor>"*"</logiccolor> and <logiccolor>"?"</logiccolor> to specify a group of paradata logs.</li>
+    <li>An array of strings containing strings specified in one of the two above forms.</li>
+</list>
+
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>syncparadata</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns undefined.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The synchronization connection ID is not valid.</li>
+    <li>No <arg>path</arg> argument is specified and no paradata log is currently open.</li>
+    <li>A nonexistent paradata log is specified and the direction is <logiccolor>"put"</logiccolor>. For other directions, a paradata log is created if one does not already exist.</li>
+    <li>There is a network error while sending or receiving data from the synchronization service.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+// connect to another device using Bluetooth
+const syncId = CS.Sync.connect({
+    connection: "Bluetooth"
+});
+
+// sync the currently open paradata log (in both directions)
+CS.Sync.syncParadata({
+    syncId: syncId
+});
+
+// send any other paradata logs on this device
+CS.Sync.syncParadata({
+    syncId: syncId,
+    direction: "put",
+    path: "../paradata/*.cslog"
+});
+
+// other sync events...
+</color>
+
+
+<seealso CS_Sync.csdoc paradata.csdoc syncparadata_function.csdoc />

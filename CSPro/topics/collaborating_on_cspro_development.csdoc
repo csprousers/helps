@@ -14,7 +14,7 @@ If you are interested in collaborating on CSPro development, these are the prima
             <li>The shared runtime is coded in C++, with the <link "https://developer.android.com/ndk">NDK</link> toolset building this for Android.</li>
         </list>
     </li>
-    <li><link https://<definition csprousers_github />/csweb>csweb</link>: The <link CSWeb::introduction_to_csweb.csdoc>web application</link> that allows users to securely transfer cases or files between client devices and a web server.
+    <li><link https://<definition csprousers_github />/csweb>csweb</link>: The <link CSWeb::introduction_to_csweb.csdoc>web application</link> that allows users to securely transfer cases or files between client devices and a <link sync_services.csdoc>synchronization service</link>.
         <list>
             <li>CSWeb is coded in PHP.</li>
         </list>

@@ -18,7 +18,7 @@ A feature showcase demonstrating some of CSPro 7.1's new features is available o
 <subheader>Deployment</subheader>
 
 <list>
-    <li>A new tool, <link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link>, that deploys one or multiple applications to a server (or a local file) so that they can be downloaded onto interviewer devices.</li>
+    <li>A new tool, <link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link>, that deploys one or multiple applications to a <link sync_services.csdoc>synchronization service</link> (or a local file) so that they can be downloaded onto interviewer devices.</li>
     <li>Deployed applications can be downloaded using CSEntry on mobile devices.</li>
 </list>
 
@@ -94,8 +94,8 @@ A feature showcase demonstrating some of CSPro 7.1's new features is available o
 <subheader>Synchronization</subheader>
 
 <list>
-    <li>Faster Bluetooth transfer speeds.</li>
-    <li>Fix to allow faster transfer speeds when calling <logiccolor>syncdata</logiccolor> or <logiccolor>syncfile</logiccolor> in the <logiccolor>GET</logiccolor> direction across all synchronization options (Bluetooth, CSWeb, Dropbox, and FTP).</li>
+    <li>Faster <link sync_service_bluetooth.csdoc>Bluetooth</link> transfer speeds.</li>
+    <li>Fix to allow faster transfer speeds when calling <logiccolor>syncdata</logiccolor> or <logiccolor>syncfile</logiccolor> in the <logiccolor>GET</logiccolor> direction across all synchronization options (<link sync_service_bluetooth.csdoc>Bluetooth</link>, <link sync_service_csweb.csdoc>CSWeb</link>, <link sync_service_dropbox.csdoc>Dropbox</link>, and <link sync_service_ftp.csdoc>FTP</link>).</li>
 </list>
 
 

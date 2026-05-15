@@ -1,0 +1,81 @@
+<title>Local Files Synchronization Service</title>
+
+
+<subheader>Overview</subheader>
+
+The Local Files <link sync_services.csdoc>synchronization service</link> simulates CSPro's file-based synchronization services, <link sync_service_dropbox.csdoc>Dropbox</link> and <link sync_service_ftp.csdoc>FTP</link>. This service uses files stored on a local machine rather than accessing the files over the Internet. It is useful for:
+
+<list>
+    <li>Synchronizing with Dropbox files when the <link "https://www.dropbox.com/install">client software</link> is installed on a Windows machine.</li>
+    <li>Synchronizing with an FTP server hosted on a local machine.</li>
+    <li>Testing synchronization operations.</li>
+</list>
+
+Synchronizing with Local Files is particularly helpful when working with large quantities of data that would take a long time to transfer via requests over the Internet (to Dropbox or to an FTP server).
+
+
+<subheader>Local Files Connection</subheader>
+
+A connection to Local Files occurs as a result of a <logiccolor>syncconnect</logiccolor> function call, or as part of a CSPro operation such as a <link synchronization_simple.csdoc>Simple Synchronization</link> or an <link CSDeploy::introduction_to_deployment.csdoc>application deployment</link>.
+
+The resource of a Local Files <link sync_connection_string.csdoc>connection string</link> is the directory where the synchronization files are located. If can be specified as an absolute path specified as a <link "https://en.wikipedia.org/wiki/File_URI_scheme">file URI</link>, or simply as a path, in which case it will be evaluated relative to the running application.
+
+These are options that can be specified in the connection string. Note that values must be <link connection_string.csdoc>properly encoded</link> based on the way that the connection string is defined (as a string, as a <link JSON_primer.csdoc>JSON object</link>, or as a <link cspro_uris.csdoc>CSPro URI</link>). The default behavior is marked with ⁺⁺⁺.
+
+<table 2 header>
+    <cell nowrap>Property Name and Values</cell><cell>Description</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"createDirectory"</colorinline></b></cell><cell>Determines whether the Local Files directory will be created if it does not exist.</cell>
+    <cell><indent><colorinline JSON>false</colorinline> ⁺⁺⁺</indent></cell><cell><indent>An error occurs if the directory does not exist.</indent></cell>
+    <cell><indent><colorinline JSON>true</colorinline></indent></cell><cell><indent>The directory is created if necessary.</indent></cell>
+</table>
+
+The following are examples of how to create connections to Local Files:
+
+<logic>
+// -------
+// connect to the Dropbox directory mapped to:
+// C:\surveys\dropbox
+// -------
+
+    // shown using a file URI
+    syncconnect("file:///C:/surveys/dropbox");
+
+    // shown using an absolute path
+    syncconnect(@"C:\surveys\dropbox");
+
+// -------
+// connect to the FTP server hosted locally at:
+// C:\surveys\ftp-server
+// -------
+
+    // shown using a file URI
+    syncconnect("file:///C:/surveys/ftp-server");
+
+    // shown using an absolute path
+    syncconnect(@"C:\surveys\ftp-server");
+
+// -------
+// connect to a directory for testing sync operations,
+// creating the directory if necessary
+// -------
+
+    // shown using a path evaluated relative to the running application
+    syncconnect("Sync-Tests|createDirectory=true");
+</logic>
+
+
+<subheader>Local Dropbox Connection</subheader>
+
+If connecting to a Dropbox directory, you can use the resource <logiccolor>"Dropbox"</logiccolor> with the property <colorinline JSON>"useLocal"</colorinline> to have CSPro automatically identify the Dropbox directory. Using <link sync_service_dropbox.csdoc>that process</link> might result in a connection like:
+
+<logic>
+// connect to the Dropbox directory using the client software
+syncconnect("Dropbox|useLocal=true");
+</logic>
+
+
+<include sync_file_based_directory_structure.hgi />
+
+
+<seealso sync_services.csdoc sync_service_dropbox.csdoc sync_service_ftp.csdoc />

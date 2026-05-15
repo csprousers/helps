@@ -51,10 +51,13 @@ Because newlines are used to indicate the start of a new record, if a value cont
 
 <subheader>Customizable Behavior</subheader>
 
-The following behavior can be customized by specifying properties in the <link connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
+The following behavior can be customized by specifying properties in the <link data_connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
 
 <table 2 header>
     <cell nowrap>Property Name and Values</cell><cell>Description</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"encoding"</colorinline></b></cell><cell>Determines the <link unicode_primer.csdoc>text encoding</link> used when reading and writing notes and statuses files.</cell>
+    <include properties_encoding_values.hgi />
     <cell 2>&nbsp;</cell>
     <cell><b><colorinline JSON>"newline"</colorinline></b></cell><cell>Determines what <link text_attributes.csdoc>control characters</link> are used when writing line endings to the notes and statuses files.</cell>
     <include properties_newline_values.hgi />
@@ -62,11 +65,11 @@ The following behavior can be customized by specifying properties in the <link c
     <include properties_cache.hgi />
 </table>
 
-For example, the following connection string, specified in a <link run_production_data_entry.csdoc>data entry PFF</link>, would attach to an <link dictionary_types.csdoc>external dictionary</link> a Text file with caching enabled:
+For example, the following connection string specifies a Text file with caching enabled:
 
-<pff>
-CENSUS_<definition System::year />_DICT=.\Census.dat|cache=true
-</pff>
+<color property_string>
+Census.dat|cache=true
+</color>
 
 
 <seealso data_sources.csdoc data_file_type_structure.csdoc />

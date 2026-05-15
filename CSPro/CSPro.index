@@ -223,6 +223,7 @@
       { "path": "CS_Path.csdoc", "title": "Namespace: Path" },
       { "path": "CS_Settings.csdoc", "title": "Namespace: Settings" },
       { "path": "CS_Sqlite.csdoc", "title": "Namespace: Sqlite" },
+      { "path": "CS_Sync.csdoc", "title": "Namespace: Sync" },
       { "path": "CS_System.csdoc", "title": "Namespace: System" },
       { "path": "CS_UI.csdoc", "title": "Namespace: UI" },
       { "path": "CS_OnActionInvokerResult.csdoc", "~title": "OnActionInvokerResult Global Function" },
@@ -420,7 +421,7 @@
   { "path": "assignment_statement.csdoc", "~title": "Assignment Statement" },
   { "path": "statements.csdoc", "title": "Assignment Statements" },
   { "path": "HashMap.csdoc", "title": "Associative Array" },
-  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Asynchronous Execution" },
+  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Asynchronous Execution (Action Invoker)" },
   { "path": "Audio.csdoc", "~title": "Audio Object",
     "subindex": [
       { "path": "Audio_clear_function.csdoc", "~title": "Audio.clear Function" },
@@ -525,12 +526,14 @@
       { "path": "change_block_properties.csdoc", "~title": "Change Block Properties" }
     ]
   },
-  { "path": "getbluetoothname_function.csdoc", "title": "Bluetooth Name",
+  { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth",
     "subindex": [
-      { "path": "setbluetoothname_function.csdoc", "title": "Modify" }
+      { "path": "getbluetoothname_function.csdoc", "title": "Name (Get)" },
+      { "path": "setbluetoothname_function.csdoc", "title": "Name (Set)" },
+      { "path": "syncserver_function.csdoc", "title": "Server" },
+      { "path": "sync_service_bluetooth.csdoc", "title": "Synchronization Service" }
     ]
   },
-  { "path": "syncconnect_function_bluetooth.csdoc", "title": "Bluetooth Synchronization" },
   { "path": "boolean_values.csdoc", "~title": "Boolean Values" },
   { "path": "external_libraries.csdoc", "title": "Bootstrap" },
   { "path": "add_borders.csdoc", "title": "Border",
@@ -583,7 +586,7 @@
       { "path": "OnKey_global_function.csdoc", "~title": "OnKey Global Function" },
       { "path": "refused_value.csdoc", "title": "OnRefused Global Function" },
       { "path": "OnStop_global_function.csdoc", "~title": "OnStop Global Function" },
-      { "path": "syncmessage_function.csdoc", "title": "OnSyncMessage Global Function" },
+      { "path": "sync_message.csdoc", "title": "OnSyncMessage Global Function" },
       { "path": "OnSystemMessage_global_function.csdoc", "~title": "OnSystemMessage Global Function" },
       { "path": "OnViewQuestionnaire_global_function.csdoc", "~title": "OnViewQuestionnaire Global Function" }
     ]
@@ -880,7 +883,9 @@
   { "path": "connection_function.csdoc", "~title": "Connection Function" },
   { "path": "connection_string.csdoc", "~title": "Connection String",
     "subindex": [
-      { "path": "encode_function.csdoc", "title": "Percent Encoding" }
+      { "path": "data_connection_string.csdoc", "~title": "Data Connection String" },
+      { "path": "encode_function.csdoc", "title": "Percent Encoding" },
+      { "path": "sync_connection_string.csdoc", "~title": "Synchronization Connection String" }
     ]
   },
   { "path": "batch_edit_applications.csdoc", "title": "Consistency Checks" },
@@ -999,6 +1004,11 @@
       { "path": "what_is_cspro.csdoc", "title": "What is" }
     ]
   },
+  { "path": "cspro_uris.csdoc", "title": "cspro://",
+    "subindex": [
+      { "path": "cspro_uris.csdoc", "~title": "CSPro URIs" }
+    ]
+  },
   { "path": "create_a_cspro_application.csdoc", "title": "CSPro Application",
     "subindex": [
       { "path": "create_a_cspro_application.csdoc", "title": "Create" }
@@ -1026,8 +1036,12 @@
     ]
   },
   { "path": "tool_list.csdoc", "title": "CSView" },
-  { "path": "data_source_csweb.csdoc", "~title": "CSWeb Data Source" },
-  { "path": "syncconnect_function_csweb.csdoc", "title": "CSWeb Synchronization" },
+  { "path": "sync_service_csweb.csdoc", "title": "CSWeb",
+    "subindex": [
+      { "path": "data_source_csweb.csdoc", "title": "Data Source" },
+      { "path": "sync_service_csweb.csdoc", "title": "Synchronization Service" }
+    ]
+  },
   { "path": "curocc_function.csdoc", "~title": "CurOcc Function" },
   { "path": "currentkey_function.csdoc", "~title": "CurrentKey Function",
     "subindex": [
@@ -1120,6 +1134,7 @@
   { "path": "data_sources.csdoc", "~title": "Data Sources",
     "subindex": [
       { "path": "data_source_csv.csdoc", "title": "Comma Delimited (CSV)" },
+      { "path": "data_connection_string.csdoc", "title": "Connection String" },
       { "path": "data_source_csdb.csdoc", "title": "CSPro DB" },
       { "path": "data_source_cspro_export.csdoc", "title": "CSPro Export" },
       { "path": "data_source_csweb.csdoc", "title": "CSWeb" },
@@ -1343,7 +1358,7 @@
   { "path": "add_lines_or_boxes_to_a_form.csdoc", "title": "Draw Boxes on a Form" },
   { "path": "drop_down.csdoc", "title": "Drop Down" },
   { "path": "manage_application_files.csdoc", "title": "Drop Files from an Application" },
-  { "path": "syncconnect_function_dropbox.csdoc", "title": "Dropbox Synchronization" },
+  { "path": "sync_service_dropbox.csdoc", "~title": "Dropbox Synchronization Service" },
   { "path": "include_exclude_special_values_in_a_variable.csdoc", "title": "Dump",
     "subindex": [
       { "path": "include_exclude_special_values_in_a_variable.csdoc", "title": "Undefined Values" }
@@ -1763,7 +1778,7 @@
       { "path": "tool_list.csdoc", "title": "Tabulate Frequencies Tool" }
     ]
   },
-  { "path": "syncconnect_function_ftp.csdoc", "title": "FTP Synchronization" },
+  { "path": "sync_service_ftp.csdoc", "~title": "FTP Synchronization Service" },
   { "path": "change_the_view.csdoc", "title": "Full Screen" },
   { "path": "run_production_data_entry.csdoc", "title": "FullScreen" },
   { "path": "function_statement.csdoc", "~title": "Function Statement" },
@@ -2481,8 +2496,7 @@
   { "path": "loadcase_function.csdoc", "~title": "LoadCase Function" },
   { "path": "loading_and_saving_preferences.csdoc", "~title": "Loading and Saving Preferences" },
   { "path": "loadsetting_function.csdoc", "~title": "loadsetting Function" },
-  { "path": "syncconnect_function_dropbox_local.csdoc", "title": "LocalDropbox Synchronization" },
-  { "path": "syncconnect_function_files_local.csdoc", "title": "LocalFiles Synchronization" },
+  { "path": "sync_service_local_files.csdoc", "~title": "Local Files Synchronization Service" },
   { "path": "CS_Localhost.csdoc", "~title": "Localhost Action Invoker Namespace",
     "subindex": [
       { "path": "CS_Localhost_mapActionResult.csdoc", "~title": "Localhost.mapActionResult Action" },
@@ -2929,7 +2943,7 @@
   { "path": "onoccchange_statement.csdoc", "~title": "OnOccChange Statement" },
   { "path": "refused_value.csdoc", "title": "OnRefused Global Function" },
   { "path": "OnStop_global_function.csdoc", "~title": "OnStop Global Function" },
-  { "path": "syncmessage_function.csdoc", "title": "OnSyncMessage Global Function" },
+  { "path": "sync_message.csdoc", "title": "OnSyncMessage Global Function" },
   { "path": "OnSystemMessage_global_function.csdoc", "~title": "OnSystemMessage Global Function" },
   { "path": "OnViewQuestionnaire_global_function.csdoc", "~title": "OnViewQuestionnaire Global Function" },
   { "path": "open_an_application.csdoc", "~title": "Open an Existing Application" },
@@ -3023,7 +3037,7 @@
       { "path": "logtext_function.csdoc", "~title": "LogText Function" },
       { "path": "paradata_function.csdoc", "~title": "paradata Function" },
       { "path": "properties_paradata.csdoc", "title": "Properties" },
-      { "path": "syncparadata_function.csdoc", "title": "Sync" },
+      { "path": "syncparadata_function.csdoc", "title": "Synchronization" },
       { "path": "tool_list.csdoc", "title": "Viewer" }
     ]
   },
@@ -4079,15 +4093,23 @@
     ]
   },
   { "path": "synchronization.csdoc", "title": "sync.log File" },
+  { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace",
+    "subindex": [
+      { "path": "CS_Sync_connect.csdoc", "~title": "Sync.connect Action" },
+      { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" },
+      { "path": "CS_Sync_sendMessage.csdoc", "~title": "Sync.sendMessage Action" },
+      { "path": "CS_Sync_syncParadata.csdoc", "~title": "Sync.syncParadata Action" }
+    ]
+  },
+  { "path": "syncable_name.csdoc", "~title": "Syncable Name" },
   { "path": "syncapp_function.csdoc", "~title": "SyncApp Function" },
   { "path": "syncconnect_function.csdoc", "~title": "SyncConnect Function",
     "subindex": [
-      { "path": "syncconnect_function_bluetooth.csdoc", "title": "Bluetooth" },
-      { "path": "syncconnect_function_csweb.csdoc", "title": "CSWeb" },
-      { "path": "syncconnect_function_dropbox.csdoc", "title": "Dropbox" },
-      { "path": "syncconnect_function_ftp.csdoc", "title": "FTP" },
-      { "path": "syncconnect_function_dropbox_local.csdoc", "title": "LocalDropbox" },
-      { "path": "syncconnect_function_files_local.csdoc", "title": "LocalFiles" }
+      { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth" },
+      { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
+      { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
+      { "path": "sync_service_ftp.csdoc", "title": "FTP" },
+      { "path": "sync_service_local_files.csdoc", "title": "Local Files" }
     ]
   },
   { "path": "syncdata_function.csdoc", "~title": "SyncData Function" },
@@ -4096,11 +4118,31 @@
   { "path": "synchronization.csdoc", "title": "Synchronization",
     "subindex": [
       { "path": "synchronization.csdoc", "title": "Overview" },
+      { "path": "sync_services.csdoc", "title": "Services" },
       { "path": "synchronization_simple.csdoc", "title": "Simple Synchronization" },
-      { "path": "synctime_function.csdoc", "title": "Statistics" }
+      { "path": "synctime_function.csdoc", "title": "Statistics" },
+      { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
+      { "path": "syncable_name.csdoc", "~title": "Syncable Name" }
     ]
   },
-  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Synchronous Execution" },
+  { "path": "sync_message.csdoc", "~title": "Synchronization Messages",
+    "subindex": [
+      { "path": "sync_message.csdoc", "title": "OnSyncMessage Global Function" },
+      { "path": "CS_Sync_sendMessage.csdoc", "~title": "Sync.sendMessage Action" },
+      { "path": "syncmessage_function.csdoc", "~title": "SyncMessage Function" }
+    ]
+  },
+  { "path": "sync_services.csdoc", "~title": "Synchronization Services",
+    "subindex": [
+      { "path": "sync_service_bluetooth.csdoc", "title": "Bluetooth" },
+      { "path": "sync_connection_string.csdoc", "title": "Connection String" },
+      { "path": "sync_service_csweb.csdoc", "title": "CSWeb" },
+      { "path": "sync_service_dropbox.csdoc", "title": "Dropbox" },
+      { "path": "sync_service_ftp.csdoc", "title": "FTP" },
+      { "path": "sync_service_local_files.csdoc", "title": "Local Files" }
+    ]
+  },
+  { "path": "action_invoker_execution_javascript_web.csdoc", "title": "Synchronous Execution (Action Invoker)" },
   { "path": "syncmessage_function.csdoc", "~title": "SyncMessage Function" },
   { "path": "syncparadata_function.csdoc", "~title": "SyncParadata Function" },
   { "path": "syncserver_function.csdoc", "~title": "SyncServer Function" },
@@ -4438,7 +4480,7 @@
       { "path": "do_statement.csdoc", "~title": "Do Statement" }
     ]
   },
-  { "path": "syncapp_function.csdoc", "title": "Update application",
+  { "path": "syncapp_function.csdoc", "title": "Update Application",
     "subindex": [
       { "path": "syncapp_function.csdoc", "~title": "SyncApp Function" }
     ]
@@ -4449,10 +4491,12 @@
       { "path": "change_field_properties.csdoc", "title": "Case Fields" }
     ]
   },
-  { "path": "sharable_uri.csdoc", "title": "URI",
+  { "path": "cspro_uris.csdoc", "title": "URI",
     "subindex": [
+      { "path": "cspro_uris.csdoc", "~title": "CSPro URIs" },
       { "path": "sharable_uri.csdoc", "~title": "Sharable URI" },
-      { "path": "encode_function.csdoc", "title": "URI Encoding" }
+      { "path": "encode_function.csdoc", "title": "URI Encoding" },
+      { "path": "cspro_uris.csdoc", "title": "URI Handler" }
     ]
   },
   { "path": "localhost_url.csdoc", "title": "URL",

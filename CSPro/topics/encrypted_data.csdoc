@@ -15,4 +15,4 @@ An Encrypted CSPro DB data source is like a <link data_source_csdb.csdoc>CSPro D
 <include "data_sources/encryption_technical_details.hgi" />
 
 
-<seealso dictionary_security_options.csdoc data_source_csdbe.csdoc connection_string.csdoc sqlite_in_cspro.csdoc />
+<seealso dictionary_security_options.csdoc data_source_csdbe.csdoc data_connection_string.csdoc sqlite_in_cspro.csdoc />

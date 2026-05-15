@@ -12,7 +12,7 @@ The following is a summary of the menu options available throughout CSPro:
     <cell><link TextView::introduction_to_text_viewer.csdoc>Text Viewer</link></cell><cell>View text or data files.</cell>
     <cell><link TblView::introduction_to_table_viewer.csdoc>Table Viewer</link></cell><cell>View CSPro tables.</cell>
     <cell><link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link></cell><cell>Tabulate frequency distributions for file contents.</cell>
-    <cell><link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link></cell><cell>Deploy one or multiple applications to a server.</cell>
+    <cell><link CSDeploy::introduction_to_deployment.csdoc>Deploy Application</link></cell><cell>Deploy one or multiple applications to a <link sync_services.csdoc>synchronization service</link>.</cell>
     <cell><link CSPack::introduction_to_pack_application.csdoc>Pack Application</link></cell><cell>Pack entire CSPro application into a ZIP file.</cell>
     <cell><link CSDiff::introduction_to_compare_data.csdoc>Compare Data</link></cell><cell>Compare contents of two similar data files.</cell>
     <cell><link CSConcat::introduction_to_concatenate_data.csdoc>Concatenate Data</link></cell><cell>Join text or data files one after the other.</cell>

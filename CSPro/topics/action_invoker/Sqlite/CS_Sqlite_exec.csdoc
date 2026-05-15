@@ -12,7 +12,7 @@ s = CS.Sqlite.exec(<arg>dbId</arg> := ..., <arg>sql</arg> := ...
 
 <indent><table 3 header nowrap>
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-    <cell><arg>dbId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sqlite.open</action>.</cell><cell>number~!~not required</cell>
+    <cell><arg>dbId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sqlite.open</action>.</cell><cell>number~!~recommended</cell>
     <cell><arg>sql</arg></cell><cell>The SQL statement(s) to execute.</cell><cell nowrap>string, array~!~required</cell>
     <cell><arg>bindings</arg></cell><cell>The bindings for the SQL statement.</cell><cell nowrap>array, object~!~not required</cell>
     <cell><arg>rowFormat</arg></cell><cell>The format to return results from a query.~!~The default value is <logiccolor>"object"</logiccolor>.</cell><cell nowrap>string~!~not required</cell>

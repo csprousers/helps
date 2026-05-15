@@ -61,6 +61,7 @@ This property block only applies to <link introduction_to_data_dictionary.csdoc>
 
 <list>
     <li><b>Read Optimization</b>: If <link case_read_optimization.csdoc>enabled</link>, only the <link item_description.csdoc>items</link> used in the application are read from <link data_sources.csdoc>data sources</link>, resulting in the faster execution of applications.</li>
+    <li><b>Syncable Name Override</b>: When defined, <link synchronization.csdoc>synchronization</link> routines will use the <link syncable_name.csdoc>syncable name</link>, rather than the dictionary's actual name, when sending or receiving cases from a <link sync_services.csdoc>synchronization service</link>.</li>
 </list>
 
 

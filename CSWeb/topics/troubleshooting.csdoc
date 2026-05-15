@@ -1,10 +1,12 @@
 <title>Troubleshooting</title>
 
+
 <subheader>Troubleshooting Problems</subheader>
 
 CSWeb logs errors to a <b>logs/api.log</b> file located in the CSWeb sources folder in your web server's root directory. This log file has more detailed information to help you troubleshoot problems.
 
 If you need assistance setting up CSWeb or troubleshooting problems, please email <link mailto:<definition mailing_list />><definition mailing_list /></link>. Attach to the email any server logs to help the CSPro development team diagnose the problem.
+
 
 <subheader>Reconfigure CSWeb</subheader>
 
@@ -17,9 +19,11 @@ To reconfigure or reset your CSWeb installation:
     <li>Open your web browser and launch the CSWeb setup page.</li>
 </list>
 
+
 <subheader>Code or configuration changes not taking effect</subheader>
 
 Delete the cache if you notice that your changes are not taking effect when you refresh the browser. From the CSWeb root folder the path to the cache folder is <i>var/cache</i>. Then refresh the browser.
+
 
 <subheader>Common errors during CSWeb setup</subheader>
 
@@ -35,11 +39,12 @@ The hostname is incorrect. This should be the hostname for the MySQL database, n
 
 This is a general error that could be caused by a number of different problems with the CSWeb configuration. For more information check the CSWeb log files and also check the Apache/IIS/PHP error log.
 
+
 <subheader>Common errors syncing to CSWeb from a tablet/phone</subheader>
 
 <i>Failed to connect to localhost</i>
 
-You are using a server URL that uses localhost. Localhost can only be used to access the server from a web browser running on the server itself. To access the server from another computer or device you must use either a domain name or the IP address of the server. If your server does not have a domain name or a static IP address you will need to obtain one. If you are unsure how to do this, you may want to consider using Dropbox synchronization instead of CSWeb.
+You are using a server URL that uses localhost. Localhost can only be used to access the server from a web browser running on the server itself. To access the server from another computer or device you must use either a domain name or the IP address of the server. If your server does not have a domain name or a static IP address you will need to obtain one. If you are unsure how to do this, you may want to consider using <link CSPro::sync_service_dropbox.csdoc>Dropbox</link> synchronization instead of CSWeb.
 
 <i>Unable to resolve host</i>
 
@@ -47,7 +52,8 @@ Either the server URL is incorrect or your device is not connected to the networ
 
 <i>Resource not found on server</i>
 
-The server URL is not correct. The host portion of the URL is probably correct but the part that follows is not. This often happens when "ui" is used instead of "api" at the end of the URL. For example, <i>http://example.org/csweb/ui</i> instead of <i>http://example.org/csweb/api</i>. Always use "api" when syncing with CSWeb from CSPro and use "ui" only when accessing CSWeb from your web browser.
+The server URL is not correct. The host portion of the URL is probably correct but the part that follows is not. This often happens when "ui" is used instead of "api" at the end of the URL. For example, <i>https://example.org/csweb/ui</i> instead of <i><definition csweb_example_url /></i>. Always use "api" when syncing with CSWeb from CSPro and use "ui" only when accessing CSWeb from your web browser.
+
 
 <subheader>Issues with CURL library when using IIS</subheader>
 

@@ -5,7 +5,7 @@
 
 The <b>CSPro Export</b> <link data_sources.csdoc>data source</link> allows writing, but not reading, data to any of CSPro's supported data sources. This data source wraps another data source, allows you to restrict which <link record_description.csdoc>records</link> are output, and creates a <link data_dictionary.csdoc>dictionary</link> that describes the output data. This data source is primarily intended for outputting your data to other formats.
 
-Typically CSPro uses a file extension to determine what kind of data source to open, but because there is no file associated with a CSPro Export data source, you must use the <link connection_string.csdoc>connection string</link> to specify that you want to use a CSPro Export data source. For example, the following connection string, specified in a <link run_production_batch_edits.csdoc>batch PFF</link>, would result in cases being written using the <link data_source_json.csdoc>JSON</link> data source, wrapped by the CSPro Export data source:
+Typically CSPro uses a file extension to determine what kind of data source to open, but because there is no file associated with a CSPro Export data source, you must use the <link data_connection_string.csdoc>connection string</link> to specify that you want to use a CSPro Export data source. For example, the following connection string, specified in a <link run_production_batch_edits.csdoc>batch PFF</link>, would result in cases being written using the <link data_source_json.csdoc>JSON</link> data source, wrapped by the CSPro Export data source:
 
 <pff>
 OutputData=.\census-<definition System::year />.json|type=CSProExport
@@ -28,7 +28,7 @@ The CSPro Export data source inherits the functionality of the data source it wr
 
 <subheader>Customizable Behavior</subheader>
 
-The following behavior can be customized by specifying properties in the <link connection_string.csdoc>connection string</link>. In addition to these properties, any properties supported by the wrapped data source are also handled.
+The following behavior can be customized by specifying properties in the <link data_connection_string.csdoc>connection string</link>. In addition to these properties, any properties supported by the wrapped data source are also handled.
 
 <table 2 header>
     <cell nowrap>Property Name and Values</cell><cell>Description</cell>
@@ -38,11 +38,11 @@ The following behavior can be customized by specifying properties in the <link c
     <include properties_record.hgi />
 </table>
 
-For example, the following connection string, specified in a <link run_production_batch_edits.csdoc>batch PFF</link>, would result in cases from the <logiccolor>SCHOOL_REC</logiccolor> record being written using the <link data_source_json.csdoc>CSPro DB</link> data source with an overridden name for the dictionary (rather than the default <i>school.csdb.dcf</i>).
+For example, the following connection string results in cases from the <logiccolor>SCHOOL_REC</logiccolor> record being written using the <link data_source_json.csdoc>CSPro DB</link> data source with an overridden name for the dictionary (rather than the default <i>school.csdb.dcf</i>).
 
-<pff>
-OutputData=.\school.csdb|type=CSProExport&record=SCHOOL_REC&dictionaryPath=school-export.dcf
-</pff>
+<color property_string>
+school.csdb|type=CSProExport&record=SCHOOL_REC&dictionaryPath=school-export.dcf
+</color>
 
 
 <seealso data_sources.csdoc />

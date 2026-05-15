@@ -1,6 +1,6 @@
 <title>Run Production Deployments</title>
 
-You can run production deployments by using the PFF as a command line parameter for CSDeploy.exe (the associated filename of this utility). For example, if you name your PFF file Deploy Survey.pff, then you can run the deployment by invoking:
+You can run production deployments by using the PFF as a command line parameter for CSDeploy.exe (the associated filename of this utility). For example, if you name your PFF file <b>Deploy Survey.pff</b>, then you can run the deployment by invoking:
 
 <indent><font monospace>"C:\Program Files (x86)\CSPro <definition CSPro::version />\CSDeploy.exe" "Deploy Survey.pff"</font></indent>
 
@@ -20,7 +20,7 @@ Application=.\Deployment.csds
 
 [Parameters]
 DeployToOverride=CSWeb
-SyncUrl=https://www.myserver.org/api
+SyncService=<definition csweb_example_url />
 </pff>
 
 
@@ -28,15 +28,17 @@ SyncUrl=https://www.myserver.org/api
 
 The <pffcolor>[Run Information]</pffcolor> block is required and must appear exactly as shown in the example above.
 
+
 <subheader>[Files]</subheader>
 
 The <pffcolor>[Files]</pffcolor> block is required and defines the script that will be used during the deployment.
+
 
 <subheader>[Parameters]</subheader>
 
 The <pffcolor>[Parameters]</pffcolor> block is optional and defines additional options for the deployment.
 
 <list>
-	<li><pffcolor>DeployToOverride</pffcolor>= specifies the type of server to be used during the synchronization. Possible options are: <b>None</b>, <b>CSWeb</b>, <b>Dropbox</b>, <b>FTP</b>, <b>LocalFile</b> and <b>LocalFolder</b>.</li>
-	<li><pffcolor>SyncUrl</pffcolor>= specifies the URL of the server. This is not required, but if specified, the value will override any value specified for a CSWeb or FTP server.</li>
+    <li><pffcolor>DeployToOverride</pffcolor>= specifies the type of <link CSPro::sync_services.csdoc>synchronization service</link> to be used during the synchronization. Possible options are: <b>None</b>, <b>CSWeb</b>, <b>Dropbox</b>, <b>FTP</b>, <b>LocalFile</b> and <b>LocalFolder</b>.</li>
+    <li><pffcolor>SyncService</pffcolor>= specifies the <link CSPro::sync_connection_string.csdoc>connection string</link> identifying the type or URL of a <link CSPro::sync_services.csdoc>synchronization service</link>. This is not required, but if specified, the value will override any value defined in the <link save_deploy_spec.csdoc>deployment specification</link>.</li>
 </list>

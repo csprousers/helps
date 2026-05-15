@@ -33,7 +33,7 @@ The R data source supports the following features:
 
 <subheader>Customizable Behavior</subheader>
 
-The following behavior can be customized by specifying properties in the <link connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
+The following behavior can be customized by specifying properties in the <link data_connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
 
 <table 2 header>
     <cell nowrap>Property Name and Values</cell><cell>Description</cell>
@@ -55,11 +55,11 @@ The following behavior can be customized by specifying properties in the <link c
 <cell><indent><colorinline JSON>false</colorinline> ⁺⁺⁺</indent></cell><cell><indent>A factor of labels is not written.</indent></cell>
 </table>
 
-For example, the following connection string, specified in a <link run_production_batch_edits.csdoc>batch PFF</link>, would result in a R file containing the values of the <logiccolor>HOUSING_REC</logiccolor> record written as codes and factors:
+For example, the following connection string specifies a R file containing the values of the <logiccolor>HOUSING_REC</logiccolor> record written as codes and factors:
 
-<pff>
-OutputData=housing.RData|writeFactors=true&record=HOUSING_REC
-</pff>
+<color property_string>
+housing.RData|writeFactors=true&record=HOUSING_REC
+</color>
 
 
 <seealso data_sources.csdoc />
