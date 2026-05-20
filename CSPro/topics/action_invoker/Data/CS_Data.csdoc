@@ -2,6 +2,8 @@
 
 The <action>Data</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to interact with <link data_sources.csdoc>data sources</link>.
 
+After <link CS_Data_open.csdoc>creating</link> a connection to a data source, a <link action_invoker_resource_ids.csdoc>resource ID</link> is returned that identifies the data source in subsequent actions until the connection is <link CS_Data_close.csdoc>closed</link>.
+
 
 <subheader>Functionality</subheader>
 
