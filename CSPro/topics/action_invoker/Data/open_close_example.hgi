@@ -1,0 +1,28 @@
+<color JavaScript>
+let dataId;
+
+try {
+    // open the Popstan Census example data
+    dataId = CS.Data.open({
+        connection: "Popstan Census.csdb"
+    });
+
+    // display the number of cases
+    const numCases = CS.Data.countCases({
+        dataId: dataId
+    });
+
+    print(`Popstan Census contains ${numCases} cases.`);
+}
+catch (error) {
+    print("Error interacting with data source: " + error);
+}
+finally {
+    // close the data source
+    if( dataId != undefined ) {
+        CS.Data.close({
+            dataId: dataId
+        });
+    }
+}
+</color>

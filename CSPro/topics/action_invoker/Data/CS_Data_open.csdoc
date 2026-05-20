@@ -1,4 +1,108 @@
 <title>Data.open Action</title>
 
 
-<seealso CS_Data.csdoc />
+<subheader>Format</subheader>
+
+<logicsyntax>
+d = CS.Data.open(<arg>connection</arg> := ... ‖ <arg>name</arg> := ...
+              『, <arg>dictionary</arg> := ...』
+              『, <arg>openFlags</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>connection</arg></cell><cell>The <link data_connection_string.csdoc>data connection string</link> specifying the <link data_sources.csdoc>data source</link>.</cell><cell>string, object~!~not required</cell>
+    <cell><arg>name</arg></cell><cell>The name of a <link introduction_to_data_dictionary.csdoc>dictionary</link> associated with an <link data_entry_application_file_ent.csdoc>application</link>.</cell><cell>string~!~not required</cell>
+    <cell><arg>dictionary</arg></cell><cell>The dictionary that describes the data source's cases.</cell><cell>string, object~!~not required</cell>
+    <cell><arg>openFlags</arg></cell><cell>Flags to control how the data source is opened.~!~The default value is <logiccolor>"read"</logiccolor>.</cell><cell>string~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.open</action> <link action_invoker.csdoc>action</link> opens or creates a <link data_sources.csdoc>data source</link> and returns a <link action_invoker_resource_ids.csdoc>resource ID</link> that can be used for future operations. The connection to the data source remains active until it is closed using <action>Data.close</action>.
+
+Either <arg>connection</arg> or <arg>name</arg> must be specified, with <arg>connection</arg> used for data sources that are not already connected to an application.
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>setfile</logiccolor>. When using actions, multiple data sources associated with the same dictionary can be opened, whereas using CSPro logic, there is only one dictionary-based data source per call to <logiccolor>setfile</logiccolor>.
+
+
+<subheader>Application Data Sources</subheader>
+
+If specifying <arg>name</arg>, the action connects to a data source that is connected to a dictionary that is part of an application. The access permissions and dictionary used by the application to open the data source are inherited, so the <arg>openFlags</arg> and <arg>dictionary</arg> arguments are ignored. For example, this code would create a connection to the data source associated with the dictionary named <logiccolor>CORRUPTION_DICT</logiccolor>:
+
+<logic>
+CS.Data.open(name := "CORRUPTION_DICT");
+</logic>
+
+The data source associated with the dictionary is evaluated every time the data resource ID is used, so if the application's data source changes, the resource ID will always refer to the current data source identified by the dictionary name.
+
+
+<subheader>Non-Application Data Sources</subheader>
+
+If specifying <arg>connection</arg>, the action will open a data source that is not already open as part of an application's dictionaries. The argument <arg>connection</arg> is a <link data_connection_string.csdoc>data connection string</link>, generally a path identifying a data file. Connection strings can be specified as a single string or as an object (with the rules for each <link connection_string.csdoc>described here</link>). Details about properties specific to each data source are available on the documentation describing each of the <link data_sources.csdoc>data sources</link>.
+
+The <arg>openFlags</arg> argument controls how the data source is opened and can be one of the following:
+
+<list>
+    <li><logiccolor>"read"</logiccolor>: The data source is opened in read-only mode, with an error occurring if the data source does not exist. Actions such as <action>Data.writeCase</action> will fail in this mode.</li>
+    <li><logiccolor>"readWrite"</logiccolor>: The data source is opened in read and write mode, with an error occurring if the data source does not exist.</li>
+    <li><logiccolor>"readWriteCreate"</logiccolor>: The data source is opened in read and write mode, with a new data source created if it does not already exist.</li>
+    <li><logiccolor>"readWriteTruncate"</logiccolor>: The data source is opened in read and write mode, with all cases deleted from the data source if it already exists. If the data source does not exist, it is created. Deleting cases cannot be undone so be careful using this mode.</li>
+</list>
+
+When opening an existing data source that has an embedded dictionary (e.g., a <link data_source_csdb.csdoc>CSPro DB</link> data source), it is not necessary to specify the dictionary that describes the data source's cases, as the embedded dictionary will be used when processing cases. However, if creating a new data source, or opening a data source without an embedded dictionary (e.g., a <link data_source_text.csdoc>Text</link> data source), you must specify the dictionary. The argument dictionary is determined as follows:
+
+<list ordered>
+    <li>If the connection string contains a <colorinline JSON>"dictionaryPath"</colorinline> property, the dictionary will be read from the disk, evaluated relative to the path of the data source.</li>
+    <li>If <arg>dictionary</arg> is an object, it is parsed as the JSON representation of a dictionary.</li>
+    <li>If <arg>dictionary</arg> is a string that matches the name of an application dictionary, that dictionary is used.</li>
+    <li>Otherwise, <arg>dictionary</arg> is parsed as a string with a file path identifying a dictionary on the disk.</li>
+</list>
+
+
+<subheader>Return Value</subheader>
+
+The action returns a numeric <link action_invoker_resource_ids.csdoc>resource ID</link> that is used to identify this data source in calls to future <action>Data</action> actions.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source does not exist when opening in a mode that requires an existing data source.</li>
+    <li>The data source does not have an embedded dictionary and a dictionary is not specified.</li>
+    <li>There is an error opening, creating, or otherwise connecting to the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript): Data Actions</subheader>
+
+<include open_close_example.hgi />
+
+
+<subheader>Example (CSPro Logic): Specifying Dictionaries</subheader>
+
+In an application with a dictionary <logiccolor>CORRUPTION_DICT</logiccolor>, statements like this might result in a similar result:
+
+<logic>
+// access the data source currently associated with the application's CORRUPTION_DICT dictionary
+CS.Data.open(name := "CORRUPTION_DICT");
+
+// open a text data source using the application's CORRUPTION_DICT dictionary
+CS.Data.open(connection := "data/justice.dat", dictionary := "CORRUPTION_DICT");
+
+// open a text data source specifying the file path of the dictionary
+CS.Data.open(connection := "data/justice.dat", dictionary := "dicts/corruption.dcf");
+
+// open a text data source specifying the file path of the dictionary in the connection string
+CS.Data.open(connection := "data/justice.dat|dictionaryPath=../dicts/corruption.dcf");
+
+// open a text data source specifying the dictionary contents in JSON format
+string dcfJson = CS.File.readText(path := "dicts/corruption.dcf");
+CS.Data.open(connection := "data/justice.csdb", dictionary := @object dcfJson);
+</logic>
+
+
+<seealso CS_Data.csdoc CS_Data_close.csdoc setfile_function.csdoc />

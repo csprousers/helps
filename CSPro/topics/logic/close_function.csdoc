@@ -14,10 +14,12 @@ The <logiccolor>close</logiccolor> function closes a file, whether opened as a d
 
 If closing a dictionary, the dictionary will be set to a <link data_source_none.csdoc>None data source</link> and will remain set to that source until the previous file is reopened using the <logiccolor>open</logiccolor> function or if a new file is associated with the dictionary using the <logiccolor>setfile</logiccolor> function.
 
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available when interacting with dictionaries by using the <action>Data.close</action> action.
+
 
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if successful and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
 
 
 <subheader>Example</subheader>
@@ -33,4 +35,4 @@ view(filename(report_file));
 </logic>
 
 
-<seealso open_function.csdoc setfile_function.csdoc File_close_function.csdoc />
+<seealso open_function.csdoc setfile_function.csdoc CS_Data_close.csdoc File_close_function.csdoc />
