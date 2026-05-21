@@ -10,6 +10,7 @@ After <link CS_Data_open.csdoc>creating</link> a connection to a data source, a 
 <table 2 header nowrap>
     <cell>Action</cell><cell>Description</cell>
     <cell><action>Data.close</action></cell><cell>Closes a previously opened data source.</cell>
+    <cell><action>Data.contains</action></cell><cell>Returns whether a data source contains a specific case.</cell>
     <cell><action>Data.getCase</action></cell><cell>Returns a specific case, or the current case, associated with a dictionary.</cell>
     <cell><action>Data.open</action></cell><cell>Opens a data source and returns an ID that can be used for future operations.</cell>
 </table>

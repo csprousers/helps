@@ -1,10 +1,12 @@
 <title>Find Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
 b = find(<arg>dictionary_name</arg>, <arg>relational_operator</arg>, <arg>key_prefix</arg>);
 </logicsyntax>
+
 
 <subheader>Description</subheader>
 
@@ -18,9 +20,13 @@ The string expression <arg>key_prefix</arg> specifies the condition to use when 
 
 An additional option, using <logiccolor>uuid</logiccolor> instead of a relational operator, determines the existence of a case based on the case's <link data_source_identification_of_cases.csdoc>UUID</link>, not the case's key. This may be useful when looking up duplicate or deleted cases.
 
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available when interacting with dictionaries by using the <action>Data.contains</action> action.
+
+
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if a case is found and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if a case is found and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
+
 
 <subheader>Example</subheader>
 
@@ -33,4 +39,5 @@ PROC OCCUPATION
     endif;
 </logic>
 
-<seealso locate_function.csdoc countcases_function.csdoc />
+
+<seealso locate_function.csdoc countcases_function.csdoc CS_Data_contains.csdoc />

@@ -1,4 +1,55 @@
 <title>Data.contains Action</title>
 
 
-<seealso CS_Data.csdoc />
+<subheader>Format</subheader>
+
+<logicsyntax>
+b = CS.Data.contains(<arg>dataId</arg> := ...,
+                     <arg>key</arg> := ... ‖ <arg>uuid</arg> := ... ‖ <arg>position</arg> := ...)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>key</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>key</link> (case IDs) of a case.</cell><cell>string~!~not required</cell>
+    <cell><arg>uuid</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>UUID</link> of a case.</cell><cell>string~!~not required</cell>
+    <cell><arg>position</arg></cell><cell>The "<link data_source_identification_of_cases.csdoc>position</link>" of a case.</cell><cell>number~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.contains</action> <link action_invoker.csdoc>action</link> determines if a case exists in a <link data_sources.csdoc>data source</link>.
+
+<include dataId_resource_id.hgi />
+
+<include case_specification.hgi />
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>find</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns a boolean value indicating if the case exists.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (CSPro Logic)</subheader>
+
+<logic>
+if tonumber(CS.Data.contains(dataId := "RENARD_DICT", key := "260519")) then
+    //
+endif;
+</logic>
+
+
+<seealso CS_Data.csdoc CS_Data_countCases.csdoc CS_Data_query.csdoc CS_Data_readCase.csdoc find_function.csdoc />

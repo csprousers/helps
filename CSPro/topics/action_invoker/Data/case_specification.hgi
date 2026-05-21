@@ -1,0 +1,9 @@
+The case is specified by using one of the <link data_source_identification_of_cases.csdoc>data source case identifiers</link>:
+
+<list>
+    <li><arg>key</arg>: When specifying a key (case IDs), only non-deleted cases are matched.</li>
+    <li><arg>uuid</arg>: Specifying a case's UUID allows matching on all cases, including deleted cases. Note that <link data_sources.csdoc>not all data sources</link> use UUIDs.</li>
+    <li><arg>position</arg>: Identification by the "location" of the case in the data source also matches on all cases. Note that the position value <link data_source_identification_of_cases.csdoc>can change</link> when the data source is modified.</li>
+</list>
+
+One of these case identifiers must be specified. If multiple identifiers are specified, <arg>uuid</arg> is prioritized over <arg>position</arg>, which is prioritized over <arg>key</arg>.
