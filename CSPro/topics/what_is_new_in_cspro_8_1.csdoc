@@ -5,6 +5,8 @@ This is a detailed list of changes in CSPro 8.1. For a more general overview, se
 
 A feature showcase demonstrating some of CSPro 8.1's new features is available on <link <definition github_feature_showcase_url />/tree/8.1/8.1>GitHub</link>.
 
+<i>There are some <link breaking_changes.csdoc>breaking changes</link> in <link CSWeb::introduction_to_csweb.csdoc>CSWeb 8.1</link>. When upgrading CSWeb, make sure that you are aware of how these changes will impact your processes. CSPro 8.1 is compatible with CSWeb 8.0.</i>
+
 
 <subheader>General</subheader>
 
@@ -180,8 +182,10 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <subheader>CSWeb</subheader>
 
 <list>
-    <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> now requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
-    <li>The <i>Data</i> tab now contains two <link CSWeb::accessing_data.csdoc>Manage in CSPro</link> options, one to view data directly using <link DataManager::introduction.csdoc>Data Manager</link> without downloading the entire data set, as well as the previous option to download the data to your local machine.</li>
+    <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
+    <li>The <link CSWeb::roles.csdoc>roles</link> system has been overhauled, providing more granular control over what users can access. A new predefined role, <i>Developer</i>, gives more access than the <i>Standard User</i> role.</li>
+    <li>The <i>Standard User</i> role can no longer <link CSDeploy::introduction_to_deployment.csdoc>create deployment packages</link>, though it can be used to download and update applications. The new <i>Developer</i> role can be used for application deployments.</li>
+    <li>The <i>Data</i> tab now contains two <link CSWeb::accessing_data.csdoc>Manage in CSPro</link> options: one to view data directly using <link DataManager::introduction.csdoc>Data Manager</link> without downloading the entire data set, and the original option to download the data to your local machine.</li>
 </list>
 
 

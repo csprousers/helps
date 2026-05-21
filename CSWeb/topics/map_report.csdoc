@@ -2,6 +2,7 @@
 
 The Map Report helps visualize data. If each case has latitude and longitude data associated with it, then it can be displayed on the map as a marker. This allows coverage of a geographical area to be reviewed in a glance. Each marker displays additional information if clicked on and allows the opening of the case for viewing.
 
+
 <subheader>Setup Checklist</subheader>
 
 <list ordered>
@@ -13,9 +14,11 @@ The Map Report helps visualize data. If each case has latitude and longitude dat
     <li> Run CSWeb command line process </li>
 </list>
 
+
 <subheader>Upload Dictionary and Data</subheader>
 
 Upload the dictionary and then the data to the <b>Data page</b>. If the dictionary and data were already uploaded then this step can be skipped. However, the dictionary and data must include <b>latitude</b> and <b>longitude</b> data for each case. Otherwise, the case will not be displayed on the map.
+
 
 <subheader>Import Labels</subheader>
 
@@ -29,13 +32,15 @@ By default only codes will be shown for id items. Id items appear as values for 
 
 Labels are imported by clicking the <b>Import Report Labels</b> button on the <b>Data page</b>.
 
+
 <subheader>Add a Database</subheader>
 
-Add a new database to using the MySQL command line, MySQL workbench, or phpMyAdmin. Create a user with access to the new database. For security reasons the database user should have a corresponding password. This database is different than the database created during the setup of CSWeb. The database will hold relational data after <link CSWeb::data_settings.csdoc>processing cases</link>.
+Add a new database to using the MySQL command line, MySQL workbench, or phpMyAdmin. Create a user with access to the new database. For security reasons the database user should have a corresponding password. This database is different than the database created during the setup of CSWeb. The database will hold relational data after <link data_settings.csdoc>processing cases</link>.
+
 
 <subheader>Add a Configuration</subheader>
 
-See instructions for <link CSWeb::data_settings.csdoc>Add Configuration</link>. At the bottom of the <b>Add Configuration</b> dialog check the <b>Enable Map Report</b> checkbox. Then the following configuration details can be entered.
+See instructions for <link data_settings.csdoc>Add Configuration</link>. At the bottom of the <b>Add Configuration</b> dialog check the <b>Enable Map Report</b> checkbox. Then the following configuration details can be entered.
 
 <list ordered>
     <li> <b>Tile provider</b>: Allows the selection of the source of base maps (Esri, Mapbox, or local files). </li>
@@ -45,9 +50,11 @@ See instructions for <link CSWeb::data_settings.csdoc>Add Configuration</link>. 
     <li> <b>Map popup items (max 5)</b>: Customize the popup dialog for each marker with additional data from the dictionary. A maximum of five options can be selected. </li>
 </list>
 
+
 <subheader>Run CSWeb Command Line Process</subheader>
 
-See instructions for <link CSWeb::data_settings.csdoc>Processing Cases</link>. Note that this is not a one-time operation. During data collection the command line process will need to be run repeatedly to update the data displayed on the map.
+See instructions for <link data_settings.csdoc>Processing Cases</link>. Note that this is not a one-time operation. During data collection the command line process will need to be run repeatedly to update the data displayed on the map.
+
 
 <subheader>Viewing a Map Report</subheader>
 

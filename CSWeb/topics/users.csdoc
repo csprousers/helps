@@ -1,0 +1,39 @@
+<title>Adding Users</title>
+
+Each user is composed of a username, first name, last name, <link roles.csdoc>role</link>, email (optional), phone number (optional), and password. The role can be a predefined or custom role.
+
+
+<subheader>Adding a User</subheader>
+
+<list ordered>
+    <li>Navigate to the <b>Users</b> tab of CSWeb.</li>
+    <li>On the right-hand side click the <b>Add User</b> button.</li>
+    <li>Enter the username, first name, last name, role, email (optional), phone number (optional), and password.</li>
+</list>
+
+
+<subheader>Import Users</subheader>
+
+To import multiple users, a CSV file is needed. Each row specifies a single user which has the following format: username, first name, last name, role, password, email (optional), phone number (optional). The CSV file can include a header row. If your CSV file has a header row tick "CSV File has a header row." If an error is detected with any row, no users will be added. Duplicate users are ignored.
+
+<list ordered>
+    <li>Navigate to the <b>Users</b> tab of CSWeb.</li>
+    <li>On the right-hand side click the <b>Import Users</b> button.</li>
+    <li>Browse to the CSV file.</li>
+</list>
+
+CSV Field Rules:
+
+<list>
+    <li>First and last name must only contain letters.</li>
+    <li>The role is the name of the role (e.g. <i>Standard User</i>).</li>
+    <li>The password must have at least 8 characters.</li>
+    <li>The email and phone number can be blank.</li>
+</list>
+
+CSV Example Rows:
+
+<color text>
+user007, James, Bond, Developer, PasSwOrD7
+user008, Pedro, Gonzales, Standard User, PasSwOrD8, pgonzales@example.com, 123-4567
+</color>

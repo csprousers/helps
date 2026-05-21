@@ -44,8 +44,8 @@
       "title": "How to ...",
       "documents": [
         { "path": "accessing_data.csdoc", "~title": "Accessing Data" },
-        { "path": "adding_roles.csdoc", "~title": "Adding Roles" },
-        { "path": "adding_users.csdoc", "~title": "Adding Users" },
+        { "path": "roles.csdoc", "~title": "Managing Roles" },
+        { "path": "users.csdoc", "~title": "Adding Users" },
         { "path": "data_settings.csdoc", "~title": "Data Settings" },
         { "path": "additional_configuration_options.csdoc", "~title": "Additional Configuration Options" },
         { "path": "upload_files.csdoc", "~title": "Upload Files" },

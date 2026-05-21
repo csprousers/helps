@@ -37,8 +37,8 @@ This guide contains the following information:
 
 <list>
     <li><topic accessing_data.csdoc /></li>
-    <li><topic adding_roles.csdoc /></li>
-    <li><topic adding_users.csdoc /></li>
+    <li><topic roles.csdoc /></li>
+    <li><topic users.csdoc /></li>
     <li><topic data_settings.csdoc /></li>
     <li><topic upload_files.csdoc /></li>
     <li><topic map_report.csdoc /></li>
