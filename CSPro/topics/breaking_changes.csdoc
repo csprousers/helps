@@ -13,7 +13,8 @@ In general, newer versions of CSPro can execute applications and process data cr
 <subheader>CSPro 8.1</subheader>
 
 <list>
-    <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> now requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
+    <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
+    <li>CSWeb's <i>Standard User</i> <link CSWeb::roles.csdoc>role</link> can no longer <link CSDeploy::introduction_to_deployment.csdoc>create deployment packages</link>, though it can be used to download and update applications. The new <i>Developer</i> role can be used for application deployments.</li>
 </list>
 
 
@@ -28,7 +29,7 @@ In general, newer versions of CSPro can execute applications and process data cr
     <li>The templated reporting system introduced in <link what_is_new_in_cspro_7_1.csdoc>CSPro 7.1</link> has been removed.</li>
     <li>Android devices running CSEntry must be running version 5.0 (Lollipop) or higher.</li>
     <li>It is no longer possible to override <link Excel2CSPro::introduction_to_excel_to_cspro.csdoc>Excel to CSPro</link> parameters from the <link Excel2CSPro::running_conversions_from_the_command_line.csdoc>command line</link>, though some overrides can still be specified in the PFF.</li>
-    <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> now requires <link "https://www.php.net/releases/8.0">PHP 8.0</link> or higher.</li>
+    <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> requires <link "https://www.php.net/releases/8.0">PHP 8.0</link> or higher.</li>
 </list>
 
 
