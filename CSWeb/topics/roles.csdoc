@@ -1,74 +1,72 @@
 <title>Managing Roles</title>
 
-<md>
 
-## Overview
+<subheader>Overview</subheader>
 
-Roles in CSWeb control what users can access and modify within the system. Each role defines a set of permissions across features and data. CSWeb provides three built-in roles and allows administrators to create custom roles with granular permission settings.
+Roles in CSWeb control what users can access and modify within the system. Each role defines a set of permissions across features and data. CSWeb provides several predefined roles and allows administrators to create custom roles with granular permission settings.
 
-## Understanding Permissions
+
+<subheader>Understanding Permissions</subheader>
 
 CSWeb permissions are organized into the following categories:
 
-**Dictionaries**: Controls access to data dictionaries. Read allows viewing and downloading dictionaries; Write enables creating, modifying, and deleting them.
+<table 2 header nowrap>
+    <cell>Category</cell><cell>Description</cell>
+    <cell><b>Dictionaries</b></cell><cell>Controls access to data dictionaries. Read allows viewing and downloading dictionaries. Write enables creating, modifying, and deleting them.~!~&nbsp;</cell>
+    <cell><b>Data</b></cell><cell>Controls access to case data within dictionaries. Read allows viewing, downloading, and viewing sync history. Write enables adding, uploading, and modifying case data. Delete permissions are split into Dashboard (via the UI) and API (via API endpoints).~!~&nbsp;</cell>
+    <cell><b>Apps</b></cell><cell>Controls access to data collection applications. Read allows viewing and downloading. Write enables uploading, modifying, and deleting.~!~&nbsp;</cell>
+    <cell><b>Files</b></cell><cell>Controls access to files stored in CSWeb. Read allows viewing and downloading. Write enables uploading, modifying, and deleting. Synchronizing <link CSPro::syncparadata_function.csdoc>paradata</link> requires file permissions.~!~&nbsp;</cell>
+    <cell><b>Reports</b></cell><cell>Controls access to sync and map reports. Read allows viewing reports. Write enables creating, modifying, and deleting them. Users must also have read access to the associated dictionary data to work with a report.~!~&nbsp;</cell>
+    <cell><b>Users</b></cell><cell>Controls access to user management. Read allows viewing user lists and details. Write enables creating, modifying, importing, and deleting users.~!~&nbsp;</cell>
+    <cell><b>Roles</b></cell><cell>Controls access to role management. Read allows viewing roles. Write enables creating, modifying, and deleting roles.~!~&nbsp;</cell>
+    <cell><b>Dashboard Login</b></cell><cell>Allows users to log into the CSWeb web interface.</cell>
+</table>
 
-**Data**: Controls access to case data within dictionaries. Read allows viewing, downloading, and viewing sync history; Write enables adding, uploading, and modifying case data. Delete permissions are split into Dashboard (via the UI) and API (via API endpoints).
 
-**Apps**: Controls access to data collection applications. Read allows viewing and downloading; Write enables uploading, modifying, and deleting.
+<subheader>Default Roles</subheader>
 
-**Files**: Controls access to files stored in CSWeb. Read allows viewing and downloading; Write enables uploading, modifying, and deleting.
+CSWeb includes three predefined roles:
 
-**Reports**: Controls access to sync and map reports. Read allows viewing reports; Write enables creating, modifying, and deleting them. Users must also have read access to the associated dictionary data to work with a report.
+<table 2 header nowrap>
+    <cell>Role</cell><cell>Description</cell>
+    <cell><b>Administrator</b></cell><cell>Full access to all features and data, including user and role management. Use for system administrators. The <i>Administrator</i> role can be used for all aspects of CSWeb work except that it cannot be used when accessing data using the <link CSPro::data_source_csweb.csdoc>CSWeb data source</link>.~!~&nbsp;</cell>
+    <cell><b>Developer</b></cell><cell>Broad access to dictionaries, data, apps, files, reports, and user management. Cannot manage roles. Use for technical staff.~!~&nbsp;</cell>
+    <cell><b>Standard User</b></cell><cell>Read/write access to data and files and read-only access to dictionaries and apps. No access to the CSWeb Dashboard. Use for field data collectors.</cell>
+</table>
 
-**Users**: Controls access to user management. Read allows viewing user lists and details; Write enables creating, modifying, importing, and deleting users.
 
-**Roles**: Controls access to role management. Read allows viewing roles; Write enables creating, modifying, and deleting roles.
+<subheader>Creating Custom Roles</subheader>
 
-**Dashboard Login**: Allows users to log into the CSWeb web interface.
+Custom roles allow you to create permission sets tailored to specific user groups in your organization. To create a new role:
 
-## Default Roles
+<list ordered>
+    <li>Navigate to the <b>Roles</b> page from the sidebar menu.</li>
+    <li>Click the <b>Add Role</b> button.</li>
+    <li>Enter a <b>Role Name</b>.</li>
+    <li>Configure permissions for each category by checking the appropriate boxes.</li>
+    <li>Enable <b>Dashboard Login</b> if users should be able to log into the web interface.</li>
+    <li>Configure <b>Data Permissions</b> (see next section).</li>
+    <li>Click <b>Save</b>.</li>
+</list>
 
-CSWeb includes three predefined roles.
 
-| Role | Description |
-|---|---|
-| **Administrator** | Full access to all features and data, including user and role management. Use for system administrators. |
-| **Developer** | Broad access to dictionaries, data, apps, files, reports, and user management. Cannot manage roles. Use for technical staff. |
-| **Standard User** | Read/write access to data and files; read-only access to dictionaries and apps. No dashboard login by default. Use for field data collectors. |
-
-<br>
-
-## Creating Custom Roles
-
-Custom roles allow you to create permission sets tailored to specific user groups in your organization.
-
-### To Create a New Role:
-
-1. Navigate to the **Roles** page from the sidebar menu
-2. Click the **Add Role** button
-3. Enter a **Role Name**
-4. Configure permissions for each category by checking the appropriate boxes
-5. Enable **Dashboard Login** if users should be able to log into the web interface
-6. Configure **Data Permissions** (see next section)
-7. Click **Save**
-
-### Configuring Data Permissions
+<subheader>Configuring Data Permissions</subheader>
 
 Data permissions offer two levels of control:
 
-**Default Permissions**: Apply to all existing and future dictionaries unless overridden. Set these in the **(Default)** row of the Data Permissions table.
+<b>Default Permissions</b>: Permissions apply to all existing and future dictionaries unless overridden. Set these in the <b>(Default)</b> row of the Data Permissions table.
 
-**Dictionary-Specific Permissions**: To override defaults for a specific dictionary, uncheck **Use Default** for that dictionary and configure its permissions independently.
+<b>Dictionary-Specific Permissions</b>: To override defaults for a specific dictionary, uncheck <b>Use Default</b> for that dictionary and configure its permissions independently.
 
-> **Example**: Give a role default read-only access, but allow read and write access to a specific training dictionary.
+For example, a role for enumerators could have read/write access to the dictionaries for data collected in the field, but only read-only access to the geocodes dictionary.
 
-## Managing Existing Roles
 
-Roles can be edited, copied, or deleted from the **Roles** page using the icons next to each role. A few constraints to be aware of:
+<subheader>Managing Existing Roles</subheader>
 
-- The **Administrator** and **Standard User** roles cannot be modified or deleted
-- Copying a role opens a pre-filled form — enter a new name and adjust permissions as needed
-- Deleting a role reassigns all affected users to the **Standard User** role
+Roles can be edited, copied, or deleted from the <b>Roles</b> page using the icons next to each role. A few constraints to be aware of:
 
-</md>
-
+<list>
+    <li>The <i>Administrator</i> and <i>Standard User</i> roles cannot be modified or deleted.</li>
+    <li>Copying a role opens a pre-filled form. Enter a new name and adjust permissions as needed.</li>
+    <li>Deleting a role reassigns all affected users to the <i>Standard User</i> role.</li>
+</list>
