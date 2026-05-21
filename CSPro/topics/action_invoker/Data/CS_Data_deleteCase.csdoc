@@ -1,4 +1,60 @@
 <title>Data.deleteCase Action</title>
 
 
-<seealso CS_Data.csdoc />
+<subheader>Format</subheader>
+
+<logicsyntax>
+CS.Data.deleteCase(<arg>dataId</arg> := ...,
+                   <arg>key</arg> := ... ‖ <arg>uuid</arg> := ... ‖ <arg>position</arg> := ...)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>key</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>key</link> (case IDs) of a case.</cell><cell>string~!~not required</cell>
+    <cell><arg>uuid</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>UUID</link> of a case.</cell><cell>string~!~not required</cell>
+    <cell><arg>position</arg></cell><cell>The "<link data_source_identification_of_cases.csdoc>position</link>" of a case.</cell><cell>number~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.deleteCase</action> <link action_invoker.csdoc>action</link> deletes a case from a <link data_sources.csdoc>data source</link>. Some data sources mark the case for deletion but keep it in the data source (e.g., <link data_source_csdb.csdoc>CSPro DB</link>), while other data sources delete the case entirely and it cannot be restored (e.g., <link data_source_text.csdoc>Text</link>).
+
+<include dataId_resource_id.hgi />
+
+<include case_specification.hgi />
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>delcase</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns undefined.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>The data source was not opened in <link CS_Data_open.csdoc>read and write mode</link>.</li>
+    <li>The specified case does not exist in the data source.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+const dataId = /* retrieved from a call to CS.Data.open */;
+
+CS.Data.deleteCase({
+    dataId: dataId,
+    key: "010117100811280231"
+});
+</color>
+
+
+<seealso CS_Data.csdoc delcase_function.csdoc />
