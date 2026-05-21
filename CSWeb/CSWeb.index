@@ -1,7 +1,6 @@
 [
   { "path": "accessing_data.csdoc", "~title": "Accessing Data" },
-  { "path": "adding_roles.csdoc", "~title": "Adding Roles" },
-  { "path": "adding_users.csdoc", "~title": "Adding Users" },
+  { "path": "users.csdoc", "title": "Users" },
   { "path": "apache_server_setup.csdoc", "title": "Apache",
     "subindex": [
       { "path": "apache_csweb_setup.csdoc", "title": "CSWeb Setup" },
@@ -29,6 +28,7 @@
     ]
   },
   { "path": "introduction_to_csweb.csdoc", "~title": "Introduction to CSWeb" },
+  { "path": "roles.csdoc", "title": "Roles" },
   { "path": "map_report.csdoc", "~title": "Map Report" },
   { "path": "minimum_requirements.csdoc", "~title": "Minimum Server Requirements" },
   { "path": "production.csdoc", "~title": "Running CSWeb in Production",

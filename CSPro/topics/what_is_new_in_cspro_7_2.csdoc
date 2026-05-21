@@ -79,7 +79,7 @@ This is a detailed list of changes in CSPro 7.2. For a more general overview, se
 <subheader>CSWeb</subheader>
 
 <list>
-    <li>Add many users at once by <link CSWeb::adding_users.csdoc>uploading a .csv file</link> that specifies user details.</li>
+    <li>Add many users at once by <link CSWeb::users.csdoc>uploading a .csv file</link> that specifies user details.</li>
 </list>
 
 
