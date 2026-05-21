@@ -13,7 +13,7 @@ s = CS.Data.getCase(『<arg>name</arg> := ...』
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
     <cell><arg>name</arg></cell><cell>The name of a <link introduction_to_data_dictionary.csdoc>dictionary</link> associated with an application.</cell><cell>string~!~not required</cell>
     <cell><arg>key</arg></cell><cell>The <link key_function.csdoc>key</link> (case IDs) of a specific case to lookup.</cell><cell>string~!~not required</cell>
-    <cell><arg>uuid</arg></cell><cell>The <link uuid_function.csdoc>UUID</link> of a specific case to lookup.</cell><cell>string~!~not required</cell>
+    <cell><arg>uuid</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>UUID</link> of a specific case to lookup.</cell><cell>string~!~not required</cell>
     <cell><arg>serializationOptions</arg></cell><cell>Options for how the case should be serialized.</cell><cell>object~!~not required</cell>
 </table></indent>
 

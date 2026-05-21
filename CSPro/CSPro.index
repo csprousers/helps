@@ -4542,8 +4542,12 @@
   { "path": "using_subtables.csdoc", "~title": "Using Subtables" },
   { "path": "text_attributes.csdoc", "title": "UTF-16 LE" },
   { "path": "text_attributes.csdoc", "title": "UTF-8" },
-  { "path": "uuid_function.csdoc", "title": "UUID" },
-  { "path": "uuid_function.csdoc", "~title": "UUID Function" },
+  { "path": "uuid_function.csdoc", "title": "UUID",
+    "subindex": [
+      { "path": "data_source_identification_of_cases.csdoc", "title": "Case Identification" },
+      { "path": "uuid_function.csdoc", "~title": "UUID Function" }
+    ]
+  },
   { "path": "change_field_properties.csdoc", "title": "Validating Alpha Fields" },
   { "path": "batch_edit_applications.csdoc", "title": "Validating Data" },
   { "path": "change_field_properties.csdoc", "title": "Validation Method" },

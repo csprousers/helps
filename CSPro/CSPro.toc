@@ -929,6 +929,7 @@
           { "path": "data_source_spss.csdoc", "title": "SPSS" },
           { "path": "data_source_stata.csdoc", "title": "Stata" },
           { "path": "data_source_cspro_export.csdoc", "title": "CSPro Export" },
+          { "path": "data_source_identification_of_cases.csdoc", "~title": "Data Source Identification of Cases" },
           { "path": "case_read_optimization.csdoc", "~title": "Case Read Optimization" }
         ]
       },

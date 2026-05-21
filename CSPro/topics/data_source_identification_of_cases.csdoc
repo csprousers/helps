@@ -1,0 +1,26 @@
+<title>Data Source Identification of Cases</title>
+
+
+When working with cases in CSPro, a case's <b>key</b> is typically used to identify a case. The key is created by concatenating the values of the case's <link identification_items.csdoc>identification items</link> together into a string. The value of each identification item is formatted using that item's <i>Length</i> and <i>Zero Fill</i> <link item_properties.csdoc>properties</link>.
+
+However, CSPro <link data_sources.csdoc>data sources</link> use other identifiers to uniquely identify a case, partly because a case key may not be unique if a data source allows duplicate cases.
+
+Each data source uses a <b>position</b> to identify the "location" of the case in the data source. This position is always unique to the data source, but a case's position may change when cases are modified. For example, the position of a case in a <link data_source_text.csdoc>Text</link> data source indicates the offset in the text file where the case is located. This position could change if a case located prior to the case were deleted.
+
+Some data sources use a <b>UUID</b>, a universally unique identifier, to identify a case. A case's UUID can be retrieved using the <logiccolor>uuid</logiccolor> function. Unlike position, once automatically generated, a case's UUID does not change. Because the UUID is unique and does not change when the case key changes, it can be used to refer to a specific case. This remains true even as the case is modified.
+
+The following table describes these identifiers as used by CSPro's main data sources:
+
+<table 4 header nowrap>
+    <cell>Data Source</cell><cell>Key</cell><cell>Position</cell><cell>UUID</cell>
+    <cell><link data_source_csdb.csdoc>CSPro DB</link></cell><cell>not unique, duplicates allowed</cell><cell>unique, constant</cell><cell>unique, constant</cell>
+    <cell><link data_source_csdbe.csdoc>Encrypted CSPro DB</link></cell><cell>not unique, duplicates allowed</cell><cell>unique, constant</cell><cell>unique, constant</cell>
+    <cell><link data_source_text.csdoc>Text</link></cell><cell>unique</cell><cell>unique, can change</cell><cell>unique, constant</cell>
+    <cell><link data_source_json.csdoc>JSON</link></cell><cell>not unique, duplicates allowed</cell><cell>unique, can change</cell><cell>not used</cell>
+    <cell><link data_source_csweb.csdoc>CSWeb</link></cell><cell>not unique, duplicates allowed</cell><cell>unique, constant</cell><cell>unique, constant</cell>
+</table>
+
+Note that it is possible for a Text data source to contain cases sharing the same key. For example, multiple data sources concatenated using the "<link CSConcat::concatenation.csdoc>file contents</link>" could result in duplicate cases. If so, this Text data source would not be usable by some CSPro functions because an <link index_file_csidx.csdoc>index</link> cannot be created when the keys are not unique.
+
+
+<seealso identification_items.csdoc key_function.csdoc currentkey_function.csdoc uuid_function.csdoc />

@@ -13,7 +13,7 @@ s = CS.Application.getQuestionnaireContent(『<arg>name</arg> := ...』
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
     <cell><arg>name</arg></cell><cell>The name of a <link forms_file_fmf.csdoc>form file</link> or <link introduction_to_data_dictionary.csdoc>dictionary</link> associated with an <link data_entry_application_file_ent.csdoc>application</link>, or the name of an application.</cell><cell>string~!~not required</cell>
     <cell><arg>key</arg></cell><cell>The <link key_function.csdoc>key</link> (case IDs) of a specific case to attach to the questionnaire content.</cell><cell>string~!~not required</cell>
-    <cell><arg>uuid</arg></cell><cell>The <link uuid_function.csdoc>UUID</link> of a specific case to attach to the questionnaire content.</cell><cell>string~!~not required</cell>
+    <cell><arg>uuid</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>UUID</link> of a specific case to attach to the questionnaire content.</cell><cell>string~!~not required</cell>
     <cell><arg>serializationOptions</arg></cell><cell>Options for how the case should be serialized (if applicable).</cell><cell>object~!~not required</cell>
 </table></indent>
 

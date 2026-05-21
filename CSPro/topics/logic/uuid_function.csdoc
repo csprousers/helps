@@ -1,10 +1,12 @@
 <title>UUID Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
 s = uuid(『<arg>dictionary_name</arg>』);
 </logicsyntax>
+
 
 <subheader>Description</subheader>
 
@@ -14,11 +16,13 @@ This <logiccolor>uuid</logiccolor> function returns a human-readable string cont
 
 This is a string representation of a 128-bit number that can essentially be considered globally unique. The probability of generating the same UUID twice is near zero. You will receive a different string every time you call the function.
 
-If an optional <arg>dictionary_name</arg> is specified, the function returns the UUID (internal key) associated with the currently loaded case. This may be useful when working with paradata queries.
+If an optional <arg>dictionary_name</arg> is specified, the function returns the UUID (<link data_source_identification_of_cases.csdoc>internal key</link>) associated with the currently loaded case. This may be useful when working with paradata queries.
+
 
 <subheader>Return Value</subheader>
 
 The function returns a string containing the human-readable representation of the identifier.
+
 
 <subheader>Example</subheader>
 
@@ -31,5 +35,6 @@ if UNIQUE_ID = "" then
     UNIQUE_ID = uuid();
 endif;
 </logic>
+
 
 <seealso random_function.csdoc />

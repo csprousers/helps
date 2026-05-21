@@ -70,7 +70,7 @@ A feature showcase demonstrating some of CSPro 7.1's new features is available o
     <li>The <logiccolor>timestamp</logiccolor> function returns the number of milliseconds in addition to the seconds.</li>
     <li> A new function, <logiccolor>timestring</logiccolor>, returns a custom formatted date and time string based on a given timestamp.</li>
     <li>The <logiccolor>sysdate</logiccolor> and <logiccolor>systime</logiccolor> functions can return a formatted local date or time from a UNIX time value returned by the <logiccolor>timestamp</logiccolor> function.</li>
-    <li>The <logiccolor>uuid</logiccolor> function can return the UUID (internal key) associated with a case.</li>
+    <li>The <logiccolor>uuid</logiccolor> function can return the UUID (<link data_source_identification_of_cases.csdoc>internal key</link>) associated with a case.</li>
     <li>The <logiccolor>loadcase</logiccolor> and <logiccolor>delcase</logiccolor> functions will give compiler warnings if the zero fill settings of the arguments do not match the settings of the external dictionary's IDs.</li>
     <li>The <logiccolor>writecase</logiccolor> and <logiccolor>delcase</logiccolor> functions now work in a <logiccolor>forcase</logiccolor> loop.</li>
     <li>Multiple string literals are automatically concatenated into a single string when separated by whitespace (e.g., <logiccolor>"A" "B"</logiccolor> is evaluated as <logiccolor>"AB"</logiccolor>).</li>

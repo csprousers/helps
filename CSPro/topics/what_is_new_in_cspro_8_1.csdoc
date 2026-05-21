@@ -176,7 +176,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <subheader>Tools</subheader>
 
 <list>
-    <li>The <link CSDiff::introduction_to_compare_data.csdoc>Compare Data</link> tool will match duplicate cases by <link uuid_function.csdoc>UUID</link> when running a comparison in <link CSDiff::run_a_compare.csdoc>indexed order</link>. Additionally, comparing cases in sequential order now works properly with data sources with duplicate cases.</li>
+    <li>The <link CSDiff::introduction_to_compare_data.csdoc>Compare Data</link> tool will match duplicate cases by <link data_source_identification_of_cases.csdoc>UUID</link> when running a comparison in <link CSDiff::run_a_compare.csdoc>indexed order</link>. Additionally, comparing cases in sequential order now works properly with data sources with duplicate cases.</li>
     <li>The <link ParadataConcat::introduction_to_paradata_concatenator.csdoc>Paradata Concatenator</link> and <logiccolor>paradata</logiccolor> function's concatenation routines have been optimized, improving performance when processing many paradata logs.</li>
 </list>
 
