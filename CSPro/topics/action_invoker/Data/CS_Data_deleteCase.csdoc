@@ -25,6 +25,8 @@ The <action>Data.deleteCase</action> <link action_invoker.csdoc>action</link> de
 
 <include case_specification.hgi />
 
+Another way that cases end up deleted is by using <action>Data.writeCase</action> with a case where the <colorinline JSON>"deleted"</colorinline> flag is set to <colorinline JSON>"true"</colorinline>.
+
 This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>delcase</logiccolor>.
 
 
@@ -57,4 +59,4 @@ CS.Data.deleteCase({
 </color>
 
 
-<seealso CS_Data.csdoc delcase_function.csdoc />
+<seealso CS_Data.csdoc CS_Data_writeCase.csdoc delcase_function.csdoc />

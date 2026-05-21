@@ -1,5 +1,6 @@
 <title>WriteCase Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
@@ -14,6 +15,9 @@ The <arg>dictionary_name</arg> must be supplied and refers to an external dictio
 
 After a case is written to an external file, the dictionary variables for that case remain in memory. If the application does not assign new values to all variables in the external dictionary before the next <logiccolor>writecase</logiccolor> function is executed, then the values from the previous case will be written to the external data file. Use the <logiccolor>clear</logiccolor> function to reset the values of these variables.
 
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available when interacting with dictionaries by using the <action>Data.writeCase</action> action.
+
+
 <subheader>No Index Mode</subheader>
 
 In a batch application it is possible to have the function output cases without updating the file's index. This allows the external data file to have duplicate cases, i.e., cases sharing the same set of IDs. This may be useful if the batch application is a tool to reformat large sets of data, a situation in which maintaining the file's index is very time consuming. Since no check is done for duplicates you should be certain that duplicates cannot be generated, or that you want duplicates in the data file. You cannot use other external file functions like <logiccolor>loadcase</logiccolor> or <logiccolor>retrieve</logiccolor> if using no index mode. To use this special mode, in the function arguments write (noindex) after the dictionary name.
@@ -24,7 +28,7 @@ b = writecase(<arg>dictionary_name</arg>(noindex));
 
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if the write is successful and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if the write is successful and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
 
 <subheader>Example</subheader>
 
@@ -35,4 +39,4 @@ LAST_WORK_TIME = timestamp();
 writecase(WORK_RECORD_DICT);
 </logic>
 
-<seealso loadcase_function.csdoc delcase_function.csdoc />
+<seealso loadcase_function.csdoc delcase_function.csdoc CS_Data_writeCase.csdoc />
