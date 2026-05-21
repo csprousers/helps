@@ -37,6 +37,18 @@ CS.Data.open(name := "CORRUPTION_DICT");
 
 The data source associated with the dictionary is evaluated every time the data resource ID is used, so if the application's data source changes, the resource ID will always refer to the current data source identified by the dictionary name.
 
+If working with application dictionaries, you can "open" them as detailed, or you can simply use the dictionary name as the resource ID for other actions. For example, these two approaches are equivalent:
+
+<logic>
+// check if a case exists by first opening the data source
+numeric dataId = tonumber(CS.Data.open(name := "RENARD_DICT"));
+
+if tonumber(CS.Data.contains(dataId := dataId, key := "260519")) then
+
+// check if a case exists without explicitly opening the data source
+if tonumber(CS.Data.contains(dataId := "RENARD_DICT", key := "260519")) then
+</logic>
+
 
 <subheader>Non-Application Data Sources</subheader>
 

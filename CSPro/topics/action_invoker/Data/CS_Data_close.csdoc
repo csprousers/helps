@@ -9,7 +9,7 @@ CS.Data.close(<arg>dataId</arg> := ...)
 
 <indent><table 3 header nowrap>
     <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
-    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>.</cell><cell>number~!~recommended</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
 </table></indent>
 
 
@@ -17,9 +17,9 @@ CS.Data.close(<arg>dataId</arg> := ...)
 
 The <action>Data.close</action> <link action_invoker.csdoc>action</link> closes a <link data_sources.csdoc>data source</link> previously opened using <action>Data.open</action>.
 
-The data source is identified using <arg>dataId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>. While optional, this should generally be specified explicitly. (If there is only one data source open, the resource ID can be calculated implicitly.)
+<include dataId_resource_id.hgi />
 
-If the data source previously opened was a dictionary that is part of an application, this action does not actually close the data source, as it is "owned" by the application, but instead destroys the Action Invoker's ability to access this data source using <arg>dataId</arg>.
+If the data source previously opened was a dictionary that is part of an application, this action does not actually close the data source, as it is "owned" by the application, but instead ends the Action Invoker's ability to access this data source using <arg>dataId</arg>.
 
 For data sources not connected to application dictionaries, the data source is closed and additional actions or queries cannot occur until opening the data source again.
 
