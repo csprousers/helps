@@ -1635,7 +1635,6 @@
               { "path": "CS_Data_contains.csdoc", "~title": "Data.contains Action" },
               { "path": "CS_Data_countCases.csdoc", "~title": "Data.countCases Action" },
               { "path": "CS_Data_deleteCase.csdoc", "~title": "Data.deleteCase Action" },
-              { "path": "CS_Data_getCase.csdoc", "~title": "Data.getCase Action" },
               { "path": "CS_Data_getCurrentCase.csdoc", "~title": "Data.getCurrentCase Action" },
               { "path": "CS_Data_open.csdoc", "~title": "Data.open Action" },
               { "path": "CS_Data_query.csdoc", "~title": "Data.query" },

@@ -12,8 +12,9 @@ After <link CS_Data_open.csdoc>creating</link> a connection to a data source, a 
     <cell><action>Data.close</action></cell><cell>Closes a previously opened data source.</cell>
     <cell><action>Data.contains</action></cell><cell>Returns whether a data source contains a specific case.</cell>
     <cell><action>Data.deleteCase</action></cell><cell>Deletes a case from a data source.</cell>
-    <cell><action>Data.getCase</action></cell><cell>Returns a specific case, or the current case, associated with a dictionary.</cell>
+    <cell><action>Data.getCurrentCase</action></cell><cell>Returns the current case associated with an application's dictionary.</cell>
     <cell><action>Data.open</action></cell><cell>Opens a data source and returns an ID that can be used for future operations.</cell>
+    <cell><action>Data.readCase</action></cell><cell>Returns a case read from a data source.</cell>
 </table>
 
 

@@ -1,4 +1,47 @@
 <title>Data.getCurrentCase Action</title>
 
 
-<seealso CS_Data.csdoc />
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.Data.getCurrentCase(<arg>dataId</arg> := ...,
+                        『, <arg>serializationOptions</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>serializationOptions</arg></cell><cell>Options for how the case should be serialized.</cell><cell>object~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.getCurrentCase</action> <link action_invoker.csdoc>action</link>  returns the current case associated with an application's <link introduction_to_data_dictionary.csdoc>dictionary</link>, returning its <link Case_json_representation.csdoc>JSON representation</link>. The optional <arg>serializationOptions</arg> argument allows you to specify how the case <link JSON_serialization_options.csdoc>should be serialized</link>, potentially overriding the <link properties_json_serialization.csdoc>default application settings</link>.
+
+<include dataId_resource_id.hgi />
+
+Because CSPro optimizes the reading of case data, you may need to disable the dictionary's <link case_read_optimization.csdoc>Read Optimization</link> setting when using this action on external dictionaries or in batch applications.
+
+
+<subheader>Return Value</subheader>
+
+The action returns the case object.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>The data source is not connected to a dictionary that is part of an application.</li>
+</list>
+
+
+<subheader>Example (CSPro Logic)</subheader>
+
+<include "../Dictionary/include_questionnaire_view_example.hgi" />
+
+
+<seealso CS_Data.csdoc CS_Data_readCase.csdoc CS_Application_getQuestionnaireContent.csdoc />

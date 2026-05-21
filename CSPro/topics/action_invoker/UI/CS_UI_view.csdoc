@@ -59,7 +59,7 @@ string questionnaireViewInput =
     maketext("{ \"dictionary\": %s, \"forms\": %s, \"case\": %s }",
              CS.Dictionary.getDictionary(name := "PLANETS_DICT"),
              CS.Application.getFormFile(name := "PLANETS_DICT"),
-             CS.Data.getCase(name := "PLANETS_DICT"));
+             CS.Data.getCurrentCase(dataId := "PLANETS_DICT"));
 
 // pass this input to the questionnaire view
 CS.UI.view(path := Path.concat(html, "questionnaire-view", "index.html"),

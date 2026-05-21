@@ -6,7 +6,7 @@ string questionnaireViewInput =
              CS.Dictionary.getDictionary(name := "MARINE_DICT"),
              CS.Application.getFormFile(path := "Marine Mammals Survey.fmf"),
              CS.Application.getQuestionText(path := "Marine Mammals Survey.ent.qsf"),
-             CS.Data.getCase(name := "MARINE_DICT"));
+             CS.Data.getCurrentCase(dataId := "MARINE_DICT"));
 
 // pass this input to the questionnaire view
 CS.UI.view(path := Path.concat(html, "questionnaire-view", "index.html"),

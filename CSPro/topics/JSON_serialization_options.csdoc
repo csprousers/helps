@@ -39,8 +39,10 @@ The following options control how case data is serialized. The default behavior 
 <subheader>Example</subheader>
 
 <logic>
-string caseJson = CS.Data.getCase(name := "JAMAICA_POP_DICT",
-                                  serializationOptions := @object "{ \"writeLabels\": true }");
+string caseJson = CS.Data.getCurrentCase(
+    dataId := "JAMAICA_POP_DICT",
+    serializationOptions := @object "{ \"writeLabels\": true }"
+);
 </logic>
 
 

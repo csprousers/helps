@@ -20,6 +20,8 @@ If no ID list is provided, the next logical case in the external file will be lo
 
 (In versions of CSPro prior to 7.0, calling this function would automatically <logiccolor>open</logiccolor> an external file. The function no longer does this, so if you call <logiccolor>close</logiccolor> on an external dictionary, you must <logiccolor>open</logiccolor> it manually before calling this function.)
 
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available when interacting with dictionaries by using the <action>Data.readCase</action> action.
+
 
 <subheader>Return Value</subheader>
 
@@ -35,4 +37,4 @@ endif;
 </logic>
 
 
-<seealso retrieve_function.csdoc writecase_function.csdoc CS_Data_getCase.csdoc />
+<seealso retrieve_function.csdoc writecase_function.csdoc CS_Data_readCase.csdoc />

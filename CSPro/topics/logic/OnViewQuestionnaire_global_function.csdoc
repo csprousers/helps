@@ -54,7 +54,7 @@ function numeric OnViewQuestionnaire(string dictionary_name)
         maketext("{ \"dictionary\": %s, \"forms\": %s, \"case\": %s }",
                  CS.Dictionary.getDictionary(name := dictionary_name),
                  CS.Application.getFormFile(name := dictionary_name),
-                 CS.Data.getCase(name := dictionary_name));
+                 CS.Data.getCurrentCase(dataId := dictionary_name));
 
     // pass this input to the questionnaire view
     CS.UI.view(path := Path.concat(html, "questionnaire-view", "index.html"),
