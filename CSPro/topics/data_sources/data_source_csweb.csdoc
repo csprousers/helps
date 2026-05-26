@@ -10,7 +10,22 @@ The <b>CSWeb</b> <link data_sources.csdoc>data source</link> ... TODO
 
 The CSWeb data source supports the following features:
 
-TODO
+<table 2 header nowrap>
+    <cell>Feature</cell><cell nowrap><center>Supported</center></cell>
+    <cell>Storage method</cell><cell><center>Server-based</center></cell>
+    <cell>Reading cases</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Writing cases</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Notes, case labels, and case statuses</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Storage of more than one kind of record</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Binary data items</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Deleting cases</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Undeleting cases</cell><cell><center><font green>✔</font></center></cell>
+    <cell><link synchronization.csdoc>Syncing</link> data</cell><cell><center>&mdash;</center></cell>
+    <cell>Cases with duplicate <link data_source_identification_of_cases.csdoc>keys</link></cell><cell><center><font green>✔</font></center></cell>
+    <cell>Case identification via <link data_source_identification_of_cases.csdoc>UUID</link></cell><cell><center><font green>✔</font></center></cell>
+    <cell>Contains an embedded dictionary</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Allows <link CSSort::choose_type_of_sort.csdoc>record sorts</link></cell><cell><center><font red>✘</font></center></cell>
+</table>
 
 
 <subheader>Binary Data</subheader>

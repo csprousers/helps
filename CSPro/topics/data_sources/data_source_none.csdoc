@@ -21,7 +21,8 @@ Typically CSPro uses a file extension to determine what kind of data source to o
 The None data source supports the following features:
 
 <table 2 header nowrap>
-    <cell>Feature</cell><cell nowrap>Supported</cell>
+    <cell>Feature</cell><cell nowrap><center>Supported</center></cell>
+    <cell>Storage method</cell><cell><center>None</center></cell>
     <cell>Reading cases</cell><cell><center><font green>✔</font></center></cell>
     <cell>Writing cases</cell><cell><center><font green>✔</font></center></cell>
     <cell>Notes, case labels, and case statuses</cell><cell><center><font green>✔</font></center></cell>
