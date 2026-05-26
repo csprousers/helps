@@ -47,6 +47,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell 2>&nbsp;</cell>
     <cell><action>Data.close</action> <sup>(CS)</sup></cell><cell>Closes a previously opened data source.</cell>
     <cell><action>Data.contains</action> <sup>(CS)</sup></cell><cell>Returns whether a data source contains a specific case.</cell>
+    <cell><action>Data.countCases</action> <sup>(CS)</sup></cell><cell>Returns the number of cases in a data source.</cell>
     <cell><action>Data.deleteCase</action> <sup>(CS)</sup></cell><cell>Deletes a case from a data source.</cell>
     <cell><action>Data.getCurrentCase</action> <sup>(CS)</sup></cell><cell>Returns the current case associated with an application's dictionary.</cell>
     <cell><action>Data.open</action> <sup>(CS)</sup></cell><cell>Opens a data source and returns an ID that can be used for future operations.</cell>
