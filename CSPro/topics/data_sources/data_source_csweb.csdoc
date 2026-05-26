@@ -3,26 +3,107 @@
 
 <subheader>Overview</subheader>
 
-The <b>CSWeb</b> <link data_sources.csdoc>data source</link> ... TODO
+The <b>CSWeb</b> <link data_sources.csdoc>data source</link> allows reading and writing data to a MySQL database hosted on a web server running <link CSWeb::introduction_to_csweb.csdoc>CSWeb</link>. This data source requires CSWeb 8.1+.  Access to cases occurs using CSWeb's REST API. Because the server must be reachable at all times, this data source cannot be used in offline mode. Case modification occurs directly on the server, so there is no need to run synchronizations as the data is automatically synchronized.
+
+Most people using CSWeb collect data using the <link data_source_csdb.csdoc>CSPro DB</link> data source and then use CSPro's <link synchronization.csdoc>synchronization</link> functionality to transfer cases from the local device (the CSPro DB file) to the server (CSWeb). In environments where access to the server is guaranteed, using the CSWeb data source can simplify data collection as it eliminates the need to synchronize data and it ensures that all users have real-time access to the latest data.
+
+Use the CSWeb data source with caution, as data collection operations will not succeed if the server is inaccessible.
 
 
 <subheader>Functionality</subheader>
 
 The CSWeb data source supports the following features:
 
-TODO
+<table 2 header nowrap>
+    <cell>Feature</cell><cell nowrap><center>Supported</center></cell>
+    <cell>Storage method</cell><cell><center>Server-based</center></cell>
+    <cell>Reading cases</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Writing cases</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Notes, case labels, and case statuses</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Storage of more than one kind of record</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Binary data items</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Deleting cases</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Undeleting cases</cell><cell><center><font green>✔</font></center></cell>
+    <cell><link synchronization.csdoc>Syncing</link> data</cell><cell><center>&mdash;</center></cell>
+    <cell>Cases with duplicate <link data_source_identification_of_cases.csdoc>keys</link></cell><cell><center><font green>✔</font></center></cell>
+    <cell>Case identification via <link data_source_identification_of_cases.csdoc>UUID</link></cell><cell><center><font green>✔</font></center></cell>
+    <cell>Contains an embedded dictionary</cell><cell><center><font green>✔</font></center></cell>
+    <cell>Allows <link CSSort::choose_type_of_sort.csdoc>record sorts</link></cell><cell><center><font red>✘</font></center></cell>
+</table>
+
+
+<subheader>User Permissions</subheader>
+
+When creating a connection, the data source attempts to log into CSWeb using credentials provided by the user, or specified in the connection string. The credentials for the CSWeb <link CSWeb::users.csdoc>user</link> are validated and then the <link CSWeb::roles.csdoc>role</link> and its permissions are checked:
+
+<list>
+    <li>The role <i>Administrator</i> cannot use the CSWeb data source.</li>
+    <li>The role requires <b>read</b> permissions for <i>Data</i> and <i>Dictionaries</i>.</li>
+    <li>The role requires <b>write</b> permission for <i>Data</i> when opening the data source in read and write mode.</li>
+    <li>The role requires <b>write</b> permission for <i>Dictionary</i> when opening a data source using a dictionary that has not already been added to CSWeb.</li>
+</list>
+
+Permissions can be <link CSWeb::roles.csdoc>defined</link> on a per-dictionary basis and the role only requires permission to access the dictionaries and data that are used by the data source.
+
+
+<subheader>Dictionary Specification</subheader>
+
+Most CSPro functionality accesses data with a known <link introduction_to_data_dictionary.csdoc>dictionary</link>. For example, a data entry application's main dictionary is the basis for the data collected using that application. However, some CSPro functionality can use an embedded dictionary. For example, when using <link DataManager::introduction.csdoc>Data Manager</link> to open a CSPro DB data source, it can use the dictionary that is embedded in the CSPro DB file to determine how to describe the data. In contrast, when opening a <link data_source_text.csdoc>Text</link> data source, Data Manager will ask what dictionary describes the data.
+
+A <link data_connection_string.csdoc>connection string</link> to access CSWeb data may look like this:
+
+<color property_string>
+<definition csweb_example_url />
+</color>
+
+If your data entry application uses a dictionary, MAIN_DICT, and an external dictionary, EXT_DICT, both could be set to use CSWeb. Based on the context of which dictionary this data source is associated with, CSPro knows whether to use CSWeb's MAIN_DICT databases or EXT_DICT databases. However, in circumstances where the dictionary is not explicitly known, such as when opening data using Data Manager, it can be specified using the property <colorinline JSON>"dictionaryName"</colorinline>:
+
+<color property_string>
+<definition csweb_example_url />|dictionaryName=EXT_DICT
+</color>
 
 
 <subheader>Binary Data</subheader>
 
-The CSWeb data source stores <link binary_dictionary_items.csdoc>binary data</link> as TODO
+The CSWeb data source stores <link binary_dictionary_items.csdoc>binary data</link> metadata in a table named <i>&lt;dictionary name&gt;_case_binary_data</i>. The binary data itself is stored on the server in the directory <i>files_csweb/binary-data/&lt;dictionary name&gt;</i>. Each file in this directory is named after the binary data's <link CS_Hash_createMd5.csdoc>MD5</link> signature. When reading case data, binary data is accessed using <link "https://en.wikipedia.org/wiki/Lazy_loading">lazy loading</link>, downloaded from CSWeb only when needed by the application.
+
+
+<subheader>Caching Data</subheader>
+
+To speed up access to CSWeb data, and to reduce server bandwidth, the default behavior is to cache responses from the server. Cached information is stored in an <link sqlite_in_cspro.csdoc>encrypted SQLite</link> file located in CSPro's temporary storage directory. On Windows, this file is stored in a directory located at <i>%AppData%/CSPro/csweb_cache/&lt;dictionary name&gt;</i>.
+
+This cache file is encrypted with a password that is stored in secure storage. The password is automatically generated by CSPro and is unique to each CSWeb user. This password is only used internally by CSPro and can be cleared using the <link manage_credentials.csdoc>Manage Credentials</link> dialog.
+
+Based on information from CSWeb, CSPro knows when the cached data is stale. In such cases, when newer data exists on the server, CSPro will request the data again rather than using the cache.
+
+Even though cached data is encrypted, if you do not want to store any data locally, you can disable the cache using the <colorinline JSON>"cacheLocally"</colorinline> property.
 
 
 <subheader>Customizable Behavior</subheader>
 
 The following behavior can be customized by specifying properties in the <link data_connection_string.csdoc>connection string</link>. The default behavior is marked with ⁺⁺⁺.
 
-TODO
+<table 2 header>
+    <cell nowrap>Property Name and Values</cell><cell>Description</cell>
+    <cell 2>&nbsp;</cell>
+    <include properties_cache.hgi />
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"cacheLocally"</colorinline></b></cell><cell>Determines if CSWeb responses are cached locally in an encrypted file. This is different than the <colorinline JSON>"cache"</colorinline> property, which applies to all data sources, which caches cases in memory during a single run of an application. The CSWeb local cache persists across application runs.</cell>
+    <cell><indent><colorinline JSON>true</colorinline> ⁺⁺⁺</indent></cell><cell><indent>CSWeb responses are cached in an encrypted file.</indent></cell>
+    <cell><indent><colorinline JSON>false</colorinline></indent></cell><cell><indent>CSWeb responses are not cached.</indent></cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"dictionaryName"</colorinline></b></cell><cell>A <link syncable_name.csdoc>dictionary syncable name</link> override. When defined, data is accessed using databases named after this override, not the name of the CSPro dictionary.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"password"</colorinline></b></cell><cell>The CSWeb user's password. Hardcoding passwords in applications is not recommended. This is only used if a username is also provided.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell><b><colorinline JSON>"username"</colorinline></b></cell><cell>The CSWeb user's username. This is only used if a password is also provided.</cell>
+</table>
+
+For example, the following connection string specifies that the local cache should not be used and that data should be accessed using databases based on a dictionary named SOIL_TEMPERATURE_DICT:
+
+<color property_string>
+<definition csweb_example_url />|cacheLocally=false&dictionaryName=SOIL_TEMPERATURE_DICT
+</color>
 
 
 <seealso data_sources.csdoc sync_service_csweb.csdoc />

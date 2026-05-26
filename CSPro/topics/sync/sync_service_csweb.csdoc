@@ -5,6 +5,8 @@
 
 <link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> is the preeminent CSPro synchronization option. It is a web server running the CSPro <link sync_services.csdoc>synchronization service</link> and is best suited for censuses and large surveys. CSWeb can be run on any web server with PHP and MySQL. It can be hosted on a headquarters computer, a hosted website, or a cloud-based virtual server. Configuring and maintaining a CSWeb server requires experience with web server <link CSWeb::best_practices.csdoc>administration</link> and cybersecurity. Users without these skills should consider using <link sync_service_dropbox.csdoc>Dropbox</link> or <link sync_service_ftp.csdoc>FTP</link> instead.
 
+In addition to using CSWeb as a synchronization service, directly accessing data stored on CSWeb is possible using the <link data_source_csweb.csdoc>CSWeb data source</link>.
+
 
 <subheader>CSWeb Connection</subheader>
 

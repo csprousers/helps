@@ -32,6 +32,8 @@ The <logiccolor>syncdata</logiccolor> function keeps track of which cases are tr
 
 The <logiccolor>syncdata</logiccolor> function is only supported when using <link data_source_csdb.csdoc>CSPro DB</link> or <link data_source_csdbe.csdoc>Encrypted CSPro DB</link> data sources. Data sources in the legacy <link data_source_text.csdoc>text</link> format may not be synchronized using <logiccolor>syncdata</logiccolor> but instead can be transferred using the <logiccolor>syncfile</logiccolor> function. That function always transfers the entire data source, however, increasing the amount of data transferred and allowing for one interviewer to overwrite the changes of another.
 
+An alternative to synchronizing data periodically is to use the <link data_source_csweb.csdoc>CSWeb data source</link> for data collection. Cases added or modified are directly updated on the server, as if <logiccolor>syncdata</logiccolor> were called after every action on a case.
+
 You can use the <logiccolor>synctime</logiccolor> function to get the time of the last <logiccolor>syncdata</logiccolor> call.
 
 

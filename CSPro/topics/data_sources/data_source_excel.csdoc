@@ -15,7 +15,8 @@ The Excel data source is used when a file has the extension <b>.xlsx</b>.
 The Excel data source supports the following features:
 
 <table 2 header nowrap>
-    <cell>Feature</cell><cell nowrap>Supported</cell>
+    <cell>Feature</cell><cell nowrap><center>Supported</center></cell>
+    <cell>Storage method</cell><cell><center>File-based</center></cell>
     <cell>Reading cases</cell><cell><center><font red>✘</font></center></cell>
     <cell>Writing cases</cell><cell><center><font green>✔</font></center></cell>
     <cell>Notes, case labels, and case statuses</cell><cell><center><font red>✘</font></center></cell>
