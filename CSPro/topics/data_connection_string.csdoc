@@ -38,6 +38,7 @@ The table below lists the type values as well as the default extension for each 
     <cell><link data_source_csdbe.csdoc>Encrypted CSPro DB</link></cell><cell nowrap>.csdbe</cell><cell><colorinline JSON>"EncryptedCSProDB"</colorinline></cell>
     <cell><link data_source_text.csdoc>Text</link></cell><cell nowrap>.dat</cell><cell><colorinline JSON>"Text"</colorinline></cell>
     <cell><link data_source_json.csdoc>JSON</link></cell><cell nowrap>.json</cell><cell><colorinline JSON>"JSON"</colorinline></cell>
+    <cell><link data_source_csweb.csdoc>CSWeb</link></cell><cell nowrap>&mdash;</cell><cell><colorinline JSON>"CSWeb"</colorinline></cell>
     <cell><link data_source_none.csdoc>None</link></cell><cell nowrap>&mdash;</cell><cell><colorinline JSON>"None"</colorinline></cell>
     <cell><link data_source_memory.csdoc>In-Memory</link></cell><cell nowrap>&mdash;</cell><cell><colorinline JSON>"Memory"</colorinline></cell>
     <cell><link data_source_csv.csdoc>Comma Delimited (CSV)</link></cell><cell nowrap>.csv</cell><cell><colorinline JSON>"CSV"</colorinline></cell>

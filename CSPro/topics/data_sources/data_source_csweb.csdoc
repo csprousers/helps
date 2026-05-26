@@ -3,7 +3,11 @@
 
 <subheader>Overview</subheader>
 
-The <b>CSWeb</b> <link data_sources.csdoc>data source</link> ... TODO
+The <b>CSWeb</b> <link data_sources.csdoc>data source</link> allows reading and writing data to a MySQL database hosted on a web server running <link CSWeb::introduction_to_csweb.csdoc>CSWeb</link>. Access to cases occurs using CSWeb's REST API. Because the server must be reachable at all times, this data source cannot be used in offline mode. Case modification occurs directly on the server, so there is no need to run synchronizations as the data is automatically synchronized.
+
+Most people using CSWeb collect data using the <link data_source_csdb.csdoc>CSPro DB</link> data source and then use CSPro's <link synchronization.csdoc>synchronization</link> functionality to transfer cases from the local device (the CSPro DB file) to the server (CSWeb). In environments where access to the server is guaranteed, using the CSWeb data source can simplify data collection as it eliminates the need to synchronize data and it ensures that all users have real-time access to the latest data.
+
+Use the CSWeb data source with caution, as data collection operations will not succeed if the server is inaccessible.
 
 
 <subheader>Functionality</subheader>
@@ -26,6 +30,37 @@ The CSWeb data source supports the following features:
     <cell>Contains an embedded dictionary</cell><cell><center><font green>✔</font></center></cell>
     <cell>Allows <link CSSort::choose_type_of_sort.csdoc>record sorts</link></cell><cell><center><font red>✘</font></center></cell>
 </table>
+
+
+<subheader>User Permissions</subheader>
+
+When creating a connection, the data source attempts to log into CSWeb using credentials provided by the user, or specified in the connection string. The credentials for the CSWeb <link CSWeb::users.csdoc>user</link> are validated and then the <link CSWeb::roles.csdoc>role</link> and its permissions are checked:
+
+<list>
+    <li>The role <i>Administrator</i> cannot use the CSWeb data source.</li>
+    <li>The role requires <b>read</b> permissions for <i>Data</i> and <i>Dictionaries</i>.</li>
+    <li>The role requires <b>write</b> permission for <i>Data</i> when opening the data source in read and write mode.</li>
+    <li>The role requires <b>write</b> permission for <i>Dictionary</i> when opening a data source using a dictionary that has not already been added to CSWeb.</li>
+</list>
+
+Permissions can be <link CSWeb::roles.csdoc>defined</link> on a per-dictionary basis and the role only requires permission to access the dictionaries and data that are used by the data source.
+
+
+<subheader>Dictionary Specification</subheader>
+
+Most CSPro functionality accesses data with a known <link introduction_to_data_dictionary.csdoc>dictionary</link>. For example, a data entry application's main dictionary is the basis for the data collected using that application. However, some CSPro functionality can use an embedded dictionary. For example, when using <link DataManager::introduction.csdoc>Data Manager</link> to open a CSPro DB data source, it can use the dictionary that is embedded in the CSPro DB file to determine how to describe the data. In contrast, when opening a <link data_source_text.csdoc>Text</link> data source, Data Manager will ask what dictionary describes the data.
+
+A <link data_connection_string.csdoc>connection string</link> to access CSWeb data may look like this:
+
+<color property_string>
+<definition csweb_example_url />
+</color>
+
+If your data entry application uses a dictionary, MAIN_DICT, and an external dictionary, EXT_DICT, both could be set to use CSWeb. Based on the context of which dictionary this data source is associated with, CSPro knows whether to use CSWeb's MAIN_DICT databases or EXT_DICT databases. However, in circumstances where the dictionary is not explicitly known, such as when opening data using Data Manager, it can be specified using the property <colorinline JSON>"dictionaryName"</colorinline>:
+
+<color property_string>
+<definition csweb_example_url />|dictionaryName=EXT_DICT
+</color>
 
 
 <subheader>Binary Data</subheader>
