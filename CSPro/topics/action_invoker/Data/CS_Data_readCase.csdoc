@@ -69,4 +69,4 @@ for (const [name, idOrRecord] of Object.entries(caseData.CLIMATE_LEVEL)) {
 </color>
 
 
-<seealso CS_Data.csdoc CS_Data_getCurrentCase.csdoc CS_Data_writeCase.csdoc loadcase_function.csdoc />
+<seealso CS_Data.csdoc CS_Data_getCurrentCase.csdoc CS_Data_queryCases.csdoc CS_Data_writeCase.csdoc loadcase_function.csdoc />

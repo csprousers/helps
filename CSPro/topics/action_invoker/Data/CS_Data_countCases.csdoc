@@ -18,7 +18,7 @@ i = CS.Data.countCases(<arg>dataId</arg> := ...,
 
 <subheader>Description</subheader>
 
-The <action>Data.countCases</action> <link action_invoker.csdoc>action</link> returns the number of cases that exist in a <link data_sources.csdoc>data source</link>.
+The <action>Data.countCases</action> <link action_invoker.csdoc>action</link> returns the number of cases that exist in a <link data_sources.csdoc>data source</link>. This value is also retrievable using <action>Data.query</action>.
 
 <include dataId_resource_id.hgi />
 

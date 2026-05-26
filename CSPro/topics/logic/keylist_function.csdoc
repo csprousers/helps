@@ -15,6 +15,9 @@ The <logiccolor>keylist</logiccolor> function fills <arg>key_listing</arg>, an o
 It is possible, by specifying <link set_access_statement.csdoc>dictionary access parameters</link> after the dictionary name, to limit the keys that the <logiccolor>keylist</logiccolor> function returns.
 
 
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available when interacting with dictionaries by using the <action>Data.queryKeys</action> action.
+
+
 <subheader>Return Value</subheader>
 
 The function returns the number of cases in file.
@@ -52,4 +55,4 @@ PROC HOUSEHOLD_NUMBER
 </logic>
 
 
-<seealso key_function.csdoc />
+<seealso key_function.csdoc CS_Data_queryKeys.csdoc />

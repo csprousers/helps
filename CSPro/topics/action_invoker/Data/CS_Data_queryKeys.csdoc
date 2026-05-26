@@ -1,4 +1,65 @@
 <title>Data.queryKeys Action</title>
 
 
-<seealso CS_Data.csdoc />
+<logicsyntax>
+s = CS.Data.queryKeys(<arg>dataId</arg> := ...,
+                   『, <arg>status</arg> := ...』
+                   『, <arg>sort</arg> := ...』
+                   『, <arg>filter</arg> := ...』
+                   『, <arg>limit</arg> := ...』
+                   『, <arg>offset</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>status</arg></cell><cell>Options for the status of the cases to query.~!~The default value is <logiccolor>"notDeletedOnly"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>sort</arg></cell><cell>Options for how the queried data should be sorted.</cell><cell>object~!~not required</cell>
+    <cell><arg>filter</arg></cell><cell>Options for how the queried data should be filtered.</cell><cell>object~!~not required</cell>
+    <cell><arg>limit</arg></cell><cell>The maximum number of case keys to return from the query.</cell><cell>number~!~not required</cell>
+    <cell><arg>offset</arg></cell><cell>The number of case keys to skip before starting to return results from the query.~!~The default value is <logiccolor>0</logiccolor>.</cell><cell>number~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.queryKeys</action> <link action_invoker.csdoc>action</link> queries content from a <link data_sources.csdoc>data source</link>, returning an array of strings containing the <link data_source_identification_of_cases.csdoc>key</link> of each case. This value is also retrievable using <action>Data.query</action>.
+
+<include query_framework.hgi /> The <action>Data.queryCases</action> documentation includes an <link CS_Data_queryCases.csdoc>example</link> of using a limit to process cases in a loop.
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>keylist</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns an array of keys.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+const dataId = /* retrieved from a call to CS.Data.open */;
+
+const partialKeys = CS.Data.queryKeys({
+    dataId: dataId,
+    status: "partialsOnly"
+});
+
+if (partialKeys.length !== 0) {
+    print("The following cases are partially saved:");
+    partialKeys.forEach(key => print(key));
+}
+</color>
+
+
+<seealso CS_Data.csdoc CS_Data_countCases.csdoc CS_Data_query.csdoc CS_Data_queryCases.csdoc keylist_function.csdoc />
