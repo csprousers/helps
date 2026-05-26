@@ -30,7 +30,7 @@ The CSWeb data source supports the following features:
 
 <subheader>Binary Data</subheader>
 
-The CSWeb data source stores <link binary_dictionary_items.csdoc>binary data</link> as TODO
+The CSWeb data source stores <link binary_dictionary_items.csdoc>binary data</link> metadata in a table named <i>&lt;dictionary name&gt;_case_binary_data</i>. The binary data itself is stored on the server in the directory <i>files_csweb/binary-data/&lt;dictionary name&gt;</i>. Each file in this directory is named after the binary data's <link CS_Hash_createMd5.csdoc>MD5</link> signature. When reading case data, binary data is accessed using <link "https://en.wikipedia.org/wiki/Lazy_loading">lazy loading</link>, downloaded from CSWeb only when needed by the application.
 
 
 <subheader>Caching Data</subheader>
