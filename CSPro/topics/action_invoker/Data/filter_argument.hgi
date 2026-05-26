@@ -1,0 +1,12 @@
+The argument <arg>filter</arg>, an object, can be used to further filter cases. The filters include two primary values: <arg>operator</arg> and <arg>value</arg>:
+
+<table 2 header nowrap>
+    <cell>Operator</cell><cell>Description</cell>
+    <cell><logiccolor>"startswith"</logiccolor></cell><cell>Only consider cases with a <link data_source_identification_of_cases.csdoc>key</link> starting with the specified value.</cell>
+    <cell><logiccolor>"<"</logiccolor></cell><cell>Only consider cases with a key that is less than the specified value.</cell>
+    <cell><logiccolor>"<="</logiccolor></cell><cell>Only consider cases with a key that is less than or equal to the specified value.</cell>
+    <cell><logiccolor>">="</logiccolor></cell><cell>Only consider cases with a key that is greater than or equal to the specified value.</cell>
+    <cell><logiccolor>">"</logiccolor></cell><cell>Only consider cases with a key that is greater than the specified value.</cell>
+</table>
+
+Alternatively, by defining <arg>type</arg> as <logiccolor>"position"</logiccolor>, these checks (other than <logiccolor>"startswith"</logiccolor>) will apply to the "<link data_source_identification_of_cases.csdoc>position</link>" of a case. The type is <logiccolor>"key"</logiccolor> by default.

@@ -8,4 +8,4 @@ Within each level, at least 1 ID item must be defined; as many as 15 ID items ar
 
 A good way to organize your ID items and <link record_type.csdoc>record type identifiers</link> is to put the record type identifiers first (in column 1, or columns 1-2 if you need 2 positions to uniquely identify all records), followed by the ID item(s). In this way the <link item_description.csdoc>data items</link> for the individual records would immediately follow. For a pictorial representation of a data file's <link view_the_dictionary_layout.csdoc>layout</link>, press <b>Ctrl+L</b> from within dictionary (L=Layout). Pressing <b>Ctrl+L</b> a second time will toggle this view off.
 
-<seealso item_description.csdoc item_properties.csdoc add_or_modify_items.csdoc sub_items.csdoc />
+<seealso item_description.csdoc item_properties.csdoc add_or_modify_items.csdoc sub_items.csdoc data_source_identification_of_cases.csdoc />

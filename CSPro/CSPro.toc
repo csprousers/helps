@@ -929,6 +929,7 @@
           { "path": "data_source_spss.csdoc", "title": "SPSS" },
           { "path": "data_source_stata.csdoc", "title": "Stata" },
           { "path": "data_source_cspro_export.csdoc", "title": "CSPro Export" },
+          { "path": "data_source_identification_of_cases.csdoc", "~title": "Data Source Identification of Cases" },
           { "path": "case_read_optimization.csdoc", "~title": "Case Read Optimization" }
         ]
       },
@@ -1630,7 +1631,17 @@
             "title": "Data Namespace",
             "documents": [
               { "path": "CS_Data.csdoc", "~title": "Data Action Invoker Namespace" },
-              { "path": "CS_Data_getCase.csdoc", "~title": "Data.getCase Action" }
+              { "path": "CS_Data_close.csdoc", "~title": "Data.close Action" },
+              { "path": "CS_Data_contains.csdoc", "~title": "Data.contains Action" },
+              { "path": "CS_Data_countCases.csdoc", "~title": "Data.countCases Action" },
+              { "path": "CS_Data_deleteCase.csdoc", "~title": "Data.deleteCase Action" },
+              { "path": "CS_Data_getCurrentCase.csdoc", "~title": "Data.getCurrentCase Action" },
+              { "path": "CS_Data_open.csdoc", "~title": "Data.open Action" },
+              { "path": "CS_Data_query.csdoc", "~title": "Data.query" },
+              { "path": "CS_Data_queryCases.csdoc", "~title": "Data.queryCases Action" },
+              { "path": "CS_Data_queryKeys.csdoc", "~title": "Data.queryKeys Action" },
+              { "path": "CS_Data_readCase.csdoc", "~title": "Data.readCase Action" },
+              { "path": "CS_Data_writeCase.csdoc", "~title": "Data.writeCase Action" }
             ]
           },
           {

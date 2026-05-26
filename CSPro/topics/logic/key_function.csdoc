@@ -1,5 +1,6 @@
 <title>Key Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
@@ -9,7 +10,7 @@ s = key(<arg>dictionary_name</arg>);
 
 <subheader>Description</subheader>
 
-The <logiccolor>key</logiccolor> function returns a string containing the key of the case currently loaded in the file referenced by <arg>dictionary_name</arg>. A dictionary key is a single string comprised of the IDs for a case. The <logiccolor>key</logiccolor> is created using the case's IDs as they existed when the case was last loaded or written..
+The <logiccolor>key</logiccolor> function returns a string containing the key of the case currently loaded in the file referenced by <arg>dictionary_name</arg>. A dictionary key is a <link data_source_identification_of_cases.csdoc>single string</link> comprised of the IDs for a case. The <logiccolor>key</logiccolor> is created using the case's IDs as they existed when the case was last loaded or written..
 
 
 <subheader>Return Value</subheader>
@@ -30,4 +31,4 @@ endif;
 <include include_key_currentkey_differences.hgi />
 
 
-<b>See also</b>: <topic currentkey_function.csdoc />, <topic keylist_function.csdoc />, <link run_production_data_entry.csdoc>Key PFF Attribute</link>, <topic getcaselabel_function.csdoc />
+<b>See also</b>: <topic currentkey_function.csdoc />, <topic keylist_function.csdoc />, <link run_production_data_entry.csdoc>Key PFF Attribute</link>, <topic getcaselabel_function.csdoc />, <topic data_source_identification_of_cases.csdoc />

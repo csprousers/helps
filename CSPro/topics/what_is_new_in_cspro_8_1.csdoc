@@ -156,6 +156,8 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <list>
     <li>A new action, <action>throwException</action>, throws an exception in the current execution environment.</li>
     <li>A new namespace, <action>Network</action>, provides functionality to make HTTP requests and handle responses, with the actions: <action>Network.fetch</action>, <action>Network.fetchBody</action>, <action>Network.fetchBytes</action>, <action>Network.fetchFile</action>, <action>Network.fetchJson</action>, and <action>Network.fetchText</action></li>
+    <li>Additional <action>Data</action> actions support interacting with <link data_sources.csdoc>data sources</link>, with the new actions: <action>Data.close</action>, <action>Data.contains</action>, <action>Data.countCases</action>, <action>Data.deleteCase</action>, <action>Data.getCurrentCase</action>, <action>Data.open</action>, <action>Data.query</action>, <action>Data.queryCases</action>, <action>Data.queryKeys</action>, <action>Data.readCase</action>, and <action>Data.writeCase</action>.</li>
+    <li>The functionality of <action>Data.getCase</action> has been replaced by <action>Data.getCurrentCase</action> and <action>Data.readCase</action>. The old action will remain for some time, but new applications should use the new actions.</li>
     <li>A new namespace, <action>Sync</action>, provides ways to interact with <link sync_services.csdoc>synchronization services</link>, with the actions: <action>Sync.connect</action>, <action>Sync.disconnect</action>, <action>Sync.sendMessage</action>, and <action>Sync.syncParadata</action>.</li>
     <li>A new action, <action>System.createShortcut</action>, creates a shortcut to a CSPro application or file. The shortcut is placed on the Windows Desktop, or on the Android launcher.</li>
     <li>The <action>UI.closeDialog</action> action has been renamed <action>UI.close</action>, though the old name will remain as an alias for some time. A new argument allows the <link html_dialog_ui.csdoc>HTML dialog</link> or <link html_in_cspro.csdoc>web view</link> to be closed without a valid result but instead with an exception that is thrown in the execution environment that launched the dialog or web view.</li>
@@ -174,7 +176,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <subheader>Tools</subheader>
 
 <list>
-    <li>The <link CSDiff::introduction_to_compare_data.csdoc>Compare Data</link> tool will match duplicate cases by <link uuid_function.csdoc>UUID</link> when running a comparison in <link CSDiff::run_a_compare.csdoc>indexed order</link>. Additionally, comparing cases in sequential order now works properly with data sources with duplicate cases.</li>
+    <li>The <link CSDiff::introduction_to_compare_data.csdoc>Compare Data</link> tool will match duplicate cases by <link data_source_identification_of_cases.csdoc>UUID</link> when running a comparison in <link CSDiff::run_a_compare.csdoc>indexed order</link>. Additionally, comparing cases in sequential order now works properly with data sources with duplicate cases.</li>
     <li>The <link ParadataConcat::introduction_to_paradata_concatenator.csdoc>Paradata Concatenator</link> and <logiccolor>paradata</logiccolor> function's concatenation routines have been optimized, improving performance when processing many paradata logs.</li>
 </list>
 

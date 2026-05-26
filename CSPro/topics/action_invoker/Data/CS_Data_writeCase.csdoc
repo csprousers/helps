@@ -1,0 +1,113 @@
+<title>Data.writeCase Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+d = CS.Data.writeCase(<arg>dataId</arg> := ...,
+                      <arg>case</arg> := ...
+                   『, <arg>replace</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>case</arg></cell><cell>The case content.</cell><cell>object~!~required</cell>
+    <cell><arg>replace</arg></cell><cell>Details about where to write the case in the data source if overwriting an existing case.</cell><cell>object~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.writeCase</action> <link action_invoker.csdoc>action</link> writes a case to a <link data_sources.csdoc>data source</link>. The <arg>case</arg> object must be specified in the form of its <link Case_json_representation.csdoc>JSON representation</link>. Warnings or errors processing the case content will be reported as error messages or logged to  <colorinline JavaScript>console.log</colorinline> in the JavaScript environment.
+
+<include dataId_resource_id.hgi />
+
+By default, if the case to be written has a key that matches one of a non-deleted case in the data source, that case will be replaced. This is the same behavior that <logiccolor>writecase</logiccolor> uses when writing cases to external dictionaries.
+
+If you want to replace a specific case, you can use the <arg>replace</arg> argument. <include case_specification.hgi />
+
+If replacing a case would result in multiple non-deleted cases sharing the same key, an exception is thrown if the data source does not <link data_sources.csdoc>support</link> duplicate cases.
+
+Note that if the case's <colorinline JSON>"deleted"</colorinline> flag is set to <colorinline JSON>"true"</colorinline>, the case is written as deleted. Some data sources write such cases marked as deleted (e.g., <link data_source_csdb.csdoc>CSPro DB</link>), while other data sources will treat this as if <action>Data.deleteCase</action> were called on the case (e.g., <link data_source_text.csdoc>Text</link>).
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>writecase</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+When known, the action returns the <link data_source_identification_of_cases.csdoc>position</link> of the case as written in the data source. Otherwise, the action returns undefined.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>The data source was not opened in <link CS_Data_open.csdoc>read and write mode</link>.</li>
+    <li>The case does not include records that are <link required_record.csdoc>required</link>.</li>
+    <li>A case was specified using <arg>replace</arg> and it does not exist in the data source.</li>
+    <li>The case, if written, would result in duplicate cases when not supported by the data source.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+const dataId = /* retrieved from a call to CS.Data.open */;
+
+// read a case
+const caseData = CS.Data.readCase({
+    dataId: dataId,
+    key: "010107300710580051"
+});
+
+// write the case as verified
+caseData.verified = true;
+
+CS.Data.writeCase({
+    dataId: dataId,
+    case: caseData
+});
+</color>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+const dataId = /* retrieved from a call to CS.Data.open */;
+
+// read a case and modify the two-digit ID item PROVINCE from 1 -> 99
+const keyToModify = "010107500210560041";
+
+const caseData = CS.Data.readCase({
+    dataId: dataId,
+    key: keyToModify
+});
+
+caseData.SURVEY_LEVEL.PROVINCE.code = 99;
+
+// this writes the case using the key 990107500210560041;
+// if a case with that key already exists, it is overwritten;
+// after this action, there are cases with keys 010107500210560041 and 990107500210560041
+CS.Data.writeCase({
+    dataId: dataId,
+    case: caseData
+});
+
+// alternatively, this replaces the case that was read;
+// after this action, the case with key 010107500210560041 does not exist
+// but a case with key 990107500210560041 does
+CS.Data.writeCase({
+    dataId: dataId,
+    case: caseData,
+    replace: {
+        key: keyToModify
+    }
+});
+</color>
+
+
+<seealso CS_Data.csdoc CS_Data_readCase.csdoc CS_Data_deleteCase.csdoc writecase_function.csdoc />

@@ -1,0 +1,79 @@
+<title>Data.countCases Action</title>
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+i = CS.Data.countCases(<arg>dataId</arg> := ...,
+                    『, <arg>status</arg> := ...』
+                    『, <arg>filter</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>status</arg></cell><cell>Options for the status of the cases to query.~!~The default value is <logiccolor>"notDeletedOnly"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>filter</arg></cell><cell>Options for how the queried data should be filtered.</cell><cell>object~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.countCases</action> <link action_invoker.csdoc>action</link> returns the number of cases that exist in a <link data_sources.csdoc>data source</link>. This value is also retrievable using <action>Data.query</action>.
+
+<include dataId_resource_id.hgi />
+
+<include status_argument.hgi />
+
+<include filter_argument.hgi />
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>countcases</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns the numbers of cases that match the filters.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+const dataId = /* retrieved from a call to CS.Data.open */;
+
+// count the number of non-deleted partial cases
+CS.Data.countCases({
+    dataId: dataId,
+    status: "partialsOnly"
+});
+
+// count the number of non-deleted cases with a key starting with "01"
+CS.Data.countCases({
+    dataId: dataId,
+    filter: {
+        operator: "startswith",
+        value: "01"
+    }
+});
+
+// count the number of cases, including deleted cases, with a key >= "01"
+CS.Data.countCases({
+    dataId: dataId,
+    status: "all",
+    filter: {
+        operator: ">=",
+        value: "01"
+    }
+});
+</color>
+
+
+<seealso CS_Data.csdoc CS_Data_contains.csdoc CS_Data_query.csdoc countcases_function.csdoc />

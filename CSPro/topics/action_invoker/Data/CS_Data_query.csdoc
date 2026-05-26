@@ -1,0 +1,84 @@
+<title>Data.query</title>
+
+
+<logicsyntax>
+s = CS.Data.query(<arg>dataId</arg> := ...,
+                  <arg>content</arg> := ...』
+               『, <arg>status</arg> := ...』
+               『, <arg>sort</arg> := ...』
+               『, <arg>filter</arg> := ...』
+               『, <arg>limit</arg> := ...』
+               『, <arg>offset</arg> := ...』
+               『, <arg>serializationOptions</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>content</arg></cell><cell>The content to query.</cell><cell>string~!~required</cell>
+    <cell><arg>status</arg></cell><cell>Options for the status of the cases to query.~!~The default value is <logiccolor>"notDeletedOnly"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>sort</arg></cell><cell>Options for how the queried data should be sorted.</cell><cell>object~!~not required</cell>
+    <cell><arg>filter</arg></cell><cell>Options for how the queried data should be filtered.</cell><cell>object~!~not required</cell>
+    <cell><arg>limit</arg></cell><cell>The maximum number of results to return from the query.</cell><cell>number~!~not required</cell>
+    <cell><arg>offset</arg></cell><cell>The number of results to skip before starting to return results from the query.~!~The default value is <logiccolor>0</logiccolor>.</cell><cell>number~!~not required</cell>
+    <cell><arg>serializationOptions</arg></cell><cell>Options for how cases should be serialized.</cell><cell>object~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.query</action> <link action_invoker.csdoc>action</link> queries content from a <link data_sources.csdoc>data source</link>. The options for queryable <arg>content</arg> include:
+
+<list>
+    <li><logiccolor>"count"</logiccolor>: Returns a count of cases. This value is also retrievable using <action>Data.countCases</action>.</li>
+    <li><logiccolor>"keys"</logiccolor>: Returns an array of strings containing the <link data_source_identification_of_cases.csdoc>key</link> of each case. This value is also retrievable using <action>Data.queryKeys</action>.</li>
+    <li><logiccolor>"summaries"</logiccolor>: Returns an array of objects containing the "summary" of each case. The summary includes the key, "<link data_source_identification_of_cases.csdoc>position</link>", deleted status, <link ispartial_function.csdoc>partial</link> status, <link isverified_function.csdoc>verified</link> status, and the <link CSEntry::add_a_note.csdoc>case note</link>.</li>
+    <li><logiccolor>"cases"</logiccolor>: Returns an array of objects containing <link Case_json_representation.csdoc>JSON representations</link> of each case. The optional <arg>serializationOptions</arg> argument allows you to specify how the case <link JSON_serialization_options.csdoc>should be serialized</link>, potentially overriding the <link properties_json_serialization.csdoc>default application settings</link>. This value is also retrievable using <action>Data.queryCases</action>.</li>
+</list>
+
+<include query_framework.hgi /> The <action>Data.queryCases</action> documentation includes an <link CS_Data_queryCases.csdoc>example</link> of using a limit to process cases in a loop.
+
+
+<subheader>Return Value</subheader>
+
+The action returns an array of keys, summaries, or cases, or a number with a count.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+const dataId = /* retrieved from a call to CS.Data.open */;
+
+// query the summaries to get information about the
+// last case in the data source (sorted by key)
+const summaryQuery = CS.Data.query({
+    dataId: dataId,
+    content: "summaries",
+    status: "all",
+    sort: {
+        order: "key",
+        ascending: false
+    },
+    limit: 1
+});
+
+if (summaryQuery.length !== 0) {
+    const lastCaseSummary = summaryQuery[0];
+
+    print(`Sorted by key, the last key is "${lastCaseSummary.key}" ` +
+          `(located at position: ${lastCaseSummary.position}).`);
+}
+</color>
+
+
+<seealso CS_Data.csdoc CS_Data_countCases.csdoc CS_Data_queryCases.csdoc CS_Data_queryKeys.csdoc CS_Data_readCase.csdoc />

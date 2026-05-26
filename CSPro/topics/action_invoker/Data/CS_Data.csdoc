@@ -2,12 +2,24 @@
 
 The <action>Data</action> namespace, part of the <link action_invoker.csdoc>Action Invoker</link>, provides actions to interact with <link data_sources.csdoc>data sources</link>.
 
+After <link CS_Data_open.csdoc>creating</link> a connection to a data source, a <link action_invoker_resource_ids.csdoc>resource ID</link> is returned that identifies the data source in subsequent actions until the connection is <link CS_Data_close.csdoc>closed</link>.
+
 
 <subheader>Functionality</subheader>
 
 <table 2 header nowrap>
     <cell>Action</cell><cell>Description</cell>
-    <cell><action>Data.getCase</action></cell><cell>Returns a specific case, or the current case, associated with a dictionary.</cell>
+    <cell><action>Data.close</action></cell><cell>Closes a previously opened data source.</cell>
+    <cell><action>Data.contains</action></cell><cell>Returns whether a data source contains a specific case.</cell>
+    <cell><action>Data.countCases</action></cell><cell>Returns the number of cases in a data source.</cell>
+    <cell><action>Data.deleteCase</action></cell><cell>Deletes a case from a data source.</cell>
+    <cell><action>Data.getCurrentCase</action></cell><cell>Returns the current case associated with an application's dictionary.</cell>
+    <cell><action>Data.open</action></cell><cell>Opens a data source and returns an ID that can be used for future operations.</cell>
+    <cell><action>Data.query</action></cell><cell>Queries content from a data source.</cell>
+    <cell><action>Data.queryCases</action></cell><cell>Queries cases from a data source.</cell>
+    <cell><action>Data.queryKeys</action></cell><cell>Queries case keys from a data source.</cell>
+    <cell><action>Data.readCase</action></cell><cell>Returns a case read from a data source.</cell>
+    <cell><action>Data.writeCase</action></cell><cell>Writes a case to a data source.</cell>
 </table>
 
 

@@ -1,0 +1,8 @@
+The string argument <arg>status</arg> can be used to filter cases by "status":
+
+<list>
+    <li><logiccolor>"all":</logiccolor> Do not apply a filter, processing all cases, including deleted cases.</li>
+    <li><logiccolor>"notDeletedOnly"</logiccolor>: Process only non-deleted cases.</li>
+    <li><logiccolor>"partialsOnly"</logiccolor>: Process only non-deleted cases that are partially saved.</li>
+    <li><logiccolor>"duplicatesOnly"</logiccolor>: Process only non-deleted cases where there are at least two cases with the same <link data_source_identification_of_cases.csdoc>key</link>.</li>
+</list>

@@ -1,5 +1,6 @@
 <title>CurrentKey Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
@@ -9,7 +10,7 @@ s = currentkey(<arg>dictionary_name</arg>);
 
 <subheader>Description</subheader>
 
-The <logiccolor>currentkey</logiccolor> function returns a string containing the key of the case currently referenced by <arg>dictionary_name</arg>. A dictionary key is a single string comprised of the IDs for a case. The <logiccolor>currentkey</logiccolor> is created using the current values of the case's IDs.
+The <logiccolor>currentkey</logiccolor> function returns a string containing the key of the case currently referenced by <arg>dictionary_name</arg>. A dictionary key is a <link data_source_identification_of_cases.csdoc>single string</link> comprised of the IDs for a case. The <logiccolor>currentkey</logiccolor> is created using the current values of the case's IDs.
 
 
 <subheader>Return Value</subheader>
@@ -31,4 +32,4 @@ PROC LOCATION
 <include include_key_currentkey_differences.hgi />
 
 
-<seealso key_function.csdoc />
+<seealso key_function.csdoc data_source_identification_of_cases.csdoc />

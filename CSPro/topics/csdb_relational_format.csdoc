@@ -17,7 +17,7 @@ Each record table has an auto-increment integer primary key column named <i>&ltr
 
 Records with multiple occurrences have an additional column named <b>occ</b> which represents the occurrence number. If a case in the data file has, for example, three occurrences of a particular record then the values of the <b>occ</b> column for the rows in the record table for that case will be 1, 2 and 3.
 
-All CSPro DB files also have a table named <b>cases</b> that contains additional information about each case in the data file such as the case label, whether or not the case was deleted, and whether or not it was partially saved. The ID column of the <b>cases</b> table is a <link uuid_function.csdoc>UUID</link> stored as a string. The database table for the first level in the dictionary is linked to the cases table by this ID column.
+All CSPro DB files also have a table named <b>cases</b> that contains additional information about each case in the data file such as the case label, whether or not the case was deleted, and whether or not it was partially saved. The ID column of the <b>cases</b> table is a <link data_source_identification_of_cases.csdoc>UUID</link> stored as a string. The database table for the first level in the dictionary is linked to the cases table by this ID column.
 
 CSPro DB files also contain additional tables that store field notes as well as information required for data synchronization.
 

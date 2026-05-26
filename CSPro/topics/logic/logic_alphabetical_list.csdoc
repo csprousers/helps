@@ -45,7 +45,17 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>curocc</logiccolor></cell><cell>Returns the current occurrence number for a repeating form, roster, or record.</cell>
     <cell><logiccolor>currentkey</logiccolor></cell><cell>Returns the key (ID string) comprised of the case's current IDs.</cell>
     <cell 2>&nbsp;</cell>
-    <cell><action>Data.getCase</action> <sup>(CS)</sup></cell><cell>Returns a specific case, or the current case, associated with a dictionary.</cell>
+    <cell><action>Data.close</action> <sup>(CS)</sup></cell><cell>Closes a previously opened data source.</cell>
+    <cell><action>Data.contains</action> <sup>(CS)</sup></cell><cell>Returns whether a data source contains a specific case.</cell>
+    <cell><action>Data.countCases</action> <sup>(CS)</sup></cell><cell>Returns the number of cases in a data source.</cell>
+    <cell><action>Data.deleteCase</action> <sup>(CS)</sup></cell><cell>Deletes a case from a data source.</cell>
+    <cell><action>Data.getCurrentCase</action> <sup>(CS)</sup></cell><cell>Returns the current case associated with an application's dictionary.</cell>
+    <cell><action>Data.open</action> <sup>(CS)</sup></cell><cell>Opens a data source and returns an ID that can be used for future operations.</cell>
+    <cell><action>Data.query</action> <sup>(CS)</sup></cell><cell>Queries content from a data source.</cell>
+    <cell><action>Data.queryCases</action> <sup>(CS)</sup></cell><cell>Queries cases from a data source.</cell>
+    <cell><action>Data.queryKeys</action> <sup>(CS)</sup></cell><cell>Queries case keys from a data source.</cell>
+    <cell><action>Data.readCase</action> <sup>(CS)</sup></cell><cell>Returns a case read from a data source.</cell>
+    <cell><action>Data.writeCase</action> <sup>(CS)</sup></cell><cell>Writes a case to a data source.</cell>
     <cell><logiccolor>dateadd</logiccolor></cell><cell>Calculates a new date from a starting date and a period of elapsed time.</cell>
     <cell><logiccolor>datediff</logiccolor></cell><cell>Calculates the difference between two dates.</cell>
     <cell><logiccolor>datevalid</logiccolor></cell><cell>Determines whether a date in the format YYYYMMDD is valid.</cell>

@@ -1,0 +1,80 @@
+<title>Data.queryCases Action</title>
+
+
+<logicsyntax>
+s = CS.Data.queryCases(<arg>dataId</arg> := ...,
+                    『, <arg>status</arg> := ...』
+                    『, <arg>sort</arg> := ...』
+                    『, <arg>filter</arg> := ...』
+                    『, <arg>limit</arg> := ...』
+                    『, <arg>offset</arg> := ...』
+                    『, <arg>serializationOptions</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>status</arg></cell><cell>Options for the status of the cases to query.~!~The default value is <logiccolor>"notDeletedOnly"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>sort</arg></cell><cell>Options for how the queried data should be sorted.</cell><cell>object~!~not required</cell>
+    <cell><arg>filter</arg></cell><cell>Options for how the queried data should be filtered.</cell><cell>object~!~not required</cell>
+    <cell><arg>limit</arg></cell><cell>The maximum number of cases to return from the query.</cell><cell>number~!~not required</cell>
+    <cell><arg>offset</arg></cell><cell>The number of cases to skip before starting to return results from the query.~!~The default value is <logiccolor>0</logiccolor>.</cell><cell>number~!~not required</cell>
+    <cell><arg>serializationOptions</arg></cell><cell>Options for how cases should be serialized.</cell><cell>object~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.queryCases</action> <link action_invoker.csdoc>action</link> queries content from a <link data_sources.csdoc>data source</link>, returning an array of objects containing <link Case_json_representation.csdoc>JSON representations</link> of each case. The optional <arg>serializationOptions</arg> argument allows you to specify how the cases <link JSON_serialization_options.csdoc>should be serialized</link>, potentially overriding the <link properties_json_serialization.csdoc>default application settings</link>. This value is also retrievable using <action>Data.query</action>.
+
+<include query_framework.hgi />
+
+
+<subheader>Return Value</subheader>
+
+The action returns an array of cases.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+const dataId = /* retrieved from a call to CS.Data.open */;
+
+// query all cases, included deleted cases, in a loop
+// using a limit of 50 cases to reduce the number of
+// cases returned by each query
+const limit = 50;
+
+for (let offset = 0; ; offset += limit) {
+    const cases = CS.Data.queryCases({
+        dataId: dataId,
+        status: "all",
+        limit: limit,
+        offset: offset
+    });
+
+    // print the key and UUID of each case
+    cases.forEach(caseData => {
+        print(`${caseData.key} (${caseData.uuid})`);
+    });
+
+    // if fewer cases are returned than the limit,
+    // then there are no additional cases
+    if (cases.length < limit) {
+        break;
+    }
+}
+</color>
+
+
+<seealso CS_Data.csdoc CS_Data_countCases.csdoc CS_Data_query.csdoc CS_Data_queryKeys.csdoc CS_Data_readCase.csdoc />

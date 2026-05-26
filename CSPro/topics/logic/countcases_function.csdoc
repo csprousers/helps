@@ -12,9 +12,13 @@ The <logiccolor>countcases</logiccolor> function counts the number of cases in a
 
 It is possible, by specifying <link set_access_statement.csdoc>dictionary access parameters</link> after the dictionary name, to limit the cases that the <logiccolor>countcases</logiccolor> function processes.
 
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available when interacting with dictionaries by using the <action>Data.countCases</action> action.
+
+
 <subheader>Return Value</subheader>
 
 The function returns the number of cases in the file, or if a condition is given, the number of cases that meet that condition. If there is an error processing the file, the function returns <logiccolor>default</logiccolor>.
+
 
 <subheader>Example</subheader>
 
@@ -27,4 +31,5 @@ PROC NEW_INTERVIEWER_NAME
     endif;
 </logic>
 
-<seealso forcase_statement.csdoc find_function.csdoc />
+
+<seealso forcase_statement.csdoc find_function.csdoc CS_Data_countCases.csdoc />

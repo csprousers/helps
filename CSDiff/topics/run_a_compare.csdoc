@@ -36,7 +36,7 @@
 
 <subheader>Duplicate Case Handling</subheader>
 
-Some data sources allow duplicate cases. These are cases share the same case key (ID values). These data sources generally use a <link CSPro::uuid_function.csdoc>UUID</link> to uniquely identify each of the cases. When running a comparison in indexed order, the Compare Data will:
+Some data sources allow duplicate cases. These are cases share the same case key (ID values). These data sources generally use a <link CSPro::data_source_identification_of_cases.csdoc>UUID</link> to uniquely identify each of the cases. When running a comparison in indexed order, the Compare Data will:
 
 <list ordered>
     <li>Match cases first by case key.</li>

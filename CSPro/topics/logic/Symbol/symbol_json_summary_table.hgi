@@ -7,7 +7,7 @@
     <cell><logiccolor>Array</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Array_JSON_representation.csdoc /></cell>
     <cell><logiccolor>Audio</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Audio_JSON_representation.csdoc /></cell>
     <cell><link blocks.csdoc>Block</link></cell><cell></cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
-    <cell><link introduction_to_data_dictionary.csdoc>Dictionary</link></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
+    <cell><link introduction_to_data_dictionary.csdoc>Dictionary</link></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO ... also link to this in CS_Data_open.csdoc" /></cell>
     <cell><logiccolor>Document</logiccolor></cell><cell>✔</cell><cell>✔</cell><cell><topic Document_JSON_representation.csdoc /></cell>
     <cell><logiccolor>File</logiccolor></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>
     <cell><logiccolor>Freq</logiccolor></cell><cell>✔</cell><cell></cell><cell><note type="todo" text="HELP_TODO" /></cell>

@@ -17,7 +17,7 @@ When compiling an application, CSPro keeps track of items that are referenced in
 
 <subheader>Optimization Override</subheader>
 
-The default behavior is suitable for most applications, but sometimes you may want to turn off case read optimization. For example, if using an action such as <action>Data.getCase</action>, the CSPro compiler does not know which dictionary will be bound to that action at runtime, so the optimization may lead to items not being read that you will eventually want at runtime.
+The default behavior is suitable for most applications, but sometimes you may want to turn off case read optimization. For example, if using an action such as <action>Data.readCase</action>, the CSPro compiler does not know which dictionary will be bound to that action at runtime, so the optimization may lead to items not being read that you will eventually want at runtime.
 
 There are two ways to override this behavior, which is set on a per-<link introduction_to_data_dictionary.csdoc>dictionary</link> basis. You can use the <link dictionary_property_panel.csdoc>dictionary property panel</link> to disable <b>Read Optimization</b>. This setting is applicable for every application that uses the dictionary. Alternatively, to control this on a per-application basis, you can use the <link preprocessor.csdoc>preprocessor</link> to disable the setting:
 

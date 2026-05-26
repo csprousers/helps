@@ -1,0 +1,19 @@
+<include dataId_resource_id.hgi />
+
+<include status_argument.hgi />
+
+The argument <arg>sort</arg>, an object, can be used to modify the order of the query's results. The filters include two primary values: <arg>order</arg> and <arg>ascending</arg>:
+
+<table 3 header nowrap>
+    <cell>Order</cell><cell>Ascending</cell><cell>Description</cell>
+    <cell><logiccolor>"key"</logiccolor></cell><cell><logiccolor>true</logiccolor></cell><cell>Results are ordered by <link data_source_identification_of_cases.csdoc>key</link> in ascending order.</cell>
+    <cell><logiccolor>"key"</logiccolor></cell><cell><logiccolor>false</logiccolor></cell><cell>Results are ordered by key in descending order.</cell>
+    <cell><logiccolor>"position"</logiccolor></cell><cell><logiccolor>true</logiccolor></cell><cell>Results are ordered by "<link data_source_identification_of_cases.csdoc>position</link>" in ascending order.</cell>
+    <cell><logiccolor>"position"</logiccolor></cell><cell><logiccolor>false</logiccolor></cell><cell>Results are ordered by "position" in descending order.</cell>
+</table>
+
+In other contexts, CSPro refers to key order as "indexed" and position order as "sequential." If not specified, results are ordered in ascending order.
+
+<include filter_argument.hgi />
+
+By default, the action returns all results in the data source that match the query. This may be more information than necessary. When working with a large amount of data, you will want to query only a subset of the data using the <arg>limit</arg> and <arg>offset</arg> arguments. The limit sets the maximum number of results that the query should return. The offset specifies a certain number of results to skip before starting to return results. Together, these values can be used to incrementally process results. For example, a limit of 20 with an offset of 50 would return results ordered 51&ndash;70.

@@ -1,10 +1,12 @@
 <title>DelCase Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
 b = delcase(<arg>dictionary_name</arg>『, <arg>id1</arg>, ..., <arg>idN</arg>』);
 </logicsyntax>
+
 
 <subheader>Description</subheader>
 
@@ -12,13 +14,16 @@ The <logiccolor>delcase</logiccolor> function marks a case for deletion in an ex
 
 The <arg>dictionary_name</arg> must be supplied and refers to an external dictionary associated with your application.
 
-The optional list of ID variables, <arg>id1</arg> ... <arg>idN</arg>, specifies the list of variables that will identify the case to delete from the external file. Generally, each of the variables in the list is defined in a dictionary. The combined length of the variables in the list must equal the length of the case IDs defined for the external dictionary. The function concatenates the variables in the ID list to form a string. Alternatively, you can pass, as a string, the <link key_function.csdoc>full key</link> of the case to delete. The function then deletes from the external file the case whose case identifier matches the string constructed from the list.
+The optional list of ID variables, <arg>id1</arg> ... <arg>idN</arg>, specifies the list of variables that will identify the case to delete from the external file. Generally, each of the variables in the list is defined in a dictionary. The combined length of the variables in the list must equal the length of the case IDs defined for the external dictionary. The function concatenates the variables in the ID list to form a string. Alternatively, you can pass, as a string, the <link data_source_identification_of_cases.csdoc>full key</link> of the case to delete. The function then deletes from the external file the case whose case identifier matches the string constructed from the list.
 
 If no ID list is provided, the current values of the ID items for the external dictionary are used.
 
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar functionality is available when interacting with dictionaries by using the <action>Data.deleteCase</action> action.
+
+
 <subheader>Return Value</subheader>
 
-The function returns a logical value of 1 (true) if the case existed and was successfully marked for deletion and 0 (false) otherwise.
+The function returns a logical value of <logiccolor>1</logiccolor> (<logiccolor>true</logiccolor>) if the case exists and is successfully marked for deletion and <logiccolor>0</logiccolor> (<logiccolor>false</logiccolor>) otherwise.
 
 <subheader>Example</subheader>
 
@@ -26,4 +31,4 @@ The function returns a logical value of 1 (true) if the case existed and was suc
 delcase(ASSIGNMENT_DICT, CLUSTER, HH);
 </logic>
 
-<seealso loadcase_function.csdoc writecase_function.csdoc />
+<seealso loadcase_function.csdoc writecase_function.csdoc CS_Data_deleteCase.csdoc />

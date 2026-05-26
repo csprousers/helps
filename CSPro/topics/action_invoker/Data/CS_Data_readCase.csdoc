@@ -1,0 +1,72 @@
+<title>Data.readCase Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.Data.readCase(<arg>dataId</arg> := ...,
+                     <arg>key</arg> := ... ‖ <arg>uuid</arg> := ... ‖ <arg>position</arg> := ...
+                  『, <arg>serializationOptions</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>key</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>key</link> (case IDs) of a case.</cell><cell>string~!~not required</cell>
+    <cell><arg>uuid</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>UUID</link> of a case.</cell><cell>string~!~not required</cell>
+    <cell><arg>position</arg></cell><cell>The "<link data_source_identification_of_cases.csdoc>position</link>" of a case.</cell><cell>number~!~not required</cell>
+    <cell><arg>serializationOptions</arg></cell><cell>Options for how the case should be serialized.</cell><cell>object~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.readCase</action> <link action_invoker.csdoc>action</link> reads a case from a <link data_sources.csdoc>data source</link>, returning its <link Case_json_representation.csdoc>JSON representation</link>. The optional <arg>serializationOptions</arg> argument allows you to specify how the case <link JSON_serialization_options.csdoc>should be serialized</link>, potentially overriding the <link properties_json_serialization.csdoc>default application settings</link>.
+
+<include dataId_resource_id.hgi />
+
+<include case_specification.hgi />
+
+Because CSPro optimizes the reading of case data, you may need to disable the dictionary's <link case_read_optimization.csdoc>Read Optimization</link> setting when using this action on external dictionaries or in batch applications.
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>loadcase</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns the case object.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>The specified case does not exist in the data source.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+// read a case with a specific key
+const caseData = CS.Data.readCase({
+    dataId: "CLIMATE_DICT",
+    key: "010112600910970251",
+    serializationOptions: {
+        writeLabels: true
+    }
+});
+
+// display the value of all ID items along with their labels
+for (const [name, idOrRecord] of Object.entries(caseData.CLIMATE_LEVEL)) {
+    if (!Array.isArray(idOrRecord)) {
+        print(`${name}: ${idOrRecord.code} - ${idOrRecord.label}`);
+    }
+}
+</color>
+
+
+<seealso CS_Data.csdoc CS_Data_getCurrentCase.csdoc CS_Data_queryCases.csdoc CS_Data_writeCase.csdoc loadcase_function.csdoc />

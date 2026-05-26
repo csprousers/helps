@@ -1,0 +1,51 @@
+<title>Data.close Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+CS.Data.close(<arg>dataId</arg> := ...)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.close</action> <link action_invoker.csdoc>action</link> closes a <link data_sources.csdoc>data source</link> previously opened using <action>Data.open</action>.
+
+<include dataId_resource_id.hgi />
+
+If the data source previously opened was a dictionary that is part of an application, this action does not actually close the data source, as it is "owned" by the application, but instead ends the Action Invoker's ability to access this data source using <arg>dataId</arg>.
+
+For data sources not connected to application dictionaries, the data source is closed and additional actions or queries cannot occur until opening the data source again.
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>close</logiccolor>.
+
+
+<subheader>Return Value</subheader>
+
+The action returns undefined.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>There is an error closing the data source.</li>
+</list>
+
+Even if there is an error closing the data source and an exception is thrown, the data source ID is no longer valid following this action.
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<include open_close_example.hgi />
+
+
+<seealso CS_Data.csdoc CS_Data_open.csdoc close_function.csdoc />

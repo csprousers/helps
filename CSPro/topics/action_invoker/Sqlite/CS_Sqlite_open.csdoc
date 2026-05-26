@@ -38,8 +38,8 @@ When using <arg>name</arg> for a dictionary or paradata, no SQLite database is o
 When specifying a file to open, the <arg>openFlags</arg> argument can be one of the following:
 
 <list>
-    <li><logiccolor>"read"</logiccolor>: The database is opened in read-only mode, with an error occurring is the database does not exist.</li>
-    <li><logiccolor>"readWrite"</logiccolor>: The database is opened in read and write mode, with an error occurring is the database does not exist.</li>
+    <li><logiccolor>"read"</logiccolor>: The database is opened in read-only mode, with an error occurring if the database does not exist.</li>
+    <li><logiccolor>"readWrite"</logiccolor>: The database is opened in read and write mode, with an error occurring if the database does not exist.</li>
     <li><logiccolor>"readWriteCreate"</logiccolor>: The database is opened in read and write mode, with a new database created if it does not already exist.</li>
 </list>
 

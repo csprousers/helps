@@ -1070,7 +1070,18 @@
   },
   { "path": "CS_Data.csdoc", "~title": "Data Action Invoker Namespace",
     "subindex": [
-      { "path": "CS_Data_getCase.csdoc", "~title": "Data.getCase Action" }
+      { "path": "CS_Data_close.csdoc", "~title": "Data.close Action" },
+      { "path": "CS_Data_contains.csdoc", "~title": "Data.contains Action" },
+      { "path": "CS_Data_countCases.csdoc", "~title": "Data.countCases Action" },
+      { "path": "CS_Data_deleteCase.csdoc", "~title": "Data.deleteCase Action" },
+      { "path": "CS_Data_getCurrentCase.csdoc", "~title": "Data.getCurrentCase Action" },
+      { "path": "CS_Data_open.csdoc", "~title": "Data.open Action" },
+      { "path": "CS_Data_query.csdoc", "~title": "Data.query" },
+      { "path": "CS_Data_queryCases.csdoc", "~title": "Data.queryCases Action" },
+      { "path": "CS_Data_queryKeys.csdoc", "~title": "Data.queryKeys Action" },
+      { "path": "CS_Data_readCase.csdoc", "~title": "Data.readCase Action" },
+      { "path": "CS_Data_writeCase.csdoc", "~title": "Data.writeCase Action" },
+      { "path": "CS_Data.csdoc", "~title": "Data Action Invoker Namespace" }
     ]
   },
   { "path": "data_dictionary.csdoc", "title": "Data Dictionary (see 'Dictionary')" },
@@ -4530,8 +4541,12 @@
   { "path": "using_subtables.csdoc", "~title": "Using Subtables" },
   { "path": "text_attributes.csdoc", "title": "UTF-16 LE" },
   { "path": "text_attributes.csdoc", "title": "UTF-8" },
-  { "path": "uuid_function.csdoc", "title": "UUID" },
-  { "path": "uuid_function.csdoc", "~title": "UUID Function" },
+  { "path": "uuid_function.csdoc", "title": "UUID",
+    "subindex": [
+      { "path": "data_source_identification_of_cases.csdoc", "title": "Case Identification" },
+      { "path": "uuid_function.csdoc", "~title": "UUID Function" }
+    ]
+  },
   { "path": "change_field_properties.csdoc", "title": "Validating Alpha Fields" },
   { "path": "batch_edit_applications.csdoc", "title": "Validating Data" },
   { "path": "change_field_properties.csdoc", "title": "Validation Method" },
