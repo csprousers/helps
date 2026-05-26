@@ -14,6 +14,7 @@ In general, newer versions of CSPro can execute applications and process data cr
 
 <list>
     <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
+    <li>CSPro 8.0 and earlier versions cannot synchronize data with CSWeb 8.1, so you must upgrade CSPro and CSWeb in tandem.</li>
     <li>CSWeb's <i>Standard User</i> <link CSWeb::roles.csdoc>role</link> can no longer <link CSDeploy::introduction_to_deployment.csdoc>create deployment packages</link>, though it can be used to download and update applications. The new <i>Developer</i> role can be used for application deployments.</li>
 </list>
 

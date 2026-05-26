@@ -3,7 +3,7 @@
 
 <subheader>Overview</subheader>
 
-The <b>CSWeb</b> <link data_sources.csdoc>data source</link> allows reading and writing data to a MySQL database hosted on a web server running <link CSWeb::introduction_to_csweb.csdoc>CSWeb</link>. Access to cases occurs using CSWeb's REST API. Because the server must be reachable at all times, this data source cannot be used in offline mode. Case modification occurs directly on the server, so there is no need to run synchronizations as the data is automatically synchronized.
+The <b>CSWeb</b> <link data_sources.csdoc>data source</link> allows reading and writing data to a MySQL database hosted on a web server running <link CSWeb::introduction_to_csweb.csdoc>CSWeb</link>. This data source requires CSWeb 8.1+.  Access to cases occurs using CSWeb's REST API. Because the server must be reachable at all times, this data source cannot be used in offline mode. Case modification occurs directly on the server, so there is no need to run synchronizations as the data is automatically synchronized.
 
 Most people using CSWeb collect data using the <link data_source_csdb.csdoc>CSPro DB</link> data source and then use CSPro's <link synchronization.csdoc>synchronization</link> functionality to transfer cases from the local device (the CSPro DB file) to the server (CSWeb). In environments where access to the server is guaranteed, using the CSWeb data source can simplify data collection as it eliminates the need to synchronize data and it ensures that all users have real-time access to the latest data.
 
