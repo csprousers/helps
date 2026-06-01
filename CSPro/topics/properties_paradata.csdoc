@@ -30,6 +30,7 @@ The following is a summary of each kind of event that CSPro can collect:
     <li><b>Note</b>: Information about notes left by interviewers (or via logic) during the execution of the program.</li>
     <li><b>Operator Selection</b>: Details about selections made by the operator as a result of requests coming from functions such as <logiccolor>accept</logiccolor> or the <logiccolor>userbar</logiccolor>.</li>
     <li><b>Property</b>: Information about what CSPro settings were used, or changed, during the program's run.</li>
+    <li><b>Sync ...</b>: Details about interactions with a <link sync_services.csdoc>synchronization service</link>, including information on <link synchronization.csdoc>cases transferred</link>.</li>
 </list>
 
 You can explore these events in more detail using the Paradata Viewer's <link ParadataViewer::table_metadata.csdoc>Table Metadata</link> feature.
