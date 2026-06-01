@@ -16,7 +16,7 @@ This is the second-tier tree node, which usually corresponds to a questionnaire 
 
 Id items can be considered on equal footing with the Level. For each level defined within the dictionary, at least one identification item must be given.
 
-<link record_description.csdoc>Record</link>  <image dictrec.jpg />
+<link record_description.csdoc>Record</link> <image dictrec.jpg />
 
 Records can be considered on equal footing with the Level. For each level defined within the dictionary, at least one record must be given. Within each record, at least one field must be given.
 

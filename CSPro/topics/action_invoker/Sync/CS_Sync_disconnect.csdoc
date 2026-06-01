@@ -4,7 +4,7 @@
 <subheader>Format</subheader>
 
 <logicsyntax>
-CS.Sync.disconnect(『<arg>syncId</arg> := ...』)
+CS.Sync.disconnect(<arg>syncId</arg> := ...)
 </logicsyntax>
 
 <indent><table 3 header nowrap>

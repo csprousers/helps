@@ -1,6 +1,6 @@
 <indent><table 2>
     <cell>&ltb&gt</cell><cell><b>bold</b></cell>
-    <cell>&lti&gt</cell><cell><i>italic</i>  </cell>
+    <cell>&lti&gt</cell><cell><i>italic</i></cell>
     <cell>&ltu&gt</cell><cell><html><u>underline</u></html></cell>
     <cell>&lts&gt</cell><cell><html><s>strikethrough</s></html></cell>
     <cell>&ltsup&gt</cell><cell><html><sup>superscript</sup></html></cell>

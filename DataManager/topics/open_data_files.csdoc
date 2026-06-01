@@ -21,4 +21,4 @@ Select Data Manager from the CSPro Tools dropdown menu, or from the Start > Prog
     <li>Opening the Sync PFF will attempt to synchronize data with the <link CSPro::sync_services.csdoc>synchronization service</link>. Therefore, this option should only be used when you have Internet access.</li>
 </list>
 
-<b>Note:</b>  Only one data file can be viewed at a time. If you want to view more than one file, you will have to open a separate instance of Data Manager.
+<b>Note:</b> Only one data file can be viewed at a time. If you want to view more than one file, you will have to open a separate instance of Data Manager.
