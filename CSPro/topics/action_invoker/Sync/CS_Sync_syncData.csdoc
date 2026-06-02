@@ -1,0 +1,13 @@
+<title>Sync.syncData Action</title>
+
+
+<define action_name "Sync.syncData" />
+<define other_action_name "Data.sync" />
+<define syntax_spacing "                  " />
+<define sync_method_with_tags "<action>Sync.syncData</action>" />
+
+
+<include syncdata_action_shared.hgi />
+
+
+<seealso CS_Sync.csdoc CS_Data_sync.csdoc synchronization.csdoc syncdata_function.csdoc />

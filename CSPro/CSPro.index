@@ -1080,6 +1080,7 @@
       { "path": "CS_Data_queryCases.csdoc", "~title": "Data.queryCases Action" },
       { "path": "CS_Data_queryKeys.csdoc", "~title": "Data.queryKeys Action" },
       { "path": "CS_Data_readCase.csdoc", "~title": "Data.readCase Action" },
+      { "path": "CS_Data_sync.csdoc", "~title": "Data.sync Action" },
       { "path": "CS_Data_writeCase.csdoc", "~title": "Data.writeCase Action" },
       { "path": "CS_Data.csdoc", "~title": "Data Action Invoker Namespace" }
     ]
@@ -4109,6 +4110,7 @@
       { "path": "CS_Sync_connect.csdoc", "~title": "Sync.connect Action" },
       { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" },
       { "path": "CS_Sync_sendMessage.csdoc", "~title": "Sync.sendMessage Action" },
+      { "path": "CS_Sync_syncData.csdoc", "~title": "Sync.syncData Action" },
       { "path": "CS_Sync_syncParadata.csdoc", "~title": "Sync.syncParadata Action" }
     ]
   },

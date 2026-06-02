@@ -1,0 +1,118 @@
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.<definition action_name />(<arg>syncId</arg> := ...
+<definition syntax_spacing />   <arg>dataId</arg> := ...,
+<definition syntax_spacing />『, <arg>direction</arg> := ...』
+<definition syntax_spacing />『, <arg>universe</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~recommended</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>direction</arg></cell><cell>The synchronization direction.~!~The default value is <logiccolor>"both"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>universe</arg></cell><cell>A universe to limit the cases that are synchronized.</cell><cell>string, array~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action><definition action_name /></action> <link action_invoker.csdoc>action</link> <link synchronization.csdoc>synchronizes</link> the cases in a CSPro <link data_sources.csdoc>data source</link> with a <link sync_services.csdoc>synchronization service</link>. The action can upload cases from the local device (client) to the service as well as download cases from the service.
+
+The synchronization service is identified using <arg>syncId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>. While optional, this should generally be specified explicitly. (If there is only one synchronization session active, the resource ID can be calculated implicitly.)
+
+<include ../Data/dataId_resource_id.hgi />
+
+The <arg>direction</arg> argument determines whether cases are uploaded, downloaded, or both. Options include:
+
+<list>
+    <li><b><logiccolor>"get"</logiccolor></b>: Download any cases that were modified on the service since the last synchronization and update or add them to the local data source.</li>
+    <li><b><logiccolor>"put"</logiccolor></b>: Upload to the service any cases that were modified in the local data source since the last synchronization.</li>
+    <li><b><logiccolor>"both"</logiccolor></b>: Synchronize cases with the service in both directions (i.e., perform both a <logiccolor>"get"</logiccolor> and a <logiccolor>"put"</logiccolor>).</li>
+</list>
+
+<include ../Sync/syncdata_logic_action_shared_1.hgi />
+
+By providing an optional <arg>universe</arg> argument, you can limit the cases that are transferred. The <arg>universe</arg> can be a single string, or an array of strings. When supplying an array, one synchronization operation will occur for each string in the array. <include ../../sync/sync_universe.hgi />
+
+<include ../Sync/syncdata_logic_action_shared_2.hgi />
+
+This action is similar to the CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>syncdata</logiccolor>. The action <action><definition other_action_name /></action> is an alias for this action.
+
+
+<subheader>Return Value</subheader>
+
+The action returns an object containing information about the number of cases sent and received:
+
+<table 3 header nowrap>
+    <cell>Object</cell><cell>Property</cell><cell>Value</cell>
+    <cell><colorinline JSON>"sent"</colorinline></cell><cell><colorinline JSON>"count"</colorinline></cell><cell>Total number of cases sent to the synchronization service. Some of these cases may already exist on the synchronization service, so this value is not necessarily equal to the number of cases updated on the synchronization service.</cell>
+    <cell><colorinline JSON>"received"</colorinline></cell><cell><colorinline JSON>"count"</colorinline></cell><cell>Total number of cases received from the synchronization service. Some of these cases may already exist in the data source.</cell>
+    <cell><colorinline JSON>"received"</colorinline></cell><cell><colorinline JSON>"new"</colorinline></cell><cell>Number of received cases that existed only on the synchronization service. These cases are added to the data source.</cell>
+    <cell><colorinline JSON>"received"</colorinline></cell><cell><colorinline JSON>"updates"</colorinline></cell><cell>Number of received cases that existed on both the synchronization service and the data source, where the synchronization service version was newer. The corresponding cases in the data source are updated.</cell>
+    <cell><colorinline JSON>"received"</colorinline></cell><cell><colorinline JSON>"stale"</colorinline></cell><cell>Number of received cases that existed on both the synchronization service and the data source, where the data source version was newer. The received cases are ignored.</cell>
+    <cell><colorinline JSON>"received"</colorinline></cell><cell><colorinline JSON>"conflicts"</colorinline></cell><cell>Number of received cases that existed on both the synchronization service and the data source and were modified independently. These cases are treated as conflicts. CSPro ignores the synchronization service version and keeps the data source version.</cell>
+</table>
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The synchronization connection ID is not valid.</li>
+    <li>The data source ID is not valid.</li>
+    <li>The data source does not support synchronization.</li>
+    <li>There is a network error while sending or receiving data from the synchronization service.</li>
+    <li>There is an error interacting with the data source.</li>
+</list>
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+let dataId;
+let syncId;
+
+try {
+    // open the survey data
+    dataId = CS.Data.open({
+        connection: "molting-dates.csdb"
+    });
+
+    // connect to CSWeb, supplying the username and password
+    syncId = CS.Sync.connect({
+        connection: {
+            url: "<definition csweb_example_url />",
+            username: "jackw",
+            password: "MyPa$$w0rd!"
+        }
+    });
+
+    // synchronize the data, putting cases
+    CS.<definition action_name />({
+        syncId,
+        dataId,
+        direction: "put"
+    });
+}
+catch (error) {
+    print("Error syncing data: " + error);
+}
+finally {
+    // close the synchronization connection
+    if( syncId != undefined ) {
+        CS.Sync.disconnect({
+            syncId
+        });
+    }
+
+    // close the data source
+    if( dataId != undefined ) {
+        CS.Data.close({
+            dataId
+        });
+    }
+}
+</color>

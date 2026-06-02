@@ -19,6 +19,7 @@ After <link CS_Data_open.csdoc>creating</link> a connection to a data source, a 
     <cell><action>Data.queryCases</action></cell><cell>Queries cases from a data source.</cell>
     <cell><action>Data.queryKeys</action></cell><cell>Queries case keys from a data source.</cell>
     <cell><action>Data.readCase</action></cell><cell>Returns a case read from a data source.</cell>
+    <cell><action>Data.sync</action></cell><cell>Synchronizes the cases in a data source with a synchronization service.</cell>
     <cell><action>Data.writeCase</action></cell><cell>Writes a case to a data source.</cell>
 </table>
 
