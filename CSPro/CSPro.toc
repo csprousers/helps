@@ -1754,6 +1754,7 @@
               { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
               { "path": "CS_Sync_connect.csdoc", "~title": "Sync.connect Action" },
               { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" },
+              { "path": "CS_Sync_getConnectionInfo.csdoc", "~title": "Sync.getConnectionInfo Action" },
               { "path": "CS_Sync_sendMessage.csdoc", "~title": "Sync.sendMessage Action" },
               { "path": "CS_Sync_syncData.csdoc", "~title": "Sync.syncData Action" },
               { "path": "CS_Sync_syncParadata.csdoc", "~title": "Sync.syncParadata Action" }

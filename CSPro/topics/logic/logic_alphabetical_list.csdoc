@@ -325,6 +325,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>swap</logiccolor></cell><cell>Switches the order of two occurrences within a group.</cell>
     <cell><action>Sync.connect</action> <sup>(CS)</sup></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
     <cell><action>Sync.disconnect</action> <sup>(CS)</sup></cell><cell>Ends a synchronization session, disconnecting from the synchronization service.</cell>
+    <cell><action>Sync.getConnectionInfo</action> <sup>(CS)</sup></cell><cell>Returns information about the synchronization service connection.</cell>
     <cell><action>Sync.sendMessage</action> <sup>(CS)</sup></cell><cell>Sends a message to a synchronization service and returns the service's response.</cell>
     <cell><action>Sync.syncData</action> <sup>(CS)</sup></cell><cell>Synchronizes the cases in a data source with a synchronization service.</cell>
     <cell><action>Sync.syncParadata</action> <sup>(CS)</sup></cell><cell>Synchronizes the events in a paradata log with a synchronization service.</cell>
