@@ -21,7 +21,7 @@ CS.Sync.syncParadata(<arg>syncId</arg> := ...
 
 The <action>Sync.syncParadata</action> <link action_invoker.csdoc>action</link> synchronizes the events in a <link paradata.csdoc>paradata</link> log with a <link sync_services.csdoc>synchronization service</link>. The action can upload paradata from the local device (client) to the service as well as download paradata from the service. It keeps track of what paradata has been transferred each time the client and service synchronize. This information is used to only transfer paradata that has been collected since the last synchronization. This significantly reduces the amount of data transferred.
 
-The connection is identified using <arg>syncId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>. While optional, this should generally be specified explicitly. (If there is only one synchronization session active, the resource ID can be calculated implicitly.)
+<include syncId_resource_id.hgi />
 
 The <arg>direction</arg> argument determines whether paradata is uploaded, downloaded, or both. Options include:
 

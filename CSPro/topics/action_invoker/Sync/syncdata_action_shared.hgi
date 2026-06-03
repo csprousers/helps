@@ -20,7 +20,7 @@ s = CS.<definition action_name />(<arg>syncId</arg> := ...
 
 The <action><definition action_name /></action> <link action_invoker.csdoc>action</link> <link synchronization.csdoc>synchronizes</link> the cases in a CSPro <link data_sources.csdoc>data source</link> with a <link sync_services.csdoc>synchronization service</link>. The action can upload cases from the local device (client) to the service as well as download cases from the service.
 
-The synchronization service is identified using <arg>syncId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>. While optional, this should generally be specified explicitly. (If there is only one synchronization session active, the resource ID can be calculated implicitly.)
+<include ../Sync/syncId_resource_id.hgi />
 
 <include ../Data/dataId_resource_id.hgi />
 

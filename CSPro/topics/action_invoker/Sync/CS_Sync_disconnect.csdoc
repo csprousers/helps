@@ -17,7 +17,7 @@ CS.Sync.disconnect(<arg>syncId</arg> := ...)
 
 The <action>Sync.disconnect</action> <link action_invoker.csdoc>action</link> ends a <link synchronization.csdoc>synchronization session</link>, disconnecting from a <link sync_services.csdoc>synchronization service</link>.
 
-The connection is identified using <arg>syncId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>. While optional, this should generally be specified explicitly. (If there is only one synchronization session active, the resource ID can be calculated implicitly.)
+<include syncId_resource_id.hgi />
 
 Once the connection is closed, additional requests to the synchronization service cannot occur until creating another connection.
 
