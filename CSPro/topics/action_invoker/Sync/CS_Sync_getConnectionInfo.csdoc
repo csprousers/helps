@@ -56,4 +56,4 @@ if (syncInfo.username === "admin") {
 </color>
 
 
-<seealso CS_Sync.csdoc />
+<seealso CS_Sync.csdoc CS_Data_getSyncStatus.csdoc />

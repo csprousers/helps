@@ -1,0 +1,256 @@
+<title>Data.getSyncStatus Action Examples</title>
+
+
+The following examples show how to use the <action>Data.getSyncStatus</action> action, providing examples of the results that the action returns. The <link javascript_overview.csdoc>JavaScript</link> examples do not show how to <link CS_Data_open.csdoc>create</link> a connection to a data source, but the <colorinline JavaScript>dataId</colorinline> variable used would be from a call to <action>Data.open</action>. The results are shown in <link JSON_primer.csdoc>JSON</link>.
+
+
+<subheader>Content: Summary</subheader>
+
+The summary contains information about each synchronization service used for a data synchronization operation.
+
+<color JavaScript>
+CS.Data.getSyncStatus({
+    dataId,
+    content: "summary"
+});
+</color>
+
+Sample result:
+
+<color JSON>
+{
+  "lastPut": {
+    "time": "2026-06-09T15:27:03Z",
+    "deviceId": "588850ce-330b-4afd-8282-7603e955a7a3",
+    "deviceName": "<definition csweb_example_url />/",
+    "username": "jackw",
+    "universe": "",
+    "direction": "put",
+    "partial": false
+  },
+  "lastGet": {
+    "time": "2026-06-03T18:34:25Z",
+    "deviceId": "Dropbox",
+    "deviceName": "Dropbox",
+    "username": "jackw@example.org",
+    "universe": "",
+    "direction": "get",
+    "partial": false
+  }
+}
+</color>
+
+
+Filtering on a device shows only information for a particular synchronization service, and also provides information about the number of cases that are pending synchronization. This number means that, if you put data to this service, roughly this number of cases would be transferred.
+
+<color JavaScript>
+CS.Data.getSyncStatus({
+    dataId,
+    content: "summary"
+    deviceName: "<definition csweb_example_url />/"
+});
+</color>
+
+Sample result:
+
+<color JSON>
+{
+  "lastPut": {
+    "time": "2026-06-09T15:27:03Z",
+    "deviceId": "588850ce-330b-4afd-8282-7603e955a7a3",
+    "deviceName": "<definition csweb_example_url />/",
+    "username": "jackw",
+    "universe": "",
+    "direction": "put",
+    "partial": false
+  },
+  "casesPendingSync": 3
+}
+</color>
+
+
+<subheader>Content: Synchronization History</subheader>
+
+The synchronization history is returned ordered from newest to oldest.
+
+<color JavaScript>
+CS.Data.getSyncStatus({
+    dataId,
+    content: "syncHistory"
+});
+</color>
+
+Sample result:
+
+<color JSON>
+{
+  "syncHistory": [
+    {
+      "time": "2026-06-09T15:27:03Z",
+      "deviceId": "588850ce-330b-4afd-8282-7603e955a7a3",
+      "deviceName": "<definition csweb_example_url />/",
+      "username": "jackw",
+      "universe": "",
+      "direction": "put",
+      "partial": false
+    },
+    {
+      "time": "2026-06-08T19:38:18Z",
+      "deviceId": "588850ce-330b-4afd-8282-7603e955a7a3",
+      "deviceName": "<definition csweb_example_url />/",
+      "username": "jackw",
+      "universe": "",
+      "direction": "put",
+      "partial": false
+    },
+    {
+      "time": "2026-06-03T18:34:25Z",
+      "deviceId": "Dropbox",
+      "deviceName": "Dropbox",
+      "username": "jackw@example.org",
+      "universe": "",
+      "direction": "get",
+      "partial": false
+    }
+  ],
+  "lastGet": {
+    "time": "2026-06-03T18:34:25Z",
+    "deviceId": "Dropbox",
+    "deviceName": "Dropbox",
+    "username": "jackw@example.org",
+    "universe": "",
+    "direction": "get",
+    "partial": false
+  },
+  "lastPut": {
+    "time": "2026-06-09T15:27:03Z",
+    "deviceId": "588850ce-330b-4afd-8282-7603e955a7a3",
+    "deviceName": "<definition csweb_example_url />/",
+    "username": "jackw",
+    "universe": "",
+    "direction": "put",
+    "partial": false
+  }
+}
+</color>
+
+
+<subheader>Content: Synchronization Services</subheader>
+
+Each synchronization service may have multiple device names. For example, if a <link sync_service_csweb.csdoc>CSWeb</link> server's URL changes, the device ID will be constant but the names will reflect both the old and new URLs.
+
+<color JavaScript>
+CS.Data.getSyncStatus({
+    dataId,
+    content: "syncServices"
+});
+</color>
+
+Sample result:
+
+<color JSON>
+[
+  {
+    "deviceId": "588850ce-330b-4afd-8282-7603e955a7a3",
+    "deviceNames": [
+      "<definition csweb_example_url />/",
+      "http://localhost/csweb<definition version_condensed />/api/"
+    ],
+    "firstSyncTime": "2026-05-05T08:27:03Z",
+    "lastSyncTime": "2026-06-09T15:27:03Z"
+  },
+  {
+    "deviceId": "Dropbox",
+    "deviceNames": [
+      "Dropbox"
+    ],
+    "firstSyncTime": "2026-06-03T18:34:25Z",
+    "lastSyncTime": "2026-06-03T18:34:25Z"
+  }
+]
+</color>
+
+
+<subheader>Content: Cases Pending Synchronization</subheader>
+
+The cases pending synchronization are cases that have not been put from the data source to a synchronization service.
+
+<color JavaScript>
+CS.Data.getSyncStatus({
+    dataId,
+    content: "casesPendingSync",
+    deviceName: "<definition csweb_example_url />/"
+});
+</color>
+
+Sample result:
+
+<color JSON>
+[
+  {
+    "key": "4480489263555",
+    "position": 609,
+    "uuid": "38ed23c6-1967-465a-8011-00287bc9792b"
+  },
+  {
+    "key": "4480489263333",
+    "position": 3,
+    "uuid": "48e6b01e-734b-4cdb-b30d-fbcd2ea104e3"
+  },
+  {
+    "key": "4480489263666",
+    "position": 1249,
+    "uuid": "49720a7c-945c-49e5-b888-12dfde1810ff"
+  }
+]
+</color>
+
+
+<subheader>Content: Case Status</subheader>
+
+The case status reflects information about the current version of the case. A case may have been synchronized and then later modified, but if the modified case was not synchronized, the synchronization history array will be empty.
+
+<color JavaScript>
+CS.Data.getSyncStatus({
+    dataId,
+    content: "caseStatus",
+    deviceName: "<definition csweb_example_url />/",
+    key: "4480489263666"
+});
+</color>
+
+
+Sample result for a case pending synchronization:
+
+<color JSON>
+{
+  "key": "4480489263666",
+  "position": 1249,
+  "uuid": "49720a7c-945c-49e5-b888-12dfde1810ff",
+  "syncHistory": []
+}
+</color>
+
+Sample result for a case that has been synchronized:
+
+<color JSON>
+{
+  "key": "4480586623555",
+  "position": 205,
+  "uuid": "73354b1b-f7c0-48f2-8943-538e77a61e7b",
+  "syncHistory": [
+    {
+      "time": "2026-06-09T15:27:03Z",
+      "deviceId": "588850ce-330b-4afd-8282-7603e955a7a3",
+      "deviceName": "<definition csweb_example_url />/",
+      "username": "jackw",
+      "universe": "",
+      "direction": "put",
+      "partial": false
+    }
+  ]
+}
+</color>
+
+
+<seealso CS_Data_getSyncStatus.csdoc />

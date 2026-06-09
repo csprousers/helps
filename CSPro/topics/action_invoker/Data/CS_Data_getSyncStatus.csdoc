@@ -1,0 +1,99 @@
+<title>Data.getSyncStatus Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.Data.getSyncStatus(<arg>dataId</arg> := ...,
+                       『, <arg>content</arg> := ...』
+                       『, <arg>deviceId</arg> := ... ‖ <arg>deviceName</arg> := ... ‖ <arg>syncId</arg> := ...』
+                       『, <arg>key</arg> := ... ‖ <arg>uuid</arg> := ... ‖ <arg>position</arg> := ...』
+                       『, <arg>universe</arg> := ...』
+                       『, <arg>limit</arg> := ...』)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>dataId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Data.open</action>, or a dictionary name.</cell><cell>number, string~!~recommended</cell>
+    <cell><arg>content</arg></cell><cell>The synchronization status content to query.~!~The default value is <logiccolor>"summary"</logiccolor>.</cell><cell>string~!~not required</cell>
+    <cell><arg>deviceId</arg></cell><cell>A synchronization service's device ID, used to filter the content.</cell><cell>string~!~not required</cell>
+    <cell><arg>deviceName</arg></cell><cell>A synchronization service's device name, used to filter the content.</cell><cell>string~!~not required</cell>
+    <cell><arg>syncId</arg></cell><cell>A <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>, used to filter the content.</cell><cell>number~!~not required</cell>
+    <cell><arg>key</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>key</link> (case IDs) of a specific case used to filter the content.</cell><cell>string~!~not required</cell>
+    <cell><arg>uuid</arg></cell><cell>The <link data_source_identification_of_cases.csdoc>UUID</link> of a specific case used to filter the content.</cell><cell>string~!~not required</cell>
+    <cell><arg>position</arg></cell><cell>The "<link data_source_identification_of_cases.csdoc>position</link>" of a specific case used to filter the content.</cell><cell>number~!~not required</cell>
+    <cell><arg>universe</arg></cell><cell>A universe to limit the cases that are considered as part of a synchronization status query.</cell><cell>string~!~not required</cell>
+    <cell><arg>limit</arg></cell><cell>The maximum number of results to return from the query.</cell><cell>number~!~not required</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Data.getSyncStatus</action> <link action_invoker.csdoc>action</link> returns information about the <link synchronization.csdoc>synchronization</link> state of a <link data_sources.csdoc>data source</link>. The information returned is determined by <arg>content</arg>. The action can return a list of cases that have not been synchronized, a list of devices that have been used for synchronization, and more.
+
+<include dataId_resource_id.hgi />
+
+Based on <arg>content</arg>, the action can return information about all <link sync_services.csdoc>synchronization services</link> used for synchronization, or the content can be filtered for a particular service:
+
+<list>
+    <li><b>Device ID</b>: By specifying a <arg>deviceId</arg>, the content returned only pertains to synchronization with the service with the specified device ID. This ID can be retrieved using <action>Sync.getConnectionInfo</action>. An example of a <link sync_service_csweb.csdoc>CSWeb</link> device ID is: <logiccolor>"588850ce-330b-4afd-8282-7603e955a7a3"</logiccolor>.</li>
+    <li><b>Device Name</b>: By specifying a <arg>deviceName</arg>, the content returned only pertains to synchronization with the service with the specified device name. This name can be retrieved using <action>Sync.getConnectionInfo</action>. An example of a CSWeb device name is: <logiccolor>"<definition csweb_example_url />/"</logiccolor>.</li>
+    <li><b>Synchronization Service Connection</b>: If connected to a synchronization service, you can use <arg>syncId</arg> to specify the <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</li>
+    <li>If specifying multiple synchronization service identifiers, <arg>deviceId</arg> is prioritized over <arg>deviceName</arg>, and <arg>syncId</arg> is only used if a device is otherwise not identified.</li>
+</list>
+
+
+<subheader>Content: Summary</subheader>
+
+The default option for <arg>content</arg>, <logiccolor>"summary"</logiccolor>, returns an object with the synchronization history for the last get (<colorinline JSON>"lastGet"</colorinline>) and the last put (<colorinline JSON>"lastPut"</colorinline>). If a device is specified, the last get and put values will be for that device; otherwise, the values are for synchronizations with any device. If a device is specified, or the data has only been synchronized with one service, then the number of cases that have not been put to the service is returned as the number <colorinline JSON>"casesPendingSync"</colorinline>.
+
+
+<subheader>Content: Synchronization History</subheader>
+
+The option for <arg>content</arg>, <logiccolor>"syncHistory"</logiccolor>, returns an object containing the data source's synchronization history. This history, ordered from newest to oldest, is returned as an array (<colorinline JSON>"syncHistory"</colorinline>). The last get and last put are also returned (<colorinline JSON>"lastGet"</colorinline> and <colorinline JSON>"lastPut"</colorinline>). If a device is specified, this history will be for that device. The amount of synchronization history processed can be reduced by specifying a <arg>limit</arg>.
+
+
+<subheader>Content: Synchronization Services</subheader>
+
+The option for <arg>content</arg>, <logiccolor>"syncServices"</logiccolor>, returns an array containing information about each of the synchronization services used for synchronizing the cases in the data source. Each object in the array contains the device ID, <colorinline JSON>"deviceId"</colorinline>, an array of names associated with the devices (<colorinline JSON>"deviceNames"</colorinline>), and the times of the oldest and most recent synchronizations (<colorinline JSON>"firstSyncTime"</colorinline> and <colorinline JSON>"lastSyncTime"</colorinline>).
+
+
+<subheader>Content: Cases Pending Synchronization</subheader>
+
+The option for <arg>content</arg>, <logiccolor>"casesPendingSync"</logiccolor>, returns an array of <link data_source_identification_of_cases.csdoc>case identifiers</link> of cases that have not been put to a synchronization service, which generally means that the local version of the case has been modified. Each object in the array contains the identifiers <colorinline JSON>"key"</colorinline>, <colorinline JSON>"uuid"</colorinline>, and <colorinline JSON>"position"</colorinline>. Because cases are synchronized on a per-device basis, you must specify a device (or the data must have only been synchronized with one service). The array of cases pending synchronization can be reduced by specifying a <arg>limit</arg>. You can also specify a <colorinline JSON>"universe"</colorinline> to determine the cases that would be part of a synchronization operation that uses a universe.
+
+
+<subheader>Content: Case Status</subheader>
+
+The option for <arg>content</arg>, <logiccolor>"caseStatus"</logiccolor>, returns an object with information about the synchronization status of a specific case. This object contains all the case identifiers (<colorinline JSON>"key"</colorinline>, <colorinline JSON>"uuid"</colorinline>, <colorinline JSON>"position"</colorinline>), and an array, <colorinline JSON>"syncHistory"</colorinline>, containing the specific synchronization history of this version of the case. The only history returned pertains to the current version of the case, so if it is pending synchronization, then the array will be empty. If a device is specified, this history will be for synchronizations to that device.
+
+<include case_specification.hgi />
+
+The CSPro <link introduction_to_cspro_language.csdoc>logic</link> function <logiccolor>synctime</logiccolor> also returns information about a case's synchronization status.
+
+
+<subheader>Return Value</subheader>
+
+The action returns an array or object containing the queried synchronization state. To see examples of the results, shown in JSON, see here: <topic CS_Data_getSyncStatus_examples.csdoc />.
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form, or if:
+
+<list>
+    <li>The data source ID is not valid.</li>
+    <li>The data source does not support synchronization.</li>
+    <li>The specified case does not exist in the data source.</li>
+    <li>There is an error interacting with the data source.</li>
+    <li>The synchronization connection ID is not valid.</li>
+    <li>The query requires the specification of a device but no device is specified and it cannot be implicitly calculated.</li>
+</list>
+
+
+<subheader>Example</subheader>
+
+To see examples of the running the action, and the results it returns, see here: <topic CS_Data_getSyncStatus_examples.csdoc />.
+
+
+<seealso CS_Data.csdoc CS_Data_sync.csdoc CS_Sync_getConnectionInfo.csdoc synctime_function.csdoc />

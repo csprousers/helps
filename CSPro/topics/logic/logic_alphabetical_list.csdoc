@@ -50,6 +50,7 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><action>Data.countCases</action> <sup>(CS)</sup></cell><cell>Returns the number of cases in a data source.</cell>
     <cell><action>Data.deleteCase</action> <sup>(CS)</sup></cell><cell>Deletes a case from a data source.</cell>
     <cell><action>Data.getCurrentCase</action> <sup>(CS)</sup></cell><cell>Returns the current case associated with an application's dictionary.</cell>
+    <cell><action>Data.getSyncStatus</action> <sup>(CS)</sup></cell><cell>Returns information about the synchronization state of the data source.</cell>
     <cell><action>Data.open</action> <sup>(CS)</sup></cell><cell>Opens a data source and returns an ID that can be used for future operations.</cell>
     <cell><action>Data.query</action> <sup>(CS)</sup></cell><cell>Queries content from a data source.</cell>
     <cell><action>Data.queryCases</action> <sup>(CS)</sup></cell><cell>Queries cases from a data source.</cell>

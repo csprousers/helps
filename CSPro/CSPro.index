@@ -1075,6 +1075,8 @@
       { "path": "CS_Data_countCases.csdoc", "~title": "Data.countCases Action" },
       { "path": "CS_Data_deleteCase.csdoc", "~title": "Data.deleteCase Action" },
       { "path": "CS_Data_getCurrentCase.csdoc", "~title": "Data.getCurrentCase Action" },
+      { "path": "CS_Data_getSyncStatus.csdoc", "~title": "Data.getSyncStatus Action" },
+      { "path": "CS_Data_getSyncStatus_examples.csdoc", "~title": "Data.getSyncStatus Action Examples" },
       { "path": "CS_Data_open.csdoc", "~title": "Data.open Action" },
       { "path": "CS_Data_query.csdoc", "~title": "Data.query" },
       { "path": "CS_Data_queryCases.csdoc", "~title": "Data.queryCases Action" },
@@ -4134,7 +4136,7 @@
       { "path": "synchronization.csdoc", "title": "Overview" },
       { "path": "sync_services.csdoc", "title": "Services" },
       { "path": "synchronization_simple.csdoc", "title": "Simple Synchronization" },
-      { "path": "synctime_function.csdoc", "title": "Statistics" },
+      { "path": "CS_Data_getSyncStatus.csdoc", "title": "Statistics" },
       { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
       { "path": "syncable_name.csdoc", "~title": "Syncable Name" }
     ]

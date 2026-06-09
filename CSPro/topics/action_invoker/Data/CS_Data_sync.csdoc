@@ -10,4 +10,4 @@
 <include ../Sync/syncdata_action_shared.hgi />
 
 
-<seealso CS_Data.csdoc CS_Sync.csdoc synchronization.csdoc syncdata_function.csdoc />
+<seealso CS_Data.csdoc CS_Sync.csdoc synchronization.csdoc CS_Data_getSyncStatus.csdoc syncdata_function.csdoc />
