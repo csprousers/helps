@@ -1,0 +1,1 @@
+The synchronization service is identified using <arg>syncId</arg>, a <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>. While optional, this should generally be specified explicitly. (If there is only one synchronization session active, the resource ID can be calculated implicitly.)

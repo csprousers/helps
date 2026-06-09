@@ -1,0 +1,59 @@
+<title>Sync.getConnectionInfo Action</title>
+
+
+<subheader>Format</subheader>
+
+<logicsyntax>
+s = CS.Sync.getConnectionInfo(<arg>syncId</arg> := ...)
+</logicsyntax>
+
+<indent><table 3 header nowrap>
+    <cell>Argument</cell><cell>Description</cell><cell nowrap>Types / Required</cell>
+    <cell><arg>syncId</arg></cell><cell>The <link action_invoker_resource_ids.csdoc>resource ID</link> returned by <action>Sync.connect</action>.</cell><cell>number~!~recommended</cell>
+</table></indent>
+
+
+<subheader>Description</subheader>
+
+The <action>Sync.getConnectionInfo</action> <link action_invoker.csdoc>action</link> returns information about a connection to a <link sync_services.csdoc>synchronization service</link>. This information includes the server URL and device ID, the name of the user, and other details.
+
+<include syncId_resource_id.hgi />
+
+
+<subheader>Return Value</subheader>
+
+The action returns an object containing the properties:
+
+<table 2 header nowrap>
+    <cell>Property</cell><cell>Value</cell>
+    <cell><colorinline JSON>"syncId"</colorinline></cell><cell>The resource ID that identifies this synchronization service.</cell>
+    <cell><colorinline JSON>"startTime"</colorinline></cell><cell>The time that the connection to the synchronization service was initiated.</cell>
+    <cell><colorinline JSON>"connection"</colorinline></cell><cell>The <link sync_connection_string.csdoc>synchronization connection string</link>, in JSON format, used for this connection. Sensitive properties defined in the connection string, such as a password, are not returned.</cell>
+    <cell><colorinline JSON>"deviceId"</colorinline></cell><cell>The synchronization service's device ID, which is used as part of <link synchronization.csdoc>data synchronization</link>.</cell>
+    <cell><colorinline JSON>"deviceName"</colorinline></cell><cell>The synchronization service's device name, which is also used as part of data synchronization.</cell>
+    <cell><colorinline JSON>"username"</colorinline></cell><cell>The name of the user who logged into the synchronization service. For <link sync_service_dropbox.csdoc>Dropbox</link> connections, this is the email address associated with the account.</cell>
+    <cell><colorinline JSON>"apiVersion"</colorinline></cell><cell>An API version number optionally provided by the synchronization service.</cell>
+</table>
+
+
+<subheader>Exceptions</subheader>
+
+The action throws an exception if any of its arguments are not specified in a valid form or if the synchronization connection ID is not valid.
+
+
+<subheader>Example (JavaScript)</subheader>
+
+<color JavaScript>
+const syncId = /* retrieved from a call to CS.Sync.connect */;
+
+const syncInfo = CS.Sync.getConnectionInfo({
+    syncId
+});
+
+if (syncInfo.username === "admin") {
+    throw new Error("You cannot log in as the administrator!");
+}
+</color>
+
+
+<seealso CS_Sync.csdoc CS_Data_getSyncStatus.csdoc />

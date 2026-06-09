@@ -50,11 +50,13 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><action>Data.countCases</action> <sup>(CS)</sup></cell><cell>Returns the number of cases in a data source.</cell>
     <cell><action>Data.deleteCase</action> <sup>(CS)</sup></cell><cell>Deletes a case from a data source.</cell>
     <cell><action>Data.getCurrentCase</action> <sup>(CS)</sup></cell><cell>Returns the current case associated with an application's dictionary.</cell>
+    <cell><action>Data.getSyncStatus</action> <sup>(CS)</sup></cell><cell>Returns information about the synchronization state of the data source.</cell>
     <cell><action>Data.open</action> <sup>(CS)</sup></cell><cell>Opens a data source and returns an ID that can be used for future operations.</cell>
     <cell><action>Data.query</action> <sup>(CS)</sup></cell><cell>Queries content from a data source.</cell>
     <cell><action>Data.queryCases</action> <sup>(CS)</sup></cell><cell>Queries cases from a data source.</cell>
     <cell><action>Data.queryKeys</action> <sup>(CS)</sup></cell><cell>Queries case keys from a data source.</cell>
     <cell><action>Data.readCase</action> <sup>(CS)</sup></cell><cell>Returns a case read from a data source.</cell>
+    <cell><action>Data.sync</action> <sup>(CS)</sup></cell><cell>Synchronizes the cases in a data source with a synchronization service.</cell>
     <cell><action>Data.writeCase</action> <sup>(CS)</sup></cell><cell>Writes a case to a data source.</cell>
     <cell><logiccolor>dateadd</logiccolor></cell><cell>Calculates a new date from a starting date and a period of elapsed time.</cell>
     <cell><logiccolor>datediff</logiccolor></cell><cell>Calculates the difference between two dates.</cell>
@@ -324,7 +326,9 @@ The following table lists functions and statements that can be used in logic. Li
     <cell><logiccolor>swap</logiccolor></cell><cell>Switches the order of two occurrences within a group.</cell>
     <cell><action>Sync.connect</action> <sup>(CS)</sup></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
     <cell><action>Sync.disconnect</action> <sup>(CS)</sup></cell><cell>Ends a synchronization session, disconnecting from the synchronization service.</cell>
+    <cell><action>Sync.getConnectionInfo</action> <sup>(CS)</sup></cell><cell>Returns information about the synchronization service connection.</cell>
     <cell><action>Sync.sendMessage</action> <sup>(CS)</sup></cell><cell>Sends a message to a synchronization service and returns the service's response.</cell>
+    <cell><action>Sync.syncData</action> <sup>(CS)</sup></cell><cell>Synchronizes the cases in a data source with a synchronization service.</cell>
     <cell><action>Sync.syncParadata</action> <sup>(CS)</sup></cell><cell>Synchronizes the events in a paradata log with a synchronization service.</cell>
     <cell><logiccolor>syncapp</logiccolor></cell><cell>Updates an application from a new version of the deployed package on a synchronization service.</cell>
     <cell><logiccolor>syncconnect</logiccolor></cell><cell>Connects to CSWeb, Dropbox, or an FTP server, or to another device using Bluetooth, to begin a synchronization session.</cell>

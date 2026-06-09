@@ -1,5 +1,6 @@
 <title>SyncTime Function</title>
 
+
 <subheader>Format</subheader>
 
 <logicsyntax>
@@ -18,6 +19,8 @@ Alternatively, you can specify <arg>device_identifier</arg> using a device ID. T
 
 
 The optional string expression <arg>case_identifier</arg> allows you to specify a <link data_source_identification_of_cases.csdoc>case UUID</link> to get synchronization information on a case-by-case basis. A case's UUID is a value that uniquely identifies a case, even when multiple cases share the same key (ID items), and can be retrieved using the <logiccolor>uuid</logiccolor> function. The function only returns the synchronization time of the current iteration of the case, so if a case had been synced but has since been modified, the function will return <logiccolor>notappl</logiccolor>.
+
+This is a CSPro <link introduction_to_cspro_language.csdoc>logic</link> function. Similar, and additional, functionality is available when interacting with dictionaries by using the <action>Data.getSyncStatus</action> action.
 
 
 <subheader>Return Value</subheader>
@@ -64,4 +67,4 @@ endwhen;
 </logic>
 
 
-<seealso synchronization.csdoc syncdata_function.csdoc timestamp_function.csdoc timestring_function.csdoc />
+<seealso synchronization.csdoc CS_Data_getSyncStatus.csdoc syncdata_function.csdoc timestamp_function.csdoc timestring_function.csdoc />

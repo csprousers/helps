@@ -13,21 +13,21 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <list>
     <li>CSPro is now open source! The source code, written primarily in C++, JavaScript, Java/Kotlin, and PHP, with some code written in C#, is available on GitHub: <link https://<definition csprousers_github />><definition csprousers_github /></link>.</li>
     <li>The <link data_source_csweb.csdoc>CSWeb data source</link> facilitates directly accessing or updating CSWeb data without the need to run synchronizations. This data source can be used like other data sources: as the main dictionary for data collection, as an external dictionary, etc. Instead of storing cases in a file on a local machine, cases are stored on the CSWeb server.</li>
-    <li>CSWeb data can be <link CSWeb::accessing_data.csdoc>viewed directly</link> using <link DataManager::introduction.csdoc>Data Manager</link> without needing to download the data to your local machine.</li>
-    <li><link markdown_overview.csdoc>Markdown</link> can be used while specifying <link question_text.csdoc>question text</link>, in <link templated_reports.csdoc>templated reports</link>, and can be viewed (as generated HTML) using the <logiccolor>view</logiccolor> function or in <link CSView::supported_files.csdoc>CSView</link>. Markdown can also be edited in <link CSCode::language_markdown.csdoc>CSCode</link> and included as part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link>.</li>
-    <li>Applications can now <link javascript_overview.csdoc>incorporate JavaScript</link> in addition to <link introduction_to_cspro_language.csdoc>CSPro logic</link>. Many open-source JavaScript libraries exist that can be brought into your application, and as a dynamically typed language, some programming tasks may be easier using JavaScript. By using the <link JS.csdoc>JS</link> namespace, it is possible to <link JS_eval_function.csdoc>evaluate JavaScript</link>, <link JS_invoke_function.csdoc>invoke functions</link>, and <link JS_setValue_function.csdoc>convert</link> CSPro symbols to JavaScript numbers, strings, arrays, and objects. It is also possible to create <link javascript_user_defined_functions.csdoc>function wrappers</link> in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked.</li>
+    <li>CSWeb data can be <link CSWeb::accessing_data.csdoc>viewed directly</link> using <link DataManager::introduction.csdoc>Data Manager</link> without the need to download the data to your local machine.</li>
+    <li><link markdown_overview.csdoc>Markdown</link> can be used when specifying <link question_text.csdoc>question text</link>, in <link templated_reports.csdoc>templated reports</link>, and can be viewed as generated HTML using the <logiccolor>view</logiccolor> function or in <link CSView::supported_files.csdoc>CSView</link>. Markdown can also be edited in <link CSCode::language_markdown.csdoc>CSCode</link> and included as part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link>.</li>
+    <li>Applications can now <link javascript_overview.csdoc>incorporate JavaScript</link> in addition to <link introduction_to_cspro_language.csdoc>CSPro logic</link>. Many open-source JavaScript libraries exist that can be brought into your application, and as a dynamically typed language, some programming tasks may be easier using JavaScript. By using the <logiccolor>JS</logiccolor> namespace, it is possible to <link JS_eval_function.csdoc>evaluate JavaScript</link>, <link JS_invoke_function.csdoc>invoke functions</link>, and <link JS_setValue_function.csdoc>convert</link> CSPro symbols to JavaScript numbers, strings, arrays, and objects. It is also possible to create <link javascript_user_defined_functions.csdoc>function wrappers</link> in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked.</li>
     <li>The Data Viewer tool has been renamed <link DataManager::introduction.csdoc>Data Manager</link> and has new features including:
         <list>
             <li>Synchronizing data with a <link DataManager::downloading_and_synchronizing_data.csdoc>universe</link>.</li>
         </list>
     </li>
     <li>HTTP requests can be made and responses processed using actions in the <link action_invoker.csdoc>Action Invoker's</link> <action>Network</action> namespace.</li>
-    <li>CSPro's handling of <link text_attributes.csdoc>text encoding and newline characters</link> is changing, with the aim to standardize the settings across file types.
+    <li>CSPro's handling of <link text_attributes.csdoc>text encoding and newline characters</link> is changing, with the aim of standardizing these settings across file types.
         <list>
             <li>In a future release, files without a BOM (<link "https://en.wikipedia.org/wiki/Byte_order_mark">byte order mark</link>) will be treated as text encoded in UTF-8, not ANSI.</li>
             <li>It will be possible to override this default behavior by specifying an <link text_attributes.csdoc>override</link>.</li>
             <li>In this release, <link TextView::encoding.csdoc>Text Viewer</link> treats files without a BOM as UTF-8, with an <link TextView::encoding.csdoc>Encoding menu</link> that lets you change the encoding to ANSI.</li>
-            <li>To prepare for the future release, if you use external tools to process CSPro files, you will want to ensure that they process files without a BOM as UTF-8, and that they can handle newlines written only with a line feed character (<logiccolor>"\n"</logiccolor>, not <logiccolor>"\r\n"</logiccolor>).</li>
+            <li>To prepare for the future release, if you use external tools to process CSPro files, you will want to ensure that they process files without a BOM as UTF-8, and that they handle newlines written using only a line feed character (<logiccolor>"\n"</logiccolor>, not <logiccolor>"\r\n"</logiccolor>).</li>
         </list>
     </li>
     <li>Images in the <link "https://en.wikipedia.org/wiki/WebP">WebP</link> format can be loaded and saved using the <link Image.csdoc>Image</link> object and can be used as <link value_set_images.csdoc>value set images</link>.</li>
@@ -35,9 +35,9 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
         <list>
             <li><link properties_application.csdoc>Application</link>: the name and label can be modified.</li>
             <li><link change_dictionary_properties.csdoc>Dictionary</link>: options to allow external dictionaries to be synchronized as part of a <link synchronization_simple.csdoc>Simple Synchronization routine</link> and to build <link value_set_images.csdoc>value set images</link> into a <link binary_data_entry_application_file_pen.csdoc>compiled application (.pen)</link>.</li>
-            <li><link change_message_properties.csdoc>Messages</link>: the message type&mdash;user-defined or system overrides&mdash;is now specified as a property, no longer based on the filename starting with "CSProRuntime".</li>
+            <li><link change_message_properties.csdoc>Messages</link>: the message type&mdash;user-defined or system overrides&mdash;is now specified as a property and is no longer based on the filename starting with "CSProRuntime".</li>
             <li><link change_report_properties.csdoc>Report</link>: <link templated_reports.csdoc>~~ fills</link> can be encoded for writing to Markdown or CSV formats.</li>
-            <li><link resources.csdoc>Resources</link>: in addition to directories, it is now possible to add single files as resources, and options provide control over what files in directories are processed.</li>
+            <li><link resources.csdoc>Resources</link>: in addition to directories, it is now possible to add single files as resources; for directories, options provide control over which files are included as resources.</li>
         </list>
     </li>
     <li>The CSPro Settings dialog has been renamed <link manage_credentials.csdoc>Manage Credentials</link> and now allows for the granular clearing of synchronization, data, and location credentials.</li>
@@ -63,19 +63,21 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <subheader>Synchronization</subheader>
 
 <list>
-    <li>Referencing <link sync_services.csdoc>synchronization services</link>, such as when using <logiccolor>syncconnect</logiccolor>, is possible using a single string, a <link sync_connection_string.csdoc>synchronization connection string</link>. This eliminates the need to specify the type of the service.
+    <li>Synchronization routines can be executed using the <link action_invoker.csdoc>Action Invoker</link>'s <action>Sync</action> namespace with the actions: <action>Sync.connect</action>, <action>Sync.disconnect</action>, <action>Sync.getConnectionInfo</action>, <action>Sync.sendMessage</action>, <action>Sync.syncData</action>, and <action>Sync.syncParadata</action>.</li>
+    <li>A data source's synchronization state can be retrieved using <action>Data.getSyncStatus</action>. The action returns information including a list of cases that have not been synchronized, as well as the synchronization history.</li>
+    <li>Information about synchronization operations is now recorded in <link paradata.csdoc>paradata</link> logs.</li>
+    <li>Referencing <link sync_services.csdoc>synchronization services</link>, such as when using <logiccolor>syncconnect</logiccolor>, is possible using a single string, called a <link sync_connection_string.csdoc>synchronization connection string</link>. This eliminates the need to specify the service type.
         <list>
             <li>The <pffcolor>SyncService</pffcolor> <link program_information_file_pff.csdoc>PFF attribute</link>, using this connection string, replaces the previous attributes named <i>SyncType</i> and <i>SyncUrl</i>.</li>
         </list>
     </li>
     <li>The same dictionary can be used to <link synchronization.csdoc>synchronize</link> data to different databases or data sets on the same <link sync_services.csdoc>synchronization service</link> by specifying a <link syncable_name.csdoc>syncable name</link>. This name, rather than the dictionary's actual name, will be used when sending or receiving cases from a <link sync_services.csdoc>synchronization service</link>.</li>
-    <li>The <logiccolor>syncdata</logiccolor> function can now be used with a data entry application's <link dictionary_types.csdoc>main dictionary</link>.</li>
+    <li>Data synchronization is possible when using a data entry application's <link dictionary_types.csdoc>main dictionary</link>.</li>
     <li>Multiple dictionaries can now be synchronized as part of <link synchronization_simple.csdoc>Simple Synchronization routine</link>.</li>
-    <li>You can specify what <link sync_service_dropbox.csdoc>Dropbox account</link> you want to use for synchronizing, supporting operations where multiple Dropbox accounts are in use.</li>
+    <li>You can specify a <link sync_service_dropbox.csdoc>Dropbox account</link> to use for synchronizing, supporting operations where multiple Dropbox accounts are in use.</li>
     <li><link sync_message.csdoc>Synchronization messages</link>, previously only handled by <link sync_service_bluetooth.csdoc>Bluetooth</link>, are now stored when sent to all <link sync_services.csdoc>synchronization services</link>.</li>
     <li>Paradata in logs other than the currently open log can be synchronized using <action>Sync.syncParadata</action>.</li>
     <li>An option supports creating the directory used for <link sync_service_local_files.csdoc>Local Files</link> synchronization, facilitating easy testing of synchronization operations on a local machine.</li>
-    <li>Synchronization routines can be executed using the <link action_invoker.csdoc>Action Invoker</link>'s <action>Sync</action> namespace with the actions: <action>Sync.connect</action>, <action>Sync.disconnect</action>, <action>Sync.sendMessage</action>, and <action>Sync.syncParadata</action>.</li>
 </list>
 
 
@@ -89,7 +91,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <subheader>Reporting</subheader>
 
 <list>
-    <li>The <link templated_reports.csdoc>templated reports</link> system has expanded to <link text_templates.csdoc>text templates</link>, with this system used when processing reports, as before, but also now when processing dynamic <link questions.csdoc>question text</link>.</li>
+    <li>The <link templated_reports.csdoc>templated reports</link> system has been expanded into a broader <link text_templates.csdoc>text templates</link> system. As before, this system is used when processing reports, but it is also now used to process dynamic <link questions.csdoc>question text</link>.</li>
     <li><link templated_reports.csdoc>Templated reports</link> support <link markdown_overview.csdoc>Markdown</link> as a <link change_report_properties.csdoc>format</link>, with the Markdown automatically converted to HTML for display.</li>
 </list>
 
@@ -100,7 +102,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
     <li>A new <link properties_mapping.csdoc>mapping property</link> allows <link "https://leafletjs.com">Leaflet</link> to be selected as the <link mapping_engine.csdoc>mapping engine</link> for Android. On Windows, Leaflet is the only available mapping engine.</li>
     <li>Offline maps can now use ArcGIS Tile Packages that use the <link "https://enterprise.arcgis.com/en/server/10.8/publish-services/linux/inside-the-compact-cache-storage-format.htm">CompactV2 storage format</link> (with the file extension .tpkx).</li>
     <li>When using Leaflet, ArcGIS Tile Packages created using the <link "https://desktop.arcgis.com/en/arcmap/10.3/map/working-with-arcmap/about-tile-packages.htm">Mixed tile format</link> ("JPEG in the center of the package with PNG 32 on the edge of the package") are supported.</li>
-    <li>Leaflet mapping supports using HTML tags in text entries for functions such as <logiccolor>Map.setTitle</logiccolor> and <logiccolor>Map.setMarkerText</logiccolor>. (This was already possible when using the Google Maps mapping engine.)</li>
+    <li>Leaflet mapping now supports using HTML tags in text entries for functions such as <logiccolor>Map.setTitle</logiccolor> and <logiccolor>Map.setMarkerText</logiccolor>. (This was already possible when using the Google Maps mapping engine.)</li>
 </list>
 
 
@@ -138,7 +140,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 
 <list>
     <li>JavaScript files can be associated with applications by using the <link manage_application_files.csdoc>Manage Application Files</link> interface. The JavaScript can be <link change_code_properties.csdoc>evaluated</link> as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#global_context">global script</link> or as a <link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">module</link>.</li>
-    <li>Functions in the <link JS.csdoc>JS</link> namespace allow interaction with JavaScript using CSPro logic:~!~~!~
+    <li>Functions in the <logiccolor>JS</logiccolor> namespace allow interaction with JavaScript using CSPro logic:~!~~!~
         <list>
             <li><logiccolor>JS.eval</logiccolor>: Evaluates JavaScript in the global execution context.</li>
             <li><logiccolor>JS.getValue</logiccolor>: Converts a JavaScript variable or property to its CSPro equivalent.</li>
@@ -156,10 +158,10 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 
 <list>
     <li>A new action, <action>throwException</action>, throws an exception in the current execution environment.</li>
-    <li>A new namespace, <action>Network</action>, provides functionality to make HTTP requests and handle responses, with the actions: <action>Network.fetch</action>, <action>Network.fetchBody</action>, <action>Network.fetchBytes</action>, <action>Network.fetchFile</action>, <action>Network.fetchJson</action>, and <action>Network.fetchText</action></li>
-    <li>Additional <action>Data</action> actions support interacting with <link data_sources.csdoc>data sources</link>, with the new actions: <action>Data.close</action>, <action>Data.contains</action>, <action>Data.countCases</action>, <action>Data.deleteCase</action>, <action>Data.getCurrentCase</action>, <action>Data.open</action>, <action>Data.query</action>, <action>Data.queryCases</action>, <action>Data.queryKeys</action>, <action>Data.readCase</action>, and <action>Data.writeCase</action>.</li>
+    <li>A new namespace, <action>Network</action>, provides functionality to make HTTP requests and handle responses, with the actions: <action>Network.fetch</action>, <action>Network.fetchBody</action>, <action>Network.fetchBytes</action>, <action>Network.fetchFile</action>, <action>Network.fetchJson</action>, and <action>Network.fetchText</action>.</li>
+    <li>Additional <action>Data</action> actions support interacting with <link data_sources.csdoc>data sources</link>, with the new actions: <action>Data.close</action>, <action>Data.contains</action>, <action>Data.countCases</action>, <action>Data.deleteCase</action>, <action>Data.getCurrentCase</action>, <action>Data.getSyncStatus</action>, <action>Data.open</action>, <action>Data.query</action>, <action>Data.queryCases</action>, <action>Data.queryKeys</action>, <action>Data.readCase</action>, <action>Data.sync</action>, and <action>Data.writeCase</action>.</li>
     <li>The functionality of <action>Data.getCase</action> has been replaced by <action>Data.getCurrentCase</action> and <action>Data.readCase</action>. The old action will remain for some time, but new applications should use the new actions.</li>
-    <li>A new namespace, <action>Sync</action>, provides ways to interact with <link sync_services.csdoc>synchronization services</link>, with the actions: <action>Sync.connect</action>, <action>Sync.disconnect</action>, <action>Sync.sendMessage</action>, and <action>Sync.syncParadata</action>.</li>
+    <li>A new namespace, <action>Sync</action>, provides ways to interact with <link sync_services.csdoc>synchronization services</link>, with the actions: <action>Sync.connect</action>, <action>Sync.disconnect</action>, <action>Sync.sendMessage</action>, <action>Sync.syncData</action>, and <action>Sync.syncParadata</action>.</li>
     <li>A new action, <action>System.createShortcut</action>, creates a shortcut to a CSPro application or file. The shortcut is placed on the Windows Desktop, or on the Android launcher.</li>
     <li>The <action>UI.closeDialog</action> action has been renamed <action>UI.close</action>, though the old name will remain as an alias for some time. A new argument allows the <link html_dialog_ui.csdoc>HTML dialog</link> or <link html_in_cspro.csdoc>web view</link> to be closed without a valid result but instead with an exception that is thrown in the execution environment that launched the dialog or web view.</li>
     <li>A new action, <action>UI.setWebViewOptions</action>, sets options for the current <link html_in_cspro.csdoc>web view</link>. These options include allowing access to a device's camera, geolocation, and microphone.</li>

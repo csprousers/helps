@@ -1,0 +1,3 @@
+For synchronization with <link sync_service_csweb.csdoc>CSWeb</link>, the dictionary must first be uploaded to CSWeb. See the <link CSWeb::introduction_to_csweb.csdoc>CSWeb documentation</link> for more information.
+
+For <link sync_service_bluetooth.csdoc>Bluetooth</link> peer-to-peer synchronization, the data is written to the data source associated with the dictionary of the same name on the device running the service. This means that both devices must have this dictionary added to the currently running CSPro application.

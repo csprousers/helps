@@ -48,12 +48,12 @@ The following functions and actions are available:
     <cell>Function</cell><cell>Action</cell><cell>Description</cell>
     <cell><logiccolor>syncconnect</logiccolor></cell><cell nowrap><action>Sync.connect</action></cell><cell>Connects to a synchronization service, initiating a synchronization session.</cell>
     <cell><logiccolor>syncdisconnect</logiccolor></cell><cell nowrap><action>Sync.disconnect</action></cell><cell>Ends a synchronization session, disconnecting from the service.</cell>
-    <cell><logiccolor>syncdata</logiccolor></cell><cell nowrap></cell><cell>Synchronizes cases in CSPro data sources.</cell>
+    <cell><logiccolor>syncdata</logiccolor></cell><cell nowrap><action>Sync.syncData</action></cell><cell>Synchronizes cases in CSPro data sources.</cell>
     <cell><logiccolor>syncfile</logiccolor></cell><cell nowrap></cell><cell>Uploads or downloads non-data files.</cell>
     <cell><logiccolor>syncparadata</logiccolor></cell><cell nowrap><action>Sync.syncParadata</action></cell><cell>Synchronizes <link paradata.csdoc>paradata</link>.</cell>
     <cell><logiccolor>syncapp</logiccolor></cell><cell nowrap></cell><cell>Updates an application on the device from a new version on the service.</cell>
     <cell><logiccolor>syncmessage</logiccolor></cell><cell nowrap><action>Sync.sendMessage</action></cell><cell>Sends a <link sync_message.csdoc>message</link> and returns the service's response.</cell>
-    <cell><logiccolor>synctime</logiccolor></cell><cell nowrap></cell><cell>Returns the time of the last synchronization of a data source or a specific case.</cell>
+    <cell><logiccolor>synctime</logiccolor></cell><cell nowrap><action>Data.getSyncStatus</action></cell><cell>Returns information about the synchronization state of a data source or a specific case.</cell>
 </table>
 
 While it is possible to use <logiccolor>syncfile</logiccolor> to synchronize CSPro data sources, it is more efficient to use <logiccolor>syncdata</logiccolor> since it will only send/receive cases that have been modified whereas <logiccolor>syncfile</logiccolor> always sends the entire file.

@@ -1075,11 +1075,14 @@
       { "path": "CS_Data_countCases.csdoc", "~title": "Data.countCases Action" },
       { "path": "CS_Data_deleteCase.csdoc", "~title": "Data.deleteCase Action" },
       { "path": "CS_Data_getCurrentCase.csdoc", "~title": "Data.getCurrentCase Action" },
+      { "path": "CS_Data_getSyncStatus.csdoc", "~title": "Data.getSyncStatus Action" },
+      { "path": "CS_Data_getSyncStatus_examples.csdoc", "~title": "Data.getSyncStatus Action Examples" },
       { "path": "CS_Data_open.csdoc", "~title": "Data.open Action" },
       { "path": "CS_Data_query.csdoc", "~title": "Data.query" },
       { "path": "CS_Data_queryCases.csdoc", "~title": "Data.queryCases Action" },
       { "path": "CS_Data_queryKeys.csdoc", "~title": "Data.queryKeys Action" },
       { "path": "CS_Data_readCase.csdoc", "~title": "Data.readCase Action" },
+      { "path": "CS_Data_sync.csdoc", "~title": "Data.sync Action" },
       { "path": "CS_Data_writeCase.csdoc", "~title": "Data.writeCase Action" },
       { "path": "CS_Data.csdoc", "~title": "Data Action Invoker Namespace" }
     ]
@@ -4108,7 +4111,9 @@
     "subindex": [
       { "path": "CS_Sync_connect.csdoc", "~title": "Sync.connect Action" },
       { "path": "CS_Sync_disconnect.csdoc", "~title": "Sync.disconnect Action" },
+      { "path": "CS_Sync_getConnectionInfo.csdoc", "~title": "Sync.getConnectionInfo Action" },
       { "path": "CS_Sync_sendMessage.csdoc", "~title": "Sync.sendMessage Action" },
+      { "path": "CS_Sync_syncData.csdoc", "~title": "Sync.syncData Action" },
       { "path": "CS_Sync_syncParadata.csdoc", "~title": "Sync.syncParadata Action" }
     ]
   },
@@ -4131,7 +4136,7 @@
       { "path": "synchronization.csdoc", "title": "Overview" },
       { "path": "sync_services.csdoc", "title": "Services" },
       { "path": "synchronization_simple.csdoc", "title": "Simple Synchronization" },
-      { "path": "synctime_function.csdoc", "title": "Statistics" },
+      { "path": "CS_Data_getSyncStatus.csdoc", "title": "Statistics" },
       { "path": "CS_Sync.csdoc", "~title": "Sync Action Invoker Namespace" },
       { "path": "syncable_name.csdoc", "~title": "Syncable Name" }
     ]
