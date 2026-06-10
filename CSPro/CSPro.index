@@ -2689,6 +2689,7 @@
   { "path": "maxocc_function.csdoc", "~title": "MaxOcc Function" },
   { "path": "maxvalue_function.csdoc", "~title": "MaxValue Function" },
   { "path": "offline_maps.csdoc", "title": "MBTiles" },
+  { "path": "CS_Hash_createMd5.csdoc", "title": "MD5" },
   { "path": "add_summary_statistics_to_a_table.csdoc", "title": "Mean",
     "subindex": [
       { "path": "add_summary_statistics_to_a_table.csdoc", "~title": "Add Summary Statistics to a Table" },
@@ -3817,6 +3818,7 @@
   },
   { "path": "setvalueset_function.csdoc", "~title": "SetValueSet Function" },
   { "path": "setvaluesets_function.csdoc", "~title": "SetValueSets Function" },
+  { "path": "CS_Hash_createHash.csdoc", "title": "SHA-256" },
   { "path": "sharable_uri.csdoc", "~title": "Sharable URI" },
   { "path": "share_the_same_format_on_multiple_computers.csdoc", "~title": "Share the Same Format on Multiple Computers" },
   { "path": "external_files.csdoc", "title": "Sharing External Files" },

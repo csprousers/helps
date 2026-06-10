@@ -29,17 +29,18 @@ s = CS.Hash.createHash(<arg>path</arg> := ... ‖ <arg>text</arg> := ... ‖ <ar
 
 The <action>Hash.createHash</action> <link action_invoker.csdoc>action</link> creates a hash value based on the contents of a file, text, or bytes. One, and only one, of the arguments <arg>path</arg>, <arg>text</arg>, or <arg>bytes</arg> must be provided. If specifying <arg>text</arg>, the <link unicode_primer.csdoc>UTF-8</link> representation of the text is hashed. If specifying <arg>bytes</arg>, the optional <arg>bytesFormat</arg> argument dictates how <link action_invoker_binary_data.csdoc>binary data</link> is converted from string format.
 
-Three hash types are supported, specified using the <arg>type</arg> argument:
+Four hash types are supported, specified using the <arg>type</arg> argument:
 
 <list>
-    <li><logiccolor>"PBKDF2_SHA256"</logiccolor>: Calculates a hash using a SHA-256 key derivation algorithm.</li>
-    <li><logiccolor>"MD5"</logiccolor>: Creates a <link "https://en.wikipedia.org/wiki/MD5">MD5 hash</link>. (The action <action>Hash.createMd5</action> also creates MD5 hashes.)</li>
+    <li><logiccolor>"PBKDF2_SHA256"</logiccolor>: Calculates a hash using a <link "https://en.wikipedia.org/wiki/PBKDF2">SHA-256 key derivation function</link>.</li>
+    <li><logiccolor>"MD5"</logiccolor>: Creates a <link "https://en.wikipedia.org/wiki/MD5">MD5 hash</link>. The action <action>Hash.createMd5</action> also creates MD5 hashes.</li>
+    <li><logiccolor>"SHA-256"</logiccolor>: Creates a <link "https://en.wikipedia.org/wiki/SHA-2">SHA-256 hash</link>.</li>
     <li><logiccolor>"EncryptedCSProDB"</logiccolor>: Calculates a hash using the algorithm used to turn a text password into an encryption key used to open <link data_source_csdbe.csdoc>Encrypted CSPro DB data sources</link>.</li>
 </list>
 
 The default type, <logiccolor>"PBKDF2_SHA256"</logiccolor>, returns hash values identical to the <logiccolor>hash</logiccolor> logic function.
 
-The optional number <arg>length</arg> specifies the desired length of the hash value in bytes. The string returned will always be twice the value of <arg>length</arg>. The maximum value for <arg>length</arg> is 500. The optional number <arg>iterations</arg> specifies the number of times the input is hashed. You can also specify a <arg>salt</arg> (and its <link action_invoker_binary_data.csdoc>format</link>, <arg>saltFormat</arg>), which is an additional input in generating the hash value. You must store this salt value somewhere to be able to use this hash function to perform any checks. The <arg>length</arg>, <arg>iterations</arg>, and <arg>salt</arg> arguments are ignored when creating MD5 hashes, and hashes for Encrypted CSPro DB data sources, as those values are predefined for those hash types.
+The optional number <arg>length</arg> specifies the desired length of the hash value in bytes. The string returned will always be twice the value of <arg>length</arg>. The maximum value for <arg>length</arg> is 500. The optional number <arg>iterations</arg> specifies the number of times the input is hashed. You can also specify a <arg>salt</arg> (and its <link action_invoker_binary_data.csdoc>format</link>, <arg>saltFormat</arg>), which is an additional input in generating the hash value. You must store this salt value somewhere to be able to use this hash function to perform any checks. The <arg>length</arg>, <arg>iterations</arg>, and <arg>salt</arg> arguments are ignored when creating MD5 or SHA-256 hashes, and hashes for Encrypted CSPro DB data sources, as those values are predefined for those hash types.
 
 More information on hash values, key derivation algorithms, and salt values is readily available online.
 
