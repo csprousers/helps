@@ -1,0 +1,40 @@
+<title>Open CSPro Data</title>
+<context ID_FILE_OPEN ID_FILE_OPEN_DATA_SOURCE ID_FILE_OPEN_CSWEB_DATA IDD_OPEN_DATA_SOURCE IDD_DICTIONARY_RECONCILE IDD_OPEN_CSWEB_DATA />
+
+Select <b>Data Manager</b> from the CSPro <b>Tools</b> dropdown menu, or from the <b>Start</b> -> <b>Programs</b> -> <b>CSPro <definition CSPro::version /></b> menu.
+
+
+<subheader>Data Source</subheader>
+
+To open a data source:
+
+<list ordered>
+    <li>Click the <b>File</b> menu, select <b>Open</b>, and select <b>Data File</b>, or press <b>Ctrl + O</b>.</li>
+    <li>Select the CSPro <link CSPro::data_sources.csdoc>data source</link> that you want to open.</li>
+    <li>If you choose a data source without an embedded dictionary, you will need to select the dictionary that describes it. If you do not have the associated dictionary, you will not be able to view the data source in Data Manager.</li>
+</list>
+
+
+<subheader>Data Source and Dictionary</subheader>
+
+If the data source does not contain an embedded dictionary, it is also possible to specify the data source and its dictionary at one time:
+
+<list ordered>
+    <li>Click the <b>File</b> menu, select <b>Open</b>, and select <b>Data Source</b>, or press <b>Ctrl + Shift + O</b>.</li>
+    <li>Select the CSPro data source that you want to open, along with its dictionary.</li>
+</list>
+
+If CSPro knows that the dictionary does not match the dictionary used to collect data (because the data source has an embedded dictionary), you will see a <b>Confirm Dictionary Changes</b> dialog that describes the differences between the selected dictionary and the data source's dictionary. Confirming these changes will update the data source's embedded dictionary.
+
+
+<subheader>CSWeb Data</subheader>
+
+If you want to view the data stored on a <link CSWeb::introduction_to_csweb.csdoc>CSWeb server</link>, you can:
+
+<list ordered>
+    <li>Click the <b>File</b> menu, select <b>Open</b>, and select <b>CSWeb Data</b>.</li>
+    <li>Enter the URL of the server and select <b>Show Available Data</b>.</li>
+    <li>Select the data to view and click <b>Open</b>.</li>
+</list>
+
+The CSWeb data is not downloaded to a local data source but is instead accessed directly from the server using the <link CSPro::data_source_csweb.csdoc>CSWeb data source</link>. If there is a network error accessing CSWeb, then you will not be able to view the data. Read more about the data source to learn more about permissions required to view data. Most importantly, note that you cannot log in using the <link CSWeb::roles.csdoc>role</link> <i>Administrator</i>.

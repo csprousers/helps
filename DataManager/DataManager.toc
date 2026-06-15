@@ -5,21 +5,38 @@
   ],
   "chapters": [
     {
+      "title": "Overview",
+      "documents": [
+        { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
+        { "path": "command_line_arguments.csdoc", "~title": "Command Line Arguments" },
+        { "path": "filtering_cases_and_display_options.csdoc", "~title": "Filter Cases and Display Options" },
+        { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
+        { "path": "convert_extract_data.csdoc", "~title": "Convert and Extract Data" },
+        { "path": "export_data.csdoc", "~title": "Export Data" }
+      ]
+    },
+    {
+      "title": "Views",
+      "documents": [
+        { "path": "views.csdoc", "~title": "Views" },
+        { "path": "view_case.csdoc", "~title": "Views: Case" },
+        { "path": "view_case_json.csdoc", "~title": "Views: Case (JSON)" },
+        { "path": "view_case_text.csdoc", "~title": "Views: Case (Text)" },
+        { "path": "view_case_questionnaire.csdoc", "~title": "Views: Case (Questionnaire View)" }
+      ]
+    },
+    {
       "title": "How to ...",
       "documents": [
-        { "path": "open_data_files.csdoc", "~title": "Open CSPro Data Files" },
-        { "path": "navigating_windows.csdoc", "~title": "Navigating Data Manager's Windows" },
-        { "path": "filtering_cases_and_display_options.csdoc", "~title": "Filtering Cases and Display Options" },
-        { "path": "converting_data_files_to_other_formats.csdoc", "~title": "Converting CSPro Data Files to Other Formats" },
-        { "path": "export_data.csdoc", "~title": "Export Data" },
-        { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Downloading and Synchronizing Data" },
         { "path": "run_production_synchronizations.csdoc", "~title": "Run Production Synchronizations" },
+        { "path": "../Shared/topics/manage_credentials.csdoc", "~title": "Manage Credentials" },
         { "path": "../Shared/topics/get_help.csdoc", "~title": "Get Help" }
       ]
     },
     {
       "title": "Appendix",
       "documents": [
+        { "path": "menu_summary.csdoc", "~title": "Menu Summary" },
         { "path": "shortcut_keys.csdoc", "title": "Shortcut / Accelerator Keys" }
       ]
     }

@@ -1,0 +1,4 @@
+There are several options that give you control over how the case is displayed. From the <b>View Options</b> menu:
+
+<list>
+    <li><b>Language</b>: Selects which dictionary labels to use when a dictionary is defined in <link CSPro::multiple_language_dictionaries.csdoc>multiple languages</link>.</li>

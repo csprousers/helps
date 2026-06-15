@@ -1,0 +1,20 @@
+<title>Views</title>
+<context ID_VIEW_DATA_SUMMARY ID_VIEW_LOGIC_HELPER ID_FILE_SAVE ID_FILE_PRINT_VIEW />
+
+The <b>View</b> menu allows you to change how case data is displayed, with the following options:
+
+
+<list>
+    <li><b>Data Summary</b>: Displays information about the data source, including the number of cases as well as information about the last time data was synchronized.</li>
+    <li><b>Logic Helper</b>: If no case is selected, this view provides several logic templates for conducting basic file operations (e.g., <link CSPro::setfile_function.csdoc>opening</link> a data source, <link CSPro::countcases_function.csdoc>counting</link> the number of cases, <link CSPro::forcase_statement.csdoc>looping</link> through cases, etc.). If a case is selected, this view gives logic examples on how to <link CSPro::loadcase_function.csdoc>load</link> or <link CSPro::delcase_function.csdoc>delete</link> the selected case.</li>
+    <li><b><link view_case.csdoc>Case</link></b>: Displays case data grouped by record.</li>
+    <li><b><link view_case_json.csdoc>Case (JSON)</link></b>: Displays case data in its <link CSPro::Case_json_representation.csdoc>JSON representation</link>.</li>
+    <li><b><link view_case_text.csdoc>Case (Text)</link></b>: Displays case data in its <link CSPro::data_file_type_structure.csdoc>text representation</link>.</li>
+    <li><b><link view_case_questionnaire.csdoc>Case (Questionnaire View)</link></b>: Displays case data using the <link CSPro::view_questionnaire.csdoc>questionnaire view</link>.</li>
+</list>
+
+
+If allowed by a dictionary's <link CSPro::dictionary_security_options.csdoc>security options</link>, the displayed view can be saved (<b>File</b> -> <b>Save</b>, or <b>Ctrl + S</b>) or printed (<b>File</b> -> <b>Print</b>, or <b>Ctrl + P</b>). All views can be printed, and views that support saving can be saved as HTML or as a format specific to that view (e.g., JSON, text, logic, etc.).
+
+
+<seealso filtering_cases_and_display_options.csdoc />

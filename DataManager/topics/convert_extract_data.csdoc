@@ -1,0 +1,32 @@
+<title>Convert and Extract Data</title>
+<context ID_FILE_SAVE_DATA ID_FILE_SAVE_CASES ID_FILE_EXTRACT_DICTIONARY ID_FILE_EXTRACT_NOTES IDD_EXTRACT_NOTES ID_FILE_EXTRACT_BINARY_DATA IDD_EXTRACT_BINARY_DATA />
+
+
+<subheader>Convert Data</subheader>
+
+Data Manager can be used to convert from one CSPro data source format to another CSPro format. For example, you can convert from a <link CSPro::data_source_csdb.csdoc>CSPro DB</link> data source to a <link CSPro::data_source_text.csdoc>text</link> data source. To convert data:
+
+<list ordered>
+    <li><link open_data.csdoc>Open</link> the data source.</li>
+    <li>Click the <b>File</b> menu and select <b>Save Data</b>.</li>
+    <li>Enter a name for the converted data source. If using the extension <b>.csdb</b>, the data source will be saved in <link CSPro::data_source_csdb.csdoc>CSPro DB</link> format. If using the extension <b>.csdbe</b>, you will be prompted to enter a password, after which the data source will be saved in <link CSPro::data_source_csdbe.csdoc>Encrypted CSPro DB</link> format. If any other file extension is used, the data source will be saved to a format based on the <link CSPro::data_sources.csdoc>data source</link> associated with the extension.</li>
+</list>
+
+You can also use the case listing's context menu, selecting <b>Save Case</b> or <b>Save Selected Cases</b>. When saving all cases from a data source, the order of cases matches the order in the source data source, saved in <link filtering_cases_and_display_options.csdoc>sequential order</link>. However, cases saved using the case listing context menu are saved in the order that they appear in the case listing.
+
+
+<subheader>Extract Data</subheader>
+
+Clicking on the <b>File</b> menu and selecting the <b>Extract</b> option provides several options:
+
+<table 2 header nowrap>
+    <cell>Option</cell><cell>Description</cell>
+    <cell><b>Dictionary</b></cell><cell>Extracts the dictionary used by the data source. This is particularly useful if you want to access the embedded dictionary used by a data source such as <link CSPro::data_source_csdb.csdoc>CSPro DB</link>.</cell>
+    <cell><b>Notes</b></cell><cell>Extracts the notes associated with cases. Notes can be extracted as CSPro data (<link CSPro::data_sources.csdoc>any format</link>), to a CSV (comma-separated values) file, or to an Excel file. When extracting to CSPro data, a dictionary that can read the notes data will also be generated.</cell>
+    <cell><b>Extract Binary Data</b></cell><cell>Extracts the <link CSPro::binary_dictionary_items.csdoc>binary data</link> associated with cases to standalone files. You can define a naming scheme for the extracted files and provide a directory where these files should be saved.</cell>
+</table>
+
+You can also use the case listing's context menu, selecting <b>Extract Notes from Case</b>, <b>Extract Notes from Selected Cases</b>, <b>Extract Binary Data from Case</b>, or <b>Extract Binary Data from Selected Cases</b>. Notes or binary data will only be processed from the selected cases.
+
+
+<seealso export_data.csdoc />

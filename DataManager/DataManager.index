@@ -1,12 +1,23 @@
 [
   { "path": "shortcut_keys.csdoc", "title": "Accelerator Keys" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Menu Option" },
-  { "path": "navigating_windows.csdoc", "title": "Case View" },
-  { "path": "converting_data_files_to_other_formats.csdoc", "~title": "Converting CSPro Data Files to Other Formats" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Data Summary" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Display Options" },
-  { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Downloading and Synchronizing Data" },
-  { "path": "export_data.csdoc", "title": "Exporting Data to Other Formats",
+  { "path": "convert_extract_data.csdoc", "title": "Binary Data" },
+  { "path": "menu_summary.csdoc", "title": "Case",
+    "subindex": [
+      { "path": "menu_summary.csdoc", "title": "Delete" },
+      { "path": "view_case_json.csdoc", "title": "JSON Format" },
+      { "path": "view_case_text.csdoc", "title": "Text Format" }
+    ]
+  },
+  { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Listing" },
+  { "path": "command_line_arguments.csdoc", "~title": "Command Line Arguments" },
+  { "path": "convert_extract_data.csdoc", "~title": "Convert and Extract Data" },
+  { "path": "manage_credentials.csdoc", "title": "Credentials" },
+  { "path": "open_data.csdoc", "title": "CSWeb Data" },
+  { "path": "views.csdoc", "title": "Data Summary" },
+  { "path": "menu_summary.csdoc", "title": "Delete Case" },
+  { "path": "convert_extract_data.csdoc", "title": "Dictionary" },
+  { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
+  { "path": "export_data.csdoc", "title": "Export Data",
     "subindex": [
       { "path": "export_data.csdoc", "title": "Comma Delimited (CSV)" },
       { "path": "export_data.csdoc", "title": "Excel" },
@@ -17,14 +28,45 @@
       { "path": "export_data.csdoc", "title": "Stata" }
     ]
   },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Filtering Cases" },
+  { "path": "convert_extract_data.csdoc", "title": "Extract",
+    "subindex": [
+      { "path": "convert_extract_data.csdoc", "title": "Binary Data" },
+      { "path": "convert_extract_data.csdoc", "title": "Dictionary" },
+      { "path": "convert_extract_data.csdoc", "title": "Notes" }
+    ]
+  },
+  { "path": "filtering_cases_and_display_options.csdoc", "title": "Filter Cases" },
   { "path": "get_help.csdoc", "~title": "Get Help" },
-  { "path": "introduction.csdoc", "~title": "Introduction to Data Manager" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Listing Menu Option" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Logic Helper" },
-  { "path": "navigating_windows.csdoc", "~title": "Navigating Data Manager's Windows" },
-  { "path": "open_data_files.csdoc", "~title": "Open CSPro Data Files" },
+  { "path": "introduction.csdoc", "title": "Introduction" },
+  { "path": "view_case_json.csdoc", "title": "JSON",
+    "subindex": [
+      { "path": "view_case_json.csdoc", "title": "Case Representation" },
+      { "path": "export_data.csdoc", "title": "Export Data" }
+    ]
+  },
+  { "path": "views.csdoc", "title": "Logic Helper" },
+  { "path": "manage_credentials.csdoc", "~title": "Manage Credentials" },
+  { "path": "menu_summary.csdoc", "~title": "Menu Summary" },
+  { "path": "convert_extract_data.csdoc", "title": "Notes" },
+  { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
+  { "path": "menu_summary.csdoc", "title": "Open Flags",
+    "subindex": [
+      { "path": "menu_summary.csdoc", "title": "Read-Only" },
+      { "path": "menu_summary.csdoc", "title": "Read and Write" }
+    ]
+  },
   { "path": "run_production_synchronizations.csdoc", "~title": "Run Production Synchronizations" },
+  { "path": "convert_extract_data.csdoc", "title": "Save Data" },
   { "path": "shortcut_keys.csdoc", "title": "Shortcuts" },
-  { "path": "downloading_and_synchronizing_data.csdoc", "title": "Synchronizing Data" }
+  { "path": "downloading_and_synchronizing_data.csdoc", "title": "Synchronize Data" },
+  { "path": "views.csdoc", "~title": "Views",
+    "subindex": [
+      { "path": "view_case.csdoc", "title": "Case" },
+      { "path": "view_case_json.csdoc", "title": "Case (JSON)" },
+      { "path": "view_case_questionnaire.csdoc", "title": "Case (Questionnaire View)" },
+      { "path": "view_case_text.csdoc", "title": "Case (Text)" },
+      { "path": "views.csdoc", "title": "Data Summary" },
+      { "path": "views.csdoc", "title": "Logic Helper" }
+    ]
+  }
 ]

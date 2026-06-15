@@ -1,0 +1,12 @@
+<title>Views: Case (Questionnaire View)</title>
+<context ID_VIEW_CASE_QUESTIONNAIRE ID_VIEW_OPTIONS_QUESTIONNAIRE_MODIFY_CONTENT IDD_QUESTIONNAIRE_CONTENT />
+
+Selecting <b>View</b> -> <b>Case (Questionnaire View)</b> displays case data using the <link CSPro::view_questionnaire.csdoc>questionnaire view</link>.
+
+
+<include view_options_start.hgi />
+    <li><b>Modify Associated Questionnaire Content</b>: Selecting this option brings up a dialog that allows you to specify the <link CSPro::forms_file_fmf.csdoc>form</link> and <link CSPro::question_text.csdoc>question text</link> files that correspond to the dictionary. When providing a form, the case data is presented in form order, not dictionary order. When providing question text, the questions used to ask each item are displayed along with each item's value. The <i>Auto Search</i> option looks at data entry applications in the dictionary's directory, and its parent directory, to attempt to automatically find forms or question text associated with the dictionary.</li>
+</list>
+
+
+<seealso views.csdoc />

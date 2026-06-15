@@ -11,7 +11,10 @@
     ],
     "contextIds": [
       "../Shared/afxres.h",
-      "DataManager/resource.h"
+      "DataManager/resource.h",
+      "zInterfaceF/resource.h",
+      "zUtilF/resource.h",
+      "zUtilF/resource_shared.h"
     ]
   },
   "settings": {

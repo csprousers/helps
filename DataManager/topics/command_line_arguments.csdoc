@@ -1,0 +1,21 @@
+<title>Command Line Arguments</title>
+
+When opening a data source in a context where you can specify Data Manager's command line arguments, you can provide information about the data source as a <link CSPro::data_connection_string.csdoc>data connection string</link> or as a <link CSPro::cspro_uris.csdoc>CSPro URI</link>. Options include:
+
+<table 2 header>
+    <cell nowrap>Property Name</cell><cell>Description</cell>
+    <cell><colorinline JSON>"dictionaryPath"</colorinline></cell><cell>When defined, the dictionary that describes the data source is read from the disk, evaluated relative to the path of the data source. This is useful when opening a data source that does not contain an embedded dictionary.</cell>
+    <cell><colorinline JSON>"key"</colorinline></cell><cell>If defined, the case with the specified <link CSPro::data_source_identification_of_cases.csdoc>case key</link> is shown after the data source is opened.</cell>
+    <cell><colorinline JSON>"uuid"</colorinline></cell><cell>If defined, the case with the specified <link CSPro::data_source_identification_of_cases.csdoc>UUID</link> is shown after the data source is opened. If both a UUID and key are specified, the UUID value is prioritized.</cell>
+</table>
+
+For example, this example shows how to open a <link CSPro::data_source_text.csdoc>Text data source</link> from the command line, specifying its dictionary and a case to view:
+
+<color text>"C:\Program Files (x86)\CSPro <definition CSPro::version />\DataManager.exe" "C:\HVAC\ac-home-use.dat|dictionaryPath=HVAC.dcf&key=<definition System::year />"
+</color>
+
+Using a CSPro URI, you could open this data source with the selected case via:
+
+<color text>
+cspro:///data/C:/HVAC/ac-home-use.dat?dictionaryPath=HVAC.dcf&key=<definition System::year />
+</color>

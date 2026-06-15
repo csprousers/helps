@@ -1,4 +1,4 @@
-<title>Downloading and Synchronizing Data</title>
+<title>Download and Synchronize Data</title>
 <context IDD_DOWNLOAD_DATA_SOURCE ID_FILE_DOWNLOAD_DATA_SOURCE IDD_SYNCHRONIZE ID_FILE_SYNCHRONIZE />
 
 There are two features within Data Manager that allow you to download or synchronize your data from a <link CSPro::sync_services.csdoc>synchronization service</link> that was used for <link CSPro::synchronization.csdoc>data synchronization</link>. These options only work with <link CSPro::data_source_csdb.csdoc>CSPro DB</link> (.csdb) and <link CSPro::data_source_csdbe.csdoc>Encrypted CSPro DB</link> (.csdbe) <link CSPro::data_sources.csdoc>data sources</link>.
@@ -20,8 +20,8 @@ Data Manager will download all the cases from the data set into the designated C
 <subheader>Synchronizing Data</subheader>
 
 <list ordered>
-    <li><link open_data_files.csdoc>Open</link> an existing data source.</li>
-    <li>Click the <b>File</b> menu and select <b>Synchronize</b> (or press <b>Ctrl+Shift+S</b>).</li>
+    <li><link open_data.csdoc>Open</link> an existing data source.</li>
+    <li>Click the <b>File</b> menu and select <b>Synchronize</b> (or press <b>Ctrl + Shift + S</b>).</li>
     <li>Select the synchronization service and provide any relevant details (e.g., a server URL).</li>
     <li>Select the synchronization direction. There are a few options, though generally you will choose the default option, <b>GET</b>:
         <include ../../CSPro/topics/sync/sync_direction.hgi />
@@ -31,9 +31,11 @@ Data Manager will download all the cases from the data set into the designated C
 
 You can choose to download and/or upload all the cases in the data source, making sure that the cases in the data source match the cases stored on the synchronization service. This process can be automated by running a <link run_production_synchronizations.csdoc>production synchronization</link>.
 
+Synchronizing data can update a data source on your computer with the cases from a server. If your data is stored on a <link CSWeb::introduction_to_csweb.csdoc>CSWeb server</link>, you can also <link open_data.csdoc>view the data</link> directly on the server without downloading it.
+
 
 <subheader>Synchronizations With Local Files</subheader>
 
-For faster downloads of large datasets stored on <link CSPro::sync_service_dropbox.csdoc>Dropbox</link>, you can choose <b>Dropbox</b> with the <b>Use Local Dropbox (when possible)</b> option. When this option is selected, rather than downloading the data from Dropbox over the Internet, Data Manager will extract the data from the synced Dropbox folder on the computer. In order to use this option, you must have installed the Dropbox <link "https://www.dropbox.com/install">client software</link> on your computer and configured it with the same Dropbox account that you are downloading data from. As long as your computer is connected to the Internet, the Dropbox client software will continuously download data from the Dropbox servers to the local computer. Data Manager can then use the data that was already downloaded to create the CSPro data source.
+For faster downloads of large data sets stored on <link CSPro::sync_service_dropbox.csdoc>Dropbox</link>, you can choose <b>Dropbox</b> with the <b>Use Local Dropbox (when possible)</b> option. When this option is selected, rather than downloading the data from Dropbox over the Internet, Data Manager will extract the data from the synced Dropbox folder on the computer. In order to use this option, you must have installed the Dropbox <link "https://www.dropbox.com/install">client software</link> on your computer and configured it with the same Dropbox account that you are downloading data from. As long as your computer is connected to the Internet, the Dropbox client software will continuously download data from the Dropbox servers to the local computer. Data Manager can then use the data that was already downloaded to create the CSPro data source.
 
 For faster downloads when you are running an <link CSPro::sync_service_ftp.csdoc>FTP server</link> on the same computer that you are using to download data, you can choose <b>Local Files</b> rather than <b>FTP</b>. When you select <link CSPro::sync_service_local_files.csdoc>this option</link>, you must then enter or browse to the FTP folder on the computer where the FTP server has saved the data. The folder you choose should be the FTP server home directory, which should contain a folder named <b>CSPro</b>.

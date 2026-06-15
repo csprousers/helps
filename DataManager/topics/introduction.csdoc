@@ -1,26 +1,44 @@
 <title>Introduction to Data Manager</title>
 
-<b>Data Manager</b> is a tool that allows you to examine cases in a CSPro <link CSPro::data_sources.csdoc>data source</link>. When viewing a case you can see information about:
-
-<list>
-    <li>Case data displayed in dictionary format</li>
-    <li>Case labels</li>
-    <li>Case and field notes</li>
-    <li>Synchronization history</li>
-</list>
-
-Once a data file is open in Data Manager, it can be used seamlessly, without having to respecify dictionary or data sources (such as when invoking the <link CSExport::introduction_to_export_data.csdoc>Export Data</link> or <link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link> tools).
+<b>Data Manager</b> is a tool that allows you to <link views.csdoc>examine</link>, <link menu_summary.csdoc>modify</link>, and <link downloading_and_synchronizing_data.csdoc>synchronize</link> cases in a CSPro <link CSPro::data_sources.csdoc>data source</link>. Once a data source is open in Data Manager, it can be used seamlessly, without having to respecify dictionary or data sources (such as when invoking the <link CSExport::introduction_to_export_data.csdoc>Export Data</link> or <link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link> tools).
 
 This guide contains the following information:
+
+<subheader>Overview</subheader>
+
+<list>
+    <li><topic open_data.csdoc /></li>
+    <li><topic command_line_arguments.csdoc /></li>
+    <li><topic filtering_cases_and_display_options.csdoc /></li>
+    <li><link views.csdoc>View Data</link></li>
+    <li><topic downloading_and_synchronizing_data.csdoc /></li>
+    <li><topic convert_extract_data.csdoc /></li>
+    <li><topic export_data.csdoc /></li>
+</list>
+
+
+<subheader>Views</subheader>
+
+<list>
+    <li><topic view_case.csdoc /></li>
+    <li><topic view_case_json.csdoc /></li>
+    <li><topic view_case_text.csdoc /></li>
+    <li><topic view_case_questionnaire.csdoc /></li>
+</list>
+
 
 <subheader>How to ...</subheader>
 
 <list>
-    <li><topic open_data_files.csdoc /></li>
-    <li><topic downloading_and_synchronizing_data.csdoc /></li>
-    <li><topic export_data.csdoc /></li>
-    <li><link converting_data_files_to_other_formats.csdoc>Saving (Converting) Data Files to Other Formats</link></li>
-    <li><topic filtering_cases_and_display_options.csdoc /></li>
     <li><topic run_production_synchronizations.csdoc /></li>
+    <li><topic manage_credentials.csdoc /></li>
     <li><topic get_help.csdoc /></li>
+</list>
+
+
+<subheader>Summaries</subheader>
+
+<list>
+    <li><link menu_summary.csdoc>Menu</link></li>
+    <li><link shortcut_keys.csdoc>Keys</link></li>
 </list>
