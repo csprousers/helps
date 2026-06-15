@@ -1,5 +1,5 @@
 <title>Menu Summary</title>
-<context ID_FILE_CLOSE ID_FILE_CLOSE_ALL ID_FILE_REFRESH ID_FILE_MANAGE_CREDENTIALS ID_DATA_TOGGLE_READ_ONLY ID_DATA_DELETE_CASE ID_TOOLS_EXPORT_DATA ID_TOOLS_TABULATE_FREQUENCIES />
+<context ID_FILE_CLOSE ID_FILE_CLOSE_ALL ID_FILE_REFRESH ID_DATA_TOGGLE_READ_ONLY ID_DATA_DELETE_CASE ID_TOOLS_EXPORT_DATA ID_TOOLS_TABULATE_FREQUENCIES />
 
 The following is a summary of the <b>Data Manager</b> menus:
 
@@ -13,6 +13,10 @@ The following is a summary of the <b>Data Manager</b> menus:
     <cell>Close All</cell><cell>Close all data sources currently open.</cell>
     <cell>Refresh Data</cell><cell>Refresh the case listing and current view (should the data have been modified by another application while viewing).</cell>
     <cell><link downloading_and_synchronizing_data.csdoc>Synchronize Data</link></cell><cell>Synchronize cases in the data source with a synchronization service.</cell>
+    <cell><link convert_extract_data.csdoc>Save Data</link></cell><cell>Save cases to a new CSPro data source.</cell>
+    <cell><link convert_extract_data.csdoc>Extract Dictionary</link></cell><cell>Extract the dictionary used by the data source.</cell>
+    <cell><link convert_extract_data.csdoc>Extract Notes</link></cell><cell>Extract the notes from cases.</cell>
+    <cell><link convert_extract_data.csdoc>Extract Binary Data</link></cell><cell>Extract the binary data from cases.</cell>
     <cell><link views.csdoc>Save View</link></cell><cell>Save the current view.</cell>
     <cell><link views.csdoc>Print View</link></cell><cell>Print the current view.</cell>
     <cell><link manage_credentials.csdoc>Manage Credentials</link></cell><cell>Clear cached credentials from your computer.</cell>

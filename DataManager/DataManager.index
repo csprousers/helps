@@ -1,5 +1,6 @@
 [
   { "path": "shortcut_keys.csdoc", "title": "Accelerator Keys" },
+  { "path": "convert_extract_data.csdoc", "title": "Binary Data" },
   { "path": "menu_summary.csdoc", "title": "Case",
     "subindex": [
       { "path": "menu_summary.csdoc", "title": "Delete" },
@@ -8,11 +9,12 @@
     ]
   },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Listing" },
-  { "path": "converting_data_to_other_formats.csdoc", "~title": "Convert CSPro Data to Other Formats" },
+  { "path": "convert_extract_data.csdoc", "~title": "Convert and Extract Data" },
   { "path": "manage_credentials.csdoc", "title": "Credentials" },
   { "path": "open_data.csdoc", "title": "CSWeb Data" },
   { "path": "views.csdoc", "title": "Data Summary" },
   { "path": "menu_summary.csdoc", "title": "Delete Case" },
+  { "path": "convert_extract_data.csdoc", "title": "Dictionary" },
   { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
   { "path": "export_data.csdoc", "title": "Export Data",
     "subindex": [
@@ -23,6 +25,13 @@
       { "path": "export_data.csdoc", "title": "SAS" },
       { "path": "export_data.csdoc", "title": "SPSS" },
       { "path": "export_data.csdoc", "title": "Stata" }
+    ]
+  },
+  { "path": "convert_extract_data.csdoc", "title": "Extract",
+    "subindex": [
+      { "path": "convert_extract_data.csdoc", "title": "Binary Data" },
+      { "path": "convert_extract_data.csdoc", "title": "Dictionary" },
+      { "path": "convert_extract_data.csdoc", "title": "Notes" }
     ]
   },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Filter Cases" },
@@ -37,6 +46,7 @@
   { "path": "views.csdoc", "title": "Logic Helper" },
   { "path": "manage_credentials.csdoc", "~title": "Manage Credentials" },
   { "path": "menu_summary.csdoc", "~title": "Menu Summary" },
+  { "path": "convert_extract_data.csdoc", "title": "Notes" },
   { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
   { "path": "menu_summary.csdoc", "title": "Open Flags",
     "subindex": [
@@ -45,6 +55,7 @@
     ]
   },
   { "path": "run_production_synchronizations.csdoc", "~title": "Run Production Synchronizations" },
+  { "path": "convert_extract_data.csdoc", "title": "Save Data" },
   { "path": "shortcut_keys.csdoc", "title": "Shortcuts" },
   { "path": "downloading_and_synchronizing_data.csdoc", "title": "Synchronize Data" },
   { "path": "views.csdoc", "~title": "Views",

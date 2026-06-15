@@ -10,7 +10,7 @@
         { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
         { "path": "filtering_cases_and_display_options.csdoc", "~title": "Filter Cases and Display Options" },
         { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
-        { "path": "converting_data_to_other_formats.csdoc", "~title": "Convert CSPro Data to Other Formats" },
+        { "path": "convert_extract_data.csdoc", "~title": "Convert and Extract Data" },
         { "path": "export_data.csdoc", "~title": "Export Data" }
       ]
     },

@@ -21,6 +21,8 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
             <li>Viewing <link DataManager::open_data.csdoc>CSWeb data</link> directly on the server without downloading it.</li>
             <li>Multiple ways to <link DataManager::views.csdoc>view</link> case data, including in the familiar <link DataManager::view_case.csdoc>record-based view</link>, as <link DataManager::view_case_json.csdoc>JSON</link>, as <link DataManager::view_case_text.csdoc>text</link>, or using the <link DataManager::view_case_questionnaire.csdoc>questionnaire view</link>. These views can be saved to a file or printed.</li>
             <li>Ability to <link DataManager::open_data.csdoc>open</link> more than one data source.</li>
+            <li><link DataManager::convert_extract_data.csdoc>Saving</link> individual cases or groups of cases.</li>
+            <li><link DataManager::convert_extract_data.csdoc>Extracting</link> notes and binary data from individual cases or groups of cases.</li>
             <li>Opening data sources in <link DataManager::menu_summary.csdoc>read and write mode</link>, which allows cases to be <link DataManager::menu_summary.csdoc>deleted and undeleted</link>.</li>
             <li>Synchronizing data with a <link DataManager::downloading_and_synchronizing_data.csdoc>universe</link>.</li>
         </list>

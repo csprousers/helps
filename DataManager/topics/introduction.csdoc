@@ -11,7 +11,7 @@ This guide contains the following information:
     <li><topic filtering_cases_and_display_options.csdoc /></li>
     <li><link views.csdoc>View Data</link></li>
     <li><topic downloading_and_synchronizing_data.csdoc /></li>
-    <li><topic converting_data_to_other_formats.csdoc /></li>
+    <li><topic convert_extract_data.csdoc /></li>
     <li><topic export_data.csdoc /></li>
     <li><topic run_production_synchronizations.csdoc /></li>
     <li><topic manage_credentials.csdoc /></li>
