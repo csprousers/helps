@@ -1,17 +1,19 @@
 <title>Filter Cases and Display Options</title>
 
+
 <subheader>Filtering Cases</subheader>
 
-To view a subset of the cases in the data file, you can enter a search query to filter the cases shown. The query will only filter by case IDs, not case labels. Click on the magnification glass icon, enter the key prefix, and press <b>Enter</b>. For example, this query only shows cases whose ID begins with "02":
+To view a subset of cases in a data source, you can enter a search query to filter the cases shown. The query will only filter by the <link CSPro::data_source_identification_of_cases.csdoc>key</link> (case IDs), not case labels. In the case listing, click on <b>Show Filters</b> and enter the key filter. The list of cases is filtered automatically. For example, this query only shows cases that have a key that starts with <logiccolor>"02"</logiccolor>:
 
 <center><image filter_cases.png /></center>
 
 <b>Note:</b>
 
 <list>
-    <li>Filtering cases with the key prefix works in tandem with any display file filters (see below).</li>
-    <li>As implied (key <b><i>prefix</i></b>), wildcard symbols are not allowed; therefore, the search will always start from the beginning of the case ID. </li>
-    <li>To dismiss the key prefix filter, click again on the magnification icon.</li>
+    <li>Typically filtering cases is done by key prefix ("starts with"), but it is also possible to see cases with a key less than (&lt;), less than or equal (&lt;=), greater than or equal (=&gt;), or greater than (&gt;) than the filter.</li>
+    <li>Filtering cases works in tandem with any display options (see below).</li>
+    <li>Wildcard symbols or regular expressions are not supported.</li>
+    <li>To dismiss the filter, click on <b>Hide Filters</b>.</li>
 </list>
 
 
