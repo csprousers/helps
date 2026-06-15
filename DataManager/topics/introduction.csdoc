@@ -16,10 +16,10 @@ This guide contains the following information:
 <subheader>How to ...</subheader>
 
 <list>
-    <li><topic open_data_files.csdoc /></li>
+    <li><topic open_data.csdoc /></li>
     <li><topic downloading_and_synchronizing_data.csdoc /></li>
     <li><topic export_data.csdoc /></li>
-    <li><link converting_data_files_to_other_formats.csdoc>Saving (Converting) Data Files to Other Formats</link></li>
+    <li><topic converting_data_to_other_formats.csdoc /></li>
     <li><topic filtering_cases_and_display_options.csdoc /></li>
     <li><topic run_production_synchronizations.csdoc /></li>
     <li><topic get_help.csdoc /></li>

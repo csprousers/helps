@@ -2,10 +2,10 @@
   { "path": "shortcut_keys.csdoc", "title": "Accelerator Keys" },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Menu Option" },
   { "path": "navigating_windows.csdoc", "title": "Case View" },
-  { "path": "converting_data_files_to_other_formats.csdoc", "~title": "Converting CSPro Data Files to Other Formats" },
+  { "path": "converting_data_to_other_formats.csdoc", "~title": "Convert CSPro Data to Other Formats" },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Data Summary" },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Display Options" },
-  { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Downloading and Synchronizing Data" },
+  { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
   { "path": "export_data.csdoc", "title": "Exporting Data to Other Formats",
     "subindex": [
       { "path": "export_data.csdoc", "title": "Comma Delimited (CSV)" },
@@ -22,8 +22,8 @@
   { "path": "introduction.csdoc", "~title": "Introduction to Data Manager" },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Listing Menu Option" },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Logic Helper" },
-  { "path": "navigating_windows.csdoc", "~title": "Navigating Data Manager's Windows" },
-  { "path": "open_data_files.csdoc", "~title": "Open CSPro Data Files" },
+  { "path": "navigating_windows.csdoc", "~title": "Navigate Data Manager's Windows" },
+  { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
   { "path": "run_production_synchronizations.csdoc", "~title": "Run Production Synchronizations" },
   { "path": "shortcut_keys.csdoc", "title": "Shortcuts" },
   { "path": "downloading_and_synchronizing_data.csdoc", "title": "Synchronizing Data" }

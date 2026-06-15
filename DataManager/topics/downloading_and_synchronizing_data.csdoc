@@ -1,4 +1,4 @@
-<title>Downloading and Synchronizing Data</title>
+<title>Download and Synchronize Data</title>
 <context IDD_DOWNLOAD_DATA_SOURCE ID_FILE_DOWNLOAD_DATA_SOURCE IDD_SYNCHRONIZE ID_FILE_SYNCHRONIZE />
 
 There are two features within Data Manager that allow you to download or synchronize your data from a <link CSPro::sync_services.csdoc>synchronization service</link> that was used for <link CSPro::synchronization.csdoc>data synchronization</link>. These options only work with <link CSPro::data_source_csdb.csdoc>CSPro DB</link> (.csdb) and <link CSPro::data_source_csdbe.csdoc>Encrypted CSPro DB</link> (.csdbe) <link CSPro::data_sources.csdoc>data sources</link>.
@@ -20,7 +20,7 @@ Data Manager will download all the cases from the data set into the designated C
 <subheader>Synchronizing Data</subheader>
 
 <list ordered>
-    <li><link open_data_files.csdoc>Open</link> an existing data source.</li>
+    <li><link open_data.csdoc>Open</link> an existing data source.</li>
     <li>Click the <b>File</b> menu and select <b>Synchronize</b> (or press <b>Ctrl+Shift+S</b>).</li>
     <li>Select the synchronization service and provide any relevant details (e.g., a server URL).</li>
     <li>Select the synchronization direction. There are a few options, though generally you will choose the default option, <b>GET</b>:
