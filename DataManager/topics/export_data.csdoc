@@ -1,14 +1,17 @@
 <title>Export Data</title>
+<context IDD_EXPORT_DATA ID_FILE_EXPORT_CASES />
 
-In addition to exporting data via the <b>Tools > Export Data</b> utility, Data Manager has another way to export data to other file formats. It can be found under the menu dropdown: <b>File > Export</b>.
+In addition to exporting data via <b>Tools</b> -> <b>Export Data</b>, Data Manager has another way to export data to other file formats. It can be found by selecting the <b>File</b> menu and clicking <b>Export Data</b>.
 
 This export feature allows data to be written natively to the formats supported by the <link CSExport::introduction_to_export_data.csdoc>Export Data</link> tool, with a couple exceptions:
 
 <list>
-    <li><link CSPro::data_source_excel.csdoc>Excel</link>: supported in Data Manager but not in Export Data.</li>
-    <li><link CSPro::data_source_json.csdoc>JSON</link>: supported in Data Manager but not in Export Data.</li>
-    <li><b>CSPro Data Files:</b> not supported (use <b>File > Save As</b> instead).</li>
+    <li><link CSPro::data_source_excel.csdoc>Excel</link>: Supported in Data Manager but not in Export Data.</li>
+    <li><link CSPro::data_source_json.csdoc>JSON</link>: Supported in Data Manager but not in Export Data.</li>
+    <li>CSPro Data: Use Data Manager's <link convert_extract_data.csdoc>Save Data</link> feature instead.</li>
 </list>
+
+When selecting <b>Export Data</b> from the <b>File</b> menu, all cases in the data source are exported. You can use the case listing's context menu, selecting <b>Export Case</b> or <b>Export Selected Cases</b>, to export a subset of cases.
 
 
 The table below shows how the output file formats from the <b>Export Data</b> tool compare to Data Manager's <b>Export Data</b> feature, when the "Output one file..." checkbox is unchecked:

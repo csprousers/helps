@@ -14,6 +14,7 @@ The following is a summary of the <b>Data Manager</b> menus:
     <cell>Refresh Data</cell><cell>Refresh the case listing and current view (should the data have been modified by another application while viewing).</cell>
     <cell><link downloading_and_synchronizing_data.csdoc>Synchronize Data</link></cell><cell>Synchronize cases in the data source with a synchronization service.</cell>
     <cell><link convert_extract_data.csdoc>Save Data</link></cell><cell>Save cases to a new CSPro data source.</cell>
+    <cell><link export_data.csdoc>Export Data</link></cell><cell>Export cases to other file formats.</cell>
     <cell><link convert_extract_data.csdoc>Extract Dictionary</link></cell><cell>Extract the dictionary used by the data source.</cell>
     <cell><link convert_extract_data.csdoc>Extract Notes</link></cell><cell>Extract the notes from cases.</cell>
     <cell><link convert_extract_data.csdoc>Extract Binary Data</link></cell><cell>Extract the binary data from cases.</cell>
