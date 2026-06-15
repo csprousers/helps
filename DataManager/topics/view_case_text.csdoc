@@ -1,0 +1,13 @@
+<title>Views: Case (Text)</title>
+<context ID_VIEW_CASE_TEXT ID_VIEW_OPTIONS_TEXT_COLORIZE ID_VIEW_OPTIONS_TEXT_DETAILS_PANE />
+
+Selecting <b>View</b> -> <b>Case (Text)</b> displays case data in its <link CSPro::data_file_type_structure.csdoc>text representation</link>.
+
+
+<include view_options_start.hgi />
+    <li><b>Colorize Items</b>: When checked, the values for record types, ID items, and record items are displayed using different colors.</li>
+    <li><b>Show Details Pane</b>: When checked, a details pane is displayed that provides information about items. Use the mouse to hover over a record type or an item, or use the Tab key to cycle through entities, and the details pane will give information about the selected item.</li>
+</list>
+
+
+<seealso views.csdoc />

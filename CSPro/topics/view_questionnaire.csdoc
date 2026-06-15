@@ -9,6 +9,7 @@ The questionnaire view is available in the following contexts:
 
 <table 2 header nowrap>
     <cell>Description</cell><cell>Context</cell>
+    <cell><link DataManager::view_case_questionnaire.csdoc>Data Manager</link></cell><cell>Viewing cases in Data Manager.</cell>
     <cell><topic view_questionnaire_from_dcf.csdoc /></cell><cell>Editing a dictionary.</cell>
     <cell><topic view_questionnaire_from_fmf.csdoc /></cell><cell>Editing a data entry application.</cell>
     <cell><topic view_questionnaire_from_bch.csdoc /></cell><cell>Editing a batch application.</cell>

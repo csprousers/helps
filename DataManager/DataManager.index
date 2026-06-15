@@ -1,13 +1,11 @@
 [
   { "path": "shortcut_keys.csdoc", "title": "Accelerator Keys" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Menu Option" },
-  { "path": "navigating_windows.csdoc", "title": "Case View" },
+  { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Listing" },
   { "path": "converting_data_to_other_formats.csdoc", "~title": "Convert CSPro Data to Other Formats" },
   { "path": "open_data.csdoc", "title": "CSWeb Data" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Data Summary" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Display Options" },
+  { "path": "views.csdoc", "title": "Data Summary" },
   { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
-  { "path": "export_data.csdoc", "title": "Exporting Data to Other Formats",
+  { "path": "export_data.csdoc", "title": "Export Data",
     "subindex": [
       { "path": "export_data.csdoc", "title": "Comma Delimited (CSV)" },
       { "path": "export_data.csdoc", "title": "Excel" },
@@ -18,14 +16,28 @@
       { "path": "export_data.csdoc", "title": "Stata" }
     ]
   },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Filtering Cases" },
+  { "path": "filtering_cases_and_display_options.csdoc", "title": "Filter Cases" },
   { "path": "get_help.csdoc", "~title": "Get Help" },
-  { "path": "introduction.csdoc", "~title": "Introduction to Data Manager" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Listing Menu Option" },
-  { "path": "filtering_cases_and_display_options.csdoc", "title": "Logic Helper" },
-  { "path": "navigating_windows.csdoc", "~title": "Navigate Data Manager's Windows" },
+  { "path": "introduction.csdoc", "title": "Introduction" },
+  { "path": "view_case_json.csdoc", "title": "JSON",
+    "subindex": [
+      { "path": "view_case_json.csdoc", "title": "Case Representation" },
+      { "path": "export_data.csdoc", "title": "Export Data" }
+    ]
+  },
+  { "path": "views.csdoc", "title": "Logic Helper" },
   { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
   { "path": "run_production_synchronizations.csdoc", "~title": "Run Production Synchronizations" },
   { "path": "shortcut_keys.csdoc", "title": "Shortcuts" },
-  { "path": "downloading_and_synchronizing_data.csdoc", "title": "Synchronizing Data" }
+  { "path": "downloading_and_synchronizing_data.csdoc", "title": "Synchronize Data" },
+  { "path": "views.csdoc", "~title": "Views",
+    "subindex": [
+      { "path": "view_case.csdoc", "title": "Case" },
+      { "path": "view_case_json.csdoc", "title": "Case (JSON)" },
+      { "path": "view_case_questionnaire.csdoc", "title": "Case (Questionnaire View)" },
+      { "path": "view_case_text.csdoc", "title": "Case (Text)" },
+      { "path": "views.csdoc", "title": "Data Summary" },
+      { "path": "views.csdoc", "title": "Logic Helper" }
+    ]
+  }
 ]

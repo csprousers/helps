@@ -19,6 +19,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
     <li>The Data Viewer tool has been renamed <link DataManager::introduction.csdoc>Data Manager</link> and has new features including:
         <list>
             <li>Viewing <link DataManager::open_data.csdoc>CSWeb data</link> directly on the server without downloading it.</li>
+            <li>Multiple ways to <link DataManager::views.csdoc>view</link> case data, including in the familiar <link DataManager::view_case.csdoc>record-based view</link>, as <link DataManager::view_case_json.csdoc>JSON</link>, as <link DataManager::view_case_text.csdoc>text</link>, or using the <link DataManager::view_case_questionnaire.csdoc>questionnaire view</link>.</li>
             <li>Ability to <link DataManager::open_data.csdoc>open</link> more than one data source.</li>
             <li>Synchronizing data with a <link DataManager::downloading_and_synchronizing_data.csdoc>universe</link>.</li>
         </list>

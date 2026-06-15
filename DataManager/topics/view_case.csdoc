@@ -1,0 +1,27 @@
+<title>Views: Case</title>
+<context ID_VIEW_CASE_HTML ID_VIEW_OPTIONS_HTML_DICTIONARY_LABELS ID_VIEW_OPTIONS_HTML_DICTIONARY_NAMES ID_VIEW_OPTIONS_HTML_DICTIONARY_NAMES_AND_LABELS ID_VIEW_OPTIONS_HTML_DICTIONARY_ITEMS_AND_SUBITEMS ID_VIEW_OPTIONS_HTML_DICTIONARY_ITEMS ID_VIEW_OPTIONS_HTML_DICTIONARY_SUBITEMS ID_VIEW_OPTIONS_HTML_RECORD_HORIZONTAL ID_VIEW_OPTIONS_HTML_RECORD_VERTICAL ID_VIEW_OPTIONS_HTML_RECORD_OCCURRENCE_LABELS ID_VIEW_OPTIONS_HTML_RECORD_OCCURRENCE_NUMBERS ID_VIEW_OPTIONS_HTML_VALUE_CASE_TREE ID_VIEW_OPTIONS_HTML_VALUE_LABELS ID_VIEW_OPTIONS_HTML_VALUE_CODES ID_VIEW_OPTIONS_HTML_VALUE_LABELS_AND_CODES ID_VIEW_OPTIONS_HTML_VALUE_CODES_AND_LABELS ID_VIEW_OPTIONS_HTML_VALUE_SHOW_BLANKS ID_VIEW_OPTIONS_HTML_VALUE_HIDE_BLANKS ID_VIEW_OPTIONS_HTML_CASE_DEFAULT_DETAILS ID_VIEW_OPTIONS_HTML_CASE_ALL_DETAILS ID_VIEW_OPTIONS_HTML_CASE_SHOW_ERRORS ID_VIEW_OPTIONS_HTML_CASE_HIDE_ERRORS />
+
+Selecting <b>View</b> -> <b>Case</b> displays case data grouped by record.
+
+
+<include view_options_start.hgi />
+    <li><b>Dictionary Display</b><list>
+        <li><b>Item Descriptor</b>: Controls how dictionary names are displayed, using the label, name, or both.</li>
+        <li><b>Item/Subitem Display</b>: When an item and subitem pairing exists, this controls whether the item, subitem, or both are displayed.</li>
+    </list></li>
+    <li><b>Record Display</b><list>
+        <li><b>Orientation</b>: Determines if records should be shown in a horizontal or vertical roster layout.</li>
+        <li><b>Occurrence Labels</b>: For repeating records or items with occurrence labels, this controls whether the label, as opposed to the occurrence number, is displayed.</li>
+    </list></li>
+    <li><b>Value Display</b><list>
+        <li><b>Value Label Type</b>: Determines how values are displayed in a variety of formats, including using the code, label, or both.</li>
+        <li><b>Blank Values</b>: Controls whether items with blank values are displayed.</li>
+    </list></li>
+    <li><b>Case Details</b><list>
+        <li><b>Details</b>: Determines whether to show extra and non-default information about cases.</li>
+        <li><b>Errors</b>: Controls whether case errors are shown. Case errors include messages such as whether a case has more records than allowed based on dictionary settings.</li>
+    </list></li>
+</list>
+
+
+<seealso views.csdoc />

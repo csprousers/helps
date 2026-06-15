@@ -1,0 +1,18 @@
+<title>Views: Case (JSON)</title>
+<context ID_VIEW_CASE_JSON ID_VIEW_OPTIONS_JSON_COMPACT_JSON ID_VIEW_OPTIONS_JSON_VERBOSE ID_VIEW_OPTIONS_JSON_WRITE_LABELS ID_VIEW_OPTIONS_JSON_WRITE_BLANK_VALUES ID_VIEW_OPTIONS_JSON_WRITE_DATA_URLS />
+
+Selecting <b>View</b> -> <b>Case (JSON)</b> displays case data in its <link CSPro::Case_json_representation.csdoc>JSON representation</link>.
+
+
+<include view_options_start.hgi />
+    <li><b>Compact JSON</b>: When checked, cases are written with no extra spacing. By default, cases are written in a more readable format with spaces and newlines.</li>
+    <li><b>Verbose</b>: When checked, cases are written in <link "https://en.wikipedia.org/wiki/Verbose_mode">verbose mode</link>, outputting all case details rather than only those with defined, non-default, values.</li>
+    <li><b>Include Labels</b>: When checked, <link CSPro::value_sets_description.csdoc>value set labels</link> associated with items are written along with the codes.</li>
+    <li><b>Include Blank Values</b>: When checked, items without a value (<logiccolor>notappl</logiccolor> numbers, blank strings, etc.), are written.</li>
+    <li><b>Embed Binary Data</b>: When checked, <link CSPro::binary_dictionary_items.csdoc>binary data</link> is written as a <link CSPro::data_url.csdoc>data URL</link>.</li>
+</list>
+
+Each of these options correspond to options used by the <link CSPro::data_source_json.csdoc>JSON data source</link>.
+
+
+<seealso views.csdoc />

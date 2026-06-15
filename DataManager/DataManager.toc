@@ -5,14 +5,28 @@
   ],
   "chapters": [
     {
-      "title": "How to ...",
+      "title": "Overview",
       "documents": [
         { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
-        { "path": "navigating_windows.csdoc", "~title": "Navigate Data Manager's Windows" },
         { "path": "filtering_cases_and_display_options.csdoc", "~title": "Filter Cases and Display Options" },
-        { "path": "converting_data_to_other_formats.csdoc", "~title": "Convert CSPro Data to Other Formats" },
-        { "path": "export_data.csdoc", "~title": "Export Data" },
         { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
+        { "path": "converting_data_to_other_formats.csdoc", "~title": "Convert CSPro Data to Other Formats" },
+        { "path": "export_data.csdoc", "~title": "Export Data" }
+      ]
+    },
+    {
+      "title": "Views",
+      "documents": [
+        { "path": "views.csdoc", "~title": "Views" },
+        { "path": "view_case.csdoc", "~title": "Views: Case" },
+        { "path": "view_case_json.csdoc", "~title": "Views: Case (JSON)" },
+        { "path": "view_case_text.csdoc", "~title": "Views: Case (Text)" },
+        { "path": "view_case_questionnaire.csdoc", "~title": "Views: Case (Questionnaire View)" }
+      ]
+    },
+    {
+      "title": "How to ...",
+      "documents": [
         { "path": "run_production_synchronizations.csdoc", "~title": "Run Production Synchronizations" },
         { "path": "../Shared/topics/get_help.csdoc", "~title": "Get Help" }
       ]
