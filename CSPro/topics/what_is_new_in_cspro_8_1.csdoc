@@ -13,7 +13,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <list>
     <li>CSPro is now open source! The source code, written primarily in C++, JavaScript, Java/Kotlin, and PHP, with some code written in C#, is available on GitHub: <link https://<definition csprousers_github />><definition csprousers_github /></link>.</li>
     <li>The <link data_source_csweb.csdoc>CSWeb data source</link> facilitates directly accessing or updating CSWeb data without the need to run synchronizations. This data source can be used like other data sources: as the main dictionary for data collection, as an external dictionary, etc. Instead of storing cases in a file on a local machine, cases are stored on the CSWeb server.</li>
-    <li>CSWeb data can be <link CSWeb::accessing_data.csdoc>viewed directly</link> using <link DataManager::open_data.csdoc>Data Manager</link> without the need to download the data to your local machine.</li>
+    <li>CSWeb data can be <link CSWeb::accessing_data.csdoc>viewed directly</link> using <link DataManager::open_data.csdoc>Data Manager</link> without the need to download data to your local machine.</li>
     <li><link markdown_overview.csdoc>Markdown</link> can be used when specifying <link question_text.csdoc>question text</link>, in <link templated_reports.csdoc>templated reports</link>, and can be viewed as generated HTML using the <logiccolor>view</logiccolor> function or in <link CSView::supported_files.csdoc>CSView</link>. Markdown can also be edited in <link CSCode::language_markdown.csdoc>CSCode</link> and included as part of <link CSDocument::markdown_transformations.csdoc>CSPro Documents</link>.</li>
     <li>Applications can now <link javascript_overview.csdoc>incorporate JavaScript</link> in addition to <link introduction_to_cspro_language.csdoc>CSPro logic</link>. Many open-source JavaScript libraries exist that can be brought into your application, and as a dynamically typed language, some programming tasks may be easier using JavaScript. By using the <logiccolor>JS</logiccolor> namespace, it is possible to <link JS_eval_function.csdoc>evaluate JavaScript</link>, <link JS_invoke_function.csdoc>invoke functions</link>, and <link JS_setValue_function.csdoc>convert</link> CSPro symbols to JavaScript numbers, strings, arrays, and objects. It is also possible to create <link javascript_user_defined_functions.csdoc>function wrappers</link> in CSPro logic that appear as <link user_defined_functions.csdoc>user-defined functions</link> but call into JavaScript when invoked.</li>
     <li>The Data Viewer tool has been renamed <link DataManager::introduction.csdoc>Data Manager</link> and has new features including:
@@ -24,7 +24,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
             <li><link DataManager::convert_extract_data.csdoc>Saving</link> or <link DataManager::export_data.csdoc>exporting</link> individual cases or groups of cases.</li>
             <li><link DataManager::convert_extract_data.csdoc>Extracting</link> notes and binary data from individual cases or groups of cases.</li>
             <li>Opening data sources in <link DataManager::menu_summary.csdoc>read and write mode</link>, which allows cases to be <link DataManager::menu_summary.csdoc>deleted and undeleted</link>.</li>
-            <li>Synchronizing data with a <link DataManager::downloading_and_synchronizing_data.csdoc>universe</link>.</li>
+            <li>Synchronizing data using a <link DataManager::downloading_and_synchronizing_data.csdoc>universe</link>.</li>
             <li>Synchronizing multiple data sources using a single <link DataManager::run_production_synchronizations.csdoc>PFF file</link>.</li>
         </list>
     </li>
@@ -98,7 +98,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
 <subheader>Reporting</subheader>
 
 <list>
-    <li>The <link templated_reports.csdoc>templated reports</link> system has been expanded into a broader <link text_templates.csdoc>text templates</link> system. As before, this system is used when processing reports, but it is also now used to process dynamic <link questions.csdoc>question text</link>.</li>
+    <li>The <link templated_reports.csdoc>templated reports</link> system has been expanded into a broader <link text_templates.csdoc>text templates</link> system. As before, this system is used when processing reports, but is also now used to process dynamic <link questions.csdoc>question text</link>.</li>
     <li><link templated_reports.csdoc>Templated reports</link> support <link markdown_overview.csdoc>Markdown</link> as a <link change_report_properties.csdoc>format</link>, with the Markdown automatically converted to HTML for display.</li>
 </list>
 
@@ -120,7 +120,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
     <li>The default format for new question text <link question_text_properties.csdoc>can be specified</link>, and the <link enter_question_text.csdoc>editor's</link> toolbar displays the format with four options. The first two options, <image question-text-edit-html.png /> and <image question-text-edit-html-code.png />, are the HTML-based options that previously existed. A new option, <image question-text-edit-html-tt.png /> allows for the specification of question text as a HTML <link text_templates.csdoc>text template</link>, supporting <nowrap>&lt;? ?&gt;</nowrap> template expressions. This HTML is edited as code with no visual editor. The final option, <image question-text-edit-markdown-tt.png />, is for Markdown question text.</li>
     <li>When using <link change_formatting.csdoc>formatting options</link>, or adding <link add_pictures.csdoc>images</link> or <link insert_link.csdoc>hyperlinks</link>, the question text editor will use the correct syntax based on whether the question is using HTML or Markdown.</li>
     <li>To toggle between question text and <link create_helps_for_fields.csdoc>help text</link>, the editor's toolbar now contains two buttons: <image question-text-edit-question.png /> for question text and <image question-text-edit-help.png /> for help text.</li>
-    <li>You can view a preview of question text by pressing <b>Ctrl + F5</b> or selecting <b>Preview Text Template</b> from the <b>View</b> menu. This will not run the CSPro logic, so the preview will not necessarily look complete, but it can be useful to view an approximation of how the rendered question text will appear.</li>
+    <li>You can view a preview of question text by pressing <b>Ctrl + F5</b> or selecting <b>Preview Text Template</b> from the <b>View</b> menu. This will not run the CSPro logic, so the preview may not look complete, but it can be useful to view an approximation of how the rendered question text will appear.</li>
     <li>The <logiccolor>QSF</logiccolor> logic object gives access to the <link StringWriter.csdoc>StringWriter</link> in use when processing question text as a <link text_templates.csdoc>text template</link>.</li>
 </list>
 
@@ -199,7 +199,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
     <li>CSPro 8.0 and earlier versions cannot synchronize data with CSWeb 8.1, so you must upgrade CSPro and CSWeb in tandem.</li>
     <li>The <link CSWeb::roles.csdoc>roles</link> system has been overhauled, providing more granular control over what users can access. A new predefined role, <i>Developer</i>, gives more access than the <i>Standard User</i> role.</li>
     <li>The <i>Standard User</i> role can no longer <link CSDeploy::introduction_to_deployment.csdoc>create deployment packages</link>, though it can be used to download and update applications. The new <i>Developer</i> role can be used for application deployments.</li>
-    <li>The <i>Data</i> tab now contains two <link CSWeb::accessing_data.csdoc>Manage in CSPro</link> options: one to view data directly using <link DataManager::open_data.csdoc>Data Manager</link> without downloading the entire data set, and the original option to download the data to your local machine.</li>
+    <li>The <i>Data</i> tab now contains two <link CSWeb::accessing_data.csdoc>Manage in CSPro</link> options: one to view data directly using <link DataManager::open_data.csdoc>Data Manager</link> without downloading the entire data set, and the original option to <link DataManager::downloading_and_synchronizing_data.csdoc>download the data</link> to your local machine.</li>
 </list>
 
 
