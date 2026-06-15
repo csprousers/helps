@@ -25,6 +25,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
             <li><link DataManager::convert_extract_data.csdoc>Extracting</link> notes and binary data from individual cases or groups of cases.</li>
             <li>Opening data sources in <link DataManager::menu_summary.csdoc>read and write mode</link>, which allows cases to be <link DataManager::menu_summary.csdoc>deleted and undeleted</link>.</li>
             <li>Synchronizing data with a <link DataManager::downloading_and_synchronizing_data.csdoc>universe</link>.</li>
+            <li>Synchronizing multiple data sources using a single <link DataManager::run_production_synchronizations.csdoc>PFF file</link>.</li>
         </list>
     </li>
     <li>HTTP requests can be made and responses processed using actions in the <link action_invoker.csdoc>Action Invoker's</link> <action>Network</action> namespace.</li>

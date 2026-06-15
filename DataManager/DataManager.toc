@@ -8,6 +8,7 @@
       "title": "Overview",
       "documents": [
         { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
+        { "path": "command_line_arguments.csdoc", "~title": "Command Line Arguments" },
         { "path": "filtering_cases_and_display_options.csdoc", "~title": "Filter Cases and Display Options" },
         { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
         { "path": "convert_extract_data.csdoc", "~title": "Convert and Extract Data" },

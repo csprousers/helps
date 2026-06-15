@@ -4,15 +4,32 @@
 
 This guide contains the following information:
 
-<subheader>How to ...</subheader>
+<subheader>Overview</subheader>
 
 <list>
     <li><topic open_data.csdoc /></li>
+    <li><topic command_line_arguments.csdoc /></li>
     <li><topic filtering_cases_and_display_options.csdoc /></li>
     <li><link views.csdoc>View Data</link></li>
     <li><topic downloading_and_synchronizing_data.csdoc /></li>
     <li><topic convert_extract_data.csdoc /></li>
     <li><topic export_data.csdoc /></li>
+</list>
+
+
+<subheader>Views</subheader>
+
+<list>
+    <li><topic view_case.csdoc /></li>
+    <li><topic view_case_json.csdoc /></li>
+    <li><topic view_case_text.csdoc /></li>
+    <li><topic view_case_questionnaire.csdoc /></li>
+</list>
+
+
+<subheader>How to ...</subheader>
+
+<list>
     <li><topic run_production_synchronizations.csdoc /></li>
     <li><topic manage_credentials.csdoc /></li>
     <li><topic get_help.csdoc /></li>

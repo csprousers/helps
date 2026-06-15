@@ -9,6 +9,7 @@
     ]
   },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Listing" },
+  { "path": "command_line_arguments.csdoc", "~title": "Command Line Arguments" },
   { "path": "convert_extract_data.csdoc", "~title": "Convert and Extract Data" },
   { "path": "manage_credentials.csdoc", "title": "Credentials" },
   { "path": "open_data.csdoc", "title": "CSWeb Data" },
