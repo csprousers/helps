@@ -3,6 +3,7 @@
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Menu Option" },
   { "path": "navigating_windows.csdoc", "title": "Case View" },
   { "path": "converting_data_to_other_formats.csdoc", "~title": "Convert CSPro Data to Other Formats" },
+  { "path": "open_data.csdoc", "title": "CSWeb Data" },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Data Summary" },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Display Options" },
   { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },

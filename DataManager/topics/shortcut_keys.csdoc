@@ -5,8 +5,9 @@
 
 <table 2 header nowrap>
     <cell>Shortcut Key</cell><cell>Description</cell>
-    <cell><b>Ctrl + D</b></cell><cell>Download a data file.</cell>
-    <cell><b>Ctrl + Shift + S</b></cell><cell>Synchronize the data file.</cell>
+    <cell><b>Ctrl + O</b></cell><cell><link open_data.csdoc>Open</link> a data source.</cell>
+    <cell><b>Ctrl + Shift + O</b></cell><cell><link open_data.csdoc>Open</link> a data source and specify its dictionary.</cell>
+    <cell><b>Ctrl + Shift + S</b></cell><cell><link downloading_and_synchronizing_data.csdoc>Synchronize</link> the data source.</cell>
     <cell><b>Ctrl + Q</b></cell><cell>Change the case listing to sequential.</cell>
     <cell><b>Ctrl + L</b></cell><cell>Display the case labels (rather than the case key).</cell>
     <cell><b>Ctrl + T</b></cell><cell>Display the dictionary labels (instead of unique dictionary names) for each variable.</cell>
