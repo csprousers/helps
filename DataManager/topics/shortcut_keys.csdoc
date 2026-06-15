@@ -8,6 +8,8 @@
     <cell><b>Ctrl + O</b></cell><cell><link open_data.csdoc>Open</link> a data source.</cell>
     <cell><b>Ctrl + Shift + O</b></cell><cell><link open_data.csdoc>Open</link> a data source and specify its dictionary.</cell>
     <cell><b>Ctrl + Shift + S</b></cell><cell><link downloading_and_synchronizing_data.csdoc>Synchronize</link> the data source.</cell>
+    <cell><b>Ctrl + S</b></cell><cell>Save the current <link views.csdoc>view</link>.</cell>
+    <cell><b>Ctrl + P</b></cell><cell>Print the current <link views.csdoc>view</link>.</cell>
     <cell><b>Ctrl + Q</b></cell><cell><link filtering_cases_and_display_options.csdoc>Toggle</link> the case listing order between sequential and indexed.</cell>
     <cell><b>Ctrl + L</b></cell><cell><link filtering_cases_and_display_options.csdoc>Toggle</link> between showing case keys and case labels.</cell>
     <cell><b>Ctrl + T</b></cell><cell><link view_case.csdoc>Toggle</link> between showing dictionary labels and names for each item.</cell>
