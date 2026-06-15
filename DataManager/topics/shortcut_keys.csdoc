@@ -5,16 +5,17 @@
 
 <table 2 header nowrap>
     <cell>Shortcut Key</cell><cell>Description</cell>
-    <cell><b>Ctrl + O</b></cell><cell><link open_data.csdoc>Open</link> a data source.</cell>
-    <cell><b>Ctrl + Shift + O</b></cell><cell><link open_data.csdoc>Open</link> a data source and specify its dictionary.</cell>
-    <cell><b>Ctrl + Shift + S</b></cell><cell><link downloading_and_synchronizing_data.csdoc>Synchronize</link> the data source.</cell>
+    <cell><b>Ctrl + O</b></cell><cell><link open_data.csdoc>Open</link> an existing data source.</cell>
+    <cell><b>Ctrl + Shift + O</b></cell><cell><link open_data.csdoc>Open</link> an existing data source, specifying its dictionary.</cell>
+    <cell><b>Ctrl + Shift + S</b></cell><cell><link downloading_and_synchronizing_data.csdoc>Synchronize</link> cases in the data source with a synchronization service.</cell>
     <cell><b>Ctrl + S</b></cell><cell>Save the current <link views.csdoc>view</link>.</cell>
     <cell><b>Ctrl + P</b></cell><cell>Print the current <link views.csdoc>view</link>.</cell>
     <cell><b>Ctrl + Q</b></cell><cell><link filtering_cases_and_display_options.csdoc>Toggle</link> the case listing order between sequential and indexed.</cell>
     <cell><b>Ctrl + L</b></cell><cell><link filtering_cases_and_display_options.csdoc>Toggle</link> between showing case keys and case labels.</cell>
     <cell><b>Ctrl + T</b></cell><cell><link view_case.csdoc>Toggle</link> between showing dictionary labels and names for each item.</cell>
     <cell><b>Ctrl + Shift + T</b></cell><cell><link view_case.csdoc>Toggle</link> between options for how the values of items are displayed.</cell>
-    <cell><b>F5</b></cell><cell>Refresh the data source (should the data have been modified by another application while viewing).</cell>
+    <cell><b>F5</b></cell><cell>Refresh the case listing and current view (should the data have been modified by another application while viewing).</cell>
+    <cell><b>Del</b></cell><cell>Delete the selected case. The data source must be open in <link menu_summary.csdoc>read and write mode</link>.</cell>
 </table>
 
 

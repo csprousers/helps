@@ -1,0 +1,40 @@
+<title>Menu Summary</title>
+<context ID_FILE_CLOSE ID_FILE_CLOSE_ALL ID_FILE_REFRESH ID_FILE_MANAGE_CREDENTIALS ID_DATA_TOGGLE_READ_ONLY ID_DATA_DELETE_CASE ID_TOOLS_EXPORT_DATA ID_TOOLS_TABULATE_FREQUENCIES />
+
+The following is a summary of the <b>Data Manager</b> menus:
+
+<table 2>
+    <cell 2><subheader>File</subheader></cell>
+    <cell><link downloading_and_synchronizing_data.csdoc>Download Data From Synchronization Service</link></cell><cell>Create a new data source by downloading data from a synchronization service.</cell>
+    <cell><link open_data.csdoc>Open Data File</link></cell><cell>Open an existing data source.</cell>
+    <cell><link open_data.csdoc>Open Data Source</link></cell><cell>Open an existing data source, specifying its dictionary</cell>
+    <cell><link open_data.csdoc>Open CSWeb Data</link></cell><cell>Open a connection to data on a CSWeb server.</cell>
+    <cell>Close</cell><cell>Close the data source currently open.</cell>
+    <cell>Close All</cell><cell>Close all data sources currently open.</cell>
+    <cell>Refresh Data</cell><cell>Refresh the case listing and current view (should the data have been modified by another application while viewing).</cell>
+    <cell><link downloading_and_synchronizing_data.csdoc>Synchronize Data</link></cell><cell>Synchronize cases in the data source with a synchronization service.</cell>
+    <cell><link views.csdoc>Save View</link></cell><cell>Save the current view.</cell>
+    <cell><link views.csdoc>Print View</link></cell><cell>Print the current view.</cell>
+    <cell><link manage_credentials.csdoc>Manage Credentials</link></cell><cell>Clear cached credentials from your computer.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>Listing</subheader></cell>
+    <cell 2><i>(<link filtering_cases_and_display_options.csdoc>case listing options</link>)</i></cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>View</subheader></cell>
+    <cell 2><i>(<link views.csdoc>view options</link>)</i></cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>View Options</subheader> </cell>
+    <cell 2><i>(options specific to the displayed <link views.csdoc>view</link>)</i></cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>Data</subheader></cell>
+    <cell>Read-Only Mode</cell><cell>Toggles whether the data source is open as read-only or in read and write mode. The data source will be closed if there is an error opening it in read and write mode.</cell>
+    <cell>Delete Case</cell><cell>Delete the selected case. The data source must be open in read and write mode.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>Tools</subheader></cell>
+    <cell><link CSExport::introduction_to_export_data.csdoc>Export Data</link></cell><cell>Launches the Export Data tool using the open data source.</cell>
+    <cell><link CSFreq::introduction_to_tabulate_frequencies.csdoc>Tabulate Frequencies</link></cell><cell>Launches the Tabulate Frequencies tool using the open data source.</cell>
+    <cell 2>&nbsp;</cell>
+    <cell 2><subheader>Help</subheader></cell>
+    <cell><link get_help.csdoc>Help Topics</link></cell><cell>Get help on current application.</cell>
+    <cell><link get_help.csdoc>About</link></cell><cell>Get information about the software.</cell>
+</table>

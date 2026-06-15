@@ -1,9 +1,18 @@
 [
   { "path": "shortcut_keys.csdoc", "title": "Accelerator Keys" },
+  { "path": "menu_summary.csdoc", "title": "Case",
+    "subindex": [
+      { "path": "menu_summary.csdoc", "title": "Delete" },
+      { "path": "view_case_json.csdoc", "title": "JSON Format" },
+      { "path": "view_case_text.csdoc", "title": "Text Format" }
+    ]
+  },
   { "path": "filtering_cases_and_display_options.csdoc", "title": "Case Listing" },
   { "path": "converting_data_to_other_formats.csdoc", "~title": "Convert CSPro Data to Other Formats" },
+  { "path": "manage_credentials.csdoc", "title": "Credentials" },
   { "path": "open_data.csdoc", "title": "CSWeb Data" },
   { "path": "views.csdoc", "title": "Data Summary" },
+  { "path": "menu_summary.csdoc", "title": "Delete Case" },
   { "path": "downloading_and_synchronizing_data.csdoc", "~title": "Download and Synchronize Data" },
   { "path": "export_data.csdoc", "title": "Export Data",
     "subindex": [
@@ -26,7 +35,15 @@
     ]
   },
   { "path": "views.csdoc", "title": "Logic Helper" },
+  { "path": "manage_credentials.csdoc", "~title": "Manage Credentials" },
+  { "path": "menu_summary.csdoc", "~title": "Menu Summary" },
   { "path": "open_data.csdoc", "~title": "Open CSPro Data" },
+  { "path": "menu_summary.csdoc", "title": "Open Flags",
+    "subindex": [
+      { "path": "menu_summary.csdoc", "title": "Read-Only" },
+      { "path": "menu_summary.csdoc", "title": "Read and Write" }
+    ]
+  },
   { "path": "run_production_synchronizations.csdoc", "~title": "Run Production Synchronizations" },
   { "path": "shortcut_keys.csdoc", "title": "Shortcuts" },
   { "path": "downloading_and_synchronizing_data.csdoc", "title": "Synchronize Data" },

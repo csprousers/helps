@@ -28,12 +28,14 @@
       "title": "How to ...",
       "documents": [
         { "path": "run_production_synchronizations.csdoc", "~title": "Run Production Synchronizations" },
+        { "path": "../Shared/topics/manage_credentials.csdoc", "~title": "Manage Credentials" },
         { "path": "../Shared/topics/get_help.csdoc", "~title": "Get Help" }
       ]
     },
     {
       "title": "Appendix",
       "documents": [
+        { "path": "menu_summary.csdoc", "~title": "Menu Summary" },
         { "path": "shortcut_keys.csdoc", "title": "Shortcut / Accelerator Keys" }
       ]
     }
