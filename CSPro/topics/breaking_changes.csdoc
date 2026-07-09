@@ -13,6 +13,7 @@ In general, newer versions of CSPro can execute applications and process data cr
 <subheader>CSPro 8.1</subheader>
 
 <list>
+    <li>The file formats used by the file-based synchronization services (<link sync_service_dropbox.csdoc>Dropbox</link> and <link sync_service_ftp.csdoc>FTP</link>) for data synchronization are not readable by CSPro 8.0 or earlier versions. If you upload cases using CSPro 8.1, you must upgrade all devices that will download these cases.</li>
     <li><link CSWeb::introduction_to_csweb.csdoc>CSWeb</link> requires <link "https://www.php.net/releases/8.1">PHP 8.1</link> or higher.</li>
     <li>CSPro 8.0 and earlier versions cannot synchronize data with CSWeb 8.1, so you must upgrade CSPro and CSWeb in tandem.</li>
     <li>CSWeb's <i>Standard User</i> <link CSWeb::roles.csdoc>role</link> can no longer <link CSDeploy::introduction_to_deployment.csdoc>create deployment packages</link>, though it can be used to download and update applications. The new <i>Developer</i> role can be used for application deployments.</li>

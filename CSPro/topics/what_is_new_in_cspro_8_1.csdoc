@@ -85,6 +85,7 @@ A feature showcase demonstrating some of CSPro 8.1's new features is available o
     <li><link sync_message.csdoc>Synchronization messages</link>, previously only handled by <link sync_service_bluetooth.csdoc>Bluetooth</link>, are now stored when sent to all <link sync_services.csdoc>synchronization services</link>.</li>
     <li>Paradata in logs other than the currently open log can be synchronized using <action>Sync.syncParadata</action>.</li>
     <li>An option supports creating the directory used for <link sync_service_local_files.csdoc>Local Files</link> synchronization, facilitating easy testing of synchronization operations on a local machine.</li>
+    <li>The file formats used by the file-based synchronization services (<link sync_service_dropbox.csdoc>Dropbox</link> and <link sync_service_ftp.csdoc>FTP</link>) for data synchronization are not readable by CSPro 8.0 or earlier versions. If you upload cases using CSPro 8.1, you must upgrade all devices that will download these cases.</li>
 </list>
 
 
