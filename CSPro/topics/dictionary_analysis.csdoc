@@ -20,4 +20,20 @@ While editing or viewing a data dictionary, you can generate several reports tha
 <b>Numeric items with overlapping value sets</b>: Lists numeric value sets that have discrete or range values that overlap.
 
 
+<subheader>Value Sets: Links</subheader>
+
+<b>Value sets linked</b>: Lists all <link linked_value_sets.csdoc>linked value sets</link>.
+
+<b>Identical value sets (link candidates)</b>: Compares value sets that are not linked with all value sets defined in the dictionary, listing value sets that share values that could be linked (when it makes sense to do ).
+
+
+<subheader>Value Set: Special Values</subheader>
+
+<b>Value sets using special values</b>: Lists numeric value sets that include the use of a <link special_values.csdoc>special value</link>.
+
+<b>Value sets using missing</b>: Lists numeric value sets that define a value as <logiccolor>missing</logiccolor>.
+
+<b>Value sets using refused</b>: Lists numeric value sets that define a value as <logiccolor>refused</logiccolor>.
+
+
 <seealso dictionary_macros.csdoc />
