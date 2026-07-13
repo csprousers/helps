@@ -42,7 +42,7 @@ The following is a summary of the menu options available while editing dictionar
     <cell><link change_the_view.csdoc>Append Labels to Names in Tree</link></cell><cell>Show both labels and names in trees.</cell>
     <cell><link change_the_view.csdoc>Full Screen</link></cell><cell>Hide the trees and show full screen view.</cell>
     <cell><link alias_statement.csdoc>Aliases</link></cell><cell>View all aliases created within the dictionary.</cell>
-    <cell><link dictionary_analysis.csdoc>Dictionary Analysis</link></cell><cell>Generate analyses about the dictionary contents.</cell>
+    <cell><link dictionary_analysis.csdoc>Dictionary Analysis</link></cell><cell>View reports that analyze the dictionary contents.</cell>
     <cell><link data_dictionary_screen_layout.csdoc>Dictionary</link></cell><cell>Show the dictionary editor in the right-hand window.</cell>
     <cell><link view_questionnaire_from_dcf.csdoc>Questionnaire</link></cell><cell>Show the questionnaire in the right-hand window using the dictionary items.</cell>
     <cell><link view_the_dictionary_layout.csdoc>Layout</link></cell><cell>Show record layout of file in the window.</cell>

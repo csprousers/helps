@@ -4,4 +4,11 @@
 This is a detailed list of changes in CSPro 8.2. For a more general overview, see the <i>readme.txt</i> file located in the CSPro installation folder.
 
 
+<subheader>CSPro Designer</subheader>
+
+<list>
+    <li>The <link dictionary_analysis.csdoc>Dictionary Analysis</link> reports have been moved to a single dialog.</li>
+</list>
+
+
 <seealso what_is_new_in_cspro.csdoc />
