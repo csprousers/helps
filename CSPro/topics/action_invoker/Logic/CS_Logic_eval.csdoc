@@ -17,7 +17,7 @@ s = CS.Logic.eval(<arg>logic</arg> := ...)
 
 The <action>Logic.eval</action> <link action_invoker.csdoc>action</link> evaluates and runs one or more logic statements.
 
-As of CSPro <definition CSPro::version />, the full compiler is not available at runtime and thus the action can only call execute <link user_defined_functions.csdoc>user-defined functions</link> that use <logiccolor>numeric</logiccolor> and <logiccolor>string</logiccolor> parameters. This limitation also means that only numeric constants and string literals can be passed as arguments to the CSPro function. This limitation will be removed in a future version.
+As of CSPro <definition CSPro::version />, the full compiler is not available at runtime and thus the action can only call <link user_defined_functions.csdoc>user-defined functions</link> that use <logiccolor>numeric</logiccolor> and <logiccolor>string</logiccolor> parameters. This limitation also means that only numeric constants and string literals can be passed as arguments to the CSPro function. This limitation will be removed in a future version.
 
 Because logic functions can display UI elements, it is a good idea to use the <link action_invoker_execution_javascript_web.csdoc>asynchronous</link> version of this action when using this action from a <link action_invoker_execution_javascript_web.csdoc>web view</link>.
 
