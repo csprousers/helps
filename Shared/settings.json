@@ -25,7 +25,6 @@
     },
     {
       "name": "CSPro Users Help Website",
-      "outputDirectory": "../Outputs/Website",
       "buildType": "website",
       "buildDocumentsUsingRelativePaths": false,
       "titleLinkage": "suppress"
